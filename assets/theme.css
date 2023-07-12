@@ -10037,9 +10037,7 @@ body {
     flex: 0 0 auto;
   }
 }
-.look__title{
-  font-size: 8px;
-}
+
 @media only screen and (min-width: 750px) and (max-width: 989px) {
   .index-look .look__aside {
     padding-top: 35px;
