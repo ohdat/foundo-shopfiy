@@ -373,7 +373,6 @@
     {%- for link in linklists[main_menu_linklist].links -%}
       {%- render 'nav-item', link: link, section: section, index: forloop.index, highlight_item: highlight_item -%}
     {%- endfor -%}
-    {%- render 'image' image: section.settings.image, sizes: '(min-width: 750px) 50vw, 100vw', aspect_ratio: image_aspect_ratio, modifier: 'look__image-bg', placeholder: 'collection-1' -%}
     <div class="hover__bar"></div>
 
     <div class="hover__bg"></div>
@@ -418,6 +417,7 @@
               {%- endfor -%}
             {%- endunless -%}
           </div>
+          {%- render 'image' image: section.settings.image, sizes: '(min-width: 750px) 50vw, 100vw', aspect_ratio: image_aspect_ratio, modifier: 'look__image-bg', placeholder: 'collection-1' -%}
         </div>
 
         {%- if social or header_popouts -%}
@@ -523,8 +523,8 @@
 <script type="application/ld+json">
   {
   "@context": "http://schema.org",
-    "@type": "Organization",
-    "name": {{ shop.name | json }},
+      "@type": "Organization",
+      "name": {{ shop.name | json }},
   {% if logo %}
     "logo": {{ logo | image_url: logo.width | prepend: "https:" | json }},
   {% endif %}
@@ -550,14 +550,14 @@
   <script type="application/ld+json">
     {
     "@context": "http://schema.org",
-          "@type": "WebSite",
-          "name": {{ shop.name | json }},
+              "@type": "WebSite",
+              "name": {{ shop.name | json }},
     "potentialAction": {
-            "@type": "SearchAction",
-            "target": {{ potential_action_target | json }},
+                "@type": "SearchAction",
+                "target": {{ potential_action_target | json }},
     "query-input": "required name=search_term_string"
-          },
-          "url": {{ shop.url | append: page.url | json }}
+              },
+              "url": {{ shop.url | append: page.url | json }}
     }
   </script>
 {%- endif -%}
