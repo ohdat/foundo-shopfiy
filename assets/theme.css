@@ -7194,7 +7194,7 @@ body:not(.has-line-design) .header__dropdown {
   display: none;
 }
 
-.announcement__bar .flickity-slider {
+ .flickity-slider {
   display: flex;
   align-items: center;
 }
@@ -7225,8 +7225,8 @@ body:not(.has-line-design) .header__dropdown {
   justify-content: space-between;
   align-items: center;
   text-align: center;
-  background-color: var(--bg);
-  color: var(--text);
+  background-color: #F9F9F9;
+  color: #00031E;
 }
 
 .announcement__bar:not(.desktop):not(.mobile) {
