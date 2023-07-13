@@ -107,10 +107,10 @@
                         </a>
                       {% endfor %}
                     </div>
-                    <div class="dropdown__family">
-                      {%- render 'image' image: section.settings.image, sizes: '100%, 100%', aspect_ratio: image_aspect_ratio, modifier: 'look__image-bg', placeholder: 'collection-1' -%}
-                    </div>
                   {% endfor %}
+                  <div class="dropdown__family">
+                    {%- render 'image' image: section.settings.image, sizes: '100%, 100%', aspect_ratio: image_aspect_ratio, modifier: 'look__image-bg', placeholder: 'collection-1' -%}
+                  </div>
                 {% elsif link.levels == 1 %}
                   <div class="dropdown__family">
                     {% for link in link.links %}
