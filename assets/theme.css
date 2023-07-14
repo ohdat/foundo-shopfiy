@@ -10035,7 +10035,7 @@ body {
       grid-template-areas:
               "a a a"
               "b b c"
-              "c d d";
+              "d d c";
   }
   .index-look .product-item {
     width: 100%;
