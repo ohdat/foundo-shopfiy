@@ -109,7 +109,7 @@
                     </div>
                   {% endfor %}
                   <div class="dropdown__family">
-                    {%- render 'image' image: section.settings.image, sizes: '100%, 100%', aspect_ratio: image_aspect_ratio, modifier: 'look__image-bg', placeholder: 'collection-1' -%}
+                    {%- render < img style = "width:100%;height:100%;" src = "{{ section.settings.banner_image | img_url: 'master' }}" alt = "Banner Image" > -%}
                   </div>
                 {% elsif link.levels == 1 %}
                   <div class="dropdown__family">
