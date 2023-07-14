@@ -2,6 +2,7 @@
   "sections": {
     "44549a0b-2324-472d-81e8-383cae2621a4": {
       "type": "section-hero",
+      "disabled": true,
       "blocks": {
         "template--19259612037451__44549a0b-2324-472d-81e8-383cae2621a4-168931933784f42c13-0": {
           "type": "heading",
@@ -45,10 +46,10 @@
         "mobile_height": "screen-height-three-quarters--mobile",
         "flex_align": "align--middle-center",
         "overlay_opacity": 0,
-        "overlay_color": "#000",
+        "overlay_color": "#000000",
         "show_overlay_text": false,
         "bg_color": "",
-        "color": "#FFFFFF"
+        "color": "#ffffff"
       }
     },
     "main": {

@@ -2,7 +2,6 @@
   "sections": {
     "hero": {
       "type": "collection-image-with-title",
-      "disabled": true,
       "settings": {
         "show_title": true,
         "show_description": true,
@@ -22,7 +21,6 @@
     },
     "subcollections": {
       "type": "subcollections",
-      "disabled": true,
       "settings": {
         "subcollection_layout": "grid",
         "subcollection_description": false,
@@ -35,7 +33,6 @@
     },
     "main": {
       "type": "collection",
-      "disabled": true,
       "settings": {
         "enable_sort": true,
         "enable_filters": true,
@@ -50,6 +47,7 @@
     },
     "41b3a0f1-2a3a-4bea-9361-6310c8a486df": {
       "type": "section-test_fa",
+      "disabled": true,
       "blocks": {
         "template--19259612430667__41b3a0f1-2a3a-4bea-9361-6310c8a486df-1689329373578f3c02-0": {
           "type": "product",
@@ -114,6 +112,14 @@
             "position_x": 50,
             "position_y": 50
           }
+        },
+        "6367490b-1201-40fb-821b-65ff7641a624": {
+          "type": "product",
+          "settings": {
+            "product": "the-丰-necklace",
+            "position_x": 50,
+            "position_y": 50
+          }
         }
       },
       "block_order": [
@@ -124,7 +130,8 @@
         "template--19259612430667__41b3a0f1-2a3a-4bea-9361-6310c8a486df-1689329373578f3c02-4",
         "ad20019d-b371-4159-a310-7ead2ee70991",
         "fe9ed666-1712-4403-a13c-5c04abbf1d1f",
-        "62a14f5e-64a1-424b-8505-d23ac507d16d"
+        "62a14f5e-64a1-424b-8505-d23ac507d16d",
+        "6367490b-1201-40fb-821b-65ff7641a624"
       ],
       "settings": {
         "image": "shopify:\/\/shop_images\/make_the_cut_banner_1.jpg",
