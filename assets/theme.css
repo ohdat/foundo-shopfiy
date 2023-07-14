@@ -6662,7 +6662,7 @@ body:not(.has-line-design) .header__dropdown {
   justify-content: space-between;
 }
 .grandparent .header__grandparent__links {
-  flex: 3;
+  flex: 9;
   display: grid;
   grid-row-gap: 1.5em;
   position: relative;
