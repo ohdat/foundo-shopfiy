@@ -3983,7 +3983,9 @@ hr.hr--color,
 .rte ul ul ul {
   list-style: square outside;
 }
-
+.rte p {
+  color: #9B9B9B;
+}
 .text-center.rte ul,
 .text-center.rte ol,
 .text-center .rte ul,
@@ -18028,11 +18030,11 @@ body.is-focused .subcollection__item:focus-within .image-overlay-bottom {
   padding-bottom: var(--cart-bar-height, 0);
 }
 .footer-sections a:not(.btn) {
-  color: var(--link);
+  color: #9B9B9B;
   transition: color 0.25s ease;
 }
 .footer-sections a:not(.btn):hover {
-  color: var(--link-hover);
+  color: #9B9B9B;
 }
 
 .site-footer-wrapper {
@@ -18119,7 +18121,6 @@ body.is-focused .subcollection__item:focus-within .image-overlay-bottom {
 
 .footer__quicklinks li {
   margin: 0 0 1.25em;
-  color: #9B9B9B !important;
 }
 .footer__quicklinks li:last-child {
   margin-bottom: 0;
