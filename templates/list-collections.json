@@ -1,1 +1,71 @@
-{"sections":{"main":{"type":"list-collections","settings":{}}},"order":["main"]}
+{
+  "sections": {
+    "44549a0b-2324-472d-81e8-383cae2621a4": {
+      "type": "section-hero",
+      "blocks": {
+        "template--19259612037451__44549a0b-2324-472d-81e8-383cae2621a4-168931933784f42c13-0": {
+          "type": "heading",
+          "disabled": true,
+          "settings": {
+            "title": "Image banner",
+            "heading_size": 11
+          }
+        },
+        "template--19259612037451__44549a0b-2324-472d-81e8-383cae2621a4-168931933784f42c13-1": {
+          "type": "text",
+          "disabled": true,
+          "settings": {
+            "description": "Tell your brand's story through images.",
+            "text_size": 5,
+            "text_style": "font-body"
+          }
+        },
+        "template--19259612037451__44549a0b-2324-472d-81e8-383cae2621a4-168931933784f42c13-2": {
+          "type": "button",
+          "disabled": true,
+          "settings": {
+            "link_text": "View products",
+            "link": "",
+            "button_type": "btn--primary",
+            "button_size": "",
+            "button_style": "btn--solid",
+            "show_arrow": false
+          }
+        }
+      },
+      "block_order": [
+        "template--19259612037451__44549a0b-2324-472d-81e8-383cae2621a4-168931933784f42c13-0",
+        "template--19259612037451__44549a0b-2324-472d-81e8-383cae2621a4-168931933784f42c13-1",
+        "template--19259612037451__44549a0b-2324-472d-81e8-383cae2621a4-168931933784f42c13-2"
+      ],
+      "settings": {
+        "height": "screen-height-three-quarters",
+        "width": "wrapper--full",
+        "image_1": "shopify:\/\/shop_images\/nourishlonggrainearringwgf.jpg",
+        "mobile_height": "screen-height-three-quarters--mobile",
+        "flex_align": "align--middle-center",
+        "overlay_opacity": 0,
+        "overlay_color": "#000",
+        "show_overlay_text": false,
+        "bg_color": "",
+        "color": "#FFFFFF"
+      }
+    },
+    "main": {
+      "type": "list-collections",
+      "settings": {
+        "display_type": "all",
+        "title": "",
+        "grid": 4,
+        "rows": 1,
+        "layout_mobile": "carousel",
+        "padding_top": 32,
+        "padding_bottom": 32
+      }
+    }
+  },
+  "order": [
+    "44549a0b-2324-472d-81e8-383cae2621a4",
+    "main"
+  ]
+}

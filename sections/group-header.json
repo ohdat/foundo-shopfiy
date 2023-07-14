@@ -43,7 +43,7 @@
             "aspect_ratio": 0.5,
             "wide_image": true,
             "overlay_opacity": 0,
-            "overlay_color": "#000",
+            "overlay_color": "#000000",
             "title": "",
             "link_text": "",
             "link": "",
@@ -57,7 +57,7 @@
       "settings": {
         "header_sticky": false,
         "header_style": "logo_center_menu_left",
-        "show_icons": false,
+        "show_icons": true,
         "icon_as_circle": true,
         "cart_icon_family": "bag",
         "logo": "shopify:\/\/shop_images\/Foundo_Main_Monogram-Black_45ea0c90-39c9-444d-aa26-b7f9cc3aa3ed.png",
