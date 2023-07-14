@@ -10033,9 +10033,9 @@ body {
   }
   .index-look .look__slider--grid2 {
       grid-template-areas:
-              "a b"
-              "c c"
-              "d e";
+              "product-1 product-2"
+              "product-3 product-3"
+              "product-4 product-5";
       grid-template-columns: 1fr;
   }
   .index-look .product-item {
