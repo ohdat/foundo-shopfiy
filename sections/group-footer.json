@@ -50,7 +50,7 @@
         "3e28ec4d-0bdb-4127-ba61-39dfa3bc4959": {
           "type": "linklist",
           "settings": {
-            "linklist": "footer",
+            "linklist": "customer-care",
             "title": "",
             "column_width": 33
           }
