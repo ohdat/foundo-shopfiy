@@ -10039,6 +10039,7 @@ body {
   }
   .look_slide_test:nth-of-type(3){
     grid-column: span 2;
+    height: 50%;
   }
 
   .index-look .product-item {
