@@ -17,14 +17,7 @@
       assign child_count = 10
     endif
   endif
-  assign image = section.settings.image
-  unless enable_aspect_ratio
-    if image
-      assign image_aspect_ratio = image.aspect_ratio
-    else
-      assign image_aspect_ratio = 1
-    endif
-  endunless
+
   assign index = index | append: ""
   assign image_count = 0
   assign image_wide_count = 0
@@ -115,9 +108,6 @@
                       {% endfor %}
                     </div>
                   {% endfor %}
-                  <div class="dropdown__family">
-                    {%- render 'image' image: section.settings.image, sizes: '100%, 100%', aspect_ratio: image_aspect_ratio, modifier: 'look__image-bg', placeholder: 'collection-1' -%}
-                  </div>
                 {% elsif link.levels == 1 %}
                   <div class="dropdown__family">
                     {% for link in link.links %}
