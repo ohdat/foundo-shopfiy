@@ -17,7 +17,14 @@
       assign child_count = 10
     endif
   endif
-
+  assign image = section.settings.image
+  unless enable_aspect_ratio
+    if image
+      assign image_aspect_ratio = image.aspect_ratio
+    else
+      assign image_aspect_ratio = 1
+    endif
+  endunless
   assign index = index | append: ""
   assign image_count = 0
   assign image_wide_count = 0
