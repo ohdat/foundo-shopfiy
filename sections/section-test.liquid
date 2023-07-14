@@ -1,0 +1,17 @@
+{% schema %}
+{
+  "name": "Banner Section",
+  "settings": [
+    {
+      "type": "image_picker",
+      "label": "Banner Image",
+      "id": "banner_image"
+    }
+  ]
+}
+{% endschema %}
+
+{% assign banner_image = section.settings.banner_image %}
+{% if banner_image %}
+    <img src="{{ banner_image | img_url }}" alt="Banner Image">
+{% endif %}
