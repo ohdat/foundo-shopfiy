@@ -6750,7 +6750,7 @@ body:not(.has-line-design) .header__dropdown {
 }
 
 .grandparent.kids-4 .header__grandparent__links {
-  grid-template-columns: repeat(5, minmax(0, 1fr));
+  grid-template-columns: repeat(4, minmax(0, 1fr));
 }
 
 .grandparent.kids-5 .header__grandparent__links {
