@@ -18012,7 +18012,7 @@ body.is-focused .subcollection__item:focus-within .image-overlay-bottom {
  * Footer
  */
 .footer-sections {
-  --bg: var(--COLOR-FOOTER-BG);
+  --bg: #ffffff;
   --text: var(--COLOR-FOOTER-TEXT);
   --text-a35: var(--COLOR-FOOTER-TEXT-A35);
   --text-a75: var(--COLOR-FOOTER-TEXT-A75);
@@ -18020,7 +18020,7 @@ body.is-focused .subcollection__item:focus-within .image-overlay-bottom {
   --link: var(--COLOR-FOOTER-LINK);
   --link-hover: var(--COLOR-FOOTER-LINK-HOVER);
   position: relative;
-  color: var(--text);
+  color: #000000;
   background-color: var(--bg);
   padding-bottom: var(--cart-bar-height, 0);
 }
