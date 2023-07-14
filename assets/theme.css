@@ -10036,7 +10036,7 @@ body {
   .index-look .look__slider--grid2 {
     grid-template-columns:
             repeat(2, minmax(0, 1fr))
-            100%
+            2fr
             repeat(2, minmax(0, 1fr));
   }
   .index-look .product-item {
