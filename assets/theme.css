@@ -18119,6 +18119,7 @@ body.is-focused .subcollection__item:focus-within .image-overlay-bottom {
 
 .footer__quicklinks li {
   margin: 0 0 1.25em;
+  color: #9B9B9B !important;
 }
 .footer__quicklinks li:last-child {
   margin-bottom: 0;
