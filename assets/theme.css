@@ -10035,9 +10035,9 @@ body {
   }
   .index-look .look__slider--grid2 {
       grid-template:
-              "product-0 product-1"
-              "product-2 product-2"
-              "product-3 product-4"
+              "a b"
+              "c c"
+              "d e"
   }
   .index-look .product-item {
     width: 100%;
