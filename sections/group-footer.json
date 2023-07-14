@@ -39,11 +39,20 @@
         },
         "3ce4cb02-ae61-42f5-b8ab-5a05ee16cd96": {
           "type": "text",
+          "disabled": true,
           "settings": {
             "image_width": 150,
             "title": "CUSTOMER CARE",
             "text": "<p>Our Clients Advisors are avaliable Monday through Saturday, 9:00AM - 12:00AM (EST) and Sunday, 9:00AM - 10:00PM (EST), excluding holidays.<\/p><p>Care@foundo.world<\/p><p><a href=\"\/pages\/contact\" target=\"_blank\" title=\"Contact us\">Contact us<\/a><\/p>",
             "column_width": 23
+          }
+        },
+        "3e28ec4d-0bdb-4127-ba61-39dfa3bc4959": {
+          "type": "linklist",
+          "settings": {
+            "linklist": "footer",
+            "title": "",
+            "column_width": 33
           }
         }
       },
@@ -51,7 +60,8 @@
         "footer-0",
         "4da55bdd-7287-464e-abd6-2d1ae079b0c7",
         "footer-1",
-        "3ce4cb02-ae61-42f5-b8ab-5a05ee16cd96"
+        "3ce4cb02-ae61-42f5-b8ab-5a05ee16cd96",
+        "3e28ec4d-0bdb-4127-ba61-39dfa3bc4959"
       ],
       "settings": {
         "logo_image_width": 150,
