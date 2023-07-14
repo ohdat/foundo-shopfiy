@@ -10033,9 +10033,6 @@ body {
   .index-look .look__slider--grid {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
-  .index-look .look__slider--grid2 {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-  }
   .look_slide_test:nth-of-type(3){
     grid-column: span 2;
   }
@@ -10137,10 +10134,6 @@ body {
 
 @media only screen and (min-width: 990px) {
   .look__slider--grid {
-    max-width: 50vw;
-    padding: 0;
-  }
-  .look__slider--grid2 {
     max-width: 50vw;
     padding: 0;
   }
