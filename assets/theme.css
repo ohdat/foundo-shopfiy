@@ -10035,6 +10035,7 @@ body {
   }
   .index-look .look__slider--grid2 {
     grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, [row] auto );
   }
   .look_slide_test:nth-of-type(0){
     grid-row: row ;
