@@ -47,14 +47,18 @@ Required params:
   endif
 -%}
 
-<div class="menu__block {{ width_class }}" {{ block.shopify_attributes }}
+<div
+  class="menu__block {{ width_class }}"
+  {{ block.shopify_attributes }}
   {% if link_level_next %}
-    data-animates="{{ link_level_next }}"
-    data-animation="{{ animation_name }}"
-    data-animation-delay="{{ animation_delay }}"
-    data-animation-duration="{{ animation_duration }}"
+  data-animates="{{ link_level_next }}"
+  data-animation="{{ animation_name }}"
+  data-animation-delay="{{ animation_delay }}"
+  data-animation-duration="{{ animation_duration }}"
   {% endif %}>
-  <div class="header__dropdown__image palette--contrast--dark"       
+  <div
+    style="height:100%"
+    class="header__dropdown__image palette--contrast--dark"
     {% unless text_color == 'rgba(0,0,0,0)' or text_color == blank %}style="--text: {{ text_color }};"{% endunless %}
     data-stagger-first>
     {%- if block.settings.title != blank or block.settings.link_text != blank -%}

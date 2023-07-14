@@ -6901,6 +6901,7 @@ body:not(.has-line-design) .header__dropdown {
 .is-visible .header__dropdown__image .image-wrapper {
   transform: scale(1);
   transition: transform 1.5s cubic-bezier(0.215, 0.61, 0.355, 1);
+  height: 100%;
 }
 
 .is-visible .header__dropdown__image > div,
