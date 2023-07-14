@@ -98,12 +98,36 @@
         "bg_color": "",
         "color": "#FFFFFF"
       }
+    },
+    "aed6d7b7-3ad8-4f39-8dbf-0ee8e77de780": {
+      "type": "section-collection",
+      "settings": {
+        "heading": "Best Sellers",
+        "description": "",
+        "layout": "inline",
+        "link_text": "Shop Now",
+        "link_url": "",
+        "button_type": "btn--primary",
+        "button_size": "",
+        "button_style": "btn--solid",
+        "show_arrow": false,
+        "featured_collection": "the-nourish",
+        "style": "grid",
+        "grid": 4,
+        "rows": 3,
+        "layout_mobile": "carousel",
+        "bg_color": "",
+        "color": "",
+        "padding_top": 50,
+        "padding_bottom": 50
+      }
     }
   },
   "order": [
     "hero",
     "subcollections",
     "main",
-    "43697a55-0b04-4b27-83c1-6864688b6c69"
+    "43697a55-0b04-4b27-83c1-6864688b6c69",
+    "aed6d7b7-3ad8-4f39-8dbf-0ee8e77de780"
   ]
 }
