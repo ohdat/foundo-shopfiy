@@ -10034,11 +10034,10 @@ body {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
   .index-look .look__slider--grid2 {
-      grid-template-areas:
-              "1 2"
-              "3 3"
-              "4 5";
-      grid-template-columns: 1fr;
+      grid-template:
+              "product-1 product-2" 40px;
+              "product-3 product-3" 40px;
+              "product-4 product-5" 40px;
   }
   .index-look .product-item {
     width: 100%;
