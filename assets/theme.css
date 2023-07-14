@@ -10037,7 +10037,7 @@ body {
     grid-template-columns: repeat(4, [col] 100px ) ;
     grid-template-rows: repeat(3, [row] auto  );
   }
-  .look_slide_test:first-of-type{
+  .look_slide_test:nth-of-type(0){
     grid-column: col / span 2;
     grid-row: row ;
   }
@@ -10059,6 +10059,7 @@ body {
     grid-column: col 3 / span 2 ;
     grid-row: row 3;
   }
+
   .index-look .product-item {
     width: 100%;
     display: flex;
