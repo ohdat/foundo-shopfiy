@@ -10030,6 +10030,9 @@ body {
   .index-look .look__slider--grid {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
+  .index-look .look__slider--grid2 {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
   .index-look .product-item {
     width: 100%;
     display: flex;
@@ -10127,7 +10130,7 @@ body {
 
 @media only screen and (min-width: 990px) {
   .look__slider--grid {
-    max-width: 50vw;
+    max-width: 25vw;
     padding: 0;
   }
 }
