@@ -3261,7 +3261,7 @@ body * {
 }
 
 .wrapper {
-  max-width: var(--content-max);
+  /* max-width: var(--content-max); */
   margin: 0 auto;
   padding-left: var(--outer);
   padding-right: var(--outer);
@@ -3287,10 +3287,10 @@ body * {
 }
 
 .section-padding {
-  --padding-top: var(--PT);
+  /* --padding-top: var(--PT);
   --padding-bottom: var(--PB);
   padding-top: var(--padding-top);
-  padding-bottom: var(--padding-bottom);
+  padding-bottom: var(--padding-bottom); */
 }
 @media only screen and (min-width: 750px) and (max-width: 989px) {
   .section-padding {
@@ -8309,6 +8309,7 @@ body:not(.has-line-design) .sliderule-grid .menu__block:not(:first-child) {
   padding: var(--outer) var(--outer) calc(var(--outer) - var(--line));
   color: var(--text);
   background-color: var(--bg);
+  text-align: left;
 }
 
 .hero__content--transparent {
