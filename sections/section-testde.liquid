@@ -188,6 +188,15 @@
       </div>
       <div class="look__aside" data-popup-container>
         <div class="look__overlay" data-popup-close></div>
+        <div class="look__image-container">
+          {%- render 'image' image: section.settings.image, sizes: '(min-width: 750px) 50vw, 100vw', aspect_ratio: image_aspect_ratio, modifier: 'look__image-bg', placeholder: 'collection-1' -%}
+
+          {%- if show_dots and look_dots != blank -%}
+            <div class="look__dots desktop">
+              {{ look_dots }}
+            </div>
+          {%- endif -%}
+        </div>
         <div
           class="look__content"
           data-popup-content
@@ -411,7 +420,7 @@
     ],
     "presets": [
       {
-        "name": "A test",
+        "name": "A test1",
         "category": "Collection",
         "blocks": [
           {
