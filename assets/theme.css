@@ -10034,8 +10034,9 @@ body {
   .index-look .look__slider--grid2 {
       grid-template-areas:
               "a b"
-              "c ."
+              "c c"
               "d e";
+      grid-template-columns: 1fr;
   }
   .index-look .product-item {
     width: 100%;
