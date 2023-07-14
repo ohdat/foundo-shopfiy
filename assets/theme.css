@@ -10035,7 +10035,7 @@ body {
   }
   .index-look .look__slider--grid2 {
     grid-template-columns:
-            repeat(2, minmax(0, 50%))
+            repeat(2, minmax(0, 1fr))
             100%
             repeat(2, minmax(0, 1fr));
   }
