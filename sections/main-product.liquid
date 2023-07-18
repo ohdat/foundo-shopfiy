@@ -32,7 +32,7 @@
     }
     {%- endif -%}
 </style>
-<div
+<section
   id=""
   class="{% if section.settings.gallery_style == 'slider' %}main-product-slider-wrapper{% else %}container{% endif %}"
 >
@@ -78,7 +78,7 @@
       </div>
     </div>
   </div>
-</div>
+</section>
 
 {%- liquid
   if section.settings.gallery_style != 'slider'
@@ -186,7 +186,7 @@
 
 {% schema %}
 {
-  "name": "Featured Productsed",
+  "name": "Featured Productsed1",
   "tag": "section",
   "class": "product-section single__product",
   "settings": [
