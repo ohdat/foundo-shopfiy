@@ -298,7 +298,7 @@ Usage:
                               data-quantity-button
                               tabindex="0"
                               title="
-                                                                                                                                {{- 'cart.general.increase_quantity_label' | t }} - {{ product.title | strip_html -}}">{%- render "icon-plus" -%}</button>
+                                                                {{- 'cart.general.increase_quantity_label' | t }} - {{ product.title | strip_html -}}">{%- render "icon-plus" -%}</button>
                           </div>
                         </div>
                       {%- endif -%}
@@ -560,13 +560,6 @@ Usage:
             {%- endcase -%}
           {%- endfor -%}
 
-        </div>
-      </div>
-    </div>
-    <div class="product__images">
-      <div class="product__slides product-single__photos">
-        <div class="product__photo" style="--aspect-ratio: 1.0;">
-          {{ 'product-5' | placeholder_svg_tag: 'placeholder-svg' }}
         </div>
       </div>
     </div>
