@@ -92,6 +92,11 @@
 <div class="product__wrapper {{ product_wrapper_modifier }}" data-product>
   <div class="product__wrapper__inner">
     <div class="product__page">
+      <div class="product-thumbnails">
+        {% for image in product.images %}
+          <img src="{{ image.src | img_url: 'small' }}" alt="{{ image.alt }}" />
+        {% endfor %}
+      </div>
       <div class="product__images{% if mobile_image_style == 'slider' %} product__images--no-thumbs{% else %} product__images--has-thumbs{% endif %}">
         {%- if product.media.size > 0 -%}
           <div class="product__slides product-single__photos"
