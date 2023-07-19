@@ -1,14 +1,4 @@
 <style>
-  {% if section.settings.gallery_style == 'slider' %}
-  #shopify-section-{{ section.id }}{
-    --productSliderHeight:{{ section.settings.carousel_height_desktop }};
-  }
-  @media screen and (max-width:767px){
-    #shopify-section-{{ section.id }}{
-      --productSliderHeight:{{ section.settings.carousel_height_mobile }};
-    }
-  }
-  {% endif %}
   {% assign colorBrightness = settings.color_body_bg | color_brightness %}
   {%- if colorBrightness < 130 -%}
   #shopify-section-{{ section.id }}.product-section select{
@@ -32,53 +22,6 @@
   }
   {%- endif -%}
 </style>
-<div
-        id=""
-        class="{% if section.settings.gallery_style == 'slider' %}main-product-slider-wrapper{% else %}container{% endif %}"
->
-  <div
-          class="yv_product_content_section {% if settings.layout_style == 'rounded'%}product-layout-rounded{% endif %}"
-          style="--layoutRadius:{% if settings.layout_style == 'rounded' %}10px{% else %}0px{% endif %}"
-  >
-    <div class="row no-gutters">
-      <div class="col-12 col-sm-12 col-md-6{% if section.settings.gallery_style == 'slider' %} col-lg-8 yv-product-slider-wrapper{% else %} col-lg-7{% endif %}">
-        <a class="skip-to-content-link button yv-visually-hidden focus-inside" href="#ProductData-{{ section.id }}">
-          {{ 'accessibility.skip_to_product_info' | t }}
-        </a>
-        {%- liquid
-          if section.settings.gallery_style == 'slider'
-            render 'product-page-images-slider', section: section, product: product
-          elsif section.settings.gallery_style == 'stacked'
-            render 'product-page-images-stacked', section: section, product: product
-          elsif section.settings.gallery_style == 'gallery'
-            render 'product-page-images-gallery', section: section, product: product
-          endif
-        -%}
-      </div>
-      <div class="col-12 col-sm-12 col-md-6{% if section.settings.gallery_style == 'slider' %} col-lg-4{% else %} col-lg-5{% endif %}">
-        <div id="ProductData-{{ section.id }}" class="sticky-item content-divider-mobile-{{ section.settings.content_divider_mobile}}">
-          {%- render 'product-form',
-                  product: product,
-                  section: section,
-                  mainProduct: true,
-                  sliderClass: 'slider-product-detail'
-          -%}
-          {%- if section.settings.gallery_style == 'slider' -%}
-            <div class="d-block d-md-none">
-              {%- liquid
-                if section.settings.style == 'accordion'
-                  render 'product-accordion-content',product: product,section: section,position: 'belowProductGalllery'
-                else
-                  render 'product-tabs-content', product: product, section: section, contentWidth: 'belowProductGalllery'
-                endif
-              -%}
-            </div>
-          {%- endif -%}
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
 
 {%- liquid
   if section.settings.gallery_style != 'slider'
