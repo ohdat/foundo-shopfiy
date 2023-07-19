@@ -245,6 +245,7 @@
     },
     "lookbook": {
       "type": "section-look",
+      "disabled": true,
       "blocks": {
         "lookbook-0": {
           "type": "product",
@@ -460,6 +461,7 @@
     },
     "078ab7f5-ce50-4a76-abb5-526c9dcbe783": {
       "type": "section-look2",
+      "disabled": true,
       "blocks": {
         "template--19259611742539__078ab7f5-ce50-4a76-abb5-526c9dcbe783-16892279913083f93b-0": {
           "type": "product",
@@ -561,6 +563,359 @@
         "padding_bottom": 50
       }
     },
+    "1ab6acb1-fcc5-4a57-989a-8b8691f8fb0c": {
+      "type": "section-testde",
+      "blocks": {
+        "template--19259611742539__1ab6acb1-fcc5-4a57-989a-8b8691f8fb0c-1689328246295b8bb1-0": {
+          "type": "product",
+          "settings": {
+            "product": "copy-of-make-the-cut-pac-lock-earring-large-model",
+            "position_x": 14,
+            "position_y": 37
+          }
+        },
+        "template--19259611742539__1ab6acb1-fcc5-4a57-989a-8b8691f8fb0c-1689328246295b8bb1-1": {
+          "type": "product",
+          "settings": {
+            "product": "copy-of-make-the-cut-pac-lock-earring-small-model",
+            "position_x": 45,
+            "position_y": 60
+          }
+        },
+        "template--19259611742539__1ab6acb1-fcc5-4a57-989a-8b8691f8fb0c-1689328246295b8bb1-2": {
+          "type": "product",
+          "settings": {
+            "product": "make-the-cut-pac-lock-long-earring-1",
+            "position_x": 45,
+            "position_y": 60
+          }
+        },
+        "template--19259611742539__1ab6acb1-fcc5-4a57-989a-8b8691f8fb0c-1689328246295b8bb1-3": {
+          "type": "product",
+          "settings": {
+            "product": "make-the-cut-pac-lock-earring-small-model-2",
+            "position_x": 45,
+            "position_y": 60
+          }
+        },
+        "template--19259611742539__1ab6acb1-fcc5-4a57-989a-8b8691f8fb0c-1689328246295b8bb1-4": {
+          "type": "product",
+          "settings": {
+            "product": "make-the-cut-pac-lock-long-earring-1",
+            "position_x": 45,
+            "position_y": 60
+          }
+        }
+      },
+      "block_order": [
+        "template--19259611742539__1ab6acb1-fcc5-4a57-989a-8b8691f8fb0c-1689328246295b8bb1-0",
+        "template--19259611742539__1ab6acb1-fcc5-4a57-989a-8b8691f8fb0c-1689328246295b8bb1-1",
+        "template--19259611742539__1ab6acb1-fcc5-4a57-989a-8b8691f8fb0c-1689328246295b8bb1-2",
+        "template--19259611742539__1ab6acb1-fcc5-4a57-989a-8b8691f8fb0c-1689328246295b8bb1-3",
+        "template--19259611742539__1ab6acb1-fcc5-4a57-989a-8b8691f8fb0c-1689328246295b8bb1-4"
+      ],
+      "settings": {
+        "image": "shopify:\/\/shop_images\/crossstudnecklacesets.jpg",
+        "image2": "shopify:\/\/shop_images\/make_the_cut_banner-3.png",
+        "title": "",
+        "show_dots": false,
+        "products_per_row": "2",
+        "enable_aspect_ratio": true,
+        "image_aspect_ratio": 1,
+        "button_type": "btn--white",
+        "button_size": "",
+        "button_style": "btn--outline",
+        "show_arrow": false,
+        "bg_color": "",
+        "color": "",
+        "dot_color": "",
+        "dot_background": "",
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
+    "4b781a49-8568-4541-bfa2-eab4caa71da5": {
+      "type": "section-test",
+      "blocks": {
+        "template--19259611742539__4b781a49-8568-4541-bfa2-eab4caa71da5-168932846908abdae6-0": {
+          "type": "product",
+          "settings": {
+            "product": "make-the-cut-pac-lock-earring-mini-model-1",
+            "position_x": 14,
+            "position_y": 37
+          }
+        },
+        "template--19259611742539__4b781a49-8568-4541-bfa2-eab4caa71da5-168932846908abdae6-1": {
+          "type": "product",
+          "settings": {
+            "product": "copy-of-make-the-cut-pac-lock-earring-mini-model",
+            "position_x": 45,
+            "position_y": 60
+          }
+        },
+        "template--19259611742539__4b781a49-8568-4541-bfa2-eab4caa71da5-168932846908abdae6-2": {
+          "type": "product",
+          "settings": {
+            "product": "make-the-cut-pac-lock-necklace",
+            "position_x": 45,
+            "position_y": 60
+          }
+        },
+        "template--19259611742539__4b781a49-8568-4541-bfa2-eab4caa71da5-168932846908abdae6-3": {
+          "type": "product",
+          "settings": {
+            "product": "copy-of-the-cross-earring-normal-model",
+            "position_x": 45,
+            "position_y": 60
+          }
+        },
+        "template--19259611742539__4b781a49-8568-4541-bfa2-eab4caa71da5-168932846908abdae6-4": {
+          "type": "product",
+          "settings": {
+            "product": "the-cross-earring-normal-model",
+            "position_x": 45,
+            "position_y": 60
+          }
+        }
+      },
+      "block_order": [
+        "template--19259611742539__4b781a49-8568-4541-bfa2-eab4caa71da5-168932846908abdae6-0",
+        "template--19259611742539__4b781a49-8568-4541-bfa2-eab4caa71da5-168932846908abdae6-1",
+        "template--19259611742539__4b781a49-8568-4541-bfa2-eab4caa71da5-168932846908abdae6-2",
+        "template--19259611742539__4b781a49-8568-4541-bfa2-eab4caa71da5-168932846908abdae6-3",
+        "template--19259611742539__4b781a49-8568-4541-bfa2-eab4caa71da5-168932846908abdae6-4"
+      ],
+      "settings": {
+        "image": "shopify:\/\/shop_images\/paclocknecklaceygf-2.jpg",
+        "title": "",
+        "show_dots": false,
+        "products_per_row": "2",
+        "enable_aspect_ratio": true,
+        "image_aspect_ratio": 1,
+        "button_type": "btn--white",
+        "button_size": "",
+        "button_style": "btn--outline",
+        "show_arrow": false,
+        "bg_color": "",
+        "color": "",
+        "dot_color": "",
+        "dot_background": "",
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
+    "1777e6dc-00b3-48e7-88c0-58bbd83acd97": {
+      "type": "section-hero",
+      "blocks": {
+        "a2f00dc8-a920-4a9f-a88b-1aa8b5cc3ad2": {
+          "type": "heading",
+          "settings": {
+            "title": "PAINTING",
+            "heading_size": 9
+          }
+        },
+        "be777a0e-840d-49b2-8d38-51983d3190ef": {
+          "type": "text",
+          "settings": {
+            "description": "Unleash Your Inner Artist",
+            "text_size": 5,
+            "text_style": "font-body"
+          }
+        },
+        "e444fddd-6f27-4f94-9859-356e688cceb6": {
+          "type": "button",
+          "settings": {
+            "link_text": "Discover now",
+            "link": "shopify:\/\/collections\/the-painting",
+            "button_type": "btn--black",
+            "button_size": "",
+            "button_style": "btn--text",
+            "show_arrow": false
+          }
+        }
+      },
+      "block_order": [
+        "a2f00dc8-a920-4a9f-a88b-1aa8b5cc3ad2",
+        "be777a0e-840d-49b2-8d38-51983d3190ef",
+        "e444fddd-6f27-4f94-9859-356e688cceb6"
+      ],
+      "settings": {
+        "height": "screen-height-full",
+        "width": "wrapper--full",
+        "image_1": "shopify:\/\/shop_images\/jeff_diamond_hand.png",
+        "mobile_height": "screen-height-full--mobile",
+        "flex_align": "align--middle-left",
+        "overlay_opacity": 0,
+        "overlay_color": "#000000",
+        "show_overlay_text": false,
+        "bg_color": "",
+        "color": "#000000"
+      }
+    },
+    "0ce00541-ce9b-4cbc-901a-3f97805428da": {
+      "type": "section-rich-text",
+      "blocks": {
+        "template--19109415616843__0ce00541-ce9b-4cbc-901a-3f97805428da-16869136462c4b0650-1": {
+          "type": "heading",
+          "settings": {
+            "title": "Posuere morbi leo urna molestie at elementum eu facilisis. Etiam non quam lacus suspendisse. Gravida cum sociis natoque penatibus et magnis dis parturient. Vitae congue eu consequat ac felis donec et odio pellentesque. Sed vulputate odio ut enim blandit volutpat maecenas volutpat. Amet nulla facilisi morbi tempus iaculis. Sed euismod nisi porta lorem mollis aliquam ut porttitor. Ornare massa eget egestas purus viverra accumsan in nisl nisi",
+            "text_size": 1
+          }
+        }
+      },
+      "block_order": [
+        "template--19109415616843__0ce00541-ce9b-4cbc-901a-3f97805428da-16869136462c4b0650-1"
+      ],
+      "settings": {
+        "width": "wrapper",
+        "align_text": "text-center",
+        "bg_color": "",
+        "color": "",
+        "padding_top": 50,
+        "padding_bottom": 30
+      }
+    },
+    "32f38c36-c9b4-4636-b42c-66dd3d3d4489": {
+      "type": "section-testde",
+      "blocks": {
+        "cc4017fd-0e14-4dcd-beb7-fa44a518f89f": {
+          "type": "product",
+          "settings": {
+            "product": "copy-of-make-the-cut-pac-lock-earring-large-model",
+            "position_x": 14,
+            "position_y": 37
+          }
+        },
+        "12335fe1-762c-4fad-9b79-9531f050f39f": {
+          "type": "product",
+          "settings": {
+            "product": "copy-of-make-the-cut-pac-lock-earring-small-model",
+            "position_x": 45,
+            "position_y": 60
+          }
+        },
+        "48e641a4-c3d6-40ac-9edb-701fd35b5518": {
+          "type": "product",
+          "settings": {
+            "product": "make-the-cut-pac-lock-long-earring-1",
+            "position_x": 45,
+            "position_y": 60
+          }
+        },
+        "158ac2df-8d3a-4a95-ba23-421022ae2b19": {
+          "type": "product",
+          "settings": {
+            "product": "make-the-cut-pac-lock-earring-small-model-2",
+            "position_x": 45,
+            "position_y": 60
+          }
+        },
+        "bb6d15c8-7921-4728-9910-dd8fe064c296": {
+          "type": "product",
+          "settings": {
+            "product": "make-the-cut-pac-lock-long-earring-1",
+            "position_x": 45,
+            "position_y": 60
+          }
+        }
+      },
+      "block_order": [
+        "cc4017fd-0e14-4dcd-beb7-fa44a518f89f",
+        "12335fe1-762c-4fad-9b79-9531f050f39f",
+        "48e641a4-c3d6-40ac-9edb-701fd35b5518",
+        "158ac2df-8d3a-4a95-ba23-421022ae2b19",
+        "bb6d15c8-7921-4728-9910-dd8fe064c296"
+      ],
+      "settings": {
+        "image": "shopify:\/\/shop_images\/crossstudnecklacesets.jpg",
+        "image2": "shopify:\/\/shop_images\/make_the_cut_banner-3.png",
+        "title": "",
+        "show_dots": false,
+        "products_per_row": "2",
+        "enable_aspect_ratio": true,
+        "image_aspect_ratio": 1,
+        "button_type": "btn--white",
+        "button_size": "",
+        "button_style": "btn--outline",
+        "show_arrow": false,
+        "bg_color": "",
+        "color": "",
+        "dot_color": "",
+        "dot_background": "",
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
+    "7a4d35d0-e09a-40e5-a9af-d10949cebab9": {
+      "type": "section-test",
+      "blocks": {
+        "92faa2f9-cc44-4336-bd0c-8719da320e0a": {
+          "type": "product",
+          "settings": {
+            "product": "make-the-cut-pac-lock-earring-mini-model-1",
+            "position_x": 14,
+            "position_y": 37
+          }
+        },
+        "67901a32-2729-4797-b25c-2844f2cf8f8f": {
+          "type": "product",
+          "settings": {
+            "product": "copy-of-make-the-cut-pac-lock-earring-mini-model",
+            "position_x": 45,
+            "position_y": 60
+          }
+        },
+        "38eca7f9-fbaa-476a-94c2-384a906f527e": {
+          "type": "product",
+          "settings": {
+            "product": "make-the-cut-pac-lock-necklace",
+            "position_x": 45,
+            "position_y": 60
+          }
+        },
+        "046e7c6f-23c2-4f67-92e4-6af4f9d744af": {
+          "type": "product",
+          "settings": {
+            "product": "copy-of-the-cross-earring-normal-model",
+            "position_x": 45,
+            "position_y": 60
+          }
+        },
+        "d541c856-c6af-4d9e-ab6f-6d033ba5c816": {
+          "type": "product",
+          "settings": {
+            "product": "the-cross-earring-normal-model",
+            "position_x": 45,
+            "position_y": 60
+          }
+        }
+      },
+      "block_order": [
+        "92faa2f9-cc44-4336-bd0c-8719da320e0a",
+        "67901a32-2729-4797-b25c-2844f2cf8f8f",
+        "38eca7f9-fbaa-476a-94c2-384a906f527e",
+        "046e7c6f-23c2-4f67-92e4-6af4f9d744af",
+        "d541c856-c6af-4d9e-ab6f-6d033ba5c816"
+      ],
+      "settings": {
+        "image": "shopify:\/\/shop_images\/paclocknecklaceygf-2.jpg",
+        "title": "",
+        "show_dots": false,
+        "products_per_row": "2",
+        "enable_aspect_ratio": true,
+        "image_aspect_ratio": 1,
+        "button_type": "btn--white",
+        "button_size": "",
+        "button_style": "btn--outline",
+        "show_arrow": false,
+        "bg_color": "",
+        "color": "",
+        "dot_color": "",
+        "dot_background": "",
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
     "hero": {
       "type": "section-hero",
       "blocks": {
@@ -607,30 +962,6 @@
         "show_overlay_text": false,
         "bg_color": "",
         "color": "#000000"
-      }
-    },
-    "0ce00541-ce9b-4cbc-901a-3f97805428da": {
-      "type": "section-rich-text",
-      "disabled": true,
-      "blocks": {
-        "template--19109415616843__0ce00541-ce9b-4cbc-901a-3f97805428da-16869136462c4b0650-1": {
-          "type": "heading",
-          "settings": {
-            "title": "FOUNDO CARE",
-            "text_size": 8
-          }
-        }
-      },
-      "block_order": [
-        "template--19109415616843__0ce00541-ce9b-4cbc-901a-3f97805428da-16869136462c4b0650-1"
-      ],
-      "settings": {
-        "width": "wrapper",
-        "align_text": "text-center",
-        "bg_color": "",
-        "color": "",
-        "padding_top": 50,
-        "padding_bottom": 30
       }
     },
     "576d4a58-e3a8-484d-a858-b222b54d73ec": {
@@ -717,8 +1048,13 @@
     "c9c4deb9-6347-4c3c-b3a1-2e1ea801415b",
     "078ab7f5-ce50-4a76-abb5-526c9dcbe783",
     "d7a90510-3099-4a27-be96-381aa43e2b7a",
-    "hero",
+    "1ab6acb1-fcc5-4a57-989a-8b8691f8fb0c",
+    "4b781a49-8568-4541-bfa2-eab4caa71da5",
+    "1777e6dc-00b3-48e7-88c0-58bbd83acd97",
     "0ce00541-ce9b-4cbc-901a-3f97805428da",
+    "32f38c36-c9b4-4636-b42c-66dd3d3d4489",
+    "7a4d35d0-e09a-40e5-a9af-d10949cebab9",
+    "hero",
     "576d4a58-e3a8-484d-a858-b222b54d73ec"
   ]
 }
