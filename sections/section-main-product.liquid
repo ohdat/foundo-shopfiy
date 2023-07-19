@@ -1,44 +1,44 @@
 <style>
   {% if section.settings.gallery_style == 'slider' %}
+  #shopify-section-{{ section.id }}{
+    --productSliderHeight:{{ section.settings.carousel_height_desktop }};
+  }
+  @media screen and (max-width:767px){
     #shopify-section-{{ section.id }}{
-      --productSliderHeight:{{ section.settings.carousel_height_desktop }};
+      --productSliderHeight:{{ section.settings.carousel_height_mobile }};
     }
-    @media screen and (max-width:767px){
-      #shopify-section-{{ section.id }}{
-        --productSliderHeight:{{ section.settings.carousel_height_mobile }};
-      }
-    }
+  }
   {% endif %}
-    {% assign colorBrightness = settings.color_body_bg | color_brightness %}
-    {%- if colorBrightness < 130 -%}
-      #shopify-section-{{ section.id }}.product-section select{
-        background: url({{ 'select-arrow-white.png' | asset_url }}) no-repeat 97% 50% /10px transparent;
-      }
-      #shopify-section-{{ section.id }} .product-view-dropdown select {
-        background: url({{ 'select-arrow-white.png' | asset_url }}) no-repeat 94% 50% /9px transparent;
-      }
-      #shopify-section-{{ section.id }} .selling_plan select {
-        background: url({{ 'select-arrow-white.png' | asset_url }}) no-repeat 97% 50% /10px var(--primaryAlternateBg);
-      }
-    {%- else -%}
-    #shopify-section-{{ section.id }}.product-section select{
-      background:url({{ 'lang-dropdown-arrow.svg' | asset_url }}) no-repeat 97% 50% /10px transparent;
-    }
-    #shopify-section-{{ section.id }} .product-view-dropdown select {
-      background: url({{ 'lang-dropdown-arrow.svg' | asset_url }}) no-repeat 94% 50% /9px transparent ;
-    }
-    #shopify-section-{{ section.id }} .selling_plan select {
-      background:url({{ 'lang-dropdown-arrow.svg' | asset_url }}) no-repeat 97% 50% /10px var(--primaryAlternateBg);
-    }
-    {%- endif -%}
+  {% assign colorBrightness = settings.color_body_bg | color_brightness %}
+  {%- if colorBrightness < 130 -%}
+  #shopify-section-{{ section.id }}.product-section select{
+    background: url({{ 'select-arrow-white.png' | asset_url }}) no-repeat 97% 50% /10px transparent;
+  }
+  #shopify-section-{{ section.id }} .product-view-dropdown select {
+    background: url({{ 'select-arrow-white.png' | asset_url }}) no-repeat 94% 50% /9px transparent;
+  }
+  #shopify-section-{{ section.id }} .selling_plan select {
+    background: url({{ 'select-arrow-white.png' | asset_url }}) no-repeat 97% 50% /10px var(--primaryAlternateBg);
+  }
+  {%- else -%}
+  #shopify-section-{{ section.id }}.product-section select{
+    background:url({{ 'lang-dropdown-arrow.svg' | asset_url }}) no-repeat 97% 50% /10px transparent;
+  }
+  #shopify-section-{{ section.id }} .product-view-dropdown select {
+    background: url({{ 'lang-dropdown-arrow.svg' | asset_url }}) no-repeat 94% 50% /9px transparent ;
+  }
+  #shopify-section-{{ section.id }} .selling_plan select {
+    background:url({{ 'lang-dropdown-arrow.svg' | asset_url }}) no-repeat 97% 50% /10px var(--primaryAlternateBg);
+  }
+  {%- endif -%}
 </style>
-<section
-  id=""
-  class="{% if section.settings.gallery_style == 'slider' %}main-product-slider-wrapper{% else %}container{% endif %}"
+<div
+        id=""
+        class="{% if section.settings.gallery_style == 'slider' %}main-product-slider-wrapper{% else %}container{% endif %}"
 >
   <div
-    class="yv_product_content_section {% if settings.layout_style == 'rounded'%}product-layout-rounded{% endif %}"
-    style="--layoutRadius:{% if settings.layout_style == 'rounded' %}10px{% else %}0px{% endif %}"
+          class="yv_product_content_section {% if settings.layout_style == 'rounded'%}product-layout-rounded{% endif %}"
+          style="--layoutRadius:{% if settings.layout_style == 'rounded' %}10px{% else %}0px{% endif %}"
   >
     <div class="row no-gutters">
       <div class="col-12 col-sm-12 col-md-6{% if section.settings.gallery_style == 'slider' %} col-lg-8 yv-product-slider-wrapper{% else %} col-lg-7{% endif %}">
@@ -58,13 +58,13 @@
       <div class="col-12 col-sm-12 col-md-6{% if section.settings.gallery_style == 'slider' %} col-lg-4{% else %} col-lg-5{% endif %}">
         <div id="ProductData-{{ section.id }}" class="sticky-item content-divider-mobile-{{ section.settings.content_divider_mobile}}">
           {%- render 'product-form',
-            product: product,
-            section: section,
-            mainProduct: true,
-            sliderClass: 'slider-product-detail'
+                  product: product,
+                  section: section,
+                  mainProduct: true,
+                  sliderClass: 'slider-product-detail'
           -%}
           {%- if section.settings.gallery_style == 'slider' -%}
-            <div class="d-block d-md-none">              
+            <div class="d-block d-md-none">
               {%- liquid
                 if section.settings.style == 'accordion'
                   render 'product-accordion-content',product: product,section: section,position: 'belowProductGalllery'
@@ -78,7 +78,7 @@
       </div>
     </div>
   </div>
-</section>
+</div>
 
 {%- liquid
   if section.settings.gallery_style != 'slider'
@@ -101,12 +101,12 @@
   endfor
   render 'product-form', product: product, section: section, sizeChartContent: true
 -%}
-{% liquid 
+{% liquid
   for block in section.blocks
-  if block.type == 'query-form' and block.settings.heading != blank
-    render 'product-query-form', block: block
-  endif
-  endfor 
+    if block.type == 'query-form' and block.settings.heading != blank
+      render 'product-query-form', block: block
+    endif
+  endfor
 %}
 <script type="application/json" id="product3DModel-{{ product.id }}">
   {{ product.media | where: 'media_type', 'model' | json }}
@@ -145,13 +145,13 @@
                 {% if variant.image %}
                   "image": "http:{{ variant.image.src | image_url }}",
                 {% endif %}
-                {% if variant.title != blank %}
+{% if variant.title != blank %}
                   "name" : "{{ variant.title | strip_html | escape }}",
                 {% endif %}
-                {% if variant.sku != blank %}
+{% if variant.sku != blank %}
                   "sku": "{{ variant.sku }}",
                 {% endif %}
-                {% if variant.weight != blank %}
+{% if variant.weight != blank %}
                   "weight": {
                     "@type": "QuantitativeValue",
                     {% if variant.weight_unit != blank %}
@@ -163,7 +163,7 @@
                 "url": "{{ shop.url }}{{ variant.url }}"
             }
           }{% unless forloop.last %},{% endunless %}
-        {% endfor %}
+  {% endfor %}
       ]
     {% endif %}
   }
@@ -186,7 +186,7 @@
 
 {% schema %}
 {
-  "name": "AB test",
+  "name": "t:sections.main-product.name",
   "tag": "section",
   "class": "product-section single__product",
   "settings": [
@@ -575,7 +575,7 @@
           "label": "t:sections.main-product.blocks.button.settings.show_subscriptions_plan.label",
           "info": "t:sections.main-product.blocks.button.settings.show_subscriptions_plan.info"
         },
-        {  
+        {
           "type": "checkbox",
           "id": "show_recipient_form",
           "default": false,
