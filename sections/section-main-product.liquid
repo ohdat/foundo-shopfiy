@@ -24,18 +24,6 @@
 </style>
 
 {%- liquid
-  if section.settings.gallery_style != 'slider'
-    if section.settings.width == 'full'
-      if section.settings.style == 'accordion'
-        render 'product-accordion-content', product: product, section: section, contentWidth: 'full'
-      else
-        render 'product-tabs-content', product: product, section: section, contentWidth: 'full'
-      endif
-    endif
-  endif
--%}
-
-{%- liquid
   render 'similar-products', product: product, section: section
   for block in section.blocks
     if block.type == 'button' and block.settings.sticky_add_to_cart
