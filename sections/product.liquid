@@ -657,7 +657,7 @@
                 {%- endcase -%}
               {%- endfor -%}
             </div>
-            <div class="product__thumbs__holder" data-thumbs-slider>
+            <div class="product__thumbs__holder product__thumbs__holdered" data-thumbs-slider>
               {%- for media in product.media -%}
                 <div class="product__thumb" data-thumb-item>
                   <a
@@ -688,8 +688,8 @@
 
   <script>
     document.addEventListener("DOMContentLoaded", function() {
-      var link = document.querySelector("a[href='#product-   {{ media.id }} ']");
-      var targetDiv = document.getElementById("product-   {{ media.id }}");
+      var link = document.querySelector("a[href='#product-      {{ media.id }} ']");
+      var targetDiv = document.getElementById("product-      {{ media.id }}");
       link.addEventListener("click", function(event) {
         event.preventDefault();
         targetDiv.scrollIntoView({behavior: 'smooth'});
@@ -724,8 +724,8 @@
   <script type="application/ld+json">
     {
     "@context": "http://schema.org/",
-                                                          "@type": "Product",
-                                                          "name": {{ product.title | json }},
+                                                                      "@type": "Product",
+                                                                      "name": {{ product.title | json }},
     "url": {{ request.origin | append: product.url | json }},
     {% if seo_media -%}
       "image": [
@@ -739,7 +739,7 @@
     {%- if product.metafields.reviews.rating.value != blank -%}
       "aggregateRating": {
       "@type": "AggregateRating",
-                                                                                          "ratingValue": "{{ product.metafields.reviews.rating.value }}",
+                                                                                                            "ratingValue": "{{ product.metafields.reviews.rating.value }}",
       "ratingCount": "{{ product.metafields.reviews.rating_count.value }}",
       "bestRating": "{{ product.metafields.reviews.rating.value.scale_max }}",
       "worstRating": "{{ product.metafields.reviews.rating.value.scale_min }}"
@@ -747,7 +747,7 @@
     {%- endif -%}
     "brand": {
     "@type": "Organization",
-                                                            "name": {{ product.vendor | json }}
+                                                                        "name": {{ product.vendor | json }}
     },
     "offers": [
     {%- for variant in product.variants -%}
