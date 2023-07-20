@@ -12047,7 +12047,7 @@ body {
 
 .product__thumbs__holdered {
   width: 44px;
-  position: fixed;
+  position: fixed !important;
   right: 30px;
   top: 200px;
   list-style: none;
@@ -12056,6 +12056,7 @@ body {
   text-align: left;
   cursor: pointer;
   z-index: 12;
+  flex-wrap: wrap !important;
   /* overflow-x: auto;
   overflow-y: hidden; */
   /* -webkit-overflow-scrolling: touch;
