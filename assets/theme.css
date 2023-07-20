@@ -13648,8 +13648,8 @@ main-search .input-holder {
 .product__thumb__link {
   display: flex;
   flex-flow: row wrap;
-  justify-content: center;
-  align-items: center;
+  /* justify-content: center;
+  align-items: center; */
   width: 44px;
   height: 58px;
   font-size: 0;
