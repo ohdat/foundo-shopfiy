@@ -12173,6 +12173,10 @@ body {
   display: none;
 }
 
+.product__thumbed{
+  padding: 0 !important;
+}
+
 .product__thumb {
   position: relative;
   display: inline-block;
