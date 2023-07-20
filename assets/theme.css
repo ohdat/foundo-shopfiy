@@ -12045,6 +12045,25 @@ body {
   }
 }
 
+.product__thumbs__holdered {
+  width: 44px;
+  position: fixed;
+  right: 30px;
+  top: 200px;
+  list-style: none;
+  display: flex;
+  flex-flow: wrap;
+  text-align: left;
+  cursor: pointer;
+  z-index: 12;
+  /* overflow-x: auto;
+  overflow-y: hidden; */
+  /* -webkit-overflow-scrolling: touch;
+  scrollbar-width: none;
+  -ms-overflow-style: none; */
+  /* for Internet Explorer, Edge */
+}
+
 .product__thumbs__holder {
   position: relative;
   list-style: none;
@@ -12193,8 +12212,8 @@ body {
   flex-flow: row wrap;
   justify-content: center;
   align-items: center;
-  width: 75px;
-  height: 75px;
+  width: 44px;
+  height: 58px;
   font-size: 0;
   line-height: 0;
   text-align: center;
