@@ -519,11 +519,28 @@
   data-header-backfill
   style="height: var(--menu-height);{% if transparent_header %}display: none;{% endif %}"></div>
 
+<script>
+  document.addEventListener("DOMContentLoaded", function() {
+    var header = document.querySelector(".theme__header");
+    var prevScrollPos = window.pageYOffset;
+
+    window.addEventListener("scroll", function() {
+      var currentScrollPos = window.pageYOffset;
+
+      if (prevScrollPos > currentScrollPos) {
+        header.classList.remove("active");
+      } else {
+        header.classList.add("active");
+      } prevScrollPos = currentScrollPos;
+    });
+  });
+</script>
+
 <script type="application/ld+json">
   {
   "@context": "http://schema.org",
-        "@type": "Organization",
-        "name": {{ shop.name | json }},
+              "@type": "Organization",
+              "name": {{ shop.name | json }},
   {% if logo %}
     "logo": {{ logo | image_url: logo.width | prepend: "https:" | json }},
   {% endif %}
@@ -549,14 +566,14 @@
   <script type="application/ld+json">
     {
     "@context": "http://schema.org",
-                  "@type": "WebSite",
-                  "name": {{ shop.name | json }},
+                              "@type": "WebSite",
+                              "name": {{ shop.name | json }},
     "potentialAction": {
-                    "@type": "SearchAction",
-                    "target": {{ potential_action_target | json }},
+                                "@type": "SearchAction",
+                                "target": {{ potential_action_target | json }},
     "query-input": "required name=search_term_string"
-                  },
-                  "url": {{ shop.url | append: page.url | json }}
+                              },
+                              "url": {{ shop.url | append: page.url | json }}
     }
   </script>
 {%- endif -%}

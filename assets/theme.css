@@ -5977,13 +5977,28 @@ img.fit-cover {
   border-top: 1px solid var(--border);
 }
 
-.theme__header {
+/* .theme__header {
   position: absolute;
   z-index: 2300;
   width: 100%;
   color: var(--text);
   transition: border 0s 0.2s;
+} */
+.theme__header {
+  position: fixed;
+  top: 0px;
+  z-index: 2300;
+  width: 100%;
+  color: var(--text);
+  transition: top 0.3s ease-in-out;
 }
+
+.theme__header.active {
+  top: -100px;
+  transition: top 0.3s ease-in-out;
+
+}
+
 
 .has-line-design .theme__header {
   border-bottom: 1px solid var(--border);
