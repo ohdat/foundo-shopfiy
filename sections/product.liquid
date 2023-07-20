@@ -118,33 +118,6 @@
               </button>
             {%- endif -%}
 
-            {%- if enable_thumbnails and product.media.size > 1 -%}
-              <div class="product__thumbs" data-product-thumbs>
-                <div class="product__thumbs__holder" data-thumbs-slider>
-                  {%- for media in product.media -%}
-                    <div class="product__thumb{% if forloop.first %} is-active{% endif %}" data-thumb-item>
-                      <a
-                        class="product__thumb__link"
-                        href="{{ media.preview_image.src }}"
-                        aria-current="{% if forloop.first %}true{% else %}false{% endif %}"
-                        data-media-id="{{ section.id }}-{{ media.id }}"
-                        data-thumb-index="{{ forloop.index0 }}"
-                        data-thumb-link>
-                        {%- liquid
-                        render 'image' image: media.preview_image, width: 150, height: 150, sizes: '75px', widths: '75, 100, 150, 225, 300', aspect_ratio: 1
-
-                        if media.media_type == 'video' or media.media_type == 'external_video'
-                          render 'icon-media-video'
-                        elsif media.media_type == 'model'
-                          render 'icon-media-model'
-                        endif
-                      -%}
-                      </a>
-                    </div>
-                  {%- endfor -%}
-                </div>
-              </div>
-            {%- endif -%}
           {%- else -%}
             <div
               class="product__slides product__slides--{{ image_size }} product-single__photos"
@@ -715,8 +688,8 @@
 
   <script>
     document.addEventListener("DOMContentLoaded", function() {
-      var link = document.querySelector("a[href='#product- {{ media.id }} ']");
-      var targetDiv = document.getElementById("product- {{ media.id }}");
+      var link = document.querySelector("a[href='#product-   {{ media.id }} ']");
+      var targetDiv = document.getElementById("product-   {{ media.id }}");
       link.addEventListener("click", function(event) {
         event.preventDefault();
         targetDiv.scrollIntoView({behavior: 'smooth'});
@@ -751,8 +724,8 @@
   <script type="application/ld+json">
     {
     "@context": "http://schema.org/",
-                          "@type": "Product",
-                          "name": {{ product.title | json }},
+                                                          "@type": "Product",
+                                                          "name": {{ product.title | json }},
     "url": {{ request.origin | append: product.url | json }},
     {% if seo_media -%}
       "image": [
@@ -766,7 +739,7 @@
     {%- if product.metafields.reviews.rating.value != blank -%}
       "aggregateRating": {
       "@type": "AggregateRating",
-                                          "ratingValue": "{{ product.metafields.reviews.rating.value }}",
+                                                                                          "ratingValue": "{{ product.metafields.reviews.rating.value }}",
       "ratingCount": "{{ product.metafields.reviews.rating_count.value }}",
       "bestRating": "{{ product.metafields.reviews.rating.value.scale_max }}",
       "worstRating": "{{ product.metafields.reviews.rating.value.scale_min }}"
@@ -774,7 +747,7 @@
     {%- endif -%}
     "brand": {
     "@type": "Organization",
-                            "name": {{ product.vendor | json }}
+                                                            "name": {{ product.vendor | json }}
     },
     "offers": [
     {%- for variant in product.variants -%}
