@@ -11339,9 +11339,15 @@ main-search .input-holder {
     grid-column: span 2;
   }
 
-  .look_slide_test:nth-of-type(3) .product-item__image .product-link .product-item__bg .image-wrapper  img {
-    height: 632px;
+  .look_slide_test:nth-of-type(3) .product-item__image .product-link .product-item__bg .image-wrapper  img,
+  .look_slide_test:nth-of-type(3) .product-item__image .product-link .product-item__bg,
+  .look_slide_test:nth-of-type(3) .product-item__image .product-link .product-item__bg .image-wrapper,
+  .look_slide_test:nth-of-type(3) .product-item__image .product-link .product-item__bg__under .image-wrapper  img,
+  .look_slide_test:nth-of-type(3) .product-item__image .product-link .product-item__bg__under,
+  .look_slide_test:nth-of-type(3) .product-item__image .product-link .product-item__bg__under .image-wrapper {
+    height: 400px;
   }
+
   .index-look .product-item {
     width: 100%;
     display: flex;
