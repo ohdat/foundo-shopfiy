@@ -111,6 +111,30 @@
   color: #00031E;
 }
 
+#formWidth .breadcrumbs a,
+#formWidth .btn__text,
+#formWidth .product__description__content__actions button{
+  font-family: 'Foundo_Medium' !important;
+  font-weight: bolder;
+  color: #00031E;
+}
+
+#formWidth .product__submit__item button{
+  font-family: 'Foundo_Medium' !important;
+  font-weight: bolder;
+  color: #fff;
+}
+
+
+#formWidth .product__title,
+#formWidth .product__price span,
+#formWidth .select-popout span,
+#formWidth .product__description__content__inner p,
+#formWidth .product__description__content__inner span{
+  font-family: 'Foundo_Headline' !important;
+  color: #00031E;
+}
+
 :root {
   --bg: var(--COLOR-BG);
   --bg-accent: var(--COLOR-BG-SECONDARY);
