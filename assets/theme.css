@@ -63,7 +63,7 @@
   font-style: normal;
 }
 
-*:not(.fa):not([class*="pe-"]):not(.lni):not(i[class*="iccl-"]):not(i[class*="la"]):not(i[class*="fa"]):not(.jdgm-star), .btn.btn--outline.btn--white span, .btn.btn--outline.btn--white, .btn.btn--outline.btn--small.btn--white, .btn.btn--solid.btn--primary, .btn.btn--solid.btn--primary span, .look__title.caps, .sliderow__title, .icon.icon-arrow-right path, .icon.icon-arrow-right, .hero__description.rte p{
+*{
   font-family: 'Foundo_Medium' !important;
 }
 
