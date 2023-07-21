@@ -128,6 +128,8 @@
 
     <!-- CSS ================================================================== -->
 
+    {{ 'font-settings.css' | asset_url | stylesheet_tag }}
+
     {% render 'css-variables' %}
 
     {{ 'theme.css' | asset_url | stylesheet_tag }}
