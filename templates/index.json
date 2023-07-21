@@ -709,6 +709,7 @@
       "blocks": {
         "a2f00dc8-a920-4a9f-a88b-1aa8b5cc3ad2": {
           "type": "heading",
+          "disabled": true,
           "settings": {
             "title": "PAINTING",
             "heading_size": 9
@@ -716,6 +717,7 @@
         },
         "be777a0e-840d-49b2-8d38-51983d3190ef": {
           "type": "text",
+          "disabled": true,
           "settings": {
             "description": "Unleash Your Inner Artist",
             "text_size": 5,
@@ -724,6 +726,7 @@
         },
         "e444fddd-6f27-4f94-9859-356e688cceb6": {
           "type": "button",
+          "disabled": true,
           "settings": {
             "link_text": "Discover now",
             "link": "shopify:\/\/collections\/the-painting",
@@ -921,6 +924,7 @@
       "blocks": {
         "heading": {
           "type": "heading",
+          "disabled": true,
           "settings": {
             "title": "PAINTING",
             "heading_size": 9
@@ -928,6 +932,7 @@
         },
         "text": {
           "type": "text",
+          "disabled": true,
           "settings": {
             "description": "Unleash Your Inner Artist",
             "text_size": 5,
@@ -936,6 +941,7 @@
         },
         "button": {
           "type": "button",
+          "disabled": true,
           "settings": {
             "link_text": "Discover now",
             "link": "shopify:\/\/collections\/the-painting",
