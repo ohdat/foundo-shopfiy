@@ -98,6 +98,19 @@
   font-size: calc(var(--font-1) * var(--FONT-ADJUST-BODY)) !important;
 }
 
+#cart-bar .cart-bar__info h4,
+#cart-bar .cart-bar__info p,
+#cart-bar .cart-bar__info div,
+#cart-bar .cart-bar__info span{
+  font-family: 'Foundo_Headline' !important;
+  color: #00031E;
+}
+
+#cart-bar .cart-bar__form span{
+  font-family: 'Foundo_Medium' !important;
+  color: #00031E;
+}
+
 :root {
   --bg: var(--COLOR-BG);
   --bg-accent: var(--COLOR-BG-SECONDARY);
