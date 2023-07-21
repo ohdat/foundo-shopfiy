@@ -480,7 +480,15 @@ Usage:
         {%- endif -%}
 
         <p class="product-item__title">{{ product.title | strip_html | escape }}</p>
-
+        <div class="product-item__price__holder">
+          <div class="product-item__price" data-product-price="">
+            <span class="price">
+              <span class="new-price">
+                Price
+              </span>
+            </span>
+          </div>
+        </div>
         <div class="product-item__price__holder{% if has_siblings %} has-siblings{% endif %}">
           {%- if has_siblings or product_item_cutline != blank -%}
             <span class="product-item__cutline" data-product-cutline>{{ product_item_cutline }}</span>
