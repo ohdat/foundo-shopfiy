@@ -94,7 +94,7 @@
 #footerBlocks a {
   font-family: 'Foundo_Medium' !important;
   color: #9B9B9B;
-  font-weight: 500;
+  font-weight: bolder;
   font-size: calc(var(--font-1) * var(--FONT-ADJUST-BODY)) !important;
 }
 
