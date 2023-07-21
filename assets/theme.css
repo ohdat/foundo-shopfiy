@@ -13629,7 +13629,7 @@ main-search .input-holder {
   transition: opacity 0.2s;
 }
 .test1_img{
-  height: calc(100vh - var(--menu-height-sticky, 0px));
+  height: calc(100vh - var(--menu-height-sticky, 0px)) !important;
 }
 
 .test1_img .image-wrapper img{
