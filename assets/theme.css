@@ -11337,9 +11337,11 @@ main-search .input-holder {
 
   .look_slide_test:nth-of-type(3) {
     grid-column: span 2;
-    height: 632px;
   }
 
+  .look_slide_test:nth-of-type(3) .product-item__image .product-link .product-item__bg .image-wrapper  img {
+    height: 632px;
+  }
   .index-look .product-item {
     width: 100%;
     display: flex;
