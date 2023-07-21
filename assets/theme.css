@@ -6930,6 +6930,7 @@ img.fit-cover {
 
 .header__wrapper {
   --bg: var(--COLOR-MENU-BG);
+  /* background: transparent; */
   --text: var(--COLOR-MENU-LINK);
   --link: var(--COLOR-MENU-LINK);
   --link-hover: var(--COLOR-MENU-LINK-HOVER);
@@ -6944,6 +6945,7 @@ img.fit-cover {
 
 .header__desktop__upper {
   --bg: var(--COLOR-HEADER-BG);
+  /* background: transparent; */
   --text: var(--COLOR-HEADER-LINK);
   --link: var(--COLOR-HEADER-LINK);
   --link-hover: var(--COLOR-HEADER-LINK-HOVER);
