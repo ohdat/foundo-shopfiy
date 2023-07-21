@@ -63,12 +63,12 @@
   font-style: normal;
 }
 
-#idddddd .navtext{
+#headerSections .header__desktop {
   font-family: 'Foundo_Medium' !important;
+  font-weight: 500;
+  color: #00031E;
 }
-#headerSections .navtext{
-  font-family: 'Foundo_Medium' !important;
-}
+
 :root {
   --bg: var(--COLOR-BG);
   --bg-accent: var(--COLOR-BG-SECONDARY);
@@ -7410,8 +7410,6 @@ img.fit-cover {
 .navtext {
   font-size: calc(var(--font-1) * var(--FONT-ADJUST-NAV));
   display: block;
-  font-weight: 500;
-  color: #00031E;
 }
 
 .navtext,
