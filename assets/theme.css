@@ -66,7 +66,9 @@
 #idddddd .navtext{
   font-family: 'Foundo_Medium' !important;
 }
-
+#headerSections .navtext{
+  font-family: 'Foundo_Medium' !important;
+}
 :root {
   --bg: var(--COLOR-BG);
   --bg-accent: var(--COLOR-BG-SECONDARY);
