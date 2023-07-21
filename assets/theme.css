@@ -13824,6 +13824,10 @@ main-search .input-holder {
   align-items: flex-start;
 }
 
+.product__priced {
+  font-size: calc(var(--font-1) * var(--FONT-ADJUST-BODY)) !important;
+}
+
 .product__price {
   margin: 0;
   font-size: calc(var(--font-3) * var(--FONT-ADJUST-BODY));
