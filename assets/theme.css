@@ -7404,6 +7404,9 @@ img.fit-cover {
 .navtext {
   font-size: calc(var(--font-1) * var(--FONT-ADJUST-NAV));
   display: block;
+  font-family: Foundo_Medium !important;
+  font-weight: 500;
+  color: #00031E;
 }
 
 .navtext,
