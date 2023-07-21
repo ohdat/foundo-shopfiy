@@ -77,6 +77,17 @@
 #heroWrapper h2,
 #heroWrapper p{
   font-family: 'Foundo_Headline' !important;
+  color: #fff;
+}
+
+#productItemInfo .product-item__title,
+#productItemInfo .product__priced{
+  font-family: 'Foundo_Headline' !important;
+  color: #00031E;
+}
+
+#productItemInfo .new-price{
+  font-family: 'Foundo_Medium' !important;
   color: #00031E;
 }
 
