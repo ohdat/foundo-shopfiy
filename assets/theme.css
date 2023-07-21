@@ -9472,7 +9472,7 @@ body:not(.has-line-design) .sliderule-grid .menu__block:not(:first-child) {
   padding: var(--outer) var(--outer) calc(var(--outer) - var(--line));
   color: var(--text);
   background-color: var(--bg);
-  text-align: center;
+  text-align: left;
 }
 
 .hero__content--transparent {
