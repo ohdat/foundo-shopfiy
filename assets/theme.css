@@ -13629,6 +13629,11 @@ main-search .input-holder {
   transition: opacity 0.2s;
 }
 
+.test1_img .image-wrapper img{
+  height: calc(100vh - var(--menu-height-sticky, 0px));
+}
+
+
 @media only screen and (max-width: 749px) {
   .product__thumb {
     padding-bottom: 10px;
