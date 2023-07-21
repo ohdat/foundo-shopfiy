@@ -451,7 +451,6 @@ Usage:
       <div class="product__thumb" data-thumb-item>
         <div
           class="product__thumb__link product__thumb__linked"
-          onclick="changeImage('{{ media.preview_image }}')"
           aria-current="{% if forloop.first %}true{% else %}false{% endif %}"
           data-media-id="{{ section.id }}-{{ media.id }}"
           data-thumb-index="{{ forloop.index0 }}"
@@ -564,10 +563,3 @@ Usage:
     </div>
   </div>
 </div>
-<script>
-  function changeImage(newSrc) {
-    console.log(newSrc)
-    var mainImage = document.querySelector(".product-item__bged").querySelector("figure img");
-    mainImage.src = newSrc;
-  }
-</script>
