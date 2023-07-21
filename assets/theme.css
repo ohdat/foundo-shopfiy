@@ -12992,6 +12992,7 @@ main-search .input-holder {
 .product-item__price__holder {
   color: var(--text-light);
   overflow: hidden;
+  text-align: right;
 }
 
 .product-item__price__holder.has-siblings {
@@ -13006,7 +13007,7 @@ main-search .input-holder {
 .product-item__title {
   position: relative;
   font-weight: var(--FONT-WEIGHT-BODY);
-  font-size: calc(1rem * var(--FONT-ADJUST-BODY));
+  font-size: calc(var(--font-3) * var(--FONT-ADJUST-BODY));
   color: inherit;
   margin: 0;
   transition: color 0.3s;
@@ -13021,7 +13022,7 @@ main-search .input-holder {
 .product-item__cutline,
 .product-item__price,
 .product-item__sep {
-  font-size: calc(var(--font-2) * var(--FONT-ADJUST-BODY));
+  font-size: calc(var(--font-3) * var(--FONT-ADJUST-BODY));
 }
 
 @media only screen and (max-width: 749px) {
@@ -20774,7 +20775,7 @@ ul.tabs--center>li {
 }
 
 .brick__product .product-item__title {
-  font-size: calc(1rem * var(--FONT-ADJUST-HEADING));
+  font-size: calc(var(--font-3) * var(--FONT-ADJUST-HEADING));
   margin: 0 0 5px;
 }
 
