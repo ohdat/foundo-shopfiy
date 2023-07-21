@@ -11337,6 +11337,7 @@ main-search .input-holder {
 
   .look_slide_test:nth-of-type(3) {
     grid-column: span 2;
+    height: 632px;
   }
 
   .index-look .product-item {
