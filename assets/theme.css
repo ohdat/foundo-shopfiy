@@ -63,7 +63,12 @@
   font-style: normal;
 }
 
-#headerSections .header__desktop {
+#headerSections .navtext {
+  font-family: 'Foundo_Medium' !important;
+  font-weight: 500;
+  color: #00031E;
+}
+#headerSections .popout {
   font-family: 'Foundo_Medium' !important;
   font-weight: 500;
   color: #00031E;
