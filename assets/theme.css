@@ -7388,7 +7388,7 @@ img.fit-cover {
 }
 
 .navtext {
-  font-size: calc(var(--font-2) * var(--FONT-ADJUST-NAV));
+  font-size: calc(var(--font-1) * var(--FONT-ADJUST-NAV));
   display: block;
 }
 
