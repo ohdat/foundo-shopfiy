@@ -63,11 +63,7 @@
   font-style: normal;
 }
 
-#headerSections .navtext {
-  font-family: 'Foundo_Medium' !important;
-  font-weight: 500;
-  color: #00031E;
-}
+#headerSections .navtext,
 #headerSections .popout span {
   font-family: 'Foundo_Medium' !important;
   font-weight: 500;
@@ -81,7 +77,10 @@
 }
 
 #productItemInfo .product-item__title,
-#productItemInfo .new-price{
+#productItemInfo .new-price,
+#heroContent h2,
+#heroContent div,
+#heroContent p{
   font-family: 'Foundo_Headline' !important;
   color: #00031E;
 }
