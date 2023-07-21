@@ -49,6 +49,20 @@
   This file is primarily concerned with setting the values of dynamic color
   variables depending on which container the text or background is inside.
 ============================================================================== */
+@font-face {
+  font-family: 'Foundo_Headline';
+  src: url('../fonts/Foundo-Headline.ttf');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Foundo_Medium';
+  src: url('../fonts/Foundo-Medium.ttf');
+  font-weight: normal;
+  font-style: normal;
+}
+
 :root {
   --bg: var(--COLOR-BG);
   --bg-accent: var(--COLOR-BG-SECONDARY);
