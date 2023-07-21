@@ -8,16 +8,21 @@
   endif
 -%}
 
-<div class="product__block"
+  <div
+  class="product__block"
   {{ block_style }}
   {% if animation_name %}
-    data-animation="{{ animation_name }}"
-    data-animation-duration="{{ animation_duration }}"
-    data-animation-delay="{{ animation_delay }}"
+  data-animation="{{ animation_name }}"
+  data-animation-duration="{{ animation_duration }}"
+  data-animation-delay="{{ animation_delay }}"
   {% endif %}>
   <div class="product__price__wrap">
     <div class="product__price{% if has_units %} product__price--has-units{% endif %}" data-price-wrapper>
-      <span data-product-price {% if current_variant.compare_at_price > current_variant.price %} class="product__price--sale"{% endif %}>
+      <span
+        data-product-price
+        {% if current_variant.compare_at_price > current_variant.price %}
+        class="product__price--sale"
+        {% endif %}>
         {%- if current_variant.price == 0 -%}
           {{ 'general.money.free' | t }}
         {%- else -%}
@@ -40,7 +45,8 @@
         {%- endcapture -%}
 
         {%- capture unit_price_separator -%}
-          <span aria-hidden="true">/</span><span class="visually-hidden">{{ 'general.accessibility.unit_price_separator' | t }}&nbsp;</span>
+          <span aria-hidden="true">/</span>
+          <span class="visually-hidden">{{ 'general.accessibility.unit_price_separator' | t }}&nbsp;</span>
         {%- endcapture -%}
 
         {%- capture unit_price_base_unit -%}
@@ -55,7 +61,10 @@
         {%- endcapture -%}
 
         <div class="product__price__meta">
-          <span data-product-unit {{ show_units }} class="product__price--unit">
+          <span
+            data-product-unit
+            {{ show_units }}
+            class="product__price--unit">
             <span class="visually-hidden visually-hidden--inline">{{ 'products.product.unit_price_label' | t }}</span>
             <span data-product-unit-price id="unit-price-{{ section_id }}">{{ current_variant.unit_price | money }}</span>
             {{ unit_price_separator }}
@@ -76,13 +85,20 @@
       </span>
     {%- endif -%}
   </div>
-
+  <div class="product__price__wrap{{ margin_class }}" {{ block.shopify_attributes }}>
+    <div class="product__price">
+      <span>Price</span>
+    </div>
+  </div>
   {% comment %} Shop pay split payment terms {% endcomment %}
   <div class="shop-pay-terms">
     {%- assign unique = section.id | append: '-' | append: product.id -%}
     {%- assign product_form_installment_id = 'product-form-installment-' | append: unique -%}
     {%- form 'product', product, id: product_form_installment_id, class: 'installment', data-product-form-installment: '' -%}
-      <input type="hidden" name="id" value="{{ current_variant.id }}">
+      <input
+        type="hidden"
+        name="id"
+        value="{{ current_variant.id }}">
       {{ form | payment_terms }}
     {%- endform -%}
   </div>

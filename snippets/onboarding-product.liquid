@@ -70,11 +70,6 @@ Usage:
                     <span>{{ onboarding_price }}</span>
                   </div>
                 </div>
-                <div class="product__price__wrap{{ margin_class }}" {{ block.shopify_attributes }}>
-                  <div class="product__price">
-                    <span>Price</span>
-                  </div>
-                </div>
               </div>
               {%- when 'variants' -%}
               {%- if settings.show_labels == false -%}
@@ -303,7 +298,7 @@ Usage:
                               data-quantity-button
                               tabindex="0"
                               title="
-                                                                {{- 'cart.general.increase_quantity_label' | t }} - {{ product.title | strip_html -}}">{%- render "icon-plus" -%}</button>
+                                                                                                {{- 'cart.general.increase_quantity_label' | t }} - {{ product.title | strip_html -}}">{%- render "icon-plus" -%}</button>
                           </div>
                         </div>
                       {%- endif -%}
