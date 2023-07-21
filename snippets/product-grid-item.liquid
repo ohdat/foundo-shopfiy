@@ -1,16 +1,16 @@
 {% comment %}
-    Renders list of products in grid layout
+Renders list of products in grid layout
 
-    Accepts:
-    - product: {Object} product (required)
-    - animation_delay: {Int} animation timing for load
-    - last_element: {Boolean} True when custom image is taking up the first slot for the collection
-                              and the loop is on the last element for the page.
-    - index: element index in the loop
-    - sizes: Image sizes
+Accepts:
+- product: {Object} product (required)
+- animation_delay: {Int} animation timing for load
+- last_element: {Boolean} True when custom image is taking up the first slot for the collection
+and the loop is on the last element for the page.
+- index: element index in the loop
+- sizes: Image sizes
 
-    Usage:
-    {% render 'product-grid-item', product: product, index: index, sizes: image_sizes %}
+Usage:
+{% render 'product-grid-item', product: product, index: index, sizes: image_sizes %}
 {% endcomment %}
 
 {%- liquid
@@ -60,7 +60,8 @@
   {%- assign has_colors = false -%}
 
   {%- capture swatches -%}
-    {%- capture swatch_translation -%}{{ 'general.swatches.color' | t }}{%- endcapture -%}
+    {%- capture swatch_translation -%}
+      {{ 'general.swatches.color' | t }}{%- endcapture -%}
 
     {%- assign swatch_labels = swatch_translation | append: ',' | split: ',' -%}
     {%- for label in swatch_labels -%}
@@ -68,16 +69,30 @@
       {%- if product.options_by_name[sanitized_label].values.size > 0 -%}
         {%- assign has_colors = true -%}
 
-        <form class="radio__fieldset radio__fieldset--swatches radio__fieldset--small" data-grid-swatch-form data-fieldset>
-          <div class="selector-wrapper__scrollbar" data-scrollbar data-grid-swatches data-swatch-handle="{{ product.handle }}" data-swatch-label="{{ label }}"></div>
+        <form
+          class="radio__fieldset radio__fieldset--swatches radio__fieldset--small"
+          data-grid-swatch-form
+          data-fieldset>
+          <div
+            class="selector-wrapper__scrollbar"
+            data-scrollbar
+            data-grid-swatches
+            data-swatch-handle="{{ product.handle }}"
+            data-swatch-label="{{ label }}"></div>
 
           <div class="selector-wrapper__actions">
-            <button type="button" class="radio__fieldset__arrow radio__fieldset__arrow--prev is-hidden" data-scrollbar-arrow-prev>
+            <button
+              type="button"
+              class="radio__fieldset__arrow radio__fieldset__arrow--prev is-hidden"
+              data-scrollbar-arrow-prev>
               {%- render 'icon-nav-arrow-left' -%}
               <span class="visually-hidden">{{ 'products.general.see_all' | t }}</span>
             </button>
 
-            <button type="button" class="radio__fieldset__arrow radio__fieldset__arrow--next is-hidden" data-scrollbar-arrow-next>
+            <button
+              type="button"
+              class="radio__fieldset__arrow radio__fieldset__arrow--next is-hidden"
+              data-scrollbar-arrow-next>
               {% render 'icon-nav-arrow-right' %}
               <span class="visually-hidden">{{ 'products.general.see_all' | t }}</span>
             </button>
@@ -119,7 +134,10 @@
     {%- capture siblings_html -%}
       <div class="product-item__siblings product-item__swatches__holder product-item__swatches__holder--{{ settings.swatch_style }}" data-sibling-holder>
         <div class="radio__fieldset radio__fieldset--swatches radio__fieldset--small" data-sibling-fieldset>
-          <div class="selector-wrapper__scrollbar" data-sibling-inner data-scrollbar>
+          <div
+            class="selector-wrapper__scrollbar"
+            data-sibling-inner
+            data-scrollbar>
             {%- for sib_product in sibling_products limit: 50 -%}
               {%- liquid
                 assign current_class = ''
@@ -134,7 +152,8 @@
                 endif
               -%}
 
-              <div class="swatch__button swatch__button--{{ settings.swatch_style }}"
+              <div
+                class="swatch__button swatch__button--{{ settings.swatch_style }}"
                 style="--animation-delay: {{ forloop.index0 | times: 50 }}ms;"
                 data-sibling-link="{{ sib_product.url }}"
                 data-sibling-price="{{ sib_product_price | strip_html }}"
@@ -148,12 +167,18 @@
           </div>
 
           <div class="selector-wrapper__actions">
-            <button type="button" class="radio__fieldset__arrow radio__fieldset__arrow--prev is-hidden" data-scrollbar-arrow-prev>
+            <button
+              type="button"
+              class="radio__fieldset__arrow radio__fieldset__arrow--prev is-hidden"
+              data-scrollbar-arrow-prev>
               {%- render 'icon-nav-arrow-left' -%}
               <span class="visually-hidden">{{ 'products.general.see_all' | t }}</span>
             </button>
 
-            <button type="button" class="radio__fieldset__arrow radio__fieldset__arrow--next is-hidden" data-scrollbar-arrow-next>
+            <button
+              type="button"
+              class="radio__fieldset__arrow radio__fieldset__arrow--next is-hidden"
+              data-scrollbar-arrow-next>
               {% render 'icon-nav-arrow-right' %}
               <span class="visually-hidden">{{ 'products.general.see_all' | t }}</span>
             </button>
@@ -204,19 +229,22 @@
   -%}
 
   {%- if badge != '' -%}
-    <span class="badge-box"
+    <span
+      class="badge-box"
       data-aos="fade"
       data-aos-delay="{{ aos_image_delay }}"
       data-aos-duration="{{ aos_duration }}"
       data-aos-anchor="{{ aos_anchor }}">{{ badge }}</span>
   {%- elsif preorder and sold_out == false -%}
-    <span class="preorder-box"
+    <span
+      class="preorder-box"
       data-aos="fade"
       data-aos-delay="{{ aos_image_delay }}"
       data-aos-duration="{{ aos_duration }}"
       data-aos-anchor="{{ aos_anchor }}">{{ 'products.product.pre_order' | t }}</span>
   {%- elsif on_sale and sold_out == false -%}
-    <span class="sale-box"
+    <span
+      class="sale-box"
       data-aos="fade"
       data-aos-delay="{{ aos_image_delay }}"
       data-aos-duration="{{ aos_duration }}"
@@ -260,7 +288,10 @@
         {%- if product.variants.size == 1 -%}
           {%- assign product_form_id = 'ProductForm--' | append: unique -%}
           {%- form 'product', product, id: product_form_id -%}
-            <input type="hidden" name="id" value="{{ product.selected_or_first_available_variant.id }}">
+            <input
+              type="hidden"
+              name="id"
+              value="{{ product.selected_or_first_available_variant.id }}">
 
             {%- if sibling_property_value != blank -%}
               <input
@@ -276,36 +307,56 @@
                 value="{{ preorder_value }}">
             {%- endif -%}
 
-            <button class="quick-add__button caps"
+            <button
+              class="quick-add__button caps"
               type="submit"
               name="add"
-              data-add-to-cart
-            >
+              data-add-to-cart>
               <span class="btn__text">{{ 'products.general.quick_add' | t }}</span>
               <span class="btn__plus"></span>
               <span class="btn__added">&nbsp;</span>
               <span class="btn__loader">
-                <svg height="18" width="18" class="svg-loader">
-                  <circle r="7" cx="9" cy="9" />
-                  <circle stroke-dasharray="87.96459430051421 87.96459430051421" r="7" cx="9" cy="9" />
+                <svg
+                  height="18"
+                  width="18"
+                  class="svg-loader">
+                  <circle
+                    r="7"
+                    cx="9"
+                    cy="9" />
+                  <circle
+                    stroke-dasharray="87.96459430051421 87.96459430051421"
+                    r="7"
+                    cx="9"
+                    cy="9" />
                 </svg>
               </span>
               <span class="btn__error" data-message-error>&nbsp;</span>
             </button>
           {%- endform -%}
         {%- else -%}
-          <button class="quick-add__button caps"
+          <button
+            class="quick-add__button caps"
             type="button"
             data-quick-add-btn
-            data-quick-add-modal-handle="{{ product.handle }}"
-          >
+            data-quick-add-modal-handle="{{ product.handle }}">
             <span class="btn__text">{{ 'products.general.quick_add' | t }}</span>
             <span class="btn__plus"></span>
             <span class="btn__added">&nbsp;</span>
             <span class="btn__loader">
-              <svg height="18" width="18" class="svg-loader">
-                <circle r="7" cx="9" cy="9" />
-                <circle stroke-dasharray="87.96459430051421 87.96459430051421" r="7" cx="9" cy="9" />
+              <svg
+                height="18"
+                width="18"
+                class="svg-loader">
+                <circle
+                  r="7"
+                  cx="9"
+                  cy="9" />
+                <circle
+                  stroke-dasharray="87.96459430051421 87.96459430051421"
+                  r="7"
+                  cx="9"
+                  cy="9" />
               </svg>
             </span>
           </button>
@@ -340,9 +391,17 @@
   data-aos-easing="ease-out-quart"
 {%- endcapture -%}
 
-<div class="grid-item product-item {{ alignment_class }} {{ overlay_text_class }} {{ quickview_class }}" id="{{ item_unique }}" data-product-grid-item {{ additional_attributes }}>
+<div
+  class="grid-item product-item {{ alignment_class }} {{ overlay_text_class }} {{ quickview_class }}"
+  id="{{ item_unique }}"
+  data-product-grid-item
+  {{ additional_attributes }}>
   <div class="product-item__image{% if double_img %} double__image{% endif %}" data-product-image>
-    <a class="product-link" href="{{ product_url }}" aria-label="{{ product.title | strip_html | escape }}" data-product-link="{{ product_url }}">
+    <a
+      class="product-link"
+      href="{{ product_url }}"
+      aria-label="{{ product.title | strip_html | escape }}"
+      data-product-link="{{ product_url }}">
       {%- if product.media.size > 0 -%}
         <div class="product-item__bg" data-product-image-default>
 
@@ -354,7 +413,10 @@
               {%- if variant.featured_image != blank -%}
                 {%- assign image_inner_empty = false -%}
                 {%- assign variant_title = variant.title | replace: '"', "'" -%}
-                <div class="product-item__bg__inner" data-variant-title="{{ variant_title }}" style="display: none;">
+                <div
+                  class="product-item__bg__inner"
+                  data-variant-title="{{ variant_title }}"
+                  style="display: none;">
                   {%- render 'image' image: variant.featured_image, aspect_ratio: aspect_ratio, sizes: sizes, widths: widths, attributes: image_animations, cover: true -%}
                 </div>
               {%- endif -%}
@@ -384,10 +446,35 @@
 
     {{ over_image_content }}
   </div>
-
+  <div style="display: flex;margin-top: 10px;">
+    {%- for media in product.media -%}
+      <div class="product__thumb" data-thumb-item>
+        <div
+          class="product__thumb__link product__thumb__linked"
+          onclick="changeImage('{{ media.preview_image }}')"
+          aria-current="{% if forloop.first %}true{% else %}false{% endif %}"
+          data-media-id="{{ section.id }}-{{ media.id }}"
+          data-thumb-index="{{ forloop.index0 }}"
+          data-thumb-link>
+          {%- liquid
+              render 'image' image: media.preview_image, width: 150, height: 150, sizes: '75px', widths: '75, 100, 150, 225, 300', aspect_ratio: 1,
+              if media.media_type == 'video' or media.media_type == 'external_video'
+                render 'icon-media-video'
+              elsif media.media_type == 'model'
+                render 'icon-media-model'
+              endif
+            -%}
+        </div>
+      </div>
+    {%- endfor -%}
+  </div>
   <div class="product-information" data-product-information>
     <div class="product-item__info">
-      <a class="product-link" href="{{ product_url }}" aria-label="{{ product.title | strip_html | escape }}" data-product-link="{{ product_url }}">
+      <a
+        class="product-link"
+        href="{{ product_url }}"
+        aria-label="{{ product.title | strip_html | escape }}"
+        data-product-link="{{ product_url }}">
         {%- if settings.product_grid_show_rating and product.metafields.reviews.rating.value != blank -%}
           <div class="product-item__stars">
             {% render 'product-rating', product: product %}
@@ -408,7 +495,7 @@
           <div class="product-item__price" data-product-price>
             {% comment %} Price on product grid item {% endcomment %}
 
-{%- liquid
+            {%- liquid
   if settings.currency_code_enable
     assign product_price_min = product.price_min | money_with_currency
     assign product_compare_at_price = product.compare_at_price | money_with_currency
@@ -418,40 +505,45 @@
   endif
 -%}
 
-<span class="price{% if product.compare_at_price > product.price %} sale{% endif %}">
-  {% if product.available %}
-    <span class="new-price">
-      {% if product.price_varies %}
-        <small>{{ 'products.general.from' | t }}</small>
-      {% endif %}
-      {%- if product.price == 0 and product.price_varies == false -%}
-        {{ 'general.money.free' | t }}
-      {%- else -%}
-        {{ product_price_min }}
-      {%- endif -%}
-    </span>
-    {% if product.compare_at_price > product.price %}
-      <span class="old-price">{{ product_compare_at_price }}</span>
-    {% endif %}
-  {% else %}
-    <span class="sold-out">{{ 'products.product.sold_out' | t }}</span>
-  {% endif %}
-</span>
-{% if current_variant.unit_price %}
-  {% capture unit_price_separator %}
-    <span aria-hidden="true">/</span>
-    <span class="visually-hidden">{{ 'general.accessibility.unit_price_separator' | t }}&nbsp;</span>
-  {% endcapture %}
-  {% capture unit_price_base_unit %}
-    {% if current_variant.unit_price_measurement.reference_value != 1 %}
-      {{ current_variant.unit_price_measurement.reference_value }}
-    {% endif %}
-    {{ current_variant.unit_price_measurement.reference_unit }}
-  {% endcapture %}
-  <br>
-  <span class="visually-hidden visually-hidden--inline">{{ 'products.product.unit_price_label' | t }}</span>
-  <span class="unit small">{% if settings.currency_code_enable %}{{ current_variant.unit_price | money_with_currency }}{% else %}{{ current_variant.unit_price | money }}{% endif %}{{ unit_price_separator }}{{ unit_price_base_unit }}</span>
-{% endif %}
+            <span class="price{% if product.compare_at_price > product.price %} sale{% endif %}">
+              {% if product.available %}
+                <span class="new-price">
+                  {% if product.price_varies %}
+                    <small>{{ 'products.general.from' | t }}</small>
+                  {% endif %}
+                  {%- if product.price == 0 and product.price_varies == false -%}
+                    {{ 'general.money.free' | t }}
+                  {%- else -%}
+                    {{ product_price_min }}
+                  {%- endif -%}
+                </span>
+                {% if product.compare_at_price > product.price %}
+                  <span class="old-price">{{ product_compare_at_price }}</span>
+                {% endif %}
+              {% else %}
+                <span class="sold-out">{{ 'products.product.sold_out' | t }}</span>
+              {% endif %}
+            </span>
+            {% if current_variant.unit_price %}
+              {% capture unit_price_separator %}
+                <span aria-hidden="true">/</span>
+                <span class="visually-hidden">{{ 'general.accessibility.unit_price_separator' | t }}&nbsp;</span>
+              {% endcapture %}
+              {% capture unit_price_base_unit %}
+                {% if current_variant.unit_price_measurement.reference_value != 1 %}
+                  {{ current_variant.unit_price_measurement.reference_value }}
+                {% endif %}
+                {{ current_variant.unit_price_measurement.reference_unit }}
+              {% endcapture %}
+              <br>
+              <span class="visually-hidden visually-hidden--inline">{{ 'products.product.unit_price_label' | t }}</span>
+              <span class="unit small">
+                {% if settings.currency_code_enable %}
+                  {{ current_variant.unit_price | money_with_currency }}
+                {% else %}
+                  {{ current_variant.unit_price | money }}{% endif %}
+                {{ unit_price_separator }}{{ unit_price_base_unit }}</span>
+            {% endif %}
           </div>
         </div>
       </a>
