@@ -13628,6 +13628,9 @@ main-search .input-holder {
   opacity: 0;
   transition: opacity 0.2s;
 }
+.test1_img{
+  height: calc(100vh - var(--menu-height-sticky, 0px));
+}
 
 .test1_img .image-wrapper img{
   height: calc(100vh - var(--menu-height-sticky, 0px));
