@@ -48,7 +48,7 @@
     {%- endif -%}
 
     {%- if section.blocks.size > 0 -%}
-      <div class="footer__blocks">
+      <div id="footerBlocks" class="footer__blocks">
         {%- for block in section.blocks -%}
           {%- liquid
             assign title = block.settings.title

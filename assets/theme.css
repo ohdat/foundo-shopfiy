@@ -85,6 +85,17 @@
   color: #00031E;
 }
 
+#footerBlocks h2{
+  font-family: 'Foundo_Headline' !important;
+  color: #00031E;
+}
+#footerBlocks p,
+#footerBlocks a{
+  font-family: 'Foundo_Medium' !important;
+  color: #9B9B9B;
+  font-size: calc(var(--font-1) * var(--FONT-ADJUST-BODY)) !important;
+}
+
 :root {
   --bg: var(--COLOR-BG);
   --bg-accent: var(--COLOR-BG-SECONDARY);
@@ -20099,7 +20110,7 @@ body.is-focused .subcollection__item:focus-within .image-overlay-bottom {
 
 .footer__block__title {
   font-weight: var(--FONT-WEIGHT-BODY-BOLD);
-  font-size: calc(1.25rem * var(--FONT-ADJUST-HEADING));
+  font-size: calc(var(--font-1) * var(--FONT-ADJUST-HEADING));
   padding-bottom: 10px;
 }
 
