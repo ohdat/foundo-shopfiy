@@ -7,7 +7,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="theme-color" content="{{ settings.accent_bright }}">
     <link rel="canonical" href="{{ canonical_url }}">
-    <link rel="preconnect"
+    <link
+    rel="preconnect"
       href="https://cdn.shopify.com"
       crossorigin>
     <!-- ======================= Broadcast Theme V5.0.0 ========================= -->
@@ -252,7 +253,7 @@
   </head>
 
   <body
-    id="{{ page_title | handle }}"
+    id=" idddddd {{ page_title | handle }}"
     class="template-{{ template.name | handle }} grid-{{ settings.grid_style }}{% if customer %} customer-logged-in{% endif %}{% if settings.animations_enable %} aos-initialized{% endif %}{% if settings.product_grid_outline %} has-line-design{% endif %}"
     data-animations="{{ settings.animations_enable }}">
     {%- render 'loading' -%}
@@ -313,5 +314,6 @@
 
 
 
-    <!-- And above this comment line ================================================== -->{%- render "ecom_footer" -%}
+    <!-- And above this comment line ================================================== -->
+  {%- render "ecom_footer" -%}
 </body></html>
