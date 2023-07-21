@@ -9219,8 +9219,8 @@ body:not(.has-line-design) .sliderule-grid .menu__block:not(:first-child) {
   margin: 30px 0;
   font-family: var(--FONT-STACK-BODY);
   font-weight: var(--FONT-WEIGHT-BODY);
-  font-size: calc(var(--font-2) * var(--FONT-ADJUST-BODY));
-  color: var(--link);
+  font-size: calc(var(--font-1) * var(--FONT-ADJUST-BODY));
+  color: #00031E;
 }
 
 @media only screen and (max-width: 749px) {
@@ -13794,6 +13794,7 @@ main-search .input-holder {
 .product__title {
   margin-top: 0.5em;
   margin-bottom: 0;
+  color: #00031E;
 }
 
 .product__title a {
@@ -13802,14 +13803,14 @@ main-search .input-holder {
 
 @media only screen and (min-width: 750px) {
   .product__title {
-    font-size: calc(1.75rem * var(--FONT-ADJUST-HEADING));
+    font-size: calc(var(--font-4) * var(--FONT-ADJUST-HEADING));
     margin-top: 0;
   }
 }
 
 @media only screen and (max-width: 749px) {
   .product__title {
-    font-size: calc(1.5rem * var(--FONT-ADJUST-HEADING));
+    font-size: calc(var(--font-3) * var(--FONT-ADJUST-HEADING));
   }
 }
 
@@ -13819,7 +13820,7 @@ main-search .input-holder {
 
 .product__price__wrap {
   display: flex;
-  justify-content: flex-start;
+  justify-content: flex-end;
   align-items: flex-start;
 }
 
