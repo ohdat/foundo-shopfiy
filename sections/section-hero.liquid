@@ -84,10 +84,7 @@
   data-overlay-header>
   <div id="heroWrapper" class="hero__wrapper frame {{ section.settings.width }}">
     {%- if section.blocks.size > 0 -%}
-      <div
-        id="heroContent"
-        class="hero__content__wrapper frame__item {{ section.settings.flex_align }}{% if show_header_backdrop %} backdrop--linear{% endif %}"
-        {% if show_header_backdrop %}style="--header-overlay-color: {{ overlay_color }}; --header-overlay-opacity: {{ overlay_opacity }};"{% endif %}>
+      <div class="hero__content__wrapper frame__item {{ section.settings.flex_align }}{% if show_header_backdrop %} backdrop--linear{% endif %}" {% if show_header_backdrop %}style="--header-overlay-color: {{ overlay_color }}; --header-overlay-opacity: {{ overlay_opacity }};"{% endif %}>
         <div class="hero__content{% if hero_transparent %} hero__content--transparent{% if show_overlay_text %} backdrop--radial{% endif %}{% endif %}"{% if show_header_backdrop %}style="--bg: {{ overlay_color }}; --overlay-opacity: {{ overlay_opacity }};"{% endif %}>
           {%- for block in section.blocks -%}
             {%- case block.type -%}
