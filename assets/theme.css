@@ -13085,7 +13085,7 @@ main-search .input-holder {
 }
 
 .product-item__info {
-  padding: calc(var(--inner) / 2) 0;
+  padding: calc(var(--inner) / 2) var(--inner);
 }
 
 @media only screen and (max-width: 749px) {
