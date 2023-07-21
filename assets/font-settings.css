@@ -1,13 +1,77 @@
 @font-face {
-  font-family: 'Foundo_Headline';
-  src: url('../fonts/Foundo-Headline.ttf');
-  font-weight: normal;
+  font-family: "Neue Haas Unica";
+  font-weight: 600;
   font-style: normal;
+  font-display: swap;
+  src: url("https://fonts.shopifycdn.com/neue_haas_unica/neuehaasunica_n6.811a1650e21f1bac45d3959cf135802431a07f0f.woff2?h1=Zm91bmRvLndvcmxk&hmac=8c657914273a202986e1ba1b35c9b8358ca166e5a8b6e2f0d957ee7833812d28") format("woff2"),
+       url("https://fonts.shopifycdn.com/neue_haas_unica/neuehaasunica_n6.f9e6698fdff14cbabfacf5e20220e55548fa61be.woff?h1=Zm91bmRvLndvcmxk&hmac=e385d7235f367917a780fa51baedf2d5519f007fba486a007879e31067287d21") format("woff");
 }
 
 @font-face {
-  font-family: 'Foundo_Medium';
-  src: url('../fonts/Foundo-Medium.ttf');
-  font-weight: normal;
+  font-family: "Neue Haas Unica";
+  font-weight: 400;
   font-style: normal;
+  font-display: swap;
+  src: url("https://fonts.shopifycdn.com/neue_haas_unica/neuehaasunica_n4.520eb21cee3158fb9a058bc588d9a342a8ebfda3.woff2?h1=Zm91bmRvLndvcmxk&hmac=f9008876b8e36cf0d313182aa57055c7008428724b46d48a615612f4b436aa0d") format("woff2"),
+       url("https://fonts.shopifycdn.com/neue_haas_unica/neuehaasunica_n4.ee326ff2e5d691eee9f3e495ed05cefcb4c2db78.woff?h1=Zm91bmRvLndvcmxk&hmac=47c92b28758ee84f39640bffb84b25258e1c4f8a2975914e6c47b0cce7e36f1f") format("woff");
 }
+
+@font-face {
+  font-family: "Neue Haas Unica";
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+  src: url("https://fonts.shopifycdn.com/neue_haas_unica/neuehaasunica_n5.d9f4fe95fdcd78d99c8a928758e5778d79f720cb.woff2?h1=Zm91bmRvLndvcmxk&hmac=73c9538e0c870e2d5d89d2db282277074bad36576a8b22ff98f44d6da825ea14") format("woff2"),
+       url("https://fonts.shopifycdn.com/neue_haas_unica/neuehaasunica_n5.dc7d2304d020ea6109d03d21cbe9c56f4cba527c.woff?h1=Zm91bmRvLndvcmxk&hmac=b4b6e4d94e7ad5647ef9a1d500b509c5a693e119f445dcb70c56c6807ac86a27") format("woff");
+}
+
+
+
+  @font-face {
+  font-family: "Neue Haas Unica";
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+  src: url("https://fonts.shopifycdn.com/neue_haas_unica/neuehaasunica_n7.c08eeb9b390d030db92ffcd29c2e8921f8ed8719.woff2?h1=Zm91bmRvLndvcmxk&hmac=5a95d622543bb07798e4449d770a1248c8eb47ac062ab534b94ed0ca129d44d7") format("woff2"),
+       url("https://fonts.shopifycdn.com/neue_haas_unica/neuehaasunica_n7.7b38abda67516a590164d0927f901f4dbaff8922.woff?h1=Zm91bmRvLndvcmxk&hmac=d870405ed08e4d3228e39087e046f8c1753639a7294415ac30d6f1d8623decdf") format("woff");
+}
+
+
+
+
+  @font-face {
+  font-family: "Neue Haas Unica";
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+  src: url("https://fonts.shopifycdn.com/neue_haas_unica/neuehaasunica_n5.d9f4fe95fdcd78d99c8a928758e5778d79f720cb.woff2?h1=Zm91bmRvLndvcmxk&hmac=73c9538e0c870e2d5d89d2db282277074bad36576a8b22ff98f44d6da825ea14") format("woff2"),
+       url("https://fonts.shopifycdn.com/neue_haas_unica/neuehaasunica_n5.dc7d2304d020ea6109d03d21cbe9c56f4cba527c.woff?h1=Zm91bmRvLndvcmxk&hmac=b4b6e4d94e7ad5647ef9a1d500b509c5a693e119f445dcb70c56c6807ac86a27") format("woff");
+}
+
+
+
+
+
+
+
+  @font-face {
+  font-family: "Neue Haas Unica";
+  font-weight: 400;
+  font-style: italic;
+  font-display: swap;
+  src: url("https://fonts.shopifycdn.com/neue_haas_unica/neuehaasunica_i4.011c8c6fd0e4092b2f8404c7a5ef6555d61530b8.woff2?h1=Zm91bmRvLndvcmxk&hmac=c5949461ef46ca3fd02d5c8b14e2b3395798cd24a8def4ce1b5dea8cf8a28cf7") format("woff2"),
+       url("https://fonts.shopifycdn.com/neue_haas_unica/neuehaasunica_i4.02fc5650c9b4be4b51d941be363f2c7a553898c6.woff?h1=Zm91bmRvLndvcmxk&hmac=f23fcd6f5e5c89828d7ae9ab0207130ecdf0b144a25ee662b0c42fc95282ea02") format("woff");
+}
+
+
+
+
+  @font-face {
+  font-family: "Neue Haas Unica";
+  font-weight: 500;
+  font-style: italic;
+  font-display: swap;
+  src: url("https://fonts.shopifycdn.com/neue_haas_unica/neuehaasunica_i5.f1f57a1d0b7a4b4c212501a5271953819f141e61.woff2?h1=Zm91bmRvLndvcmxk&hmac=7192c653c740cbc8dddcaa68d53706712497f25a0de8c5cad9f8b87893728ac3") format("woff2"),
+       url("https://fonts.shopifycdn.com/neue_haas_unica/neuehaasunica_i5.344b6ea82def663a8c37971c5798c154708afdd0.woff?h1=Zm91bmRvLndvcmxk&hmac=7a30bfed6187be094eb94eb1364e7a073581056fcaf665c0ebde8a629feff66c") format("woff");
+}
+
