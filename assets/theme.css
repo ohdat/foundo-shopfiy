@@ -86,11 +86,6 @@
   color: #00031E;
 }
 
-#productItemInfo .new-price{
-  font-family: 'Foundo_Medium' !important;
-  color: #00031E;
-}
-
 :root {
   --bg: var(--COLOR-BG);
   --bg-accent: var(--COLOR-BG-SECONDARY);
