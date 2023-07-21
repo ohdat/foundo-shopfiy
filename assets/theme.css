@@ -12970,7 +12970,7 @@ main-search .input-holder {
 }
 
 .product-item--centered .product-information {
-  text-align: center;
+  text-align: left;
 }
 
 .product-item--centered .product-item__title {
@@ -13085,7 +13085,7 @@ main-search .input-holder {
 }
 
 .product-item__info {
-  padding: calc(var(--inner) / 2) var(--inner);
+  padding: calc(var(--inner) / 2) 0;
 }
 
 @media only screen and (max-width: 749px) {
