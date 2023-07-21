@@ -11349,6 +11349,9 @@ main-search .input-holder {
   .look_slide_test:nth-of-type(3) .product-item__image{
     height: 400px;
   }
+  .look_slide_test:nth-of-type(3) .product-item__image{
+    padding: 0;
+  }
 
   .index-look .product-item {
     width: 100%;
