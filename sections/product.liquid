@@ -35,7 +35,8 @@
   data-tall-layout="{% if section.settings.image_layout == 'stacked' or section.settings.image_layout == 'grid-1' or section.settings.image_layout == 'grid-2' %}true{% else %}false{% endif %}"
   data-slideshow-disabled-mobile='{% if section.settings.mobile_image_style == 'slider' %}true{% else %}false{% endif %}'
   data-cart-bar="{{ show_cart_bar }}"
-  data-image-zoom-enable="{{ section.settings.enable_zoom }}"><!-- /snippets/product.liquid -->
+  data-image-zoom-enable="{{ section.settings.enable_zoom }}">
+  <!-- /snippets/product.liquid -->
 
   {% comment %}
   Renders product content
@@ -130,7 +131,7 @@
 
         <div class="product__content">
           <div class="form__wrapper{% unless show_buy_buttons %} form__wrapper--no-buttons{% endunless %}{% unless current_variant.available %} variant--soldout{% endunless %}" data-form-wrapper>
-            <div class="form__width">
+            <div id="formWidth" class="form__width">
               {% comment %} The input with name="id" submits to cart {% endcomment %}
               <input
                 type="hidden"
@@ -688,8 +689,8 @@
 
   <script>
     document.addEventListener("DOMContentLoaded", function() {
-      var link = document.querySelector("a[href='#product-       {{ media.id }} ']");
-      var targetDiv = document.getElementById("product-       {{ media.id }}");
+      var link = document.querySelector("a[href='#product-         {{ media.id }} ']");
+      var targetDiv = document.getElementById("product-         {{ media.id }}");
       link.addEventListener("click", function(event) {
         event.preventDefault();
         targetDiv.scrollIntoView({behavior: 'smooth'});
@@ -724,8 +725,8 @@
   <script type="application/ld+json">
     {
     "@context": "http://schema.org/",
-                                                                          "@type": "Product",
-                                                                          "name": {{ product.title | json }},
+                                                                                    "@type": "Product",
+                                                                                    "name": {{ product.title | json }},
     "url": {{ request.origin | append: product.url | json }},
     {% if seo_media -%}
       "image": [
@@ -739,7 +740,7 @@
     {%- if product.metafields.reviews.rating.value != blank -%}
       "aggregateRating": {
       "@type": "AggregateRating",
-                                                                                                                  "ratingValue": "{{ product.metafields.reviews.rating.value }}",
+                                                                                                                                "ratingValue": "{{ product.metafields.reviews.rating.value }}",
       "ratingCount": "{{ product.metafields.reviews.rating_count.value }}",
       "bestRating": "{{ product.metafields.reviews.rating.value.scale_max }}",
       "worstRating": "{{ product.metafields.reviews.rating.value.scale_min }}"
@@ -747,7 +748,7 @@
     {%- endif -%}
     "brand": {
     "@type": "Organization",
-                                                                            "name": {{ product.vendor | json }}
+                                                                                      "name": {{ product.vendor | json }}
     },
     "offers": [
     {%- for variant in product.variants -%}
