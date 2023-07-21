@@ -601,10 +601,10 @@
         "mobile_height": "screen-height-three-quarters--mobile",
         "flex_align": "align--middle-center",
         "overlay_opacity": 0,
-        "overlay_color": "#000",
+        "overlay_color": "#000000",
         "show_overlay_text": false,
         "bg_color": "",
-        "color": "#FFFFFF"
+        "color": "#ffffff"
       }
     },
     "2e42e7a4-66a5-45ff-b7a3-107e94aa293d": {
@@ -629,6 +629,29 @@
         "padding_top": 50,
         "padding_bottom": 50
       }
+    },
+    "02601697-a243-4eb0-89cd-e9622b5aa62e": {
+      "type": "rich-text",
+      "blocks": {
+        "template--19259611513163__02601697-a243-4eb0-89cd-e9622b5aa62e-richtext-1": {
+          "type": "richtext",
+          "settings": {
+            "heading": "",
+            "content": "<p>Foundo \/ Jewelry \/ Leopard Earrings<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "template--19259611513163__02601697-a243-4eb0-89cd-e9622b5aa62e-richtext-1"
+      ],
+      "settings": {
+        "content_alignment": "center",
+        "bgcolor": "primary",
+        "top_space_desktop": 50,
+        "bottom_space_desktop": 0,
+        "top_space_mobile": 30,
+        "bottom_space_mobile": 30
+      }
     }
   },
   "order": [
@@ -643,6 +666,7 @@
     "related",
     "ca54cc1b-cc42-49f0-8900-2a68d0e46252",
     "43dbcd02-3fe3-4f1a-a6e5-db99e8bf154a",
-    "2e42e7a4-66a5-45ff-b7a3-107e94aa293d"
+    "2e42e7a4-66a5-45ff-b7a3-107e94aa293d",
+    "02601697-a243-4eb0-89cd-e9622b5aa62e"
   ]
 }
