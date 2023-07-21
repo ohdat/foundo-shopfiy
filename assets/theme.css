@@ -81,7 +81,7 @@
 }
 
 #productItemInfo .product-item__title,
-#productItemInfo .product__priced{
+#productItemInfo .new-price{
   font-family: 'Foundo_Headline' !important;
   color: #00031E;
 }
