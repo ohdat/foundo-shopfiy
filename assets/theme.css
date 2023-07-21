@@ -71,7 +71,7 @@
 }
 
 #heroWrapper h2,
-#heroWrapper p{
+#heroWrapper p {
   font-family: 'Foundo_Headline' !important;
   color: #fff;
 }
@@ -80,19 +80,21 @@
 #productItemInfo .new-price,
 #heroContent h2,
 #heroContent div,
-#heroContent p{
+#heroContent p {
   font-family: 'Foundo_Headline' !important;
   color: #00031E;
 }
 
-#footerBlocks h2{
+#footerBlocks h2 {
   font-family: 'Foundo_Headline' !important;
   color: #00031E;
 }
+
 #footerBlocks p,
-#footerBlocks a{
+#footerBlocks a {
   font-family: 'Foundo_Medium' !important;
   color: #9B9B9B;
+  font-weight: 500;
   font-size: calc(var(--font-1) * var(--FONT-ADJUST-BODY)) !important;
 }
 
@@ -11388,17 +11390,18 @@ main-search .input-holder {
     grid-column: span 2;
   }
 
-  .look_slide_test:nth-of-type(3) .product-item__image .product-link .product-item__bg .image-wrapper  img,
+  .look_slide_test:nth-of-type(3) .product-item__image .product-link .product-item__bg .image-wrapper img,
   .look_slide_test:nth-of-type(3) .product-item__image .product-link .product-item__bg,
   .look_slide_test:nth-of-type(3) .product-item__image .product-link .product-item__bg .image-wrapper,
-  .look_slide_test:nth-of-type(3) .product-item__image .product-link .product-item__bg__under .image-wrapper  img,
+  .look_slide_test:nth-of-type(3) .product-item__image .product-link .product-item__bg__under .image-wrapper img,
   .look_slide_test:nth-of-type(3) .product-item__image .product-link .product-item__bg__under,
   .look_slide_test:nth-of-type(3) .product-item__image .product-link .product-item__bg__under .image-wrapper,
-  .look_slide_test:nth-of-type(3) .product-item__image .product-link, 
-  .look_slide_test:nth-of-type(3) .product-item__image{
+  .look_slide_test:nth-of-type(3) .product-item__image .product-link,
+  .look_slide_test:nth-of-type(3) .product-item__image {
     height: 632px;
   }
-  .look_slide_test:nth-of-type(3) .product-item__image{
+
+  .look_slide_test:nth-of-type(3) .product-item__image {
     padding: 0;
   }
 
@@ -13692,11 +13695,12 @@ main-search .input-holder {
   opacity: 0;
   transition: opacity 0.2s;
 }
-.test1_img{
+
+.test1_img {
   height: calc(100vh - var(--menu-height-sticky, 0px)) !important;
 }
 
-.test1_img .image-wrapper img{
+.test1_img .image-wrapper img {
   height: calc(100vh - var(--menu-height-sticky, 0px));
 }
 
