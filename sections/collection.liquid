@@ -142,12 +142,15 @@
               {%- endunless -%}
             </button>
           </div>
-          <div class="popout——left"></div>
+
         {%- endif -%}
 
-        {%- if show_sort -%}
-          {% render 'collection-sorting' %}
-        {%- endif -%}
+        <div style="display: flex;">
+          <div class="popout——left"></div>
+          {%- if show_sort -%}
+            {% render 'collection-sorting' %}
+          {%- endif -%}
+        </div>
       </nav>
     {%- endif -%}
 
