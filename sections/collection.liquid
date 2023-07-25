@@ -146,10 +146,10 @@
         {%- endif -%}
 
         <div style="display: flex;">
-          <div class="popout——left">
+          <div onclick="changeImage" class="popout——left">
             <img src="../assets/left.png" alt="">
           </div>
-          <div class="popout——left">
+          <div onclick="changeImaged" class="popout——left">
             <img src="../assets/left.png" alt="">
           </div>
           {%- if show_sort -%}
@@ -307,10 +307,10 @@
             {%- for product in collection.products -%}
               {%- assign grid_int = section.settings.grid | times: 1 -%}
               {%- assign animation_delay = forloop.index0 | modulo: grid_int | times: 1 -%}
-              <div style="display: block;">
+              <div class="product-grid_tru action">
                 {%- render 'product-grid-itemed', product: product, animation_delay: animation_delay, index: forloop.index, sizes: image_sizes -%}
               </div>
-              <div style="display: none;">
+              <div class="product-grid_tru error">
                 {%- render 'product-grid-item', product: product, animation_delay: animation_delay, index: forloop.index, sizes: image_sizes -%}
               </div>
             {%- endfor -%}
@@ -345,7 +345,17 @@
     </div>
   </section>
 {%- endpaginate -%}
-
+<script>
+  function changeImage() {
+    var imageContainers = document.querySelectorAll(".image-container");
+    container.classList.remove("active");
+    imageContainers.classList.add("active");
+  }
+  function changeImaged() {
+    var imageContainers = document.querySelectorAll(".image-container");
+    imageContainers.classList.add("active");
+  }
+</script>
 {% schema %}
   {
     "name": "Collection products",

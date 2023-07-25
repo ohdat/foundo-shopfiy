@@ -147,6 +147,14 @@
   cursor: pointer;
 }
 
+.product-grid_tru.action{
+  display: block;
+}
+
+.product-grid_tru.error{
+  display: none;
+}
+
 .popout——left img{
   width: 16px;
   height: 16px;
