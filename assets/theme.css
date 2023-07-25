@@ -139,6 +139,12 @@
   display: none;
 }
 
+.popout——left{
+  width: 16px;
+  height: 16px;
+  background: #000;
+}
+
 :root {
   --bg: var(--COLOR-BG);
   --bg-accent: var(--COLOR-BG-SECONDARY);
