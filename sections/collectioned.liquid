@@ -38,31 +38,12 @@
     assign columns_medium = 2
   endif
 
-  assign animation_anchor = '.collection-' | append: collection.handle
   assign animation_duration = 800
 -%}
 
 {%- capture image_sizes -%}
   (min-width: 1400px) calc(100vw / {{ columns_desktop }}), (min-width: 750px) calc(100vw / {{ columns_medium }}), (min-width: 480px) calc(100vw / {{ columns_small }}), calc(100vw / {{ columns_mobile }})
 {%- endcapture -%}
-
-{%- style -%}
-  #Collection--{{ section.id }}{
-    --PT: {{ section.settings.padding_top }}
-    px;
-    --PB: {{ section.settings.padding_bottom }}
-    px;
-
-    --COLUMNS: {{ columns_desktop }}
-    ;
-    --COLUMNS-MEDIUM: {{ columns_medium }}
-    ;
-    --COLUMNS-SMALL: {{ columns_small }}
-    ;
-    --COLUMNS-MOBILE: {{ columns_mobile }}
-    ;
-  }
-{%- endstyle -%}
 
 {%- capture collection_sidebar_class -%}
   {%- if filter_layout == 'slide-out' -%}
@@ -334,7 +315,7 @@
 
 {% schema %}
   {
-    "name": "Collection products horizontal",
+    "name": "ABC TEST",
     "settings": [
       {
         "type": "checkbox",
