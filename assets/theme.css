@@ -142,8 +142,14 @@
 .popout——left{
   width: 16px;
   height: 16px;
-  background: #000;
+  /* background: #000; */
   margin-right: 10px;
+  cursor: pointer;
+}
+
+.popout——left img{
+  width: 16px;
+  height: 16px;
 }
 
 :root {
