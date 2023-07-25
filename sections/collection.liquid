@@ -298,7 +298,7 @@
             {%- for product in collection.products -%}
               {%- assign grid_int = section.settings.grid | times: 1 -%}
               {%- assign animation_delay = forloop.index0 | modulo: grid_int | times: 1 -%}
-              {%- render 'product-grid-itemed', product: product, animation_delay: animation_delay, index: forloop.index, sizes: image_sizes -%}
+              {%- render 'product-grid-item', product: product, animation_delay: animation_delay, index: forloop.index, sizes: image_sizes -%}
             {%- endfor -%}
           {%- else -%}
             <div class="no-results">
