@@ -403,15 +403,17 @@ Usage:
       aria-label="{{ product.title | strip_html | escape }}"
       data-product-link="{{ product_url }}">
       {%- if product.media.size > 0 -%}
-        <div class="product-item__bg" data-product-image-default>
-          {%- render 'image' image: product.featured_media.preview_image, aspect_ratio: aspect_ratio, sizes: sizes, widths: widths, attributes: image_animations, cover: true -%}
-        </div>
-
-        {%- if double_img -%}
-          <div class="product-item__bg__under">
+        <div style="display:flex;">
+          <div class="product-item__bg" data-product-image-default>
+            {%- render 'image' image: product.media[0].preview_image, aspect_ratio: aspect_ratio, sizes: sizes, widths: widths, attributes: image_animations, cover: true -%}
+          </div>
+          <div class="product-item__bg" data-product-image-default>
             {%- render 'image' image: product.media[1].preview_image, aspect_ratio: aspect_ratio, sizes: sizes, widths: widths, attributes: image_animations, cover: true -%}
           </div>
-        {%- endif -%}
+          <div class="product-item__bg" data-product-image-default>
+            {%- render 'image' image: product.media[2].preview_image, aspect_ratio: aspect_ratio, sizes: sizes, widths: widths, attributes: image_animations, cover: true -%}
+          </div>
+        </div>
       {%- else -%}
         {%- comment -%} Show Empty image if product has no media {%- endcomment -%}
         <div class="product-item__bg image--empty" data-product-image-default></div>
