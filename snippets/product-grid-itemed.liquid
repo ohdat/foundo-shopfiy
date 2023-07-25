@@ -403,9 +403,9 @@ Usage:
         {% assign counter = 0 %}
         {%- for media in product.media -%}
           {% if counter < 3 %}
-            <div class="product__thumb" data-thumb-item>
+            <div data-thumb-item>
               <div
-                class="product__thumb__link product__thumb__linked"
+                class="product__thumb__link product__thumb__linkes"
                 aria-current="{% if forloop.first %}true{% else %}false{% endif %}"
                 data-media-id="{{ section.id }}-{{ media.id }}"
                 data-thumb-index="{{ forloop.index0 }}"
