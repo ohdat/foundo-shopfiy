@@ -404,44 +404,26 @@ Usage:
         aria-label="{{ product.title | strip_html | escape }}"
         data-product-link="{{ product_url }}">
         {%- if product.media.size > 0 -%}
-          <div class="product-item__bg" data-product-image-default>
-            {%- render 'image' image: product.media[0].preview_image, aspect_ratio: aspect_ratio, sizes: sizes, widths: widths, attributes: image_animations, cover: true -%}
-          </div>
-        {%- else -%}
-          {%- comment -%} Show Empty image if product has no media {%- endcomment -%}
-          <div class="product-item__bg image--empty" data-product-image-default></div>
-        {%- endif -%}
-
-        {%- if has_siblings -%}
-          <div class="product-item__bg__sibling" data-product-image-sibling></div>
-        {%- endif -%}
-      </a>
-      <a
-        class="product-link"
-        href="{{ product_url }}"
-        aria-label="{{ product.title | strip_html | escape }}"
-        data-product-link="{{ product_url }}">
-        {%- if product.media.size > 0 -%}
-          <div class="product-item__bg" data-product-image-default>
-            {%- render 'image' image: product.media[1].preview_image, aspect_ratio: aspect_ratio, sizes: sizes, widths: widths, attributes: image_animations, cover: true -%}
-          </div>
-        {%- else -%}
-          {%- comment -%} Show Empty image if product has no media {%- endcomment -%}
-          <div class="product-item__bg image--empty" data-product-image-default></div>
-        {%- endif -%}
-
-        {%- if has_siblings -%}
-          <div class="product-item__bg__sibling" data-product-image-sibling></div>
-        {%- endif -%}
-      </a>
-      <a
-        class="product-link"
-        href="{{ product_url }}"
-        aria-label="{{ product.title | strip_html | escape }}"
-        data-product-link="{{ product_url }}">
-        {%- if product.media.size > 0 -%}
-          <div class="product-item__bg" data-product-image-default>
-            {%- render 'image' image: product.media[2].preview_image, aspect_ratio: aspect_ratio, sizes: sizes, widths: widths, attributes: image_animations, cover: true -%}
+          <div class="overflowX_bo" style="display: flex;margin-top: 10px;padding-left:11px; overflow-x: auto;">
+            {%- for media in product.media -%}
+              <div class="product__thumb" data-thumb-item>
+                <div
+                  class="product__thumb__link product__thumb__linked"
+                  aria-current="{% if forloop.first %}true{% else %}false{% endif %}"
+                  data-media-id="{{ section.id }}-{{ media.id }}"
+                  data-thumb-index="{{ forloop.index0 }}"
+                  data-thumb-link>
+                  {%- liquid
+                    render 'image' image: media.preview_image, width: 150, height: 150, sizes: '75px', widths: '75, 100, 150, 225, 300', aspect_ratio: 1,
+                    if media.media_type == 'video' or media.media_type == 'external_video'
+                      render 'icon-media-video'
+                    elsif media.media_type == 'model'
+                      render 'icon-media-model'
+                    endif
+                  -%}
+                </div>
+              </div>
+            {%- endfor -%}
           </div>
         {%- else -%}
           {%- comment -%} Show Empty image if product has no media {%- endcomment -%}
