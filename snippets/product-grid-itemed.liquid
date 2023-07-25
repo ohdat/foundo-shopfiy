@@ -393,13 +393,12 @@ Usage:
 
 <div class="product-grid_list">
   <a
-    style="width: 60%"
     class="product-link"
     href="{{ product_url }}"
     aria-label="{{ product.title | strip_html | escape }}"
     data-product-link="{{ product_url }}">
     {%- if product.media.size > 0 -%}
-      <div class="overflowX_bo" style="display: flex;margin-top: 10px;padding-left:11px; overflow-x: auto;">
+      <div style="display: flex;">
         {% assign counter = 0 %}
         {%- for media in product.media -%}
           {% if counter < 3 %}
@@ -585,6 +584,112 @@ Usage:
     assign product_price_min = product.price_min | money
     assign product_compare_at_price = product.compare_at_price | money
   endif
+-%}
+
+            <span class="price{% if product.compare_at_price > product.price %} sale{% endif %}">
+              {% if product.available %}
+                <span class="new-price">
+                  {% if product.price_varies %}
+                    <small>{{ 'products.general.from' | t }}</small>
+                  {% endif %}
+                  {%- if product.price == 0 and product.price_varies == false -%}
+                    {{ 'general.money.free' | t }}
+                  {%- else -%}
+                    {{ product_price_min }}
+                  {%- endif -%}
+                </span>
+                {% if product.compare_at_price > product.price %}
+                  <span class="old-price">{{ product_compare_at_price }}</span>
+                {% endif %}
+              {% else %}
+                <span class="sold-out">{{ 'products.product.sold_out' | t }}</span>
+              {% endif %}
+            </span>
+            {% if current_variant.unit_price %}
+              {% capture unit_price_separator %}
+                <span aria-hidden="true">/</span>
+                <span class="visually-hidden">{{ 'general.accessibility.unit_price_separator' | t }}&nbsp;</span>
+              {% endcapture %}
+              {% capture unit_price_base_unit %}
+                {% if current_variant.unit_price_measurement.reference_value != 1 %}
+                  {{ current_variant.unit_price_measurement.reference_value }}
+                {% endif %}
+                {{ current_variant.unit_price_measurement.reference_unit }}
+              {% endcapture %}
+              <br>
+              <span class="visually-hidden visually-hidden--inline">{{ 'products.product.unit_price_label' | t }}</span>
+              <span class="unit small">
+                {% if settings.currency_code_enable %}
+                  {{ current_variant.unit_price | money_with_currency }}
+                {% else %}
+                  {{ current_variant.unit_price | money }}{% endif %}
+                {{ unit_price_separator }}{{ unit_price_base_unit }}</span>
+            {% endif %}
+          </div>
+        </div>
+      </a>
+
+      {%- if siblings_html != blank -%}
+        {{ siblings_html }}
+      {%- elsif has_colors -%}
+        <div class="product-item__swatches__holder product-item__swatches__holder--{{ settings.swatch_style }}">
+          {{ swatches }}
+
+          {%- if has_colors -%}
+            <span class="product-item__swatches__count">
+              <span data-swatch-count>&nbsp;</span>
+            </span>
+          {%- endif -%}
+        </div>
+      {%- endif -%}
+    </div>
+  </div>
+  <div
+    style="width: 20%"
+    class="product-information"
+    data-product-information>
+    <div class="product-item__info" id="productItemInfo">
+      <a
+        class="product-link"
+        href="{{ product_url }}"
+        aria-label="{{ product.title | strip_html | escape }}"
+        data-product-link="{{ product_url }}">
+        {%- if settings.product_grid_show_rating and product.metafields.reviews.rating.value != blank -%}
+          <div class="product-item__stars">
+            {% render 'product-rating', product: product %}
+          </div>
+        {%- endif -%}
+
+        <p class="product-item__title">{{ product.title | strip_html | escape }}</p>
+        <div class="product-item__price__holder">
+          <div class="product-item__price" data-product-price="">
+            <span class="price">
+              <span style="font-family:'Foundo_Medium' !important;font-weight: bolder;" class="new-price product__priced">
+                Price
+              </span>
+            </span>
+          </div>
+        </div>
+        <div class="product-item__price__holder{% if has_siblings %} has-siblings{% endif %}">
+          {%- if has_siblings or product_item_cutline != blank -%}
+            <span class="product-item__cutline" data-product-cutline>{{ product_item_cutline }}</span>
+          {%- endif -%}
+
+          {%- if has_siblings -%}
+            <span class="product-item__sep">&#8212;</span>
+          {%- endif -%}
+
+          <div class="product-item__price" data-product-price>
+            {% comment %} Price on product grid item {% endcomment %}
+
+            {%- liquid
+if settings.currency_code_enable
+  assign product_price_min = product.price_min | money_with_currency
+  assign product_compare_at_price = product.compare_at_price | money_with_currency
+else
+  assign product_price_min = product.price_min | money
+  assign product_compare_at_price = product.compare_at_price | money
+endif
 -%}
 
             <span class="price{% if product.compare_at_price > product.price %} sale{% endif %}">
