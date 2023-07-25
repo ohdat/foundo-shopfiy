@@ -146,13 +146,6 @@
   margin-right: 10px;
   cursor: pointer;
 }
-.grid_tru{
-  display: block;
-}
-
-.product-grid_tru{
-  width: 100%;
-}
 
 .product-grid_tru.action{
   display: block;
@@ -175,10 +168,9 @@
   height: 16px;
 }
 
-
-
-
-
+.product-grid_tru{
+  width: 100%;
+}
 
 
 
@@ -18799,6 +18791,10 @@ body.has-line-design .article__text-wrapper {
 
 .collection__products .grid {
   padding-top: 0;
+}
+
+.collection__products .grid_tru{
+  display: block;
 }
 
 .collection__products .grid-outer {
