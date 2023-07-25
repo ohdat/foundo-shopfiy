@@ -554,13 +554,29 @@ Usage:
             {% render 'product-rating', product: product %}
           </div>
         {%- endif -%}
-
-        <p class="product-item__title">{{ product.title | strip_html | escape }}</p>
         <div style="text-align: left;" class="product-item__price__holder">
           <div class="product-item__price" data-product-price="">
             <span class="price">
               <span style="font-family:'Foundo_Medium' !important;font-weight: bolder;" class="new-price product__priced">
-                Price
+                Material
+              </span>
+            </span>
+          </div>
+        </div>
+        <div style="text-align: left;" class="product-item__price__holder">
+          <div class="product-item__price" data-product-price="">
+            <span class="price">
+              <span style="font-family:'Foundo_Medium' !important;font-weight: bolder;" class="new-price product__priced">
+                Size
+              </span>
+            </span>
+          </div>
+        </div>
+        <div style="text-align: left;" class="product-item__price__holder">
+          <div class="product-item__price" data-product-price="">
+            <span class="price">
+              <span style="font-family:'Foundo_Medium' !important;font-weight: bolder;" class="new-price product__priced">
+                Serial №
               </span>
             </span>
           </div>
@@ -584,12 +600,18 @@ Usage:
           </div>
         {%- endif -%}
 
-        <p class="product-item__title">{{ product.title | strip_html | escape }}</p>
         <div style="text-align: left;" class="product-item__price__holder">
           <div class="product-item__price" data-product-price="">
             <span class="price">
               <span style="font-family:'Foundo_Medium' !important;font-weight: bolder;" class="new-price product__priced">
-                Price
+                Info
+              </span>
+            </span>
+          </div>
+          <div class="product-item__price" data-product-price="">
+            <span class="price">
+              <span style="font-family:'Foundo_Medium' !important;font-weight: bolder;" class="new-price product__priced">
+                {{ product.description }}
               </span>
             </span>
           </div>
