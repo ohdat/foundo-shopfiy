@@ -403,7 +403,7 @@ Usage:
         {% assign counter = 0 %}
         {%- for media in product.media -%}
           {% if counter < 3 %}
-            <div style="width:225px;margin-right: 2px;" data-thumb-item>
+            <div style="width:225px;margin-right: 2px;margin-bottom: 2px;" data-thumb-item>
               <div
                 class="product__thumb__link product__thumb__linkes"
                 aria-current="{% if forloop.first %}true{% else %}false{% endif %}"
@@ -436,6 +436,7 @@ Usage:
   <div class="product-information" data-product-information>
     <div class="product-item__info" id="productItemInfo">
       <a
+        style="width: calc((100% - 600px) / 3)"
         class="product-link"
         href="{{ product_url }}"
         aria-label="{{ product.title | strip_html | escape }}"
@@ -539,6 +540,7 @@ Usage:
   <div class="product-information" data-product-information>
     <div class="product-item__info" id="productItemInfo">
       <a
+        style="width: calc((100% - 600px) / 3)"
         class="product-link"
         href="{{ product_url }}"
         aria-label="{{ product.title | strip_html | escape }}"
@@ -565,6 +567,7 @@ Usage:
   <div class="product-information" data-product-information>
     <div class="product-item__info" id="productItemInfo">
       <a
+        style="width: calc((100% - 600px) / 3)"
         class="product-link"
         href="{{ product_url }}"
         aria-label="{{ product.title | strip_html | escape }}"
