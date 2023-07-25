@@ -347,29 +347,27 @@
 {%- endpaginate -%}
 <script>
   function changeImage() {
-    console.log(88888)
     var imageContainers = document.querySelectorAll(".product-grid_tru");
     imageContainers.forEach(function(container) {
-      container.classList.remove("active");
-      container.classList.add("error");
+      container.classList.remove("error");
+      container.classList.add("active");
     });
     var imageContainersed = document.querySelectorAll(".product-grid_fal");
     imageContainersed.forEach(function(container) {
-      container.classList.remove("error");
-      container.classList.add("active");
+      container.classList.remove("active");
+      container.classList.add("error");
     });
   }
   function changeImaged() {
-    console.log(99999)
     var imageContainers = document.querySelectorAll(".product-grid_tru");
     imageContainers.forEach(function(container) {
-      container.classList.remove("error");
-      container.classList.add("active");
+      container.classList.remove("active");
+      container.classList.add("error");
     });
     var imageContainersed = document.querySelectorAll(".product-grid_fal");
     imageContainersed.forEach(function(container) {
-      container.classList.remove("active");
-      container.classList.add("error");
+      container.classList.remove("error");
+      container.classList.add("active");
     });
   }
 </script>
