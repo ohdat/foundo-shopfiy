@@ -18781,6 +18781,10 @@ body.has-line-design .article__text-wrapper {
   padding-top: 0;
 }
 
+.collection__products .grid_tru{
+  display: block;
+}
+
 .collection__products .grid-outer {
   padding: var(--gutter) var(--outer);
 }

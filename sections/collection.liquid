@@ -196,7 +196,7 @@
       <div class="drawer__underlay" data-drawer-underlay></div>
       <div class="product-grid_tru action">
         <div class="grid-outer" data-products-grid>
-          <div class="grid" id="CollectionLoop">
+          <div class="grid grid_tru" id="CollectionLoop">
             {%- if paginate.current_page == 1 and collection.products_count > 0 -%}
               {%- for block in section.blocks -%}
                 {%- case block.type -%}
