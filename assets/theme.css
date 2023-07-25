@@ -147,6 +147,10 @@
   cursor: pointer;
 }
 
+.product-grid_tru{
+  width: 100%;
+}
+
 .product-grid_tru.action{
   display: block;
 }
@@ -167,6 +171,19 @@
   width: 16px;
   height: 16px;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 :root {
   --bg: var(--COLOR-BG);
@@ -18779,10 +18796,6 @@ body.has-line-design .article__text-wrapper {
 
 .collection__products .grid {
   padding-top: 0;
-}
-
-.collection__products .grid_tru{
-  display: block;
 }
 
 .collection__products .grid-outer {
