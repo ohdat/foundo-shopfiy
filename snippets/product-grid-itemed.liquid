@@ -393,13 +393,13 @@ Usage:
 
 <div class="product-grid_list">
   <a
-    style="width: 657px"
+    style="width: 660px"
     class="product-link"
     href="{{ product_url }}"
     aria-label="{{ product.title | strip_html | escape }}"
     data-product-link="{{ product_url }}">
     {%- if product.media.size > 0 -%}
-      <div style="display: flex;">
+      <div style="display: flex;padding-right: 2px;">
         {% assign counter = 0 %}
         {%- for media in product.media -%}
           {% if counter < 3 %}
