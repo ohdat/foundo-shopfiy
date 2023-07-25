@@ -479,7 +479,6 @@
     },
     "related": {
       "type": "related",
-      "disabled": true,
       "blocks": {
         "related": {
           "type": "related",
