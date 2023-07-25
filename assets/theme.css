@@ -146,6 +146,9 @@
   margin-right: 10px;
   cursor: pointer;
 }
+.grid_tru{
+  display: block;
+}
 
 .product-grid_tru{
   width: 100%;
