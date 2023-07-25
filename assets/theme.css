@@ -182,7 +182,7 @@
   flex-flow: row wrap;
   /* justify-content: center;
   align-items: center; */
-  width: 225px !important;
+  width: 33.33% !important;
   height: 300px !important;
   font-size: 0;
   line-height: 0;
@@ -192,7 +192,7 @@
 }
 
 .product__thumb__linkes .image-wrapper img {
-  width: 225px !important;
+  width: 33.33% !important;
   height: 300px !important;
 }
 
