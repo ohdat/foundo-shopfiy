@@ -399,11 +399,11 @@ Usage:
     aria-label="{{ product.title | strip_html | escape }}"
     data-product-link="{{ product_url }}">
     {%- if product.media.size > 0 -%}
-      <div style="display: flex;padding-right: 2px;">
+      <div style="display: flex;">
         {% assign counter = 0 %}
         {%- for media in product.media -%}
           {% if counter < 3 %}
-            <div style="width:225px;" data-thumb-item>
+            <div style="width:225px;margin-right: 2px;" data-thumb-item>
               <div
                 class="product__thumb__link product__thumb__linkes"
                 aria-current="{% if forloop.first %}true{% else %}false{% endif %}"
