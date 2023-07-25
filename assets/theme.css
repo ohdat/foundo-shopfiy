@@ -135,28 +135,7 @@
   color: #00031E;
 }
 
-.overflowX_bo::-webkit-scrollbar-track {
-  background-color: transparent;
-  display: none;
-}
-
-.overflowX_bo::-webkit-scrollbar-thumb {
-  background-color: #ccc;
-  display: none;
-}
-
-.overflowX_bo::-webkit-scrollbar-thumb:hover {
-  background-color: #aaa;
-  display: none;
-}
-
-.overflowX_bo::-webkit-scrollbar-track:hover {
-  background-color: #f2f2f2;
-  display: none;
-}
-
-.overflowX_bo::-webkit-scrollbar-corner {
-  background-color: transparent;
+.overflowX_bo::-webkit-scrollbar {
   display: none;
 }
 
