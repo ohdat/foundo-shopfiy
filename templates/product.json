@@ -628,6 +628,29 @@
         "padding_top": 50,
         "padding_bottom": 50
       }
+    },
+    "f5e40f09-6c68-4db4-a877-4920ed8457d3": {
+      "type": "section-collection1",
+      "settings": {
+        "heading": "",
+        "description": "",
+        "layout": "center",
+        "link_text": "Shop Now",
+        "link_url": "",
+        "button_type": "btn--primary",
+        "button_size": "",
+        "button_style": "btn--solid",
+        "show_arrow": false,
+        "featured_collection": "the-丰",
+        "style": "grid",
+        "grid": 4,
+        "rows": 3,
+        "layout_mobile": "carousel",
+        "bg_color": "",
+        "color": "",
+        "padding_top": 50,
+        "padding_bottom": 50
+      }
     }
   },
   "order": [
@@ -642,6 +665,7 @@
     "related",
     "ca54cc1b-cc42-49f0-8900-2a68d0e46252",
     "43dbcd02-3fe3-4f1a-a6e5-db99e8bf154a",
-    "2e42e7a4-66a5-45ff-b7a3-107e94aa293d"
+    "2e42e7a4-66a5-45ff-b7a3-107e94aa293d",
+    "f5e40f09-6c68-4db4-a877-4920ed8457d3"
   ]
 }
