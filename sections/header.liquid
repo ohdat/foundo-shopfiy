@@ -537,12 +537,8 @@
 </script>
 <script>
   window.addEventListener('scroll', function() {
-    var navbar = document.querySelector('.header__wrapper'); // 导航栏元素
+    var navbar = document.querySelector('.header__wrapper');
     var scrollPosition = window.scrollY;
-
-// 获取滚动条的位置
-
-// 根据滚动条位置进行判断
     if (scrollPosition === 0) {
       navbar.classList = 'header__wrapper acvi';
     } else {
@@ -554,8 +550,8 @@
 <script type="application/ld+json">
   {
   "@context": "http://schema.org",
-                        "@type": "Organization",
-                        "name": {{ shop.name | json }},
+                          "@type": "Organization",
+                          "name": {{ shop.name | json }},
   {% if logo %}
     "logo": {{ logo | image_url: logo.width | prepend: "https:" | json }},
   {% endif %}
@@ -581,14 +577,14 @@
   <script type="application/ld+json">
     {
     "@context": "http://schema.org",
-                                                  "@type": "WebSite",
-                                                  "name": {{ shop.name | json }},
+                                                      "@type": "WebSite",
+                                                      "name": {{ shop.name | json }},
     "potentialAction": {
-                                                    "@type": "SearchAction",
-                                                    "target": {{ potential_action_target | json }},
+                                                        "@type": "SearchAction",
+                                                        "target": {{ potential_action_target | json }},
     "query-input": "required name=search_term_string"
-                                                  },
-                                                  "url": {{ shop.url | append: page.url | json }}
+                                                      },
+                                                      "url": {{ shop.url | append: page.url | json }}
     }
   </script>
 {%- endif -%}
