@@ -629,19 +629,19 @@
         "padding_bottom": 50
       }
     },
-    "f5e40f09-6c68-4db4-a877-4920ed8457d3": {
+    "c6b65181-78c3-4561-b9c0-362007165d08": {
       "type": "section-collection1",
       "settings": {
-        "heading": "",
+        "heading": "Best Sellers",
         "description": "",
-        "layout": "center",
-        "link_text": "",
+        "layout": "inline",
+        "link_text": "Shop Now",
         "link_url": "",
         "button_type": "btn--primary",
         "button_size": "",
         "button_style": "btn--solid",
         "show_arrow": false,
-        "featured_collection": "the-丰",
+        "featured_collection": "the-cross",
         "style": "grid",
         "grid": 4,
         "rows": 3,
@@ -666,6 +666,6 @@
     "ca54cc1b-cc42-49f0-8900-2a68d0e46252",
     "43dbcd02-3fe3-4f1a-a6e5-db99e8bf154a",
     "2e42e7a4-66a5-45ff-b7a3-107e94aa293d",
-    "f5e40f09-6c68-4db4-a877-4920ed8457d3"
+    "c6b65181-78c3-4561-b9c0-362007165d08"
   ]
 }
