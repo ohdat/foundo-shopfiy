@@ -448,7 +448,15 @@ Usage:
             {% render 'product-rating', product: product %}
           </div>
         {%- endif -%}
-
+        <div style="text-align: left;" class="product-item__price__holder">
+          <div class="product-item__price" data-product-price="">
+            <span class="price">
+              <span style="font-family:'Foundo_Medium' !important;font-weight: bolder;" class="new-price product__priced">
+                Earrings
+              </span>
+            </span>
+          </div>
+        </div>
         <p class="product-item__title">{{ product.title | strip_html | escape }}</p>
         <div style="text-align: left;" class="product-item__price__holder">
           <div class="product-item__price" data-product-price="">
