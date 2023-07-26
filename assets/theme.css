@@ -17367,6 +17367,7 @@ body .shopify-email-marketing-confirmation__container a {
     grid-row-start: 1;
     grid-column-start: 1;
     min-height: 100%;
+    font-size: 12px;
   }
 
   .popout__toggle[aria-expanded=true] .popout__expanded-show,
