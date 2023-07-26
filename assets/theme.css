@@ -7097,7 +7097,7 @@ img.fit-cover {
 }
 
 .header__wrapper {
-  background: transparent;
+  --bg: transparent;
   /* --bg: var(--COLOR-MENU-BG); */
   /* background: transparent; */
   --text: var(--COLOR-MENU-LINK);
