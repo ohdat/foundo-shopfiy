@@ -7112,6 +7112,13 @@ img.fit-cover {
   transition: top 0.2s linear;
 }
 
+.header__wrapper.acvi {
+  --bg: transparent;
+}
+.header__wrapper.erro {
+  --bg: var(--COLOR-MENU-BG);
+}
+
 .header__desktop__upper {
   --bg: var(--COLOR-HEADER-BG);
   /* background: transparent; */
