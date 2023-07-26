@@ -629,8 +629,8 @@
         "padding_bottom": 50
       }
     },
-    "c6b65181-78c3-4561-b9c0-362007165d08": {
-      "type": "section-collection1",
+    "b3561306-e746-459f-8fb8-acd0bd92f08d": {
+      "type": "section-collection2",
       "settings": {
         "heading": "Best Sellers",
         "description": "",
@@ -666,6 +666,6 @@
     "ca54cc1b-cc42-49f0-8900-2a68d0e46252",
     "43dbcd02-3fe3-4f1a-a6e5-db99e8bf154a",
     "2e42e7a4-66a5-45ff-b7a3-107e94aa293d",
-    "c6b65181-78c3-4561-b9c0-362007165d08"
+    "b3561306-e746-459f-8fb8-acd0bd92f08d"
   ]
 }
