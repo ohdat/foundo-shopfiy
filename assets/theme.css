@@ -7090,6 +7090,7 @@ img.fit-cover {
 .header-sections {
   display: flex;
   flex-direction: column;
+  position: absolute;
 }
 
 .header-sections .page-announcement {
@@ -7097,7 +7098,6 @@ img.fit-cover {
 }
 
 .header__wrapper {
-  --bg: transparent;
   /* --bg: var(--COLOR-MENU-BG); */
   /* background: transparent; */
   --text: var(--COLOR-MENU-LINK);
