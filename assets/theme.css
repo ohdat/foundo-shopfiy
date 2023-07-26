@@ -19456,7 +19456,7 @@ body:not(.has-sticky-header):not(.has-transparent-header) .main-content>.section
   padding: 20px 15px;
   height: 100%;
   border-top: none;
-  /* border-left: 1px solid var(--COLOR-BORDER); */
+  border-left: none;
   border-radius: 0;
   color: var(--COLOR-TEXT);
   border-bottom: none;
