@@ -135,6 +135,13 @@
   color: #00031E;
 }
 
+#collectionNav .popout__expanded-show,
+#collectionNav .popout__expanded-hide {
+  font-family: 'Foundo_Medium' !important;
+  font-weight: 300;
+  color: #00031E;
+}
+
 .overflowX_bo::-webkit-scrollbar {
   display: none;
 }
