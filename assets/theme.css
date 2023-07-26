@@ -136,7 +136,9 @@
 }
 
 #collectionNav .popout__expanded-show,
-#collectionNav .popout__expanded-hide {
+#collectionNav .popout__expanded-hide,
+#collectionNav .popout__toggle__text {
+  font-size: 12px;
   font-family: 'Foundo_Medium' !important;
   font-weight: 300;
   color: #00031E;
@@ -19454,7 +19456,7 @@ body:not(.has-sticky-header):not(.has-transparent-header) .main-content>.section
   padding: 20px 15px;
   height: 100%;
   border-top: none;
-  border-left: 1px solid var(--COLOR-BORDER);
+  /* border-left: 1px solid var(--COLOR-BORDER); */
   border-radius: 0;
   color: var(--COLOR-TEXT);
   border-bottom: none;
@@ -19512,7 +19514,7 @@ body:not(.has-sticky-header):not(.has-transparent-header) .main-content>.section
   align-items: center;
   padding-left: var(--outer);
   padding-right: var(--outer);
-  border-right: 1px solid var(--COLOR-BORDER);
+  /* border-right: 1px solid var(--COLOR-BORDER); */
   border-left: none;
 }
 
