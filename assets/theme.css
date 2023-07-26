@@ -196,7 +196,7 @@
   height: 100% !important;
 }
 
-.popout--group .popout__padd, .popout--sort .popout__padd {
+.popout--group .popout__padding, .popout--sort .popout__padding {
   padding: 0 !important;
 }
 
