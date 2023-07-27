@@ -17,7 +17,6 @@
           <div class="form-field">{{ form.errors | default_errors }}</div>
           <div class="form-field">
             <div class="account_text">EMAIL</div>
-
             <input
               type="email"
               value=""
@@ -65,38 +64,27 @@
       </div>
 
       <div class="fade-toggle is-hidden" data-recover-password>
-        <h2 class="page__heading">{{ 'customer.recover_password.title' | t }}</h2>
+        <div class="account_title">MY FOUNDO ACCOUNT</div>
 
         {% form 'recover_customer_password' %}
           {{ form.errors | default_errors }}
 
-          <div class="form-message">
-            {%- if form.posted_successfully? -%}
-              <p data-recover-success>{{ 'customer.recover_password.success' | t }}</p>
-            {%- else -%}
-              <p>{{ 'customer.recover_password.subtext' | t }}</p>
-            {%- endif -%}
-          </div>
-
           <div class="form-field">
-            <label for="email">{{ 'customer.login.email' | t }}</label>
+            <div class="account_text">EMAIL</div>
             <input
               type="email"
               value=""
               size="30"
               name="email"
               id="recover-email"
-              class="large">
+              placeholder="{{ 'customer.login.email' | t }}">
+            class="inputbox large">
           </div>
 
           <div class="form-field action-bottom">
             <button type="submit" class="btn btn--primary btn--solid">
               <span>{{ 'customer.recover_password.submit' | t }}</span>
             </button>
-
-            <span class="note">
-              {{ 'cart.general.or' | t }}
-            </span>
 
             <button class="text-link small" data-hide-reset>{{ 'customer.recover_password.cancel' | t }}</button>
 
