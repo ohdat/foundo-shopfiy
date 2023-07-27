@@ -77,21 +77,11 @@
               size="30"
               name="email"
               id="recover-email"
-              placeholder="{{ 'customer.login.email' | t }}">
-            class="inputbox large">
+              placeholder="{{ 'customer.login.email' | t }}"
+              class="inputbox large">
           </div>
-
-          <div class="form-field action-bottom">
-            <button type="submit" class="btn btn--primary btn--solid">
-              <span>{{ 'customer.recover_password.submit' | t }}</span>
-            </button>
-
-            <button class="text-link small" data-hide-reset>{{ 'customer.recover_password.cancel' | t }}</button>
-
-            <div class="form__legal">
-              {{ 'shopify.online_store.spam_detection.disclaimer_html' | t }}
-            </div>
-          </div>
+          <button type="submit" class="account_submit">Submit</button>
+          <button class="createabtn" data-hide-reset>cancel</button>
         {% endform %}
       </div>
 
