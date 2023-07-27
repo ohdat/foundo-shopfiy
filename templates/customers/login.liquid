@@ -64,8 +64,8 @@
       </div>
 
       <div class="fade-toggle is-hidden" data-recover-password>
-        <div class="account_title">PLEASE ENTER YOUR EMAIL TO JOIN THE WORLD FOUNDO</div>
-
+        <div class="account_title">RECOVER YOU PASSWORD</div>
+        <div class="account_texted">Please enter your email address to reset your password.</div>
         {% form 'recover_customer_password' %}
           {{ form.errors | default_errors }}
 
@@ -81,7 +81,13 @@
               class="inputbox large">
           </div>
           <button type="submit" class="account_submit">Submit</button>
-          <button class="createabtn" data-hide-reset>cancel</button>
+          <button class="createabtn" data-hide-reset>Back to login</button>
+          <div class="account_title" style="margin-top: 60px;padding: 0;">CREATE AN ACCOUNT</div>
+          <div class="account_texted">Here, you can view and manage your personal information and
+            <br/> account settings. Below is an overview of your account details:</div>
+          <a href="{{ routes.account_register_url }}">
+            <div class="createabtn">Create</div>
+          </a>
         {% endform %}
       </div>
 
