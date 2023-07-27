@@ -17,7 +17,7 @@
           <div class="form-field">{{ form.errors | default_errors }}</div>
           <div class="form-field">
             <div class="account_text">EMAIL</div>
-            <label for="customer_email">{{ 'customer.login.email' | t }}</label>
+
             <input
               type="email"
               value=""
@@ -34,7 +34,7 @@
           {% if form.password_needed %}
             <div class="form-field">
               <div class="account_text">PASSWORD</div>
-              <label for="customer_password">{{ 'customer.login.password' | t }}</label>
+
               <input
                 type="password"
                 value=""
