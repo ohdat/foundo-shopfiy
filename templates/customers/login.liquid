@@ -23,7 +23,7 @@
               value=""
               name="customer[email]"
               id="customer_email"
-              class="{% if form.errors contains 'email' %}input-error{% endif %}"
+              class="inputbox {% if form.errors contains 'email' %}input-error{% endif %}"
               placeholder="{{ 'customer.login.email' | t }}"
               spellcheck="false"
               autocomplete="off"
@@ -41,7 +41,7 @@
                 name="customer[password]"
                 id="customer_password"
                 class="password"
-                class="{% if form.errors contains 'password' %}input-error{% endif %}"
+                class="inputbox {% if form.errors contains 'password' %}input-error{% endif %}"
                 placeholder="{{ 'customer.login.password' | t }}">
 
               <div class="forgot-password">
