@@ -49,31 +49,16 @@
                 data-show-reset>
                 Forgot Password?
               </button>
-              <div class="forgot-password">
-                <div>
-                  <button type="submit" class="btn btn--primary btn--solid">
-                    <span>{{ 'customer.login.sign_in' | t }}</span>
-                  </button>
-                </div>
-
-                <div>
-                  <button
-                    type="button"
-                    class="text-link small"
-                    data-show-reset>
-                    {{ 'customer.login.forgot_password' | t }}
-                  </button>
-                </div>
-              </div>
+              <button type="submit" class="account_submit">
+                <span>Login</span>
+              </button>
             </div>
           {% endif %}
-
+          <div class="account_title" style="margin-top: 60px;">CREATE AN ACCOUNT</div>
+          <div class="account_texted">Here, you can view and manage your personal information and
+            <br/> account settings. Below is an overview of your account details:</div>
           <div class="form-field action-bottom">
             <a href="{{ routes.root_url }}" class="text-link small">{{ 'customer.login.cancel' | t }}</a>
-
-            <div class="form__legal">
-              {{ 'shopify.online_store.spam_detection.disclaimer_html' | t }}
-            </div>
           </div>
         {% endform %}
       </div>
