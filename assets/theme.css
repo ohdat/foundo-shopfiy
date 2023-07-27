@@ -244,6 +244,10 @@
   color: #9B9B9B;
 }
 
+.inputbox::-webkit-input-placeholder { /* WebKit browsers */ 
+  color: #9B9B9B; 
+}
+
 
 
 
