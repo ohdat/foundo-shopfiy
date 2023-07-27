@@ -42,14 +42,12 @@
                 class="inputbox password"
                 class="{% if form.errors contains 'password' %}input-error{% endif %}"
                 placeholder="{{ 'customer.login.password' | t }}">
-              <div class="account_text">
-                <button
-                  type="button"
-                  class="text-link small"
-                  data-show-reset>
-                  Forgot Password?
-                </button>
-              </div>
+              <button
+                type="button"
+                class="account_text text-link small"
+                data-show-reset>
+                Forgot Password?
+              </button>
               <div class="forgot-password">
                 <div>
                   <button type="submit" class="btn btn--primary btn--solid">
