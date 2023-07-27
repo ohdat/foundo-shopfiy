@@ -218,7 +218,7 @@
 #wrapperNarrow .inputbox,
 #wrapperNarrow .account_submit,
 #wrapperNarrow .account_texted,
-#wrapperNarrow .createabtn a {
+#wrapperNarrow .createabtn {
   font-family: 'Foundo_Medium' !important;
   font-weight: 500;
 }
