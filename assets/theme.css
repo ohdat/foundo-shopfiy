@@ -215,6 +215,11 @@
   font-family: 'Foundo_Headline' !important;
 }
 
+#wrapperNarrow .inputbox {
+  font-family: 'Foundo_Medium' !important;
+  font-weight: 500;
+}
+
 .account_title {
   font-size: 16px;
   font-weight: normal;
@@ -233,7 +238,10 @@
 }
 
 .inputbox{
+  border: none !important;
   border-bottom: 1px solid #D0D0D0 !important;
+  padding: 9px 0px !important;
+  color: #9B9B9B;
 }
 
 
