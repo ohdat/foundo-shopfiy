@@ -13,6 +13,10 @@
     <div id="wrapperNarrow" class="wrapper wrapper--narrow">
       <div class="login fade-toggle{% if shop.checkout.guest_login %} align-left{% endif %}" data-login-form>
         <div class="account_title">MY FOUNDO ACCOUNT</div>
+        <h2 class="page__heading">{{ 'customer.login.title' | t }}</h2>
+
+        <p>{{ 'customer.login.create_account_prompt' | t }}
+          <a href="{{ routes.account_register_url }}" class="text-link">{{ 'customer.login.create_account_cta' | t }}</a>.</p>
         {% form 'customer_login' %}
           <div class="form-field">{{ form.errors | default_errors }}</div>
           <div class="form-field">
