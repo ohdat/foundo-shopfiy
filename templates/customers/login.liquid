@@ -34,7 +34,6 @@
           {% if form.password_needed %}
             <div class="form-field">
               <div class="account_text">PASSWORD</div>
-
               <input
                 type="password"
                 value=""
@@ -43,7 +42,14 @@
                 class="inputbox password"
                 class="{% if form.errors contains 'password' %}input-error{% endif %}"
                 placeholder="{{ 'customer.login.password' | t }}">
-
+              <div class="account_text">
+                <button
+                  type="button"
+                  class="text-link small"
+                  data-show-reset>
+                  Forgot Password?
+                </button>
+              </div>
               <div class="forgot-password">
                 <div>
                   <button type="submit" class="btn btn--primary btn--solid">
