@@ -997,8 +997,11 @@
           "area": 260
         }
       ]
-
+      console.log(list)
+      console.log(list.length)
       for (var i = 0; i < list.length; i++) {
+        console.log(list[i])
+        console.log(list[i].area)
         var span = document.createElement('p');
         span.textContent = '+ ' + list[i].area;
         span.addEventListener('click', handleClick);
