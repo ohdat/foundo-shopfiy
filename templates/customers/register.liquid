@@ -68,13 +68,17 @@
         </div>
         <div class="form-field">
           <div class="account_text">LOCATION CODE</div>
-          <div class="flex_all"></div>
-          <input
-            value="{{ form.birthday }}"
-            id="birthday"
-            class="inputboxed"
-            type="month"
-            name="customer[note][Birthday]" />
+          <div class="flex_all">
+            <div class="flex_text1"></div>
+            {%- render 'icon-nav-arrow-down' -%}
+            <input
+              value="{{ form.birthday }}"
+              id="birthday"
+              class="inputboxed"
+              type="month"
+              name="customer[note][Birthday]" />
+          </div>
+
         </div>
         <div class="form-field">
           <div class="flex_all">
