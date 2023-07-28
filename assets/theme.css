@@ -436,6 +436,8 @@
 #linksBox li a {
   font-family: 'Foundo_Headline' !important;
   font-weight: normal;
+  display: flex;
+  align-items: center;
 }
 
 
