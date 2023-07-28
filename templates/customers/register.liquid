@@ -122,31 +122,28 @@
       {% endform %}
     </div>
     <script>
-      var myDiv = document.getElementById('mydIV'); // 获取目标 div 元素
+      var myDiv = document.getElementById('mydIV');
       for (var i = 0; i < 5; i++) {
-        var span = document.createElement('p'); // 创建 span 元素
+        var span = document.createElement('p');
         span.textContent = 'Item ' + (
           i + 1
-        ); // 设置 span 元素的文本内容
-        span.addEventListener('click', handleClick); // 添加点击事件监听器
-        myDiv.appendChild(span); // 将 span 元素添加到目标 div 元素中
-      }function handleClick() {
+        );
+        span.addEventListener('click', handleClick);
+        myDiv.appendChild(span);
+      }
+      function handleClick() {
         var flex_textp = document.querySelector('.flex_text1 p');
+        var navbar = document.querySelector(".flex_xia");
         flex_textp.innerHTML = this.textContent;
+        navbar.style.display = 'none';
       }
       function xaila1() {
         var navbar = document.querySelector(".flex_xia");
-        console.log('Clicked:', navbar.style.display);
         if (navbar.style.display === 'block') {
-          navbar.style.display = 'none'; // 显示元素
+          navbar.style.display = 'none';
         } else {
-          navbar.style.display = 'block'; // 隐藏元素
+          navbar.style.display = 'block';
         }
-
-      }
-      function xaila2() {
-        var navbar = document.querySelector(".flex_xia");
-        navbar.classList == 'flex_xia error'
       }
     </script>
   </section>
