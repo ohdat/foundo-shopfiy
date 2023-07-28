@@ -294,6 +294,11 @@
   color: #9B9B9B;
 }
 
+.flex_all{
+  display: flex;
+  align-items: center;
+}
+
 
 
 

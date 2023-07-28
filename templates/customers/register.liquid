@@ -67,13 +67,14 @@
             name="customer[note][Birthday]" />
         </div>
         <div class="form-field">
-          <div class="account_text">allergies</div>
-          <input
-            value="{{ form.subscribe }}"
-            id="subscribe"
-            type="checkbox"
-            name="customer[note][Subscribe]" />
-          <p class="input_text">Subscribe to newsletter</p>
+          <div class="flex_all">
+            <input
+              value="{{ form.subscribe }}"
+              id="subscribe"
+              type="checkbox"
+              name="customer[note][Subscribe]" />
+            <p class="input_text">Subscribe to newsletter</p>
+          </div>
         </div>
         <button type="submit" class="account_submit">{{ 'customer.register.submit' | t }}
         </button>
