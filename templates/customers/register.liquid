@@ -58,11 +58,21 @@
             placeholder="{{ 'customer.register.last_name' | t }}">
         </div>
         <div class="form-field">
-          <div class="account_text">Birthday</div>
+          <div class="account_text">BIRTHDAY</div>
           <input
             value="{{ form.birthday }}"
             id="birthday"
             class="inputbox"
+            type="month"
+            name="customer[note][Birthday]" />
+        </div>
+        <div class="form-field">
+          <div class="account_text">LOCATION CODE</div>
+          <div class="flex_all"></div>
+          <input
+            value="{{ form.birthday }}"
+            id="birthday"
+            class="inputboxed"
             type="month"
             name="customer[note][Birthday]" />
         </div>

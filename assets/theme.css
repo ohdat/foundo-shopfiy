@@ -216,11 +216,13 @@
 }
 
 #wrapperNarrow .inputbox,
+#wrapperNarrow .inputboxed,
 #wrapperNarrow .account_submit,
 #wrapperNarrow .account_texted,
 #wrapperNarrow .createabtn,
 #wrapperNarrow .input_text,
-#wrapperNarrow .inputbox::-webkit-input-placeholder  {
+#wrapperNarrow .inputbox::-webkit-input-placeholder,
+#wrapperNarrow .inputboxed::-webkit-input-placeholder  {
   font-family: 'Foundo_Medium' !important;
   font-weight: 500;
 }
@@ -249,7 +251,18 @@
   color: #9B9B9B;
 }
 
+.inputboxed {
+  border: none !important;
+  padding: 9px 0px !important;
+  color: #9B9B9B;
+}
+
 .inputbox::-webkit-input-placeholder {
+  /* WebKit browsers */
+  color: #9B9B9B;
+}
+
+.inputboxed:-webkit-input-placeholder {
   /* WebKit browsers */
   color: #9B9B9B;
 }
@@ -292,6 +305,7 @@
 .input_text{
   font-size: 12px;
   color: #9B9B9B;
+  margin-left: 10px;
 }
 
 .flex_all{
