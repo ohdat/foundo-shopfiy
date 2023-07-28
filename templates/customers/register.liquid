@@ -70,7 +70,7 @@
           <div class="account_text">LOCATION CODE</div>
           <div class="flex_all flex_bor">
             <div class="flex_text1">
-              <p>+86</p>
+              <p name="customer[note][Areacodename]">+86</p>
               <div
                 id="mydIV"
                 style="display: none;"
@@ -87,6 +87,21 @@
               name="customer[note][Areacode]" />
           </div>
 
+        </div>
+        <div class="form-field">
+          <div class="account_text">LOCATION OF RESIDENCE</div>
+          <div class="flex_all flex_bor">
+            <div class="flex_text2">
+              <p name="customer[note][residence]">United Kingdom</p>
+              <div
+                id="mydIV1"
+                style="display: none;"
+                class="flex_xia"></div>
+            </div>
+            <div onclick="xaila2()" style="cursor: pointer;">
+              {%- render 'icon-nav-arrow-down' -%}
+            </div>
+          </div>
         </div>
         <div class="form-field">
           <div class="flex_all">
@@ -123,6 +138,7 @@
     </div>
     <script>
       var myDiv = document.getElementById('mydIV');
+      var myDiv1 = document.getElementById('mydIV1');
       var list = [
         {
           "cnname": "中国大陆",
@@ -997,15 +1013,17 @@
           "area": 260
         }
       ]
-      console.log(list)
-      console.log(list.length)
       for (var i = 0; i < list.length; i++) {
-        console.log(list[i])
-        console.log(list[i].area)
         var span = document.createElement('p');
         span.textContent = '+ ' + list[i].area;
         span.addEventListener('click', handleClick);
         myDiv.appendChild(span);
+      }
+      for (var i = 0; i < list.length; i++) {
+        var span = document.createElement('p');
+        span.textContent = '+ ' + list[i].enname;
+        span.addEventListener('click', handleClick1);
+        myDiv1.appendChild(span);
       }
       function handleClick() {
         var flex_textp = document.querySelector('.flex_text1 p');
@@ -1013,8 +1031,23 @@
         flex_textp.innerHTML = this.textContent;
         navbar.style.display = 'none';
       }
-      function xaila1() {
+      function handleClick1() {
+        var flex_textp = document.querySelector('.flex_text2 p');
         var navbar = document.querySelector(".flex_xia");
+        flex_textp.innerHTML = this.textContent;
+        navbar.style.display = 'none';
+      }
+      function xaila1() {
+        var navbar = document.querySelector(".flex_xia1");
+        if (navbar.style.display === 'block') {
+          navbar.style.display = 'none';
+        } else {
+          navbar.style.display = 'block';
+        }
+      }
+
+      function xaila2() {
+        var navbar = document.querySelector(".flex_xia2");
         if (navbar.style.display === 'block') {
           navbar.style.display = 'none';
         } else {
