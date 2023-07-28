@@ -4,7 +4,6 @@
   "sections": {
     "footer": {
       "type": "footer",
-      "disabled": true,
       "blocks": {
         "footer-0": {
           "type": "newsletter",
@@ -74,7 +73,6 @@
     },
     "05a46266-d46a-4c2d-906f-e23e3f1e96de": {
       "type": "section-anchor-logo",
-      "disabled": true,
       "settings": {
         "logo": "shopify:\/\/shop_images\/logo_e37f6a61-709e-48e7-91ed-e77c8602edb5.png",
         "padding_top": 0,
