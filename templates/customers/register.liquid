@@ -71,7 +71,7 @@
           <div class="flex_all flex_bor">
             <div class="flex_text1">
               <p>+86</p>
-              <div id="mydIV" class="flex_xia acvi"></div>
+              <div id="mydIV" class="flex_xia"></div>
             </div>
             <div onclick="xaila1()" style="cursor: pointer;">
               {%- render 'icon-nav-arrow-down' -%}
@@ -130,14 +130,16 @@
       }function handleClick() {
         var flex_textp = document.querySelector('.flex_text1 p');
         flex_textp.innerHTML = this.textContent;
-        console.log('Clicked:', this.textContent);
       }
       function xaila1() {
         var navbar = document.querySelector(".flex_xia");
-        navbar.classList == 'flex_xia acvi'
-        console.log(navbar)
-        console.log(navbar.classList == 'flex_xia acvi')
-        console.log(navbar.classList == 'flex_xia error')
+        console.log('Clicked:', navbar.style.display);
+        if (navbar.style.display === 'none') {
+          navbar.style.display = 'block'; // 显示元素
+        } else {
+          navbar.style.display = 'none'; // 隐藏元素
+        }
+
       }
       function xaila2() {
         var navbar = document.querySelector(".flex_xia");
