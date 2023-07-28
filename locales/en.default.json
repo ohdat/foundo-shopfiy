@@ -247,15 +247,7 @@
       "account": "Account",
       "title": "My Account",
       "details": "Account Details",
-      "view_addresses": "View Addresses",
-      "return": "Return to Account Details",
-      "contact_store": "Contact Shop"
-    },
-    "nfyvault": {
-      "account": "Nfyvault",
-      "title": "Nfyvault",
-      "details": "Nfyvault Details",
-      "view_addresses": "NFT Vault",
+      "view_addresses": "Account Details",
       "return": "Return to Account Details",
       "contact_store": "Contact Shop"
     },
