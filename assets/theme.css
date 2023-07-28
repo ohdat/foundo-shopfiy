@@ -223,7 +223,7 @@
 #wrapperNarrow .input_text,
 #wrapperNarrow .inputbox::-webkit-input-placeholder,
 #wrapperNarrow .inputboxed::-webkit-input-placeholder,
-#wrapperNarrow .flex_text1,
+#wrapperNarrow .flex_text1 p,
 #wrapperNarrow .flex_text2,
 #wrapperNarrow .flex_text3,
 #wrapperNarrow .flex_text4,
@@ -327,6 +327,10 @@
   font-size: 12px;
   color: #9B9B9B;
   position: relative;
+}
+
+.flex_text1 p{
+  font-size: 16px;
 }
 
 .flex_text2 {
