@@ -226,8 +226,11 @@
 #wrapperNarrow .flex_text1,
 #wrapperNarrow .flex_text2,
 #wrapperNarrow .flex_text3,
+#wrapperNarrow .flex_text4,
 #wrapperNarrow .flex_xia p,
-#wrapperNarrow .flex_xia1 p {
+#wrapperNarrow .flex_xia1 p,
+#wrapperNarrow .flex_xia2 p,
+#wrapperNarrow .flex_xia3 p {
   font-family: 'Foundo_Medium' !important;
   font-weight: 500;
 }
