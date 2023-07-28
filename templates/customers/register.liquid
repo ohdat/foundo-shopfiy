@@ -1144,15 +1144,15 @@
       ];
       for (var i = 0; i < daylist.length; i++) {
         var span = document.createElement('p');
-        span.textContent = '+ ' + daylist[i];
+        span.textContent = daylist[i];
         span.addEventListener('click', dayClick);
         mydIV2.appendChild(span);
       }
       for (var i = 0; i < monthlist.length; i++) {
         var span = document.createElement('p');
-        span.textContent = '+ ' + monthlist[i];
+        span.textContent = monthlist[i];
         span.addEventListener('click', monthClick);
-        mydIV2.appendChild(span);
+        mydIV3.appendChild(span);
       }
       function dayClick() {
         var flex_textp = document.querySelector('.flex_text3 p');
