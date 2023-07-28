@@ -332,7 +332,7 @@
 .flex_text1 p,
 .flex_text2 p,
 .flex_text3 p,
-.flex_text4 p{
+.flex_text4 p {
   font-size: 16px;
 }
 
@@ -402,6 +402,26 @@
   border-bottom: 1px solid #D0D0D0;
   cursor: pointer;
 }
+
+.links_box {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  text-align: left;
+  height: 38px;
+  background: #FFFFFF;
+  font-size: 12px;
+}
+
+#linksBox li a {
+  font-family: 'Foundo_Headline' !important;
+  font-weight: normal;
+  color: #00031E;
+}
+
+
+
+
 
 
 
