@@ -413,10 +413,17 @@
   font-size: 12px;
 }
 
-#linksBox li a {
+.links_box li{
+  padding: 0 0 0 5px;
+}
+
+.links_box li a{
+  color: #00031E;
+}
+
+#linksBox li a{
   font-family: 'Foundo_Headline' !important;
   font-weight: normal;
-  color: #00031E;
 }
 
 
@@ -17906,8 +17913,8 @@ body .shopify-email-marketing-confirmation__container a {
   margin: 8px 0;
 }
 
-.account-sidebar li.is-current a {
-  color: var(--link-hover);
+.account-sidebar li.is-current {
+  background: #F9F9F9;
 }
 
 .account-main h2.theme,
