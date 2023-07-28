@@ -69,11 +69,11 @@
         <div class="form-field">
           <div class="account_text">allergies</div>
           <input
-            value="{{ form.birthday }}"
-            id="allergies"
-            class="inputbox"
-            type="text"
-            name="customer[note][Allergies]" />
+            value="{{ form.subscribe }}"
+            id="subscribe"
+            type="checkbox"
+            name="customer[note][Subscribe]" />
+          <p class="input_text">Subscribe to newsletter</p>
         </div>
         <button type="submit" class="account_submit">{{ 'customer.register.submit' | t }}
         </button>
