@@ -295,7 +295,7 @@
       "create_account_cta": "Sign up here"
     },
     "orders": {
-      "title": "Order History",
+      "title": "My orders",
       "order_number": "Order",
       "date": "Date",
       "payment_status": "Payment Status",
