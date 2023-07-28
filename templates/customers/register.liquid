@@ -68,9 +68,11 @@
         </div>
         <div class="form-field">
           <div class="account_text">LOCATION CODE</div>
-          <div class="flex_all">
+          <div class="flex_all flex_bor">
             <div class="flex_text1"></div>
-            {%- render 'icon-nav-arrow-down' -%}
+            <div style="cursor: pointer;">
+              {%- render 'icon-nav-arrow-down' -%}
+            </div>
             <input
               value="{{ form.areacode }}"
               id="areacode"
