@@ -70,7 +70,7 @@
           <div class="account_text">LOCATION CODE</div>
           <div class="flex_all flex_bor">
             <div class="flex_text1">
-              +86
+              <p>+86</p>
               <div id="mydIV" class="flex_xia acvi"></div>
             </div>
             <div onclick="xaila1()" style="cursor: pointer;">
@@ -120,7 +120,6 @@
     </div>
     <script>
       var myDiv = document.getElementById('mydIV'); // 获取目标 div 元素
-
       for (var i = 0; i < 5; i++) {
         var span = document.createElement('p'); // 创建 span 元素
         span.textContent = 'Item ' + (
@@ -129,8 +128,8 @@
         span.addEventListener('click', handleClick); // 添加点击事件监听器
         myDiv.appendChild(span); // 将 span 元素添加到目标 div 元素中
       }function handleClick() {
-
-// 处理点击事件的逻辑
+        var flex_textp = document.querySelector('.flex_text1 p');
+        flex_textp.innerHTML = this.textContent;
         console.log('Clicked:', this.textContent);
       }
       function xaila1() {
