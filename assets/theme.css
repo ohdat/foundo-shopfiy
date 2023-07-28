@@ -317,17 +317,17 @@
 
 .flex_text1 {
   width: 70px;
-  text-align: center;
+  text-align: left;
   font-size: 12px;
   color: #9B9B9B;
   position: relative;
 }
 
-.flex_bor{
+.flex_bor {
   border-bottom: 1px solid #D0D0D0;
 }
 
-.flex_xia{
+.flex_xia {
   width: 108%;
   height: 200px;
   overflow-y: auto;
@@ -342,12 +342,14 @@
   display: none;
 }
 
-.flex_xia p{
+.flex_xia p {
+  height: 20px;
   font-size: 12px;
   color: #FFF;
-  padding: 5px;
-  text-align: center;
+  line-height: 15px;
+  text-align: left;
   border-bottom: 1px solid #D0D0D0;
+  z-index: 2;
 }
 
 
