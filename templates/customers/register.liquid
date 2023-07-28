@@ -58,13 +58,22 @@
             placeholder="{{ 'customer.register.last_name' | t }}">
         </div>
         <div class="form-field">
-          <label for="birthday">Birthday</label>
+          <div class="account_text">Birthday</div>
           <input
             value="{{ form.birthday }}"
             id="birthday"
             class="inputbox"
-            type="date"
+            type="month"
             name="customer[note][Birthday]" />
+        </div>
+        <div class="form-field">
+          <div class="account_text">allergies</div>
+          <input
+            value="{{ form.birthday }}"
+            id="allergies"
+            class="inputbox"
+            type="text"
+            name="customer[note][Allergies]" />
         </div>
         <button type="submit" class="account_submit">{{ 'customer.register.submit' | t }}
         </button>
