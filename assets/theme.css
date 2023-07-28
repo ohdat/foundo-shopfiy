@@ -352,6 +352,15 @@
   z-index: 2;
 }
 
+.flex_xia.error{
+  display: none;
+}
+
+.flex_xia.active{
+  display: block;
+}
+
+
 
 
 

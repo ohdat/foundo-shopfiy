@@ -71,7 +71,7 @@
           <div class="flex_all flex_bor">
             <div class="flex_text1">
               +86
-              <div class="flex_xia">
+              <div class="flex_xia error">
                 <p>+86</p>
                 <p>+44</p>
                 <p>+44</p>
@@ -83,7 +83,7 @@
                 <p>+44</p>
               </div>
             </div>
-            <div style="cursor: pointer;">
+            <div onclick="xaila1()" style="cursor: pointer;">
               {%- render 'icon-nav-arrow-down' -%}
             </div>
             <input
@@ -128,5 +128,12 @@
         </a>
       {% endform %}
     </div>
+    <script>
+      function xaila1() {
+        var navbar = document.querySelectorAll(".flex_xia");
+        console.log(navbar)
+        console.log(navbar.classList)
+      }
+    </script>
   </section>
 </section>
