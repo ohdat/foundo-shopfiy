@@ -413,14 +413,19 @@
   font-size: 12px;
 }
 
-.links_box li a {
-  background: #FFFFFF;
+.links_box li{
   height: 38px;
   width: 16.6%;
   padding: 0 0 0 5px;
 }
 
-.links_box li a:hover {
+.links_box li a{
+  height: 38px;
+  width: 100%;
+  padding: 0 0 0 5px;
+}
+
+.links_box li:hover {
   background: #F9F9F9;
 }
 
