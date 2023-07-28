@@ -413,15 +413,20 @@
   font-size: 12px;
 }
 
-.links_box li{
+.links_box li {
+  width: 16.6%;
   padding: 0 0 0 5px;
 }
 
-.links_box li a{
+.links_box li:hover {
+  background: #F9F9F9;
+}
+
+.links_box li a {
   color: #00031E;
 }
 
-#linksBox li a{
+#linksBox li a {
   font-family: 'Foundo_Headline' !important;
   font-weight: normal;
 }
