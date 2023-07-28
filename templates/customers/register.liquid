@@ -1000,7 +1000,7 @@
 
       for (var i = 0; i < list.length; i++) {
         var span = document.createElement('p');
-        span.textContent = '+ ' + i.area;
+        span.textContent = '+ ' + list[i].area;
         span.addEventListener('click', handleClick);
         myDiv.appendChild(span);
       }
