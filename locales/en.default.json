@@ -251,6 +251,14 @@
       "return": "Return to Account Details",
       "contact_store": "Contact Shop"
     },
+    "nfyvault": {
+      "account": "Nfyvault",
+      "title": "Nfyvault",
+      "details": "Nfyvault Details",
+      "view_addresses": "NFT Vault",
+      "return": "Return to Account Details",
+      "contact_store": "Contact Shop"
+    },
     "activate_account": {
       "title": "Activate Account",
       "subtext": "Create your password to activate your account.",
