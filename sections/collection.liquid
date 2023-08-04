@@ -180,6 +180,18 @@
                   style="border: 1px solid #D0D0D0;color: #9B9B9B;"
                   class="filled_box_texted3 filled_box_text1">Price (High to Low)</div>
               </div>
+              <p class="filled_xian"></p>
+              <p class="filled_p">Material</p>
+              <div class="filled_box">
+                <div
+                  style="border: 1px solid #D0D0D0;color: #9B9B9B;"
+                  onclick="Kgold()"
+                  class="filled_box_texted4 filled_box_text">18k gold</div>
+                <div
+                  onclick="Sterling()"
+                  style="border: 1px solid #D0D0D0;color: #9B9B9B;"
+                  class="filled_box_texted5 filled_box_text">Sterling silver</div>
+              </div>
             </div>
           {%- endif -%}
         </div>
@@ -520,6 +532,26 @@
       navbar1.style.border = '1px solid rgb(208, 208, 208)';
       navbar2.style.color = 'rgb(155, 155, 155)';
       navbar2.style.border = '1px solid rgb(208, 208, 208)';
+    } else {
+      navbar.style.color = 'rgb(155, 155, 155)';
+      navbar.style.border = '1px solid rgb(208, 208, 208)';
+    }
+  }
+  function Kgold() {
+    var navbar = document.querySelector(".filled_box_texted4");
+    if (navbar.style.color === 'rgb(155, 155, 155)') {
+      navbar.style.color = 'rgb(0, 3, 30)';
+      navbar.style.border = '1px solid rgb(0, 3, 30';
+    } else {
+      navbar.style.color = 'rgb(155, 155, 155)';
+      navbar.style.border = '1px solid rgb(208, 208, 208)';
+    }
+  }
+  function Sterling() {
+    var navbar = document.querySelector(".filled_box_texted5");
+    if (navbar.style.color === 'rgb(155, 155, 155)') {
+      navbar.style.color = 'rgb(0, 3, 30)';
+      navbar.style.border = '1px solid rgb(0, 3, 30';
     } else {
       navbar.style.color = 'rgb(155, 155, 155)';
       navbar.style.border = '1px solid rgb(208, 208, 208)';
