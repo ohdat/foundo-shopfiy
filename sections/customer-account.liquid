@@ -38,7 +38,10 @@
                 {% endif %}>
                 <a href="{{ routes.account_url }}">{{ 'customer.orders.title' | t }}</a>
               </li>
-              <li>
+              <li
+                {% if template contains 'nft' %}
+                class="is-current"
+                {% endif %}>
                 <a href="{{ routes.ntf_url }}">NFT Vault</a>
               </li>
               <li>
