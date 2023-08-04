@@ -169,10 +169,16 @@
                   style="border: 1px solid #D0D0D0;color: #9B9B9B;"
                   onclick="Newest()"
                   class="filled_box_texted1 filled_box_text">Newest</div>
-                <div style="border: 1px solid #D0D0D0;color: #9B9B9B;" class="filled_box_text">Price (Low to High)</div>
+                <div
+                  onclick="Low()"
+                  style="border: 1px solid #D0D0D0;color: #9B9B9B;"
+                  class="filled_box_texted2 filled_box_text">Price (Low to High)</div>
               </div>
               <div class="filled_box">
-                <div style="border: 1px solid #D0D0D0;color: #9B9B9B;" class="filled_box_text1">Price (High to Low)</div>
+                <div
+                  onclick="High()"
+                  style="border: 1px solid #D0D0D0;color: #9B9B9B;"
+                  class="filled_box_texted3 filled_box_text1">Price (High to Low)</div>
               </div>
             </div>
           {%- endif -%}
@@ -473,16 +479,51 @@
 <script>
   function Newest() {
     var navbar = document.querySelector(".filled_box_texted1");
-    console.log(navbar.style.color)
-    console.log(navbar.style.color === 'rgb(155, 155, 155)')
+    var navbar1 = document.querySelector(".filled_box_texted2");
+    var navbar2 = document.querySelector(".filled_box_texted3");
     if (navbar.style.color === 'rgb(155, 155, 155)') {
       navbar.style.color = 'rgb(0, 3, 30)';
       navbar.style.border = '1px solid rgb(0, 3, 30';
+      navbar1.style.color = 'rgb(155, 155, 155)';
+      navbar1.style.border = '1px solid rgb(208, 208, 208)';
+      navbar2.style.color = 'rgb(155, 155, 155)';
+      navbar2.style.border = '1px solid rgb(208, 208, 208)';
     } else {
       navbar.style.color = 'rgb(155, 155, 155)';
       navbar.style.border = '1px solid rgb(208, 208, 208)';
     }
-    console.log(navbar.style)
+  }
+  function Low() {
+    var navbar = document.querySelector(".filled_box_texted2");
+    var navbar1 = document.querySelector(".filled_box_texted1");
+    var navbar2 = document.querySelector(".filled_box_texted3");
+    if (navbar.style.color === 'rgb(155, 155, 155)') {
+      navbar.style.color = 'rgb(0, 3, 30)';
+      navbar.style.border = '1px solid rgb(0, 3, 30';
+      navbar1.style.color = 'rgb(155, 155, 155)';
+      navbar1.style.border = '1px solid rgb(208, 208, 208)';
+      navbar2.style.color = 'rgb(155, 155, 155)';
+      navbar2.style.border = '1px solid rgb(208, 208, 208)';
+    } else {
+      navbar.style.color = 'rgb(155, 155, 155)';
+      navbar.style.border = '1px solid rgb(208, 208, 208)';
+    }
+  }
+  function High() {
+    var navbar = document.querySelector(".filled_box_texted3");
+    var navbar1 = document.querySelector(".filled_box_texted2");
+    var navbar2 = document.querySelector(".filled_box_texted1");
+    if (navbar.style.color === 'rgb(155, 155, 155)') {
+      navbar.style.color = 'rgb(0, 3, 30)';
+      navbar.style.border = '1px solid rgb(0, 3, 30';
+      navbar1.style.color = 'rgb(155, 155, 155)';
+      navbar1.style.border = '1px solid rgb(208, 208, 208)';
+      navbar2.style.color = 'rgb(155, 155, 155)';
+      navbar2.style.border = '1px solid rgb(208, 208, 208)';
+    } else {
+      navbar.style.color = 'rgb(155, 155, 155)';
+      navbar.style.border = '1px solid rgb(208, 208, 208)';
+    }
   }
   function changeImage() {
     var imageContainers = document.querySelectorAll(".product-grid_tru");
