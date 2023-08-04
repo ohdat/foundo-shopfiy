@@ -478,12 +478,13 @@
     console.log(navbar.style.color)
     console.log(navbar.style.color === 'rgb(155, 155, 155)')
     if (navbar.style.color === 'rgb(155, 155, 155)') {
-      navbar.style.color === '#00031E';
-      navbar.style.border === '1px solid #00031E';
+      navbar.style.color === 'rgb(0, 3, 30)';
+      navbar.style.border === '1px solid rgb(0, 3, 30';
     } else {
-      navbar.style.color === '#9B9B9B';
-      navbar.style.border === '1px solid #D0D0D0';
+      navbar.style.color === 'rgb(155, 155, 155)';
+      navbar.style.border === '1px solid rgb(208, 208, 208)';
     }
+    console.log(navbar.style)
   }
   function changeImage() {
     var imageContainers = document.querySelectorAll(".product-grid_tru");
