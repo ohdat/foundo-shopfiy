@@ -73,15 +73,6 @@
   {%- endif -%}
 {%- endcapture -%}
 
-{%- capture collection_sidebar_classed -%}
-  {%- if filter_layout == 'slide-out' -%}
-    eded
-  {%- else -%}
-    eded{% if show_group_filters %}
-      expanded drawer--animated no-mobile-animation{% endif %}
-  {%- endif -%}
-{%- endcapture -%}
-
 {%- paginate collection.products by product_limit -%}
   <section
     class="collection collection-products collection-{{ collection.handle }} section-padding"
@@ -166,24 +157,22 @@
             {% render 'collection-sorting' %}
           {%- endif -%}
         </div>
-        <div style="position: absolute;}}" class="{{ collection_sidebar_classed }}">
+        <div id="filledBoxId">
           {%- if show_filter or show_group_filter -%}
-            <div id="filledBoxId" style="position: absolute;top:40px;left:0;width:962px;height:calc(100vh - 40px);padding:10px;background:#ffffff;">
-              <div class="drawer__underlay" data-drawer-underlay></div>
-              <div
-                class="{{ collection_sidebar_class }}"
-                id="filter-groups"
-                data-collection-sidebar>
-                <div class="filled_box">
-                  <div
-                    style="border: 1px solid #D0D0D0;color: #9B9B9B;"
-                    onclick="Newest()"
-                    class="filled_box_texted1 filled_box_text">Newest</div>
-                  <div style="border: 1px solid #D0D0D0;color: #9B9B9B;" class="filled_box_text">Price (Low to High)</div>
-                </div>
-                <div class="filled_box">
-                  <div style="border: 1px solid #D0D0D0;color: #9B9B9B;" class="filled_box_text1">Price (High to Low)</div>
-                </div>
+            <div
+              style="position: absolute;top:40px;left:0;width:962px;height:calc(100vh - 40px);padding:10px;background:#ffffff;"
+              class="{{ collection_sidebar_class }}"
+              id="filter-groups"
+              data-collection-sidebar>
+              <div class="filled_box">
+                <div
+                  style="border: 1px solid #D0D0D0;color: #9B9B9B;"
+                  onclick="Newest()"
+                  class="filled_box_texted1 filled_box_text">Newest</div>
+                <div style="border: 1px solid #D0D0D0;color: #9B9B9B;" class="filled_box_text">Price (Low to High)</div>
+              </div>
+              <div class="filled_box">
+                <div style="border: 1px solid #D0D0D0;color: #9B9B9B;" class="filled_box_text1">Price (High to Low)</div>
               </div>
             </div>
           {%- endif -%}
