@@ -230,7 +230,9 @@
 #wrapperNarrow .flex_xia p,
 #wrapperNarrow .flex_xia1 p,
 #wrapperNarrow .flex_xia2 p,
-#wrapperNarrow .flex_xia3 p {
+#wrapperNarrow .flex_xia3 p,
+#filledBoxId .filled_box_text,
+#filledBoxId .filled_box_text1 {
   font-family: 'Foundo_Medium' !important;
   font-weight: 500;
 }
@@ -439,6 +441,35 @@
   display: flex;
   align-items: center;
   text-transform: uppercase;
+}
+
+.filled_box{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.filled_box_text{
+  width: calc(50% - 5px);
+  height: 40px;
+  border: 1px solid #00031E;
+  margin-right: 10px;
+  font-size: 11px;
+  color: #00031E;
+  line-height: 40px;
+  padding: 0 0 0 10px;
+}
+
+.filled_box_text1{
+  width: 100%;
+  height: 40px;
+  border: 1px solid #00031E;
+  margin-right: 10px;
+  font-size: 11px;
+  color: #00031E;
+  line-height: 40px;
+  padding: 0 0 0 10px;
 }
 
 
@@ -19495,7 +19526,7 @@ body:not(.has-sticky-header):not(.has-transparent-header) .main-content>.section
 @media only screen and (min-width: 750px) {
   .collection__sidebar__slider.expanded {
     transform: translateZ(0);
-    min-width: var(--sidebar-width);
+    width: 100%;
     margin-right: calc((var(--outer) - var(--gutter)) * -1);
   }
 }
