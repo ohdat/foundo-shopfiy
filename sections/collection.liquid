@@ -160,7 +160,7 @@
         <div id="filledBoxId">
           {%- if show_filter or show_group_filter -%}
             <div
-              style="position: absolute;top:40px;left:0;width:962px;height:calc(100vh - 40px);padding:10px;background:#ffffff;"
+              style="position: absolute;top:40px;left:0;width:962px;height:calc(100vh - 40px);padding:10px;background:#ffffff;overflow-y: auto;"
               class="{{ collection_sidebar_class }}"
               id="filter-groups"
               data-collection-sidebar>
@@ -265,6 +265,7 @@
                   style="border: 1px solid #00031E;color: #00031E;"
                   class="filled_box_texted17 filled_box_text">Reset Filters</div>
               </div>
+              <div style="width:100%;height:60px;"></div>
             </div>
           {%- endif -%}
         </div>
