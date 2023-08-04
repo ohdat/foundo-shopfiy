@@ -169,10 +169,10 @@
                     style="border: 1px solid #D0D0D0;color: #9B9B9B;"
                     onclick="Newest()"
                     class="filled_box_texted1 filled_box_text">Newest</div>
-                  <div class="filled_box_text">Price (Low to High)</div>
+                  <div style="border: 1px solid #D0D0D0;color: #9B9B9B;" class="filled_box_text">Price (Low to High)</div>
                 </div>
                 <div class="filled_box">
-                  <div class="filled_box_text1">Price (High to Low)</div>
+                  <div style="border: 1px solid #D0D0D0;color: #9B9B9B;" class="filled_box_text1">Price (High to Low)</div>
                 </div>
               </div>
             {%- endif -%}
@@ -476,7 +476,7 @@
   function Newest() {
     var navbar = document.querySelector(".filled_box_texted1");
     console.log(navbar.style.color)
-    if (navbar.style.color === '#9B9B9B') {
+    if (navbar.style.color === 'rgb(155, 155, 155)') {
       navbar.style.color === '#00031E';
       navbar.style.border === '1px solid #00031E';
     } else {
