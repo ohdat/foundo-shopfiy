@@ -73,6 +73,15 @@
   {%- endif -%}
 {%- endcapture -%}
 
+{%- capture collection_sidebar_classed -%}
+  {%- if filter_layout == 'slide-out' -%}
+    eded
+  {%- else -%}
+    eded{% if show_group_filters %}
+      expanded drawer--animated no-mobile-animation{% endif %}
+  {%- endif -%}
+{%- endcapture -%}
+
 {%- paginate collection.products by product_limit -%}
   <section
     class="collection collection-products collection-{{ collection.handle }} section-padding"
@@ -157,7 +166,7 @@
             {% render 'collection-sorting' %}
           {%- endif -%}
         </div>
-        <div>
+        <div style="position: absolute;}} class="{{ collection_sidebar_classed }}">
           {%- if show_filter or show_group_filter -%}
             <div id="filledBoxId" style="position: absolute;top:40px;left:0;width:962px;height:calc(100vh - 40px);padding:10px;background:#ffffff;">
               <div class="drawer__underlay" data-drawer-underlay></div>
