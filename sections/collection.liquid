@@ -163,33 +163,7 @@
               <div
                 class="{{ collection_sidebar_class }}"
                 id="filter-groups"
-                data-collection-sidebar>
-                <div class="collection__sidebar__head{% unless filter_layout == 'slide-out' %} collection__sidebar__head--mobile{% endunless %}">
-                  <h3>
-                    {{- 'collections.general.filters' | t -}}
-
-                    <span class="filter-count{% if filter_active_count < 1 %} hidden{% endif %}" data-active-filters>
-                      {{- filter_active_count -}}
-                    </span>
-                  </h3>
-
-                  <a
-                    href="#filters-group"
-                    class="collection__sidebar__close"
-                    data-collection-sidebar-close
-                    aria-label="{{ 'collections.general.hide_filters' | t }}">
-                    {%- render 'icon-cancel' -%}
-                  </a>
-                </div>
-
-                {%- if show_filter -%}
-                  {%- render 'collection-filters-sidebar', section: section -%}
-                {%- endif -%}
-
-                {%- if show_group_filter -%}
-                  {%- render 'collection-tags-grouped', collection: collection, show_filters: show_group_filters, filter_layout: filter_layout -%}
-                {%- endif -%}
-              </div>
+                data-collection-sidebar></div>
             {%- endif -%}
           </div>
         </div>
