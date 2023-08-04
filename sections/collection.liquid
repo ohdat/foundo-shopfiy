@@ -157,7 +157,7 @@
             {% render 'collection-sorting' %}
           {%- endif -%}
         </div>
-        <div style="position: absolute;top:40px;left:0;width:400px;height:90vh;">
+        <div style="position: absolute;top:40px;left:0;width:400px;height:calc(100vh - 40px);">
           <div class="collection__products{% if show_filter or show_group_filter %} collection__products--group-tags{% endif %}">
             {%- if show_filter or show_group_filter -%}
               <div
@@ -197,7 +197,6 @@
     {%- endif -%}
 
     <div class="collection__products{% if show_filter or show_group_filter %} collection__products--group-tags{% endif %}">
-
       <div class="drawer__underlay" data-drawer-underlay></div>
       <div class="product-grid_tru action">
         <div class="grid-outer" data-products-grid>
