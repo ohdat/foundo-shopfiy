@@ -232,7 +232,8 @@
 #wrapperNarrow .flex_xia2 p,
 #wrapperNarrow .flex_xia3 p,
 #filledBoxId .filled_box_text,
-#filledBoxId .filled_box_text1 {
+#filledBoxId .filled_box_text1,
+#filledBoxId .filled_box_text2 {
   font-family: 'Foundo_Medium' !important;
   font-weight: 500;
 }
@@ -447,11 +448,22 @@
   width: 100%;
   display: flex;
   align-items: center;
-  justify-content: center;
 }
 
 .filled_box_text {
   width: calc(50% - 5px);
+  height: 40px;
+  margin-right: 10px;
+  font-size: 11px;
+  line-height: 40px;
+  padding: 0 0 0 10px;
+  margin-top: 10px;
+  cursor: pointer;
+  user-select: none;
+}
+
+.filled_box_text2 {
+  width: calc(50% - 10px);
   height: 40px;
   margin-right: 10px;
   font-size: 11px;
