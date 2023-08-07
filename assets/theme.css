@@ -13638,6 +13638,9 @@ main-search .input-holder {
 .product-item__image .product-item__wrapper:nth-child(1) {
   z-index: 1;
 }
+.product-item__image .product-item__wrapper.active {
+  z-index: 1;
+}
 
 @keyframes fakeFade {
   0% {
@@ -14423,6 +14426,10 @@ main-search .input-holder {
   text-align: center;
   background-color: var(--bg);
   filter: brightness(var(--filter-bg));
+}
+.product__thumb.active .product__thumb__link {
+  border: 1px dashed var(--COLOR-BORDER-DARK);
+  overflow: hidden;
 }
 
 .product__thumb__link__image {
