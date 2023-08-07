@@ -404,7 +404,7 @@ Usage:
       data-product-link="{{ product_url }}">
       {%- if product.media.size > 0 -%}
         {%- for media in product.media -%}
-          <div class="produt-item__wrapper">
+          <div class="product-item__wrapper">
             <div class="product-item__bg" data-product-image-default>
               {%- render 'image' image: media.preview_image, aspect_ratio: aspect_ratio, sizes: sizes, widths: widths, attributes: image_animations, cover: true -%}
 
