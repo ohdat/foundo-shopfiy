@@ -428,6 +428,14 @@
   text-align: left;
 }
 
+.shopify-section1{
+  display: none;
+}
+
+.shopify-section:last-of-type .shopify-section1{
+  display: block !important;
+}
+
 #FAQ_font .Still_title1 {
   font-size: 16px;
   font-family: 'Foundo_Medium' !important;
