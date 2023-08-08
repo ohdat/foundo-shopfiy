@@ -419,6 +419,34 @@
   color: #00031E;
 }
 
+#FAQ_font .Still_title {
+  font-size: 20px;
+  font-family: 'Foundo_Headline' !important;
+  font-weight: normal;
+  color: #00031E;
+  margin: 90px 0 50px 0;
+  text-align: left;
+}
+
+#FAQ_font .Still_title1 {
+  font-size: 16px;
+  font-family: 'Foundo_Medium' !important;
+  font-weight: 500;
+  color: #00031E;
+  margin-top: 30px;
+  text-align: left;
+}
+
+#FAQ_font .Still_text {
+  font-size: 16px;
+  font-family: 'Foundo_Medium' !important;
+  font-weight: 500;
+  color: #9B9B9B;
+  text-align: left;
+  line-height: 19px;
+  margin-top: 10px;
+}
+
 .flex_xia p,
 .flex_xia1 p,
 .flex_xia2 p,
@@ -14241,7 +14269,8 @@ main-search .input-holder {
   background-color: var(--bg);
   filter: brightness(var(--filter-bg));
 }
-.product__thumb.active{
+
+.product__thumb.active {
   opacity: 1;
 }
 
