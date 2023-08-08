@@ -14187,6 +14187,7 @@ main-search .input-holder {
   margin: 0 10px 0 0;
   padding: 0 0 10px;
   cursor: pointer;
+  opacity: 0.5;
 }
 
 .product__thumb:after {
@@ -14242,7 +14243,8 @@ main-search .input-holder {
 }
 
 .product__thumb.active .product__thumb__link {
-  border: 1px dashed var(--COLOR-BORDER-DARK);
+  /* border: 1px dashed var(--COLOR-BORDER-DARK); */
+  opacity: 1;
   overflow: hidden;
 }
 
