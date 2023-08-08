@@ -23,7 +23,7 @@
         "faq-heading": {
           "type": "heading",
           "settings": {
-            "title": "Order Status\/Information"
+            "title": "Frequently Asked Questions (10)"
           }
         },
         "faq-0": {
@@ -68,6 +68,7 @@
       "blocks": {
         "heading-0": {
           "type": "heading",
+          "disabled": true,
           "settings": {
             "title": "Shipping Questions"
           }
@@ -114,6 +115,7 @@
       "blocks": {
         "heading-0": {
           "type": "heading",
+          "disabled": true,
           "settings": {
             "title": "Returns Questions"
           }
