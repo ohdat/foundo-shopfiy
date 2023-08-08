@@ -29,9 +29,12 @@
     class="index-page section-padding"
     data-section-id="{{ section.id }}"
     data-section-type="page">
-    <div style="width:100%;height:60px;"></div>
-    <div class="hero__content__wrapper {{ section.settings.align_text }} {{ section.settings.width }}">
-      <div class="hero__content hero__content--compact">
+    <div style="width:100%;height:60px;background: white;"></div>
+    <div style="background: white;" class="hero__content__wrapper {{ section.settings.align_text }} {{ section.settings.width }}">
+      <div
+        style="background: transparent;margin-bottom:70px;"
+        id="heroContent"
+        class="hero__content hero__content--compact">
         {%- if section.settings.subheading != blank -%}
           {%- assign font_size_class = section.settings.subheading_size | prepend: 'body-size-' -%}
           <p

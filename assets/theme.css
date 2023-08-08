@@ -391,6 +391,13 @@
   display: none;
 }
 
+#heroContent .hero__subheading{
+  font-size: 30px;
+font-family: 'Foundo_Headline' !important;
+font-weight: normal;
+color: #00031E;
+}
+
 .flex_xia p,
 .flex_xia1 p,
 .flex_xia2 p,
