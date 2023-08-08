@@ -6,10 +6,10 @@
 -%}
 
 <section class="account">
-  <div class="wrapper" style="padding:0;">
-    <div>
+  <div class="wrapper">
+    <div class="grid grid--account">
       {%- capture links -%}
-        <ul id="linksBox" class="links_box">
+        <ul>
           {%- assign needs_completion = true -%}
           {%- for block in section.blocks -%}
             {%- case block.type -%}
@@ -74,12 +74,24 @@
 
       <aside class="account-sidebar">
         <div class="desktop">
+          <p class="account-sidebar__title strong">
+            {{ 'customer.account.title' | t }}
+          </p>
+
           {{ links }}
         </div>
 
         <div class="mobile">
           <collapsible-elements>
             <details data-collapsible>
+              <summary data-collapsible-trigger>
+                <p class="account-sidebar__title strong">
+                  {{ 'customer.account.title' | t }}
+
+                  {%- render 'icon-plus' -%}
+                  {%- render 'icon-minus' -%}
+                </p>
+              </summary>
               <div data-collapsible-body>
                 <div data-collapsible-content>
                   {{ links }}
