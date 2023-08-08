@@ -412,6 +412,13 @@
   color: #9B9B9B;
 }
 
+#FAQ_font .faq__title {
+  font-size: 20px;
+  font-family: 'Foundo_Headline' !important;
+  font-weight: normal;
+  color: #00031E;
+}
+
 .flex_xia p,
 .flex_xia1 p,
 .flex_xia2 p,
