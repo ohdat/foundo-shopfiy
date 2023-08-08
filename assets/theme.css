@@ -14241,6 +14241,9 @@ main-search .input-holder {
   background-color: var(--bg);
   filter: brightness(var(--filter-bg));
 }
+.product__thumb.active{
+  opacity: 1;
+}
 
 .product__thumb.active .product__thumb__link {
   /* border: 1px dashed var(--COLOR-BORDER-DARK); */
