@@ -15960,7 +15960,7 @@ body.has-line-design.grid-compact .reviews__grid {
     grid-gap: 10px;
 
   }
-  .collection-products.collection-all .collection__sidebar__slider.expanded .filter-group__content ul lable:after {
+  .collection-products.collection-all .collection__sidebar__slider.expanded .filter-group__content ul label:after {
     display: none;
   }
 
