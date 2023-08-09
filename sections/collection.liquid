@@ -110,12 +110,11 @@
           <div class="popout--group">
             <button
               type="button"
-              class="popout__toggle{% unless filter_layout == 'slide-out' %} popout__toggle--filters{% endunless %}"
+              class="popout__padding popout__toggle{% unless filter_layout == 'slide-out' %} popout__toggle--filters{% endunless %}"
               aria-expanded="{% if show_group_filters %}true{% else %}false{% endif %}"
               aria-controls="filter-groups"
               data-aria-toggle
               data-group-tags-enabled>
-              {%- render 'icon-filter' -%}
 
               {%- if filter_layout == 'slide-out' -%}
                 {{ 'collections.general.filters' | t }}
@@ -136,17 +135,24 @@
                   </span>
                 </span>
               {%- endif -%}
-
-              {%- unless filter_layout == 'slide-out' -%}
-                {%- render 'icon-nav-arrow-down' -%}
-              {%- endunless -%}
+              <div class="popout——left">
+                <img src="https://img.ohdat.io/foundo-website/assets/shopify/shai.png" alt="">
+              </div>
             </button>
           </div>
         {%- endif -%}
 
-        {%- if show_sort -%}
-          {% render 'collection-sorting' %}
-        {%- endif -%}
+        <div style="display: flex;align-items: center;">
+          <div onclick="changeImage()" class="popout——left">
+            <img src="https://img.ohdat.io/foundo-website/assets/shopify/sifang.png" alt="">
+          </div>
+          <div onclick="changeImaged()" class="popout——left">
+            <img src="https://img.ohdat.io/foundo-website/assets/shopify/tiao.png" alt="">
+          </div>
+          {%- if show_sort -%}
+            {% render 'collection-sorting' %}
+          {%- endif -%}
+        </div>
       </nav>
     {%- endif -%}
 
@@ -331,7 +337,32 @@
     </div>
   </section>
 {%- endpaginate -%}
-
+<script>
+  function changeImage() {
+    var imageContainers = document.querySelectorAll(".product-grid_tru");
+    imageContainers.forEach(function(container) {
+      container.classList.remove("error");
+      container.classList.add("active");
+    });
+    var imageContainersed = document.querySelectorAll(".product-grid_fal");
+    imageContainersed.forEach(function(container) {
+      container.classList.remove("active");
+      container.classList.add("error");
+    });
+  }
+  function changeImaged() {
+    var imageContainers = document.querySelectorAll(".product-grid_tru");
+    imageContainers.forEach(function(container) {
+      container.classList.remove("active");
+      container.classList.add("error");
+    });
+    var imageContainersed = document.querySelectorAll(".product-grid_fal");
+    imageContainersed.forEach(function(container) {
+      container.classList.remove("error");
+      container.classList.add("active");
+    });
+  }
+</script>
 {% schema %}
   {
     "name": "Collection products",
