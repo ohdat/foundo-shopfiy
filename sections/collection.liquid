@@ -92,10 +92,7 @@
     {%- endif -%}
 
     {%- if show_sort or show_filter or show_group_filter -%}
-      <nav
-        id="collectionNav"
-        class="collection__nav {{ align_classes }}"
-        data-collection-nav>
+      <nav class="collection__nav {{ align_classes }}" data-collection-nav>
         {%- if show_filter or show_group_filter -%}
           {%- liquid
             assign filter_active_count = 0
@@ -113,11 +110,12 @@
           <div class="popout--group">
             <button
               type="button"
-              class="popout__padding popout__toggle{% unless filter_layout == 'slide-out' %} popout__toggle--filters{% endunless %}"
+              class="popout__toggle{% unless filter_layout == 'slide-out' %} popout__toggle--filters{% endunless %}"
               aria-expanded="{% if show_group_filters %}true{% else %}false{% endif %}"
               aria-controls="filter-groups"
               data-aria-toggle
               data-group-tags-enabled>
+              {%- render 'icon-filter' -%}
 
               {%- if filter_layout == 'slide-out' -%}
                 {{ 'collections.general.filters' | t }}
@@ -138,37 +136,63 @@
                   </span>
                 </span>
               {%- endif -%}
-              <div class="popout——left">
-                <img src="https://img.ohdat.io/foundo-website/assets/shopify/shai.png" alt="">
-              </div>
+
+              {%- unless filter_layout == 'slide-out' -%}
+                {%- render 'icon-nav-arrow-down' -%}
+              {%- endunless -%}
             </button>
           </div>
-
         {%- endif -%}
 
-        <div style="display: flex;align-items: center;">
-          <div onclick="changeImage()" class="popout——left">
-            <img src="https://img.ohdat.io/foundo-website/assets/shopify/sifang.png" alt="">
-          </div>
-          <div onclick="changeImaged()" class="popout——left">
-            <img src="https://img.ohdat.io/foundo-website/assets/shopify/tiao.png" alt="">
-          </div>
-          {%- if show_sort -%}
-            {% render 'collection-sorting' %}
-          {%- endif -%}
-        </div>
+        {%- if show_sort -%}
+          {% render 'collection-sorting' %}
+        {%- endif -%}
       </nav>
     {%- endif -%}
 
     <div class="collection__products{% if show_filter or show_group_filter %} collection__products--group-tags{% endif %}">
-      <div class="product-grid_tru action">
-        <div class="grid-outer" data-products-grid>
-          <div class="grid grid_tru" id="CollectionLoop">
-            {%- if paginate.current_page == 1 and collection.products_count > 0 -%}
-              {%- for block in section.blocks -%}
-                {%- case block.type -%}
-                  {%- when 'featured_image' -%}
-                  {%- liquid
+      {%- if show_filter or show_group_filter -%}
+        <div
+          class="{{ collection_sidebar_class }}"
+          id="filter-groups"
+          data-collection-sidebar>
+          <div class="collection__sidebar__head{% unless filter_layout == 'slide-out' %} collection__sidebar__head--mobile{% endunless %}">
+            <h3>
+              {{- 'collections.general.filters' | t -}}
+
+              <span class="filter-count{% if filter_active_count < 1 %} hidden{% endif %}" data-active-filters>
+                {{- filter_active_count -}}
+              </span>
+            </h3>
+
+            <a
+              href="#filters-group"
+              class="collection__sidebar__close"
+              data-collection-sidebar-close
+              aria-label="{{ 'collections.general.hide_filters' | t }}">
+              {%- render 'icon-cancel' -%}
+            </a>
+          </div>
+
+          {%- if show_filter -%}
+            {%- render 'collection-filters-sidebar', section: section -%}
+          {%- endif -%}
+
+          {%- if show_group_filter -%}
+            {%- render 'collection-tags-grouped', collection: collection, show_filters: show_group_filters, filter_layout: filter_layout -%}
+          {%- endif -%}
+        </div>
+      {%- endif -%}
+
+      <div class="drawer__underlay" data-drawer-underlay></div>
+
+      <div class="grid-outer" data-products-grid>
+        <div class="grid" id="CollectionLoop">
+          {%- if paginate.current_page == 1 and collection.products_count > 0 -%}
+            {%- for block in section.blocks -%}
+              {%- case block.type -%}
+                {%- when 'featured_image' -%}
+                {%- liquid
                     assign featured_image = block.settings.featured_image
                     assign featured_header = block.settings.featured_heading
                     assign featured_text = block.settings.featured_text
@@ -184,540 +208,130 @@
                     endif
                   -%}
 
-                  {%- style -%}
-                    #Product-item--{{ block.id }}.product-item__image-overlay {
-                      {%- unless featured_color_text == 'rgba(0,0,0,0)' or featured_color_text == blank -%}
-                        color: {{ featured_color_text }}
-                        ;
-                      {%- endunless -%}
-                    }
-                    #Product-item--{{ block.id }}.product-item__image-overlay::before {
-                      opacity: {{ featured_overlay_opacity }}
+                {%- style -%}
+                  #Product-item--{{ block.id }}.product-item__image-overlay {
+                    {%- unless featured_color_text == 'rgba(0,0,0,0)' or featured_color_text == blank -%}
+                      color: {{ featured_color_text }}
                       ;
-                      background-color: {{ featured_color_overlay }}
-                      ;
-                    }
-                  {%- endstyle -%}
+                    {%- endunless -%}
+                  }
+                  #Product-item--{{ block.id }}.product-item__image-overlay::before {
+                    opacity: {{ featured_overlay_opacity }}
+                    ;
+                    background-color: {{ featured_color_overlay }}
+                    ;
+                  }
+                {%- endstyle -%}
 
-                  <div
-                    class="grid-item product-item product-item--featured-image"
-                    id="Product-item--{{ block.id }}"
-                    {{ block.shopify_attributes }}>
-                    {%- capture featured_image_content -%}
-                      <div class="product-item__image-overlay">
-                        <div class="product-item__image-content">
-                          {%- if featured_header != blank -%}
-                            <h3>{{ featured_header }}</h3>
-                          {%- endif -%}
+                <div
+                  class="grid-item product-item product-item--featured-image"
+                  id="Product-item--{{ block.id }}"
+                  {{ block.shopify_attributes }}>
+                  {%- capture featured_image_content -%}
+                    <div class="product-item__image-overlay">
+                      <div class="product-item__image-content">
+                        {%- if featured_header != blank -%}
+                          <h3>{{ featured_header }}</h3>
+                        {%- endif -%}
 
-                          {%- if featured_text != blank -%}
-                            {{ featured_text }}
-                          {%- endif -%}
+                        {%- if featured_text != blank -%}
+                          {{ featured_text }}
+                        {%- endif -%}
 
-                          {%- if featured_button_text != blank -%}
-                            <a
-                              href="{{ featured_button_link }}"
-                              class="btn {{ button_style }} {{ block.settings.button_type }} {{ block.settings.button_size }}"
-                              data-aos="fade-up"
-                              data-aos-anchor="{{ animation_anchor }}"
-                              data-aos-duration="{{ animation_duration }}"
-                              data-aos-delay="200">
-                              <span>{{ featured_button_text }}</span>
-
-                              {%- if block.settings.show_arrow -%}
-                                {%- render 'icon-arrow-right' -%}
-                              {%- endif -%}
-                            </a>
-                          {%- endif -%}
-                        </div>
-
-                        {%- if featured_button_text == blank and featured_button_link != blank -%}
+                        {%- if featured_button_text != blank -%}
                           <a
                             href="{{ featured_button_link }}"
-                            class="product-item__image-link"
-                            aria-label="{{ featured_image.alt | default: featured_header | default: featured_text | strip_html | escape }}"></a>
+                            class="btn {{ button_style }} {{ block.settings.button_type }} {{ block.settings.button_size }}"
+                            data-aos="fade-up"
+                            data-aos-anchor="{{ animation_anchor }}"
+                            data-aos-duration="{{ animation_duration }}"
+                            data-aos-delay="200">
+                            <span>{{ featured_button_text }}</span>
+
+                            {%- if block.settings.show_arrow -%}
+                              {%- render 'icon-arrow-right' -%}
+                            {%- endif -%}
+                          </a>
                         {%- endif -%}
                       </div>
-                    {%- endcapture -%}
 
-                    {%- unless featured_image == blank -%}
-                      <div class="product-item__image">
-                        <div
-                          class="product-item__bg"
-                          data-aos="img-in"
-                          data-aos-anchor="{{ animation_anchor }}"
-                          data-aos-delay="{{ animation_delay | times: 150 }}"
-                          data-aos-duration="{{ animation_duration }}"
-                          data-aos-easing="ease-out-quart">
-                          {%- render 'image' image: featured_image, sizes: image_sizes, loading: 'eager', preload: 'true', fetchpriority: 'high', cover: true -%}
-                        </div>
+                      {%- if featured_button_text == blank and featured_button_link != blank -%}
+                        <a
+                          href="{{ featured_button_link }}"
+                          class="product-item__image-link"
+                          aria-label="{{ featured_image.alt | default: featured_header | default: featured_text | strip_html | escape }}"></a>
+                      {%- endif -%}
+                    </div>
+                  {%- endcapture -%}
 
-                        {{ featured_image_content }}
+                  {%- unless featured_image == blank -%}
+                    <div class="product-item__image">
+                      <div
+                        class="product-item__bg"
+                        data-aos="img-in"
+                        data-aos-anchor="{{ animation_anchor }}"
+                        data-aos-delay="{{ animation_delay | times: 150 }}"
+                        data-aos-duration="{{ animation_duration }}"
+                        data-aos-easing="ease-out-quart">
+                        {%- render 'image' image: featured_image, sizes: image_sizes, loading: 'eager', preload: 'true', fetchpriority: 'high', cover: true -%}
                       </div>
-                    {%- else -%}
-                      <div class="product-item__image">
-                        <div class="svg-placeholder">
-                          {% capture current %}
-                            {% cycle 1, 2, 3, 4, 5, 6 %}{% endcapture %}
-                          {{ 'collection-' | append: current | placeholder_svg_tag }}
-                        </div>
 
-                        {{ featured_image_content }}
+                      {{ featured_image_content }}
+                    </div>
+                  {%- else -%}
+                    <div class="product-item__image">
+                      <div class="svg-placeholder">
+                        {% capture current %}
+                          {% cycle 1, 2, 3, 4, 5, 6 %}{% endcapture %}
+                        {{ 'collection-' | append: current | placeholder_svg_tag }}
                       </div>
-                    {%- endunless -%}
-                  </div>
-                {%- endcase -%}
-              {%- endfor -%}
-            {%- endif -%}
 
-            {%- if collection.products_count > 0 -%}
-              {%- for product in collection.products -%}
-                {%- assign grid_int = section.settings.grid | times: 1 -%}
-                {%- assign animation_delay = forloop.index0 | modulo: grid_int | times: 1 -%}
-                {%- render 'product-grid-itemed', product: product, animation_delay: animation_delay, index: forloop.index, sizes: image_sizes -%}
-              {%- endfor -%}
-            {%- else -%}
-              <div class="no-results">
-                <p>
-                  <strong>{{ 'collections.general.no_matches' | t }}</strong>
-                </p>
-                {%- assign sort_by_string = '' -%}
-                {%- if collection.sort_by != blank -%}
-                  {%- assign sort_by_string = '?sort_by=' | append: collection.sort_by -%}
-                {%- endif -%}
-                <a
-                  class="btn caps btn--primary"
-                  href="{{ collection.url | append: sort_by_string }}"
-                  data-filter-update-url>
-                  <span>{{ 'collections.general.reset' | t }}</span>
-                </a>
-              </div>
-            {%- endif -%}
-          </div>
+                      {{ featured_image_content }}
+                    </div>
+                  {%- endunless -%}
+                </div>
+              {%- endcase -%}
+            {%- endfor -%}
+          {%- endif -%}
 
-          {%- render 'pagination', paginate: paginate -%}
-
-          <div class="grid__loader">
-            <div class="loader grid__loader-line">
-              <div class="loader-indeterminate"></div>
+          {%- if collection.products_count > 0 -%}
+            {%- for product in collection.products -%}
+              {%- assign grid_int = section.settings.grid | times: 1 -%}
+              {%- assign animation_delay = forloop.index0 | modulo: grid_int | times: 1 -%}
+              {%- render 'product-grid-item', product: product, animation_delay: animation_delay, index: forloop.index, sizes: image_sizes -%}
+            {%- endfor -%}
+          {%- else -%}
+            <div class="no-results">
+              <p>
+                <strong>{{ 'collections.general.no_matches' | t }}</strong>
+              </p>
+              {%- assign sort_by_string = '' -%}
+              {%- if collection.sort_by != blank -%}
+                {%- assign sort_by_string = '?sort_by=' | append: collection.sort_by -%}
+              {%- endif -%}
+              <a
+                class="btn caps btn--primary"
+                href="{{ collection.url | append: sort_by_string }}"
+                data-filter-update-url>
+                <span>{{ 'collections.general.reset' | t }}</span>
+              </a>
             </div>
+          {%- endif -%}
+        </div>
+
+        {%- render 'pagination', paginate: paginate -%}
+
+        <div class="grid__loader">
+          <div class="loader grid__loader-line">
+            <div class="loader-indeterminate"></div>
           </div>
         </div>
       </div>
-      <div class="product-grid_fal error">
-        <div class="grid-outer" data-products-grid>
-          <div class="grid" id="CollectionLoop">
-            {%- if paginate.current_page == 1 and collection.products_count > 0 -%}
-              {%- for block in section.blocks -%}
-                {%- case block.type -%}
-                  {%- when 'featured_image' -%}
-                  {%- liquid
-                    assign featured_image = block.settings.featured_image
-                    assign featured_header = block.settings.featured_heading
-                    assign featured_text = block.settings.featured_text
-                    assign featured_button_text = block.settings.featured_button_text
-                    assign featured_button_link = block.settings.featured_button_link
-                    assign featured_color_text = block.settings.featured_color_text
-                    assign featured_color_overlay = block.settings.featured_color_overlay
-                    assign featured_overlay_opacity = block.settings.featured_overlay_opacity | times: 0.01
 
-                    assign button_style = block.settings.button_style
-                    if button_style == 'btn--text' and block.settings.show_arrow
-                      assign button_style = button_style | append: ' btn--text-no-underline'
-                    endif
-                  -%}
-
-                  {%- style -%}
-                    #Product-item--{{ block.id }}.product-item__image-overlay {
-                      {%- unless featured_color_text == 'rgba(0,0,0,0)' or featured_color_text == blank -%}
-                        color: {{ featured_color_text }}
-                        ;
-                      {%- endunless -%}
-                    }
-                    #Product-item--{{ block.id }}.product-item__image-overlay::before {
-                      opacity: {{ featured_overlay_opacity }}
-                      ;
-                      background-color: {{ featured_color_overlay }}
-                      ;
-                    }
-                  {%- endstyle -%}
-
-                  <div
-                    class="grid-item product-item product-item--featured-image"
-                    id="Product-item--{{ block.id }}"
-                    {{ block.shopify_attributes }}>
-                    {%- capture featured_image_content -%}
-                      <div class="product-item__image-overlay">
-                        <div class="product-item__image-content">
-                          {%- if featured_header != blank -%}
-                            <h3>{{ featured_header }}</h3>
-                          {%- endif -%}
-
-                          {%- if featured_text != blank -%}
-                            {{ featured_text }}
-                          {%- endif -%}
-
-                          {%- if featured_button_text != blank -%}
-                            <a
-                              href="{{ featured_button_link }}"
-                              class="btn {{ button_style }} {{ block.settings.button_type }} {{ block.settings.button_size }}"
-                              data-aos="fade-up"
-                              data-aos-anchor="{{ animation_anchor }}"
-                              data-aos-duration="{{ animation_duration }}"
-                              data-aos-delay="200">
-                              <span>{{ featured_button_text }}</span>
-
-                              {%- if block.settings.show_arrow -%}
-                                {%- render 'icon-arrow-right' -%}
-                              {%- endif -%}
-                            </a>
-                          {%- endif -%}
-                        </div>
-
-                        {%- if featured_button_text == blank and featured_button_link != blank -%}
-                          <a
-                            href="{{ featured_button_link }}"
-                            class="product-item__image-link"
-                            aria-label="{{ featured_image.alt | default: featured_header | default: featured_text | strip_html | escape }}"></a>
-                        {%- endif -%}
-                      </div>
-                    {%- endcapture -%}
-
-                    {%- unless featured_image == blank -%}
-                      <div class="product-item__image">
-                        <div
-                          class="product-item__bg"
-                          data-aos="img-in"
-                          data-aos-anchor="{{ animation_anchor }}"
-                          data-aos-delay="{{ animation_delay | times: 150 }}"
-                          data-aos-duration="{{ animation_duration }}"
-                          data-aos-easing="ease-out-quart">
-                          {%- render 'image' image: featured_image, sizes: image_sizes, loading: 'eager', preload: 'true', fetchpriority: 'high', cover: true -%}
-                        </div>
-
-                        {{ featured_image_content }}
-                      </div>
-                    {%- else -%}
-                      <div class="product-item__image">
-                        <div class="svg-placeholder">
-                          {% capture current %}
-                            {% cycle 1, 2, 3, 4, 5, 6 %}{% endcapture %}
-                          {{ 'collection-' | append: current | placeholder_svg_tag }}
-                        </div>
-
-                        {{ featured_image_content }}
-                      </div>
-                    {%- endunless -%}
-                  </div>
-                {%- endcase -%}
-              {%- endfor -%}
-            {%- endif -%}
-
-            {%- if collection.products_count > 0 -%}
-              {%- for product in collection.products -%}
-                {%- assign grid_int = section.settings.grid | times: 1 -%}
-                {%- assign animation_delay = forloop.index0 | modulo: grid_int | times: 1 -%}
-                {%- render 'product-grid-item', product: product, animation_delay: animation_delay, index: forloop.index, sizes: image_sizes -%}
-              {%- endfor -%}
-            {%- else -%}
-              <div class="no-results">
-                <p>
-                  <strong>{{ 'collections.general.no_matches' | t }}</strong>
-                </p>
-                {%- assign sort_by_string = '' -%}
-                {%- if collection.sort_by != blank -%}
-                  {%- assign sort_by_string = '?sort_by=' | append: collection.sort_by -%}
-                {%- endif -%}
-                <a
-                  class="btn caps btn--primary"
-                  href="{{ collection.url | append: sort_by_string }}"
-                  data-filter-update-url>
-                  <span>{{ 'collections.general.reset' | t }}</span>
-                </a>
-              </div>
-            {%- endif -%}
-          </div>
-
-          {%- render 'pagination', paginate: paginate -%}
-
-          <div class="grid__loader">
-            <div class="loader grid__loader-line">
-              <div class="loader-indeterminate"></div>
-            </div>
-          </div>
-        </div>
-      </div>
     </div>
   </section>
 {%- endpaginate -%}
-<script>
-  function Newest() {
-    var navbar = document.querySelector(".filled_box_texted1");
-    var navbar1 = document.querySelector(".filled_box_texted2");
-    var navbar2 = document.querySelector(".filled_box_texted3");
-    if (navbar.style.color === 'rgb(155, 155, 155)') {
-      navbar.style.color = 'rgb(0, 3, 30)';
-      navbar.style.border = '1px solid rgb(0, 3, 30';
-      navbar1.style.color = 'rgb(155, 155, 155)';
-      navbar1.style.border = '1px solid rgb(208, 208, 208)';
-      navbar2.style.color = 'rgb(155, 155, 155)';
-      navbar2.style.border = '1px solid rgb(208, 208, 208)';
-    } else {
-      navbar.style.color = 'rgb(155, 155, 155)';
-      navbar.style.border = '1px solid rgb(208, 208, 208)';
-    }
-  }
-  function Low() {
-    var navbar = document.querySelector(".filled_box_texted2");
-    var navbar1 = document.querySelector(".filled_box_texted1");
-    var navbar2 = document.querySelector(".filled_box_texted3");
-    if (navbar.style.color === 'rgb(155, 155, 155)') {
-      navbar.style.color = 'rgb(0, 3, 30)';
-      navbar.style.border = '1px solid rgb(0, 3, 30';
-      navbar1.style.color = 'rgb(155, 155, 155)';
-      navbar1.style.border = '1px solid rgb(208, 208, 208)';
-      navbar2.style.color = 'rgb(155, 155, 155)';
-      navbar2.style.border = '1px solid rgb(208, 208, 208)';
-    } else {
-      navbar.style.color = 'rgb(155, 155, 155)';
-      navbar.style.border = '1px solid rgb(208, 208, 208)';
-    }
-  }
-  function High() {
-    var navbar = document.querySelector(".filled_box_texted3");
-    var navbar1 = document.querySelector(".filled_box_texted2");
-    var navbar2 = document.querySelector(".filled_box_texted1");
-    if (navbar.style.color === 'rgb(155, 155, 155)') {
-      navbar.style.color = 'rgb(0, 3, 30)';
-      navbar.style.border = '1px solid rgb(0, 3, 30';
-      navbar1.style.color = 'rgb(155, 155, 155)';
-      navbar1.style.border = '1px solid rgb(208, 208, 208)';
-      navbar2.style.color = 'rgb(155, 155, 155)';
-      navbar2.style.border = '1px solid rgb(208, 208, 208)';
-    } else {
-      navbar.style.color = 'rgb(155, 155, 155)';
-      navbar.style.border = '1px solid rgb(208, 208, 208)';
-    }
-  }
-  function Kgold() {
-    var navbar = document.querySelector(".filled_box_texted4");
-    if (navbar.style.color === 'rgb(155, 155, 155)') {
-      navbar.style.color = 'rgb(0, 3, 30)';
-      navbar.style.border = '1px solid rgb(0, 3, 30';
-    } else {
-      navbar.style.color = 'rgb(155, 155, 155)';
-      navbar.style.border = '1px solid rgb(208, 208, 208)';
-    }
-  }
-  function Sterling() {
-    var navbar = document.querySelector(".filled_box_texted5");
-    if (navbar.style.color === 'rgb(155, 155, 155)') {
-      navbar.style.color = 'rgb(0, 3, 30)';
-      navbar.style.border = '1px solid rgb(0, 3, 30';
-    } else {
-      navbar.style.color = 'rgb(155, 155, 155)';
-      navbar.style.border = '1px solid rgb(208, 208, 208)';
-    }
-  }
-  function Whitegold() {
-    var navbar = document.querySelector(".filled_box_texted6");
-    if (navbar.style.color === 'rgb(155, 155, 155)') {
-      navbar.style.color = 'rgb(0, 3, 30)';
-      navbar.style.border = '1px solid rgb(0, 3, 30';
-    } else {
-      navbar.style.color = 'rgb(155, 155, 155)';
-      navbar.style.border = '1px solid rgb(208, 208, 208)';
-    }
-  }
-  function Rosegold() {
-    var navbar = document.querySelector(".filled_box_texted7");
-    if (navbar.style.color === 'rgb(155, 155, 155)') {
-      navbar.style.color = 'rgb(0, 3, 30)';
-      navbar.style.border = '1px solid rgb(0, 3, 30';
-    } else {
-      navbar.style.color = 'rgb(155, 155, 155)';
-      navbar.style.border = '1px solid rgb(208, 208, 208)';
-    }
-  }
-  function Brass() {
-    var navbar = document.querySelector(".filled_box_texted8");
-    if (navbar.style.color === 'rgb(155, 155, 155)') {
-      navbar.style.color = 'rgb(0, 3, 30)';
-      navbar.style.border = '1px solid rgb(0, 3, 30';
-    } else {
-      navbar.style.color = 'rgb(155, 155, 155)';
-      navbar.style.border = '1px solid rgb(208, 208, 208)';
-    }
-  }
-  function Sandalwood() {
-    var navbar = document.querySelector(".filled_box_texted9");
-    if (navbar.style.color === 'rgb(155, 155, 155)') {
-      navbar.style.color = 'rgb(0, 3, 30)';
-      navbar.style.border = '1px solid rgb(0, 3, 30';
-    } else {
-      navbar.style.color = 'rgb(155, 155, 155)';
-      navbar.style.border = '1px solid rgb(208, 208, 208)';
-    }
-  }
-  function Silkwood() {
-    var navbar = document.querySelector(".filled_box_texted10");
-    if (navbar.style.color === 'rgb(155, 155, 155)') {
-      navbar.style.color = 'rgb(0, 3, 30)';
-      navbar.style.border = '1px solid rgb(0, 3, 30';
-    } else {
-      navbar.style.color = 'rgb(155, 155, 155)';
-      navbar.style.border = '1px solid rgb(208, 208, 208)';
-    }
-  }
-  function Diamond() {
-    var navbar = document.querySelector(".filled_box_texted11");
-    if (navbar.style.color === 'rgb(155, 155, 155)') {
-      navbar.style.color = 'rgb(0, 3, 30)';
-      navbar.style.border = '1px solid rgb(0, 3, 30';
-    } else {
-      navbar.style.color = 'rgb(155, 155, 155)';
-      navbar.style.border = '1px solid rgb(208, 208, 208)';
-    }
-  }
-  function Gem() {
-    var navbar = document.querySelector(".filled_box_texted12");
-    if (navbar.style.color === 'rgb(155, 155, 155)') {
-      navbar.style.color = 'rgb(0, 3, 30)';
-      navbar.style.border = '1px solid rgb(0, 3, 30';
-    } else {
-      navbar.style.color = 'rgb(155, 155, 155)';
-      navbar.style.border = '1px solid rgb(208, 208, 208)';
-    }
-  }
-  function Pearls() {
-    var navbar = document.querySelector(".filled_box_texted13");
-    if (navbar.style.color === 'rgb(155, 155, 155)') {
-      navbar.style.color = 'rgb(0, 3, 30)';
-      navbar.style.border = '1px solid rgb(0, 3, 30';
-    } else {
-      navbar.style.color = 'rgb(155, 155, 155)';
-      navbar.style.border = '1px solid rgb(208, 208, 208)';
-    }
-  }
-  function Onekgold() {
-    var navbar = document.querySelector(".filled_box_texted14");
-    if (navbar.style.color === 'rgb(155, 155, 155)') {
-      navbar.style.color = 'rgb(0, 3, 30)';
-      navbar.style.border = '1px solid rgb(0, 3, 30';
-    } else {
-      navbar.style.color = 'rgb(155, 155, 155)';
-      navbar.style.border = '1px solid rgb(208, 208, 208)';
-    }
-  }
-  function SterlingSilver() {
-    var navbar = document.querySelector(".filled_box_texted15");
-    if (navbar.style.color === 'rgb(155, 155, 155)') {
-      navbar.style.color = 'rgb(0, 3, 30)';
-      navbar.style.border = '1px solid rgb(0, 3, 30';
-    } else {
-      navbar.style.color = 'rgb(155, 155, 155)';
-      navbar.style.border = '1px solid rgb(208, 208, 208)';
-    }
-  }
-  function WhiteGolded() {
-    var navbar = document.querySelector(".filled_box_texted16");
-    if (navbar.style.color === 'rgb(155, 155, 155)') {
-      navbar.style.color = 'rgb(0, 3, 30)';
-      navbar.style.border = '1px solid rgb(0, 3, 30';
-    } else {
-      navbar.style.color = 'rgb(155, 155, 155)';
-      navbar.style.border = '1px solid rgb(208, 208, 208)';
-    }
-  }
-  function RoseGolded() {
-    var navbar = document.querySelector(".filled_box_texted17");
-    if (navbar.style.color === 'rgb(155, 155, 155)') {
-      navbar.style.color = 'rgb(0, 3, 30)';
-      navbar.style.border = '1px solid rgb(0, 3, 30';
-    } else {
-      navbar.style.color = 'rgb(155, 155, 155)';
-      navbar.style.border = '1px solid rgb(208, 208, 208)';
-    }
-  }
-  function detailsAll() {
-    var navbar1 = document.querySelector(".filled_box_texted1");
-    var navbar2 = document.querySelector(".filled_box_texted2");
-    var navbar3 = document.querySelector(".filled_box_texted3");
-    var navbar4 = document.querySelector(".filled_box_texted4");
-    var navbar5 = document.querySelector(".filled_box_texted5");
-    var navbar6 = document.querySelector(".filled_box_texted6");
-    var navbar7 = document.querySelector(".filled_box_texted7");
-    var navbar8 = document.querySelector(".filled_box_texted8");
-    var navbar9 = document.querySelector(".filled_box_texted9");
-    var navbar10 = document.querySelector(".filled_box_texted10");
-    var navbar11 = document.querySelector(".filled_box_texted11");
-    var navbar12 = document.querySelector(".filled_box_texted12");
-    var navbar13 = document.querySelector(".filled_box_texted13");
-    var navbar14 = document.querySelector(".filled_box_texted14");
-    var navbar15 = document.querySelector(".filled_box_texted15");
-    var navbar16 = document.querySelector(".filled_box_texted16");
-    var navbar17 = document.querySelector(".filled_box_texted17");
-    navbar1.style.color = 'rgb(155, 155, 155)';
-    navbar2.style.color = 'rgb(155, 155, 155)';
-    navbar3.style.color = 'rgb(155, 155, 155)';
-    navbar4.style.color = 'rgb(155, 155, 155)';
-    navbar5.style.color = 'rgb(155, 155, 155)';
-    navbar6.style.color = 'rgb(155, 155, 155)';
-    navbar7.style.color = 'rgb(155, 155, 155)';
-    navbar8.style.color = 'rgb(155, 155, 155)';
-    navbar9.style.color = 'rgb(155, 155, 155)';
-    navbar10.style.color = 'rgb(155, 155, 155)';
-    navbar11.style.color = 'rgb(155, 155, 155)';
-    navbar12.style.color = 'rgb(155, 155, 155)';
-    navbar13.style.color = 'rgb(155, 155, 155)';
-    navbar14.style.color = 'rgb(155, 155, 155)';
-    navbar15.style.color = 'rgb(155, 155, 155)';
-    navbar16.style.color = 'rgb(155, 155, 155)';
-    navbar17.style.color = 'rgb(155, 155, 155)';
-    navbar1.style.border = '1px solid rgb(208, 208, 208)';
-    navbar2.style.border = '1px solid rgb(208, 208, 208)';
-    navbar3.style.border = '1px solid rgb(208, 208, 208)';
-    navbar4.style.border = '1px solid rgb(208, 208, 208)';
-    navbar5.style.border = '1px solid rgb(208, 208, 208)';
-    navbar6.style.border = '1px solid rgb(208, 208, 208)';
-    navbar7.style.border = '1px solid rgb(208, 208, 208)';
-    navbar8.style.border = '1px solid rgb(208, 208, 208)';
-    navbar9.style.border = '1px solid rgb(208, 208, 208)';
-    navbar10.style.border = '1px solid rgb(208, 208, 208)';
-    navbar11.style.border = '1px solid rgb(208, 208, 208)';
-    navbar12.style.border = '1px solid rgb(208, 208, 208)';
-    navbar13.style.border = '1px solid rgb(208, 208, 208)';
-    navbar14.style.border = '1px solid rgb(208, 208, 208)';
-    navbar15.style.border = '1px solid rgb(208, 208, 208)';
-    navbar16.style.border = '1px solid rgb(208, 208, 208)';
-    navbar17.style.border = '1px solid rgb(208, 208, 208)';
-  }
 
-  function changeImage() {
-    var imageContainers = document.querySelectorAll(".product-grid_tru");
-    imageContainers.forEach(function(container) {
-      container.classList.remove("error");
-      container.classList.add("active");
-    });
-    var imageContainersed = document.querySelectorAll(".product-grid_fal");
-    imageContainersed.forEach(function(container) {
-      container.classList.remove("active");
-      container.classList.add("error");
-    });
-  }
-  function changeImaged() {
-    var imageContainers = document.querySelectorAll(".product-grid_tru");
-    imageContainers.forEach(function(container) {
-      container.classList.remove("active");
-      container.classList.add("error");
-    });
-    var imageContainersed = document.querySelectorAll(".product-grid_fal");
-    imageContainersed.forEach(function(container) {
-      container.classList.remove("error");
-      container.classList.add("active");
-    });
-  }
-</script>
 {% schema %}
   {
     "name": "Collection products",
