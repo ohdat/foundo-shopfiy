@@ -300,13 +300,7 @@
   color: #9b9b9b;
 }
 
-#columnBlock .hero__description p{
-  font-family: 'Foundo_Medium' !important;
-  font-weight: 500;
-  color: #00031e;
-}
-
-#collectionTitle .hero__description p{
+#collectionTitle1 .hero__description p{
   font-family: 'Foundo_Medium' !important;
   font-weight: 500;
   color: #00031e;

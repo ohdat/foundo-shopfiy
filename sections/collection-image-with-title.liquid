@@ -97,7 +97,7 @@
           {{ collection_content }}
         </div>
       </div>
-      <div style="width:100%;padding:0 20px;">
+      <div id="collectionTitle1" style="width:100%;padding:0 20px;">
         {%- if description != blank and show_description -%}
           <div class="hero__description rte">{{ description }}</div>
         {%- endif -%}
@@ -108,10 +108,6 @@
       <div id="collectionTitle" class="collection__title collection__title--no-image {{ section.settings.flex_align }}">
         {%- if show_title -%}
           <h1 class="hero__title h4">{{ title }}</h1>
-        {%- endif -%}
-
-        {%- if description != blank and show_description -%}
-          <div class="hero__description rte">{{ description }}</div>
         {%- endif -%}
       </div>
     {%- endif -%}
