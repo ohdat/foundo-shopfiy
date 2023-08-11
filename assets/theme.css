@@ -306,6 +306,12 @@
   color: #ffffff;
 }
 
+#collectionTitle .hero__description p{
+  font-family: 'Foundo_Medium' !important;
+  font-weight: 500;
+  color: #ffffff;
+}
+
 .createabtn {
   width: 100%;
   height: 40px;
