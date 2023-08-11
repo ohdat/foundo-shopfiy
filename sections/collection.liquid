@@ -92,7 +92,10 @@
     {%- endif -%}
 
     {%- if show_sort or show_filter or show_group_filter -%}
-      <nav class="collection__nav {{ align_classes }}" data-collection-nav>
+      <nav
+        id="collectionNav"
+        class="collection__nav {{ align_classes }}"
+        data-collection-nav>
         {%- if show_filter or show_group_filter -%}
           {%- liquid
             assign filter_active_count = 0
