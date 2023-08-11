@@ -133,16 +133,17 @@
                 endif
               -%}
 
-              <div class="menu__blocks{% if settings.grid_style == 'classic' %} menu__blocks--gap{% endif %}" style="--images-space: {{ images_space }};">
-                {%- liquid
-                  for block in section.blocks
-                    if block.settings.position == index
-                      render 'header-block', block: block, image_count: image_count, only_images: only_images, link_columns: link.links.size
-                    endif
-                  endfor
-                -%}
-              </div>
+
             {%- endif -%}
+            <div class="menu__blocks{% if settings.grid_style == 'classic' %} menu__blocks--gap{% endif %}" style="--images-space: 2.5;height: inherit;">
+              {%- liquid
+              for block in section.blocks
+                if block.settings.position == index
+                  render 'header-block', block: block, image_count: image_count, only_images: only_images, link_columns: link.links.size
+                endif
+              endfor
+            -%}
+            </div>
 
           {%- else -%}
             {% comment %} Simple dropdown {% endcomment %}
