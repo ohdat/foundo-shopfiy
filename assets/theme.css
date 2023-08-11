@@ -251,6 +251,12 @@
   color: #9B9B9B;
 }
 
+#collectionTitle .hero__title{
+  font-family: 'Foundo_Medium' !important;
+  font-weight: 500;
+  color: #00031E;
+}
+
 .account_title {
   font-size: 16px;
   font-weight: normal;
@@ -258,10 +264,6 @@
   text-align: left;
   padding-top: 100px;
   margin-bottom: 20px;
-}
-
-.sidebar__item:hover label {
-  color: #00031E;
 }
 
 .account_text {

@@ -104,7 +104,7 @@
     {%- endif -%}
   {%- else -%}
     {%- if show_title or show_description -%}
-      <div class="collection__title collection__title--no-image {{ section.settings.flex_align }}">
+      <div id="collectionTitle" class="collection__title collection__title--no-image {{ section.settings.flex_align }}">
         {%- if show_title -%}
           <h1 class="hero__title h4">{{ title }}</h1>
         {%- endif -%}
