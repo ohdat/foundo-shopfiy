@@ -11925,7 +11925,7 @@ main-search .input-holder {
   .index-look .look__slider {
     display: grid;
     grid-template-columns: minmax(0, 1fr);
-    gap: var(--gap);
+    gap: 4px;
     position: static;
     width: 100%;
   }
