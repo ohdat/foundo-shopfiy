@@ -51,14 +51,14 @@
 ============================================================================== */
 @font-face {
   font-family: 'Foundo_Headline';
-  src: url('../fonts/Foundo-Headline.ttf');
+  src: url('https://img.ohdat.io/foundo-website/assets/shopify/Foundo-Headline.ttf');
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'Foundo_Medium';
-  src: url('../fonts/Foundo-Medium.ttf');
+  src: url('https://img.ohdat.io/foundo-website/assets/shopify/Foundo-Medium.ttf');
   font-weight: normal;
   font-style: normal;
 }
