@@ -74,6 +74,7 @@
 #heroWrapper p {
   font-family: 'Foundo_Headline' !important;
   color: #fff;
+  font-weight: normal;
 }
 
 #productItemInfo .product-item__title,
@@ -83,11 +84,13 @@
 #heroContent p {
   font-family: 'Foundo_Headline' !important;
   color: #00031e;
+  font-weight: normal;
 }
 
 #footerBlocks h2 {
   font-family: 'Foundo_Headline' !important;
   color: #00031e;
+  font-weight: normal;
 }
 
 #footerBlocks p,
