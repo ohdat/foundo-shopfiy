@@ -78,6 +78,7 @@ The collection sidebar containing tag filering and link-based navigation
 {%- endcapture -%}
 
 <div
+  id="filterGroup"
   class="collection__sidebar{% if filter_count > 0 %} collection__sidebar--has-buttons{% endif %}"
   {% if filter_layout == 'slide-out' %}
   data-collection-sidebar-slide-out
@@ -112,7 +113,6 @@ The collection sidebar containing tag filering and link-based navigation
     -%}
 
     <div
-      id="filterGroup"
       class="filter-group"
       data-animation="{{ animation_name }}"
       data-animation-delay="{{ animation_delay }}"
