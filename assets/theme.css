@@ -254,7 +254,7 @@
   color: #9B9B9B;
 }
 
-#collectionTitle .hero__title{
+#collectionTitle .hero__title {
   font-family: 'Foundo_Medium' !important;
   font-weight: 500;
   color: #00031E;
@@ -300,19 +300,21 @@
   color: #9b9b9b;
 }
 
-#collectionTitle1 .hero__description p{
-  font-family: 'Foundo_Medium' !important;
-  font-weight: 500;
+#collectionTitle1 .hero__description p {
+  font-family: 'Foundo_Headline' !important;
   color: #00031e;
+  font-weight: normal;
+  text-align: left;
+  font-size: calc(var(--font-1) * var(--FONT-ADJUST-HEADING));
 }
 
-#collectionTitle h1{
+#collectionTitle h1 {
   font-family: 'Foundo_Medium' !important;
   font-weight: 500;
   color: #ffffff;
 }
 
-#columnBlock h1{
+#columnBlock h1 {
   font-family: 'Foundo_Medium' !important;
   font-weight: 500;
   color: #ffffff;
