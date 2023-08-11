@@ -137,6 +137,11 @@
   color: #00031e;
 }
 
+
+body,html{
+  font-family: 'Foundo_Headline' !important;
+}
+
 #collectionNav .popout__expanded-show,
 #collectionNav .popout__expanded-hide,
 #collectionNav .popout__toggle__text {
