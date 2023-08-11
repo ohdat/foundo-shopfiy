@@ -38,7 +38,6 @@
       "blocks": {
         "template--19259612430667__2e5a7b6f-7740-4f07-91ad-d4c1baec640f-heading-1": {
           "type": "heading",
-          "disabled": true,
           "settings": {
             "title": "Image banner",
             "heading_size": 11
@@ -46,7 +45,6 @@
         },
         "template--19259612430667__2e5a7b6f-7740-4f07-91ad-d4c1baec640f-text-1": {
           "type": "text",
-          "disabled": true,
           "settings": {
             "description": "Tell your brand's story through images.",
             "text_size": 5,
