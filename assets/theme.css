@@ -12124,7 +12124,7 @@ main-search .input-holder {
 
 @media only screen and (min-width: 1400px) {
   .look__aside {
-    padding: 104px var(--outer);
+    /* padding: 104px var(--outer); */
   }
 }
 
