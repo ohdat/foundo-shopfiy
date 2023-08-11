@@ -12117,7 +12117,7 @@ main-search .input-holder {
 .look__aside {
   flex: 1 1 50%;
   text-align: left;
-  padding: 35px 0;
+  padding: 0 0 35px 0;
   overflow: hidden;
 }
 
