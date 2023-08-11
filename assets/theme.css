@@ -237,7 +237,7 @@
   font-weight: 500;
 }
 
-#filterGroup .filter-group__heading span {
+#filterGroup .filter-group__heading .filter-group__headingtext {
   font-size: 12px;
   font-family: 'Foundo_Headline' !important;
   font-weight: normal;
