@@ -529,10 +529,10 @@ Usage:
                   {%- endif -%}
                 </span>
                 {% if product.compare_at_price > product.price %}
-                  <span style="font-family:'Foundo_Medium' !important;font-weight: bolder;" class="old-price">{{ product_compare_at_price }}</span>
+                  <span style="font-family:'Foundo_Medium' !important;font-weight: 500;" class="old-price">{{ product_compare_at_price }}</span>
                 {% endif %}
               {% else %}
-                <span style="font-family:'Foundo_Medium' !important;font-weight: bolder;" class="sold-out">{{ 'products.product.sold_out' | t }}</span>
+                <span style="font-family:'Foundo_Medium' !important;font-weight: 500;" class="sold-out">{{ 'products.product.sold_out' | t }}</span>
               {% endif %}
             </span>
             {% if current_variant.unit_price %}
