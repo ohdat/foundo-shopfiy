@@ -93,13 +93,13 @@
       </div>
 
       {%- if banner_layout == 'inline' -%}
-        <div class="collection__title-wrapper {{ section.settings.height }} {{ section.settings.mobile_height }}">
+        <div style="width:100%;" class="collection__title-wrapper {{ section.settings.height }} {{ section.settings.mobile_height }}">
           {{ collection_content }}
         </div>
       </div>
       <div id="collectionTitle1" style="width:100%;padding:0 20px;">
         {%- if description != blank and show_description -%}
-          <div class="hero__description rte">{{ description }}</div>
+          <div class="hero__description rte" style="margin: 0;">{{ description }}</div>
         {%- endif -%}
       </div>
     {%- endif -%}
