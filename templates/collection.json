@@ -2,6 +2,7 @@
   "sections": {
     "hero": {
       "type": "collection-image-with-title",
+      "disabled": true,
       "settings": {
         "show_title": true,
         "show_description": true,
@@ -21,6 +22,7 @@
     },
     "subcollections": {
       "type": "subcollections",
+      "disabled": true,
       "settings": {
         "subcollection_layout": "grid",
         "subcollection_description": false,
@@ -29,6 +31,55 @@
         "bg_color": "",
         "padding_top": 20,
         "padding_bottom": 20
+      }
+    },
+    "2e5a7b6f-7740-4f07-91ad-d4c1baec640f": {
+      "type": "section-hero",
+      "blocks": {
+        "template--19259612430667__2e5a7b6f-7740-4f07-91ad-d4c1baec640f-heading-1": {
+          "type": "heading",
+          "settings": {
+            "title": "Image banner",
+            "heading_size": 11
+          }
+        },
+        "template--19259612430667__2e5a7b6f-7740-4f07-91ad-d4c1baec640f-text-1": {
+          "type": "text",
+          "settings": {
+            "description": "Tell your brand's story through images.",
+            "text_size": 5,
+            "text_style": "font-body"
+          }
+        },
+        "template--19259612430667__2e5a7b6f-7740-4f07-91ad-d4c1baec640f-button-1": {
+          "type": "button",
+          "disabled": true,
+          "settings": {
+            "link_text": "View products",
+            "link": "",
+            "button_type": "btn--primary",
+            "button_size": "",
+            "button_style": "btn--solid",
+            "show_arrow": false
+          }
+        }
+      },
+      "block_order": [
+        "template--19259612430667__2e5a7b6f-7740-4f07-91ad-d4c1baec640f-heading-1",
+        "template--19259612430667__2e5a7b6f-7740-4f07-91ad-d4c1baec640f-text-1",
+        "template--19259612430667__2e5a7b6f-7740-4f07-91ad-d4c1baec640f-button-1"
+      ],
+      "settings": {
+        "height": "screen-height-three-quarters",
+        "width": "wrapper--full",
+        "image_1": "shopify:\/\/shop_images\/nourishgrainnecklaceygf.jpg",
+        "mobile_height": "screen-height-three-quarters--mobile",
+        "flex_align": "align--middle-center",
+        "overlay_opacity": 0,
+        "overlay_color": "#000",
+        "show_overlay_text": false,
+        "bg_color": "",
+        "color": "#FFFFFF"
       }
     },
     "main": {
@@ -47,7 +98,6 @@
     },
     "41b3a0f1-2a3a-4bea-9361-6310c8a486df": {
       "type": "section-test_fa",
-      "disabled": true,
       "blocks": {
         "template--19259612430667__41b3a0f1-2a3a-4bea-9361-6310c8a486df-1689329373578f3c02-0": {
           "type": "product",
@@ -133,6 +183,7 @@
         "62a14f5e-64a1-424b-8505-d23ac507d16d",
         "6367490b-1201-40fb-821b-65ff7641a624"
       ],
+      "disabled": true,
       "settings": {
         "image": "shopify:\/\/shop_images\/make_the_cut_banner_1.jpg",
         "title": "",
@@ -156,6 +207,7 @@
   "order": [
     "hero",
     "subcollections",
+    "2e5a7b6f-7740-4f07-91ad-d4c1baec640f",
     "main",
     "41b3a0f1-2a3a-4bea-9361-6310c8a486df"
   ]
