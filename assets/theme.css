@@ -11938,7 +11938,7 @@ main-search .input-holder {
   .index-look .look__slider {
     display: grid;
     grid-template-columns: minmax(0, 1fr);
-    gap: 4px;
+    gap: 2px;
     position: static;
     width: 100%;
   }
