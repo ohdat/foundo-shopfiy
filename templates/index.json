@@ -57,18 +57,32 @@
         "color": "#ffffff"
       }
     },
+    "6aac4766-78c8-4852-871c-c3cd19330b78": {
+      "type": "rich-text",
+      "blocks": {
+        "template--19259611742539__6aac4766-78c8-4852-871c-c3cd19330b78-richtext-1": {
+          "type": "richtext",
+          "settings": {
+            "heading": "",
+            "content": "<p>Posuere morbi leo urna molestie at elementum eu facilisis. Etiam non quam lacus suspendisse. Gravida cum sociis natoque penatibus et magnis dis parturient. Vitae congue eu consequat ac felis donec et odio pellentesque. Sed vulputate odio ut enim blandit volutpat maecenas volutpat. Amet nulla facilisi morbi tempus iaculis. Sed euismod nisi porta lorem mollis aliquam ut porttitor. Ornare massa eget egestas purus viverra accumsan in nisl nisi<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "template--19259611742539__6aac4766-78c8-4852-871c-c3cd19330b78-richtext-1"
+      ],
+      "settings": {
+        "content_alignment": "center",
+        "bgcolor": "primary",
+        "top_space_desktop": 50,
+        "bottom_space_desktop": 0,
+        "top_space_mobile": 30,
+        "bottom_space_mobile": 30
+      }
+    },
     "bdb4e2de-3b95-4bdb-8163-ddb771bc7070": {
       "type": "section-hero",
-      "disabled": true,
       "blocks": {
-        "c1ec3857-eb98-4d7c-97e3-fd3d86760cfb": {
-          "type": "text",
-          "settings": {
-            "description": "",
-            "text_size": 5,
-            "text_style": "font-body"
-          }
-        },
         "577bcb5d-8cfa-4de8-abe1-171cd3d25d86": {
           "type": "heading",
           "settings": {
@@ -97,11 +111,11 @@
         }
       },
       "block_order": [
-        "c1ec3857-eb98-4d7c-97e3-fd3d86760cfb",
         "577bcb5d-8cfa-4de8-abe1-171cd3d25d86",
         "f0afe211-94f2-4e45-a33d-532f064fb359",
         "71d6d76f-4283-4a46-bf67-506abc3a0b62"
       ],
+      "disabled": true,
       "settings": {
         "height": "screen-height-full",
         "width": "wrapper--full",
@@ -117,7 +131,6 @@
     },
     "product-with-image": {
       "type": "section-custom-content",
-      "disabled": true,
       "blocks": {
         "product": {
           "type": "product",
@@ -154,6 +167,7 @@
         "product",
         "image"
       ],
+      "disabled": true,
       "settings": {
         "height": "screen-height-one-half",
         "mobile_height": "screen-height-one-half--mobile",
@@ -166,7 +180,6 @@
     },
     "tabs": {
       "type": "section-tab-collections",
-      "disabled": true,
       "blocks": {
         "tabs-0": {
           "type": "collection",
@@ -231,6 +244,7 @@
         "tabs-1",
         "9f07d785-d431-4a17-84aa-1857122d2d26"
       ],
+      "disabled": true,
       "settings": {
         "title": "",
         "text": "",
@@ -245,7 +259,6 @@
     },
     "lookbook": {
       "type": "section-look",
-      "disabled": true,
       "blocks": {
         "lookbook-0": {
           "type": "product",
@@ -304,6 +317,7 @@
         "3f4228bb-783e-4f19-aa36-c46443b10e9c",
         "c28ca12d-115b-42b3-aab6-f3a73ad374af"
       ],
+      "disabled": true,
       "settings": {
         "image": "shopify:\/\/shop_images\/make_the_cut_banner_4_test.jpg",
         "title": "",
@@ -325,7 +339,6 @@
     },
     "bbf21f55-fac4-4b13-a015-fc6a55db744a": {
       "type": "section-columns",
-      "disabled": true,
       "blocks": {
         "template--19109415616843__bbf21f55-fac4-4b13-a015-fc6a55db744a-16869118310b5ba997-0": {
           "type": "image",
@@ -364,6 +377,7 @@
         "template--19109415616843__bbf21f55-fac4-4b13-a015-fc6a55db744a-16869118310b5ba997-0",
         "template--19109415616843__bbf21f55-fac4-4b13-a015-fc6a55db744a-16869118310b5ba997-2"
       ],
+      "disabled": true,
       "settings": {
         "title": "",
         "heading_size": 5,
@@ -381,7 +395,6 @@
     },
     "c9c4deb9-6347-4c3c-b3a1-2e1ea801415b": {
       "type": "section-look",
-      "disabled": true,
       "blocks": {
         "d56de882-0e80-48de-9a4e-da9565bd723c": {
           "type": "product",
@@ -440,6 +453,7 @@
         "da386b1c-8329-4e24-889c-bcd59b1b6c9e",
         "44713934-3d7c-44b8-b89d-ca03537e5ce2"
       ],
+      "disabled": true,
       "settings": {
         "image": "shopify:\/\/shop_images\/nourish_grain_earring_yg.jpg",
         "title": "Shop The Nourish Collection",
@@ -461,7 +475,6 @@
     },
     "078ab7f5-ce50-4a76-abb5-526c9dcbe783": {
       "type": "section-look2",
-      "disabled": true,
       "blocks": {
         "template--19259611742539__078ab7f5-ce50-4a76-abb5-526c9dcbe783-16892279913083f93b-0": {
           "type": "product",
@@ -520,6 +533,7 @@
         "42ab5abd-59ed-4faa-b883-5d7195247d78",
         "62a45ad3-be08-41eb-be36-2ccef9cf9bc8"
       ],
+      "disabled": true,
       "settings": {
         "image": "shopify:\/\/shop_images\/nourish_grain_earring_yg.jpg",
         "title": "",
@@ -972,7 +986,6 @@
     },
     "576d4a58-e3a8-484d-a858-b222b54d73ec": {
       "type": "section-columns",
-      "disabled": true,
       "blocks": {
         "template--19109415616843__576d4a58-e3a8-484d-a858-b222b54d73ec-16869118310b5ba997-0": {
           "type": "image",
@@ -1028,6 +1041,7 @@
         "template--19109415616843__576d4a58-e3a8-484d-a858-b222b54d73ec-16869118310b5ba997-1",
         "template--19109415616843__576d4a58-e3a8-484d-a858-b222b54d73ec-16869118310b5ba997-2"
       ],
+      "disabled": true,
       "settings": {
         "title": "",
         "heading_size": 5,
@@ -1046,6 +1060,7 @@
   },
   "order": [
     "861bff52-b502-4f62-8fe4-a398779e76b4",
+    "6aac4766-78c8-4852-871c-c3cd19330b78",
     "bdb4e2de-3b95-4bdb-8163-ddb771bc7070",
     "product-with-image",
     "tabs",
