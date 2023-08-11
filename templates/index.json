@@ -115,479 +115,6 @@
         "padding_bottom": 100
       }
     },
-    "bdb4e2de-3b95-4bdb-8163-ddb771bc7070": {
-      "type": "section-hero",
-      "blocks": {
-        "577bcb5d-8cfa-4de8-abe1-171cd3d25d86": {
-          "type": "heading",
-          "settings": {
-            "title": "MAKE THE CUT",
-            "heading_size": 7
-          }
-        },
-        "f0afe211-94f2-4e45-a33d-532f064fb359": {
-          "type": "text",
-          "settings": {
-            "description": "Quitely charming for the bold and ambitious",
-            "text_size": 3,
-            "text_style": "font-heading"
-          }
-        },
-        "71d6d76f-4283-4a46-bf67-506abc3a0b62": {
-          "type": "button",
-          "settings": {
-            "link_text": "Discover the collection",
-            "link": "shopify:\/\/collections\/make-the-cut",
-            "button_type": "btn--white",
-            "button_size": "btn--small",
-            "button_style": "btn--text",
-            "show_arrow": false
-          }
-        }
-      },
-      "block_order": [
-        "577bcb5d-8cfa-4de8-abe1-171cd3d25d86",
-        "f0afe211-94f2-4e45-a33d-532f064fb359",
-        "71d6d76f-4283-4a46-bf67-506abc3a0b62"
-      ],
-      "disabled": true,
-      "settings": {
-        "height": "screen-height-full",
-        "width": "wrapper--full",
-        "image_1": "shopify:\/\/shop_images\/make_the_cut_banner_2.jpg",
-        "mobile_height": "screen-height-three-quarters--mobile",
-        "flex_align": "align--bottom-center",
-        "overlay_opacity": 0,
-        "overlay_color": "#000000",
-        "show_overlay_text": false,
-        "bg_color": "",
-        "color": "#ffffff"
-      }
-    },
-    "product-with-image": {
-      "type": "section-custom-content",
-      "blocks": {
-        "product": {
-          "type": "product",
-          "settings": {
-            "title": "Sell with style",
-            "product": "",
-            "bg_color": "#ffffff",
-            "color": ""
-          }
-        },
-        "image": {
-          "type": "image",
-          "settings": {
-            "overlay_opacity": 0,
-            "overlay_color": "#000000",
-            "show_overlay_text": false,
-            "title": "Commerce first",
-            "heading_size": 7,
-            "description": "Focus on your products with innovative sections focused on selling",
-            "text_size": 3,
-            "flex_align": "align--middle-center",
-            "bg_color": "",
-            "color": "#ffffff",
-            "link_text": "",
-            "link": "shopify:\/\/collections\/all",
-            "button_type": "btn--primary",
-            "button_size": "",
-            "button_style": "btn--solid",
-            "show_arrow": false
-          }
-        }
-      },
-      "block_order": [
-        "product",
-        "image"
-      ],
-      "disabled": true,
-      "settings": {
-        "height": "screen-height-one-half",
-        "mobile_height": "screen-height-one-half--mobile",
-        "width": "wrapper--full-padded",
-        "borders": false,
-        "reverse_blocks": false,
-        "padding_top": 0,
-        "padding_bottom": 0
-      }
-    },
-    "tabs": {
-      "type": "section-tab-collections",
-      "blocks": {
-        "tabs-0": {
-          "type": "collection",
-          "settings": {
-            "title": "",
-            "featured_collection": "make-the-cut",
-            "show_image": false,
-            "align_with_product_images": false,
-            "overlay_opacity": 0,
-            "overlay_color": "#000000",
-            "description": "",
-            "color": "#ffffff",
-            "link_text": "View products",
-            "link": "",
-            "button_type": "btn--white",
-            "button_size": "",
-            "button_style": "btn--outline",
-            "show_arrow": false
-          }
-        },
-        "tabs-1": {
-          "type": "collection",
-          "settings": {
-            "title": "",
-            "featured_collection": "the-nourish",
-            "show_image": false,
-            "align_with_product_images": false,
-            "overlay_opacity": 0,
-            "overlay_color": "#000000",
-            "description": "",
-            "color": "#ffffff",
-            "link_text": "View products",
-            "link": "",
-            "button_type": "btn--white",
-            "button_size": "",
-            "button_style": "btn--outline",
-            "show_arrow": false
-          }
-        },
-        "9f07d785-d431-4a17-84aa-1857122d2d26": {
-          "type": "collection",
-          "settings": {
-            "title": "",
-            "featured_collection": "the-丰",
-            "show_image": false,
-            "align_with_product_images": false,
-            "overlay_opacity": 0,
-            "overlay_color": "#000000",
-            "description": "",
-            "color": "#ffffff",
-            "link_text": "View products",
-            "link": "",
-            "button_type": "btn--white",
-            "button_size": "",
-            "button_style": "btn--outline",
-            "show_arrow": false
-          }
-        }
-      },
-      "block_order": [
-        "tabs-0",
-        "tabs-1",
-        "9f07d785-d431-4a17-84aa-1857122d2d26"
-      ],
-      "disabled": true,
-      "settings": {
-        "title": "",
-        "text": "",
-        "layout": "inline",
-        "show_product_count": false,
-        "product_limit": 6,
-        "bg_color": "",
-        "color": "",
-        "padding_top": 32,
-        "padding_bottom": 32
-      }
-    },
-    "lookbook": {
-      "type": "section-look",
-      "blocks": {
-        "lookbook-0": {
-          "type": "product",
-          "settings": {
-            "product": "make-the-cut-pac-lock-necklace",
-            "position_x": 39,
-            "position_y": 31
-          }
-        },
-        "lookbook-1": {
-          "type": "product",
-          "settings": {
-            "product": "make-the-cut-pac-lock-earring-small-model-3",
-            "position_x": 41,
-            "position_y": 7
-          }
-        },
-        "4570a416-3094-4193-8256-7a732be35111": {
-          "type": "product",
-          "settings": {
-            "product": "make-the-cut-pac-lock-long-earring-2",
-            "position_x": 50,
-            "position_y": 50
-          }
-        },
-        "c140e0b9-e765-4edd-8b09-06969c357507": {
-          "type": "product",
-          "settings": {
-            "product": "make-the-cut-pac-lock-long-earring",
-            "position_x": 50,
-            "position_y": 50
-          }
-        },
-        "3f4228bb-783e-4f19-aa36-c46443b10e9c": {
-          "type": "product",
-          "settings": {
-            "product": "make-the-cut-pac-lock-earring-mini-model",
-            "position_x": 50,
-            "position_y": 50
-          }
-        },
-        "c28ca12d-115b-42b3-aab6-f3a73ad374af": {
-          "type": "product",
-          "settings": {
-            "product": "make-the-cut-pac-lock-earring-mini-model-1",
-            "position_x": 50,
-            "position_y": 50
-          }
-        }
-      },
-      "block_order": [
-        "lookbook-0",
-        "lookbook-1",
-        "4570a416-3094-4193-8256-7a732be35111",
-        "c140e0b9-e765-4edd-8b09-06969c357507",
-        "3f4228bb-783e-4f19-aa36-c46443b10e9c",
-        "c28ca12d-115b-42b3-aab6-f3a73ad374af"
-      ],
-      "disabled": true,
-      "settings": {
-        "image": "shopify:\/\/shop_images\/make_the_cut_banner_4_test.jpg",
-        "title": "",
-        "show_dots": false,
-        "products_per_row": "2",
-        "enable_aspect_ratio": true,
-        "image_aspect_ratio": 1,
-        "button_type": "btn--white",
-        "button_size": "",
-        "button_style": "btn--outline",
-        "show_arrow": false,
-        "bg_color": "",
-        "color": "",
-        "dot_color": "",
-        "dot_background": "",
-        "padding_top": 0,
-        "padding_bottom": 0
-      }
-    },
-    "bbf21f55-fac4-4b13-a015-fc6a55db744a": {
-      "type": "section-columns",
-      "blocks": {
-        "template--19109415616843__bbf21f55-fac4-4b13-a015-fc6a55db744a-16869118310b5ba997-0": {
-          "type": "image",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/nourish_banner.jpg",
-            "title": "THE NOURISH",
-            "heading_size": 4,
-            "text": "<p>Experience the elegance of this collection and embrace the abundance of life.<\/p>",
-            "text_size": 3,
-            "button_text": "Shop the collection",
-            "button_url": "shopify:\/\/collections\/the-nourish",
-            "button_type": "btn--primary",
-            "button_size": "",
-            "button_style": "btn--text",
-            "show_arrow": false
-          }
-        },
-        "template--19109415616843__bbf21f55-fac4-4b13-a015-fc6a55db744a-16869118310b5ba997-2": {
-          "type": "image",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/make_the_cut_banner.jpg",
-            "title": "MAKE THE CUT",
-            "heading_size": 4,
-            "text": "<p>Take the Shot, for this collection embodies the spirit of elegance and determination.<\/p>",
-            "text_size": 3,
-            "button_text": "Shop the collection",
-            "button_url": "shopify:\/\/collections\/make-the-cut",
-            "button_type": "btn--primary",
-            "button_size": "",
-            "button_style": "btn--text",
-            "show_arrow": false
-          }
-        }
-      },
-      "block_order": [
-        "template--19109415616843__bbf21f55-fac4-4b13-a015-fc6a55db744a-16869118310b5ba997-0",
-        "template--19109415616843__bbf21f55-fac4-4b13-a015-fc6a55db744a-16869118310b5ba997-2"
-      ],
-      "disabled": true,
-      "settings": {
-        "title": "",
-        "heading_size": 5,
-        "align_text": "text-center",
-        "align_columns": "flex-align-top",
-        "width": "wrapper--full-padded",
-        "image_aspect_ratio": 1,
-        "mobile_image_aspect_ratio": 0.7,
-        "bg_color": "",
-        "color": "",
-        "padding_top": 50,
-        "padding_bottom": 50,
-        "layout_mobile": "carousel"
-      }
-    },
-    "c9c4deb9-6347-4c3c-b3a1-2e1ea801415b": {
-      "type": "section-look",
-      "blocks": {
-        "d56de882-0e80-48de-9a4e-da9565bd723c": {
-          "type": "product",
-          "settings": {
-            "product": "the-nourish-grain-earring-1",
-            "position_x": 39,
-            "position_y": 31
-          }
-        },
-        "e04345b5-e87d-46a5-a382-8dea5d7de6a2": {
-          "type": "product",
-          "settings": {
-            "product": "the-nourish-grain-necklace-1",
-            "position_x": 41,
-            "position_y": 7
-          }
-        },
-        "11a34d2c-829b-4b1c-a0f1-e72dcd62ecf3": {
-          "type": "product",
-          "settings": {
-            "product": "the-nourish-grain-earring-3",
-            "position_x": 50,
-            "position_y": 50
-          }
-        },
-        "36e9e5d9-0b66-4064-9d3f-4458e534cd9a": {
-          "type": "product",
-          "settings": {
-            "product": "the-nourish-grain-earring-2",
-            "position_x": 50,
-            "position_y": 50
-          }
-        },
-        "da386b1c-8329-4e24-889c-bcd59b1b6c9e": {
-          "type": "product",
-          "settings": {
-            "product": "the-nourish-grain-necklace",
-            "position_x": 50,
-            "position_y": 50
-          }
-        },
-        "44713934-3d7c-44b8-b89d-ca03537e5ce2": {
-          "type": "product",
-          "settings": {
-            "product": "the-nourish-grain-earring",
-            "position_x": 50,
-            "position_y": 50
-          }
-        }
-      },
-      "block_order": [
-        "d56de882-0e80-48de-9a4e-da9565bd723c",
-        "e04345b5-e87d-46a5-a382-8dea5d7de6a2",
-        "11a34d2c-829b-4b1c-a0f1-e72dcd62ecf3",
-        "36e9e5d9-0b66-4064-9d3f-4458e534cd9a",
-        "da386b1c-8329-4e24-889c-bcd59b1b6c9e",
-        "44713934-3d7c-44b8-b89d-ca03537e5ce2"
-      ],
-      "disabled": true,
-      "settings": {
-        "image": "shopify:\/\/shop_images\/nourish_grain_earring_yg.jpg",
-        "title": "Shop The Nourish Collection",
-        "show_dots": false,
-        "products_per_row": "2",
-        "enable_aspect_ratio": true,
-        "image_aspect_ratio": 1,
-        "button_type": "btn--white",
-        "button_size": "",
-        "button_style": "btn--outline",
-        "show_arrow": false,
-        "bg_color": "",
-        "color": "",
-        "dot_color": "",
-        "dot_background": "",
-        "padding_top": 0,
-        "padding_bottom": 0
-      }
-    },
-    "078ab7f5-ce50-4a76-abb5-526c9dcbe783": {
-      "type": "section-look2",
-      "blocks": {
-        "template--19259611742539__078ab7f5-ce50-4a76-abb5-526c9dcbe783-16892279913083f93b-0": {
-          "type": "product",
-          "settings": {
-            "product": "the-nourish-grain-earring-1",
-            "position_x": 14,
-            "position_y": 37
-          }
-        },
-        "template--19259611742539__078ab7f5-ce50-4a76-abb5-526c9dcbe783-16892279913083f93b-1": {
-          "type": "product",
-          "settings": {
-            "product": "the-nourish-grain-necklace-1",
-            "position_x": 45,
-            "position_y": 60
-          }
-        },
-        "04862f4e-611f-4361-a860-f2146b36d140": {
-          "type": "product",
-          "settings": {
-            "product": "the-nourish-grain-earring-3",
-            "position_x": 50,
-            "position_y": 50
-          }
-        },
-        "06ec18b9-3e3a-4428-9b54-2b77c362cdde": {
-          "type": "product",
-          "settings": {
-            "product": "the-nourish-grain-earring-2",
-            "position_x": 50,
-            "position_y": 50
-          }
-        },
-        "42ab5abd-59ed-4faa-b883-5d7195247d78": {
-          "type": "product",
-          "settings": {
-            "product": "the-nourish-grain-necklace",
-            "position_x": 50,
-            "position_y": 50
-          }
-        },
-        "62a45ad3-be08-41eb-be36-2ccef9cf9bc8": {
-          "type": "product",
-          "settings": {
-            "product": "the-nourish-grain-earring-1",
-            "position_x": 50,
-            "position_y": 50
-          }
-        }
-      },
-      "block_order": [
-        "template--19259611742539__078ab7f5-ce50-4a76-abb5-526c9dcbe783-16892279913083f93b-0",
-        "template--19259611742539__078ab7f5-ce50-4a76-abb5-526c9dcbe783-16892279913083f93b-1",
-        "04862f4e-611f-4361-a860-f2146b36d140",
-        "06ec18b9-3e3a-4428-9b54-2b77c362cdde",
-        "42ab5abd-59ed-4faa-b883-5d7195247d78",
-        "62a45ad3-be08-41eb-be36-2ccef9cf9bc8"
-      ],
-      "disabled": true,
-      "settings": {
-        "image": "shopify:\/\/shop_images\/nourish_grain_earring_yg.jpg",
-        "title": "",
-        "show_dots": false,
-        "products_per_row": "2",
-        "enable_aspect_ratio": true,
-        "image_aspect_ratio": 1,
-        "button_type": "btn--white",
-        "button_size": "",
-        "button_style": "btn--outline",
-        "show_arrow": false,
-        "bg_color": "",
-        "color": "",
-        "dot_color": "",
-        "dot_background": "",
-        "padding_top": 0,
-        "padding_bottom": 0
-      }
-    },
     "d7a90510-3099-4a27-be96-381aa43e2b7a": {
       "type": "section-collection",
       "disabled": true,
@@ -753,49 +280,53 @@
         "padding_bottom": 0
       }
     },
-    "1777e6dc-00b3-48e7-88c0-58bbd83acd97": {
+    "bdb4e2de-3b95-4bdb-8163-ddb771bc7070": {
       "type": "section-hero",
       "blocks": {
-        "a2f00dc8-a920-4a9f-a88b-1aa8b5cc3ad2": {
+        "577bcb5d-8cfa-4de8-abe1-171cd3d25d86": {
           "type": "heading",
           "settings": {
-            "title": "PAINTING",
-            "heading_size": 9
+            "title": "MAKE THE CUT",
+            "heading_size": 7
           }
         },
-        "be777a0e-840d-49b2-8d38-51983d3190ef": {
+        "f0afe211-94f2-4e45-a33d-532f064fb359": {
           "type": "text",
           "settings": {
-            "description": "Unleash Your Inner Artist",
-            "text_size": 5,
-            "text_style": "font-body"
+            "description": "Quitely charming for the bold and ambitious",
+            "text_size": 3,
+            "text_style": "font-heading"
           }
         },
-        "cac81a92-35ab-4b14-a076-47cb226fa8d1": {
-          "type": "text",
+        "71d6d76f-4283-4a46-bf67-506abc3a0b62": {
+          "type": "button",
+          "disabled": true,
           "settings": {
-            "description": "Tell your brand's story through images.",
-            "text_size": 5,
-            "text_style": "font-body"
+            "link_text": "Discover the collection",
+            "link": "shopify:\/\/collections\/make-the-cut",
+            "button_type": "btn--white",
+            "button_size": "btn--small",
+            "button_style": "btn--text",
+            "show_arrow": false
           }
         }
       },
       "block_order": [
-        "a2f00dc8-a920-4a9f-a88b-1aa8b5cc3ad2",
-        "be777a0e-840d-49b2-8d38-51983d3190ef",
-        "cac81a92-35ab-4b14-a076-47cb226fa8d1"
+        "577bcb5d-8cfa-4de8-abe1-171cd3d25d86",
+        "f0afe211-94f2-4e45-a33d-532f064fb359",
+        "71d6d76f-4283-4a46-bf67-506abc3a0b62"
       ],
       "settings": {
         "height": "screen-height-full",
         "width": "wrapper--full",
-        "image_1": "shopify:\/\/shop_images\/jeff_diamond_hand.png",
-        "mobile_height": "screen-height-full--mobile",
-        "flex_align": "align--middle-left",
+        "image_1": "shopify:\/\/shop_images\/make_the_cut_banner_2.jpg",
+        "mobile_height": "screen-height-three-quarters--mobile",
+        "flex_align": "align--bottom-center",
         "overlay_opacity": 0,
         "overlay_color": "#000000",
         "show_overlay_text": false,
         "bg_color": "",
-        "color": "#000000"
+        "color": "#ffffff"
       }
     },
     "0ce00541-ce9b-4cbc-901a-3f97805428da": {
@@ -962,95 +493,22 @@
         "padding_bottom": 0
       }
     },
-    "576d4a58-e3a8-484d-a858-b222b54d73ec": {
-      "type": "section-columns",
-      "blocks": {
-        "template--19109415616843__576d4a58-e3a8-484d-a858-b222b54d73ec-16869118310b5ba997-0": {
-          "type": "image",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/9.jpg",
-            "title": "JOIN THE FOUNDO VIP",
-            "heading_size": 4,
-            "text": "<p>FOUNDO VIP would experience the lifetine FOUNDO Care services.<\/p>",
-            "text_size": 3,
-            "button_text": "Learn more",
-            "button_url": "",
-            "button_type": "btn--primary",
-            "button_size": "",
-            "button_style": "btn--solid",
-            "show_arrow": false
-          }
-        },
-        "template--19109415616843__576d4a58-e3a8-484d-a858-b222b54d73ec-16869118310b5ba997-1": {
-          "type": "image",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/2_42431436-3f12-4adc-a2de-1798650098a7.jpg",
-            "title": "GIFT FOR BELOVED",
-            "heading_size": 4,
-            "text": "<p>Choose the precious gift from our specially curated selection of products. <\/p>",
-            "text_size": 3,
-            "button_text": "Gift for her\/him",
-            "button_url": "",
-            "button_type": "btn--primary",
-            "button_size": "",
-            "button_style": "btn--solid",
-            "show_arrow": false
-          }
-        },
-        "template--19109415616843__576d4a58-e3a8-484d-a858-b222b54d73ec-16869118310b5ba997-2": {
-          "type": "image",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/3_5cdf6daf-3d82-4b12-8c61-91060f891a25.jpg",
-            "title": "BESPOKE",
-            "heading_size": 4,
-            "text": "<p>FOUNDO BESPOKE provides a wide range of products and services.<\/p>",
-            "text_size": 3,
-            "button_text": "Bespoke now",
-            "button_url": "",
-            "button_type": "btn--primary",
-            "button_size": "",
-            "button_style": "btn--solid",
-            "show_arrow": false
-          }
-        }
-      },
-      "block_order": [
-        "template--19109415616843__576d4a58-e3a8-484d-a858-b222b54d73ec-16869118310b5ba997-0",
-        "template--19109415616843__576d4a58-e3a8-484d-a858-b222b54d73ec-16869118310b5ba997-1",
-        "template--19109415616843__576d4a58-e3a8-484d-a858-b222b54d73ec-16869118310b5ba997-2"
-      ],
-      "disabled": true,
-      "settings": {
-        "title": "",
-        "heading_size": 5,
-        "align_text": "text-center",
-        "align_columns": "flex-align-top",
-        "width": "wrapper--full-padded",
-        "image_aspect_ratio": 0.7,
-        "mobile_image_aspect_ratio": 0.7,
-        "bg_color": "",
-        "color": "",
-        "padding_top": 50,
-        "padding_bottom": 50,
-        "layout_mobile": "carousel"
-      }
-    },
     "8408372a-0868-4d4d-991c-d33faa772fb7": {
       "type": "section-hero",
       "blocks": {
         "template--19259611742539__8408372a-0868-4d4d-991c-d33faa772fb7-heading-1": {
           "type": "heading",
           "settings": {
-            "title": "Classic",
-            "heading_size": 11
+            "title": "CLASSIC",
+            "heading_size": 7
           }
         },
         "template--19259611742539__8408372a-0868-4d4d-991c-d33faa772fb7-text-1": {
           "type": "text",
           "settings": {
             "description": "Discover",
-            "text_size": 4,
-            "text_style": "font-body"
+            "text_size": 3,
+            "text_style": "font-heading"
           }
         }
       },
@@ -1065,31 +523,23 @@
         "mobile_height": "screen-height-three-quarters--mobile",
         "flex_align": "align--middle-center",
         "overlay_opacity": 0,
-        "overlay_color": "#000",
+        "overlay_color": "#000000",
         "show_overlay_text": false,
         "bg_color": "",
-        "color": "#FFFFFF"
+        "color": "#ffffff"
       }
     }
   },
   "order": [
     "861bff52-b502-4f62-8fe4-a398779e76b4",
     "b3848711-eebf-4cdb-8cc9-2120f5d0955d",
-    "bdb4e2de-3b95-4bdb-8163-ddb771bc7070",
-    "product-with-image",
-    "tabs",
-    "lookbook",
-    "bbf21f55-fac4-4b13-a015-fc6a55db744a",
-    "c9c4deb9-6347-4c3c-b3a1-2e1ea801415b",
-    "078ab7f5-ce50-4a76-abb5-526c9dcbe783",
     "d7a90510-3099-4a27-be96-381aa43e2b7a",
     "1ab6acb1-fcc5-4a57-989a-8b8691f8fb0c",
     "4b781a49-8568-4541-bfa2-eab4caa71da5",
-    "1777e6dc-00b3-48e7-88c0-58bbd83acd97",
+    "bdb4e2de-3b95-4bdb-8163-ddb771bc7070",
     "0ce00541-ce9b-4cbc-901a-3f97805428da",
     "32f38c36-c9b4-4636-b42c-66dd3d3d4489",
     "7a4d35d0-e09a-40e5-a9af-d10949cebab9",
-    "576d4a58-e3a8-484d-a858-b222b54d73ec",
     "8408372a-0868-4d4d-991c-d33faa772fb7"
   ]
 }
