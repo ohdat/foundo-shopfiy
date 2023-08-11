@@ -57,29 +57,6 @@
         "color": "#ffffff"
       }
     },
-    "6aac4766-78c8-4852-871c-c3cd19330b78": {
-      "type": "rich-text",
-      "blocks": {
-        "template--19259611742539__6aac4766-78c8-4852-871c-c3cd19330b78-richtext-1": {
-          "type": "richtext",
-          "settings": {
-            "heading": "",
-            "content": "<p>Posuere morbi leo urna molestie at elementum eu facilisis. Etiam non quam lacus suspendisse. Gravida cum sociis natoque penatibus et magnis dis parturient. Vitae congue eu consequat ac felis donec et odio pellentesque. Sed vulputate odio ut enim blandit volutpat maecenas volutpat. Amet nulla facilisi morbi tempus iaculis. Sed euismod nisi porta lorem mollis aliquam ut porttitor. Ornare massa eget egestas purus viverra accumsan in nisl nisi<\/p>"
-          }
-        }
-      },
-      "block_order": [
-        "template--19259611742539__6aac4766-78c8-4852-871c-c3cd19330b78-richtext-1"
-      ],
-      "settings": {
-        "content_alignment": "center",
-        "bgcolor": "primary",
-        "top_space_desktop": 50,
-        "bottom_space_desktop": 0,
-        "top_space_mobile": 30,
-        "bottom_space_mobile": 30
-      }
-    },
     "bdb4e2de-3b95-4bdb-8163-ddb771bc7070": {
       "type": "section-hero",
       "blocks": {
@@ -1056,11 +1033,65 @@
         "padding_bottom": 50,
         "layout_mobile": "carousel"
       }
+    },
+    "b3848711-eebf-4cdb-8cc9-2120f5d0955d": {
+      "type": "section-rich-text",
+      "blocks": {
+        "template--19259611742539__b3848711-eebf-4cdb-8cc9-2120f5d0955d-subheading-1": {
+          "type": "subheading",
+          "disabled": true,
+          "settings": {
+            "subheading": "Introducing",
+            "text_size": 3
+          }
+        },
+        "template--19259611742539__b3848711-eebf-4cdb-8cc9-2120f5d0955d-heading-1": {
+          "type": "heading",
+          "settings": {
+            "title": "Posuere morbi leo urna molestie at elementum eu facilisis. Etiam non quam lacus suspendisse. Gravida cum sociis natoque penatibus et magnis dis parturient. Vitae congue eu consequat ac felis donec et odio pellentesque. Sed vulputate odio ut enim blandit volutpat maecenas volutpat. Amet nulla facilisi morbi tempus iaculis. Sed euismod nisi porta lorem mollis aliquam ut porttitor. Ornare massa eget egestas purus viverra accumsan in nisl nisi",
+            "text_size": 1
+          }
+        },
+        "template--19259611742539__b3848711-eebf-4cdb-8cc9-2120f5d0955d-text-1": {
+          "type": "text",
+          "disabled": true,
+          "settings": {
+            "text": "<p>Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store.<\/p>",
+            "text_size": 4,
+            "text_style": "font-body"
+          }
+        },
+        "template--19259611742539__b3848711-eebf-4cdb-8cc9-2120f5d0955d-buttons-1": {
+          "type": "buttons",
+          "disabled": true,
+          "settings": {
+            "button_text": "Learn more",
+            "button_url": "",
+            "button_type": "btn--primary",
+            "button_size": "",
+            "button_style": "btn--solid",
+            "show_arrow": false
+          }
+        }
+      },
+      "block_order": [
+        "template--19259611742539__b3848711-eebf-4cdb-8cc9-2120f5d0955d-subheading-1",
+        "template--19259611742539__b3848711-eebf-4cdb-8cc9-2120f5d0955d-heading-1",
+        "template--19259611742539__b3848711-eebf-4cdb-8cc9-2120f5d0955d-text-1",
+        "template--19259611742539__b3848711-eebf-4cdb-8cc9-2120f5d0955d-buttons-1"
+      ],
+      "settings": {
+        "width": "wrapper",
+        "align_text": "text-left",
+        "bg_color": "",
+        "color": "",
+        "padding_top": 100,
+        "padding_bottom": 100
+      }
     }
   },
   "order": [
     "861bff52-b502-4f62-8fe4-a398779e76b4",
-    "6aac4766-78c8-4852-871c-c3cd19330b78",
     "bdb4e2de-3b95-4bdb-8163-ddb771bc7070",
     "product-with-image",
     "tabs",
@@ -1076,6 +1107,7 @@
     "32f38c36-c9b4-4636-b42c-66dd3d3d4489",
     "7a4d35d0-e09a-40e5-a9af-d10949cebab9",
     "hero",
-    "576d4a58-e3a8-484d-a858-b222b54d73ec"
+    "576d4a58-e3a8-484d-a858-b222b54d73ec",
+    "b3848711-eebf-4cdb-8cc9-2120f5d0955d"
   ]
 }
