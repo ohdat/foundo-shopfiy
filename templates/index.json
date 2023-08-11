@@ -5,6 +5,7 @@
       "blocks": {
         "6e18b84c-eb5d-4f74-9389-0b3a5de981aa": {
           "type": "heading",
+          "disabled": true,
           "settings": {
             "title": "FOUNDO",
             "heading_size": 11
@@ -12,6 +13,7 @@
         },
         "template--19109415616843__861bff52-b502-4f62-8fe4-a398779e76b4-1686890555d0e0c858-1": {
           "type": "text",
+          "disabled": true,
           "settings": {
             "description": "SILVER",
             "text_size": 5,
@@ -20,6 +22,7 @@
         },
         "2710ed8d-2f68-4ae7-88ad-4ed4064ebe02": {
           "type": "text",
+          "disabled": true,
           "settings": {
             "description": "RAVISHING ROSES",
             "text_size": 5,
@@ -47,7 +50,7 @@
       "settings": {
         "height": "screen-height-full",
         "width": "wrapper--full",
-        "image_1": "shopify:\/\/shop_images\/make_the_cut_banner_1.jpg",
+        "image_1": "shopify:\/\/shop_images\/20230811-131146.png",
         "mobile_height": "screen-height-three-quarters--mobile",
         "flex_align": "align--bottom-center",
         "overlay_opacity": 0,
@@ -55,6 +58,61 @@
         "show_overlay_text": false,
         "bg_color": "",
         "color": "#ffffff"
+      }
+    },
+    "b3848711-eebf-4cdb-8cc9-2120f5d0955d": {
+      "type": "section-rich-text",
+      "blocks": {
+        "template--19259611742539__b3848711-eebf-4cdb-8cc9-2120f5d0955d-subheading-1": {
+          "type": "subheading",
+          "disabled": true,
+          "settings": {
+            "subheading": "Introducing",
+            "text_size": 3
+          }
+        },
+        "template--19259611742539__b3848711-eebf-4cdb-8cc9-2120f5d0955d-heading-1": {
+          "type": "heading",
+          "settings": {
+            "title": "Posuere morbi leo urna molestie at elementum eu facilisis. Etiam non quam lacus suspendisse. Gravida cum sociis natoque penatibus et magnis dis parturient. Vitae congue eu consequat ac felis donec et odio pellentesque. Sed vulputate odio ut enim blandit volutpat maecenas volutpat. Amet nulla facilisi morbi tempus iaculis. Sed euismod nisi porta lorem mollis aliquam ut porttitor. Ornare massa eget egestas purus viverra accumsan in nisl nisi",
+            "text_size": 1
+          }
+        },
+        "template--19259611742539__b3848711-eebf-4cdb-8cc9-2120f5d0955d-text-1": {
+          "type": "text",
+          "disabled": true,
+          "settings": {
+            "text": "<p>Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store.<\/p>",
+            "text_size": 4,
+            "text_style": "font-body"
+          }
+        },
+        "template--19259611742539__b3848711-eebf-4cdb-8cc9-2120f5d0955d-buttons-1": {
+          "type": "buttons",
+          "disabled": true,
+          "settings": {
+            "button_text": "Learn more",
+            "button_url": "",
+            "button_type": "btn--primary",
+            "button_size": "",
+            "button_style": "btn--solid",
+            "show_arrow": false
+          }
+        }
+      },
+      "block_order": [
+        "template--19259611742539__b3848711-eebf-4cdb-8cc9-2120f5d0955d-subheading-1",
+        "template--19259611742539__b3848711-eebf-4cdb-8cc9-2120f5d0955d-heading-1",
+        "template--19259611742539__b3848711-eebf-4cdb-8cc9-2120f5d0955d-text-1",
+        "template--19259611742539__b3848711-eebf-4cdb-8cc9-2120f5d0955d-buttons-1"
+      ],
+      "settings": {
+        "width": "wrapper",
+        "align_text": "text-left",
+        "bg_color": "",
+        "color": "",
+        "padding_top": 100,
+        "padding_bottom": 100
       }
     },
     "bdb4e2de-3b95-4bdb-8163-ddb771bc7070": {
@@ -700,7 +758,6 @@
       "blocks": {
         "a2f00dc8-a920-4a9f-a88b-1aa8b5cc3ad2": {
           "type": "heading",
-          "disabled": true,
           "settings": {
             "title": "PAINTING",
             "heading_size": 9
@@ -708,30 +765,25 @@
         },
         "be777a0e-840d-49b2-8d38-51983d3190ef": {
           "type": "text",
-          "disabled": true,
           "settings": {
             "description": "Unleash Your Inner Artist",
             "text_size": 5,
             "text_style": "font-body"
           }
         },
-        "e444fddd-6f27-4f94-9859-356e688cceb6": {
-          "type": "button",
-          "disabled": true,
+        "cac81a92-35ab-4b14-a076-47cb226fa8d1": {
+          "type": "text",
           "settings": {
-            "link_text": "Discover now",
-            "link": "shopify:\/\/collections\/the-painting",
-            "button_type": "btn--black",
-            "button_size": "",
-            "button_style": "btn--text",
-            "show_arrow": false
+            "description": "Tell your brand's story through images.",
+            "text_size": 5,
+            "text_style": "font-body"
           }
         }
       },
       "block_order": [
         "a2f00dc8-a920-4a9f-a88b-1aa8b5cc3ad2",
         "be777a0e-840d-49b2-8d38-51983d3190ef",
-        "e444fddd-6f27-4f94-9859-356e688cceb6"
+        "cac81a92-35ab-4b14-a076-47cb226fa8d1"
       ],
       "settings": {
         "height": "screen-height-full",
@@ -910,57 +962,6 @@
         "padding_bottom": 0
       }
     },
-    "hero": {
-      "type": "section-hero",
-      "blocks": {
-        "heading": {
-          "type": "heading",
-          "disabled": true,
-          "settings": {
-            "title": "PAINTING",
-            "heading_size": 9
-          }
-        },
-        "text": {
-          "type": "text",
-          "disabled": true,
-          "settings": {
-            "description": "Unleash Your Inner Artist",
-            "text_size": 5,
-            "text_style": "font-body"
-          }
-        },
-        "button": {
-          "type": "button",
-          "disabled": true,
-          "settings": {
-            "link_text": "Discover now",
-            "link": "shopify:\/\/collections\/the-painting",
-            "button_type": "btn--black",
-            "button_size": "",
-            "button_style": "btn--text",
-            "show_arrow": false
-          }
-        }
-      },
-      "block_order": [
-        "heading",
-        "text",
-        "button"
-      ],
-      "settings": {
-        "height": "screen-height-full",
-        "width": "wrapper--full",
-        "image_1": "shopify:\/\/shop_images\/painting_bag_test.jpg",
-        "mobile_height": "screen-height-full--mobile",
-        "flex_align": "align--middle-left",
-        "overlay_opacity": 0,
-        "overlay_color": "#000000",
-        "show_overlay_text": false,
-        "bg_color": "",
-        "color": "#000000"
-      }
-    },
     "576d4a58-e3a8-484d-a858-b222b54d73ec": {
       "type": "section-columns",
       "blocks": {
@@ -1034,64 +1035,46 @@
         "layout_mobile": "carousel"
       }
     },
-    "b3848711-eebf-4cdb-8cc9-2120f5d0955d": {
-      "type": "section-rich-text",
+    "8408372a-0868-4d4d-991c-d33faa772fb7": {
+      "type": "section-hero",
       "blocks": {
-        "template--19259611742539__b3848711-eebf-4cdb-8cc9-2120f5d0955d-subheading-1": {
-          "type": "subheading",
-          "disabled": true,
-          "settings": {
-            "subheading": "Introducing",
-            "text_size": 3
-          }
-        },
-        "template--19259611742539__b3848711-eebf-4cdb-8cc9-2120f5d0955d-heading-1": {
+        "template--19259611742539__8408372a-0868-4d4d-991c-d33faa772fb7-heading-1": {
           "type": "heading",
           "settings": {
-            "title": "Posuere morbi leo urna molestie at elementum eu facilisis. Etiam non quam lacus suspendisse. Gravida cum sociis natoque penatibus et magnis dis parturient. Vitae congue eu consequat ac felis donec et odio pellentesque. Sed vulputate odio ut enim blandit volutpat maecenas volutpat. Amet nulla facilisi morbi tempus iaculis. Sed euismod nisi porta lorem mollis aliquam ut porttitor. Ornare massa eget egestas purus viverra accumsan in nisl nisi",
-            "text_size": 1
+            "title": "Classic",
+            "heading_size": 11
           }
         },
-        "template--19259611742539__b3848711-eebf-4cdb-8cc9-2120f5d0955d-text-1": {
+        "template--19259611742539__8408372a-0868-4d4d-991c-d33faa772fb7-text-1": {
           "type": "text",
-          "disabled": true,
           "settings": {
-            "text": "<p>Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store.<\/p>",
+            "description": "Discover",
             "text_size": 4,
             "text_style": "font-body"
-          }
-        },
-        "template--19259611742539__b3848711-eebf-4cdb-8cc9-2120f5d0955d-buttons-1": {
-          "type": "buttons",
-          "disabled": true,
-          "settings": {
-            "button_text": "Learn more",
-            "button_url": "",
-            "button_type": "btn--primary",
-            "button_size": "",
-            "button_style": "btn--solid",
-            "show_arrow": false
           }
         }
       },
       "block_order": [
-        "template--19259611742539__b3848711-eebf-4cdb-8cc9-2120f5d0955d-subheading-1",
-        "template--19259611742539__b3848711-eebf-4cdb-8cc9-2120f5d0955d-heading-1",
-        "template--19259611742539__b3848711-eebf-4cdb-8cc9-2120f5d0955d-text-1",
-        "template--19259611742539__b3848711-eebf-4cdb-8cc9-2120f5d0955d-buttons-1"
+        "template--19259611742539__8408372a-0868-4d4d-991c-d33faa772fb7-heading-1",
+        "template--19259611742539__8408372a-0868-4d4d-991c-d33faa772fb7-text-1"
       ],
       "settings": {
-        "width": "wrapper",
-        "align_text": "text-left",
+        "height": "screen-height-three-quarters",
+        "width": "wrapper--full",
+        "image_1": "shopify:\/\/shop_images\/nourishgrainnecklaceygf.jpg",
+        "mobile_height": "screen-height-three-quarters--mobile",
+        "flex_align": "align--middle-center",
+        "overlay_opacity": 0,
+        "overlay_color": "#000",
+        "show_overlay_text": false,
         "bg_color": "",
-        "color": "",
-        "padding_top": 100,
-        "padding_bottom": 100
+        "color": "#FFFFFF"
       }
     }
   },
   "order": [
     "861bff52-b502-4f62-8fe4-a398779e76b4",
+    "b3848711-eebf-4cdb-8cc9-2120f5d0955d",
     "bdb4e2de-3b95-4bdb-8163-ddb771bc7070",
     "product-with-image",
     "tabs",
@@ -1106,8 +1089,7 @@
     "0ce00541-ce9b-4cbc-901a-3f97805428da",
     "32f38c36-c9b4-4636-b42c-66dd3d3d4489",
     "7a4d35d0-e09a-40e5-a9af-d10949cebab9",
-    "hero",
     "576d4a58-e3a8-484d-a858-b222b54d73ec",
-    "b3848711-eebf-4cdb-8cc9-2120f5d0955d"
+    "8408372a-0868-4d4d-991c-d33faa772fb7"
   ]
 }
