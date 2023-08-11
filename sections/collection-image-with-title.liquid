@@ -97,7 +97,11 @@
           {{ collection_content }}
         </div>
       </div>
-      <div style="background-color: aqua;width:100%;height:40px;"></div>
+      <div style="background-color: aqua;width:100%;padding:10px;">
+        {%- if description != blank and show_description -%}
+          <div class="hero__description rte">{{ description }}</div>
+        {%- endif -%}
+      </div>
     {%- endif -%}
   {%- else -%}
     {%- if show_title or show_description -%}
