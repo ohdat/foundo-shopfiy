@@ -260,6 +260,10 @@
   margin-bottom: 20px;
 }
 
+.sidebar__item:hover label {
+  color: #00031E;
+}
+
 .account_text {
   font-size: 12px;
   font-weight: normal;
