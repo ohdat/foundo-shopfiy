@@ -19394,13 +19394,14 @@ body.has-line-design .article__text-wrapper {
 }
 
 .collection__image-inline .collection__image {
-  width: 65%;
+  width: 100%;
   min-height: inherit;
 }
 
 .collection__image-inline .collection__title-wrapper {
   min-height: inherit;
-  width: 35%;
+  position: absolute;
+  bottom: 0;
 }
 
 .collection__image-inline .hero__content {
