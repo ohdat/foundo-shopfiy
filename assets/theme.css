@@ -16020,6 +16020,13 @@ body.has-line-design.grid-compact .reviews__grid {
   .collection .collection__products .product-grid_fal.active {
     flex: 1;
   }
+
+  .grid-item.product-item .overflowX_bo {
+    display: none!important;
+  }
+  .grid-item.product-item:hover .overflowX_bo {
+    display: flex!important;
+  }
 }
 
 @media only screen and (min-width: 750px) {
