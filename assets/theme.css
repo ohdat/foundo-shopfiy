@@ -168,7 +168,7 @@ body,html{
 }
 
 .product-grid_tru.error {
-  display: none;
+  /* display: none; */
 }
 
 .product-grid_fal.action {
@@ -176,7 +176,7 @@ body,html{
 }
 
 .product-grid_fal.error {
-  display: none;
+  /* display: none; */
 }
 
 .popout——left img {
