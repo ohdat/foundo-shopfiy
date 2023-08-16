@@ -13,6 +13,7 @@
   let changeProductImageByCurrentThumb = function () {
     // get current product thumb index
     let currentThumbIndex = $(this).index();
+    console.log('currentThumbIndex:::', currentThumbIndex);
 
     // add active class to current thumb and remove from other thumbs
     $(this).addClass('active').siblings().removeClass('active');
@@ -20,22 +21,25 @@
     // get current product image by index
     let currentProductImage = $(this)
       .closest('.overflowX_bo')
-      .prev('.product-item__image')
+      .siblings('.product-item__image')
       .find('.product-item__wrapper')
       .eq(currentThumbIndex);
+
+    console.log('currentProductImage:::', $(this).closest('.overflowX_bo').prev('.product-item__image'));
 
     // toggle active class on current product image and remove from other images
     currentProductImage.addClass('active').siblings().removeClass('active');
   };
 
   let handleProductThumbTriggerEvent = function () {
-    let productThumb = $('.overflowX_bo .product__thumb');
-
+    let productThumb = $(this).find('.overflowX_bo .product__thumb');
     productThumb.on('click mouseenter', changeProductImageByCurrentThumb);
   };
 
   // Add custom code below this line
   $(function () {
-    handleProductThumbTriggerEvent();
+    // handleProductThumbTriggerEvent();
+
+    $('.product-item.grid-item').on('mouseenter', handleProductThumbTriggerEvent);
   });
 })();
