@@ -71,8 +71,9 @@
           {%- when 'email' -%}
           <div class="custom-form__block" {{ block.shopify_attributes }}>
             <label for="Form-{{ section.id }}-{{ forloop.index0 }}" class="visually-hidden">{{ block.settings.title }}</label>
-            <div class="account_text">EMAIL</div>
+            <div class="account_text" style="font-family: 'Foundo_Headline' !important;">EMAIL</div>
             <input
+              style="font-family: 'Foundo_Medium' !important;font-weight: 500;"
               type="email"
               class="inputbox contactFormEmail field"
               id="Form-{{ section.id }}-{{ forloop.index0 }}"
