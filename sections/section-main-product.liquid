@@ -1,0 +1,50 @@
+<style>
+  {% assign colorBrightness = settings.color_body_bg | color_brightness %}
+  {%- if colorBrightness < 130 -%}
+  #shopify-section-{{ section.id }}.product-section select{
+    background: url({{ 'select-arrow-white.png' | asset_url }}) no-repeat 97% 50% /10px transparent;
+  }
+  #shopify-section-{{ section.id }} .product-view-dropdown select {
+    background: url({{ 'select-arrow-white.png' | asset_url }}) no-repeat 94% 50% /9px transparent;
+  }
+  #shopify-section-{{ section.id }} .selling_plan select {
+    background: url({{ 'select-arrow-white.png' | asset_url }}) no-repeat 97% 50% /10px var(--primaryAlternateBg);
+  }
+  {%- else -%}
+  #shopify-section-{{ section.id }}.product-section select{
+    background:url({{ 'lang-dropdown-arrow.svg' | asset_url }}) no-repeat 97% 50% /10px transparent;
+  }
+  #shopify-section-{{ section.id }} .product-view-dropdown select {
+    background: url({{ 'lang-dropdown-arrow.svg' | asset_url }}) no-repeat 94% 50% /9px transparent ;
+  }
+  #shopify-section-{{ section.id }} .selling_plan select {
+    background:url({{ 'lang-dropdown-arrow.svg' | asset_url }}) no-repeat 97% 50% /10px var(--primaryAlternateBg);
+  }
+  {%- endif -%}
+</style>
+
+{%- liquid
+  render 'similar-products', product: product, section: section
+  for block in section.blocks
+    if block.type == 'button' and block.settings.sticky_add_to_cart
+      render 'sticky-add-to-cart', product: product, section: section, block: block
+    endif
+  endfor
+  render 'product-form', product: product, section: section, sizeChartContent: true
+-%}
+{% liquid
+  for block in section.blocks
+    if block.type == 'query-form' and block.settings.heading != blank
+      render 'product-query-form', block: block
+    endif
+  endfor
+%}
+
+{% schema %}
+{
+  "name": "AB test",
+  "settings": [
+
+  ]
+}
+{% endschema %}
