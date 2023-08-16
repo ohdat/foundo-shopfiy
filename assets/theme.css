@@ -138,7 +138,8 @@
 }
 
 
-body,html{
+body,
+html {
   font-family: 'Foundo_Headline' !important;
 }
 
@@ -245,6 +246,22 @@ body,html{
   font-weight: 500;
 }
 
+#ContactUs .inputbox::-webkit-input-placeholder,
+#ContactUs .inputboxed::-webkit-input-placeholder {
+  font-size: 16px;
+  font-family: 'Foundo_Medium' !important;
+  font-weight: 500;
+  color: #9b9b9b !important;
+}
+
+#ContactUs1 .inputbox::-webkit-input-placeholder,
+#ContactUs1 .inputboxed::-webkit-input-placeholder {
+  font-size: 16px;
+  font-family: 'Foundo_Medium' !important;
+  font-weight: 500;
+  color: #9b9b9b !important;
+}
+
 #filterGroup .filter-group__heading span {
   font-size: 12px;
   font-family: 'Foundo_Headline' !important;
@@ -286,13 +303,13 @@ body,html{
   border: none !important;
   border-bottom: 1px solid #d0d0d0 !important;
   padding: 9px 0px !important;
-  color: #9b9b9b;
+  color: #9b9b9b !important;
 }
 
 .inputboxed {
   border: none !important;
   padding: 0px !important;
-  color: #9b9b9b;
+  color: #9b9b9b !important;
 }
 
 .inputbox::-webkit-input-placeholder {
@@ -475,6 +492,56 @@ body,html{
   margin: 90px 0 50px 0;
   text-align: left;
 }
+
+.accordion__title {
+  font-size: 16px;
+  font-family: 'Foundo_Medium' !important;
+  font-weight: 500;
+  color: #00031e;
+}
+
+.accordion__content p {
+  font-size: 16px;
+  font-family: 'Foundo_Medium' !important;
+  font-weight: 500;
+  color: #9b9b9b;
+}
+
+.faq__title {
+  font-size: 20px;
+  font-family: 'Foundo_Headline' !important;
+  font-weight: normal;
+  color: #00031e;
+}
+
+.Still_title {
+  font-size: 20px;
+  font-family: 'Foundo_Headline' !important;
+  font-weight: normal;
+  color: #00031e;
+  margin: 90px 0 50px 0;
+  text-align: left;
+}
+
+.Still_title1 {
+  font-size: 16px;
+  font-family: 'Foundo_Medium' !important;
+  font-weight: 500;
+  color: #00031e;
+  margin-top: 30px;
+  text-align: left;
+}
+
+.Still_text {
+  font-size: 16px;
+  font-family: 'Foundo_Medium' !important;
+  font-weight: 500;
+  color: #9b9b9b;
+  text-align: left;
+  line-height: 19px;
+  margin-top: 10px;
+}
+
 
 .shopify-section1 {
   display: none;
@@ -16022,10 +16089,11 @@ body.has-line-design.grid-compact .reviews__grid {
   }
 
   .grid-item.product-item .overflowX_bo {
-    display: none!important;
+    display: none !important;
   }
+
   .grid-item.product-item:hover .overflowX_bo {
-    display: flex!important;
+    display: flex !important;
   }
 }
 
