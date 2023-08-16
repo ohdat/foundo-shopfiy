@@ -475,6 +475,55 @@ body,html{
   margin: 90px 0 50px 0;
   text-align: left;
 }
+.accordion__title {
+  font-size: 16px;
+  font-family: 'Foundo_Medium' !important;
+  font-weight: 500;
+  color: #00031e;
+}
+
+.accordion__content p {
+  font-size: 16px;
+  font-family: 'Foundo_Medium' !important;
+  font-weight: 500;
+  color: #9b9b9b;
+}
+
+.faq__title {
+  font-size: 20px;
+  font-family: 'Foundo_Headline' !important;
+  font-weight: normal;
+  color: #00031e;
+}
+
+.Still_title {
+  font-size: 20px;
+  font-family: 'Foundo_Headline' !important;
+  font-weight: normal;
+  color: #00031e;
+  margin: 90px 0 50px 0;
+  text-align: left;
+}
+
+.Still_title1 {
+  font-size: 16px;
+  font-family: 'Foundo_Medium' !important;
+  font-weight: 500;
+  color: #00031e;
+  margin-top: 30px;
+  text-align: left;
+}
+
+.Still_text {
+  font-size: 16px;
+  font-family: 'Foundo_Medium' !important;
+  font-weight: 500;
+  color: #9b9b9b;
+  text-align: left;
+  line-height: 19px;
+  margin-top: 10px;
+}
+
 
 .shopify-section1 {
   display: none;
