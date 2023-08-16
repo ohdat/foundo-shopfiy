@@ -133,11 +133,6 @@
               {{ required }}>
           </div>
 
-          {%- when 'formHeading' -%}
-          <div class="custom-form__block custom-form__block--heading" {{ block.shopify_attributes }}>
-            <p class="strong">{{ block.settings.title }}</p>
-          </div>
-
           {%- when 'spacer' -%}
           {%- assign hr_class = 'hr--clear' -%}
           {%- if block.settings.line -%}
