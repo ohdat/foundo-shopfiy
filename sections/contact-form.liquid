@@ -112,6 +112,7 @@
           <div class="custom-form__block" {{ block.shopify_attributes }}>
             <label for="Form-{{ section.id }}-{{ forloop.index0 }}" class="visually-hidden">{{ block.settings.title }}</label>
             <textarea
+              style="border: 1px solid var(--text-a35);"
               rows="10"
               id="Form-{{ section.id }}-{{ forloop.index0 }}"
               class="contactFormMessage field"
