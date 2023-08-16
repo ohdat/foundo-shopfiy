@@ -71,9 +71,11 @@
           {%- when 'email' -%}
           <div class="custom-form__block" {{ block.shopify_attributes }}>
             <label for="Form-{{ section.id }}-{{ forloop.index0 }}" class="visually-hidden">{{ block.settings.title }}</label>
+            <div class="account_text" style="font-family: 'Foundo_Headline' !important;">EMAIL</div>
             <input
+              style="font-family: 'Foundo_Medium' !important;font-weight: 500;"
               type="email"
-              class="contactFormEmail field"
+              class="inputbox contactFormEmail field"
               id="Form-{{ section.id }}-{{ forloop.index0 }}"
               name="contact[email]"
               placeholder="{{ block.settings.title }}"
@@ -236,10 +238,12 @@
       {%- unless types contains "email" -%}
         <div class="custom-form__block">
           <label for="contactFormEmail" class="visually-hidden">{{ 'contact.form.email' | t }}</label>
+          <div class="account_text" style="font-family: 'Foundo_Headline' !important;">EMAIL</div>
           <input
+            style="font-family: 'Foundo_Medium' !important;font-weight: 500;"
             type="email"
             id="contactFormEmail"
-            class="contactFormEmail field"
+            class="inputbox contactFormEmail field"
             name="contact[email]"
             placeholder="{{ 'contact.form.email' | t }}"
             autocorrect="off"
