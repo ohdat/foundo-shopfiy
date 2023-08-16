@@ -449,7 +449,13 @@ Usage:
     {{ over_image_content }}
   </div>
 
-  <div class="category__name">{{product.type}}</div>
+  {%- if collection or product.collections.size > 0 -%}
+    {%- assign current_collection = collection | default: product.collections[0] -%}
+
+    <nav class="breadcrumbs breadcrumbs--no-padding product__breadcrumbs" style="margin-top: 8px;">
+      <a href="{{ current_collection.url }}">{{ current_collection.title }}</a>
+    </nav>
+  {%- endif -%}
 
   <div class="overflowX_bo" style="display: flex;margin-top: 10px;padding-left:11px; overflow-x: auto;">
     {%- for media in product.media -%}
