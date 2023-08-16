@@ -101,11 +101,16 @@
           </div>
 
           {%- when 'text' -%}
-          <div class="custom-form__block" {{ block.shopify_attributes }}>
+          <div
+            id="ContactUs1"
+            class="custom-form__block"
+            {{ block.shopify_attributes }}>
             <label for="Form-{{ section.id }}-{{ forloop.index0 }}" class="visually-hidden">{{ block.settings.title }}</label>
+            <div class="account_text" style="font-family: 'Foundo_Headline' !important;">FULL NAME</div>
             <input
+              style="font-family: 'Foundo_Medium' !important;font-weight: 500;"
               type="text"
-              class="contactFormText field"
+              class="inputbox contactFormText field"
               id="Form-{{ section.id }}-{{ forloop.index0 }}"
               name="contact[{{ block.settings.title | handleize | default: 'text' }}]"
               placeholder="{{ block.settings.title }}"
