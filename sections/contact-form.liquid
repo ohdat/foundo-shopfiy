@@ -142,19 +142,6 @@
             <hr class="{{ hr_class }}">
           </div>
 
-          {%- when 'checkbox' -%}
-          <div class="custom-form__block checkbox" {{ block.shopify_attributes }}>
-            <input
-              type="checkbox"
-              id="Form-{{ section.id }}-{{ forloop.index0 }}"
-              class="contactFormCheckbox"
-              name="contact[{{ block.settings.title | handleize | default: 'checkbox' }}]"
-              value="{{ block.settings.title }}"
-              {{ required }}>
-            <label for="Form-{{ section.id }}-{{ forloop.index0 }}">
-              {{ block.settings.title }}
-            </label>
-          </div>
 
           {%- when 'radio' -%}
           <fieldset class="custom-form__block custom-form__block--group" {{ block.shopify_attributes }}>
@@ -235,35 +222,6 @@
             {%- endif -%}
           </fieldset>
 
-          {%- when 'select' -%}
-          <fieldset class="custom-form__block custom-form__block--group" {{ block.shopify_attributes }}>
-            {%- if block.settings.title != blank -%}
-              <label for="Form-{{ section.id }}-{{ forloop.index0 }}" class="custom-form__label label--block">{{ block.settings.title }}</label>
-            {%- endif -%}
-            <select
-              id="Form-{{ section.id }}-{{ forloop.index0 }}"
-              class="contactFormSelect field"
-              name="contact[{{ block.settings.title | handleize | default: 'select' }}]">
-              {%- if block.settings.label-one != blank -%}
-                <option value="{{ block.settings.label-one }}">{{ block.settings.label-one }}</option>
-              {%- endif -%}
-              {%- if block.settings.label-two != blank -%}
-                <option value="{{ block.settings.label-two }}">{{ block.settings.label-two }}</option>
-              {%- endif -%}
-              {%- if block.settings.label-three != blank -%}
-                <option value="{{ block.settings.label-three }}">{{ block.settings.label-three }}</option>
-              {%- endif -%}
-              {%- if block.settings.label-four != blank -%}
-                <option value="{{ block.settings.label-four }}">{{ block.settings.label-four }}</option>
-              {%- endif -%}
-              {%- if block.settings.label-five != blank -%}
-                <option value="{{ block.settings.label-five }}">{{ block.settings.label-five }}</option>
-              {%- endif -%}
-              {%- if block.settings.label-six != blank -%}
-                <option value="{{ block.settings.label-six }}">{{ block.settings.label-six }}</option>
-              {%- endif -%}
-            </select>
-          </fieldset>
       {%- else -%}
         {%- endcase -%}
       {%- endfor -%}
