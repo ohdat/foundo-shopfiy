@@ -449,14 +449,14 @@ Usage:
     {{ over_image_content }}
   </div>
 
-  {%- if collection or product.collections.size > 0 -%}
-    {%- assign current_collection = collection | default: product.collections[0] -%}
+  {% assign metafield_value = product.metafields.custom.category %}
+  {% assign collection_handle = metafield_value %}
+  {% assign collection_object = collections[collection_handle] %}
 
-    <nav class="breadcrumbs breadcrumbs--no-padding product__breadcrumbs" style="margin-top: 8px;">
-      <a href="{{ current_collection.url }}">{{ current_collection.title }}</a>
-    </nav>
-  {%- endif -%}
-  <div class="category__name">{{product.category}}</div>
+  <nav class="breadcrumbs breadcrumbs--no-padding product__breadcrumbs" style="margin: 8px;">
+    <a href="{{ collection_object.url }}">{{ collection_object.title }}</a>
+    <div>{{cur_category}}</div>
+  </nav>
 
   <div class="overflowX_bo" style="display: flex;margin-top: 10px;padding-left:11px; overflow-x: auto;">
     {%- for media in product.media -%}
@@ -480,8 +480,15 @@ Usage:
     {%- endfor -%}
   </div>
 
+  
+
   <div class="product-information" data-product-information>
     <div class="product-item__info" id="productItemInfo">
+      <div class="prduct-grid__serial-number">
+        <p>Serial No: </p>
+        <p class="product-item__title">{{ product.metafields.custom.serial_no }}</p>
+      </div>
+      
       <a
         class="product-link"
         href="{{ product_url }}"
