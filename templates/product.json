@@ -601,10 +601,10 @@
         "mobile_height": "screen-height-three-quarters--mobile",
         "flex_align": "align--middle-center",
         "overlay_opacity": 0,
-        "overlay_color": "#000",
+        "overlay_color": "#000000",
         "show_overlay_text": false,
         "bg_color": "",
-        "color": "#FFFFFF"
+        "color": "#ffffff"
       }
     },
     "2e42e7a4-66a5-45ff-b7a3-107e94aa293d": {
@@ -614,6 +614,29 @@
         "description": "",
         "layout": "inline",
         "link_text": "",
+        "link_url": "",
+        "button_type": "btn--primary",
+        "button_size": "",
+        "button_style": "btn--solid",
+        "show_arrow": false,
+        "featured_collection": "the-cross",
+        "style": "grid",
+        "grid": 4,
+        "rows": 3,
+        "layout_mobile": "carousel",
+        "bg_color": "",
+        "color": "",
+        "padding_top": 50,
+        "padding_bottom": 50
+      }
+    },
+    "b3561306-e746-459f-8fb8-acd0bd92f08d": {
+      "type": "section-collection2",
+      "settings": {
+        "heading": "Best Sellers",
+        "description": "",
+        "layout": "inline",
+        "link_text": "Shop Now",
         "link_url": "",
         "button_type": "btn--primary",
         "button_size": "",
@@ -643,6 +666,7 @@
     "related",
     "ca54cc1b-cc42-49f0-8900-2a68d0e46252",
     "43dbcd02-3fe3-4f1a-a6e5-db99e8bf154a",
-    "2e42e7a4-66a5-45ff-b7a3-107e94aa293d"
+    "2e42e7a4-66a5-45ff-b7a3-107e94aa293d",
+    "b3561306-e746-459f-8fb8-acd0bd92f08d"
   ]
 }

@@ -1,4 +1,3 @@
-
 {%- liquid
 
   assign show_sort = section.settings.enable_sort
@@ -19,42 +18,55 @@
 {%- capture collection_sidebar_class -%}
   {%- if filter_layout == 'slide-out' -%}
     collection__sidebar__slide-out
-    {%- else -%}
-    collection__sidebar__slider{% if show_group_filters %} expanded drawer--animated no-mobile-animation{% endif %}
+  {%- else -%}
+    collection__sidebar__slider{% if show_group_filters %}
+      expanded drawer--animated no-mobile-animation{% endif %}
   {%- endif -%}
 {%- endcapture -%}
 
 {%- style -%}
   .search-page {
-    --PT: {{ section.settings.padding_top }}px;
-    --PB: {{ section.settings.padding_bottom }}px;
+    --PT: {{ section.settings.padding_top }}
+    px;
+    --PB: {{ section.settings.padding_bottom }}
+    px;
   }
 {%- endstyle -%}
 
-<section class="page search-page collection section-padding"
+<section
+  class="page search-page collection section-padding"
   data-section-type="collection"
   data-section-id="{{ section.id }}"
   data-sort="{{ show_sort }}">
   <main-search>
-  <div class="search-outer">
-    <form action="{{ routes.search_url }}" class="search-form">
-      <input name="options[prefix]" type="hidden" value="last">
-      <div class="input-holder">
+    <div class="search-outer">
+      <form action="{{ routes.search_url }}" class="search-form">
         <input
-          type="search"
-          name="q"
-          class="search-box"
-          aria-label="{{ 'general.search.placeholder' | t }}"
-          placeholder="{{ 'general.search.title' | t }}"
-          value="{{ search.terms }}">
-          <button type="reset" class="search-reset{% if search.terms == blank %} hidden{% endif %}" aria-label="{{ 'general.search.reset' | t }}">
+          name="options[prefix]"
+          type="hidden"
+          value="last">
+        <div class="input-holder">
+          <input
+            type="search"
+            name="q"
+            class="search-box"
+            aria-label="{{ 'general.search.placeholder' | t }}"
+            placeholder="{{ 'general.search.title' | t }}"
+            value="{{ search.terms }}">
+          <button
+            type="reset"
+            class="search-reset{% if search.terms == blank %} hidden{% endif %}"
+            aria-label="{{ 'general.search.reset' | t }}">
             {{- 'general.search.clear' | t -}}
           </button>
         </div>
-      <button type="submit" class="btn btn--primary btn--solid search-submit" aria-label="{{ 'general.search.search' | t }}">{%- render 'icon-search' -%}</button>
-    </form>
-  </div>
-</main-search>
+        <button
+          type="submit"
+          class="btn btn--primary btn--solid search-submit"
+          aria-label="{{ 'general.search.search' | t }}">{%- render 'icon-search' -%}</button>
+      </form>
+    </div>
+  </main-search>
 
   {%- if search.performed -%}
     {%- if search.results == empty -%}
@@ -128,19 +140,24 @@
 
     <div class="collection__products{% if show_group_tags %} collection__products--group-tags{% endif %}">
       {%- if show_group_tags -%}
-        <div class="{{ collection_sidebar_class }}" id="filter-groups" data-collection-sidebar>
+        <div
+          class="{{ collection_sidebar_class }}"
+          id="filter-groups"
+          data-collection-sidebar>
           <div class="collection__sidebar__head{% unless filter_layout == 'slide-out' %} collection__sidebar__head--mobile{% endunless %}">
             <h3>
               {{- 'collections.general.filters' | t -}}
 
-              <span
-                class="filter-count{% if filter_active_count < 1 %} hidden{% endif %}"
-                data-active-filters>
+              <span class="filter-count{% if filter_active_count < 1 %} hidden{% endif %}" data-active-filters>
                 {{- filter_active_count -}}
               </span>
             </h3>
 
-            <a href="#filters-group" class="collection__sidebar__close" data-collection-sidebar-close aria-label="{{ 'collections.general.hide_filters' | t }}">
+            <a
+              href="#filters-group"
+              class="collection__sidebar__close"
+              data-collection-sidebar-close
+              aria-label="{{ 'collections.general.hide_filters' | t }}">
               {%- render 'icon-cancel' -%}
             </a>
           </div>
@@ -156,7 +173,9 @@
           <div class="grid" id="SearchLoop">
             {%- if search.results == empty -%}
               <div class="no-results">
-                <p><strong>{{ 'collections.general.no_matches' | t }}</strong></p>
+                <p>
+                  <strong>{{ 'collections.general.no_matches' | t }}</strong>
+                </p>
                 {%- liquid
                   assign sort_by_string = ''
                   assign sort_by = search.sort_by
@@ -170,7 +189,12 @@
 
                   assign search_parameters = string_connector | append: 'type=' | append: terms | append: '&' | append: option_prefix | append: '=last' | append: '&q=' | append: search.terms
                 -%}
-                <a class="btn btn--primary btn--solid" href="{{ request.path | append: sort_by_string | append: search_parameters }}" data-filter-update-url><span>{{ 'collections.general.reset' | t }}</span></a>
+                <a
+                  class="btn btn--primary btn--solid"
+                  href="{{ request.path | append: sort_by_string | append: search_parameters }}"
+                  data-filter-update-url>
+                  <span>{{ 'collections.general.reset' | t }}</span>
+                </a>
               </div>
             {%- else -%}
               {%- liquid
@@ -188,7 +212,9 @@
           {%- render 'pagination', paginate: paginate -%}
 
           <div class="grid__loader">
-            <div class="loader grid__loader-line"><div class="loader-indeterminate"></div></div>
+            <div class="loader grid__loader-line">
+              <div class="loader-indeterminate"></div>
+            </div>
           </div>
         </div>
       {%- endpaginate -%}
@@ -219,9 +245,16 @@
         "label": "Filter layout",
         "default": "inline-open",
         "options": [
-          { "label": "Slide out", "value": "slide-out" },
-          { "label": "Inline (closed)", "value": "inline-closed" },
-          { "label": "Inline (open)", "value": "inline-open" }
+          {
+            "label": "Slide out",
+            "value": "slide-out"
+          }, {
+            "label": "Inline (closed)",
+            "value": "inline-closed"
+          }, {
+            "label": "Inline (open)",
+            "value": "inline-open"
+          }
         ]
       },
       {
@@ -229,12 +262,10 @@
         "id": "collection_linklist",
         "label": "Sidebar navigation",
         "info": "This menu won't show dropdown items."
-      },
-      {
+      }, {
         "type": "header",
         "content": "Section padding"
-      },
-      {
+      }, {
         "type": "range",
         "id": "padding_top",
         "min": 0,
@@ -243,8 +274,7 @@
         "unit": "px",
         "label": "Padding top",
         "default": 50
-      },
-      {
+      }, {
         "type": "range",
         "id": "padding_bottom",
         "min": 0,

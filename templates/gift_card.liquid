@@ -21,7 +21,10 @@
     <meta name="description" content="{{ 'gift_cards.issued.subtext' | t }}">
     <link rel="canonical" href="{{ canonical_url }}">
     {%- if settings.favicon -%}
-      <link rel="shortcut icon" href="{{ settings.favicon | image_url: width: 32, height: 32 }}" type="image/png">
+      <link
+        rel="shortcut icon"
+        href="{{ settings.favicon | image_url: width: 32, height: 32 }}"
+        type="image/png">
     {%- endif -%}
 
     {{ 'font-settings.css' | asset_url | stylesheet_tag }}
@@ -66,14 +69,19 @@
                 </div>
 
                 <div class="giftcard__wrap">
-                  <img src="{{ 'gift-card/card.jpg' | shopify_asset_url }}" loading="lazy" alt="Gift card illustration">
+                  <img
+                    src="{{ 'gift-card/card.jpg' | shopify_asset_url }}"
+                    loading="lazy"
+                    alt="Gift card illustration">
 
                   {%- assign initial_value_size = formatted_initial_value | size -%}
 
                   <div class="h1 giftcard__amount{% if initial_value_size > 6 %} giftcard__amount--medium{% endif %}">
                     {%- if gift_card.balance != gift_card.initial_value -%}
                       <span class="tooltip">
-                        <span class="tooltip__label">{{ gift_card_balance }} <small>left</small></span>
+                        <span class="tooltip__label">{{ gift_card_balance }}
+                          <small>left</small>
+                        </span>
                       </span>
                     {%- endif -%}
 
@@ -103,10 +111,18 @@
                 </script>
 
                 <div class="giftcard__actions">
-                  <a href="{{ shop.url }}" class="btn" target="_blank">{{ 'gift_cards.issued.shop_link' | t }}</a> &nbsp;
+                  <a
+                    href="{{ shop.url }}"
+                    class="btn"
+                    target="_blank">{{ 'gift_cards.issued.shop_link' | t }}</a>
+                  &nbsp;
 
-                  <a href="#" class="action-link" onclick="window.print();">
-                    <i class="action-link__print"></i>{{ 'gift_cards.issued.print' | t }}
+                  <a
+                    href="#"
+                    class="action-link"
+                    onclick="window.print();">
+                    <i class="action-link__print"></i>
+                    {{ 'gift_cards.issued.print' | t }}
                   </a>
                 </div>
               </div>
@@ -119,30 +135,36 @@
     <script type="text/javascript">
       /*============================================================================
       Auto-select gift card code on click, based on ID passed to the function
-      - Use a different method depending on IE or others
-      ==============================================================================*/
-      function selectText(element) {
-        var doc = document,
-        text = doc.getElementById(element);
-
-        if (doc.body.createTextRange) { // ms
-          var range = doc.body.createTextRange();
-          range.moveToElementText(text);
-          range.select();
-        } else if (window.getSelection) { // moz, opera, webkit
-          var selection = window.getSelection(),
-            range = doc.createRange();
-          range.selectNodeContents(text);
-          selection.removeAllRanges();
-          selection.addRange(range);
-        }
-      }
+                        - Use a different method depending on IE or others
+                        ==============================================================================*/
+                        function selectText(element) {
+                          var doc = document,
+                          text = doc.getElementById(element);
+                  
+                          if (doc.body.createTextRange) { // ms
+                            var range = doc.body.createTextRange();
+                            range.moveToElementText(text);
+                            range.select();
+                          } else if (window.getSelection) { // moz, opera, webkit
+                            var selection = window.getSelection(),
+                              range = doc.createRange();
+                            range.selectNodeContents(text);
+                            selection.removeAllRanges();
+                            selection.addRange(range);
+                          }
+                        }
     </script>
 
     {%- if gift_card.pass_url -%}
       <footer role="contentinfo" class="gift-card-footer">
         <a href="{{ gift_card.pass_url }}">
-          <img id="apple-wallet-badge" src="{{ 'gift-card/add-to-apple-wallet.svg' | shopify_asset_url }}" loading="lazy" width="120" height="40" alt="Add To Apple Wallet">
+          <img
+            id="apple-wallet-badge"
+            src="{{ 'gift-card/add-to-apple-wallet.svg' | shopify_asset_url }}"
+            loading="lazy"
+            width="120"
+            height="40"
+            alt="Add To Apple Wallet">
         </a>
       </footer>
     {%- endif -%}

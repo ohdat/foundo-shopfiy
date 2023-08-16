@@ -1,15 +1,15 @@
 {% comment %}
-  /snippets/media.liquid
+/snippets/media.liquid
 
-  Returns a media object for a product slideshow
-  Accepts:
-  -  media: {Object} - The media object we will use (required)
-  -  product: {Object} - The current product (required)
-  -  sectionkey: {String} - A section key for use in the media object js
-  -  image_width: {Number} - Image width on desktop based on the setting
+Returns a media object for a product slideshow
+Accepts:
+-  media: {Object} - The media object we will use (required)
+-  product: {Object} - The current product (required)
+-  sectionkey: {String} - A section key for use in the media object js
+-  image_width: {Number} - Image width on desktop based on the setting
 
-  Usage:
-  {% render 'media', media: media, featured_media: featured_media, enable_video_looping: enable_video_looping, sectionkey: section.id  %}
+Usage:
+{% render 'media', media: media, featured_media: featured_media, enable_video_looping: enable_video_looping, sectionkey: section.id  %}
 {% endcomment %}
 {%- liquid
   assign image_size = '1024x1024'
@@ -43,91 +43,114 @@
 -%}
 
 <div
+  id="product-{{ media.id }}"
   class="product__slide{% unless featured_media == media %} media--hidden{% endunless %}"
   data-image-id="{{ media.id }}"
   data-media-id="{{ sectionkey }}-{{ media.id }}"
   data-type="{{ media.media_type }}"
   data-thumb="{{ media.preview_image.src | image_url: width: 150, crop: 'center' }}"
   {% if media.media_type == 'video' or media.media_type == 'external_video' %}
-    data-video
-    data-video-id="{{ media.id }}"
-    data-enable-video-looping="{{ enable_video_looping }}"
+  data-video
+  data-video-id="{{ media.id }}"
+  data-enable-video-looping="{{ enable_video_looping }}"
   {% endif %}
   {% if media.media_type == 'model' %}
-    data-model
-    data-model-id="{{ media.id }}"
+  data-model
+  data-model-id="{{ media.id }}"
   {% endif %}
   {% if media.media_type == 'external_video' %}
-    data-youtube-id="{{ media.external_id }}"
+  data-youtube-id="{{ media.external_id }}"
   {% endif %}
   data-product-single-media-wrapper>
 
   {%- case media.media_type -%}
     {%- when 'image' -%}
-      <div class="product__photo"
-        tabindex="0"
-        data-zoom-wrapper
-        data-image-src="{{ media | image_url: width: 3000 }}"
-        data-image-width="{{ media.width }}"
-        data-image-height="{{ media.height }}"
-        data-image-alt="{{ media.alt | strip_html | escape }}"
-        style="--aspect-ratio: {{ media_aspect_ratio }}">
-        {{ image }}
-      </div>
+    <div
+      class="product__photo"
+      tabindex="0"
+      data-zoom-wrapper
+      data-image-src="{{ media | image_url: width: 3000 }}"
+      data-image-width="{{ media.width }}"
+      data-image-height="{{ media.height }}"
+      data-image-alt="{{ media.alt | strip_html | escape }}"
+      style="--aspect-ratio: {{ media_aspect_ratio }}">
+      {{ image }}
+    </div>
 
     {%- when 'model' -%}
-      <deferred-media class="product__media deferred-media" data-deferred-media style="padding-top: {{ media_padding_top }}%;">
-        <button type="button" class="deferred-media__poster" aria-label="{{ 'general.accessibility.view' | t }} {{ media.alt | strip_html | escape }}" data-deferred-media-button>
-          <span class="deferred-media__poster-button">
-            {%- render 'icon-media-model' -%}
-          </span>
+    <deferred-media
+      class="product__media deferred-media"
+      data-deferred-media
+      style="padding-top: {{ media_padding_top }}%;">
+      <button
+        type="button"
+        class="deferred-media__poster"
+        aria-label="{{ 'general.accessibility.view' | t }} {{ media.alt | strip_html | escape }}"
+        data-deferred-media-button>
+        <span class="deferred-media__poster-button">
+          {%- render 'icon-media-model' -%}
+        </span>
 
-         {{ image }}
-        </button>
+        {{ image }}
+      </button>
 
-        <template>
-          {{ media | model_viewer_tag: image_size: image_size, toggleable: true, data-model-id: media.id }}
-        </template>
-      </deferred-media>
+      <template>
+        {{ media | model_viewer_tag: image_size: image_size, toggleable: true, data-model-id: media.id }}
+      </template>
+    </deferred-media>
 
     {%- when 'video' -%}
-      <deferred-media class="product__media deferred-media" data-deferred-media style="padding-top: {{ media_padding_top }}%;">
-        <button type="button" class="deferred-media__poster" aria-label="{{ 'general.accessibility.view' | t }} {{ media.alt | strip_html | escape }}" data-deferred-media-button>
-          <span class="deferred-media__poster-button">
-            {%- render 'icon-media-video' -%}
-          </span>
+    <deferred-media
+      class="product__media deferred-media"
+      data-deferred-media
+      style="padding-top: {{ media_padding_top }}%;">
+      <button
+        type="button"
+        class="deferred-media__poster"
+        aria-label="{{ 'general.accessibility.view' | t }} {{ media.alt | strip_html | escape }}"
+        data-deferred-media-button>
+        <span class="deferred-media__poster-button">
+          {%- render 'icon-media-video' -%}
+        </span>
 
-          {{ image }}
-        </button>
+        {{ image }}
+      </button>
 
-        <template>
-          {{ media | media_tag: image_size: image_size, class: 'media-video', autoplay: true, loop: enable_video_looping, controls: true, preload: 'none' }}
-        </template>
-      </deferred-media>
+      <template>
+        {{ media | media_tag: image_size: image_size, class: 'media-video', autoplay: true, loop: enable_video_looping, controls: true, preload: 'none' }}
+      </template>
+    </deferred-media>
 
     {%- when 'external_video' -%}
-      <deferred-media class="product__media deferred-media" data-deferred-media style="padding-top: {{ media_padding_top }}%;">
-        <button type="button" class="deferred-media__poster" aria-label="{{ 'general.accessibility.view' | t }} {{ media.alt | strip_html | escape }}" data-deferred-media-button>
-          <span class="deferred-media__poster-button">
-            {%- render 'icon-media-video' -%}
-          </span>
-          {{ image }}
-        </button>
+    <deferred-media
+      class="product__media deferred-media"
+      data-deferred-media
+      style="padding-top: {{ media_padding_top }}%;">
+      <button
+        type="button"
+        class="deferred-media__poster"
+        aria-label="{{ 'general.accessibility.view' | t }} {{ media.alt | strip_html | escape }}"
+        data-deferred-media-button>
+        <span class="deferred-media__poster-button">
+          {%- render 'icon-media-video' -%}
+        </span>
+        {{ image }}
+      </button>
 
-        <template>
-          {%- if media.host == 'youtube' -%}
-            {{ media | external_video_url: autoplay: true, mute: true, playsinline: true, loop: enable_video_looping, playlist: media.external_id | external_video_tag: loading: 'lazy' }}
-          {%- else -%}
-            {{ media | external_video_url: autoplay: true, muted: true, playsinline: true, loop: enable_video_looping | external_video_tag: loading: 'lazy' }}
-          {%- endif -%}
-        </template>
-      </deferred-media>
+      <template>
+        {%- if media.host == 'youtube' -%}
+          {{ media | external_video_url: autoplay: true, mute: true, playsinline: true, loop: enable_video_looping, playlist: media.external_id | external_video_tag: loading: 'lazy' }}
+        {%- else -%}
+          {{ media | external_video_url: autoplay: true, muted: true, playsinline: true, loop: enable_video_looping | external_video_tag: loading: 'lazy' }}
+        {%- endif -%}
+      </template>
+    </deferred-media>
 
-    {%- else -%}
-      <div class="product__media">
-        <div style="padding-top: {{ media_padding_top }}%;">
-          {{ media | media_tag: class: "media__other" }}
-        </div>
+  {%- else -%}
+    <div class="product__media">
+      <div style="padding-top: {{ media_padding_top }}%;">
+        {{ media | media_tag: class: "media__other" }}
       </div>
+    </div>
   {%- endcase -%}
 </div>

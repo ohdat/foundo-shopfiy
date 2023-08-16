@@ -48,7 +48,7 @@
     {%- endif -%}
 
     {%- if section.blocks.size > 0 -%}
-      <div class="footer__blocks">
+      <div id="footerBlocks" class="footer__blocks">
         {%- for block in section.blocks -%}
           {%- liquid
             assign title = block.settings.title
@@ -60,7 +60,7 @@
             endif
 
             capture block_style
-              echo '--desktop-width: ' | append: column_width | append: '%'
+              echo '--desktop-width: 45%'
             endcapture
           -%}
 
@@ -68,7 +68,7 @@
             {%- when 'linklist' -%}
               {%- assign linklist = linklists[block.settings.linklist] -%}
               {%- assign linklist_title = title | default: linklist.title -%}
-              <div class="footer__block footer__block--menu" style="--desktop-width: 22%;" {{ block.shopify_attributes }}>
+              <div class="footer__block footer__block--menu" style="--desktop-width: 18%;" {{ block.shopify_attributes }}>
                 {%- if linklist_title != blank -%}
                   <h2 class="h5 footer__block__title">{{ linklist_title | escape }}</h2>
                 {%- endif -%}

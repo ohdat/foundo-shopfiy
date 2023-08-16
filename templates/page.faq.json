@@ -1,1 +1,167 @@
-{"sections":{"main":{"type":"main-page","settings":{"subheading":"NEED HELP","subheading_size":6,"show_title":false,"heading_size":8,"show_content":false,"text_size":4,"align_text":"text-center","width":"wrapper","bg_color":"#f7f7f7","color":"","padding_top":50,"padding_bottom":50}},"faq-first":{"type":"section-accordion-group","blocks":{"faq-heading":{"type":"heading","settings":{"title":"Order Status\/Information"}},"faq-0":{"type":"question","settings":{"title":"How do I place an order on foundo.world?","content":"<p>To place your order, select the desired item(s) and the appropriate size\/materials and click \"Add to Cart\".   <\/p><p>Your Cart will appear on the right-hand side of the screen, and can be accessed elsewhere on the site by clicking the Cart icon in the top right-hand corner. Once you have made your selection, please click \"Proceed to Checkout\" to complete your delivery and payment details. When your order has been confirmed, you will receive an Order Confirmation email.<\/p>"}},"faq-1":{"type":"question","settings":{"title":"The article(s) I had in my Cart have disappeared, what can I do?","content":"<p>Regretfully, it is not possible for us to reserve articles in your Cart. If an item has disappeared from your Cart, this may mean that it is no longer available.  <\/p><p>You can contact our Customer Care to enable an ambassador to assist you. We also invite you to contact our Customer Care team to inquire about the availability for sold out articles.<\/p>"}},"faq-2":{"type":"question","settings":{"title":"What is a preorder, and how can I place one?","content":"<p>We are excited to allow our online customers to purchase our newest collections early by placing a preorder on  <a href=\"http:\/\/foundo.world\">foundo.world<\/a>. A preorder can be placed if the article(s) shown are not immediately available for shipment.<br\/><br\/>Articles offered for preorder will be clearly marked as such, and will display an estimated shipping date for your reference on their product pages. Please note that these dates are not guaranteed and the actual shipping date may vary for any given preorder article.<br\/><br\/>When placing a preorder, the article(s) purchased are reserved for you and will be shipped as soon as they become available. You will be charged for the total amount of all preorder articles purchased at the time of shipment.<\/p>"}}},"block_order":["faq-heading","faq-0","faq-1","faq-2"],"settings":{"width":"wrapper--narrow","bg_color":"","color":"","border_color":"","padding_top":50,"padding_bottom":50}},"faq-second":{"type":"section-accordion-group","blocks":{"heading-0":{"type":"heading","settings":{"title":"Shipping Questions"}},"question-1":{"type":"question","settings":{"title":"How much does shipping cost?","content":"<p>If your order $1500 and above, the shipping is complementary. <\/p>"}},"question-2":{"type":"question","settings":{"title":"What shipping options are available?","content":"<p>It usually takes 5-7 business days, if it missed the expected date please feel free to contact us.<\/p>"}},"question-3":{"type":"question","settings":{"title":"When will I receive my tracking information?","content":"<p>Orders may take 24 to 36 hours to process, once your order has been processed you will receive an email confirming your order has shipped.<\/p><p><br\/>Shipping Fees & Timing begin when you receive the shipping confirmation email.<\/p><p><br\/>Additional validation may be required for some orders and can delay delivery.<\/p><p><br\/>Signature is required on all shipments above $50.<\/p><p><br\/>To track your order, visit your account or shipping confirmation email.<\/p>"}}},"block_order":["heading-0","question-1","question-2","question-3"],"settings":{"width":"wrapper--narrow","bg_color":"#fafafa","color":"","border_color":"","padding_top":50,"padding_bottom":50}},"faq-third":{"type":"section-accordion-group","blocks":{"heading-0":{"type":"heading","settings":{"title":"Returns Questions"}},"question-3":{"type":"question","settings":{"title":"What is the return policy?","content":"<p>•    Complimentary exchanges & returns within 30 days.<br\/>•    Item in perfect & sellable condition.<br\/>•    Original packaging.<br\/>•    Original invoice, leaflets and certificates.<br\/>•    No exchanges and returns for bespoke articles, FOUNDO Artists collaborations, hot stamped articles, bespoke bags, engraved articles, Made-to-Order articles, high jewelry.<br\/>•    PayPal purchases may only be exchanged or returned for a full refund at our online store.<\/p>"}},"question-1":{"type":"question","settings":{"title":"How do I return or exchange my online purchase?","content":"<p>Register your return online or contact Client Services: register your return online by connecting to your account or emailing Client Services at care@foundo.world.<\/p>"}},"question-2":{"type":"question","settings":{"title":"What should I do to return or exchange?","content":"<ul><li>Place your item in its original packaging and with the original receipt;<\/li><li>Put the pre-paid label, included within your order, on your package;<\/li><li>Cover old address labels with the new pre-paid label and securely seal your package using the adhesive strip on the inside of the box;<\/li><li>Drop your package off at any UPS store or pick-up location.<\/li><\/ul>"}}},"block_order":["heading-0","question-3","question-1","question-2"],"settings":{"width":"wrapper--narrow","bg_color":"","color":"","border_color":"","padding_top":50,"padding_bottom":50}}},"order":["main","faq-first","faq-second","faq-third"]}
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "settings": {
+        "subheading": "FILL IN YOUR QUESTION",
+        "subheading_size": 6,
+        "show_title": false,
+        "heading_size": 8,
+        "show_content": false,
+        "text_size": 4,
+        "align_text": "text-center",
+        "width": "wrapper",
+        "bg_color": "#f7f7f7",
+        "color": "",
+        "padding_top": 50,
+        "padding_bottom": 50
+      }
+    },
+    "faq-first": {
+      "type": "section-accordion-group",
+      "blocks": {
+        "faq-heading": {
+          "type": "heading",
+          "settings": {
+            "title": "Frequently Asked Questions (9)"
+          }
+        },
+        "faq-0": {
+          "type": "question",
+          "settings": {
+            "title": "How do I place an order on foundo.world?",
+            "content": "<p>To place your order, select the desired item(s) and the appropriate size\/materials and click \"Add to Cart\".   <\/p><p>Your Cart will appear on the right-hand side of the screen, and can be accessed elsewhere on the site by clicking the Cart icon in the top right-hand corner. Once you have made your selection, please click \"Proceed to Checkout\" to complete your delivery and payment details. When your order has been confirmed, you will receive an Order Confirmation email.<\/p>"
+          }
+        },
+        "faq-1": {
+          "type": "question",
+          "settings": {
+            "title": "The article(s) I had in my Cart have disappeared, what can I do?",
+            "content": "<p>Regretfully, it is not possible for us to reserve articles in your Cart. If an item has disappeared from your Cart, this may mean that it is no longer available.  <\/p><p>You can contact our Customer Care to enable an ambassador to assist you. We also invite you to contact our Customer Care team to inquire about the availability for sold out articles.<\/p>"
+          }
+        },
+        "faq-2": {
+          "type": "question",
+          "settings": {
+            "title": "What is a preorder, and how can I place one?",
+            "content": "<p>We are excited to allow our online customers to purchase our newest collections early by placing a preorder on  <a href=\"http:\/\/foundo.world\">foundo.world<\/a>. A preorder can be placed if the article(s) shown are not immediately available for shipment.<br\/><br\/>Articles offered for preorder will be clearly marked as such, and will display an estimated shipping date for your reference on their product pages. Please note that these dates are not guaranteed and the actual shipping date may vary for any given preorder article.<br\/><br\/>When placing a preorder, the article(s) purchased are reserved for you and will be shipped as soon as they become available. You will be charged for the total amount of all preorder articles purchased at the time of shipment.<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "faq-heading",
+        "faq-0",
+        "faq-1",
+        "faq-2"
+      ],
+      "settings": {
+        "width": "wrapper--narrow",
+        "bg_color": "",
+        "color": "",
+        "border_color": "",
+        "padding_top": 50,
+        "padding_bottom": 50
+      }
+    },
+    "faq-second": {
+      "type": "section-accordion-group",
+      "blocks": {
+        "heading-0": {
+          "type": "heading",
+          "disabled": true,
+          "settings": {
+            "title": "Shipping Questions"
+          }
+        },
+        "question-1": {
+          "type": "question",
+          "settings": {
+            "title": "How much does shipping cost?",
+            "content": "<p>If your order $1500 and above, the shipping is complementary. <\/p>"
+          }
+        },
+        "question-2": {
+          "type": "question",
+          "settings": {
+            "title": "What shipping options are available?",
+            "content": "<p>It usually takes 5-7 business days, if it missed the expected date please feel free to contact us.<\/p>"
+          }
+        },
+        "question-3": {
+          "type": "question",
+          "settings": {
+            "title": "When will I receive my tracking information?",
+            "content": "<p>Orders may take 24 to 36 hours to process, once your order has been processed you will receive an email confirming your order has shipped.<\/p><p><br\/>Shipping Fees & Timing begin when you receive the shipping confirmation email.<\/p><p><br\/>Additional validation may be required for some orders and can delay delivery.<\/p><p><br\/>Signature is required on all shipments above $50.<\/p><p><br\/>To track your order, visit your account or shipping confirmation email.<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "heading-0",
+        "question-1",
+        "question-2",
+        "question-3"
+      ],
+      "settings": {
+        "width": "wrapper--narrow",
+        "bg_color": "#fafafa",
+        "color": "",
+        "border_color": "",
+        "padding_top": 50,
+        "padding_bottom": 50
+      }
+    },
+    "faq-third": {
+      "type": "section-accordion-group",
+      "blocks": {
+        "heading-0": {
+          "type": "heading",
+          "disabled": true,
+          "settings": {
+            "title": "Returns Questions"
+          }
+        },
+        "question-3": {
+          "type": "question",
+          "settings": {
+            "title": "What is the return policy?",
+            "content": "<p>•    Complimentary exchanges & returns within 30 days.<br\/>•    Item in perfect & sellable condition.<br\/>•    Original packaging.<br\/>•    Original invoice, leaflets and certificates.<br\/>•    No exchanges and returns for bespoke articles, FOUNDO Artists collaborations, hot stamped articles, bespoke bags, engraved articles, Made-to-Order articles, high jewelry.<br\/>•    PayPal purchases may only be exchanged or returned for a full refund at our online store.<\/p>"
+          }
+        },
+        "question-1": {
+          "type": "question",
+          "settings": {
+            "title": "How do I return or exchange my online purchase?",
+            "content": "<p>Register your return online or contact Client Services: register your return online by connecting to your account or emailing Client Services at care@foundo.world.<\/p>"
+          }
+        },
+        "question-2": {
+          "type": "question",
+          "settings": {
+            "title": "What should I do to return or exchange?",
+            "content": "<ul><li>Place your item in its original packaging and with the original receipt;<\/li><li>Put the pre-paid label, included within your order, on your package;<\/li><li>Cover old address labels with the new pre-paid label and securely seal your package using the adhesive strip on the inside of the box;<\/li><li>Drop your package off at any UPS store or pick-up location.<\/li><\/ul>"
+          }
+        }
+      },
+      "block_order": [
+        "heading-0",
+        "question-3",
+        "question-1",
+        "question-2"
+      ],
+      "settings": {
+        "width": "wrapper--narrow",
+        "bg_color": "",
+        "color": "",
+        "border_color": "",
+        "padding_top": 50,
+        "padding_bottom": 50
+      }
+    }
+  },
+  "order": [
+    "main",
+    "faq-first",
+    "faq-second",
+    "faq-third"
+  ]
+}

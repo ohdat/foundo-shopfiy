@@ -1,45 +1,1287 @@
 <!-- /templates/customers/register.liquid -->
 
 <section id="Register" class="center account">
-  <section class="col">
+  <section id="wrapperNarrow" class="col wrapper wrapper--narrow">
     <div class="customer-register">
-      <h2 class="page__heading">{{ 'customer.register.title' | t }}</h2>
-
-      <p>{{ 'customer.register.sign_in_prompt' | t }} <span class="text-link"><a href="{{ routes.account_login_url }}">{{ 'customer.register.sign_in_cta' | t }}</a></span>.</p>
-
+      <div class="account_title">CREATE YOUR ACCOUNT BELOW</div>
       {% form 'create_customer' %}
-      	<div class="form-field">{{ form.errors | default_errors }}</div>
-
+        <div class="form-field">{{ form.errors | default_errors }}</div>
         <div class="form-field">
-          <label for="first_name">{{ 'customer.register.first_name' | t }}</label>
-          <input type="text" value="{{ form.first_name }}" name="customer[first_name]" id="first_name" class="large" size="30" placeholder="{{ 'customer.register.first_name' | t }}">
+          <div class="account_text">EMAIL</div>
+          <input
+            type="email"
+            value="{{ form.email }}"
+            name="customer[email]"
+            id="email"
+            class="inputbox large{% if form.errors contains 'email' %} error{% endif %}"
+            placeholder="{{ 'customer.register.email' | t }}">
         </div>
-
         <div class="form-field">
-          <label for="last_name">{{ 'customer.register.last_name' | t }}</label>
-          <input type="text" value="{{ form.last_name }}" name="customer[last_name]" id="last_name" class="large{% if form.errors contains 'last_name' %} error{% endif %}" placeholder="{{ 'customer.register.last_name' | t }}">
+          <div class="account_text">PASSWORD</div>
+          <input
+            type="password"
+            value=""
+            name="customer[password]"
+            id="password"
+            class="inputbox large password{% if form.errors contains 'password' %} error{% endif %}"
+            placeholder="{{ 'customer.register.password' | t }}">
         </div>
-
         <div class="form-field">
-          <label for="email">{{ 'customer.register.email' | t }}</label>
-          <input type="email" value="{{ form.email }}" name="customer[email]" id="email" class="large{% if form.errors contains 'email' %} error{% endif %}" placeholder="{{ 'customer.register.email' | t }}">
+          <div class="account_text">CONFIRM PASSWORD</div>
+          <input
+            type="password"
+            value=""
+            name="customer[password]"
+            id="password-confirmation"
+            class="inputbox large password{% if form.errors contains 'password' %} error{% endif %}"
+            placeholder="{{ 'customer.register.password' | t }}">
         </div>
-
         <div class="form-field">
-          <label for="password">{{ 'customer.register.password' | t }}</label>
-          <input type="password" value="" name="customer[password]" id="password" class="large password{% if form.errors contains 'password' %} error{% endif %}" placeholder="{{ 'customer.register.password' | t }}">
+          <div class="account_text">FIRST NAME</div>
+          <input
+            type="text"
+            value="{{ form.first_name }}"
+            name="customer[first_name]"
+            id="first_name"
+            class="inputbox large"
+            size="30"
+            placeholder="{{ 'customer.register.first_name' | t }}">
         </div>
+        <div class="form-field">
+          <div class="account_text">LAST NAME</div>
+          <input
+            type="text"
+            value="{{ form.last_name }}"
+            name="customer[last_name]"
+            id="last_name"
+            class="inputbox large{% if form.errors contains 'last_name' %} error{% endif %}"
+            placeholder="{{ 'customer.register.last_name' | t }}">
+        </div>
+        <div class="form-field">
+          <div class="account_text">LOCATION CODE</div>
+          <div class="flex_all flex_bor">
+            <div class="flex_text1">
+              <p name="customer[note][Areacodename]">+86</p>
+              <div
+                id="mydIV"
+                style="display: none;"
+                class="flex_xia"></div>
+            </div>
+            <div onclick="xaila1()" style="cursor: pointer;">
+              {%- render 'icon-nav-arrow-down' -%}
+            </div>
+            <input
+              value="{{ form.areacode }}"
+              id="areacode"
+              class="inputboxed"
+              type="tel"
+              name="customer[note][Areacode]" />
+          </div>
 
-        <div class="form-field action-bottom">
-          <button type="submit" class="btn btn--primary btn--solid">
-            <span>{{ 'customer.register.submit' | t }}</span>
-          </button>
         </div>
-
-        <div class="form__legal">
-          {{ 'shopify.online_store.spam_detection.disclaimer_html' | t }}
+        <div class="form-field">
+          <div class="account_text">LOCATION OF RESIDENCE</div>
+          <div class="flex_all flex_bor">
+            <div class="flex_text2">
+              <p name="customer[note][residence]">United Kingdom</p>
+              <div
+                id="mydIV1"
+                style="display: none;"
+                class="flex_xia1"></div>
+            </div>
+            <div onclick="xaila2()" style="cursor: pointer;">
+              {%- render 'icon-nav-arrow-down' -%}
+            </div>
+          </div>
         </div>
+        <div class="form-field">
+          <div class="account_text">DATE OF BIRTH</div>
+          <div class="flex_all flex_bor">
+            <div class="flex_text3">
+              <p name="customer[note][residence]">Day</p>
+              <div
+                id="mydIV2"
+                style="display: none;"
+                class="flex_xia2"></div>
+            </div>
+            <div onclick="xaila3()" style="cursor: pointer;">
+              {%- render 'icon-nav-arrow-down' -%}
+            </div>
+            <div class="flex_text4">
+              <p name="customer[note][residence]">Month</p>
+              <div
+                id="mydIV3"
+                style="display: none;"
+                class="flex_xia3"></div>
+            </div>
+            <div onclick="xaila4()" style="cursor: pointer;">
+              {%- render 'icon-nav-arrow-down' -%}
+            </div>
+          </div>
+        </div>
+        <div class="form-field">
+          <div class="flex_all">
+            <input
+              value="{{ form.subscribe }}"
+              id="subscribe"
+              type="checkbox"
+              name="customer[note][Subscribe]" />
+            <p class="input_text">Subscribe to newsletter</p>
+          </div>
+          <div class="flex_all">
+            <input
+              value="{{ form.optional }}"
+              id="optional"
+              type="checkbox"
+              name="customer[note][Optional]" />
+            <p class="input_text">I’d like to sign up to the FOUNDO newsletter. My email won’t be shared with third parties. (optional)</p>
+          </div>
+          <div class="flex_all">
+            <input
+              value="{{ form.information }}"
+              id="information"
+              type="checkbox"
+              name="customer[note][Information]" />
+            <p class="input_text">Further information, in particular regarding your data subject rights, can be found in the Privacy Policy.</p>
+          </div>
+        </div>
+        <button type="submit" class="account_submit">{{ 'customer.register.submit' | t }}
+        </button>
+        <a href="{{ routes.account_login_url }}">
+          <div class="createabtn createabtned">Back to login</div>
+        </a>
       {% endform %}
     </div>
+    <script>
+      var myDiv = document.getElementById('mydIV');
+      var myDiv1 = document.getElementById('mydIV1');
+      var list = [
+        {
+          "cnname": "中国大陆",
+          "enname": "china",
+          "codes": "cn",
+          "area": 86
+        },
+        {
+          "cnname": "中国香港",
+          "enname": "hongkong",
+          "codes": "hk",
+          "area": 852
+        },
+        {
+          "cnname": "中国澳门",
+          "enname": "macao",
+          "codes": "mo",
+          "area": 853
+        },
+        {
+          "cnname": "中国台湾",
+          "enname": "taiwan",
+          "codes": "tw",
+          "area": 886
+        }, {
+          "cnname": "韩国",
+          "enname": "korea",
+          "codes": "kr",
+          "area": 82
+        }, {
+          "cnname": "日本",
+          "enname": "japan",
+          "codes": "jp",
+          "area": 81
+        }, {
+          "cnname": "美国",
+          "enname": "america",
+          "codes": "us",
+          "area": 1
+        }, {
+          "cnname": "加拿大",
+          "enname": "canada",
+          "codes": "ca",
+          "area": 1
+        }, {
+          "cnname": "澳大利亚",
+          "enname": "australia",
+          "codes": "au",
+          "area": 61
+        }, {
+          "cnname": "新加坡",
+          "enname": "singapore",
+          "codes": "sg",
+          "area": 65
+        }, {
+          "cnname": "马来西亚",
+          "enname": "malaysia",
+          "codes": "my",
+          "area": 60
+        }, {
+          "cnname": "泰国",
+          "enname": "thailand",
+          "codes": "th",
+          "area": 66
+        }, {
+          "cnname": "越南",
+          "enname": "vietnam",
+          "codes": "vn",
+          "area": 84
+        }, {
+          "cnname": "菲律宾",
+          "enname": "philippines",
+          "codes": "ph",
+          "area": 63
+        }, {
+          "cnname": "印度尼西亚",
+          "enname": "indonesia",
+          "codes": "id",
+          "area": 62
+        }, {
+          "cnname": "德国",
+          "enname": "germany",
+          "codes": "de",
+          "area": 49
+        }, {
+          "cnname": "英国",
+          "enname": "united kiongdom",
+          "codes": "gb",
+          "area": 44
+        }, {
+          "cnname": "意大利",
+          "enname": "italy",
+          "codes": "it",
+          "area": 39
+        }, {
+          "cnname": "法国",
+          "enname": "france",
+          "codes": "fr",
+          "area": 33
+        }, {
+          "cnname": "俄罗斯",
+          "enname": "russia",
+          "codes": "ru",
+          "area": 7
+        }, {
+          "cnname": "新西兰",
+          "enname": "new zealand",
+          "codes": "nz",
+          "area": 64
+        }, {
+          "cnname": "荷兰",
+          "enname": "netherlands",
+          "codes": "nl",
+          "area": 31
+        }, {
+          "cnname": "瑞典",
+          "enname": "sweden",
+          "codes": "se",
+          "area": 46
+        }, {
+          "cnname": "乌克兰",
+          "enname": "ukraine",
+          "codes": "ua",
+          "area": 380
+        }, {
+          "cnname": "白俄罗斯",
+          "enname": "belarus",
+          "codes": "by",
+          "area": 375
+        }, {
+          "cnname": "安哥拉",
+          "enname": "angola",
+          "codes": "ao",
+          "area": 244
+        }, {
+          "cnname": "阿富汗",
+          "enname": "afghanistan",
+          "codes": "af",
+          "area": 93
+        }, {
+          "cnname": "阿尔巴尼亚",
+          "enname": "albania",
+          "codes": "al",
+          "area": 355
+        }, {
+          "cnname": "阿尔及利亚",
+          "enname": "algeria",
+          "codes": "dz",
+          "area": 213
+        }, {
+          "cnname": "安道尔共和国",
+          "enname": "andorra",
+          "codes": "ad",
+          "area": 376
+        }, {
+          "cnname": "安圭拉岛",
+          "enname": "anguilla",
+          "codes": "ai",
+          "area": 1264
+        }, {
+          "cnname": "安提瓜和巴布达",
+          "enname": "antigua and barbuda",
+          "codes": "ag",
+          "area": 1268
+        }, {
+          "cnname": "阿根廷",
+          "enname": "argentina",
+          "codes": "ar",
+          "area": 54
+        }, {
+          "cnname": "亚美尼亚",
+          "enname": "armenia",
+          "codes": "am",
+          "area": 374
+        }, {
+          "cnname": "奥地利",
+          "enname": "austria",
+          "codes": "at",
+          "area": 43
+        }, {
+          "cnname": "阿塞拜疆",
+          "enname": "azerbaijan",
+          "codes": "az",
+          "area": 994
+        }, {
+          "cnname": "巴哈马",
+          "enname": "bahamas",
+          "codes": "bs",
+          "area": 1242
+        }, {
+          "cnname": "巴林",
+          "enname": "bahrain",
+          "codes": "bh",
+          "area": 973
+        }, {
+          "cnname": "孟加拉国",
+          "enname": "bangladesh",
+          "codes": "bd",
+          "area": 880
+        }, {
+          "cnname": "巴巴多斯",
+          "enname": "barbados",
+          "codes": "bb",
+          "area": 1246
+        }, {
+          "cnname": "比利时",
+          "enname": "belgium",
+          "codes": "be",
+          "area": 32
+        }, {
+          "cnname": "伯利兹",
+          "enname": "belize",
+          "codes": "bz",
+          "area": 501
+        }, {
+          "cnname": "贝宁",
+          "enname": "benin",
+          "codes": "bj",
+          "area": 229
+        }, {
+          "cnname": "玻利维亚",
+          "enname": "bolivia",
+          "codes": "bo",
+          "area": 591
+        }, {
+          "cnname": "博茨瓦纳",
+          "enname": "botswana",
+          "codes": "bw",
+          "area": 267
+        }, {
+          "cnname": "巴西",
+          "enname": "brazil",
+          "codes": "br",
+          "area": 55
+        }, {
+          "cnname": "文莱",
+          "enname": "brunei",
+          "codes": "bn",
+          "area": 673
+        }, {
+          "cnname": "保加利亚",
+          "enname": "bulgaria",
+          "codes": "bg",
+          "area": 359
+        }, {
+          "cnname": "布基纳法索",
+          "enname": "burkina-faso",
+          "codes": "bf",
+          "area": 226
+        }, {
+          "cnname": "缅甸",
+          "enname": "burma",
+          "codes": "mm",
+          "area": 95
+        }, {
+          "cnname": "布隆迪",
+          "enname": "burundi",
+          "codes": "bi",
+          "area": 257
+        }, {
+          "cnname": "喀麦隆",
+          "enname": "cameroon",
+          "codes": "cm",
+
+          "area": 237
+        }, {
+          "cnname": "中非共和国",
+          "enname": "central african republic",
+          "codes": "cf",
+          "area": 236
+        }, {
+          "cnname": "乍得",
+          "enname": "chad",
+          "codes": "td",
+          "area": 235
+        }, {
+          "cnname": "智利",
+          "enname": "chile",
+          "codes": "cl",
+          "area": 56
+        }, {
+          "cnname": "哥伦比亚",
+          "enname": "colombia",
+          "codes": "co",
+          "area": 57
+        }, {
+          "cnname": "刚果",
+          "enname": "congo",
+          "codes": "cg",
+          "area": 242
+        }, {
+          "cnname": "哥斯达黎加",
+          "enname": "costa rica",
+          "codes": "cr",
+          "area": 506
+        }, {
+          "cnname": "古巴",
+          "enname": "cuba",
+          "codes": "cu",
+          "area": 53
+        }, {
+          "cnname": "塞浦路斯",
+          "enname": "cyprus",
+          "codes": "cy",
+          "area": 357
+        }, {
+          "cnname": "捷克",
+          "enname": "czech republic",
+          "codes": "cz",
+          "area": 420
+        }, {
+          "cnname": "丹麦",
+          "enname": "denmark",
+          "codes": "dk",
+          "area": 45
+        }, {
+          "cnname": "吉布提",
+          "enname": "djibouti",
+          "codes": "dj",
+          "area": 253
+        }, {
+          "cnname": "厄瓜多尔",
+          "enname": "ecuador",
+          "codes": "ec",
+          "area": 593
+        }, {
+          "cnname": "埃及",
+          "enname": "egypt",
+          "codes": "eg",
+          "area": 20
+        }, {
+          "cnname": "萨尔瓦多",
+          "enname": "ei salvador",
+          "codes": "sv",
+          "area": 503
+        }, {
+          "cnname": "爱沙尼亚",
+          "enname": "estonia",
+          "codes": "ee",
+          "area": 372
+        }, {
+          "cnname": "埃塞俄比亚",
+          "enname": "ethiopia",
+          "codes": "et",
+          "area": 251
+        }, {
+          "cnname": "斐济",
+          "enname": "fiji",
+          "codes": "fj",
+          "area": 679
+        }, {
+          "cnname": "芬兰",
+          "enname": "finland",
+          "codes": "fi",
+          "area": 358
+        }, {
+          "cnname": "加蓬",
+          "enname": "gabon",
+          "codes": "ga",
+          "area": 241
+        }, {
+          "cnname": "冈比亚",
+
+          "enname": "gambia",
+          "codes": "gm",
+          "area": 220
+        }, {
+          "cnname": "格鲁吉亚",
+          "enname": "georgia",
+          "codes": "ge",
+          "area": 995
+        }, {
+          "cnname": "加纳",
+          "enname": "ghana",
+          "codes": "gh",
+          "area": 233
+        }, {
+          "cnname": "直布罗陀",
+          "enname": "gibraltar",
+          "codes": "gi",
+          "area": 350
+        }, {
+          "cnname": "希腊",
+          "enname": "greece",
+          "codes": "gr",
+          "area": 30
+        }, {
+          "cnname": "格林纳达",
+          "enname": "grenada",
+          "codes": "gd",
+          "area": 1809
+        }, {
+          "cnname": "关岛",
+          "enname": "guam",
+          "codes": "gu",
+          "area": 1671
+        }, {
+          "cnname": "危地马拉",
+          "enname": "guatemala",
+          "codes": "gt",
+          "area": 502
+        }, {
+          "cnname": "几内亚",
+          "enname": "guinea",
+          "codes": "gn",
+          "area": 224
+        }, {
+          "cnname": "圭亚那",
+          "enname": "guyana",
+          "codes": "gy",
+          "area": 592
+        }, {
+          "cnname": "海地",
+          "enname": "haiti",
+          "codes": "ht",
+          "area": 509
+        }, {
+          "cnname": "洪都拉斯",
+          "enname": "honduras",
+          "codes": "hn",
+          "area": 504
+        }, {
+          "cnname": "匈牙利",
+          "enname": "hungary",
+          "codes": "hu",
+          "area": 36
+        }, {
+          "cnname": "冰岛",
+          "enname": "iceland",
+          "codes": "is",
+          "area": 354
+        }, {
+          "cnname": "印度",
+          "enname": "india",
+          "codes": "in",
+          "area": 91
+        }, {
+          "cnname": "伊朗",
+          "enname": "iran",
+          "codes": "ir",
+          "area": 98
+        }, {
+          "cnname": "伊拉克",
+          "enname": "iraq",
+          "codes": "iq",
+          "area": 964
+        }, {
+          "cnname": "爱尔兰",
+          "enname": "ireland",
+          "codes": "ie",
+          "area": 353
+        }, {
+          "cnname": "以色列",
+          "enname": "israel",
+          "codes": "il",
+          "area": 972
+        }, {
+          "cnname": "牙买加",
+          "enname": "jamaica",
+          "codes": "jm",
+          "area": 1876
+        }, {
+          "cnname": "约旦",
+          "enname": "jordan",
+          "codes": "jo",
+          "area": 962
+        }, {
+          "cnname": "柬埔寨",
+          "enname": "kampuchea",
+          "codes": "kh",
+          "area": 855
+        }, {
+          "cnname": "哈萨克斯坦",
+          "enname": "kazakstan",
+          "codes": "kz",
+          "area": 327
+        }, {
+          "cnname": "肯尼亚",
+          "enname": "kenya",
+          "codes": "ke",
+          "area": 254
+        }, {
+          "cnname": "科威特",
+          "enname": "kuwait",
+          "codes": "kw",
+          "area": 965
+        }, {
+          "cnname": "吉尔吉斯坦",
+          "enname": "kyrgyzstan",
+          "codes": "kg",
+          "area": 331
+        }, {
+          "cnname": "老挝",
+          "enname": "laos",
+          "codes": "la",
+          "area": 856
+        }, {
+          "cnname": "拉脱维亚",
+          "enname": "latvia",
+          "codes": "lv",
+          "area": 371
+        }, {
+          "cnname": "黎巴嫩",
+          "enname": "lebanon",
+          "codes": "lb",
+          "area": 961
+        }, {
+          "cnname": "莱索托",
+          "enname": "lesotho",
+          "codes": "ls",
+          "area": 266
+        }, {
+          "cnname": "利比里亚",
+          "enname": "liberia",
+          "codes": "lr",
+          "area": 231
+        }, {
+          "cnname": "利比亚",
+          "enname": "libya",
+          "codes": "ly",
+          "area": 218
+        }, {
+          "cnname": "列支敦士登",
+          "enname": "liechtenstein",
+
+          "codes": "li",
+          "area": 423
+        }, {
+          "cnname": "立陶宛",
+          "enname": "lithuania",
+          "codes": "lt",
+          "area": 370
+        }, {
+          "cnname": "卢森堡",
+          "enname": "luxembourg",
+          "codes": "lu",
+          "area": 352
+        }, {
+          "cnname": "马达加斯加",
+          "enname": "madagascar",
+          "codes": "mg",
+          "area": 261
+        }, {
+          "cnname": "马拉维",
+          "enname": "malawi",
+          "codes": "mw",
+          "area": 265
+        }, {
+          "cnname": "马尔代夫",
+          "enname": "maldives",
+          "codes": "mv",
+          "area": 960
+        }, {
+          "cnname": "马里",
+          "enname": "mali",
+          "codes": "ml",
+          "area": 223
+        }, {
+          "cnname": "马耳他",
+          "enname": "malta",
+          "codes": "mt",
+          "area": 356
+        }, {
+          "cnname": "毛里求斯",
+          "enname": "mauritius",
+          "codes": "mu",
+          "area": 230
+        }, {
+          "cnname": "墨西哥",
+          "enname": "mexico",
+          "codes": "mx",
+          "area": 52
+        }, {
+          "cnname": "摩尔多瓦",
+          "enname": "moldova",
+          "codes": "md",
+          "area": 373
+        }, {
+          "cnname": "摩纳哥",
+          "enname": "monaco",
+          "codes": "mc",
+          "area": 377
+        }, {
+          "cnname": "蒙古",
+          "enname": "mongolia",
+          "codes": "mn",
+          "area": 976
+        }, {
+          "cnname": "摩洛哥",
+          "enname": "morocco",
+          "codes": "ma",
+          "area": 212
+        }, {
+          "cnname": "莫桑比克",
+          "enname": "mozambique",
+          "codes": "mz",
+          "area": 258
+        }, {
+          "cnname": "纳米比亚",
+          "enname": "namibia",
+          "codes": "na",
+          "area": 264
+        }, {
+          "cnname": "瑙鲁",
+          "enname": "nauru",
+          "codes": "nr",
+          "area": 674
+        }, {
+          "cnname": "尼泊尔",
+          "enname": "nepal",
+          "codes": "np",
+          "area": 977
+        }, {
+          "cnname": "尼加拉瓜",
+          "enname": "nicaragua",
+          "codes": "ni",
+          "area": 505
+        }, {
+          "cnname": "尼日尔",
+          "enname": "niger",
+          "codes": "ne",
+          "area": 227
+        }, {
+          "cnname": "尼日利亚",
+          "enname": "nigeria",
+          "codes": "ng",
+          "area": 234
+        }, {
+          "cnname": "朝鲜",
+          "enname": "north korea",
+          "codes": "kp",
+          "area": 850
+        }, {
+          "cnname": "挪威",
+          "enname": "norway",
+          "codes": "no",
+          "area": 47
+        }, {
+          "cnname": "阿曼",
+          "enname": "oman",
+          "codes": "om",
+          "area": 968
+        }, {
+          "cnname": "巴基斯坦",
+          "enname": "pakistan",
+          "codes": "pk",
+          "area": 92
+        }, {
+          "cnname": "巴拿马",
+          "enname": "panama",
+          "codes": "pa",
+          "area": 507
+        }, {
+          "cnname": "巴布亚新几内亚",
+          "enname": "papua new cuinea",
+          "codes": "pg",
+          "area": 675
+        }, {
+          "cnname": "巴拉圭",
+          "enname": "paraguay",
+          "codes": "py",
+          "area": 595
+        }, {
+          "cnname": "秘鲁",
+          "enname": "peru",
+          "codes": "pe",
+          "area": 51
+        }, {
+          "cnname": "波兰",
+          "enname": "poland",
+          "codes": "pl",
+          "area": 48
+        }, {
+          "cnname": "葡萄牙",
+          "enname": "portugal",
+          "codes": "pt",
+          "area": 351
+        }, {
+          "cnname": "波多黎各",
+          "enname": "puerto rico",
+          "codes": "pr",
+          "area": 1787
+        }, {
+          "cnname": "卡塔尔",
+          "enname": "qatar",
+          "codes": "qa",
+          "area": 974
+        }, {
+          "cnname": "罗马尼亚",
+          "enname": "romania",
+          "codes": "ro",
+          "area": 40
+        }, {
+          "cnname": "圣卢西亚",
+          "enname": "saint lueia",
+          "codes": "lc",
+          "area": 1758
+        }, {
+          "cnname": "沙特阿拉伯",
+          "enname": "saudi arabia",
+          "codes": "sa",
+          "area": 966
+        }, {
+          "cnname": "塞内加尔",
+          "enname": "senegal",
+          "codes": "sn",
+          "area": 221
+        }, {
+          "cnname": "塞舌尔",
+          "enname": "seychelles",
+          "codes": "sc",
+          "area": 248
+        }, {
+          "cnname": "塞拉利昂",
+          "enname": "sierra leone",
+          "codes": "sl",
+          "area": 232
+        }, {
+          "cnname": "斯洛伐克",
+          "enname": "slovakia",
+          "codes": "sk",
+          "area": 421
+        }, {
+          "cnname": "斯洛文尼亚",
+          "enname": "slovenia",
+          "codes": "si",
+          "area": 386
+        }, {
+          "cnname": "所罗门群岛",
+          "enname": "solomon",
+          "codes": "sb",
+          "area": 677
+        }, {
+          "cnname": "索马里",
+          "enname": "somali",
+          "codes": "so",
+          "area": 252
+        }, {
+          "cnname": "南非",
+          "enname": "south africa",
+          "codes": "za",
+          "area": 27
+        }, {
+          "cnname": "西班牙",
+          "enname": "spain",
+          "codes": "es",
+          "area": 34
+        }, {
+          "cnname": "斯里兰卡",
+          "enname": "sri lanka",
+          "codes": "lk",
+          "area": 94
+        }, {
+          "cnname": "圣卢西亚",
+          "enname": "st.lucia",
+          "codes": "lc",
+          "area": 1758
+        }, {
+          "cnname": "圣文森特",
+          "enname": "st.vincent",
+          "codes": "vc",
+          "area": 1784
+        }, {
+          "cnname": "苏丹",
+          "enname": "sudan",
+          "codes": "sd",
+          "area": 249
+        }, {
+          "cnname": "苏里南",
+          "enname": "suriname",
+          "codes": "sr",
+          "area": 597
+        }, {
+          "cnname": "斯威士兰",
+          "enname": "swaziland",
+          "codes": "sz",
+          "area": 268
+        }, {
+          "cnname": "瑞士",
+          "enname": "switzerland",
+          "codes": "ch",
+          "area": 41
+        }, {
+          "cnname": "叙利亚",
+          "enname": "syria",
+          "codes": "sy",
+          "area": 963
+        }, {
+          "cnname": "塔吉克斯坦",
+          "enname": "tajikstan",
+          "codes": "tj",
+          "area": 992
+        }, {
+          "cnname": "坦桑尼亚",
+          "enname": "tanzania",
+          "codes": "tz",
+          "area": 255
+        }, {
+          "cnname": "多哥",
+          "enname": "togo",
+          "codes": "tg",
+          "area": 228
+        }, {
+          "cnname": "汤加",
+          "enname": "tonga",
+          "codes": "to",
+          "area": 676
+        }, {
+          "cnname": "突尼斯",
+          "enname": "tunisia",
+          "codes": "tn",
+          "area": 216
+        }, {
+          "cnname": "土耳其",
+          "enname": "turkey",
+          "codes": "tr",
+          "area": 90
+        }, {
+          "cnname": "土库曼斯坦",
+          "enname": "turkmenistan",
+          "codes": "tm",
+          "area": 993
+        }, {
+          "cnname": "乌干达",
+          "enname": "uganda",
+          "codes": "ug",
+          "area": 256
+        }, {
+          "cnname": "阿拉伯联合酋长国",
+          "enname": "united arab emirates",
+          "codes": "ae",
+          "area": 971
+        }, {
+          "cnname": "乌拉圭",
+          "enname": "uruguay",
+          "codes": "uy",
+          "area": 598
+        }, {
+          "cnname": "乌兹别克斯坦",
+          "enname": "uzbekistan",
+          "codes": "uz",
+          "area": 233
+        }, {
+          "cnname": "委内瑞拉",
+          "enname": "venezuela",
+          "codes": "ve",
+          "area": 58
+        }, {
+          "cnname": "也门",
+          "enname": "yemen",
+          "codes": "ye",
+          "area": 967
+        }, {
+          "cnname": "南斯拉夫",
+          "enname": "yugoslavia",
+          "codes": "yu",
+          "area": 381
+        }, {
+          "cnname": "津巴布韦",
+          "enname": "zimbabwe",
+          "codes": "zw",
+          "area": 263
+        }, {
+          "cnname": "扎伊尔",
+          "enname": "zaire",
+          "codes": "zr",
+          "area": 243
+        }, {
+          "cnname": "赞比亚",
+          "enname": "zambia",
+          "codes": "zm",
+          "area": 260
+        }
+      ]
+      for (var i = 0; i < list.length; i++) {
+        var span = document.createElement('p');
+        span.textContent = '+ ' + list[i].area;
+        span.addEventListener('click', handleClick);
+        myDiv.appendChild(span);
+      }
+      for (var i = 0; i < list.length; i++) {
+        var span = document.createElement('p');
+        span.textContent = list[i].enname;
+        span.addEventListener('click', handleClick1);
+        myDiv1.appendChild(span);
+      }
+      function handleClick() {
+        var flex_textp = document.querySelector('.flex_text1 p');
+        var navbar = document.querySelector(".flex_xia");
+        var navbar1 = document.querySelector(".flex_xia1");
+        var navbar2 = document.querySelector(".flex_xia2");
+        var navbar3 = document.querySelector(".flex_xia3");
+        flex_textp.innerHTML = this.textContent;
+        navbar.style.display = 'none';
+        navbar1.style.display = 'none';
+        navbar2.style.display = 'none';
+        navbar3.style.display = 'none';
+      }
+      function handleClick1() {
+        var flex_textp = document.querySelector('.flex_text2 p');
+        var navbar = document.querySelector(".flex_xia1");
+        var navbar1 = document.querySelector(".flex_xia");
+        var navbar2 = document.querySelector(".flex_xia2");
+        var navbar3 = document.querySelector(".flex_xia3");
+        flex_textp.innerHTML = this.textContent;
+        navbar.style.display = 'none';
+        navbar1.style.display = 'none';
+        navbar2.style.display = 'none';
+        navbar3.style.display = 'none';
+      }
+      function xaila1() {
+        var navbar = document.querySelector(".flex_xia");
+        var navbar1 = document.querySelector(".flex_xia1");
+        var navbar2 = document.querySelector(".flex_xia2");
+        var navbar3 = document.querySelector(".flex_xia3");
+        navbar1.style.display = 'none';
+        navbar2.style.display = 'none';
+        navbar3.style.display = 'none';
+        if (navbar.style.display === 'block') {
+          navbar.style.display = 'none';
+        } else {
+          navbar.style.display = 'block';
+        }
+      }
+      function xaila2() {
+        var navbar = document.querySelector(".flex_xia1");
+        var navbar1 = document.querySelector(".flex_xia");
+        var navbar2 = document.querySelector(".flex_xia2");
+        var navbar3 = document.querySelector(".flex_xia3");
+        navbar1.style.display = 'none';
+        navbar2.style.display = 'none';
+        navbar3.style.display = 'none';
+        if (navbar.style.display === 'block') {
+          navbar.style.display = 'none';
+        } else {
+          navbar.style.display = 'block';
+        }
+      }
+      var mydIV2 = document.getElementById('mydIV2');
+      var myDiv3 = document.getElementById('mydIV3');
+      var daylist = [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29,
+        30,
+        31
+      ];
+      var monthlist = [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12
+      ];
+      for (var i = 0; i < daylist.length; i++) {
+        var span = document.createElement('p');
+        span.textContent = daylist[i];
+        span.addEventListener('click', dayClick);
+        mydIV2.appendChild(span);
+      }
+      for (var i = 0; i < monthlist.length; i++) {
+        var span = document.createElement('p');
+        span.textContent = monthlist[i];
+        span.addEventListener('click', monthClick);
+        mydIV3.appendChild(span);
+      }
+      function dayClick() {
+        var flex_textp = document.querySelector('.flex_text3 p');
+        var navbar = document.querySelector(".flex_xia2");
+        var navbar1 = document.querySelector(".flex_xia");
+        var navbar2 = document.querySelector(".flex_xia1");
+        var navbar3 = document.querySelector(".flex_xia3");
+        flex_textp.innerHTML = this.textContent;
+        navbar.style.display = 'none';
+        navbar1.style.display = 'none';
+        navbar2.style.display = 'none';
+        navbar3.style.display = 'none';
+      }
+
+      function monthClick() {
+        var flex_textp = document.querySelector('.flex_text4 p');
+        var navbar = document.querySelector(".flex_xia3");
+        var flex_textp1 = document.querySelector('.flex_text3 p');
+        var navbar1 = document.querySelector(".flex_xia");
+        var navbar2 = document.querySelector(".flex_xia1");
+        var navbar3 = document.querySelector(".flex_xia2");
+        flex_textp.innerHTML = this.textContent;
+        if (this.textContent == 4 || this.textContent == 6 || this.textContent == 9 || this.textContent == 11) {
+          if (flex_textp1.innerHTML >= 30) {
+            flex_textp1.innerHTML = 30
+          }
+          daylist = [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            16,
+            17,
+            18,
+            19,
+            20,
+            21,
+            22,
+            23,
+            24,
+            25,
+            26,
+            27,
+            28,
+            29,
+            30
+          ];
+        } else if (this.textContent == 2) {
+          if (flex_textp1.innerHTML >= 28) {
+            flex_textp1.innerHTML = 28
+          }
+          daylist = [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            16,
+            17,
+            18,
+            19,
+            20,
+            21,
+            22,
+            23,
+            24,
+            25,
+            26,
+            27,
+            28
+          ];
+        }
+        navbar.style.display = 'none';
+        navbar.style.display = 'none';
+        navbar1.style.display = 'none';
+        navbar2.style.display = 'none';
+        navbar3.style.display = 'none';
+      }
+
+      function xaila3() {
+        var navbar = document.querySelector(".flex_xia2");
+        var navbar1 = document.querySelector(".flex_xia");
+        var navbar2 = document.querySelector(".flex_xia1");
+        var navbar3 = document.querySelector(".flex_xia3");
+        navbar1.style.display = 'none';
+        navbar2.style.display = 'none';
+        navbar3.style.display = 'none';
+        if (navbar.style.display === 'block') {
+          navbar.style.display = 'none';
+        } else {
+          navbar.style.display = 'block';
+        }
+      }
+
+      function xaila4() {
+        var navbar = document.querySelector(".flex_xia3");
+        var navbar1 = document.querySelector(".flex_xia");
+        var navbar2 = document.querySelector(".flex_xia1");
+        var navbar3 = document.querySelector(".flex_xia2");
+        navbar1.style.display = 'none';
+        navbar2.style.display = 'none';
+        navbar3.style.display = 'none';
+        if (navbar.style.display === 'block') {
+          navbar.style.display = 'none';
+        } else {
+          navbar.style.display = 'block';
+        }
+      }
+    </script>
   </section>
 </section>

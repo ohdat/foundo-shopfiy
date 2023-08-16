@@ -1,1 +1,192 @@
-{"sections":{"main":{"type":"main-page","settings":{"subheading":"","subheading_size":3,"show_title":false,"heading_size":8,"show_content":false,"text_size":4,"align_text":"text-center","width":"wrapper","bg_color":"#f7f7f7","color":"","padding_top":50,"padding_bottom":50}},"246fabd6-704b-46cb-845c-8fec44e7471d":{"type":"section-hero","blocks":{"template--19109415354699__246fabd6-704b-46cb-845c-8fec44e7471d-168906895844232253-0":{"type":"heading","settings":{"title":"Contact us","heading_size":11}},"template--19109415354699__246fabd6-704b-46cb-845c-8fec44e7471d-168906895844232253-1":{"type":"text","settings":{"description":"","text_size":5,"text_style":"font-body"}},"template--19109415354699__246fabd6-704b-46cb-845c-8fec44e7471d-168906895844232253-2":{"type":"button","disabled":true,"settings":{"link_text":"View products","link":"","button_type":"btn--primary","button_size":"","button_style":"btn--solid","show_arrow":false}}},"block_order":["template--19109415354699__246fabd6-704b-46cb-845c-8fec44e7471d-168906895844232253-0","template--19109415354699__246fabd6-704b-46cb-845c-8fec44e7471d-168906895844232253-1","template--19109415354699__246fabd6-704b-46cb-845c-8fec44e7471d-168906895844232253-2"],"settings":{"height":"screen-height-three-quarters","width":"wrapper--full","image_1":"shopify:\/\/shop_images\/IMAGE_1_blurry.jpg","mobile_height":"screen-height-three-quarters--mobile","flex_align":"align--bottom-center","overlay_opacity":0,"overlay_color":"#000","show_overlay_text":false,"bg_color":"","color":"#FFFFFF"}},"contact":{"type":"contact-form","blocks":{"Name":{"type":"text","settings":{"title":"Full Name","required":false}},"Email":{"type":"email","settings":{"title":"Email","required":true}},"Message":{"type":"body","settings":{"title":"Message","required":false}},"Optional-text":{"type":"formHeading","settings":{"title":"Optional"}},"Urgent-checkbox":{"type":"checkbox","settings":{"title":"This is urgent","required":false}},"Options-select":{"type":"select","settings":{"title":"City","label-one":"- Pick a city -","label-two":"Milan","label-three":"Shanghai","label-four":"Los Angeles","label-five":"Paris","label-six":"Others (write down your city in the message)"}}},"block_order":["Name","Email","Message","Optional-text","Urgent-checkbox","Options-select"],"settings":{"title":"","terms":true,"width":"wrapper--narrow","bg_color":"","color":"","padding_top":50,"padding_bottom":50}},"faq":{"type":"section-accordion-group","disabled":true,"blocks":{"heading-0":{"type":"heading","settings":{"title":"FAQ"}},"question-1":{"type":"question","settings":{"title":"Frequently asked question","content":"<p>Share details about your shipping policies, item returns, or customer service.<\/p>"}},"question-2":{"type":"question","settings":{"title":"Frequently asked question","content":"<p>Share details about your shipping policies, item returns, or customer service.<\/p>"}},"question-3":{"type":"question","settings":{"title":"Frequently asked question","content":"<p>Share details about your shipping policies, item returns, or customer service.<\/p>"}}},"block_order":["heading-0","question-1","question-2","question-3"],"settings":{"width":"wrapper--narrow","bg_color":"#fafafa","color":"","border_color":"","padding_top":50,"padding_bottom":50}}},"order":["main","246fabd6-704b-46cb-845c-8fec44e7471d","contact","faq"]}
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "settings": {
+        "subheading": "",
+        "subheading_size": 3,
+        "show_title": false,
+        "heading_size": 8,
+        "show_content": false,
+        "text_size": 4,
+        "align_text": "text-center",
+        "width": "wrapper",
+        "bg_color": "#f7f7f7",
+        "color": "",
+        "padding_top": 50,
+        "padding_bottom": 50
+      }
+    },
+    "246fabd6-704b-46cb-845c-8fec44e7471d": {
+      "type": "section-hero",
+      "blocks": {
+        "template--19109415354699__246fabd6-704b-46cb-845c-8fec44e7471d-168906895844232253-0": {
+          "type": "heading",
+          "settings": {
+            "title": "Contact us",
+            "heading_size": 11
+          }
+        },
+        "template--19109415354699__246fabd6-704b-46cb-845c-8fec44e7471d-168906895844232253-1": {
+          "type": "text",
+          "settings": {
+            "description": "",
+            "text_size": 5,
+            "text_style": "font-body"
+          }
+        },
+        "template--19109415354699__246fabd6-704b-46cb-845c-8fec44e7471d-168906895844232253-2": {
+          "type": "button",
+          "disabled": true,
+          "settings": {
+            "link_text": "View products",
+            "link": "",
+            "button_type": "btn--primary",
+            "button_size": "",
+            "button_style": "btn--solid",
+            "show_arrow": false
+          }
+        }
+      },
+      "block_order": [
+        "template--19109415354699__246fabd6-704b-46cb-845c-8fec44e7471d-168906895844232253-0",
+        "template--19109415354699__246fabd6-704b-46cb-845c-8fec44e7471d-168906895844232253-1",
+        "template--19109415354699__246fabd6-704b-46cb-845c-8fec44e7471d-168906895844232253-2"
+      ],
+      "disabled": true,
+      "settings": {
+        "height": "screen-height-three-quarters",
+        "width": "wrapper--full",
+        "image_1": "shopify:\/\/shop_images\/IMAGE_1_blurry.jpg",
+        "mobile_height": "screen-height-three-quarters--mobile",
+        "flex_align": "align--bottom-center",
+        "overlay_opacity": 0,
+        "overlay_color": "#000000",
+        "show_overlay_text": false,
+        "bg_color": "",
+        "color": "#ffffff"
+      }
+    },
+    "contact": {
+      "type": "contact-form",
+      "blocks": {
+        "Name": {
+          "type": "text",
+          "settings": {
+            "title": "Full Name",
+            "required": false
+          }
+        },
+        "Email": {
+          "type": "email",
+          "settings": {
+            "title": "Email",
+            "required": true
+          }
+        },
+        "Message": {
+          "type": "body",
+          "settings": {
+            "title": "Message",
+            "required": false
+          }
+        },
+        "Optional-text": {
+          "type": "formHeading",
+          "settings": {
+            "title": "Optional"
+          }
+        },
+        "Urgent-checkbox": {
+          "type": "checkbox",
+          "settings": {
+            "title": "This is urgent",
+            "required": false
+          }
+        },
+        "Options-select": {
+          "type": "select",
+          "settings": {
+            "title": "City",
+            "label-one": "- Pick a city -",
+            "label-two": "Milan",
+            "label-three": "Shanghai",
+            "label-four": "Los Angeles",
+            "label-five": "Paris",
+            "label-six": "Others (write down your city in the message)"
+          }
+        }
+      },
+      "block_order": [
+        "Name",
+        "Email",
+        "Message",
+        "Optional-text",
+        "Urgent-checkbox",
+        "Options-select"
+      ],
+      "settings": {
+        "title": "",
+        "terms": true,
+        "width": "wrapper--narrow",
+        "bg_color": "",
+        "color": "",
+        "padding_top": 50,
+        "padding_bottom": 50
+      }
+    },
+    "faq": {
+      "type": "section-accordion-group",
+      "blocks": {
+        "heading-0": {
+          "type": "heading",
+          "settings": {
+            "title": "FAQ"
+          }
+        },
+        "question-1": {
+          "type": "question",
+          "settings": {
+            "title": "Frequently asked question",
+            "content": "<p>Share details about your shipping policies, item returns, or customer service.<\/p>"
+          }
+        },
+        "question-2": {
+          "type": "question",
+          "settings": {
+            "title": "Frequently asked question",
+            "content": "<p>Share details about your shipping policies, item returns, or customer service.<\/p>"
+          }
+        },
+        "question-3": {
+          "type": "question",
+          "settings": {
+            "title": "Frequently asked question",
+            "content": "<p>Share details about your shipping policies, item returns, or customer service.<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "heading-0",
+        "question-1",
+        "question-2",
+        "question-3"
+      ],
+      "disabled": true,
+      "settings": {
+        "width": "wrapper--narrow",
+        "bg_color": "#fafafa",
+        "color": "",
+        "border_color": "",
+        "padding_top": 50,
+        "padding_bottom": 50
+      }
+    }
+  },
+  "order": [
+    "main",
+    "246fabd6-704b-46cb-845c-8fec44e7471d",
+    "contact",
+    "faq"
+  ]
+}

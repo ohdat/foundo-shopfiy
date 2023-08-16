@@ -203,8 +203,8 @@
       "sort": "Sort by",
       "filter_by": "Filter by",
       "filters": "Filters",
-      "show_filters": "Show Filters",
-      "hide_filters": "Hide Filters",
+      "show_filters": "  Filters",
+      "hide_filters": "  Filters",
       "clear_filters": "Clear Filters",
       "no_filters": "No filters available for this collection",
       "all": "All",
@@ -247,7 +247,7 @@
       "account": "Account",
       "title": "My Account",
       "details": "Account Details",
-      "view_addresses": "View Addresses",
+      "view_addresses": "Account Details",
       "return": "Return to Account Details",
       "contact_store": "Contact Shop"
     },
@@ -295,7 +295,7 @@
       "create_account_cta": "Sign up here"
     },
     "orders": {
-      "title": "Order History",
+      "title": "My orders",
       "order_number": "Order",
       "date": "Date",
       "payment_status": "Payment Status",

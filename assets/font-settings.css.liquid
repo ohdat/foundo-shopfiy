@@ -33,10 +33,7 @@
     assign heading_font_bold = heading_font_400
   endif
 
-  assign btn_font = settings.btn_font
--%}
-
-{{ heading_font | font_face: font_display: 'swap' }}
+  assign btn_font = settings.btn_font -%}{{ heading_font | font_face: font_display: 'swap' }}
 {{ base_font | font_face: font_display: 'swap' }}
 {{ btn_font | font_face: font_display: 'swap' }}
 
