@@ -264,10 +264,11 @@
         </div>
       {%- endunless -%}
 
-      <div class="custom-form__block" style="display: flex;justify-content: space-between;">
-        <button type="submit" class="submitBtn">
-          {{ 'contact.form.send' | t }}
-        </button>
+      <div
+        id="customBlock"
+        class="custom-form__block"
+        style="display: flex;justify-content: space-between;">
+        <div class="submitBtn">Cancel</div>
         <button type="submit" class="submitBtn">
           {{ 'contact.form.send' | t }}
         </button>

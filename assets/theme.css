@@ -246,10 +246,17 @@ html {
   font-weight: 500;
 }
 
+#customBlock .submitBtn {
+  font-family: 'Foundo_Medium' !important;
+  font-weight: 500;
+}
+
 .submitBtn {
-  width: 329px;
+  width: 49%;
   height: 40px;
   background: #00031E;
+  color: #fff;
+  font-size: 12px;
 }
 
 #filterGroup .filter-group__heading span {
