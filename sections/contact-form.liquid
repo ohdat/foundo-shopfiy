@@ -74,7 +74,7 @@
             class="custom-form__block"
             {{ block.shopify_attributes }}>
             <label for="Form-{{ section.id }}-{{ forloop.index0 }}" class="visually-hidden">{{ block.settings.title }}</label>
-            <div class="account_text" style="font-family: 'Foundo_Headline' !important;">EMAIL</div>
+            <div class="account_text" style="font-family: 'Foundo_Headline' !important;font-size:16px;">EMAIL</div>
             <input
               style="font-family: 'Foundo_Medium' !important;font-weight: 500;font-size:16px;"
               type="email"
@@ -106,7 +106,7 @@
             class="custom-form__block"
             {{ block.shopify_attributes }}>
             <label for="Form-{{ section.id }}-{{ forloop.index0 }}" class="visually-hidden">{{ block.settings.title }}</label>
-            <div class="account_text" style="font-family: 'Foundo_Headline' !important;">FULL NAME</div>
+            <div class="account_text" style="font-family: 'Foundo_Headline' !important;font-size:16px;">FULL NAME</div>
             <input
               style="font-family: 'Foundo_Medium' !important;font-weight: 500;font-size:16px;"
               type="text"
@@ -246,7 +246,7 @@
       {%- unless types contains "email" -%}
         <div class="custom-form__block">
           <label for="contactFormEmail" class="visually-hidden">{{ 'contact.form.email' | t }}</label>
-          <div class="account_text" style="font-family: 'Foundo_Headline' !important;">EMAIL</div>
+          <div class="account_text" style="font-family: 'Foundo_Headline' !important;font-size:16px;">EMAIL</div>
           <input
             style="font-family: 'Foundo_Medium' !important;font-weight: 500;font-size:16px;"
             type="email"
