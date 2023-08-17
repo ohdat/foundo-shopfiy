@@ -264,8 +264,11 @@
         </div>
       {%- endunless -%}
 
-      <div class="custom-form__block">
-        <button type="submit" class="btn btn--primary btn--solid btn--full">
+      <div class="custom-form__block" style="display: flex;justify-content: space-between;">
+        <button type="submit" class="submitBtn">
+          {{ 'contact.form.send' | t }}
+        </button>
+        <button type="submit" class="submitBtn">
           {{ 'contact.form.send' | t }}
         </button>
       </div>

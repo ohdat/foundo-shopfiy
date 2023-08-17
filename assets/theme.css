@@ -246,6 +246,12 @@ html {
   font-weight: 500;
 }
 
+.submitBtn {
+  width: 329px;
+  height: 40px;
+  background: #00031E;
+}
+
 #filterGroup .filter-group__heading span {
   font-size: 12px;
   font-family: 'Foundo_Headline' !important;
