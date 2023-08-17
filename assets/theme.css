@@ -301,19 +301,20 @@ html {
   color: #9b9b9b !important;
 }
 
-textarea::placeholder {
-  color: #f56c6c;}
+#wrapperNarrow textarea::placeholder {
+  color: #f56c6c !important;
+}
 /* 谷歌 */
-textarea::-webkit-input-placeholder {
-  color: #f56c6c;
+#wrapperNarrow textarea::-webkit-input-placeholder {
+  color: #f56c6c !important;
 }
 /* 火狐 */
-textarea:-moz-placeholder {
-  color: #f56c6c;
+#wrapperNarrow textarea:-moz-placeholder {
+  color: #f56c6c !important;
 }
 /*ie*/
-textarea:-ms-input-placeholder {
-  color: #f56c6c;
+#wrapperNarrow textarea:-ms-input-placeholder {
+  color: #f56c6c !important;
 }
 
 .inputboxed:-webkit-input-placeholder {
