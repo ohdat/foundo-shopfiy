@@ -254,6 +254,10 @@ html {
   color: #9b9b9b !important;
 }
 
+input::-webkit-input-placeholder {
+  color: #9b9b9b !important;
+}
+
 #ContactUs1 .inputbox::-webkit-input-placeholder,
 #ContactUs1 .inputboxed::-webkit-input-placeholder {
   font-size: 16px;
