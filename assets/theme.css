@@ -63,34 +63,6 @@
   font-style: normal;
 }
 
-  /* 设置input框提示内容的样式 */
-  input::-webkit-input-placeholder {
-    color: #56ad6a !important;
-  } /*webkit 内核浏览器*/
-  input::-moz-placeholder {
-    color: #56ad6a !important;
-  } /*Mozilla Firefox 19+*/
-  input:-moz-placeholder {
-    color: #56ad6a !important;
-  } /*Mozilla Firefox 4 to 18*/
-  input:-ms-input-placeholder {
-    color: #56ad6a !important;
-  }
-
-  /* 设置textarea框提示内容的样式 */
-  textarea::-webkit-input-placeholder {
-    color: #56ad6a !important;
-  } /*webkit 内核浏览器*/
-  textarea::-moz-placeholder {
-    color: #56ad6a !important;
-  } /*Mozilla Firefox 19+*/
-  textarea:-moz-placeholder {
-    color: #56ad6a !important;
-  } /*Mozilla Firefox 4 to 18*/
-  textarea:-ms-input-placeholder {
-    color: #56ad6a !important;
-  }
-
 #headerSections .navtext,
 #headerSections .popout span {
   font-family: 'Foundo_Medium' !important;
@@ -324,13 +296,13 @@ html {
   color: #9b9b9b !important;
 }
 
-/* .inputbox::-webkit-input-placeholder {
+.inputbox::-webkit-input-placeholder {
   color: #9b9b9b !important;
 }
 
 .inputboxed:-webkit-input-placeholder {
   color: #9b9b9b !important;
-} */
+}
 
 #collectionTitle1 .hero__description p {
   font-family: 'Foundo_Headline' !important;
