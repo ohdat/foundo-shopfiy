@@ -246,7 +246,8 @@ html {
   font-weight: 500;
 }
 
-#customBlock .submitBtn {
+#customBlock .submitBtn,
+#customBlock .submitBtned {
   font-family: 'Foundo_Medium' !important;
   font-weight: 500;
 }
@@ -257,6 +258,17 @@ html {
   background: #00031E;
   color: #fff;
   font-size: 12px;
+}
+
+.submitBtned {
+  width: 49%;
+  height: 40px;
+  border: 1px solid #00031E;
+  color: #00031E;
+  font-size: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 #filterGroup .filter-group__heading span {
