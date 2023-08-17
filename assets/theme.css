@@ -324,15 +324,13 @@ html {
   color: #9b9b9b !important;
 }
 
-.inputbox::-webkit-input-placeholder {
-  /* WebKit browsers */
+/* .inputbox::-webkit-input-placeholder {
   color: #9b9b9b !important;
 }
 
 .inputboxed:-webkit-input-placeholder {
-  /* WebKit browsers */
   color: #9b9b9b !important;
-}
+} */
 
 #collectionTitle1 .hero__description p {
   font-family: 'Foundo_Headline' !important;
