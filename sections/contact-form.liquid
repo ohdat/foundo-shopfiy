@@ -69,14 +69,10 @@
         {%- case block.type -%}
 
           {%- when 'email' -%}
-          <div
-            id="ContactUs"
-            class="custom-form__block"
-            {{ block.shopify_attributes }}>
-            <label for="Form-{{ section.id }}-{{ forloop.index0 }}" class="visually-hidden">{{ block.settings.title }}</label>
+          <div class="custom-form__block" {{ block.shopify_attributes }}>
             <div class="account_text" style="font-family: 'Foundo_Headline' !important;font-size:16px;">EMAIL</div>
             <input
-              style="font-family: 'Foundo_Medium' !important;font-weight: 500;font-size:16px;"
+              style="font-family: 'Foundo_Medium' !important;font-weight: 500;font-size:16px;text-transform:uppercase;"
               type="email"
               class="inputbox contactFormEmail field"
               id="Form-{{ section.id }}-{{ forloop.index0 }}"
@@ -101,14 +97,10 @@
           </div>
 
           {%- when 'text' -%}
-          <div
-            id="ContactUs1"
-            class="custom-form__block"
-            {{ block.shopify_attributes }}>
-            <label for="Form-{{ section.id }}-{{ forloop.index0 }}" class="visually-hidden">{{ block.settings.title }}</label>
+          <div class="custom-form__block" {{ block.shopify_attributes }}>
             <div class="account_text" style="font-family: 'Foundo_Headline' !important;font-size:16px;">FULL NAME</div>
             <input
-              style="font-family: 'Foundo_Medium' !important;font-weight: 500;font-size:16px;"
+              style="font-family: 'Foundo_Medium' !important;font-weight: 500;font-size:16px;text-transform:uppercase;"
               type="text"
               class="inputbox contactFormText field"
               id="Form-{{ section.id }}-{{ forloop.index0 }}"
@@ -245,10 +237,9 @@
 
       {%- unless types contains "email" -%}
         <div class="custom-form__block">
-          <label for="contactFormEmail" class="visually-hidden">{{ 'contact.form.email' | t }}</label>
           <div class="account_text" style="font-family: 'Foundo_Headline' !important;font-size:16px;">EMAIL</div>
           <input
-            style="font-family: 'Foundo_Medium' !important;font-weight: 500;font-size:16px;"
+            style="font-family: 'Foundo_Medium' !important;font-weight: 500;font-size:16px;text-transform:uppercase;"
             type="email"
             id="contactFormEmail"
             class="inputbox contactFormEmail field"

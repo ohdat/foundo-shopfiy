@@ -246,22 +246,6 @@ html {
   font-weight: 500;
 }
 
-#ContactUs .inputbox::-webkit-input-placeholder,
-#ContactUs .inputboxed::-webkit-input-placeholder {
-  font-size: 16px;
-  font-family: 'Foundo_Medium' !important;
-  font-weight: 500;
-  color: #9b9b9b !important;
-}
-
-#ContactUs1 .inputbox::-webkit-input-placeholder,
-#ContactUs1 .inputboxed::-webkit-input-placeholder {
-  font-size: 16px;
-  font-family: 'Foundo_Medium' !important;
-  font-weight: 500;
-  color: #9b9b9b !important;
-}
-
 #filterGroup .filter-group__heading span {
   font-size: 12px;
   font-family: 'Foundo_Headline' !important;
