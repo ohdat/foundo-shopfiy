@@ -298,12 +298,12 @@ html {
 
 .inputbox::-webkit-input-placeholder {
   /* WebKit browsers */
-  color: #9b9b9b;
+  color: #9b9b9b !important;
 }
 
 .inputboxed:-webkit-input-placeholder {
   /* WebKit browsers */
-  color: #9b9b9b;
+  color: #9b9b9b !important;
 }
 
 #collectionTitle1 .hero__description p {
