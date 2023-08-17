@@ -301,16 +301,19 @@ html {
   color: #9b9b9b !important;
 }
 
-::v-deep .el-textarea__inner::placeholder {color: #f56c6c;
-}
+textarea::placeholder {
+  color: #f56c6c;}
 /* 谷歌 */
-::v-deep .el-textarea__inner::-webkit-input-placeholder {color: #f56c6c;
+textarea::-webkit-input-placeholder {
+  color: #f56c6c;
 }
 /* 火狐 */
-::v-deep .el-textarea__inner:-moz-placeholder {color: #f56c6c;
+textarea:-moz-placeholder {
+  color: #f56c6c;
 }
 /*ie*/
-::v-deep .el-textarea__inner:-ms-input-placeholder {color: #f56c6c;
+textarea:-ms-input-placeholder {
+  color: #f56c6c;
 }
 
 .inputboxed:-webkit-input-placeholder {
