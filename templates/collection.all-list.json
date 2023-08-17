@@ -31,20 +31,6 @@
         "padding_bottom": 20
       }
     },
-    "main": {
-      "type": "collection",
-      "settings": {
-        "enable_sort": true,
-        "enable_filters": true,
-        "filter_layout": "inline-closed",
-        "collection_linklist": "",
-        "grid": 4,
-        "grid_mobile": "2",
-        "product_limit": 50,
-        "padding_top": 0,
-        "padding_bottom": 0
-      }
-    },
     "41b3a0f1-2a3a-4bea-9361-6310c8a486df": {
       "type": "section-test_fa",
       "blocks": {
@@ -150,12 +136,26 @@
         "padding_top": 0,
         "padding_bottom": 0
       }
+    },
+    "main": {
+      "type": "collection",
+      "settings": {
+        "enable_sort": true,
+        "enable_filters": true,
+        "filter_layout": "inline-closed",
+        "collection_linklist": "",
+        "grid": 4,
+        "grid_mobile": "2",
+        "product_limit": 50,
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
     }
   },
   "order": [
     "hero",
     "subcollections",
-    "main",
-    "41b3a0f1-2a3a-4bea-9361-6310c8a486df"
+    "41b3a0f1-2a3a-4bea-9361-6310c8a486df",
+    "main"
   ]
 }
