@@ -301,22 +301,6 @@ html {
   color: #9b9b9b !important;
 }
 
-#wrapperNarrow textarea::placeholder {
-  color: #f56c6c !important;
-}
-/* 谷歌 */
-#wrapperNarrow textarea::-webkit-input-placeholder {
-  color: #f56c6c !important;
-}
-/* 火狐 */
-#wrapperNarrow textarea:-moz-placeholder {
-  color: #f56c6c !important;
-}
-/*ie*/
-#wrapperNarrow textarea:-ms-input-placeholder {
-  color: #f56c6c !important;
-}
-
 .inputboxed:-webkit-input-placeholder {
   /* WebKit browsers */
   color: #9b9b9b !important;
