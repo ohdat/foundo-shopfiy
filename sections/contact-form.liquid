@@ -74,7 +74,7 @@
             <input
               style="font-family: 'Foundo_Medium' !important;font-weight: 500;font-size:16px;text-transform:uppercase;"
               type="email"
-              class="inputbox1 contactFormEmail field"
+              class="contactFormEmail field"
               id="Form-{{ section.id }}-{{ forloop.index0 }}"
               name="contact[email]"
               placeholder="EMAIL"
@@ -102,7 +102,7 @@
             <input
               style="font-family: 'Foundo_Medium' !important;font-weight: 500;font-size:16px;text-transform:uppercase;"
               type="text"
-              class="inputbox1 contactFormText field"
+              class="contactFormText field"
               id="Form-{{ section.id }}-{{ forloop.index0 }}"
               name="contact[{{ block.settings.title | handleize | default: 'text' }}]"
               placeholder="FULL NAME"
@@ -242,7 +242,7 @@
             style="font-family: 'Foundo_Medium' !important;font-weight: 500;font-size:16px;text-transform:uppercase;"
             type="email"
             id="contactFormEmail"
-            class="inputbox1 contactFormEmail field"
+            class="contactFormEmail field"
             name="contact[email]"
             placeholder="EMAIL"
             autocorrect="off"
