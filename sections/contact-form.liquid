@@ -81,7 +81,7 @@
               class="inputbox contactFormEmail field"
               id="Form-{{ section.id }}-{{ forloop.index0 }}"
               name="contact[email]"
-              placeholder="{{ block.settings.title }}"
+              placeholder="EMAIL"
               autocorrect="off"
               autocapitalize="off"
               {{ required }}>
@@ -113,7 +113,7 @@
               class="inputbox contactFormText field"
               id="Form-{{ section.id }}-{{ forloop.index0 }}"
               name="contact[{{ block.settings.title | handleize | default: 'text' }}]"
-              placeholder="{{ block.settings.title }}"
+              placeholder="FULL NAME}"
               autocapitalize="words"
               value=""
               {{ required }}>
@@ -253,7 +253,7 @@
             id="contactFormEmail"
             class="inputbox contactFormEmail field"
             name="contact[email]"
-            placeholder="{{ 'contact.form.email' | t }}"
+            placeholder="EMAIL"
             autocorrect="off"
             autocapitalize="off"
             required>
