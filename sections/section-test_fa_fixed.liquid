@@ -676,6 +676,41 @@
   </div>
 </section>
 
+<script>
+  const setQueryParamAndUpdateHistoryState = (param, val) => {
+    const url = new URL(window.location.href);
+    url.searchParams.set(param, val);
+    window.history.replaceState(null, null, url);
+  }
+  function changeImage() {
+    var imageContainers = document.querySelectorAll(".product-grid_tru");
+    imageContainers.forEach(function(container) {
+      container.classList.remove("error");
+      container.classList.add("active");
+    });
+    var imageContainersed = document.querySelectorAll(".product-grid_fal");
+    imageContainersed.forEach(function(container) {
+      container.classList.remove("active");
+      container.classList.add("error");
+    });
+    setQueryParamAndUpdateHistoryState('current_layout', 'layout-list')
+    location.reload();
+  }
+  function changeImaged() {
+    var imageContainers = document.querySelectorAll(".product-grid_tru");
+    imageContainers.forEach(function(container) {
+      container.classList.remove("active");
+      container.classList.add("error");
+    });
+    var imageContainersed = document.querySelectorAll(".product-grid_fal");
+    imageContainersed.forEach(function(container) {
+      container.classList.remove("error");
+      container.classList.add("active");
+    });
+    setQueryParamAndUpdateHistoryState('current_layout', 'layout-grid')
+    location.reload();
+  }
+</script>
 {% schema %}
   {
     "name": "A test2",
