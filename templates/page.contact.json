@@ -70,10 +70,17 @@
     "contact": {
       "type": "contact-form",
       "blocks": {
+        "Topic": {
+          "type": "text",
+          "settings": {
+            "title": "Topic",
+            "required": false
+          }
+        },
         "Name": {
           "type": "text",
           "settings": {
-            "title": "Full Name",
+            "title": "First Name",
             "required": false
           }
         },

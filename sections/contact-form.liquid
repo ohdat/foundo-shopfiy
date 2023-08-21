@@ -96,22 +96,6 @@
               {{ required }}></textarea>
           </div>
 
-          {%- when 'Topic' -%}
-          <div class="custom-form__block" {{ block.shopify_attributes }}>
-            <div class="account_text" style="font-family: 'Foundo_Headline' !important;font-size:16px;">TOPIC</div>
-              <input
-                style="font-family: 'Foundo_Medium' !important;font-weight: 500;font-size:16px;text-transform:uppercase;"
-                type="text"
-                class="inputbox contactFormText field"
-                id="Form-{{ section.id }}-{{ forloop.index0 }}"
-                name="contact[{{ block.settings.title | handleize | default: 'text' }}]"
-                placeholder="TOPIC"
-                autocapitalize="words"
-                value=""
-                {{ required }}>
-          </div>
-
-
           {%- when 'text' -%}
           <div class="custom-form__block" {{ block.shopify_attributes }}>
             <div class="account_text" style="font-family: 'Foundo_Headline' !important;font-size:16px;">TOPIC</div>
@@ -120,24 +104,25 @@
                 type="text"
                 class="inputbox contactFormText field"
                 id="Form-{{ section.id }}-{{ forloop.index0 }}"
-                name="contact[{{ block.settings.title | handleize | default: 'text' }}]"
+                name="contact[{{ block.settings.topic | handleize | default: 'topic' }}]"
                 placeholder="TOPIC"
-                autocapitalize="words"
                 value=""
                 {{ required }}>
+          </div>
 
+          <div class="custom-form__block" {{ block.shopify_attributes }}>
             <div class="account_text" style="font-family: 'Foundo_Headline' !important;font-size:16px;">FIRST NAME</div>
-            <input
-              style="font-family: 'Foundo_Medium' !important;font-weight: 500;font-size:16px;text-transform:uppercase;"
-              type="text"
-              class="inputbox contactFormText field"
-              id="Form-{{ section.id }}-{{ forloop.index0 }}"
-              name="contact[{{ block.settings.title | handleize | default: 'text' }}]"
-              placeholder="FULL NAME"
-              autocapitalize="words"
-              value=""
-              {{ required }}>
-
+              <input
+                style="font-family: 'Foundo_Medium' !important;font-weight: 500;font-size:16px;text-transform:uppercase;"
+                type="text"
+                class="inputbox contactFormText field"
+                id="Form-{{ section.id }}-{{ forloop.index0 }}"
+                name="contact[{{ block.settings.firstName | handleize | default: 'firstName' }}]"
+                placeholder="FirstName"
+                value=""
+                {{ required }}>
+          </div>
+          <div class="custom-form__block" {{ block.shopify_attributes }}>
             <div class="account_text" style="font-family: 'Foundo_Headline' !important;font-size:16px;">LAST NAME</div>
             <input
               style="font-family: 'Foundo_Medium' !important;font-weight: 500;font-size:16px;text-transform:uppercase;"
@@ -444,15 +429,33 @@
         ]
       },
       {
-        "type": "text",
+        "type": "topic",
         "name": "Topic",
-        "limit": 1,
+        "limit": 3,
         "settings": [
           {
             "type": "text",
             "id": "title",
             "label": "Topic",
             "default": "Topic"
+          }, {
+            "type": "checkbox",
+            "id": "required",
+            "label": "Required",
+            "default": true
+          }
+        ]
+      },
+      {
+        "type": "firstName",
+        "name": "FirstName",
+        "limit": 3,
+        "settings": [
+          {
+            "type": "text",
+            "id": "title",
+            "label": "FirstName",
+            "default": "FirstName"
           }, {
             "type": "checkbox",
             "id": "required",
@@ -665,9 +668,15 @@
             }
           },
           {
-            "type": "text",
+            "type": "topic",
             "settings": {
               "title": "Topic"
+            }
+          },
+          {
+            "type": "firstName",
+            "settings": {
+              "title": "FirstName"
             }
           },
           {
