@@ -480,8 +480,6 @@ Usage:
     {%- endfor -%}
   </div>
 
-  
-
   <div class="product-information" data-product-information>
     <div class="product-item__info" id="productItemInfo">
       <div class="prduct-grid__serial-number">
@@ -574,13 +572,8 @@ Usage:
           </div>
         </div>
       </a>
-      <a
-        class="product-link"
-        href="{{ product_url }}"
-        aria-label="{{ product.title | strip_html | escape }}"
-        data-product-link="{{ product_url }}">
-        Discover the Collection
-      </a>
+
+      <a class="discover-the-collection product-link" href="{{ collection_object.url }}">Discover the Collection</a>
 
       {%- if siblings_html != blank -%}
         {{ siblings_html }}
