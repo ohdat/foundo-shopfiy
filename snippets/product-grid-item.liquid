@@ -523,14 +523,14 @@ Usage:
             {% comment %} Price on product grid item {% endcomment %}
 
             {%- liquid
-  if settings.currency_code_enable
-    assign product_price_min = product.price_min | money_with_currency
-    assign product_compare_at_price = product.compare_at_price | money_with_currency
-  else
-    assign product_price_min = product.price_min | money
-    assign product_compare_at_price = product.compare_at_price | money
-  endif
--%}
+              if settings.currency_code_enable
+                assign product_price_min = product.price_min | money_with_currency
+                assign product_compare_at_price = product.compare_at_price | money_with_currency
+              else
+                assign product_price_min = product.price_min | money
+                assign product_compare_at_price = product.compare_at_price | money
+              endif
+            -%}
 
             <span class="price{% if product.compare_at_price > product.price %} sale{% endif %}">
               {% if product.available %}
@@ -573,6 +573,13 @@ Usage:
             {% endif %}
           </div>
         </div>
+      </a>
+      <a
+        class="product-link"
+        href="{{ product_url }}"
+        aria-label="{{ product.title | strip_html | escape }}"
+        data-product-link="{{ product_url }}">
+        Discover the Collection
       </a>
 
       {%- if siblings_html != blank -%}
