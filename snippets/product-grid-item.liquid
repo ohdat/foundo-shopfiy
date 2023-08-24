@@ -486,11 +486,13 @@ Usage:
         <p>Serial No: </p>
         <p class="product-item__title">{{ product.metafields.custom.serial_no }}</p>
       </div>
-      <div class="prduct-grid__size">
-        <p>Size: {{ product.metafields.custom.size }}</p>
-      </div>
-      <div class="prduct-grid__material">
-        <p>Material: {{ product.metafields.custom.material }}</p>
+      <div class="product-size-material" style="display: flex; justify-content: space-between;">
+        <div class="prduct-grid__size">
+          <p>Size: {{ product.metafields.custom.size }}</p>
+        </div>
+        <div class="prduct-grid__material">
+          <p>Material: {{ product.metafields.custom.material }}</p>
+        </div>
       </div>
       
       <a
