@@ -16111,8 +16111,15 @@ body.has-line-design.grid-compact .reviews__grid {
   .grid-item.product-item:hover .product-information a.product-link {
     /* display: none; */
   }
+  
+  .grid-item.product-item .product-size-material {
+    display: none;
+  }
 
   .grid-item.product-item:hover .prduct-grid__serial-number {
+    display: block;
+  }
+  .grid-item.product-item:hover .product-size-material {
     display: block;
   }
 
