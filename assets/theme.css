@@ -4394,6 +4394,12 @@ body.has-line-design.grid-compact .grid-item {
   .informationclass{
     width:33.3% !important;
   }
+
+  .product__thumbs__holdered{
+    position: absolute !important;
+    left: 30px;
+    bottom: 200px;
+  }
 }
 
 .grid__loader-line {
