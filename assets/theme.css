@@ -4395,7 +4395,8 @@ body.has-line-design.grid-compact .grid-item {
     width:33.3% !important;
   }
 
-  .product__thumbs__holdered{
+  #product__thumbsoldered .product__thumbs__holdered{
+    width: 100%;
     position: absolute !important;
     left: 30px;
     bottom: 200px;
