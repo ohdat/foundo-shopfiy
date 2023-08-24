@@ -4394,7 +4394,11 @@ body.has-line-design.grid-compact .grid-item {
     margin-bottom: 2px !important;
   }
   .product-grid_list{
+    width: 100%;
     flex-wrap: wrap;
+  }
+  .product-link{
+    height: auto !important;
   }
   .informationclass{
     width:33.3% !important;
