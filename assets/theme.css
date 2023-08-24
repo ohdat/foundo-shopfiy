@@ -4378,6 +4378,12 @@ body.has-line-design.grid-compact .grid-item {
   .aoufhwe,#heroWrapper{
     height: 200px !important;
   }
+  .product__thumb__link_list{
+    width:33.3% !important;
+    height:180px !important;
+    margin-right: 2px !important;
+    margin-bottom: 2px !important;
+  }
 }
 
 .grid__loader-line {
