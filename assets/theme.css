@@ -4368,7 +4368,7 @@ body.has-line-design.grid-compact .grid-item {
   .grid__loader {
     z-index: 201;
   }
-  .aoufhwe{
+  .aoufhwe,#heroWrapper{
     height: 200px !important;
   }
 }
