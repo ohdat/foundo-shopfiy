@@ -4397,9 +4397,10 @@ body.has-line-design.grid-compact .grid-item {
 
   #product__thumbsoldered{
     width: 100%;
+    height: 58px;
     position: absolute !important;
-    left: 30px;
-    bottom: 200px;
+    left: 18px;
+    top: 550px;
   }
 }
 
