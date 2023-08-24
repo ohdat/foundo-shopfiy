@@ -4371,6 +4371,10 @@ body.has-line-design.grid-compact .grid-item {
   margin-bottom: 2px !important;
 }
 
+.informationclass{
+  width: calc((100% - 681px) / 3) !important;
+}
+
 @media only screen and (max-width: 749px) {
   .grid__loader {
     z-index: 201;
@@ -4383,6 +4387,12 @@ body.has-line-design.grid-compact .grid-item {
     height:180px !important;
     margin-right: 2px !important;
     margin-bottom: 2px !important;
+  }
+  .product-grid_list{
+    flex-wrap: wrap;
+  }
+  .informationclass{
+    width:33.3% !important;
   }
 }
 
