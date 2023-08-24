@@ -14459,6 +14459,9 @@ main-search .input-holder {
   .product__thumb:last-child {
     margin-right: 0;
   }
+  .test1_img {
+    display: none !important;
+  }
 }
 
 .product__thumb.is-active:after {
