@@ -582,12 +582,15 @@ Usage:
           </div>
         </div>
       </a>
+      
       {% assign metafield_collection_value = product.metafields.custom.collection %}
       {% assign metafield_collection_handle = metafield_collection_value %}
       {% assign metafield_collection_object = collections[metafield_collection_handle] %}
-      <nav class="breadcrumbs breadcrumbs--no-padding product__breadcrumbs" style="margin: 8px;">
-        <a class="discover-the-collection product-link" href="{{ metafield_collection_object.url }}">Discover the Collection</a>
-      </nav>
+      {%- if metafield_collection_object.url != blank -%}
+        <nav class="breadcrumbs breadcrumbs--no-padding product__breadcrumbs" style="margin: 8px;">
+          <a class="discover-the-collection product-link" href="{{ metafield_collection_object.url }}">Discover the Collection</a>
+        </nav>
+      {%- endif -%}
 
       {%- if siblings_html != blank -%}
         {{ siblings_html }}
