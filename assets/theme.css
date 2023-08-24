@@ -16126,6 +16126,10 @@ body.has-line-design.grid-compact .reviews__grid {
   .grid-item.product-item:hover .overflowX_bo {
     display: flex !important;
   }
+
+  .grid-item.product-item:hover .product-item__title {
+    display: none !important;
+  }
 }
 
 @media only screen and (min-width: 750px) {
