@@ -14233,6 +14233,37 @@ main-search .input-holder {
   .product__thumbs {
     min-height: 85px;
   }
+
+  .product__thumbinked{
+    width:33.3%;
+    height: 180px;
+    margin-right: 2px;
+    margin-bottom: 2px;
+  }
+
+  .informationclassed{
+    width: 50%;
+  }
+
+  .productlinked{
+    width: 100%;
+  }
+
+}
+
+.product__thumbinked{
+  width: 314px;
+  height: 422px;
+  margin-right: 2px;
+  margin-bottom: 2px;
+}
+
+.informationclassed{
+  width: calc((100% - 960px) / 2);
+}
+
+.productlinked{
+  width: 960px;
 }
 
 .product__thumbs__holdered {
