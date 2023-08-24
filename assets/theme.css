@@ -4368,6 +4368,9 @@ body.has-line-design.grid-compact .grid-item {
   .grid__loader {
     z-index: 201;
   }
+  .aoufhwe{
+    height: 200px !important;
+  }
 }
 
 .grid__loader-line {
@@ -4453,7 +4456,7 @@ body.has-line-design.grid-compact .grid-item {
   }
 
   .screen-height-three-quarters--mobile {
-    min-height: var(--three-quarters);
+    min-height: 200px !important;
   }
 
   .screen-height-two-thirds--mobile {
