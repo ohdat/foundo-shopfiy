@@ -403,7 +403,7 @@ Usage:
         {% assign counter = 0 %}
         {%- for media in product.media -%}
           {% if counter < 3 %}
-            <div style="width:225px;height:300px;margin-right: 2px;margin-bottom: 2px;" data-thumb-item>
+            <div class="product__thumb__link_list" data-thumb-item>
               <div
                 class="product__thumb__link product__thumb__linkes"
                 aria-current="{% if forloop.first %}true{% else %}false{% endif %}"

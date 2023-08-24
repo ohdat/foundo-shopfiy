@@ -4364,6 +4364,13 @@ body.has-line-design.grid-compact .grid-item {
   visibility: visible;
 }
 
+.product__thumb__link_list{
+  width:225px !important;
+  height:300px !important;
+  margin-right: 2px !important;
+  margin-bottom: 2px !important;
+}
+
 @media only screen and (max-width: 749px) {
   .grid__loader {
     z-index: 201;
