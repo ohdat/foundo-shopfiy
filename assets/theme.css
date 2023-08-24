@@ -4309,6 +4309,11 @@ body.has-line-design.grid-compact .grid-item {
     /* for Internet Explorer, Edge */
   }
 
+  .erferfrefe{
+    flex-flow: wrap-reverse !important;
+
+  }
+
   .grid--mobile-slider::-webkit-scrollbar {
     display: none;
     /* for Chrome, Safari, and Opera */
