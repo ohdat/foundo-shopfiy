@@ -8053,10 +8053,6 @@ img.fit-cover {
   z-index: 6;
 }
 
-.menu__item:last-of-type{
-  display: none;
-}
-
 .navlink--toplevel:after {
   content: '';
   position: absolute;
