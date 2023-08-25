@@ -46,7 +46,7 @@
                 style="padding: 0;margin-top: 10px;"
                 class="account_text"
                 data-show-reset>
-                Forgot Password?
+                FORGOT PASSWORD ?
               </button>
               <button type="submit" class="account_submit">Login</button>
             </div>
@@ -57,11 +57,9 @@
           <a href="{{ routes.account_register_url }}">
             <div class="createabtn">Create</div>
           </a>
-          <div class="form-field action-bottom">
-            <a href="{{ routes.root_url }}" class="text-link small">
-              <div class="createabtn">{{ 'customer.login.cancel' | t }}</div>
-            </a>
-          </div>
+          <a href="{{ routes.root_url }}">
+            <div class="createabtn">{{ 'customer.login.cancel' | t }}</div>
+          </a>
         {% endform %}
       </div>
 
