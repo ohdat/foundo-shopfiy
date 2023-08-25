@@ -135,11 +135,12 @@
                     <h2 class="h5 footer__block__title">{{ title }}</h2>
                   {%- endif -%}
 
+                  
+
+                  {%- render 'newsletter-form' block: block, footer: true -%}
                   {%- if text != blank -%}
                     <div class="rte footer__newsletter__text">{{ text }}</div>
                   {%- endif -%}
-
-                  {%- render 'newsletter-form' block: block, footer: true -%}
 
                   {%- if show_social_links -%}
                     {%- render 'social-icons' modifier: 'socials--newsletter' -%}
