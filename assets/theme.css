@@ -16207,6 +16207,10 @@ body.has-line-design.grid-compact .reviews__grid {
   .grid-item.product-item:hover .product-item__title {
     display: none !important;
   }
+
+  .product-item__info {
+    min-height: 200px;
+  }
 }
 
 @media only screen and (min-width: 750px) {
