@@ -16191,10 +16191,11 @@ body.has-line-design.grid-compact .reviews__grid {
 
   .grid-item.product-item .product-size-material {
     display: none!important;
+    min-height: 44px;
   }
 
   .grid-item.product-item:hover .prduct-grid__serial-number {
-    display: block;
+    display: block!important;
   }
   .grid-item.product-item:hover .product-size-material {
     display: flex!important;
@@ -16204,7 +16205,7 @@ body.has-line-design.grid-compact .reviews__grid {
     display: flex !important;
   }
 
-  .grid-item.product-item:hover .product-item__title {
+  .grid-item.product-item:hover .product-link .product-item__title {
     display: none !important;
   }
 
