@@ -314,16 +314,19 @@ html {
   border-bottom: 1px solid #d0d0d0 !important;
   padding: 9px 0px !important;
   color: #9b9b9b !important;
+  font-size: 12px !important;
 }
 
 .inputboxed {
   border: none !important;
   padding: 0px !important;
   color: #9b9b9b !important;
+  font-size: 12px !important;
 }
 
 .inputbox::-webkit-input-placeholder {
   color: #9b9b9b !important;
+  font-size: 12px !important;
 }
 
 .contactFormEmail::-webkit-input-placeholder {
@@ -332,6 +335,7 @@ html {
 
 .inputboxed:-webkit-input-placeholder {
   color: #9b9b9b !important;
+  font-size: 12px !important;
 }
 
 #collectionTitle1 .hero__description p {
