@@ -98,7 +98,7 @@
   font-family: 'Foundo_Medium' !important;
   color: #9b9b9b;
   font-weight: bolder;
-  font-size: calc(var(--font-1) * var(--FONT-ADJUST-BODY)) !important;
+  font-size: 12px !important;
 }
 
 #cart-bar .cart-bar__info h4,
@@ -11804,7 +11804,8 @@ main-search .input-holder {
   flex: 1 1 auto;
   border: 0;
   padding: 1em 1em 1em 0;
-  color: var(--text);
+  color: #00031E;
+  font-size: 12px;
 }
 
 .newsletter-form .input-group__field::placeholder,
