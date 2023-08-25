@@ -58,7 +58,9 @@
             <div class="createabtn">Create</div>
           </a>
           <div class="form-field action-bottom">
-            <a href="{{ routes.root_url }}" class="text-link small">{{ 'customer.login.cancel' | t }}</a>
+            <a href="{{ routes.root_url }}" class="text-link small">
+              <div class="createabtn">{{ 'customer.login.cancel' | t }}</div>
+            </a>
           </div>
         {% endform %}
       </div>
