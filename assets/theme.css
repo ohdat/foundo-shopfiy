@@ -8048,7 +8048,7 @@ img.fit-cover {
   font-style: var(--FONT-STYLE-NAV);
   font-weight: var(--FONT-WEIGHT-NAV);
   position: relative;
-  padding: 15px;
+  padding: 15px 0 15px 15px;
   font-weight: var(--FONT-WEIGHT-NAV-BOLD);
   z-index: 6;
 }
