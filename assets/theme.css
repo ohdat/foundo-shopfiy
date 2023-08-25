@@ -21002,7 +21002,7 @@ body.is-focused .subcollection__item:focus-within .image-overlay-bottom {
 }
 
 .footer__quicklinks li {
-  margin: 0 0 1.25em;
+  margin: 0 0 15px;
 }
 
 .footer__quicklinks li:last-child {
