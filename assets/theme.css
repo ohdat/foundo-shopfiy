@@ -25121,7 +25121,7 @@ recipient-form .recipient-form-field-label {
 .product-info__wrapper.line-with-4lines {
   display: -webkit-box;
   -webkit-box-orient: vertical;
-  -webkit-line-clamp: 4;
+  -webkit-line-clamp: 6;
   overflow: hidden;
   text-overflow: ellipsis;
 }
