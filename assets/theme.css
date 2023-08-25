@@ -4643,7 +4643,7 @@ body * {
 
 .wrapper--full-padded {
   max-width: none;
-  margin: 0 auto;
+  margin: 150px auto 0;
   padding-left: var(--outer);
   padding-right: var(--outer);
 }
