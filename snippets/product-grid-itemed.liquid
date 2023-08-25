@@ -558,29 +558,36 @@ Usage:
         {%- endif -%}
         <div style="text-align: left;" class="product-item__price__holder">
           <div class="product-item__price" data-product-price="">
-            <span class="price">
-              <span style="font-family:'Foundo_Medium' !important;font-weight: bolder;" class="new-price product__priced">
+            <div class="price">
+              <div style="font-family:'Foundo_Medium' !important;font-weight: bolder;" class="new-price product__priced">
                 Material
-              </span>
-            </span>
+              </div>
+            </div>
+            <div class="product-info__value">{{ product.metafields.custom.material }}</div>
           </div>
         </div>
         <div style="text-align: left;" class="product-item__price__holder">
           <div class="product-item__price" data-product-price="">
-            <span class="price">
-              <span style="font-family:'Foundo_Medium' !important;font-weight: bolder;" class="new-price product__priced">
+            <div class="price">
+              <div style="font-family:'Foundo_Medium' !important;font-weight: bolder;" class="new-price product__priced">
                 Size
-              </span>
-            </span>
+              </div>
+            </div>
+            {% assign product_size = product.metafields.custom.size %}
+            {% if product_size == 0 %}
+              {% assign product_size = '' %}
+            {% endif %}
+            <div class="product-info__value">{{ product_size }}</div>
           </div>
         </div>
         <div style="text-align: left;" class="product-item__price__holder">
           <div class="product-item__price" data-product-price="">
-            <span class="price">
-              <span style="font-family:'Foundo_Medium' !important;font-weight: bolder;" class="new-price product__priced">
+            <div class="price">
+              <div style="font-family:'Foundo_Medium' !important;font-weight: bolder;" class="new-price product__priced">
                 Serial №
-              </span>
-            </span>
+              </div>
+              <div class="product-info__value">{{ product.metafields.custom.serial_no }}</div>
+            </div>
           </div>
         </div>
       </a>
@@ -601,11 +608,14 @@ Usage:
 
         <div style="text-align: left;" class="product-item__price__holder">
           <div class="product-item__price" data-product-price="">
-            <span class="price">
-              <span style="font-family:'Foundo_Medium' !important;font-weight: bolder;" class="new-price product__priced">
+            <div class="price">
+              <div style="font-family:'Foundo_Medium' !important;font-weight: bolder;" class="new-price product__priced">
                 Info
-              </span>
-            </span>
+              </div>
+            </div>
+            <div class="product-info__wrapper line-with-4lines" >
+              {{product.description}}
+            </div>
           </div>
         </div>
       </a>

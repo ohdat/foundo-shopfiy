@@ -25118,4 +25118,13 @@ recipient-form .recipient-form-field-label {
   text-align: right;
 }
 
+.product-info__wrapper.line-with-4lines {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 4;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+
 /*! ============ Add any custom styles below this line ================== */

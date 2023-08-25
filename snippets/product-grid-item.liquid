@@ -483,13 +483,17 @@ Usage:
   <div class="product-information" data-product-information>
     <div class="product-item__info" id="productItemInfo">
       <div class="prduct-grid__serial-number">
-        <p>Serial No: </p>
+        <p>Serial №: </p>
         <div class="product-item__title">{{ product.metafields.custom.serial_no }}</div>
       </div>
       <div class="product-size-material" style="display: flex; justify-content: space-between;">
         <div class="prduct-grid__size">
           <p>Size:</p>
-          <div class="product-item__title">{{ product.metafields.custom.size }}</div>
+          {% assign product_size = product.metafields.custom.size %}
+          {% if product_size == 0 %}
+            {% assign product_size = '' %}
+          {% endif %}
+          <div class="product-item__title">{{ product_size }}</div>
         </div>
         <div class="prduct-grid__material">
           <p>Material:</p>
