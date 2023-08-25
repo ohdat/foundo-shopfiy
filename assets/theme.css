@@ -11813,7 +11813,7 @@ main-search .input-holder {
 .newsletter-form .input-group__field:-webkit-autofill:hover,
 .newsletter-form .input-group__field:-webkit-autofill:focus,
 .newsletter-form .input-group__field:-webkit-autofill:active {
-  -webkit-text-fill-color: var(--text-a75);
+  -webkit-text-fill-color: #00031E;
 }
 
 .newsletter-form .input-group__btn {
