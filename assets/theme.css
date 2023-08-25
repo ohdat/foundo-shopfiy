@@ -4635,7 +4635,7 @@ body * {
 }
 
 .wrapper--narrow {
-  max-width: 670px;
+  max-width: 466px;
   margin: 0 auto;
   padding-left: var(--outer);
   padding-right: var(--outer);
