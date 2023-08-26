@@ -25151,6 +25151,14 @@ recipient-form .recipient-form-field-label {
     font-weight: normal;
   }
 
+  .product__content #product__thumbsoldered {
+    display: none;
+  }
+
+  .product__content .product__block--divider:empty {
+    display: none;
+  }
+
   .product__gallery-photos {
     font-family: Foundo-Medium, Foundo;
     font-weight: 700;
