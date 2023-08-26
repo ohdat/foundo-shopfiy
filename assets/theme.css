@@ -25142,8 +25142,9 @@ recipient-form .recipient-form-field-label {
     padding: 0 8px;
     background: transparent;
     position: absolute;
-    bottom: 40px;
+    bottom: 20px;
     left: 20px;
+    pointer-events: none;
   }
 
   .product__gallery-label {
