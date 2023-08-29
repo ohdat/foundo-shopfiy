@@ -14150,7 +14150,7 @@ main-search .input-holder {
 }
 
 .product__images {
-  --gap: 15px;
+  --gap: 5px;
 }
 
 @media only screen and (max-width: 749px) {
