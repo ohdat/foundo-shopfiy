@@ -61,7 +61,7 @@
             endif
 
             capture block_style
-              echo '--desktop-width: 52%'
+              echo '--desktop-width: 50%'
             endcapture
           -%}
 
@@ -69,7 +69,7 @@
             {%- when 'linklist' -%}
               {%- assign linklist = linklists[block.settings.linklist] -%}
               {%- assign linklist_title = title | default: linklist.title -%}
-              <div class="footer__block footer__block--menu" style="--desktop-width: 16%;" {{ block.shopify_attributes }}>
+              <div class="footer__block footer__block--menu" style="--desktop-width: 16.6%;" {{ block.shopify_attributes }}>
                 {%- if linklist_title != blank -%}
                   <h2 class="h5 footer__block__title">{{ linklist_title | escape }}</h2>
                 {%- endif -%}
