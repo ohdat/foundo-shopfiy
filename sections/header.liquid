@@ -215,7 +215,11 @@
       </span>
 
       {%- if cart_icon_as_circle == false -%}
-        {%- render 'header-icon', filename: icon_string_cart -%}
+        <img
+          style="width:21px;height:21px;"
+          src="https://img.ohdat.io/foundo-website/assets/shopify/Slice282.png"
+          alt=""
+          srcset="">
       {%- endif -%}
     </span>
   </div>
@@ -567,8 +571,8 @@
 <script type="application/ld+json">
   {
   "@context": "http://schema.org",
-                                                "@type": "Organization",
-                                                "name": {{ shop.name | json }},
+                                                  "@type": "Organization",
+                                                  "name": {{ shop.name | json }},
   {% if logo %}
     "logo": {{ logo | image_url: logo.width | prepend: "https:" | json }},
   {% endif %}
@@ -594,14 +598,14 @@
   <script type="application/ld+json">
     {
     "@context": "http://schema.org",
-                                                                                                                                                                "@type": "WebSite",
-                                                                                                                                                                "name": {{ shop.name | json }},
+                                                                                                                                                                    "@type": "WebSite",
+                                                                                                                                                                    "name": {{ shop.name | json }},
     "potentialAction": {
-                                                                                                                                                                  "@type": "SearchAction",
-                                                                                                                                                                  "target": {{ potential_action_target | json }},
+                                                                                                                                                                      "@type": "SearchAction",
+                                                                                                                                                                      "target": {{ potential_action_target | json }},
     "query-input": "required name=search_term_string"
-                                                                                                                                                                },
-                                                                                                                                                                "url": {{ shop.url | append: page.url | json }}
+                                                                                                                                                                    },
+                                                                                                                                                                    "url": {{ shop.url | append: page.url | json }}
     }
   </script>
 {%- endif -%}
