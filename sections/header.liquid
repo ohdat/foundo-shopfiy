@@ -278,10 +278,15 @@
     {%- if shop.customer_accounts_enabled -%}
       <div class="header__mobile__button">
         <a href="{{ routes.account_url }}" class="navlink{% if show_icons == false %} navlink--toplevel{% endif %}">
-          {%- render 'icon-profile-circled' -%}
+          <img
+            style="width:21px;height:21px;"
+            src="https://img.ohdat.io/foundo-website/assets/shopify/Slice282.png"
+            alt=""
+            srcset="">
           <span class="{% if show_icons == false %}navtext{% else %}visually-hidden{% endif %}">{{ 'layout.header.account' | t }}</span>
         </a>
       </div>
+      <div class="navtexted" style="width: 1px;height: 10px;background: #D0D0D0;margin: 35px 15px 0 15px;"></div>
     {%- endif -%}
     <div class="header__mobile__button">
       <a
@@ -353,10 +358,15 @@
           href="{{ routes.account_url }}"
           class="navlink{% if show_icons == false %} navlink--toplevel{% endif %}"
           title="{{ 'customer.account.title' | t }}">
-          {%- render 'icon-profile-circled' -%}
+          <img
+            style="width:21px;height:21px;"
+            src="https://img.ohdat.io/foundo-website/assets/shopify/Slice282.png"
+            alt=""
+            srcset="">
           <span class="{% if show_icons == false %}navtext{% else %}visually-hidden{% endif %}">{{ 'layout.header.account' | t }}</span>
         </a>
       </div>
+      <div class="navtexted" style="width: 1px;height: 10px;background: #D0D0D0;margin: 35px 15px 0 15px;"></div>
     {%- endif -%}
 
 
@@ -557,8 +567,8 @@
 <script type="application/ld+json">
   {
   "@context": "http://schema.org",
-                                          "@type": "Organization",
-                                          "name": {{ shop.name | json }},
+                                              "@type": "Organization",
+                                              "name": {{ shop.name | json }},
   {% if logo %}
     "logo": {{ logo | image_url: logo.width | prepend: "https:" | json }},
   {% endif %}
@@ -584,14 +594,14 @@
   <script type="application/ld+json">
     {
     "@context": "http://schema.org",
-                                                                                                                                                    "@type": "WebSite",
-                                                                                                                                                    "name": {{ shop.name | json }},
+                                                                                                                                                            "@type": "WebSite",
+                                                                                                                                                            "name": {{ shop.name | json }},
     "potentialAction": {
-                                                                                                                                                      "@type": "SearchAction",
-                                                                                                                                                      "target": {{ potential_action_target | json }},
+                                                                                                                                                              "@type": "SearchAction",
+                                                                                                                                                              "target": {{ potential_action_target | json }},
     "query-input": "required name=search_term_string"
-                                                                                                                                                    },
-                                                                                                                                                    "url": {{ shop.url | append: page.url | json }}
+                                                                                                                                                            },
+                                                                                                                                                            "url": {{ shop.url | append: page.url | json }}
     }
   </script>
 {%- endif -%}
