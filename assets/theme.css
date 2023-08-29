@@ -97,7 +97,7 @@
 #footerBlocks a {
   font-family: 'Foundo_Medium' !important;
   color: #9b9b9b;
-  font-size: 12px !important;
+  font-size: 14px !important;
   font-weight: 100;
 }
 
@@ -11808,10 +11808,10 @@ main-search .input-holder {
 .newsletter-form .input-group__field {
   flex: 1 1 auto;
   border: 0;
-  line-height: 28px;
+  line-height: 37px;
   padding: 10px;
   color: #D0D0D0;
-  font-size: 12px;
+  font-size: 14px;
 }
 
 .newsletter-form .input-group__field::placeholder,
@@ -20985,7 +20985,7 @@ body.is-focused .subcollection__item:focus-within .image-overlay-bottom {
 }
 
 .footer__block__title {
-  font-size: 12px;
+  font-size: 14px;
   padding-bottom: 26px;
   padding-top: 20px;
   text-transform: uppercase;
@@ -21013,7 +21013,7 @@ body.is-focused .subcollection__item:focus-within .image-overlay-bottom {
 }
 
 .ahhh{
-  height: 28px;
+  height: 37px;
 }
 
 .footer__quicklinks li:last-child {
