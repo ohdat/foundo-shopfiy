@@ -319,19 +319,6 @@
         {%- render 'localization' section: section, class: 'header', uniq_id: 'header-desktop', short_country_name: true, position_reverse: true -%}
       </div>
     {%- endif -%}
-
-    {%- if shop.customer_accounts_enabled -%}
-      <div class="header__desktop__button">
-        <a
-          href="{{ routes.account_url }}"
-          class="navlink{% if show_icons == false %} navlink--toplevel{% endif %}"
-          title="{{ 'customer.account.title' | t }}">
-          {%- render 'icon-profile-circled' -%}
-          <span class="{% if show_icons == false %}navtext{% else %}visually-hidden{% endif %}">{{ 'layout.header.account' | t }}</span>
-        </a>
-      </div>
-    {%- endif -%}
-
     {%- if section.settings.enable_search -%}
       <div class="header__desktop__button">
         <header-search-popdown>
@@ -353,6 +340,19 @@
         </header-search-popdown>
       </div>
     {%- endif -%}
+    {%- if shop.customer_accounts_enabled -%}
+      <div class="header__desktop__button">
+        <a
+          href="{{ routes.account_url }}"
+          class="navlink{% if show_icons == false %} navlink--toplevel{% endif %}"
+          title="{{ 'customer.account.title' | t }}">
+          {%- render 'icon-profile-circled' -%}
+          <span class="{% if show_icons == false %}navtext{% else %}visually-hidden{% endif %}">{{ 'layout.header.account' | t }}</span>
+        </a>
+      </div>
+    {%- endif -%}
+
+
 
     <div class="header__desktop__button">
       <a
@@ -550,8 +550,8 @@
 <script type="application/ld+json">
   {
   "@context": "http://schema.org",
-          "@type": "Organization",
-          "name": {{ shop.name | json }},
+            "@type": "Organization",
+            "name": {{ shop.name | json }},
   {% if logo %}
     "logo": {{ logo | image_url: logo.width | prepend: "https:" | json }},
   {% endif %}
@@ -577,14 +577,14 @@
   <script type="application/ld+json">
     {
     "@context": "http://schema.org",
-                                                                                      "@type": "WebSite",
-                                                                                      "name": {{ shop.name | json }},
+                                                                                          "@type": "WebSite",
+                                                                                          "name": {{ shop.name | json }},
     "potentialAction": {
-                                                                                        "@type": "SearchAction",
-                                                                                        "target": {{ potential_action_target | json }},
+                                                                                            "@type": "SearchAction",
+                                                                                            "target": {{ potential_action_target | json }},
     "query-input": "required name=search_term_string"
-                                                                                      },
-                                                                                      "url": {{ shop.url | append: page.url | json }}
+                                                                                          },
+                                                                                          "url": {{ shop.url | append: page.url | json }}
     }
   </script>
 {%- endif -%}
