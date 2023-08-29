@@ -10,11 +10,6 @@
    or settings.tumblr_link != ''
    or settings.snapchat_link != ''
    or settings.feed_link != '' -%}
-	<ul class="social__links">
-	{% if settings.instagram_link != '' %}
-		<li>
-			<a href="{{ settings.instagram_link }}" class="social__link" title="{{ shop.name }} on Instagram" rel="noopener" target="_blank">{% render 'icon-instagram' %}<span class="visually-hidden">Instagram</span></a>
-    </li>
   {% endif %}
 	{% if settings.facebook_link != '' %}
 		<li>
