@@ -21000,6 +21000,10 @@ body.is-focused .subcollection__item:focus-within .image-overlay-bottom {
   max-width: 380px;
 }
 
+.dropdown__family .navlink .navtext{
+  color: #9B9B9B;
+}
+
 .footer__newsletter__wrapper .newsletter-form {
   --border: var(--COLOR-FOOTER-BORDER);
 }
