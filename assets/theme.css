@@ -11809,7 +11809,8 @@ main-search .input-holder {
 .newsletter-form .input-group__field {
   flex: 1 1 auto;
   border: 0;
-  padding: 1em 1em 1em 0;
+  line-height: 28px;
+  padding: 10px;
   color: #D0D0D0;
   font-size: 12px;
 }
@@ -20986,7 +20987,7 @@ body.is-focused .subcollection__item:focus-within .image-overlay-bottom {
 
 .footer__block__title {
   font-size: 12px;
-  padding-bottom: 25px;
+  padding-bottom: 26px;
   padding-top: 20px;
   text-transform: uppercase;
 }
@@ -21009,7 +21010,11 @@ body.is-focused .subcollection__item:focus-within .image-overlay-bottom {
 }
 
 .footer__quicklinks li {
-  margin: 0 0 20px;
+  margin: 0 0 13px;
+}
+
+.ahhh{
+  height: 28px;
 }
 
 .footer__quicklinks li:last-child {
