@@ -7948,8 +7948,8 @@ img.fit-cover {
 .header__desktop__upper,
 .header__desktop__lower,
 .header__mobile {
-  padding-left: var(--outer);
-  padding-right: var(--outer);
+  padding-left: 10px;
+  padding-right: 10px;
 }
 
 .header__desktop__upper,
@@ -7959,6 +7959,7 @@ img.fit-cover {
   justify-content: space-around;
   align-items: center;
   flex-wrap: nowrap;
+  height: 80px;
 }
 
 .header__desktop__bar__l,
