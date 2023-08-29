@@ -48,8 +48,7 @@
                 <summary class="accordion__title h6" data-collapsible-trigger>
                   {{ current_block.title }}
 
-                  {%- render 'icon-plus' -%}
-                  {%- render 'icon-minus' -%}
+
                 </summary>
 
                 <div class="accordion__body rte" data-collapsible-body>
@@ -57,10 +56,10 @@
                     {{ current_block.content }}
 
                     {%- if current_block.image != blank -%}
-                    <div class="accordion__image" style="display: flex; justify-content: center;">
-                      <img src="{{ current_block.image | img_url: 'master' }}" alt="Image">
-                    </div>
-                  {%- endif -%}
+                      <div class="accordion__image" style="display: flex; justify-content: center;">
+                        <img src="{{ current_block.image | img_url: 'master' }}" alt="Image">
+                      </div>
+                    {%- endif -%}
                   </div>
                 </div>
               </details>
@@ -178,8 +177,7 @@
             "id": "content",
             "label": "Answer",
             "default": "<p>Share details about your shipping policies, item returns, or customer service.<\/p>"
-          },
-          {
+          }, {
             "type": "image_picker",
             "id": "image",
             "label": "Image"
