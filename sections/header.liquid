@@ -253,11 +253,10 @@
                 src="https://img.ohdat.io/foundo-website/assets/shopify/you.png"
                 alt=""
                 srcset="">
-              <span class="navtexted" style="width: 1px;height: 10px;background: #D0D0D0;margin-left: 15px;"></span>
               {%- render 'icon-cancel' -%}
               <span class="{% if show_icons == false %}navtext{% else %}visually-hidden{% endif %}">{{ 'layout.header.search' | t }}</span>
             </summary>
-
+            <span class="navtexted" style="width: 1px;height: 10px;background: #D0D0D0;margin-left: 15px;"></span>
             {%- render 'header-search-popdown', unique: 'mobile' -%}
 
             <span class="drawer__underlay" data-popdown-underlay></span>
@@ -338,10 +337,9 @@
                 src="https://img.ohdat.io/foundo-website/assets/shopify/you.png"
                 alt=""
                 srcset="">
-              <span class="navtexted" style="width: 1px;height: 10px;background: #D0D0D0;margin-left: 15px;"></span>
               <span class="{% if show_icons == false %}navtext{% else %}visually-hidden{% endif %}">{{ 'layout.header.search' | t }}</span>
             </summary>
-
+            <span class="navtexted" style="width: 1px;height: 10px;background: #D0D0D0;margin-left: 15px;"></span>
             {%- render 'header-search-popdown', unique: 'desktop' -%}
 
             <span class="drawer__underlay" data-popdown-underlay></span>
@@ -559,8 +557,8 @@
 <script type="application/ld+json">
   {
   "@context": "http://schema.org",
-                    "@type": "Organization",
-                    "name": {{ shop.name | json }},
+                      "@type": "Organization",
+                      "name": {{ shop.name | json }},
   {% if logo %}
     "logo": {{ logo | image_url: logo.width | prepend: "https:" | json }},
   {% endif %}
@@ -586,14 +584,14 @@
   <script type="application/ld+json">
     {
     "@context": "http://schema.org",
-                                                                                                          "@type": "WebSite",
-                                                                                                          "name": {{ shop.name | json }},
+                                                                                                              "@type": "WebSite",
+                                                                                                              "name": {{ shop.name | json }},
     "potentialAction": {
-                                                                                                            "@type": "SearchAction",
-                                                                                                            "target": {{ potential_action_target | json }},
+                                                                                                                "@type": "SearchAction",
+                                                                                                                "target": {{ potential_action_target | json }},
     "query-input": "required name=search_term_string"
-                                                                                                          },
-                                                                                                          "url": {{ shop.url | append: page.url | json }}
+                                                                                                              },
+                                                                                                              "url": {{ shop.url | append: page.url | json }}
     }
   </script>
 {%- endif -%}
