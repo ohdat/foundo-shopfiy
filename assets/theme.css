@@ -20986,7 +20986,7 @@ body.is-focused .subcollection__item:focus-within .image-overlay-bottom {
 
 .footer__block__title {
   font-size: 12px;
-  padding-bottom: 10px;
+  padding-bottom: 25px;
   padding-top: 20px;
   text-transform: uppercase;
 }
@@ -21009,7 +21009,7 @@ body.is-focused .subcollection__item:focus-within .image-overlay-bottom {
 }
 
 .footer__quicklinks li {
-  margin: 0 0 15px;
+  margin: 0 0 20px;
 }
 
 .footer__quicklinks li:last-child {
