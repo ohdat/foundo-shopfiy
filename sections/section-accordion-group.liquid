@@ -48,16 +48,8 @@
                 <summary class="accordion__title h6" data-collapsible-trigger>
                   {{ current_block.title }}
 
-                  <img
-                    style="width:20px;height:20px;"
-                    src="https://img.ohdat.io/foundo-website/assets/shopify/Slice293.png"
-                    alt=""
-                    srcset="">
-                  <img
-                    style="width:20px;height:20px;"
-                    src="https://img.ohdat.io/foundo-website/assets/shopify/Slice293_1.png"
-                    alt=""
-                    srcset="">
+                  {%- render 'icon-plus' -%}
+                  {%- render 'icon-minus' -%}
                 </summary>
 
                 <div class="accordion__body rte" data-collapsible-body>
