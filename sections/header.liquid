@@ -159,7 +159,7 @@
       class="header__logo__link"
       href="{{ routes.root_url }}"
       {% if logo_width_value %}
-      style="width: {{ logo_width_value }};"
+      style="width: 15px;"
       {% endif %}>
       {%- if logo != blank -%}
         {%- liquid
@@ -216,7 +216,7 @@
 
       {%- if cart_icon_as_circle == false -%}
         <img
-          style="width:21px;height:21px;"
+          style="width:16px;height:16px;"
           src="https://img.ohdat.io/foundo-website/assets/shopify/Slice282.png"
           alt=""
           srcset="">
@@ -253,7 +253,7 @@
               data-popdown-toggle
               title="{{ 'general.search.search' | t }}">
               <img
-                style="width:21px;height:21px;"
+                style="width:16px;height:16px;"
                 src="https://img.ohdat.io/foundo-website/assets/shopify/Slice284.png"
                 alt=""
                 srcset="">
@@ -283,7 +283,7 @@
       <div class="header__mobile__button">
         <a href="{{ routes.account_url }}" class="navlink{% if show_icons == false %} navlink--toplevel{% endif %}">
           <img
-            style="width:21px;height:21px;"
+            style="width:16px;height:16px;"
             src="https://img.ohdat.io/foundo-website/assets/shopify/Slice283.png"
             alt=""
             srcset="">
@@ -342,7 +342,7 @@
               data-popdown-toggle
               title="{{ 'general.search.search' | t }}">
               <img
-                style="width:21px;height:21px;"
+                style="width:16px;height:16px;"
                 src="https://img.ohdat.io/foundo-website/assets/shopify/Slice284.png"
                 alt=""
                 srcset="">
@@ -363,7 +363,7 @@
           class="navlink{% if show_icons == false %} navlink--toplevel{% endif %}"
           title="{{ 'customer.account.title' | t }}">
           <img
-            style="width:21px;height:21px;"
+            style="width:16px;height:16px;"
             src="https://img.ohdat.io/foundo-website/assets/shopify/Slice283.png"
             alt=""
             srcset="">
@@ -571,8 +571,8 @@
 <script type="application/ld+json">
   {
   "@context": "http://schema.org",
-                                                  "@type": "Organization",
-                                                  "name": {{ shop.name | json }},
+                                                          "@type": "Organization",
+                                                          "name": {{ shop.name | json }},
   {% if logo %}
     "logo": {{ logo | image_url: logo.width | prepend: "https:" | json }},
   {% endif %}
@@ -598,14 +598,14 @@
   <script type="application/ld+json">
     {
     "@context": "http://schema.org",
-                                                                                                                                                                    "@type": "WebSite",
-                                                                                                                                                                    "name": {{ shop.name | json }},
+                                                                                                                                                                                  "@type": "WebSite",
+                                                                                                                                                                                  "name": {{ shop.name | json }},
     "potentialAction": {
-                                                                                                                                                                      "@type": "SearchAction",
-                                                                                                                                                                      "target": {{ potential_action_target | json }},
+                                                                                                                                                                                    "@type": "SearchAction",
+                                                                                                                                                                                    "target": {{ potential_action_target | json }},
     "query-input": "required name=search_term_string"
-                                                                                                                                                                    },
-                                                                                                                                                                    "url": {{ shop.url | append: page.url | json }}
+                                                                                                                                                                                  },
+                                                                                                                                                                                  "url": {{ shop.url | append: page.url | json }}
     }
   </script>
 {%- endif -%}
