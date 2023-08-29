@@ -98,6 +98,7 @@
   font-family: 'Foundo_Medium' !important;
   color: #9b9b9b;
   font-size: 12px !important;
+  font-weight: 100;
 }
 
 #cart-bar .cart-bar__info h4,
@@ -8113,7 +8114,7 @@ img.fit-cover {
 }
 
 .navtext {
-  font-size: 12px;
+  font-size: 12px ;
   display: block;
 }
 
