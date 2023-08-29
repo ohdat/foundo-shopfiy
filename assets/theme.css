@@ -20949,7 +20949,7 @@ body.is-focused .subcollection__item:focus-within .image-overlay-bottom {
 .footer__blocks {
   display: flex;
   flex-flow: column;
-  margin: 0 calc(var(--gutter) / -2) var(--gutter-offset);
+  margin: 0 calc(var(--gutter) / -1) var(--gutter-offset);
 }
 
 @media only screen and (min-width: 750px) {
@@ -20960,7 +20960,7 @@ body.is-focused .subcollection__item:focus-within .image-overlay-bottom {
 
 .footer__block {
   flex: 1 0 100%;
-  padding: 0 calc(var(--gutter) / 2);
+  padding: 0 calc(var(--gutter) / 3);
   margin-bottom: var(--gutter);
 }
 
