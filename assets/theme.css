@@ -20997,7 +20997,7 @@ body.is-focused .subcollection__item:focus-within .image-overlay-bottom {
 }
 
 .footer__newsletter__wrapper {
-  max-width: 350px;
+  max-width: 380px;
 }
 
 .footer__newsletter__wrapper .newsletter-form {
@@ -21680,7 +21680,7 @@ ul.tabs--center>li {
 
 .brick__product {
   display: block;
-  max-width: 380px;
+  max-width: 350px;
   margin: 0 auto;
 }
 
