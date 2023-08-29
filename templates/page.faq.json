@@ -30,7 +30,8 @@
           "type": "question",
           "settings": {
             "title": "How do I place an order on foundo.world?",
-            "content": "<p>To place your order, select the desired item(s) and the appropriate size\/materials and click \"Add to Cart\".   <\/p><p>Your Cart will appear on the right-hand side of the screen, and can be accessed elsewhere on the site by clicking the Cart icon in the top right-hand corner. Once you have made your selection, please click \"Proceed to Checkout\" to complete your delivery and payment details. When your order has been confirmed, you will receive an Order Confirmation email.<\/p>"
+            "content": "<p>To place your order, select the desired item(s) and the appropriate size\/materials and click \"Add to Cart\".   <\/p><p>Your Cart will appear on the right-hand side of the screen, and can be accessed elsewhere on the site by clicking the Cart icon in the top right-hand corner. Once you have made your selection, please click \"Proceed to Checkout\" to complete your delivery and payment details. When your order has been confirmed, you will receive an Order Confirmation email.<\/p>",
+            "image": "shopify:\/\/shop_images\/paclocknecklaceygf.jpg"
           }
         },
         "faq-1": {
