@@ -11799,8 +11799,9 @@ main-search .input-holder {
   display: flex;
   margin: 0;
   border: 0;
-  border-bottom: 1px solid var(--border);
+  border: 1px solid #d0d0d0;
   border-radius: 0;
+  padding: 0 10px;
 }
 
 .newsletter-form .input-group__field {
