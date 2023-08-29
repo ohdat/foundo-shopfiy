@@ -7953,6 +7953,21 @@ img.fit-cover {
   padding-right: 10px;
 }
 
+#footer_biao{
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+}
+
+#footer_biao .footer_biao_left,#footer_biao .footer_biao_left span{
+  font-size: 12px;
+  color: #00031E;
+  font-family: 'Foundo_Medium' !important;;
+  font-weight: 300;
+}
+
 .header__desktop__upper,
 .header__desktop__lower {
   display: flex;
