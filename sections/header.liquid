@@ -159,7 +159,7 @@
       class="header__logo__link"
       href="{{ routes.root_url }}"
       {% if logo_width_value %}
-      style="width: {{ logo_width_value }};"
+      style="width: 15px;"
       {% endif %}>
       {%- if logo != blank -%}
         {%- liquid
@@ -215,7 +215,11 @@
       </span>
 
       {%- if cart_icon_as_circle == false -%}
-        {%- render 'header-icon', filename: icon_string_cart -%}
+        <img
+          style="width:16px;height:16px;"
+          src="https://img.ohdat.io/foundo-website/assets/shopify/Slice282.png"
+          alt=""
+          srcset="">
       {%- endif -%}
     </span>
   </div>
@@ -248,17 +252,21 @@
               aria-haspopup="dialog"
               data-popdown-toggle
               title="{{ 'general.search.search' | t }}">
-              {%- render 'icon-search' -%}
+              <img
+                style="width:16px;height:16px;"
+                src="https://img.ohdat.io/foundo-website/assets/shopify/Slice284.png"
+                alt=""
+                srcset="">
               {%- render 'icon-cancel' -%}
               <span class="{% if show_icons == false %}navtext{% else %}visually-hidden{% endif %}">{{ 'layout.header.search' | t }}</span>
             </summary>
-
             {%- render 'header-search-popdown', unique: 'mobile' -%}
 
             <span class="drawer__underlay" data-popdown-underlay></span>
           </details>
         </header-search-popdown>
       </div>
+      <span class="navtexted" style="width: 1px;height: 10px;background: #D0D0D0;margin: 25px 10px 0 10px;"></span>
     {%- endif -%}
   </div>
 
@@ -274,10 +282,15 @@
     {%- if shop.customer_accounts_enabled -%}
       <div class="header__mobile__button">
         <a href="{{ routes.account_url }}" class="navlink{% if show_icons == false %} navlink--toplevel{% endif %}">
-          {%- render 'icon-profile-circled' -%}
+          <img
+            style="width:16px;height:16px;"
+            src="https://img.ohdat.io/foundo-website/assets/shopify/Slice283.png"
+            alt=""
+            srcset="">
           <span class="{% if show_icons == false %}navtext{% else %}visually-hidden{% endif %}">{{ 'layout.header.account' | t }}</span>
         </a>
       </div>
+      <div class="navtexted" style="width: 1px;height: 10px;background: #D0D0D0;margin: 25px 10px 0 10px;"></div>
     {%- endif -%}
     <div class="header__mobile__button">
       <a
@@ -319,19 +332,6 @@
         {%- render 'localization' section: section, class: 'header', uniq_id: 'header-desktop', short_country_name: true, position_reverse: true -%}
       </div>
     {%- endif -%}
-
-    {%- if shop.customer_accounts_enabled -%}
-      <div class="header__desktop__button">
-        <a
-          href="{{ routes.account_url }}"
-          class="navlink{% if show_icons == false %} navlink--toplevel{% endif %}"
-          title="{{ 'customer.account.title' | t }}">
-          {%- render 'icon-profile-circled' -%}
-          <span class="{% if show_icons == false %}navtext{% else %}visually-hidden{% endif %}">{{ 'layout.header.account' | t }}</span>
-        </a>
-      </div>
-    {%- endif -%}
-
     {%- if section.settings.enable_search -%}
       <div class="header__desktop__button">
         <header-search-popdown>
@@ -341,18 +341,39 @@
               aria-haspopup="dialog"
               data-popdown-toggle
               title="{{ 'general.search.search' | t }}">
-              {%- render 'icon-search' -%}
-              {%- render 'icon-cancel' -%}
+              <img
+                style="width:16px;height:16px;"
+                src="https://img.ohdat.io/foundo-website/assets/shopify/Slice284.png"
+                alt=""
+                srcset="">
               <span class="{% if show_icons == false %}navtext{% else %}visually-hidden{% endif %}">{{ 'layout.header.search' | t }}</span>
             </summary>
-
             {%- render 'header-search-popdown', unique: 'desktop' -%}
 
             <span class="drawer__underlay" data-popdown-underlay></span>
           </details>
         </header-search-popdown>
       </div>
+      <div class="navtexted" style="width: 1px;height: 10px;background: #D0D0D0;margin: 25px 10px 0 10px;"></div>
     {%- endif -%}
+    {%- if shop.customer_accounts_enabled -%}
+      <div class="header__desktop__button">
+        <a
+          href="{{ routes.account_url }}"
+          class="navlink{% if show_icons == false %} navlink--toplevel{% endif %}"
+          title="{{ 'customer.account.title' | t }}">
+          <img
+            style="width:16px;height:16px;"
+            src="https://img.ohdat.io/foundo-website/assets/shopify/Slice283.png"
+            alt=""
+            srcset="">
+          <span class="{% if show_icons == false %}navtext{% else %}visually-hidden{% endif %}">{{ 'layout.header.account' | t }}</span>
+        </a>
+      </div>
+      <div class="navtexted" style="width: 1px;height: 10px;background: #D0D0D0;margin: 25px 10px 0 10px;"></div>
+    {%- endif -%}
+
+
 
     <div class="header__desktop__button">
       <a
@@ -550,8 +571,8 @@
 <script type="application/ld+json">
   {
   "@context": "http://schema.org",
-          "@type": "Organization",
-          "name": {{ shop.name | json }},
+                                                                "@type": "Organization",
+                                                                "name": {{ shop.name | json }},
   {% if logo %}
     "logo": {{ logo | image_url: logo.width | prepend: "https:" | json }},
   {% endif %}
@@ -577,14 +598,14 @@
   <script type="application/ld+json">
     {
     "@context": "http://schema.org",
-                                                                                      "@type": "WebSite",
-                                                                                      "name": {{ shop.name | json }},
+                                                                                                                                                                                              "@type": "WebSite",
+                                                                                                                                                                                              "name": {{ shop.name | json }},
     "potentialAction": {
-                                                                                        "@type": "SearchAction",
-                                                                                        "target": {{ potential_action_target | json }},
+                                                                                                                                                                                                "@type": "SearchAction",
+                                                                                                                                                                                                "target": {{ potential_action_target | json }},
     "query-input": "required name=search_term_string"
-                                                                                      },
-                                                                                      "url": {{ shop.url | append: page.url | json }}
+                                                                                                                                                                                              },
+                                                                                                                                                                                              "url": {{ shop.url | append: page.url | json }}
     }
   </script>
 {%- endif -%}

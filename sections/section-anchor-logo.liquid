@@ -1,19 +1,23 @@
 <!-- /sections/section-anchor-logo.liquid -->
 
 {%- style -%}
-  #AnchorLogo--{{ section.id }} {
-    --PT: {{ section.settings.padding_top }}px;
-    --PB: {{ section.settings.padding_bottom }}px;
+  #AnchorLogo--{{ section.id }}{
+    --PT: {{ section.settings.padding_top }}
+    px;
+    --PB: {{ section.settings.padding_bottom }}
+    px;
   }
 {%- endstyle -%}
 
-<section id="AnchorLogo--{{ section.id }}"
+<section
+  id="AnchorLogo--{{ section.id }}"
   class="anchor-logo section-padding"
   data-section-id="{{ section.id }}"
-  data-section-type="anchor-logo"
->
+  data-section-type="anchor-logo">
   <div class="wrapper--full-padded">
-    <a href="{{ routes.root_url }}" class="anchor-logo__link"
+    <a
+      href="{{ routes.root_url }}"
+      class="anchor-logo__link"
       data-aos="hero"
       data-aos-duration="500"
       data-aos-easing="ease-out-quart">
@@ -24,50 +28,54 @@
       {%- endif -%}
     </a>
   </div>
+  <div id="footer_biao">
+    <div class="footer_biao_left">SHIP TO: USA ($)</div>
+    <div class="footer_biao_left">
+      <span>LEGAL & COOKIES</span>
+      <span>© FOUNDO 2023</span>
+    </div>
+  </div>
 </section>
 
 {% schema %}
-{
-  "name": "Logo",
-  "settings": [
-    {
-      "type": "image_picker",
-      "id": "logo",
-      "label": "Image"
-    },
-    {
-      "type": "header",
-      "content": "Section padding"
-    },
-    {
-      "type": "range",
-      "id": "padding_top",
-      "min": 0,
-      "max": 100,
-      "step": 1,
-      "unit": "px",
-      "label": "Padding top",
-      "default": 30
-    },
-    {
-      "type": "range",
-      "id": "padding_bottom",
-      "min": 0,
-      "max": 100,
-      "step": 1,
-      "unit": "px",
-      "label": "Padding bottom",
-      "default": 30
+  {
+    "name": "Logo",
+    "settings": [
+      {
+        "type": "image_picker",
+        "id": "logo",
+        "label": "Image"
+      }, {
+        "type": "header",
+        "content": "Section padding"
+      }, {
+        "type": "range",
+        "id": "padding_top",
+        "min": 0,
+        "max": 100,
+        "step": 1,
+        "unit": "px",
+        "label": "Padding top",
+        "default": 30
+      }, {
+        "type": "range",
+        "id": "padding_bottom",
+        "min": 0,
+        "max": 100,
+        "step": 1,
+        "unit": "px",
+        "label": "Padding bottom",
+        "default": 30
+      }
+    ],
+    "presets": [
+      {
+        "name": "Logo",
+        "category": "Image"
+      }
+    ],
+    "enabled_on": {
+      "groups": ["footer"]
     }
-  ],
-  "presets": [
-    {
-      "name": "Logo",
-      "category": "Image"
-    }
-  ],
-  "enabled_on": {
-    "groups": ["footer"]
   }
-}
 {% endschema %}

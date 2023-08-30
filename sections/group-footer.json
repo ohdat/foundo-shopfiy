@@ -9,7 +9,7 @@
           "type": "newsletter",
           "settings": {
             "title": "Newsletter",
-            "text": "<p><a href=\"\/pages\/contact\" title=\"Contact us\">Sign up Newsletter<\/a> for first access to latest collections, campaigns and videos.<\/p>",
+            "text": "<p>Sgin up for the latest news from the world of FOUNDO.<\/p>",
             "show_name": false,
             "button_text": "",
             "show_arrow": false,
