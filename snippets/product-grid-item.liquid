@@ -453,6 +453,10 @@ Usage:
   {% assign collection_handle = metafield_value %}
   {% assign collection_object = collections[collection_handle] %}
 
+  {% assign metafield_collection_value = product.metafields.custom.collection %}
+  {% assign metafield_collection_handle = metafield_collection_value %}
+  {% assign metafield_collection_object = collections[metafield_collection_handle] %}
+
   <nav class="breadcrumbs breadcrumbs--no-padding product__breadcrumbs" style="margin: 8px;">
     <a href="{{ collection_object.url }}">{{ collection_object.title }}</a>
     <div>{{cur_category}}</div>
@@ -512,7 +516,12 @@ Usage:
           </div>
         {%- endif -%}
 
-        <p class="product-item__title">{{ product.title | strip_html | escape }}</p>
+        <div style="display: flex; gap: 8px;" class="product-item__title-combined">
+          <p class="product-item__title product-item__title-collection">{{ collection_object.title }}</p>
+          <p class="product-item__title product-item__title-name">{{ product.metafields.custom.product_name }}</p>
+          <p class="product-item__title product-item__title-category">{{ metafield_collection_object.title }}</p>
+        </div>
+        {% comment %} <p class="product-item__title">{{ product.title | strip_html | escape }}</p> {% endcomment %}
         <div class="product-item__price__holder">
           <div class="product-item__price" data-product-price="">
             <span class="price">
@@ -600,10 +609,6 @@ Usage:
           {%- endif -%}
         </div>
       {%- endif -%}     
-
-      {% assign metafield_collection_value = product.metafields.custom.collection %}
-      {% assign metafield_collection_handle = metafield_collection_value %}
-      {% assign metafield_collection_object = collections[metafield_collection_handle] %}
 
       {%- if collection.metafields.custom.is_discover_collection_show -%}
         <nav class="discover-the-collection__container breadcrumbs breadcrumbs--no-padding product__breadcrumbs" style="margin: 8px 0;">
