@@ -16231,6 +16231,10 @@ body.has-line-design.grid-compact .reviews__grid {
     display: none !important;
   }
 
+  .grid-item.product-item:hover .product-link .product-item__price__holder  {
+    display: none !important;
+  }
+
   .product-item__info {
     min-height: 200px;
   }
