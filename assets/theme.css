@@ -8068,7 +8068,8 @@ img.fit-cover {
   font-style: var(--FONT-STYLE-NAV);
   font-weight: var(--FONT-WEIGHT-NAV);
   position: relative;
-  padding: 15px 0 15px 10px;
+  padding: 15px 0 14px 10px;
+  margin-left: 5px;
   font-weight: var(--FONT-WEIGHT-NAV-BOLD);
   z-index: 6;
 }
@@ -8077,7 +8078,7 @@ img.fit-cover {
   content: '';
   position: absolute;
   left: 15px;
-  right: 0px;
+  right: 15px;
   bottom: 0;
   height: 1px;
   background-color: var(--link-hover);
