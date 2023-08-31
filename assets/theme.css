@@ -8077,7 +8077,7 @@ img.fit-cover {
   content: '';
   position: absolute;
   left: 15px;
-  right: 15px;
+  right: 0px;
   bottom: 0;
   height: 1px;
   background-color: var(--link-hover);
