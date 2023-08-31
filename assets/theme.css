@@ -8068,8 +8068,8 @@ img.fit-cover {
   font-style: var(--FONT-STYLE-NAV);
   font-weight: var(--FONT-WEIGHT-NAV);
   position: relative;
-  padding: 15px 0 14px 10px;
-  margin-left: 5px;
+  padding: 15px 0 14px 8px;
+  margin-left: 58px;
   font-weight: var(--FONT-WEIGHT-NAV-BOLD);
   z-index: 6;
 }
