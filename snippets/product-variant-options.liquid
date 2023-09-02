@@ -216,7 +216,7 @@
                       {%- capture input_id -%}{{ uniq_id }}-{{ option.name | handle }}-{{ value | strip_html | escape }}{%- endcapture -%}
 
                       {%- if is_swatch_option -%}
-                        <span class="swatch__button swatch__button--{{ settings.swatch_style }}" data-tooltip="{{ value | escape_once | capitalize }}">
+                        <span class="swatch__button colors__variants swatch__button--{{ settings.swatch_style }}" data-tooltip="{{ value | escape_once | capitalize }}">
                           <input type="radio"
                               form="{{ product_form_id }}"
                               data-single-option-selector
@@ -225,7 +225,7 @@
                               value="{{ value | escape_once }}"
                               id="{{ input_id }}"
                               {% if value == current_value %}checked{% endif %}>
-                          <label for="{{ input_id }}" data-swatch="{{ value | escape_once }}">
+                          <label style="border-radius: 50%;" for="{{ input_id }}" data-swatch="{{ value | escape_once }}">
                             <span class="visually-hidden">{{ value | escape_once }}</span>
                           </label>
                         </span>

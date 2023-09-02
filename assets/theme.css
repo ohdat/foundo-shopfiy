@@ -13187,6 +13187,7 @@ main-search .input-holder {
   opacity: 1;
   transform: translateZ(0);
   overflow: hidden;
+  border-radius: 50%;
 }
 
 .swatch__button .sibling__link--sold-out:before,
