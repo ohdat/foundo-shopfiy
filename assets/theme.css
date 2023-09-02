@@ -7250,6 +7250,29 @@ img.fit-cover {
   .drawer__inner {
     max-width: var(--DRAWER-MAX-WIDTH);
   }
+  
+  .drawer--cart .drawer__inner .drawer__items {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .drawer--cart .drawer__inner .drawer__items .cart__item {
+    width: calc(50% - 10px); /* 考虑到左右间隔的宽度 */
+    padding: 0;
+    height: 208px;
+    display: flex;
+  }
+  .drawer--cart .drawer__inner .drawer__items .cart__item img {
+    height: 208px;
+    width: 160px;
+  }
+  .cart__item__image{
+    width: 160px;
+  }
+  .cart__item__content{
+    flex: 1;
+    padding: 10px;
+  }
 }
 
 @media only screen and (max-width: 749px) {

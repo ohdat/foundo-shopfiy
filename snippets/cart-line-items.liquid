@@ -133,7 +133,7 @@
           </a>
         </div>
 
-        <p class="cart__price">
+        <p class="cart__price" style="font-weight: normal;">
           {%- liquid
             assign discounted = false
             assign sale = false
@@ -192,7 +192,9 @@
           {%- endif -%}
         </p>
 
-        <div class="cart__quantity" data-quantity-holder>
+        <a style="color: #000; text-decoration: underline; margin: 10px 0;" href="{{ line_item.url }}">View Details</a>
+
+        <div class="cart__quantity" style="margin-top: 12px" data-quantity-holder>
           <button
             class="cart__quantity-minus"
             type="button"
@@ -228,6 +230,7 @@
             {%- render 'icon-plus' -%}
           </button>
         </div>
+
       </div>
 
       {%- if line_item.original_price > line_item.final_price -%}
