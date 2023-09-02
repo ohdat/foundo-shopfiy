@@ -232,8 +232,9 @@
 
                       {%- else -%}
                         {% comment %} radio button {% endcomment %}
-                        
+
                         <select
+                          style="border: none;"
                           form="{{ product_form_id }}"
                           data-single-option-selector
                           data-index="option{{ option.position }}"
