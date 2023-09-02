@@ -232,7 +232,25 @@
 
                       {%- else -%}
                         {% comment %} radio button {% endcomment %}
-                        <span class="radio__button">
+                        
+                        <select
+                          form="{{ product_form_id }}"
+                          data-single-option-selector
+                          data-index="option{{ option.position }}"
+                          name="options[{{ option.name | escape_once }}]-{{ uniq_id }}"
+                          id="{{ input_id }}"
+                        >
+                          {%- for value in option.values -%}
+                            <option
+                              value="{{ value | escape_once }}"
+                              {% if value == current_value %}selected{% endif %}
+                            >
+                              {{ value | escape_once }}
+                            </option>
+                          {%- endfor -%}
+                        </select>
+
+                        {% comment %} <span class="radio__button">
                           <input
                             type="radio"
                             form="{{ product_form_id }}"
@@ -244,7 +262,7 @@
                           <label for="{{ input_id }}">
                             <span>{{ value | escape_once }}</span>
                           </label>
-                        </span>
+                        </span> {% endcomment %}
                       {%- endif -%}
                     {%- endfor -%}
                   </div>
