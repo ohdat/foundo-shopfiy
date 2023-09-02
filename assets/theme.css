@@ -8068,7 +8068,7 @@ img.fit-cover {
   font-style: var(--FONT-STYLE-NAV);
   font-weight: var(--FONT-WEIGHT-NAV);
   position: relative;
-  padding: 15px 0 15px 15px;
+  margin-left: 10px;
   font-weight: var(--FONT-WEIGHT-NAV-BOLD);
   z-index: 6;
 }
@@ -8164,7 +8164,7 @@ img.fit-cover {
 }
 
 .header__desktop__upper--reverse .header__menu {
-  margin-left: -15px;
+  margin-left: -5px;
 }
 
 /* ================ Header Social Links ================ */
@@ -11816,7 +11816,7 @@ main-search .input-holder {
   display: flex;
   margin: 0;
   border: 0;
-  border: 1px solid #d0d0d0;
+  border: 1px solid #ededed;
   border-radius: 0;
 }
 
