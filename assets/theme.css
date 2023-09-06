@@ -4374,8 +4374,8 @@ body.has-line-design.grid-compact .grid-item {
 }
 
 .product__thumb__link_list{
-  width:225px !important;
-  height:300px !important;
+  width:118px !important;
+  height:156px !important;
   margin-right: 2px !important;
   margin-bottom: 2px !important;
 }
@@ -16260,7 +16260,7 @@ body.has-line-design.grid-compact .reviews__grid {
   }
 
   .product-item__info {
-    min-height: 200px;
+    /* min-height: 200px; */
   }
 
   .discover-the-collection__container  {
