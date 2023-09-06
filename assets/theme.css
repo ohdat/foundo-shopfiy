@@ -25174,9 +25174,18 @@ recipient-form .recipient-form-field-label {
 .product-info__wrapper.line-with-4lines {
   display: -webkit-box;
   -webkit-box-orient: vertical;
-  -webkit-line-clamp: 6;
+  -webkit-line-clamp: 4;
   overflow: hidden;
   text-overflow: ellipsis;
+
+  color: var(--Dark-Grey, #9B9B9B);
+  leading-trim: both;
+  text-edge: cap;
+  font-size: 11px;
+  font-style: normal;
+  font-weight: 120;
+  line-height: 120%; /* 13.2px */
+  letter-spacing: 0.088px;
 }
 
 @media only screen and (max-width: 749px) {
