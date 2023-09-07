@@ -16269,6 +16269,14 @@ body.has-line-design.grid-compact .reviews__grid {
   .product-item__info:hover .discover-the-collection__container {
     display: block;
   }
+  .product-grid_list .informationclass.product-information {
+    max-height: 166px;
+    overflow: hidden;
+  }
+
+  .product-grid_list > a.product-link {
+    min-width: 360px;
+  }
 }
 
 @media only screen and (min-width: 750px) {
