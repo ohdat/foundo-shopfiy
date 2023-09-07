@@ -4410,7 +4410,7 @@ body.has-line-design.grid-compact .grid-item {
 
   #product__thumbsoldered{
     width: 100%;
-    height: 58px;
+    /* height: 58px; */
     position: absolute !important;
     left: 18px;
     top: 550px;
@@ -16276,6 +16276,34 @@ body.has-line-design.grid-compact .reviews__grid {
 
   .product-grid_list > a.product-link {
     min-width: 360px;
+  }
+
+  #product__thumbsoldered .product__thumb__link .image-wrapper img {
+    width: 58px;
+    height: 75px;
+  }
+  #product__thumbsoldered {
+    width: 58px;
+    gap: 2px;
+  }
+
+  #product__thumbsoldered  .product__thumb__link {
+    display: flex;
+    flex-flow: row wrap;
+    /* justify-content: center;
+    align-items: center; */
+    width: 58px;
+    height: 75px;
+    font-size: 0;
+    line-height: 0;
+    text-align: center;
+    background-color: var(--bg);
+    filter: brightness(var(--filter-bg));
+  }
+
+  #product__thumbsoldered .image-wrapper {
+    width: 58px;
+    height: 75px;
   }
 }
 
