@@ -16208,6 +16208,21 @@ body.has-line-design.grid-compact .reviews__grid {
     text-transform: uppercase;
   }
 
+  .product__content .product__description * {
+    color: var(--Dark-Grey, #9B9B9B);
+    leading-trim: both;
+    text-edge: cap;
+
+    /* new/d/small-cap-gr-102 */
+    font-family: Foundo;
+    font-size: 9px!important;
+    font-style: normal;
+    font-weight: 100!important;
+    line-height: 120%; /* 10.8px */
+    letter-spacing: 0.072px;
+
+  }
+
   .collection-products .collection__sidebar__slider.expanded {
     position: absolute;
     top: 0;
