@@ -122,9 +122,13 @@
   color: #00031e;
 }
 
-#formWidth .product__submit__item button {
+#formWidth .product__submit__item button[type='submit'] {
   font-family: 'Foundo_Medium' !important;
   font-weight: bolder;
+  border: 0.3px solid var(--Off-Black, #00031E);
+  background: var(--Off-Black, #00031E);
+}
+#formWidth .product__submit__item button[type='submit'] span {
   color: #fff;
 }
 
@@ -16193,6 +16197,17 @@ body.has-line-design.grid-compact .reviews__grid {
   .js .reviews__grid[data-slider]:not(.flickity-enabled) {
     display: flex;
     overflow-x: auto;
+  }
+
+  .product__content .product__title {
+    color: var(--Off-Black, #00031E);
+    leading-trim: both;
+    text-edge: cap;
+    font-family: Foundo Headline;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 100;
+    text-transform: uppercase;
   }
 
   .collection-products .collection__sidebar__slider.expanded {
