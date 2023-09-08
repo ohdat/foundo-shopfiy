@@ -15774,10 +15774,8 @@ input[type='radio'].variant-input {
   width: 100%;
 }
 
-.product__submit__item--inline {
-  display: grid;
-  gap: 10px;
-  grid-template-columns: minmax(0, 7.5rem) minmax(0, 100%);
+.product__submit__item--inline div.select-popout{
+  margin-bottom: 20px;
 }
 
 /* Make Quantity picker height to always match the Add to cart button height */
