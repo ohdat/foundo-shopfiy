@@ -35,11 +35,27 @@
             "padding_bottom": 16
           }
         },
+        "e2e4169c-832a-43ed-9bee-1762880a1e7b": {
+          "type": "text",
+          "settings": {
+            "title": "Carat total weight | 1.16g",
+            "text": "<p>18k White Gold | 23-f1nb-m01<\/p>",
+            "padding_bottom": 16
+          }
+        },
         "variants": {
           "type": "variants",
           "settings": {
             "info_page": "",
             "subscriptions_enable_selectors": false,
+            "padding_bottom": 16
+          }
+        },
+        "ac69c0c5-7482-4dd4-8579-2c207de24c09": {
+          "type": "text",
+          "settings": {
+            "title": "We accept crypto*",
+            "text": "",
             "padding_bottom": 16
           }
         },
@@ -70,15 +86,15 @@
           "type": "tab_richtext",
           "settings": {
             "show_read_more": true,
-            "style": "inline",
-            "title_1": "Product Details",
-            "raw_content_1": "<ul><li>White Gold 18k (750\/1000)<\/li><li>54 Diamonds, 1.98 ct<\/li><li>Length: 12.1mm<\/li><li>Width: 15.7mm<\/li><li>Sold by unit<\/li><\/ul><p>Each article from FOUNDO jewelry is unique. Caratage and metal weight information is given for information only and may vary slightly from one piece to another.<\/p>",
-            "title_2": "Care",
-            "raw_content_2": "<p>You can always send the product back for maintenance with 1 Year FOUNDO Care. The Diamond VIP enjoys the lifetime FOUNDO Care.<\/p>",
-            "title_3": "",
-            "raw_content_3": "",
-            "title_4": "",
-            "raw_content_4": "",
+            "style": "accordions",
+            "title_1": "DETAILS",
+            "raw_content_1": "<p>Pac Lock Necklace is part of the Make The Cut collection, and offers a special FOUNDO quartered spherical shape. The pendant in 18k white gold captivates with 47 round brilliant diamonds in D-F color. This unisex necklace can be perfectly matched with other articles from these collections.<br\/><br\/>White Gold 18k (750\/1000)<br\/>47 Diamonds, ~1.12 ct, D-F color<br\/>Pendant size: ~10.3mm*14.9mm<br\/>Length: ~55cm with adjustable link at any length<br\/><\/p>",
+            "title_2": "SHIPPING AND PACKAGING",
+            "raw_content_2": "<p>Please allow up to 5-7 business days for your order to be processed and shipped. <\/p><p>All purchases made on the signature FOUNDO grey box.<\/p>",
+            "title_3": "FOUNDO CARE",
+            "raw_content_3": "<p>You can always send the product back for maintenance with 1 Year FOUNDO Care. The Diamond VIP enjoys the lifetime FOUNDO Care.<\/p>",
+            "title_4": "CONTACT US",
+            "raw_content_4": "<p>Our Client Advisors are available Monday through Saturday, 9:00AM - 12:00AM (EST) and Sunday, 9:00AM - 10:00PM (EST), excluding holidays. <\/p><p>+ 33 289398223123 <\/p><p>care@foundo.world<\/p>",
             "title_5": "",
             "raw_content_5": "",
             "padding_bottom": 4
@@ -111,6 +127,14 @@
             "width": "full",
             "padding_bottom": 16
           }
+        },
+        "8a484d34-34e1-44e0-b689-b337644f7428": {
+          "type": "divider",
+          "settings": {
+            "show_line": true,
+            "padding_top": 20,
+            "padding_bottom": 20
+          }
         }
       },
       "block_order": [
@@ -118,14 +142,17 @@
         "746e13dd-6677-4694-a7f2-9c71eddf6b16",
         "title",
         "price",
+        "e2e4169c-832a-43ed-9bee-1762880a1e7b",
         "variants",
+        "ac69c0c5-7482-4dd4-8579-2c207de24c09",
         "pickup",
         "bfcc7f34-20f6-475d-ae27-a17abfd28632",
         "buttons",
         "tabs",
         "623d4d63-00de-4b98-9db1-6bb5b249efb3",
         "60a10c16-0339-43fd-8e5e-d9c13887363e",
-        "icon_2"
+        "icon_2",
+        "8a484d34-34e1-44e0-b689-b337644f7428"
       ],
       "settings": {
         "product_sticky_enable": true,
@@ -152,12 +179,11 @@
     },
     "3f3a0656-e285-40be-8229-0b9bd1b04ae9": {
       "type": "section-sidebar",
-      "disabled": true,
       "blocks": {
         "template--19109415584075__3f3a0656-e285-40be-8229-0b9bd1b04ae9-1687328847ed55135a-0": {
           "type": "header",
           "settings": {
-            "title": "Description"
+            "title": "DETAILS"
           }
         },
         "01cbaf78-eff9-4752-b9b7-35c378090623": {
@@ -226,6 +252,7 @@
         "template--19109415584075__3f3a0656-e285-40be-8229-0b9bd1b04ae9-1687328847ed55135a-5",
         "template--19109415584075__3f3a0656-e285-40be-8229-0b9bd1b04ae9-1687328847ed55135a-6"
       ],
+      "disabled": true,
       "settings": {
         "width": "wrapper--full-padded",
         "bg_color": "",
@@ -236,7 +263,6 @@
     },
     "263a761e-c376-48ed-b3bf-6433597feae8": {
       "type": "section-text-row",
-      "disabled": true,
       "blocks": {
         "template--19109415584075__263a761e-c376-48ed-b3bf-6433597feae8-16873275323f300bc9-0": {
           "type": "icon",
@@ -293,6 +319,7 @@
         "template--19109415584075__263a761e-c376-48ed-b3bf-6433597feae8-16873275323f300bc9-2",
         "f906c816-f4c8-49b8-82d6-f3b16e2a1a84"
       ],
+      "disabled": true,
       "settings": {
         "title": "",
         "heading_size": 6,
@@ -309,7 +336,6 @@
     },
     "shipping": {
       "type": "section-accordion",
-      "disabled": true,
       "blocks": {
         "shipping-0": {
           "type": "icon",
@@ -347,6 +373,7 @@
         "shipping-1",
         "shipping-2"
       ],
+      "disabled": true,
       "settings": {
         "title": "FOUNDO Care",
         "bg_color": "",
@@ -359,7 +386,6 @@
     },
     "05278b61-11b8-4a55-93c1-182701a2adac": {
       "type": "section-accordion",
-      "disabled": true,
       "blocks": {
         "0201778f-b761-4aaa-ade6-924a00e2023c": {
           "type": "icon",
@@ -397,6 +423,7 @@
         "11085cfb-2f79-4858-aad2-8f91f2730af4",
         "ef19e5c6-6830-49e5-8623-0b7197aa1cc4"
       ],
+      "disabled": true,
       "settings": {
         "title": "Shipping",
         "bg_color": "",
@@ -409,7 +436,6 @@
     },
     "faq": {
       "type": "section-accordion",
-      "disabled": true,
       "blocks": {
         "faq-1": {
           "type": "text",
@@ -457,6 +483,7 @@
         "faq-4",
         "eb47f5cd-7ae8-4309-ba2b-0621cb546ffc"
       ],
+      "disabled": true,
       "settings": {
         "title": "FAQ",
         "bg_color": "",
@@ -479,7 +506,6 @@
     },
     "related": {
       "type": "related",
-      "disabled": true,
       "blocks": {
         "related": {
           "type": "related",
@@ -500,6 +526,7 @@
         "related",
         "recent"
       ],
+      "disabled": true,
       "settings": {
         "enable_tabs": true,
         "bg_color": "",
@@ -511,7 +538,6 @@
     },
     "ca54cc1b-cc42-49f0-8900-2a68d0e46252": {
       "type": "section-double",
-      "disabled": true,
       "blocks": {
         "template--19109415584075__ca54cc1b-cc42-49f0-8900-2a68d0e46252-1687333535c3bbb1df-0": {
           "type": "heading",
@@ -545,6 +571,7 @@
         "template--19109415584075__ca54cc1b-cc42-49f0-8900-2a68d0e46252-1687333535c3bbb1df-1",
         "template--19109415584075__ca54cc1b-cc42-49f0-8900-2a68d0e46252-1687333535c3bbb1df-2"
       ],
+      "disabled": true,
       "settings": {
         "layout": "",
         "height": "screen-height-full",
@@ -557,6 +584,29 @@
         "color": "",
         "padding_top": 0,
         "padding_bottom": 0
+      }
+    },
+    "b3561306-e746-459f-8fb8-acd0bd92f08d": {
+      "type": "section-collection2",
+      "settings": {
+        "heading": "STYLED WITH",
+        "description": "",
+        "layout": "inline",
+        "link_text": "Shop Now",
+        "link_url": "",
+        "button_type": "btn--primary",
+        "button_size": "",
+        "button_style": "btn--solid",
+        "show_arrow": false,
+        "featured_collection": "the-cross",
+        "style": "grid",
+        "grid": 2,
+        "rows": 1,
+        "layout_mobile": "carousel",
+        "bg_color": "",
+        "color": "",
+        "padding_top": 50,
+        "padding_bottom": 50
       }
     },
     "43dbcd02-3fe3-4f1a-a6e5-db99e8bf154a": {
@@ -610,7 +660,7 @@
     "2e42e7a4-66a5-45ff-b7a3-107e94aa293d": {
       "type": "section-collection",
       "settings": {
-        "heading": "",
+        "heading": "PART OF",
         "description": "",
         "layout": "inline",
         "link_text": "",
@@ -622,30 +672,7 @@
         "featured_collection": "the-cross",
         "style": "grid",
         "grid": 4,
-        "rows": 3,
-        "layout_mobile": "carousel",
-        "bg_color": "",
-        "color": "",
-        "padding_top": 50,
-        "padding_bottom": 50
-      }
-    },
-    "b3561306-e746-459f-8fb8-acd0bd92f08d": {
-      "type": "section-collection2",
-      "settings": {
-        "heading": "Best Sellers",
-        "description": "",
-        "layout": "inline",
-        "link_text": "Shop Now",
-        "link_url": "",
-        "button_type": "btn--primary",
-        "button_size": "",
-        "button_style": "btn--solid",
-        "show_arrow": false,
-        "featured_collection": "the-cross",
-        "style": "grid",
-        "grid": 4,
-        "rows": 3,
+        "rows": 2,
         "layout_mobile": "carousel",
         "bg_color": "",
         "color": "",
@@ -665,8 +692,8 @@
     "reviews",
     "related",
     "ca54cc1b-cc42-49f0-8900-2a68d0e46252",
+    "b3561306-e746-459f-8fb8-acd0bd92f08d",
     "43dbcd02-3fe3-4f1a-a6e5-db99e8bf154a",
-    "2e42e7a4-66a5-45ff-b7a3-107e94aa293d",
-    "b3561306-e746-459f-8fb8-acd0bd92f08d"
+    "2e42e7a4-66a5-45ff-b7a3-107e94aa293d"
   ]
 }

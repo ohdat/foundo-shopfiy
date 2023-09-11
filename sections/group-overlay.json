@@ -1,1 +1,27 @@
-{"type":"aside","name":"Overlay","sections":{"popups":{"type":"popups","blocks":{"popups-0":{"type":"cookie","settings":{"position":"popup-cookies--bottom","show_cookies_popup":true}}},"block_order":["popups-0"],"settings":{}}},"order":["popups"]}
+{
+  "type": "aside",
+  "name": "Overlay",
+  "sections": {
+    "popups": {
+      "type": "popups",
+      "blocks": {
+        "popups-0": {
+          "type": "cookie",
+          "disabled": true,
+          "settings": {
+            "position": "popup-cookies--bottom",
+            "show_cookies_popup": true
+          }
+        }
+      },
+      "block_order": [
+        "popups-0"
+      ],
+      "settings": {
+      }
+    }
+  },
+  "order": [
+    "popups"
+  ]
+}
