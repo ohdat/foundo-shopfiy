@@ -35,11 +35,27 @@
             "padding_bottom": 16
           }
         },
+        "e2e4169c-832a-43ed-9bee-1762880a1e7b": {
+          "type": "text",
+          "settings": {
+            "title": "Carat total weight | 1.16g",
+            "text": "<p>18k White Gold | 23-f1nb-m01<\/p>",
+            "padding_bottom": 16
+          }
+        },
         "variants": {
           "type": "variants",
           "settings": {
             "info_page": "",
             "subscriptions_enable_selectors": false,
+            "padding_bottom": 16
+          }
+        },
+        "ac69c0c5-7482-4dd4-8579-2c207de24c09": {
+          "type": "text",
+          "settings": {
+            "title": "We accept crypto*",
+            "text": "",
             "padding_bottom": 16
           }
         },
@@ -72,10 +88,10 @@
             "show_read_more": true,
             "style": "accordions",
             "title_1": "DETAILS",
-            "raw_content_1": "<ul><li>White Gold 18k (750\/1000)<\/li><li>54 Diamonds, 1.98 ct<\/li><li>Length: 12.1mm<\/li><li>Width: 15.7mm<\/li><li>Sold by unit<\/li><\/ul><p>Each article from FOUNDO jewelry is unique. Caratage and metal weight information is given for information only and may vary slightly from one piece to another.<\/p>",
+            "raw_content_1": "<p>Pac Lock Necklace is part of the Make The Cut collection, and offers a special FOUNDO quartered spherical shape. The pendant in 18k white gold captivates with 47 round brilliant diamonds in D-F color. This unisex necklace can be perfectly matched with other articles from these collections.<br\/><br\/>White Gold 18k (750\/1000)<br\/>47 Diamonds, ~1.12 ct, D-F color<br\/>Pendant size: ~10.3mm*14.9mm<br\/>Length: ~55cm with adjustable link at any length<br\/><\/p>",
             "title_2": "SHIPPING AND PACKAGING",
-            "raw_content_2": "<p>You can always send the product back for maintenance with 1 Year FOUNDO Care. The Diamond VIP enjoys the lifetime FOUNDO Care.<\/p>",
-            "title_3": "FOUNDO GEM",
+            "raw_content_2": "<p>Please allow up to 5-7 business days for your order to be processed and shipped. <\/p><p>All purchases made on the signature FOUNDO grey box.<\/p>",
+            "title_3": "FOUNDO CARE",
             "raw_content_3": "<p>You can always send the product back for maintenance with 1 Year FOUNDO Care. The Diamond VIP enjoys the lifetime FOUNDO Care.<\/p>",
             "title_4": "CONTACT US",
             "raw_content_4": "<p>You can always send the product back for maintenance with 1 Year FOUNDO Care. The Diamond VIP enjoys the lifetime FOUNDO Care.<\/p>",
@@ -126,7 +142,9 @@
         "746e13dd-6677-4694-a7f2-9c71eddf6b16",
         "title",
         "price",
+        "e2e4169c-832a-43ed-9bee-1762880a1e7b",
         "variants",
+        "ac69c0c5-7482-4dd4-8579-2c207de24c09",
         "pickup",
         "bfcc7f34-20f6-475d-ae27-a17abfd28632",
         "buttons",
@@ -165,7 +183,7 @@
         "template--19109415584075__3f3a0656-e285-40be-8229-0b9bd1b04ae9-1687328847ed55135a-0": {
           "type": "header",
           "settings": {
-            "title": "Description"
+            "title": "DETAILS"
           }
         },
         "01cbaf78-eff9-4752-b9b7-35c378090623": {
