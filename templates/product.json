@@ -152,7 +152,6 @@
     },
     "3f3a0656-e285-40be-8229-0b9bd1b04ae9": {
       "type": "section-sidebar",
-      "disabled": true,
       "blocks": {
         "template--19109415584075__3f3a0656-e285-40be-8229-0b9bd1b04ae9-1687328847ed55135a-0": {
           "type": "header",
@@ -226,6 +225,7 @@
         "template--19109415584075__3f3a0656-e285-40be-8229-0b9bd1b04ae9-1687328847ed55135a-5",
         "template--19109415584075__3f3a0656-e285-40be-8229-0b9bd1b04ae9-1687328847ed55135a-6"
       ],
+      "disabled": true,
       "settings": {
         "width": "wrapper--full-padded",
         "bg_color": "",
@@ -236,7 +236,6 @@
     },
     "263a761e-c376-48ed-b3bf-6433597feae8": {
       "type": "section-text-row",
-      "disabled": true,
       "blocks": {
         "template--19109415584075__263a761e-c376-48ed-b3bf-6433597feae8-16873275323f300bc9-0": {
           "type": "icon",
@@ -293,6 +292,7 @@
         "template--19109415584075__263a761e-c376-48ed-b3bf-6433597feae8-16873275323f300bc9-2",
         "f906c816-f4c8-49b8-82d6-f3b16e2a1a84"
       ],
+      "disabled": true,
       "settings": {
         "title": "",
         "heading_size": 6,
@@ -309,7 +309,6 @@
     },
     "shipping": {
       "type": "section-accordion",
-      "disabled": true,
       "blocks": {
         "shipping-0": {
           "type": "icon",
@@ -347,6 +346,7 @@
         "shipping-1",
         "shipping-2"
       ],
+      "disabled": true,
       "settings": {
         "title": "FOUNDO Care",
         "bg_color": "",
@@ -359,7 +359,6 @@
     },
     "05278b61-11b8-4a55-93c1-182701a2adac": {
       "type": "section-accordion",
-      "disabled": true,
       "blocks": {
         "0201778f-b761-4aaa-ade6-924a00e2023c": {
           "type": "icon",
@@ -397,6 +396,7 @@
         "11085cfb-2f79-4858-aad2-8f91f2730af4",
         "ef19e5c6-6830-49e5-8623-0b7197aa1cc4"
       ],
+      "disabled": true,
       "settings": {
         "title": "Shipping",
         "bg_color": "",
@@ -409,7 +409,6 @@
     },
     "faq": {
       "type": "section-accordion",
-      "disabled": true,
       "blocks": {
         "faq-1": {
           "type": "text",
@@ -457,6 +456,7 @@
         "faq-4",
         "eb47f5cd-7ae8-4309-ba2b-0621cb546ffc"
       ],
+      "disabled": true,
       "settings": {
         "title": "FAQ",
         "bg_color": "",
@@ -479,7 +479,6 @@
     },
     "related": {
       "type": "related",
-      "disabled": true,
       "blocks": {
         "related": {
           "type": "related",
@@ -500,6 +499,7 @@
         "related",
         "recent"
       ],
+      "disabled": true,
       "settings": {
         "enable_tabs": true,
         "bg_color": "",
@@ -511,7 +511,6 @@
     },
     "ca54cc1b-cc42-49f0-8900-2a68d0e46252": {
       "type": "section-double",
-      "disabled": true,
       "blocks": {
         "template--19109415584075__ca54cc1b-cc42-49f0-8900-2a68d0e46252-1687333535c3bbb1df-0": {
           "type": "heading",
@@ -545,6 +544,7 @@
         "template--19109415584075__ca54cc1b-cc42-49f0-8900-2a68d0e46252-1687333535c3bbb1df-1",
         "template--19109415584075__ca54cc1b-cc42-49f0-8900-2a68d0e46252-1687333535c3bbb1df-2"
       ],
+      "disabled": true,
       "settings": {
         "layout": "",
         "height": "screen-height-full",
@@ -557,6 +557,29 @@
         "color": "",
         "padding_top": 0,
         "padding_bottom": 0
+      }
+    },
+    "b3561306-e746-459f-8fb8-acd0bd92f08d": {
+      "type": "section-collection2",
+      "settings": {
+        "heading": "STYLED WITH",
+        "description": "",
+        "layout": "inline",
+        "link_text": "Shop Now",
+        "link_url": "",
+        "button_type": "btn--primary",
+        "button_size": "",
+        "button_style": "btn--solid",
+        "show_arrow": false,
+        "featured_collection": "the-cross",
+        "style": "grid",
+        "grid": 2,
+        "rows": 1,
+        "layout_mobile": "carousel",
+        "bg_color": "",
+        "color": "",
+        "padding_top": 50,
+        "padding_bottom": 50
       }
     },
     "43dbcd02-3fe3-4f1a-a6e5-db99e8bf154a": {
@@ -610,7 +633,7 @@
     "2e42e7a4-66a5-45ff-b7a3-107e94aa293d": {
       "type": "section-collection",
       "settings": {
-        "heading": "",
+        "heading": "PART OF",
         "description": "",
         "layout": "inline",
         "link_text": "",
@@ -622,30 +645,7 @@
         "featured_collection": "the-cross",
         "style": "grid",
         "grid": 4,
-        "rows": 3,
-        "layout_mobile": "carousel",
-        "bg_color": "",
-        "color": "",
-        "padding_top": 50,
-        "padding_bottom": 50
-      }
-    },
-    "b3561306-e746-459f-8fb8-acd0bd92f08d": {
-      "type": "section-collection2",
-      "settings": {
-        "heading": "Best Sellers",
-        "description": "",
-        "layout": "inline",
-        "link_text": "Shop Now",
-        "link_url": "",
-        "button_type": "btn--primary",
-        "button_size": "",
-        "button_style": "btn--solid",
-        "show_arrow": false,
-        "featured_collection": "the-cross",
-        "style": "grid",
-        "grid": 4,
-        "rows": 3,
+        "rows": 2,
         "layout_mobile": "carousel",
         "bg_color": "",
         "color": "",
@@ -665,8 +665,8 @@
     "reviews",
     "related",
     "ca54cc1b-cc42-49f0-8900-2a68d0e46252",
+    "b3561306-e746-459f-8fb8-acd0bd92f08d",
     "43dbcd02-3fe3-4f1a-a6e5-db99e8bf154a",
-    "2e42e7a4-66a5-45ff-b7a3-107e94aa293d",
-    "b3561306-e746-459f-8fb8-acd0bd92f08d"
+    "2e42e7a4-66a5-45ff-b7a3-107e94aa293d"
   ]
 }
