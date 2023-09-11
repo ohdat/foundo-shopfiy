@@ -48,9 +48,9 @@
         "template--19109415616843__861bff52-b502-4f62-8fe4-a398779e76b4-1686890555d0e0c858-2"
       ],
       "settings": {
-        "height": "screen-height-full",
+        "height": "image-height",
         "width": "wrapper--full",
-        "image_1": "shopify:\/\/shop_images\/20230811-131146.png",
+        "image_1": "shopify:\/\/shop_images\/toutu.jpg",
         "mobile_height": "screen-height-three-quarters--mobile",
         "flex_align": "align--bottom-center",
         "overlay_opacity": 0,
@@ -262,7 +262,6 @@
         "template--19259611742539__4b781a49-8568-4541-bfa2-eab4caa71da5-168932846908abdae6-4"
       ],
       "settings": {
-        "image": "shopify:\/\/shop_images\/paclocknecklaceygf-2.jpg",
         "title": "",
         "show_dots": false,
         "products_per_row": "2",
@@ -475,7 +474,6 @@
         "d541c856-c6af-4d9e-ab6f-6d033ba5c816"
       ],
       "settings": {
-        "image": "shopify:\/\/shop_images\/paclocknecklaceygf-2.jpg",
         "title": "",
         "show_dots": false,
         "products_per_row": "2",
