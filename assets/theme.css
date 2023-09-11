@@ -12950,7 +12950,7 @@ main-search .input-holder {
 .radio__fieldset .radio__buttons {
   margin: -4px;
 }
-
+.radio__fieldset--swatches {display: none;}
 .radio__fieldset--swatches .radio__buttons {
   margin: 0 -2px;
 }
@@ -15742,6 +15742,9 @@ input[type='radio'].variant-input {
   grid-template-columns: 1fr;
   gap: 10px;
 }
+.product__submit__buttons .select-popout {
+  display: none;
+}
 
 .product__submit__buttons .btn,
 .product__submit__buttons .shopify-payment-button .shopify-payment-button__button--unbranded,
@@ -16251,6 +16254,8 @@ body.has-line-design.grid-compact .reviews__grid {
     flex: 1;
   }
 
+  .template-collection 
+
   .grid-item.product-item .overflowX_bo {
     display: none !important;
   }
@@ -16332,6 +16337,10 @@ body.has-line-design.grid-compact .reviews__grid {
   #product__thumbsoldered .image-wrapper {
     width: 58px;
     height: 75px;
+  }
+
+  .image__hero__frame {
+    height: calc(100vh - 60px);
   }
 }
 
