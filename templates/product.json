@@ -70,15 +70,15 @@
           "type": "tab_richtext",
           "settings": {
             "show_read_more": true,
-            "style": "inline",
-            "title_1": "Product Details",
+            "style": "accordions",
+            "title_1": "DETAILS",
             "raw_content_1": "<ul><li>White Gold 18k (750\/1000)<\/li><li>54 Diamonds, 1.98 ct<\/li><li>Length: 12.1mm<\/li><li>Width: 15.7mm<\/li><li>Sold by unit<\/li><\/ul><p>Each article from FOUNDO jewelry is unique. Caratage and metal weight information is given for information only and may vary slightly from one piece to another.<\/p>",
-            "title_2": "Care",
+            "title_2": "SHIPPING AND PACKAGING",
             "raw_content_2": "<p>You can always send the product back for maintenance with 1 Year FOUNDO Care. The Diamond VIP enjoys the lifetime FOUNDO Care.<\/p>",
-            "title_3": "",
-            "raw_content_3": "",
-            "title_4": "",
-            "raw_content_4": "",
+            "title_3": "FOUNDO GEM",
+            "raw_content_3": "<p>You can always send the product back for maintenance with 1 Year FOUNDO Care. The Diamond VIP enjoys the lifetime FOUNDO Care.<\/p>",
+            "title_4": "CONTACT US",
+            "raw_content_4": "<p>You can always send the product back for maintenance with 1 Year FOUNDO Care. The Diamond VIP enjoys the lifetime FOUNDO Care.<\/p>",
             "title_5": "",
             "raw_content_5": "",
             "padding_bottom": 4
@@ -111,6 +111,14 @@
             "width": "full",
             "padding_bottom": 16
           }
+        },
+        "8a484d34-34e1-44e0-b689-b337644f7428": {
+          "type": "divider",
+          "settings": {
+            "show_line": true,
+            "padding_top": 20,
+            "padding_bottom": 20
+          }
         }
       },
       "block_order": [
@@ -125,7 +133,8 @@
         "tabs",
         "623d4d63-00de-4b98-9db1-6bb5b249efb3",
         "60a10c16-0339-43fd-8e5e-d9c13887363e",
-        "icon_2"
+        "icon_2",
+        "8a484d34-34e1-44e0-b689-b337644f7428"
       ],
       "settings": {
         "product_sticky_enable": true,
