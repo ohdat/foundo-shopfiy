@@ -50,7 +50,7 @@
       "settings": {
         "height": "image-height",
         "width": "wrapper--full",
-        "image_1": "shopify:\/\/shop_images\/toutu3.jpg",
+        "image_1": "shopify:\/\/shop_images\/toutu_12.jpg",
         "mobile_height": "screen-height-three-quarters--mobile",
         "flex_align": "align--bottom-center",
         "overlay_opacity": 0,
@@ -192,7 +192,7 @@
       ],
       "settings": {
         "image": "shopify:\/\/shop_images\/1_765ec344-c3ad-4f44-ac16-177fe70f1f69.jpg",
-        "image2": "shopify:\/\/shop_images\/toutu_11.jpg",
+        "image2": "shopify:\/\/shop_images\/c67512659d0f4a7b1efcd10311c723bd.jpg",
         "title": "",
         "show_dots": false,
         "products_per_row": "2",
