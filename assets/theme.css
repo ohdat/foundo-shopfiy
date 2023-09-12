@@ -16235,6 +16235,20 @@ body.has-line-design.grid-compact .reviews__grid {
     height: 100%;
   }
 
+  .product-item__title-combined {
+    color: var(--Off-Black, #00031E);
+    leading-trim: both;
+    text-edge: cap;
+
+    /* new/d/Headline-06 */
+    font-family: Foundo Headline;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 100;
+    line-height: 100%; /* 16px */
+    text-transform: uppercase;
+  }
+
   .collection-products .collection__sidebar__slider.expanded .filter-group__content ul {
     display: grid;
     grid-template-columns: 1fr 1fr;
