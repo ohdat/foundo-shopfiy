@@ -66,13 +66,6 @@
             "padding_bottom": 32
           }
         },
-        "bfcc7f34-20f6-475d-ae27-a17abfd28632": {
-          "type": "code",
-          "settings": {
-            "code": "",
-            "padding_bottom": 16
-          }
-        },
         "buttons": {
           "type": "buttons",
           "settings": {
@@ -98,6 +91,13 @@
             "title_5": "",
             "raw_content_5": "",
             "padding_bottom": 4
+          }
+        },
+        "bfcc7f34-20f6-475d-ae27-a17abfd28632": {
+          "type": "code",
+          "settings": {
+            "code": "{% if product.metafields.custom.product_pdf %}\n  {% assign productPdfUrl = product.metafields.custom.product_pdf %}\n  <a href=\"{{ productPdfUrl }}\" download>Download PDF<\/a>\n{% endif %}",
+            "padding_bottom": 16
           }
         },
         "623d4d63-00de-4b98-9db1-6bb5b249efb3": {
@@ -146,9 +146,9 @@
         "variants",
         "ac69c0c5-7482-4dd4-8579-2c207de24c09",
         "pickup",
-        "bfcc7f34-20f6-475d-ae27-a17abfd28632",
         "buttons",
         "tabs",
+        "bfcc7f34-20f6-475d-ae27-a17abfd28632",
         "623d4d63-00de-4b98-9db1-6bb5b249efb3",
         "60a10c16-0339-43fd-8e5e-d9c13887363e",
         "icon_2",
