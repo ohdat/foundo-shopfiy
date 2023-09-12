@@ -13529,7 +13529,8 @@ main-search .input-holder {
 
 .product-item__image {
   display: block;
-  padding-top: var(--PRODUCT-GRID-ASPECT-RATIO);
+  /* padding-top: var(--PRODUCT-GRID-ASPECT-RATIO); */
+  padding-top: 145%;
   height: 0;
   position: relative;
   overflow: hidden;
