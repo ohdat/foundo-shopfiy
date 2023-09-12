@@ -508,7 +508,7 @@
           "settings": {
             "description": "Discover",
             "text_size": 3,
-            "text_style": "font-heading"
+            "text_style": "font-body"
           }
         }
       },
