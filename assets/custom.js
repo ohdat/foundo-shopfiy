@@ -25,8 +25,6 @@
       .find('.product-item__wrapper')
       .eq(currentThumbIndex);
 
-    console.log('currentProductImage:::', $(this).closest('.overflowX_bo').prev('.product-item__image'));
-
     // toggle active class on current product image and remove from other images
     currentProductImage.addClass('active').siblings().removeClass('active');
   };
