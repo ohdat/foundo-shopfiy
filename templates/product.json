@@ -96,7 +96,7 @@
         "bfcc7f34-20f6-475d-ae27-a17abfd28632": {
           "type": "code",
           "settings": {
-            "code": "{% if product.metafields.custom.product_pdf %}\n  {% assign productPdfUrl = product.metafields.custom.product_pdf | file_url %}\n  <a style=\"color: var(--Off-Black, #00031E)\" target=\"_blank\" href=\"{{ productPdfUrl }}\" download>Download PDF<\/a>\n{% endif %}",
+            "code": "{% if product.metafields.custom.product_pdf %}\n  {% assign productPdfUrl = product.metafields.custom.product_pdf | file_url %}\n  <a class=\"accordion__title\" style=\"font-size: 14px; color: var(--Off-Black, #00031E)\" target=\"_blank\" href=\"{{ productPdfUrl }}\" download>Download PDF<\/a>\n{% endif %}",
             "padding_bottom": 16
           }
         },
