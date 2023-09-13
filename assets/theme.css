@@ -12977,6 +12977,9 @@ main-search .input-holder {
   visibility: hidden;
   pointer-events: none;
 }
+.product-item__swatches__count {
+  display: none;
+}
 
 .radio__fieldset--small {
   display: block;

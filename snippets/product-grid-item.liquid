@@ -517,9 +517,9 @@ Usage:
         {%- endif -%}
 
         <div class="product-item__title-combined">
-          <p class="product-item__title product-item__title-collection">{{ collection_object.title }}</p>
-          <p class="product-item__title product-item__title-name">{{ product.metafields.custom.product_name }}</p>
           <p class="product-item__title product-item__title-category">{{ metafield_collection_object.title }}</p>
+          <p class="product-item__title product-item__title-name">{{ product.metafields.custom.product_name }}</p>
+          <p class="product-item__title product-item__title-collection">{{ collection_object.title }}</p>
         </div>
         {% comment %} <p class="product-item__title">{{ product.title | strip_html | escape }}</p> {% endcomment %}
         <div class="product-item__price__holder">
