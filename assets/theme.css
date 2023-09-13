@@ -12471,6 +12471,9 @@ main-search .input-holder {
     transform: translate(-50%, -50%);
     aspect-ratio: 1/1.3;
   }
+  .look__image--fullheight .look__image-container img {
+    object-fit: contain;
+  }
 }
 
 .look__image--fullheight .look__image-bg {
