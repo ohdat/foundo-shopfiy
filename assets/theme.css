@@ -12465,11 +12465,11 @@ main-search .input-holder {
   .look__image--fullheight .look__image-container {
     position: relative;
     min-width: 100%;
-    min-height: 100%;
+    /* min-height: 100%; */
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    aspect-ratio: var(--aspect-ratio);
+    aspect-ratio: 1/1.3;
   }
 }
 
