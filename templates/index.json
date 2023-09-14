@@ -286,14 +286,14 @@
         "577bcb5d-8cfa-4de8-abe1-171cd3d25d86": {
           "type": "heading",
           "settings": {
-            "title": "MAKE THE CUT",
+            "title": "",
             "heading_size": 7
           }
         },
         "f0afe211-94f2-4e45-a33d-532f064fb359": {
           "type": "text",
           "settings": {
-            "description": "Discover",
+            "description": "",
             "text_size": 3,
             "text_style": "font-heading"
           }
@@ -319,7 +319,7 @@
       "settings": {
         "height": "screen-height-full",
         "width": "wrapper--full",
-        "image_1": "shopify:\/\/shop_images\/6_6ca110db-9234-4ece-9e00-a4e36b5fd34d.jpg",
+        "image_1": "shopify:\/\/shop_images\/cross.jpg",
         "mobile_height": "screen-height-three-quarters--mobile",
         "flex_align": "align--bottom-center",
         "overlay_opacity": 0,
