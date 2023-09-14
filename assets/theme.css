@@ -4144,7 +4144,7 @@ body.grid-compact .grid-outer {
   --outer: 0px;
   --outer-offset: 0px;
   --gutter: 0px;
-  --gap: 0px;
+  --gap: 2px;
 }
 
 .collection-list .grid-outer {
@@ -12467,13 +12467,13 @@ main-search .input-holder {
 #filterGroup .sidebar__item--active.sidebar__item label {
   color: #00031E;
 }
-.grid__heading {
+#MainContent .grid__heading {
   color: var(--Off-Black, #00031E);
   leading-trim: both;
   text-edge: cap;
 
   /* new/d/caption-headline */
-  font-family: Foundo Headline;
+  font-family: Foundo Headline!important;
   font-size: 12px;
   font-style: normal;
   font-weight: 100;
