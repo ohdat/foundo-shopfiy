@@ -13031,6 +13031,9 @@ main-search .input-holder {
 .product-item__swatches__count {
   display: none;
 }
+.product-item__swatches__holder {
+  display: none;
+}
 
 .radio__fieldset--small {
   display: block;
