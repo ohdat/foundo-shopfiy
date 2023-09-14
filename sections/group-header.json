@@ -72,7 +72,7 @@
         "f6d48b74-c04e-4d54-a489-8d499f5f53f8"
       ],
       "settings": {
-        "header_sticky": true,
+        "header_sticky": false,
         "header_style": "logo_center_menu_left",
         "show_icons": true,
         "icon_as_circle": false,
