@@ -317,7 +317,7 @@
         "71d6d76f-4283-4a46-bf67-506abc3a0b62"
       ],
       "settings": {
-        "height": "screen-height-full",
+        "height": "image-height",
         "width": "wrapper--full",
         "image_1": "shopify:\/\/shop_images\/cross.jpg",
         "mobile_height": "screen-height-three-quarters--mobile",
