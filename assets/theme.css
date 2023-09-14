@@ -12461,6 +12461,28 @@ main-search .input-holder {
   }
 }
 
+.collection__filters .sidebar__item.sidebar__item--active {
+  border: 1px solid var(--Off-Black, #00031E)!important;
+}
+#filterGroup .sidebar__item--active.sidebar__item label {
+  color: #00031E;
+}
+.collection__filters .sidebar__item {
+  border: 1px solid var(--Medium-Grey, #D0D0D0)!important;
+}
+.collection__filters .filter-group__heading span{
+  color: var(--Off-Black, #00031E);
+  leading-trim: both;
+  text-edge: cap;
+
+  /* new/d/caption-headline */
+  font-family: Foundo Headline;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 100;
+  text-transform: uppercase;
+}
+
 @media only screen and (min-width: 750px) {
   body.template-collection {
     margin-top: -60px;
