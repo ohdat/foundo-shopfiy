@@ -85,7 +85,7 @@
             "title_2": "FOUNDO GEM",
             "raw_content_2": "<p>Please allow up to 5-7 business days for your order to be processed and shipped. <\/p><p>All purchases made on the signature FOUNDO grey box.<\/p><img src=\"\/\/cdn.shopify.com\/s\/files\/1\/0755\/2784\/8267\/files\/img_v2_97b5e83c-0a86-4a71-9377-506acf8bdf4g.png?v=1694542360\">",
             "title_3": "CONTACT US",
-            "raw_content_3": "<p>You can always send the product back for maintenance with 1 Year FOUNDO Care. The Diamond VIP enjoys the lifetime FOUNDO Care.<br\/>Our Client Advisors are available Monday through Saturday, 9:00AM - 12:00AM (EST) and Sunday, 9:00AM - 10:00PM (EST), excluding holidays. <\/p><p>+ 33 289398223123 <\/p><p>care@foundo.world<\/p>",
+            "raw_content_3": "<p>You can always send the product back for maintenance with 1 Year FOUNDO Care. The Diamond VIP enjoys the lifetime FOUNDO Care.<br>Our Client Advisors are available Monday through Saturday, 9:00AM - 12:00AM (EST) and Sunday, 9:00AM - 10:00PM (EST), excluding holidays. <\/p><p>+ 33 289398223123 <\/p><p>care@foundo.world<\/p>",
             "title_4": "",
             "raw_content_4": "",
             "title_5": "",
@@ -622,9 +622,16 @@
         "template--19259611513163__43dbcd02-3fe3-4f1a-a6e5-db99e8bf154a-1689316071a2ac222d-1": {
           "type": "text",
           "settings": {
-            "description": "、",
+            "description": "",
             "text_size": 5,
             "text_style": "font-body"
+          }
+        },
+        "7b1ced56-95ed-4946-a0fc-dec0d503df23": {
+          "type": "heading",
+          "settings": {
+            "title": "",
+            "heading_size": 11
           }
         },
         "template--19259611513163__43dbcd02-3fe3-4f1a-a6e5-db99e8bf154a-1689316071a2ac222d-2": {
@@ -642,12 +649,13 @@
       "block_order": [
         "template--19259611513163__43dbcd02-3fe3-4f1a-a6e5-db99e8bf154a-1689316071a2ac222d-0",
         "template--19259611513163__43dbcd02-3fe3-4f1a-a6e5-db99e8bf154a-1689316071a2ac222d-1",
+        "7b1ced56-95ed-4946-a0fc-dec0d503df23",
         "template--19259611513163__43dbcd02-3fe3-4f1a-a6e5-db99e8bf154a-1689316071a2ac222d-2"
       ],
       "settings": {
-        "height": "screen-height-three-quarters",
+        "height": "image-height",
         "width": "wrapper--full",
-        "image_1": "shopify:\/\/shop_images\/make_the_cut_banner_1.jpg",
+        "image_1": "shopify:\/\/shop_images\/nourish3.jpg",
         "mobile_height": "screen-height-three-quarters--mobile",
         "flex_align": "align--middle-center",
         "overlay_opacity": 0,
