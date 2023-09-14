@@ -499,14 +499,14 @@
         "template--19259611742539__8408372a-0868-4d4d-991c-d33faa772fb7-heading-1": {
           "type": "heading",
           "settings": {
-            "title": "NOURISH",
+            "title": "",
             "heading_size": 7
           }
         },
         "template--19259611742539__8408372a-0868-4d4d-991c-d33faa772fb7-text-1": {
           "type": "text",
           "settings": {
-            "description": "Discover",
+            "description": "",
             "text_size": 3,
             "text_style": "font-body"
           }
@@ -519,7 +519,7 @@
       "settings": {
         "height": "image-height",
         "width": "wrapper--full",
-        "image_1": "shopify:\/\/shop_images\/57.jpg",
+        "image_1": "shopify:\/\/shop_images\/NOURISH2.jpg",
         "mobile_height": "screen-height-three-quarters--mobile",
         "flex_align": "align--middle-center",
         "overlay_opacity": 0,
