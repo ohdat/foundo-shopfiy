@@ -4146,6 +4146,9 @@ body.grid-compact .grid-outer {
   --gutter: 0px;
   --gap: 2px;
 }
+.hero__wrapper.wrapper--full {
+  aspect-ratio: 1950/1003;
+}
 
 .collection-list .grid-outer {
   padding-top: var(--outer);
