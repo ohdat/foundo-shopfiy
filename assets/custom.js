@@ -22,9 +22,6 @@
       .find('.product-item__image .product-item__wrapper')
       .eq(currentThumbIndex);
 
-    console.log('currentProductImage:::', currentProductImage);
-
-    // toggle active class on current product image and remove from other images
     currentProductImage.addClass('active').siblings().removeClass('active');
   };
 
@@ -35,8 +32,6 @@
 
   // Add custom code below this line
   $(function () {
-    // handleProductThumbTriggerEvent();
-
     $('.product-item.grid-item').on('mouseenter', handleProductThumbTriggerEvent);
   });
 })();
