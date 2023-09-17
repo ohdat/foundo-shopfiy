@@ -13813,9 +13813,13 @@ main-search .input-holder {
 }
 
 .product-item__image .product-item__wrapper {
+  visaibility: hidden;
   position: absolute;
   width: 100%;
   height: 100%;
+}
+.product-item__image .product-item__wrapper.active {
+  visibility: visible;
 }
 
 .product-item__image .product-item__wrapper:nth-child(1) {
@@ -25481,7 +25485,15 @@ recipient-form .recipient-form-field-label {
   font-family: Foundo Headline!important;
 }
 .product__sold-out {
-  
+  leading-trim: both;
+  text-edge: cap;
+
+  /* new/d/135-caption-grotesk */
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 135;
+  line-height: 120%; /* 13.2px */
+
 }
 
 @media only screen and (max-width: 749px) {

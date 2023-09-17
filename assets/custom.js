@@ -15,15 +15,14 @@
     let currentThumbIndex = $(this).index();
     console.log('currentThumbIndex:::', currentThumbIndex);
 
-    // add active class to current thumb and remove from other thumbs
     $(this).addClass('active').siblings().removeClass('active');
 
-    // get current product image by index
     let currentProductImage = $(this)
-      .closest('.overflowX_bo')
-      .siblings('.product-item__image')
-      .find('.product-item__wrapper')
+      .parents('.product-item')
+      .find('.product-item__image .product-item__wrapper')
       .eq(currentThumbIndex);
+
+    console.log('currentProductImage:::', currentProductImage);
 
     // toggle active class on current product image and remove from other images
     currentProductImage.addClass('active').siblings().removeClass('active');
