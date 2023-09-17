@@ -25477,6 +25477,12 @@ recipient-form .recipient-form-field-label {
   line-height: 100%; /* 16px */
   text-transform: uppercase;
 }
+#MainContent .font__foundo-headline {
+  font-family: Foundo Headline!important;
+}
+.product__sold-out {
+  
+}
 
 @media only screen and (max-width: 749px) {
   .product__images {

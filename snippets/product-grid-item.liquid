@@ -228,22 +228,6 @@ Usage:
     endunless
   -%}
 
-  {%- if badge != '' -%}
-    <span
-      class="badge-box"
-      data-aos="fade"
-      data-aos-delay="{{ aos_image_delay }}"
-      data-aos-duration="{{ aos_duration }}"
-      data-aos-anchor="{{ aos_anchor }}">{{ badge }}</span>
-  {%- elsif on_sale and sold_out == false -%}
-    <span
-      class="sale-box"
-      data-aos="fade"
-      data-aos-delay="{{ aos_image_delay }}"
-      data-aos-duration="{{ aos_duration }}"
-      data-aos-anchor="{{ aos_anchor }}">{{ 'products.product.on_sale' | t }}</span>
-  {%- endif -%}
-
   {%- if settings.quickview_enable and current_variant -%}
     {%- liquid
       assign is_preorder_meta_exist = false
@@ -463,6 +447,21 @@ Usage:
             [ {{ 'products.product.pre_order' | t }} ]
           </span>
         {%- endif -%}
+        {%- if badge != '' -%}
+          <span
+            class="badge-box"
+            data-aos="fade"
+            data-aos-delay="{{ aos_image_delay }}"
+            data-aos-duration="{{ aos_duration }}"
+            data-aos-anchor="{{ aos_anchor }}">{{ badge }}</span>
+        {%- elsif on_sale and sold_out == false -%}
+          <span
+            class="sale-box"
+            data-aos="fade"
+            data-aos-delay="{{ aos_image_delay }}"
+            data-aos-duration="{{ aos_duration }}"
+            data-aos-anchor="{{ aos_anchor }}">{{ 'products.product.on_sale' | t }}</span>
+        {%- endif -%}
       </div>
     </nav>
 
@@ -573,7 +572,7 @@ Usage:
                     <span style="font-family:'Foundo_Medium' !important;font-weight: 500;" class="old-price">{{ product_compare_at_price }}</span>
                   {% endif %}
                 {% else %}
-                  <span style="font-family:'Foundo_Medium' !important;font-weight: 500;" class="sold-out">{{ 'products.product.sold_out' | t }}</span>
+                  <span class="product__sold-out font__foundo-headline sold-out">[ {{ 'products.product.sold_out' | t }} ]</span>
                 {% endif %}
               </span>
               {% if current_variant.unit_price %}
