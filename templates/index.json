@@ -145,7 +145,7 @@
         "template--19259611742539__1ab6acb1-fcc5-4a57-989a-8b8691f8fb0c-1689328246295b8bb1-0": {
           "type": "product",
           "settings": {
-            "product": "make-the-cut-pac-lock-earring-small-model-3",
+            "product": "make-the-cut-pac-lock-earring-small-model-2",
             "position_x": 14,
             "position_y": 37
           }
@@ -153,7 +153,7 @@
         "template--19259611742539__1ab6acb1-fcc5-4a57-989a-8b8691f8fb0c-1689328246295b8bb1-1": {
           "type": "product",
           "settings": {
-            "product": "copy-of-make-the-cut-pac-lock-earring-small-model",
+            "product": "make-the-cut-pac-lock-long-earring",
             "position_x": 45,
             "position_y": 60
           }
@@ -161,7 +161,7 @@
         "template--19259611742539__1ab6acb1-fcc5-4a57-989a-8b8691f8fb0c-1689328246295b8bb1-2": {
           "type": "product",
           "settings": {
-            "product": "make-the-cut-pac-lock-long-earring-1",
+            "product": "make-the-cut-pac-lock-necklace-1",
             "position_x": 45,
             "position_y": 60
           }
@@ -169,7 +169,7 @@
         "template--19259611742539__1ab6acb1-fcc5-4a57-989a-8b8691f8fb0c-1689328246295b8bb1-3": {
           "type": "product",
           "settings": {
-            "product": "make-the-cut-pac-lock-earring-small-model-2",
+            "product": "make-the-cut-pac-lock-earring-small-model-3",
             "position_x": 45,
             "position_y": 60
           }
@@ -177,7 +177,7 @@
         "template--19259611742539__1ab6acb1-fcc5-4a57-989a-8b8691f8fb0c-1689328246295b8bb1-4": {
           "type": "product",
           "settings": {
-            "product": "make-the-cut-pac-lock-long-earring-1",
+            "product": "make-the-cut-pac-lock-earring-small-model",
             "position_x": 45,
             "position_y": 60
           }
@@ -191,8 +191,8 @@
         "template--19259611742539__1ab6acb1-fcc5-4a57-989a-8b8691f8fb0c-1689328246295b8bb1-4"
       ],
       "settings": {
-        "image": "shopify:\/\/shop_images\/toutu_11.jpg",
-        "image2": "shopify:\/\/shop_images\/17.jpg",
+        "image": "shopify:\/\/shop_images\/29_a1f562ae-7e53-481b-9931-c587f4914d34.jpg",
+        "image2": "shopify:\/\/shop_images\/23-6-1.jpg",
         "title": "",
         "show_dots": false,
         "products_per_row": "2",
@@ -216,7 +216,7 @@
         "template--19259611742539__4b781a49-8568-4541-bfa2-eab4caa71da5-168932846908abdae6-0": {
           "type": "product",
           "settings": {
-            "product": "make-the-cut-pac-lock-earring-mini-model-1",
+            "product": "copy-of-the-丰-necklace-2",
             "position_x": 14,
             "position_y": 37
           }
@@ -224,7 +224,7 @@
         "template--19259611742539__4b781a49-8568-4541-bfa2-eab4caa71da5-168932846908abdae6-1": {
           "type": "product",
           "settings": {
-            "product": "copy-of-make-the-cut-pac-lock-earring-mini-model",
+            "product": "the-丰-earring-2",
             "position_x": 45,
             "position_y": 60
           }
@@ -240,7 +240,7 @@
         "template--19259611742539__4b781a49-8568-4541-bfa2-eab4caa71da5-168932846908abdae6-3": {
           "type": "product",
           "settings": {
-            "product": "copy-of-the-cross-earring-normal-model",
+            "product": "the-cross-necklace",
             "position_x": 45,
             "position_y": 60
           }
@@ -262,7 +262,7 @@
         "template--19259611742539__4b781a49-8568-4541-bfa2-eab4caa71da5-168932846908abdae6-4"
       ],
       "settings": {
-        "image": "shopify:\/\/shop_images\/19.jpg",
+        "image": "shopify:\/\/shop_images\/23-4-3.jpg",
         "title": "",
         "show_dots": false,
         "products_per_row": "2",
@@ -286,14 +286,14 @@
         "577bcb5d-8cfa-4de8-abe1-171cd3d25d86": {
           "type": "heading",
           "settings": {
-            "title": "MAKE THE CUT",
+            "title": "",
             "heading_size": 7
           }
         },
         "f0afe211-94f2-4e45-a33d-532f064fb359": {
           "type": "text",
           "settings": {
-            "description": "Discover",
+            "description": "",
             "text_size": 3,
             "text_style": "font-heading"
           }
@@ -317,9 +317,9 @@
         "71d6d76f-4283-4a46-bf67-506abc3a0b62"
       ],
       "settings": {
-        "height": "screen-height-full",
+        "height": "image-height",
         "width": "wrapper--full",
-        "image_1": "shopify:\/\/shop_images\/6_6ca110db-9234-4ece-9e00-a4e36b5fd34d.jpg",
+        "image_1": "shopify:\/\/shop_images\/make_the_cut_3.jpg",
         "mobile_height": "screen-height-three-quarters--mobile",
         "flex_align": "align--bottom-center",
         "overlay_opacity": 0,
@@ -358,7 +358,7 @@
         "cc4017fd-0e14-4dcd-beb7-fa44a518f89f": {
           "type": "product",
           "settings": {
-            "product": "copy-of-make-the-cut-pac-lock-earring-large-model",
+            "product": "the-cross-earring-mini-model",
             "position_x": 14,
             "position_y": 37
           }
@@ -366,7 +366,7 @@
         "12335fe1-762c-4fad-9b79-9531f050f39f": {
           "type": "product",
           "settings": {
-            "product": "copy-of-make-the-cut-pac-lock-earring-small-model",
+            "product": "the-cross-earring-pearl",
             "position_x": 45,
             "position_y": 60
           }
@@ -382,7 +382,7 @@
         "158ac2df-8d3a-4a95-ba23-421022ae2b19": {
           "type": "product",
           "settings": {
-            "product": "make-the-cut-pac-lock-earring-small-model-2",
+            "product": "the-nourish-grain-necklace",
             "position_x": 45,
             "position_y": 60
           }
@@ -390,7 +390,7 @@
         "bb6d15c8-7921-4728-9910-dd8fe064c296": {
           "type": "product",
           "settings": {
-            "product": "make-the-cut-pac-lock-long-earring-1",
+            "product": "the-nourish-grain-necklace-1",
             "position_x": 45,
             "position_y": 60
           }
@@ -429,7 +429,7 @@
         "92faa2f9-cc44-4336-bd0c-8719da320e0a": {
           "type": "product",
           "settings": {
-            "product": "make-the-cut-pac-lock-earring-mini-model-1",
+            "product": "copy-of-the-cross-earring-normal-model",
             "position_x": 14,
             "position_y": 37
           }
@@ -437,7 +437,7 @@
         "67901a32-2729-4797-b25c-2844f2cf8f8f": {
           "type": "product",
           "settings": {
-            "product": "copy-of-make-the-cut-pac-lock-earring-mini-model",
+            "product": "the-cross-bone-necklace",
             "position_x": 45,
             "position_y": 60
           }
@@ -445,7 +445,7 @@
         "38eca7f9-fbaa-476a-94c2-384a906f527e": {
           "type": "product",
           "settings": {
-            "product": "make-the-cut-pac-lock-necklace",
+            "product": "the-nourish-grain-necklace-3",
             "position_x": 45,
             "position_y": 60
           }
@@ -453,7 +453,7 @@
         "046e7c6f-23c2-4f67-92e4-6af4f9d744af": {
           "type": "product",
           "settings": {
-            "product": "copy-of-the-cross-earring-normal-model",
+            "product": "the-nourish-earring",
             "position_x": 45,
             "position_y": 60
           }
@@ -461,7 +461,7 @@
         "d541c856-c6af-4d9e-ab6f-6d033ba5c816": {
           "type": "product",
           "settings": {
-            "product": "the-cross-earring-normal-model",
+            "product": "the-nourish-earring-1",
             "position_x": 45,
             "position_y": 60
           }
@@ -475,7 +475,7 @@
         "d541c856-c6af-4d9e-ab6f-6d033ba5c816"
       ],
       "settings": {
-        "image": "shopify:\/\/shop_images\/56.jpg",
+        "image": "shopify:\/\/shop_images\/23-5-2.jpg",
         "title": "",
         "show_dots": false,
         "products_per_row": "2",
@@ -499,14 +499,14 @@
         "template--19259611742539__8408372a-0868-4d4d-991c-d33faa772fb7-heading-1": {
           "type": "heading",
           "settings": {
-            "title": "NOURISH",
+            "title": "",
             "heading_size": 7
           }
         },
         "template--19259611742539__8408372a-0868-4d4d-991c-d33faa772fb7-text-1": {
           "type": "text",
           "settings": {
-            "description": "Discover",
+            "description": "",
             "text_size": 3,
             "text_style": "font-body"
           }
@@ -519,7 +519,7 @@
       "settings": {
         "height": "image-height",
         "width": "wrapper--full",
-        "image_1": "shopify:\/\/shop_images\/57.jpg",
+        "image_1": "shopify:\/\/shop_images\/NOURISH2.jpg",
         "mobile_height": "screen-height-three-quarters--mobile",
         "flex_align": "align--middle-center",
         "overlay_opacity": 0,
