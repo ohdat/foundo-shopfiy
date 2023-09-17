@@ -140,7 +140,30 @@
   font-family: 'Foundo_Headline' !important;
   color: #00031e;
 }
-
+#formWidth .product__price span {
+  font-size: 20px;
+}
+#formWidth .product__text p{
+  color: var(--Off-Black, #00031E);
+  leading-trim: both;
+  text-edge: cap;
+  font-family: Foundo Headline !important;
+  font-size: 10px;
+  font-style: normal;
+  font-weight: 100;
+  line-height: 125%;
+  letter-spacing: 0.068px;
+}
+#formWidth .product__breadcrumbs a, #formWidth .product__priced span {
+  color: var(--Off-Black, #00031E);
+  leading-trim: both;
+  text-edge: cap;
+  font-family: Foundo !important;
+  font-size: 10px;
+  font-style: normal;
+  font-weight: 120;
+  line-height: 120%; /* 12px */
+}
 
 body,
 html {
