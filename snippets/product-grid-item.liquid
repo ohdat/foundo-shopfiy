@@ -493,7 +493,7 @@ Usage:
       <div class="product-size-material" style="display: flex; justify-content: space-between;">
         <div class="prduct-grid__size">
           <p>Size:</p>
-          {% assign product_size = product.metafields.custom.size %}
+          {% assign product_size = product.metafields.custom.product_size %}
           {% if product_size == 0 %}
             {% assign product_size = '' %}
           {% endif %}
