@@ -380,7 +380,7 @@ Usage:
       href="{{ product_url }}"
       aria-label="{{ product.title | strip_html | escape }}"
       data-product-link="{{ product_url }}">
-      {% if metafield_product_images_with_landscape %}
+      {% if metafield_product_images_with_landscape and is_frontpage %}
         {% for image in metafield_product_images_with_landscape %}
           <div class="product-item__wrapper">
             <div class="product-item__bg" data-product-image-default>
@@ -504,7 +504,7 @@ Usage:
     </nav>
     
     <div class="overflowX_bo" style="display: flex;margin-top: 10px;padding-left:11px; overflow-x: auto;">
-      {% if metafield_product_images_with_landscape %}
+      {% if metafield_product_images_with_landscape and is_frontpage %}
         {% for image in metafield_product_images_with_landscape %}
           <div class="product__thumb product__thumb--landscape" style="display: block" data-thumb-item>
             <div
