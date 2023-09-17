@@ -16371,9 +16371,7 @@ body.has-line-design.grid-compact .reviews__grid {
     flex: 1;
   }
 
-  .template-collection 
-
-  .grid-item.product-item .overflowX_bo {
+  .product__details .overflowX_bo {
     display: none !important;
   }
 

@@ -18,6 +18,7 @@ Usage:
   assign aos_image_delay_default = animation_delay | times: 150
   assign aos_duration = 800
   assign aos_image_delay = aos_image_delay | default: aos_image_delay_default
+  assign metafield_product_images_with_landscape = product.metafields.custom.product_images_with_landscape.value
 
   if settings.product_grid_center
     assign alignment_class = 'product-item--centered'
@@ -464,27 +465,49 @@ Usage:
         {%- endif -%}
       </div>
     </nav>
-
+    
     <div class="overflowX_bo" style="display: flex;margin-top: 10px;padding-left:11px; overflow-x: auto;">
-      {%- for media in product.media -%}
-        <div class="product__thumb" data-thumb-item>
-          <div
-            class="product__thumb__link product__thumb__linked"
-            aria-current="{% if forloop.first %}true{% else %}false{% endif %}"
-            data-media-id="{{ section.id }}-{{ media.id }}"
-            data-thumb-index="{{ forloop.index0 }}"
-            data-thumb-link>
-            {%- liquid
-                render 'image' image: media.preview_image, width: 150, height: 150, sizes: '75px', widths: '75, 100, 150, 225, 300', aspect_ratio: 1,
-                if media.media_type == 'video' or media.media_type == 'external_video'
-                  render 'icon-media-video'
-                elsif media.media_type == 'model'
-                  render 'icon-media-model'
-                endif
-              -%}
+      {% if metafield_product_images_with_landscape %}
+        {% for image in metafield_product_images_with_landscape %}
+          <div class="product__thumb product__thumb--landscape" style="display: block" data-thumb-item>
+            <div
+              class="product__thumb__link product__thumb__linked"
+              aria-current="{% if forloop.first %}true{% else %}false{% endif %}"
+              data-media-id="{{ section.id }}-{{ media.id }}"
+              data-thumb-index="{{ forloop.index0 }}"
+              data-thumb-link>
+              {%- liquid
+                  render 'image' image: image, width: 150, height: 150, sizes: '75px', widths: '75, 100, 150, 225, 300', aspect_ratio: 1,
+                  if media.media_type == 'video' or media.media_type == 'external_video'
+                    render 'icon-media-video'
+                  elsif media.media_type == 'model'
+                    render 'icon-media-model'
+                  endif
+                -%}
+            </div>
           </div>
-        </div>
-      {%- endfor -%}
+        {%- endfor -%}
+      {% else %}
+        {%- for media in product.media -%}
+          <div class="product__thumb" data-thumb-item>
+            <div
+              class="product__thumb__link product__thumb__linked"
+              aria-current="{% if forloop.first %}true{% else %}false{% endif %}"
+              data-media-id="{{ section.id }}-{{ media.id }}"
+              data-thumb-index="{{ forloop.index0 }}"
+              data-thumb-link>
+              {%- liquid
+                  render 'image' image: media.preview_image, width: 150, height: 150, sizes: '75px', widths: '75, 100, 150, 225, 300', aspect_ratio: 1,
+                  if media.media_type == 'video' or media.media_type == 'external_video'
+                    render 'icon-media-video'
+                  elsif media.media_type == 'model'
+                    render 'icon-media-model'
+                  endif
+                -%}
+            </div>
+          </div>
+        {%- endfor -%}
+      {% endif %}
     </div>
 
     <div class="product-information" data-product-information>
