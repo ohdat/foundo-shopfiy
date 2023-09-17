@@ -4146,6 +4146,47 @@ body.grid-compact .grid-outer {
   --gutter: 0px;
   --gap: 2px;
 }
+
+#headerSections .navlink.navlink--child span{
+  color: var(--Off-Black, #00031E);
+  leading-trim: both;
+  text-edge: cap;
+
+  /* new/d/caption-headline */
+  font-family: Foundo Headline !important;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 100;
+  line-height: 100%; /* 12px */
+  text-transform: uppercase;
+}
+#headerSections a.navlink.navlink--grandchild span.navtext{
+  color: var(--Dark-Grey, #9B9B9B);
+  leading-trim: both;
+  text-edge: cap;
+
+  /* new/d/102-caption-grotesk */
+  font-family: Foundo !important;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 102;
+  line-height: 120%; /* 13.2px */
+}
+#headerSections .navtext, #headerSections .popout span {
+  font-family: Foundo !important;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 102;
+  line-height: 120%; /* 13.2px */
+  leading-trim: both;
+  text-edge: cap;
+}
+#headerSections .menu__item span{
+  color: var(--Dark-Grey, #9B9B9B);
+}
+#headerSections .menu__item.is-visible span{
+  color: var(--Off-Black, #00031E);
+}
 .hero__wrapper.wrapper--full {
   aspect-ratio: 1950/1003;
 }
