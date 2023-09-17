@@ -456,165 +456,166 @@ Usage:
   {% assign metafield_collection_value = product.metafields.custom.collection %}
   {% assign metafield_collection_handle = metafield_collection_value %}
   {% assign metafield_collection_object = collections[metafield_collection_handle] %}
+  <div class="product__details">
+    <nav class="breadcrumbs breadcrumbs--no-padding product__breadcrumbs" style="margin: 12px;">
+      <a href="{{ collection_object.url }}">{{ collection_object.title }}</a>
+      <div>{{cur_category}}</div>
+    </nav>
 
-  <nav class="breadcrumbs breadcrumbs--no-padding product__breadcrumbs" style="margin: 8px;">
-    <a href="{{ collection_object.url }}">{{ collection_object.title }}</a>
-    <div>{{cur_category}}</div>
-  </nav>
-
-  <div class="overflowX_bo" style="display: flex;margin-top: 10px;padding-left:11px; overflow-x: auto;">
-    {%- for media in product.media -%}
-      <div class="product__thumb" data-thumb-item>
-        <div
-          class="product__thumb__link product__thumb__linked"
-          aria-current="{% if forloop.first %}true{% else %}false{% endif %}"
-          data-media-id="{{ section.id }}-{{ media.id }}"
-          data-thumb-index="{{ forloop.index0 }}"
-          data-thumb-link>
-          {%- liquid
-              render 'image' image: media.preview_image, width: 150, height: 150, sizes: '75px', widths: '75, 100, 150, 225, 300', aspect_ratio: 1,
-              if media.media_type == 'video' or media.media_type == 'external_video'
-                render 'icon-media-video'
-              elsif media.media_type == 'model'
-                render 'icon-media-model'
-              endif
-            -%}
-        </div>
-      </div>
-    {%- endfor -%}
-  </div>
-
-  <div class="product-information" data-product-information>
-    <div class="product-item__info" id="productItemInfo">
-      <div class="prduct-grid__serial-number">
-        <p>Serial №: </p>
-        <div class="product-item__title">{{ product.metafields.custom.serial_no }}</div>
-      </div>
-      <div class="product-size-material" style="display: flex; justify-content: space-between;">
-        <div class="prduct-grid__size">
-          <p>Size:</p>
-          {% assign product_size = product.metafields.custom.product_size %}
-          {% if product_size == 0 %}
-            {% assign product_size = '' %}
-          {% endif %}
-          <div class="product-item__title">{{ product_size }}</div>
-        </div>
-        <div class="prduct-grid__material">
-          <p>Material:</p>
-          <div class="product-item__title">{{ product.metafields.custom.material }}</div>
-        </div>
-      </div>
-      
-      <a
-        class="product-link"
-        href="{{ product_url }}"
-        aria-label="{{ product.title | strip_html | escape }}"
-        data-product-link="{{ product_url }}">
-        {%- if settings.product_grid_show_rating and product.metafields.reviews.rating.value != blank -%}
-          <div class="product-item__stars">
-            {% render 'product-rating', product: product %}
-          </div>
-        {%- endif -%}
-
-        <div class="product-item__title-combined">
-          <p class="product-item__title product-item__title-category">{{ metafield_collection_object.title }}</p>
-          <p class="product-item__title product-item__title-name">{{ product.metafields.custom.product_name }}</p>
-          <p class="product-item__title product-item__title-collection">{{ collection_object.title }}</p>
-        </div>
-        {% comment %} <p class="product-item__title">{{ product.title | strip_html | escape }}</p> {% endcomment %}
-        <div class="product-item__price__holder">
-          <div class="product-item__price" data-product-price="">
-            <span class="price">
-              <span style="font-family:'Foundo_Medium' !important;font-weight: bolder;" class="new-price product__priced">
-                Price
-              </span>
-            </span>
-          </div>
-        </div>
-        <div class="product-item__price__holder{% if has_siblings %} has-siblings{% endif %}">
-          {%- if has_siblings or product_item_cutline != blank -%}
-            <span class="product-item__cutline" data-product-cutline>{{ product_item_cutline }}</span>
-          {%- endif -%}
-
-          {%- if has_siblings -%}
-            <span class="product-item__sep">&#8212;</span>
-          {%- endif -%}
-
-          <div class="product-item__price" data-product-price>
-            {% comment %} Price on product grid item {% endcomment %}
-
+    <div class="overflowX_bo" style="display: flex;margin-top: 10px;padding-left:11px; overflow-x: auto;">
+      {%- for media in product.media -%}
+        <div class="product__thumb" data-thumb-item>
+          <div
+            class="product__thumb__link product__thumb__linked"
+            aria-current="{% if forloop.first %}true{% else %}false{% endif %}"
+            data-media-id="{{ section.id }}-{{ media.id }}"
+            data-thumb-index="{{ forloop.index0 }}"
+            data-thumb-link>
             {%- liquid
-              if settings.currency_code_enable
-                assign product_price_min = product.price_min | money_with_currency
-                assign product_compare_at_price = product.compare_at_price | money_with_currency
-              else
-                assign product_price_min = product.price_min | money
-                assign product_compare_at_price = product.compare_at_price | money
-              endif
-            -%}
-
-            <span class="price{% if product.compare_at_price > product.price %} sale{% endif %}">
-              {% if product.available %}
-                <span class="new-price">
-                  {% if product.price_varies %}
-                    <small>{{ 'products.general.from' | t }}</small>
-                  {% endif %}
-                  {%- if product.price == 0 and product.price_varies == false -%}
-                    {{ 'general.money.free' | t }}
-                  {%- else -%}
-                    {{ product_price_min }}
-                  {%- endif -%}
-                </span>
-                {% if product.compare_at_price > product.price %}
-                  <span style="font-family:'Foundo_Medium' !important;font-weight: 500;" class="old-price">{{ product_compare_at_price }}</span>
-                {% endif %}
-              {% else %}
-                <span style="font-family:'Foundo_Medium' !important;font-weight: 500;" class="sold-out">{{ 'products.product.sold_out' | t }}</span>
-              {% endif %}
-            </span>
-            {% if current_variant.unit_price %}
-              {% capture unit_price_separator %}
-                <span aria-hidden="true">/</span>
-                <span class="visually-hidden">{{ 'general.accessibility.unit_price_separator' | t }}&nbsp;</span>
-              {% endcapture %}
-              {% capture unit_price_base_unit %}
-                {% if current_variant.unit_price_measurement.reference_value != 1 %}
-                  {{ current_variant.unit_price_measurement.reference_value }}
-                {% endif %}
-                {{ current_variant.unit_price_measurement.reference_unit }}
-              {% endcapture %}
-              <br>
-              <span class="visually-hidden visually-hidden--inline">{{ 'products.product.unit_price_label' | t }}</span>
-              <span class="unit small">
-                {% if settings.currency_code_enable %}
-                  {{ current_variant.unit_price | money_with_currency }}
-                {% else %}
-                  {{ current_variant.unit_price | money }}{% endif %}
-                {{ unit_price_separator }}{{ unit_price_base_unit }}</span>
-            {% endif %}
+                render 'image' image: media.preview_image, width: 150, height: 150, sizes: '75px', widths: '75, 100, 150, 225, 300', aspect_ratio: 1,
+                if media.media_type == 'video' or media.media_type == 'external_video'
+                  render 'icon-media-video'
+                elsif media.media_type == 'model'
+                  render 'icon-media-model'
+                endif
+              -%}
           </div>
         </div>
-      </a>
+      {%- endfor -%}
+    </div>
 
-      {%- if siblings_html != blank -%}
-        {{ siblings_html }}
-      {%- elsif has_colors -%}
-        <div class="product-item__swatches__holder product-item__swatches__holder--{{ settings.swatch_style }}">
-          {{ swatches }}
-
-          {%- if has_colors -%}
-            <span class="product-item__swatches__count">
-              <span data-swatch-count>&nbsp;</span>
-            </span>
-          {%- endif -%}
+    <div class="product-information" data-product-information>
+      <div class="product-item__info" id="productItemInfo">
+        <div class="prduct-grid__serial-number">
+          <p>Serial №: </p>
+          <div class="product-item__title">{{ product.metafields.custom.serial_no }}</div>
         </div>
-      {%- endif -%}     
+        <div class="product-size-material" style="display: flex; justify-content: space-between;">
+          <div class="prduct-grid__size">
+            <p>Size:</p>
+            {% assign product_size = product.metafields.custom.product_size %}
+            {% if product_size == 0 %}
+              {% assign product_size = '' %}
+            {% endif %}
+            <div class="product-item__title">{{ product_size }}</div>
+          </div>
+          <div class="prduct-grid__material">
+            <p>Material:</p>
+            <div class="product-item__title">{{ product.metafields.custom.material }}</div>
+          </div>
+        </div>
+        
+        <a
+          class="product-link"
+          href="{{ product_url }}"
+          aria-label="{{ product.title | strip_html | escape }}"
+          data-product-link="{{ product_url }}">
+          {%- if settings.product_grid_show_rating and product.metafields.reviews.rating.value != blank -%}
+            <div class="product-item__stars">
+              {% render 'product-rating', product: product %}
+            </div>
+          {%- endif -%}
 
-      {%- if collection.metafields.custom.is_discover_collection_show -%}
-        <nav class="discover-the-collection__container breadcrumbs breadcrumbs--no-padding product__breadcrumbs" style="margin: 8px 0;">
-          <a class="discover-the-collection product-link" href="{{ metafield_collection_object.url }}">Discover the Collection</a>
-        </nav>
-      {%- endif -%}
+          <div class="product-item__title-combined">
+            <p class="product-item__title product-item__title-category">{{ metafield_collection_object.title }}</p>
+            <p class="product-item__title product-item__title-name">{{ product.metafields.custom.product_name }}</p>
+            <p class="product-item__title product-item__title-collection">{{ collection_object.title }}</p>
+          </div>
+          {% comment %} <p class="product-item__title">{{ product.title | strip_html | escape }}</p> {% endcomment %}
+          <div class="product-item__price__holder">
+            <div class="product-item__price" data-product-price="">
+              <span class="price">
+                <span style="font-family:'Foundo_Medium' !important;font-weight: bolder;" class="new-price product__priced">
+                  Price
+                </span>
+              </span>
+            </div>
+          </div>
+          <div class="product-item__price__holder{% if has_siblings %} has-siblings{% endif %}">
+            {%- if has_siblings or product_item_cutline != blank -%}
+              <span class="product-item__cutline" data-product-cutline>{{ product_item_cutline }}</span>
+            {%- endif -%}
+
+            {%- if has_siblings -%}
+              <span class="product-item__sep">&#8212;</span>
+            {%- endif -%}
+
+            <div class="product-item__price" data-product-price>
+              {% comment %} Price on product grid item {% endcomment %}
+
+              {%- liquid
+                if settings.currency_code_enable
+                  assign product_price_min = product.price_min | money_with_currency
+                  assign product_compare_at_price = product.compare_at_price | money_with_currency
+                else
+                  assign product_price_min = product.price_min | money
+                  assign product_compare_at_price = product.compare_at_price | money
+                endif
+              -%}
+
+              <span class="price{% if product.compare_at_price > product.price %} sale{% endif %}">
+                {% if product.available %}
+                  <span class="new-price">
+                    {% if product.price_varies %}
+                      <small>{{ 'products.general.from' | t }}</small>
+                    {% endif %}
+                    {%- if product.price == 0 and product.price_varies == false -%}
+                      {{ 'general.money.free' | t }}
+                    {%- else -%}
+                      {{ product_price_min }}
+                    {%- endif -%}
+                  </span>
+                  {% if product.compare_at_price > product.price %}
+                    <span style="font-family:'Foundo_Medium' !important;font-weight: 500;" class="old-price">{{ product_compare_at_price }}</span>
+                  {% endif %}
+                {% else %}
+                  <span style="font-family:'Foundo_Medium' !important;font-weight: 500;" class="sold-out">{{ 'products.product.sold_out' | t }}</span>
+                {% endif %}
+              </span>
+              {% if current_variant.unit_price %}
+                {% capture unit_price_separator %}
+                  <span aria-hidden="true">/</span>
+                  <span class="visually-hidden">{{ 'general.accessibility.unit_price_separator' | t }}&nbsp;</span>
+                {% endcapture %}
+                {% capture unit_price_base_unit %}
+                  {% if current_variant.unit_price_measurement.reference_value != 1 %}
+                    {{ current_variant.unit_price_measurement.reference_value }}
+                  {% endif %}
+                  {{ current_variant.unit_price_measurement.reference_unit }}
+                {% endcapture %}
+                <br>
+                <span class="visually-hidden visually-hidden--inline">{{ 'products.product.unit_price_label' | t }}</span>
+                <span class="unit small">
+                  {% if settings.currency_code_enable %}
+                    {{ current_variant.unit_price | money_with_currency }}
+                  {% else %}
+                    {{ current_variant.unit_price | money }}{% endif %}
+                  {{ unit_price_separator }}{{ unit_price_base_unit }}</span>
+              {% endif %}
+            </div>
+          </div>
+        </a>
+
+        {%- if siblings_html != blank -%}
+          {{ siblings_html }}
+        {%- elsif has_colors -%}
+          <div class="product-item__swatches__holder product-item__swatches__holder--{{ settings.swatch_style }}">
+            {{ swatches }}
+
+            {%- if has_colors -%}
+              <span class="product-item__swatches__count">
+                <span data-swatch-count>&nbsp;</span>
+              </span>
+            {%- endif -%}
+          </div>
+        {%- endif -%}     
+
+        {%- if collection.metafields.custom.is_discover_collection_show -%}
+          <nav class="discover-the-collection__container breadcrumbs breadcrumbs--no-padding product__breadcrumbs" style="margin: 8px 0;">
+            <a class="discover-the-collection product-link" href="{{ metafield_collection_object.url }}">Discover the Collection</a>
+          </nav>
+        {%- endif -%}
+      </div>
     </div>
   </div>
 </div>
