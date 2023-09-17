@@ -235,13 +235,6 @@ Usage:
       data-aos-delay="{{ aos_image_delay }}"
       data-aos-duration="{{ aos_duration }}"
       data-aos-anchor="{{ aos_anchor }}">{{ badge }}</span>
-  {%- elsif preorder and sold_out == false -%}
-    <span
-      class="preorder-box"
-      data-aos="fade"
-      data-aos-delay="{{ aos_image_delay }}"
-      data-aos-duration="{{ aos_duration }}"
-      data-aos-anchor="{{ aos_anchor }}">{{ 'products.product.pre_order' | t }}</span>
   {%- elsif on_sale and sold_out == false -%}
     <span
       class="sale-box"
@@ -457,9 +450,20 @@ Usage:
   {% assign metafield_collection_handle = metafield_collection_value %}
   {% assign metafield_collection_object = collections[metafield_collection_handle] %}
   <div class="product__details">
-    <nav class="breadcrumbs breadcrumbs--no-padding product__breadcrumbs" style="margin: 12px;">
+    <nav class="product__nav breadcrumbs breadcrumbs--no-padding product__breadcrumbs" style="margin: 12px;">
       <a href="{{ collection_object.url }}">{{ collection_object.title }}</a>
-      <div>{{cur_category}}</div>
+      <div>
+        {%- if preorder and sold_out == false -%}
+          <span
+            class="prduct__preorder-box"
+            data-aos="fade"
+            data-aos-delay="{{ aos_image_delay }}"
+            data-aos-duration="{{ aos_duration }}"
+            data-aos-anchor="{{ aos_anchor }}">
+            [ {{ 'products.product.pre_order' | t }} ]
+          </span>
+        {%- endif -%}
+      </div>
     </nav>
 
     <div class="overflowX_bo" style="display: flex;margin-top: 10px;padding-left:11px; overflow-x: auto;">

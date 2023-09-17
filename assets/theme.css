@@ -16413,6 +16413,25 @@ body.has-line-design.grid-compact .reviews__grid {
     min-height: 200px;
   }
 
+  .product__details .product__nav {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .product__details .prduct__preorder-box {
+    color: var(--Ancient-Gold, #D3BC93);
+    text-align: right;
+    leading-trim: both;
+    text-edge: cap;
+
+    /* new/d/135-caption-grotesk */
+    font-family: Foundo!important;
+    font-size: 11px;
+    font-style: normal;
+    font-weight: 135;
+    line-height: 120%; /* 13.2px */
+  }
+
   .product__details .product-item__title {
     color: var(--Off-Black, #00031E);
     leading-trim: both;
@@ -25445,13 +25464,13 @@ recipient-form .recipient-form-field-label {
   letter-spacing: 0.088px;
 }
 
-.product-info__value {
+#MainContent .product-info__value {
   color: var(--Off-Black, #00031E);
   leading-trim: both;
   text-edge: cap;
 
   /* new/d/Headline-06 */
-  font-family: Foundo Headline;
+  font-family: Foundo Headline!important;
   font-size: 16px;
   font-style: normal;
   font-weight: 100;
