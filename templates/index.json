@@ -166,6 +166,14 @@
             "position_y": 60
           }
         },
+        "a7a9f272-bc77-4818-af71-119ae83ad000": {
+          "type": "product",
+          "settings": {
+            "product": "make-the-cut-pac-lock-necklace-1",
+            "position_x": 45,
+            "position_y": 60
+          }
+        },
         "template--19259611742539__1ab6acb1-fcc5-4a57-989a-8b8691f8fb0c-1689328246295b8bb1-3": {
           "type": "product",
           "settings": {
@@ -187,11 +195,12 @@
         "template--19259611742539__1ab6acb1-fcc5-4a57-989a-8b8691f8fb0c-1689328246295b8bb1-0",
         "template--19259611742539__1ab6acb1-fcc5-4a57-989a-8b8691f8fb0c-1689328246295b8bb1-1",
         "template--19259611742539__1ab6acb1-fcc5-4a57-989a-8b8691f8fb0c-1689328246295b8bb1-2",
+        "a7a9f272-bc77-4818-af71-119ae83ad000",
         "template--19259611742539__1ab6acb1-fcc5-4a57-989a-8b8691f8fb0c-1689328246295b8bb1-3",
         "template--19259611742539__1ab6acb1-fcc5-4a57-989a-8b8691f8fb0c-1689328246295b8bb1-4"
       ],
       "settings": {
-        "image": "shopify:\/\/shop_images\/29_a1f562ae-7e53-481b-9931-c587f4914d34.jpg",
+        "image": "shopify:\/\/shop_images\/16.jpg",
         "image2": "shopify:\/\/shop_images\/23-6-1.jpg",
         "title": "",
         "show_dots": false,
