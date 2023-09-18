@@ -410,7 +410,7 @@ Usage:
 
             {%- if double_img -%}
               <div class="product-item__bg__under">
-                {%- render 'image' image: product.media[1].preview_image, aspect_ratio: aspect_ratio, sizes: sizes, widths: widths, attributes: image_animations, cover: true -%}
+                {%- render 'image' image: image, aspect_ratio: aspect_ratio, sizes: sizes, widths: widths, attributes: image_animations, cover: true -%}
               </div>
             {%- endif -%}
           </div>
