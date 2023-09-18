@@ -16351,7 +16351,7 @@ body.has-line-design.grid-compact .reviews__grid {
     height: 100%;
   }
 
-  .product-item__title-combined {
+  #product-item__title-combined p{
     color: var(--Off-Black, #00031E);
     leading-trim: both;
     text-edge: cap;

@@ -472,7 +472,7 @@ Usage:
   {% assign metafield_collection_handle = metafield_collection_value %}
   {% assign metafield_collection_object = collections[metafield_collection_handle] %}
   <div class="product__details">
-    <nav class="product__nav breadcrumbs breadcrumbs--no-padding product__breadcrumbs" style="margin: 12px;">
+    <nav class="product__nav breadcrumbs breadcrumbs--no-padding product__breadcrumbs" style="margin: 12px 12px 0 12px">
       <a href="{{ collection_object.url }}">{{ collection_object.title }}</a>
       <div>
         {%- if preorder and sold_out == false -%}
@@ -579,7 +579,7 @@ Usage:
             </div>
           {%- endif -%}
 
-          <div class="product-item__title-combined">
+          <div class="product-item__title-combined" id="product-item__title-combined">
             <p class="product-item__title product-item__title-category">{{ metafield_collection_object.title }}</p>
             <p class="product-item__title product-item__title-name">{{ product.metafields.custom.product_name }}</p>
             <p class="product-item__title product-item__title-collection">{{ collection_object.title }}</p>
