@@ -53,7 +53,7 @@
     "badge_text_color": "#212121",
     "quickview_enable": false,
     "swatch_style": "square",
-    "favicon": "shopify:\/\/shop_images\/20230914-104911.jpg",
+    "favicon": "shopify:\/\/shop_images\/logo_on_website.png",
     "show_free_shipping_message": true,
     "message": "You are ||amount|| away from free shipping.",
     "free_shipping_limit": "500",
