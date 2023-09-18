@@ -514,7 +514,7 @@ Usage:
               data-thumb-index="{{ forloop.index0 }}"
               data-thumb-link>
               {%- liquid
-                  render 'image' image: image, width: 150, height: 150, sizes: '75px', widths: '75, 100, 150, 225, 300', aspect_ratio: 1,
+                  render 'image' image: image, width: 44, height: 29, sizes: '44px', widths: '75, 100, 150, 225, 300', aspect_ratio: 1,
                   if media.media_type == 'video' or media.media_type == 'external_video'
                     render 'icon-media-video'
                   elsif media.media_type == 'model'

@@ -12190,7 +12190,7 @@ main-search .input-holder {
   }
 
   .look_slide_test:nth-of-type(3) .product-item__image {
-    padding-top: 58.9%;
+    padding-top: 65.92%;
     width: 100%;
   }
 
@@ -14671,6 +14671,11 @@ main-search .input-holder {
   width: 44px;
   height: 58px;
 }
+
+.product__thumb--landscape .product__thumb__link .image-wrapper img {
+  height: 29px;
+}
+
 
 .product__thumbs__holder .icon {
   position: absolute;
