@@ -471,7 +471,7 @@ Usage:
   {% assign metafield_collection_value = product.metafields.custom.collection %}
   {% assign metafield_collection_handle = metafield_collection_value %}
   {% assign metafield_collection_object = collections[metafield_collection_handle] %}
-  <div class="product__details">
+  <div class="product__details" id="product__details">
     <nav class="product__nav breadcrumbs breadcrumbs--no-padding product__breadcrumbs" style="margin: 12px 12px 0 12px">
       <a href="{{ collection_object.url }}">{{ collection_object.title }}</a>
       <div>
@@ -588,7 +588,7 @@ Usage:
           <div class="product-item__price__holder">
             <div class="product-item__price" data-product-price="">
               <span class="price">
-                <span style="font-family:'Foundo_Medium' !important;font-weight: bolder;" class="new-price product__priced">
+                <span style="font-family:'Foundo_Medium' !important;font-weight: bolder;" class="new-price product__priced" id="product__priced">
                   Price
                 </span>
               </span>
