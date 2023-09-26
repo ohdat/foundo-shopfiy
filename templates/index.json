@@ -181,14 +181,6 @@
             "position_x": 45,
             "position_y": 60
           }
-        },
-        "template--19259611742539__1ab6acb1-fcc5-4a57-989a-8b8691f8fb0c-1689328246295b8bb1-4": {
-          "type": "product",
-          "settings": {
-            "product": "make-the-cut-pac-lock-earring-small-model",
-            "position_x": 45,
-            "position_y": 60
-          }
         }
       },
       "block_order": [
@@ -196,8 +188,7 @@
         "template--19259611742539__1ab6acb1-fcc5-4a57-989a-8b8691f8fb0c-1689328246295b8bb1-1",
         "template--19259611742539__1ab6acb1-fcc5-4a57-989a-8b8691f8fb0c-1689328246295b8bb1-2",
         "a7a9f272-bc77-4818-af71-119ae83ad000",
-        "template--19259611742539__1ab6acb1-fcc5-4a57-989a-8b8691f8fb0c-1689328246295b8bb1-3",
-        "template--19259611742539__1ab6acb1-fcc5-4a57-989a-8b8691f8fb0c-1689328246295b8bb1-4"
+        "template--19259611742539__1ab6acb1-fcc5-4a57-989a-8b8691f8fb0c-1689328246295b8bb1-3"
       ],
       "settings": {
         "image": "shopify:\/\/shop_images\/1_765ec344-c3ad-4f44-ac16-177fe70f1f69.jpg",
