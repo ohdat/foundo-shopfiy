@@ -25522,7 +25522,7 @@ recipient-form .recipient-form-field-label {
   line-height: 100%; /* 16px */
   text-transform: uppercase;
 }
-
+body {display:none}
 #MainContent .font__foundo-headline {
   font-family: Foundo Headline!important;
 }
@@ -25578,6 +25578,17 @@ recipient-form .recipient-form-field-label {
   }
 }
 
+.header__menu .menu__item .navlink .navtext {
+  color: var(--Off-Black, #00031E);
+  leading-trim: both;
+  text-edge: cap;
 
+  /* new/d/102-caption-grotesk */
+  font-family: Foundo;
+  font-size: 11px;
+  font-style: normal;
+  font-weight: 102;
+  line-height: 120%; /* 13.2px */
+}
 
 /*! ============ Add any custom styles below this line ================== */
