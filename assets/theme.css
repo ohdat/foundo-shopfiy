@@ -25587,7 +25587,7 @@ recipient-form .recipient-form-field-label {
   color: var(--Dark-Grey, #9B9B9B);
 }
 .header__dropdown .header__dropdown__wrapper {
-  heigth: 100%;
+  height: 100%;
 }
 .header__dropdown .header__dropdown__wrapper .header__dropdown__inner {
   height: 100%;
