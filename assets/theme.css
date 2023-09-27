@@ -8459,6 +8459,7 @@ img.fit-cover {
   --text-light: var(--COLOR-SUBMENU-LINK);
   --link-hover: var(--COLOR-SUBMENU-LINK-HOVER);
   color: var(--COLOR-SUBMENU-LINK);
+  height: 509px;
   position: absolute;
   top: 100%;
   opacity: 0;
