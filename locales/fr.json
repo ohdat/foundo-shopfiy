@@ -37,7 +37,7 @@
       "submit": "S'inscrire",
       "placeholder": "Adresse e-mail",
       "thank_you": "Merci! Vous recevrez un email de notre part bientôt.",
-      "thank_you_with_code_html": "Merci pour votre inscription! Vous pouvez utiliser ce code <span>Remise de 10 %</span> pour votre prochaine commande !",
+      "thank_you_with_code_html": "Merci pour votre inscription! Vous pouvez utiliser ce code <span>Remise de 10 %<\/span> pour votre prochaine commande !",
       "error_message": "Ce client est déjà inscrit !"
     },
     "search": {
@@ -471,8 +471,8 @@
         "view_store_info": "Afficher les informations de la boutique",
         "check_other_stores": "Vérifier la disponibilité dans d'autres boutiques",
         "pick_up_available": "Service de retrait disponible",
-        "pick_up_available_at_html": "Service de retrait disponible à <strong>{{ location_name }}</strong>",
-        "pick_up_unavailable_at_html": "Service de retrait non disponible actuellement à <strong>{{ location_name }}</strong>",
+        "pick_up_available_at_html": "Service de retrait disponible à <strong>{{ location_name }}<\/strong>",
+        "pick_up_unavailable_at_html": "Service de retrait non disponible actuellement à <strong>{{ location_name }}<\/strong>",
         "unavailable": "Impossible de charger la disponibilité du service de retrait",
         "refresh": "Actualiser"
       }
