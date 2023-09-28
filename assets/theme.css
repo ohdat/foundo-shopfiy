@@ -25592,3 +25592,9 @@ recipient-form .recipient-form-field-label {
 .header__dropdown .header__dropdown__wrapper .header__dropdown__inner {
   height: 100%;
 }
+#product__details .product__breadcrumbs {
+  margin-top: 6px!important;
+}
+#product__details .overflowX_bo {
+  margin-top: 6px!important;
+}
