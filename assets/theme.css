@@ -25616,5 +25616,5 @@ recipient-form .recipient-form-field-label {
   height: 50px;
 }
 .product__submit__buttons .product__submit__item {
-  display: none;
+  /* display: none; */
 }
