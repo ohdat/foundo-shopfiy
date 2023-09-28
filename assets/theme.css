@@ -25598,3 +25598,9 @@ recipient-form .recipient-form-field-label {
 #product__details .overflowX_bo {
   margin-top: 6px!important;
 }
+#productItemInfo {
+  padding-top: 6px!important;
+}
+#product__details .product__thumb {
+  padding-bottom: 0!important;
+}
