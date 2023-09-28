@@ -25601,6 +25601,9 @@ recipient-form .recipient-form-field-label {
 #productItemInfo {
   padding-top: 6px!important;
 }
+#productItemInfo .prduct-grid__material {
+  text-align: right;
+}
 #product__details .product__thumb {
   padding-bottom: 0!important;
 }
