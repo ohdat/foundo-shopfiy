@@ -25604,3 +25604,11 @@ recipient-form .recipient-form-field-label {
 #product__details .product__thumb {
   padding-bottom: 0!important;
 }
+#product__details .product__thumb__link {
+  width: 38px;
+  height: 50px;
+}
+#product__details .product__thumb__link .image-wrapper img {
+  width: 38px;
+  height: 50px;
+}
