@@ -124,7 +124,7 @@
           assign content = block.settings[content]
 
           assign accordion_open = false
-          if product_description_content == blank
+          if product_description_content == blank and forloop.index == 1
             assign accordion_open = true
           endif
         -%}
