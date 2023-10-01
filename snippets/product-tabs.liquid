@@ -124,8 +124,8 @@
           assign content = block.settings[content]
 
           assign accordion_open = false
-          if product_description_content == blank and forloop.index == 1
-            assign accordion_open = true
+          if product_description_content == blank
+            assign accordion_open = false
           endif
         -%}
 
@@ -133,7 +133,7 @@
           {%- capture accordion_blocks_html -%}
             {{ accordion_blocks_html }}
 
-            <details class="accordion" data-collapsible{% if accordion_open %} open="true"{% endif %}>
+            <details class="accordion" data-collapsible{% if accordion_open %} open="false"{% endif %}>
               <summary class="accordion__title" data-collapsible-trigger {{ block.shopify_attributes }}>
                 {{ title }}
 
@@ -152,7 +152,7 @@
       {%- endfor -%}
 
       {%- if product_description_content != blank -%}
-        <details class="accordion" data-collapsible open="true">
+        <details class="accordion" data-collapsible open="false">
           <summary class="accordion__title" data-collapsible-trigger {{ accordion_description_attr }}>
             {{ 'products.general.description' | t }}
 
