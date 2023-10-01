@@ -25618,7 +25618,3 @@ recipient-form .recipient-form-field-label {
   width: 38px;
   height: 50px;
 }
-
-.product__submit__buttons:nth-child(2) {
-  display:none;
-}
