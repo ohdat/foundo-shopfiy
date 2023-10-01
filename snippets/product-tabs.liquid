@@ -152,7 +152,7 @@
       {%- endfor -%}
 
       {%- if product_description_content != blank -%}
-        <details class="accordion" data-collapsible open="true">
+        <details class="accordion" data-collapsible open="false">
           <summary class="accordion__title" data-collapsible-trigger {{ accordion_description_attr }}>
             {{ 'products.general.description' | t }}
 
@@ -160,7 +160,7 @@
             {%- render 'icon-minus' -%}
           </summary>
 
-          <div class="accordion__body rte" data-collapsible-body style="height: auto;">
+          <div class="accordion__body rte" data-collapsible-body>
             <div class="accordion__content accordion-content__holder accordion-content__holder--truncate" {{ truncated_holder }} data-collapsible-content>
               <div class="accordion-content__inner">
                 <div class="accordion-content__entry" data-truncated-content="accordion-content__entry--truncate">
