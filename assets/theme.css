@@ -25542,7 +25542,7 @@ recipient-form .recipient-form-field-label {
   color: var(--Off-Black, #00031E);
   leading-trim: both;
   text-edge: cap;
-  margin-bottom: 2px 0 8px;
+  margin: 2px 0 8px;
 
   /* new/d/Headline-06 */
   font-family: Foundo Headline!important;
