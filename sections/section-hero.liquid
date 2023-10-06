@@ -12,6 +12,7 @@
   assign mobile_height = section.settings.mobile_height
   assign image_1 = section.settings.image_1
   assign image_2 = section.settings.image_2
+  assign image_1_heading_title = section.settings.image_1_heading_title
   assign mobile_image = section.settings.mobile_image
 
   assign desktop_image_modifier = ''
@@ -175,7 +176,9 @@
 
     <div class="hero__images frame__item 12121">
       {%- if image_1 != blank -%}
-        <p>122</p>
+        {%- if image_1_heading_title != blank %}
+          <div>{{ image_1_heading_title }}</div>
+        {%- endif -%}
         <div class="hero__split-image{{ desktop_image_modifier }}">
           {%- render 'image-hero' image: image_1, sizes: sizes, desktop_height: desktop_height, mobile_height: mobile_height -%}
         </div>
