@@ -25517,6 +25517,7 @@ recipient-form .recipient-form-field-label {
 }
 
 .product-info__wrapper.line-with-4lines {
+  max-width: 198px;
   display: -webkit-box;
   -webkit-box-orient: vertical;
   -webkit-line-clamp: 4;
