@@ -16529,6 +16529,22 @@ body.has-line-design.grid-compact .reviews__grid {
     margin: 0 !important;
   }
 
+  .product-grid_list .informationclass.product-information .product-item__info .product-info__wrapper .page .layoutArea .column {
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 4;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    color: var(--Dark-Grey, #9B9B9B);
+    leading-trim: both;
+    text-edge: cap;
+    font-size: 11px;
+    font-style: normal;
+    font-weight: 120;
+    line-height: 120%;
+    letter-spacing: .088px;
+  }
+
   #product__thumbsoldered .product__thumb__link .image-wrapper img {
     width: 58px;
     height: 75px;
