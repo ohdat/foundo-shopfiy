@@ -16517,7 +16517,7 @@ body.has-line-design.grid-compact .reviews__grid {
   .product-grid_list .informationclass.product-information {
     max-height: 166px;
     overflow: hidden;
-    width: calc((100vw - 360px) / 3);
+    width: calc((100vw - 360px) / 3) !important;
   }
 
   .product-grid_list > a.product-link {
