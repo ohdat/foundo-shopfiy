@@ -432,9 +432,15 @@ Usage:
       <div class="product-item__bg__sibling" data-product-image-sibling></div>
     {%- endif -%}
   </a>
+
+  {% assign metafield_value = product.metafields.custom.category %}
+  {% assign collection_handle = metafield_value %}
+  {% assign collection_object = collections[collection_handle] %}
+
   {% assign metafield_collection_value = product.metafields.custom.collection %}
   {% assign metafield_collection_handle = metafield_collection_value %}
   {% assign metafield_collection_object = collections[metafield_collection_handle] %}
+
   <div class="informationclass product-information" data-product-information>
     <div class="product-item__info" id="productItemInfo">
       <a
