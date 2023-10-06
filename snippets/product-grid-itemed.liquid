@@ -453,11 +453,7 @@ Usage:
             </span>
           </div>
         </div>
-        <p class="product-item__title">
-          <p>{{ product.title }}</p>
-          <p>{{ strip_html }}</p>
-          <p>{{ escape }}</p>
-        </p>
+        <p class="product-item__title">{{ product.title | strip_html | escape }}</p>
         <div style="text-align: left;" class="product-item__price__holder">
           <div class="product-item__price" data-product-price="">
             <span class="price">
