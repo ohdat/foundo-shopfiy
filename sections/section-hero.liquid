@@ -13,6 +13,7 @@
   assign image_1 = section.settings.image_1
   assign image_2 = section.settings.image_2
   assign image_1_heading_title = section.settings.image_1_heading_title
+  assign aaa = section.settings.aaa
   
   assign mobile_image = section.settings.mobile_image
 
@@ -177,7 +178,7 @@
 
     <div class="hero__images frame__item 12121">
       {%- if image_1 != blank -%}
-        {{ image_1_heading_title }}1212
+        {{ image_1_heading_title }}{{ aaa }}1212
         {%- if image_1_heading_title != blank %}
           <div>{{ image_1_heading_title }}</div>
         {%- endif -%}
