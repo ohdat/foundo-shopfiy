@@ -25623,6 +25623,7 @@ recipient-form .recipient-form-field-label {
   display: none;
 }
 .index-hero .hreo__image__heading__title {
+  background-color: #F9F9F9;
   color: var(--Off-Black, #00031E);
   leading-trim: both;
   text-edge: cap;
