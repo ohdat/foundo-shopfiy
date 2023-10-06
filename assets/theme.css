@@ -25627,7 +25627,6 @@ recipient-form .recipient-form-field-label {
   color: var(--Off-Black, #00031E);
   leading-trim: both;
   text-edge: cap;
-  font-family: Foundo Headline!important;
   font-size: 12px;
   font-style: normal;
   font-weight: 100;
@@ -25635,4 +25634,7 @@ recipient-form .recipient-form-field-label {
   padding: 0 12px;
   height: 30px;
   line-height: 30px;
+}
+.index-hero .hreo__image__heading__title--color {
+  font-family: Foundo Headline !important;
 }
