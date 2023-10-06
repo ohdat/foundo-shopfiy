@@ -218,8 +218,7 @@ html {
 
 .product-grid_list {
   display: flex;
-
-  /* justify-content: space-between; */
+  justify-content: flex-start;
 }
 
 .product__thumb__linkes {
