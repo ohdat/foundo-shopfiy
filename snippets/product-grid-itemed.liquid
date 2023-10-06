@@ -432,6 +432,9 @@ Usage:
       <div class="product-item__bg__sibling" data-product-image-sibling></div>
     {%- endif -%}
   </a>
+  {% assign metafield_collection_value = product.metafields.custom.collection %}
+  {% assign metafield_collection_handle = metafield_collection_value %}
+  {% assign metafield_collection_object = collections[metafield_collection_handle] %}
   <div class="informationclass product-information" data-product-information>
     <div class="product-item__info" id="productItemInfo">
       <a
@@ -454,6 +457,9 @@ Usage:
           </div>
         </div>
         <p class="product-item__title">{{ product.title | strip_html | escape }}</p>
+        <p class="product-item__title product-item__title-category">{{ metafield_collection_object.title }}</p>
+        <p class="product-item__title product-item__title-name">{{ product.metafields.custom.product_name }}</p>
+        <p class="product-item__title product-item__title-collection">{{ collection_object.title }}</p>
         <div style="text-align: left;" class="product-item__price__holder">
           <div class="product-item__price" data-product-price="">
             <span class="price">
