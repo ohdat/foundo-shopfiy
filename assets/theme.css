@@ -25624,7 +25624,7 @@ recipient-form .recipient-form-field-label {
 }
 .index-hero .hreo__image__heading__title {
   background-color: #F9F9F9;
-  color: #00031E;
+  color: var(--Off-Black, #00031E);
   leading-trim: both;
   text-edge: cap;
   font-family: Foundo Headline!important;
