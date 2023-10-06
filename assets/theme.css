@@ -25630,8 +25630,8 @@ recipient-form .recipient-form-field-label {
   font-size: 12px;
   font-style: normal;
   font-weight: 100;
-  line-height: 100%;
   text-transform: uppercase;
   padding: 0 12px;
-  height: 30px
+  height: 30px;
+  line-height: 30px;
 }
