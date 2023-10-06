@@ -25622,7 +25622,7 @@ recipient-form .recipient-form-field-label {
 .product__submit > .product__submit__buttons > div:nth-child(2) {
   display: none;
 }
-.hreo__image__heading__title {
+.index-hero .hreo__image__heading__title {
   color: var(--Off-Black, #00031E);
   leading-trim: both;
   text-edge: cap;
