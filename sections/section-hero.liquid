@@ -84,10 +84,10 @@
   data-section-id="{{ section.id }}"
   data-section-type="hero"
   data-overlay-header>
+  {%- if image_1_heading_title != blank %}
+    <div>{{ image_1_heading_title }}</div>
+  {%- endif -%}
   <div id="heroWrapper" class="hero__wrapper frame {{ section.settings.width }}">
-    {%- if image_1_heading_title != blank %}
-      <div>{{ image_1_heading_title }}</div>
-    {%- endif -%}
     {%- if section.blocks.size > 0 -%}
       <div class="hero__content__wrapper frame__item {{ section.settings.flex_align }}{% if show_header_backdrop %} backdrop--linear{% endif %}" {% if show_header_backdrop %}style="--header-overlay-color: {{ overlay_color }}; --header-overlay-opacity: {{ overlay_opacity }};"{% endif %}>
         <div
