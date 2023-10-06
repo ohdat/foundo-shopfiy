@@ -87,6 +87,10 @@
   font-weight: normal;
 }
 
+#productItemInfo .product-item__title {
+  line-height: normal;
+}
+
 #footerBlocks h2 {
   font-family: 'Foundo_Headline' !important;
   color: #00031e;
