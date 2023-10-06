@@ -85,7 +85,9 @@
   data-section-type="hero"
   data-overlay-header>
   {%- if image_1_heading_title != blank %}
-    <div class="hreo__image__heading__title">{{ image_1_heading_title }}</div>
+    <div class="hreo__image__heading__title">
+      <p>{{ image_1_heading_title }}</p>
+    </div>
   {%- endif -%}
   <div id="heroWrapper" class="hero__wrapper frame {{ section.settings.width }}">
     {%- if section.blocks.size > 0 -%}
