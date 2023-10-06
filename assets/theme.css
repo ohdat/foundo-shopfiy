@@ -87,6 +87,10 @@
   font-weight: normal;
 }
 
+#productItemInfo .product-item__title {
+  line-height: normal;
+}
+
 #footerBlocks h2 {
   font-family: 'Foundo_Headline' !important;
   color: #00031e;
@@ -12540,6 +12544,7 @@ main-search .input-holder {
 }
 .grid__heading-holder {
   margin: 0;
+  padding: 0 12px;
   height: 30px;
 }
 .collection__filters .sidebar__item {
@@ -16516,10 +16521,32 @@ body.has-line-design.grid-compact .reviews__grid {
   .product-grid_list .informationclass.product-information {
     max-height: 166px;
     overflow: hidden;
+    width: calc((100vw - 360px) / 3) !important;
   }
 
   .product-grid_list > a.product-link {
     min-width: 360px;
+  }
+
+  .product-grid_list .informationclass.product-information .product-item__info .product-info__wrapper .page {
+    padding: 0 !important;
+    margin: 0 !important;
+  }
+
+  .product-grid_list .informationclass.product-information .product-item__info .product-info__wrapper .page .layoutArea .column {
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 4;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    color: var(--Dark-Grey, #9B9B9B);
+    leading-trim: both;
+    text-edge: cap;
+    font-size: 11px;
+    font-style: normal;
+    font-weight: 120;
+    line-height: 120%;
+    letter-spacing: .088px;
   }
 
   #product__thumbsoldered .product__thumb__link .image-wrapper img {
@@ -25494,6 +25521,7 @@ recipient-form .recipient-form-field-label {
 }
 
 .product-info__wrapper.line-with-4lines {
+  max-width: 240px;
   display: -webkit-box;
   -webkit-box-orient: vertical;
   -webkit-line-clamp: 4;
@@ -25514,6 +25542,7 @@ recipient-form .recipient-form-field-label {
   color: var(--Off-Black, #00031E);
   leading-trim: both;
   text-edge: cap;
+  margin: 2px 0 8px;
 
   /* new/d/Headline-06 */
   font-family: Foundo Headline!important;
@@ -25620,4 +25649,20 @@ recipient-form .recipient-form-field-label {
 }
 .product__submit > .product__submit__buttons > div:nth-child(2) {
   display: none;
+}
+.index-hero .hreo__image__heading__title {
+  background-color: #F9F9F9;
+  color: var(--Off-Black, #00031E);
+  leading-trim: both;
+  text-edge: cap;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 100;
+  text-transform: uppercase;
+  padding: 0 12px;
+  height: 30px;
+  line-height: 30px;
+}
+#MainContent .index-hero .hreo__image__heading__title span {
+  font-family: "Foundo Headline" !important;
 }

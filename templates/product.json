@@ -662,7 +662,8 @@
         "overlay_color": "#000000",
         "show_overlay_text": false,
         "bg_color": "",
-        "color": "#ffffff"
+        "color": "#ffffff",
+        "image_1_heading_title": "PART OF"
       }
     },
     "2e42e7a4-66a5-45ff-b7a3-107e94aa293d": {
