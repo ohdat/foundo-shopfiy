@@ -18719,6 +18719,7 @@ body .shopify-email-marketing-confirmation__container a {
 
 .account--login {
   text-align: center;
+  background-color: #fff;
 }
 
 .no-js .account--login .is-hidden {
@@ -18729,6 +18730,7 @@ body .shopify-email-marketing-confirmation__container a {
 
 .account {
   margin: 66px auto;
+  background-color: #fff;
 }
 
 .address-delete {
