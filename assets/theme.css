@@ -18722,6 +18722,10 @@ body .shopify-email-marketing-confirmation__container a {
   background-color: #fff;
 }
 
+.account--login .return_to_store {
+  font-family: 'Foundo_Headline';
+}
+
 .no-js .account--login .is-hidden {
   visibility: visible;
   max-height: none;
