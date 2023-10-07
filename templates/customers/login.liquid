@@ -10,6 +10,9 @@
     id="Login"
     class="account account--login{% if shop.checkout.guest_login %} just{% endif %}"
     data-account-form>
+    <a href="{{ routes.root_url }}">
+      <div class="return_to_store">x</div>
+    </a>
     <div id="wrapperNarrow" class="wrapper wrapper--narrow">
       <div class="login fade-toggle{% if shop.checkout.guest_login %} align-left{% endif %}" data-login-form>
         <div class="account_title">MY FOUNDO ACCOUNT</div>
@@ -56,9 +59,6 @@
             <br/> account settings. Below is an overview of your account details:</div>
           <a href="{{ routes.account_register_url }}">
             <div class="createabtn">Create</div>
-          </a>
-          <a href="{{ routes.root_url }}">
-            <div class="return_to_store">x</div>
           </a>
         {% endform %}
       </div>
