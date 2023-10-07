@@ -12,6 +12,7 @@
   assign mobile_height = section.settings.mobile_height
   assign image_1 = section.settings.image_1
   assign image_1_heading_title = section.settings.image_1_heading_title
+  assign show_image_1_heading_title = section.settings.show_image_1_heading_title
   assign image_2 = section.settings.image_2
   assign mobile_image = section.settings.mobile_image
 
@@ -83,10 +84,7 @@
   data-section-id="{{ section.id }}"
   data-section-type="hero"
   data-overlay-header>
-  <div class="hreo__image__heading__title">
-    <span class="hreo__image__heading__title--color">{{ image_1_heading_title }}</span>
-  </div>
-  {%- if image_1_heading_title != "false" %}
+  {%- if show_image_1_heading_title == true %}
     <div class="hreo__image__heading__title">
       <span class="hreo__image__heading__title--color">{{ image_1_heading_title }}</span>
     </div>
