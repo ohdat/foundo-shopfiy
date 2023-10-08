@@ -14440,11 +14440,11 @@ main-search .input-holder {
 }
 
 .informationclassed{
-  width: calc((100% - 960px) / 2);
+  width: calc(50vw / 2);
 }
 
 .productlinked{
-  width: 960px;
+  width: 50%;
 }
 
 .product__thumbs__holdered {
