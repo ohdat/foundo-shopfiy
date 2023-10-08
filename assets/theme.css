@@ -18053,7 +18053,6 @@ a.review {
   justify-content: center;
   width: 36px;
   height: 100%;
-  font-size: 0;
   line-height: 1;
   transform: translateY(-50%);
   transition: opacity 0.3s;
