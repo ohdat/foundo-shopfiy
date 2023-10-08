@@ -14440,11 +14440,11 @@ main-search .input-holder {
 }
 
 .informationclassed{
-  width: calc(50vw / 2);
+  width: calc((100% - 960px) / 2);
 }
 
 .productlinked{
-  width: 50vw;
+  width: 960px;
 }
 
 .product__thumbs__holdered {
@@ -18053,7 +18053,7 @@ a.review {
   justify-content: center;
   width: 36px;
   height: 100%;
-  font-size: 12px;
+  font-size: 0;
   line-height: 1;
   transform: translateY(-50%);
   transition: opacity 0.3s;
