@@ -204,7 +204,7 @@ Capture line items
             data-quantity-minus
             data-quantity-button
             title="{{ 'cart.general.decrease_quantity_label' | t }} - {{ line_item.product.title | strip_html }}">
-            <span>-</span>
+            {%- render '-' -%}
           </button>
 
           {%- assign quantity = line_item.quantity -%}
@@ -230,7 +230,7 @@ Capture line items
             data-quantity-plus
             data-quantity-button
             title="{{ 'cart.general.increase_quantity_label' | t }} - {{ line_item.product.title | strip_html }}">
-            <span>+</span>
+            {%- render '+' -%}
           </button>
         </div>
 
