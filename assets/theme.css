@@ -25668,3 +25668,6 @@ recipient-form .recipient-form-field-label {
 #MainContent .index-hero .hreo__image__heading__title span {
   font-family: "Foundo Headline" !important;
 }
+#footerBlocks .footer__quicklinks li a:hover {
+  color: var(--Ancient-Gold, #D3BC93);
+}
