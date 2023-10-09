@@ -36,5 +36,7 @@
   });
 
   let chatElement = $('.button-position--bottom_right');
-  console.log('chatElement::', chatElement.prevObject[0].body.childNodes)
+  console.log('chatElement::', chatElement.prevObject[0].body.childNodes.forEach(item => {
+    console.log(item);
+  }))
 })();
