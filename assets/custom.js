@@ -36,7 +36,7 @@
   });
 
   let chatElement = $('.button-position--bottom_right');
-  console.log('chatElement::', chatElement.prevObject[0].body.children.forEach(element, index => {
+  console.log('chatElement::', chatElement.prevObject[0].body.children.forEach((element, index) => {
     console.log(element, index);
   }));
 })();
