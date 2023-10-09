@@ -36,12 +36,10 @@
   });
 
   let chatElement = $('.button-position--bottom_right');
-  console.log('chatElement::', chatElement.prevObject[0].body.childNodes.forEach(item => {
-    console.log(item.no);
-  }))
   let elementNodes = chatElement.prevObject[0].body.childNodes;
   for (let i = 0; i < elementNodes.length; i++) {
     const node = elementNodes[i];
+    console.log(node, node.id, node.name);
     if (node.id === 'dummy-chat-button-iframe') {
       node.style.display = 'none'; // hide the iframe
       // or
