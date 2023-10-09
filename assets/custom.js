@@ -34,7 +34,8 @@
   $(function () {
     $('.product-item.grid-item').on('mouseenter', handleProductThumbTriggerEvent);
   });
-  let timeFlag = setInterval(() => {
+  let timeFlag = false;
+  let timer = setInterval(() => {
     let chatElement = $('.button-position--bottom_right');
     let elementNodes = chatElement.prevObject[0].body.childNodes;
     for (let i = 0; i < elementNodes.length; i++) {
@@ -42,11 +43,12 @@
       console.log(node, node.id, node.name);
       if (node.id === 'dummy-chat-button-iframe') {
         node.style.display = 'none'; // hide the iframe
-        // or
+        timeFlag = false;
         // node.style.display = 'block'; // show the iframe
-        break; // stop iterating once we've found the node
+        break;
       }
     }
   }, 1000);
 
+  timeFlag && clearTimeout(timer);
 })();
