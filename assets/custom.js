@@ -35,7 +35,11 @@
     $('.product-item.grid-item').on('mouseenter', handleProductThumbTriggerEvent);
   });
 
-  let chatElement = $('.image-overlay');
-  console.log('chatElement::', chatElement);
-  chatElement.hide();
+
+
+  setTimeout(() => {
+    let chatElement = $('#shopify-chat-dummy');
+    console.log('chatElement::', chatElement);
+    chatElement.hide();
+  }, 1000);
 })();
