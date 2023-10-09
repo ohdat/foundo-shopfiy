@@ -38,7 +38,7 @@
 
 
   let time = setInterval(() => {
-    let chatElement = $('#shopify-chat-dummy');
+    let chatElement = $('.chat-toggle--text-button');
     console.log('chatElement::', chatElement);
     chatElement.hide();
   }, 1000);
