@@ -37,7 +37,7 @@
 
 
 
-  const time = setInterval(() => {
+  let time = setInterval(() => {
     let chatElement = $('#shopify-chat-dummy');
     console.log('chatElement::', chatElement);
     chatElement.hide();
