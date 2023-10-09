@@ -35,7 +35,7 @@
     $('.product-item.grid-item').on('mouseenter', handleProductThumbTriggerEvent);
   });
 
-  const chatElement = $('.button-position--bottom_right');
+  const chatElement = $('.shopify-chat-dummy');
   chatElement.hide();
   console.log('chatElement::', chatElement);
 })();
