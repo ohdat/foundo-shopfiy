@@ -35,7 +35,7 @@
     $('.product-item.grid-item').on('mouseenter', handleProductThumbTriggerEvent);
   });
 
-  let chatElement = $('.dummy-chat-button');
+  let chatElement = $('.image-overlay');
   console.log('chatElement::', chatElement);
   chatElement.hide();
 })();
