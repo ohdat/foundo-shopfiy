@@ -36,6 +36,6 @@
   });
 
   const chatElement = $('.shopify-chat-dummy');
-  chatElement.hide();
+  // chatElement.hide();
   console.log('chatElement::', chatElement);
 })();
