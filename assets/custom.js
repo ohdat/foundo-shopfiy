@@ -51,6 +51,6 @@
   }, 1000);
 
   if (timeFlag) {
-    clearTimeout(timer)
+    clearTimeout(timer);
   };
 })();
