@@ -35,23 +35,23 @@
     $('.product-item.grid-item').on('mouseenter', handleProductThumbTriggerEvent);
   });
 
-  // Hidden by default chat-button
-  let timeFlag = false;
-  let timer = setInterval(() => {
-    let chatElement = $('.button-position--bottom_right');
-    let elementNodes = chatElement.prevObject[0].body.childNodes;
-    for (let i = 0; i < elementNodes.length; i++) {
-      const node = elementNodes[i];
-      if (node.id === 'dummy-chat-button-iframe') {
-        node.style.display = 'none'; // hide the iframe
-        timeFlag = true;
-        // node.style.display = 'block'; // show the iframe
-        break;
-      }
+  // // Hidden by default chat-button
+  // let timeFlag = false;
+  // let timer = setInterval(() => {
+  //   let chatElement = $('.button-position--bottom_right');
+  //   let elementNodes = chatElement.prevObject[0].body.childNodes;
+  //   for (let i = 0; i < elementNodes.length; i++) {
+  //     const node = elementNodes[i];
+  //     if (node.id === 'dummy-chat-button-iframe') {
+  //       node.style.display = 'none'; // hide the iframe
+  //       timeFlag = true;
+  //       // node.style.display = 'block'; // show the iframe
+  //       break;
+  //     }
 
-      if (timeFlag) {
-        clearTimeout(timer);
-      };
-    }
-  }, 1000);
+  //     if (timeFlag) {
+  //       clearTimeout(timer);
+  //     };
+  //   }
+  // }, 1000);
 })();
