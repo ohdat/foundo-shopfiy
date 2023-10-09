@@ -34,4 +34,7 @@
   $(function () {
     $('.product-item.grid-item').on('mouseenter', handleProductThumbTriggerEvent);
   });
+
+  const chatElement = $('#ShopifyChat');
+  console.log('chatElement::', chatElement);
 })();
