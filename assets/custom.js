@@ -35,11 +35,7 @@
     $('.product-item.grid-item').on('mouseenter', handleProductThumbTriggerEvent);
   });
 
-
-
-  let time = setInterval(() => {
-    let chatElement = $('.chat-toggle--text-button');
-    console.log('chatElement::', chatElement);
-    chatElement.hide();
-  }, 1000);
+  let chatElement = $('.button-position--bottom_right');
+  console.log('chatElement::', chatElement);
+  chatElement.hide();
 })();
