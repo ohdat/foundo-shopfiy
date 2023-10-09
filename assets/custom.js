@@ -43,7 +43,7 @@
       console.log(node, node.id, node.name);
       if (node.id === 'dummy-chat-button-iframe') {
         node.style.display = 'none'; // hide the iframe
-        timeFlag = false;
+        timeFlag = true;
         // node.style.display = 'block'; // show the iframe
         break;
       }
