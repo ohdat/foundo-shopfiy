@@ -36,6 +36,6 @@
   });
 
   let chatElement = $('.button-position--bottom_right');
-  console.log('chatElement::', chatElement.prevObject);
+  console.log('chatElement::', chatElement.prevObject[0]);
   chatElement.hide();
 })();
