@@ -34,6 +34,8 @@
   $(function () {
     $('.product-item.grid-item').on('mouseenter', handleProductThumbTriggerEvent);
   });
+
+  // Hidden by default chat-button
   let timeFlag = false;
   let timer = setInterval(() => {
     let chatElement = $('.button-position--bottom_right');
