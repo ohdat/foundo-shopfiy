@@ -36,5 +36,5 @@
   });
 
   let chatElement = $('.button-position--bottom_right');
-  console.log('chatElement::', chatElement.prevObject[0].body.children['dummy-chat-button-iframe']);
+  console.log('chatElement::', chatElement.prevObject[0].body);
 })();
