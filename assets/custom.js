@@ -47,10 +47,10 @@
         // node.style.display = 'block'; // show the iframe
         break;
       }
+
+      if (timeFlag) {
+        clearTimeout(timer);
+      };
     }
   }, 1000);
-
-  if (timeFlag) {
-    clearTimeout(timer);
-  };
 })();
