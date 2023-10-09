@@ -50,5 +50,7 @@
     }
   }, 1000);
 
-  timeFlag && clearTimeout(timer);
+  if (timeFlag) {
+    clearTimeout(timer)
+  };
 })();
