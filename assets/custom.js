@@ -10,6 +10,8 @@
 (function () {
   let $ = jQuery;
 
+  console.log(111);
+
   let changeProductImageByCurrentThumb = function () {
     // get current product thumb index
     let currentThumbIndex = $(this).index();
