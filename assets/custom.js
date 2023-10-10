@@ -56,7 +56,6 @@
 
     for (let i = 0; i < elementNodes.length; i++) {
       let node = elementNodes[i];
-      console.log(node.id);
       if (node.id === 'dummy-chat-button-iframe') {
         dummyChatButtonIframeNode = node;
         dummyChatButtonIframeNode.style.display = 'none'; // hide the iframe
