@@ -46,8 +46,10 @@
         node.style.display = 'none'; // hide the iframe
 
         // 添加文本元素
-        let textElement = document.createElement('div');
-        textElement.innerHTML = '点击这里开始聊天';
+        // let textElement = document.createElement('div');
+        $("<div class='chat-shopify-text'>点击这里开始聊天</div>");
+        let textElement = $(".chat-shopify-text");
+        // textElement.innerHTML = '点击这里开始聊天';
         textElement.style.cursor = 'pointer';
         textElement.style.position = 'fixed';
         textElement.style.bottom = '20px';
