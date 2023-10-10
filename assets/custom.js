@@ -39,7 +39,7 @@
     // 添加文本元素
     var textElement = document.createElement('div');
     textElement.innerHTML = '点击这里开始聊天';
-    textElement.setAttribute('id', 'live-chat-element')
+    textElement.setAttribute('id', 'live-chat-node')
     textElement.style.cursor = 'pointer';
     textElement.style.position = 'fixed';
     textElement.style.bottom = '20px';
@@ -50,36 +50,27 @@
 
   // Hidden by default chat-button
   let timeFlag = false;
+  let dummyChatButtonIframeNode = null;
+  let liveChatTextNode = null;
   let timer = setInterval(() => {
     let chatElement = $('.button-position--bottom_right');
     let elementNodes = chatElement.prevObject[0].body.childNodes;
+
     for (let i = 0; i < elementNodes.length; i++) {
       let node = elementNodes[i];
       console.log(node.id);
       if (node.id === 'dummy-chat-button-iframe') {
+        dummyChatButtonIframeNode = node;
         node.style.display = 'none'; // hide the iframe
-
-        // 添加文本元素
-        // var textElement = document.createElement('div');
-        // textElement.innerHTML = '点击这里开始聊天';
-        // textElement.style.cursor = 'pointer';
-        // textElement.style.position = 'fixed';
-        // textElement.style.bottom = '20px';
-        // textElement.style.right = '20px';
-        // textElement.style.zIndex = 9999;
-        let textElement = $('.live-chat-element');
-        console.log(textElement, node, 99999988);
-
-        // textElement?.addEventListener('click', function () {
-        //   console.log(textElement, node, 99999988);
-        //   // 显示 Shopify Chat 按钮
-        //   node.style.display = 'block';
-        //   // 隐藏文本元素
-        //   textElement.style.display = 'none';
-        // });
         timeFlag = true;
-        // node.style.display = 'block'; // show the iframe
         break;
+      }
+
+      if (node.id === 'live-chat-node') {
+        node.addEventListener('click', function () {
+          dummyChatButtonIframeNode.style.display = 'block';
+          node.style.display = 'none';
+        });
       }
 
       if (timeFlag) {
