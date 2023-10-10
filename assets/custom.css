@@ -1,3 +1,12 @@
 #dummy-chat-button-iframe {
   display: none;
 }
+
+#live-chat-node {
+  display: none;
+  cursor: pointer;
+  z-index: 999;
+  position: fixed;
+  bottom: 20px;
+  bottom: 20px;
+}

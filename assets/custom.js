@@ -39,11 +39,11 @@
     let textElement = document.createElement('div');
     textElement.innerHTML = '点击这里开始聊天';
     textElement.setAttribute('id', 'live-chat-node')
-    textElement.style.cursor = 'pointer';
-    textElement.style.display = 'none';
-    textElement.style.position = 'fixed';
-    textElement.style.bottom = '20px';
-    textElement.style.right = '20px';
+    // textElement.style.cursor = 'pointer';
+    // textElement.style.display = 'none';
+    // textElement.style.position = 'fixed';
+    // textElement.style.bottom = '20px';
+    // textElement.style.right = '20px';
     document.body.appendChild(textElement);
   });
 
