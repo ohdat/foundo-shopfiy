@@ -37,7 +37,7 @@
 
   document.addEventListener('DOMContentLoaded', function () {
     let textElement = document.createElement('div');
-    textElement.innerHTML = '点击这里开始聊天';
+    textElement.innerHTML = 'LIVE CHAT';
     textElement.setAttribute('id', 'live-chat-node')
     textElement.style.cursor = 'pointer';
     textElement.style.display = 'none';
