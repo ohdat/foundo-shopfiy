@@ -36,11 +36,11 @@
   });
 
   document.addEventListener('DOMContentLoaded', function () {
-    var textElement = document.createElement('div');
+    let textElement = document.createElement('div');
     textElement.innerHTML = '点击这里开始聊天';
     textElement.setAttribute('id', 'live-chat-node')
     textElement.style.cursor = 'pointer';
-    liveChatTextNode.style.display = 'none';
+    textElement.style.display = 'none';
     textElement.style.position = 'fixed';
     textElement.style.bottom = '20px';
     textElement.style.right = '20px';
