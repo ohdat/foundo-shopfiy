@@ -54,4 +54,26 @@
   //     };
   //   }
   // }, 1000);
+
+  document.addEventListener('DOMContentLoaded', function () {
+    // 隐藏 Shopify Chat 按钮
+    $('#dummy-chat-button-iframe').style.display = 'none';
+
+    // 添加文本元素
+    var textElement = document.createElement('div');
+    textElement.innerHTML = '点击这里开始聊天';
+    textElement.style.cursor = 'pointer';
+    textElement.style.position = 'fixed';
+    textElement.style.bottom = '20px';
+    textElement.style.right = '20px';
+    textElement.addEventListener('click', function () {
+      // 显示 Shopify Chat 按钮
+      $('#dummy-chat-button-iframe').style.display = 'block';
+      // 隐藏文本元素
+      textElement.style.display = 'none';
+    });
+
+    // 将文本元素添加到页面中
+    document.body.appendChild(textElement);
+  });
 })();
