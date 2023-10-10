@@ -55,7 +55,7 @@
     let elementNodes = chatElement.prevObject[0].body.childNodes;
     for (let i = 0; i < elementNodes.length; i++) {
       let node = elementNodes[i];
-
+      console.log(node.class);
       if (node.id === 'dummy-chat-button-iframe') {
         node.style.display = 'none'; // hide the iframe
 
