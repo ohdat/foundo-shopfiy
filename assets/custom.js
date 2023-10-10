@@ -36,10 +36,6 @@
   });
 
   document.addEventListener('DOMContentLoaded', function () {
-    // 隐藏 Shopify Chat 按钮
-    console.log($('#dummy-chat-button-iframe'));
-    $('#dummy-chat-button-iframe').style.display = 'none';
-
     // 添加文本元素
     var textElement = document.createElement('div');
     textElement.innerHTML = '点击这里开始聊天';
