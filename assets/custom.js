@@ -61,15 +61,16 @@
       console.log(node.id);
       if (node.id === 'dummy-chat-button-iframe') {
         dummyChatButtonIframeNode = node;
-        node.style.display = 'none'; // hide the iframe
+        dummyChatButtonIframeNode.style.display = 'none'; // hide the iframe
         timeFlag = true;
         break;
       }
 
       if (node.id === 'live-chat-node') {
+        liveChatTextNode = node;
         node.addEventListener('click', function () {
           dummyChatButtonIframeNode.style.display = 'block';
-          node.style.display = 'none';
+          liveChatTextNode.style.display = 'none';
         });
       }
 
