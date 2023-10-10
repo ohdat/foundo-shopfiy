@@ -65,15 +65,11 @@
 
       if (node.id === 'live-chat-node') {
         liveChatTextNode = node;
+        liveChatTextNode.style.display = 'block';
         node.addEventListener('click', function () {
           dummyChatButtonIframeNode.style.display = 'block';
           liveChatTextNode.style.display = 'none';
         });
-      }
-
-      if (dummyChatButtonIframeNode && liveChatTextNode) {
-        dummyChatButtonIframeNode.style.display = 'none'; // hide the iframe
-        liveChatTextNode.style.display = 'block';
       }
 
       if (timeFlag) {
