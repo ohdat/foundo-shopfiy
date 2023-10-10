@@ -67,6 +67,8 @@
         // textElement.style.right = '20px';
         // textElement.style.zIndex = 9999;
         let textElement = $('.live-chat-element');
+        console.log(textElement, node, 99999988);
+
         textElement.addEventListener('click', function () {
           console.log(textElement, node, 99999988);
           // 显示 Shopify Chat 按钮
