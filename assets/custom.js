@@ -36,7 +36,6 @@
   });
 
   document.addEventListener('DOMContentLoaded', function () {
-    // 添加文本元素
     var textElement = document.createElement('div');
     textElement.innerHTML = '点击这里开始聊天';
     textElement.setAttribute('id', 'live-chat-node')
@@ -44,7 +43,6 @@
     textElement.style.position = 'fixed';
     textElement.style.bottom = '20px';
     textElement.style.right = '20px';
-    // 将文本元素添加到页面中
     document.body.appendChild(textElement);
   });
 
