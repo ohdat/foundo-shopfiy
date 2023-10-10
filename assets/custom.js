@@ -43,7 +43,7 @@
     for (let i = 0; i < elementNodes.length; i++) {
       let node = elementNodes[i];
       if (node.id === 'dummy-chat-button-iframe') {
-        node.style.display = 'Hidden'; // hide the iframe
+        node.style.display = 'none'; // hide the iframe
 
         // 添加文本元素
         var textElement = document.createElement('div');
