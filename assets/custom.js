@@ -55,6 +55,7 @@
     let elementNodes = chatElement.prevObject[0].body.childNodes;
     for (let i = 0; i < elementNodes.length; i++) {
       let node = elementNodes[i];
+
       if (node.id === 'dummy-chat-button-iframe') {
         node.style.display = 'none'; // hide the iframe
 
@@ -69,13 +70,13 @@
         let textElement = $('.live-chat-element');
         console.log(textElement, node, 99999988);
 
-        textElement?.addEventListener('click', function () {
-          console.log(textElement, node, 99999988);
-          // 显示 Shopify Chat 按钮
-          node.style.display = 'block';
-          // 隐藏文本元素
-          textElement.style.display = 'none';
-        });
+        // textElement?.addEventListener('click', function () {
+        //   console.log(textElement, node, 99999988);
+        //   // 显示 Shopify Chat 按钮
+        //   node.style.display = 'block';
+        //   // 隐藏文本元素
+        //   textElement.style.display = 'none';
+        // });
         timeFlag = true;
         // node.style.display = 'block'; // show the iframe
         break;
