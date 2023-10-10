@@ -40,6 +40,7 @@
     textElement.innerHTML = '点击这里开始聊天';
     textElement.setAttribute('id', 'live-chat-node')
     textElement.style.cursor = 'pointer';
+    liveChatTextNode.style.display = 'none';
     textElement.style.position = 'fixed';
     textElement.style.bottom = '20px';
     textElement.style.right = '20px';
@@ -58,7 +59,6 @@
       let node = elementNodes[i];
       if (node.id === 'dummy-chat-button-iframe') {
         dummyChatButtonIframeNode = node;
-        dummyChatButtonIframeNode.style.display = 'none'; // hide the iframe
         timeFlag = true;
         break;
       }
@@ -69,6 +69,11 @@
           dummyChatButtonIframeNode.style.display = 'block';
           liveChatTextNode.style.display = 'none';
         });
+      }
+
+      if (dummyChatButtonIframeNode && liveChatTextNode) {
+        dummyChatButtonIframeNode.style.display = 'none'; // hide the iframe
+        liveChatTextNode.style.display = 'block';
       }
 
       if (timeFlag) {
