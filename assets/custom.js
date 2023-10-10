@@ -44,6 +44,7 @@
     textElement.style.position = 'fixed';
     textElement.style.bottom = '20px';
     textElement.style.right = '20px';
+    textElement.style.zIndex = 999;
     document.body.appendChild(textElement);
   });
 
