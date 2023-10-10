@@ -39,7 +39,7 @@
     // 添加文本元素
     var textElement = document.createElement('div');
     textElement.innerHTML = '点击这里开始聊天';
-    textElement.classList.add('live-chat-element');
+    textElement.setAttribute('id', 'live-chat-element')
     textElement.style.cursor = 'pointer';
     textElement.style.position = 'fixed';
     textElement.style.bottom = '20px';
