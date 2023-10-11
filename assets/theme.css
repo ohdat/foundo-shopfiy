@@ -21734,7 +21734,7 @@ ul.tabs--center>li {
   padding-bottom: 1rem;
 }
 
-.product-accordion .accordion__title p {
+.product-accordion .accordion__title #title {
   font-family: Foundo_Headline !important;
 }
 
