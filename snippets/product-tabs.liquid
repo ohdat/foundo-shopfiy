@@ -135,7 +135,7 @@
 
             <details class="accordion" data-collapsible{% if accordion_open %} open="true"{% endif %}>
               <summary class="accordion__title" data-collapsible-trigger {{ block.shopify_attributes }}>
-                <span>{{ title }}</span>
+                <p id="title">{{ title }}</p>
 
                 {%- render 'icon-plus' -%}
                 {%- render 'icon-minus' -%}
@@ -154,7 +154,7 @@
       {%- if product_description_content != blank -%}
         <details class="accordion" data-collapsible open="false">
           <summary class="accordion__title" data-collapsible-trigger {{ accordion_description_attr }}>
-            <span>Details</span>
+            <p id="title">Details</p>
 
             {%- render 'icon-plus' -%}
             {%- render 'icon-minus' -%}
