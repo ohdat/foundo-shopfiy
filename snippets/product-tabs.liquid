@@ -133,9 +133,9 @@
           {%- capture accordion_blocks_html -%}
             {{ accordion_blocks_html }}
 
-            <details class="accordion 111222333" data-collapsible{% if accordion_open %} open="true"{% endif %}>
+            <details class="accordion" data-collapsible{% if accordion_open %} open="true"{% endif %}>
               <summary class="accordion__title" data-collapsible-trigger {{ block.shopify_attributes }}>
-                {{ title }}
+                <span>{{ title }}</span>
 
                 {%- render 'icon-plus' -%}
                 {%- render 'icon-minus' -%}
@@ -152,7 +152,7 @@
       {%- endfor -%}
 
       {%- if product_description_content != blank -%}
-        <details class="accordion 333222111" data-collapsible open="false">
+        <details class="accordion" data-collapsible open="false">
           <summary class="accordion__title" data-collapsible-trigger {{ accordion_description_attr }}>
             <span>Details</span>
 
