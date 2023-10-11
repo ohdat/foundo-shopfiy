@@ -21729,14 +21729,11 @@ ul.tabs--center>li {
   padding-top: 1px;
 }
 
-.product-accordion .accordion__title {
+.product-accordion .accordion__title p {
   padding-top: 1rem;
   padding-bottom: 1rem;
-}
-
-/* .product-accordion .accordion__title p {
   font-family: 'Foundo_Headline' !important;
-} */
+}
 
 /* Tabs/Accordion Truncated */
 .accordion-content__entry--truncate,
