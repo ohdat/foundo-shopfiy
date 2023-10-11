@@ -21732,7 +21732,7 @@ ul.tabs--center>li {
 .product-accordion .accordion__title {
   padding-top: 1rem;
   padding-bottom: 1rem;
-  font-family: 'Foundo_Headline';
+  font-family: 'Foundo_Headline' !important;
 }
 
 /* Tabs/Accordion Truncated */
