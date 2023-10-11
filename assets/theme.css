@@ -21736,6 +21736,7 @@ ul.tabs--center>li {
 
 .product-accordion .accordion__title #title {
   font-family: Foundo_Headline !important;
+  margin: 0;
 }
 
 /* Tabs/Accordion Truncated */
