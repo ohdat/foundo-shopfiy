@@ -6107,7 +6107,7 @@ button {
 .btn--scroll-top.is-visible {
   opacity: 1;
   visibility: visible;
-  transform: translateY(-12px);
+  transform: translateY(0);
   transition-delay: 0s;
 }
 
