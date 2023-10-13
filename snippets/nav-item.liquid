@@ -41,7 +41,7 @@
     assign expands = true
     assign key = link.url | append: link.title | append: link.levels | md5
   endif
-  
+
   if parent and link.levels == 1
     assign child_count = child_count | plus: 1
   endif
