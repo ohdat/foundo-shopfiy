@@ -25621,9 +25621,6 @@ line-height: 120%; /* 13.2px */
   
   /* new/d/caption-headline */
   font-family: Foundo Headline !important;
-  font-style: normal;
-  font-weight: 100;
-  line-height: 100%; /* 11px */
   text-transform: uppercase;
 }
 #headerSections .header__menu .menu__item .navlink .navtext {
@@ -25632,10 +25629,8 @@ line-height: 120%; /* 13.2px */
   text-edge: cap;
 
   /* new/d/102-caption-grotesk */
-  font-family: Foundo;
-  font-style: normal;
+  font-family: Foundo !important;
   font-weight: 102;
-  line-height: 120%; /* 13.2px */
 }
 #headerSections .header__dropdown .header__dropdown__wrapper .navlink .navtext:hover {
 color: var(--Ancient-Gold, #D3BC93);
