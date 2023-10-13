@@ -4207,6 +4207,9 @@ body.grid-compact .grid-outer {
   leading-trim: both;
   text-edge: cap;
 }
+#headerSections .menu__item span{
+  color: var(--Dark-Grey, #9B9B9B);
+}
 #headerSections .menu__item.is-visible span{
   color: var(--Off-Black, #00031E);
 }
