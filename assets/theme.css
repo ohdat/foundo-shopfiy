@@ -25617,7 +25617,7 @@ line-height: 120%; /* 13.2px */
 #headerSections .header__menu .menu__item .navlink .navtext {
 color: var(--Off-Black, #00031E);
 }
-#headerSections .header__dropdown .header__dropdown__wrapper .navlink .navtext {
+#headerSections .header__dropdown .header__dropdown__wrapper .navlink .navlink--grandchild {
 color: var(--Dark-Grey, #9B9B9B);
 }
 #headerSections .header__dropdown .header__dropdown__wrapper .navlink .navtext:hover {
