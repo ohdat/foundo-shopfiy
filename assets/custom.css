@@ -1,0 +1,13 @@
+.navlink.navlink--child .navtext{
+  color: var(--Off-Black, #00031E);
+  leading-trim: both;
+  text-edge: cap;
+  
+  /* new/d/caption-headline */
+  font-family: Foundo Headline;
+  font-size: 11px;
+  font-style: normal;
+  font-weight: 100;
+  line-height: 100%; /* 11px */
+  text-transform: uppercase;
+}
