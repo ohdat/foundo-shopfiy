@@ -34,4 +34,13 @@
   $(function () {
     $('.product-item.grid-item').on('mouseenter', handleProductThumbTriggerEvent);
   });
+
+  // The menu adds a white background to the header
+  $(".menu__item").hover(function () {
+    if ($(this).find(".header__dropdown").length) {
+      $(".header__desktop__upper").css("background-color", "white");
+    }
+  }, function () {
+    $(".header__desktop__upper").css("background-color", "");
+  });
 })();

@@ -4200,7 +4200,6 @@ body.grid-compact .grid-outer {
   line-height: 120%; /* 13.2px */
 }
 #headerSections .navtext, #headerSections .popout span {
-  font-family: Foundo !important;
   font-size: 12px;
   font-style: normal;
   font-weight: 102;
