@@ -14698,6 +14698,7 @@ main-search .input-holder {
   fill: var(--COLOR-TEXT);
 }
 
+
 @media only screen and (min-width: 990px) {
   .form__width {
     max-width: 265px;
