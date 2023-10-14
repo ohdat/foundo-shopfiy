@@ -13929,6 +13929,7 @@ main-search .input-holder {
 
 .product-item__title {
   position: relative;
+  line-height: 100%;
   font-weight: var(--FONT-WEIGHT-BODY);
   font-size: calc(var(--font-3) * var(--FONT-ADJUST-BODY));
   color: inherit;
