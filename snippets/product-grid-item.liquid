@@ -485,14 +485,14 @@ Usage:
             [ {{ 'products.product.pre_order' | t }} ]
           </span>
         {%- endif -%}
-        {%- if true -%}
+        {%- if badge != '' -%}
           <span
             class="badge-box"
             data-aos="fade"
             data-aos-delay="{{ aos_image_delay }}"
             data-aos-duration="{{ aos_duration }}"
             data-aos-anchor="{{ aos_anchor }}">{{ badge }}</span>
-        {%- elsif on_sale and sold_out == false -%}
+        {%- elsif true -%}
           <span
             class="sale-box"
             data-aos="fade"
