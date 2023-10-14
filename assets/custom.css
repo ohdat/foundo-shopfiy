@@ -6,8 +6,14 @@
   line-height: 94%;
 }
 
-.product-item__title-categor,
-.product-item__title-name,
+.product-item__title-categor {
+  line-height: 100%;
+}
+
 .product-item__title-collection {
+  line-height: 100%;
+}
+
+.product-item__title-name {
   line-height: 100%;
 }
