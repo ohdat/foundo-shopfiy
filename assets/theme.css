@@ -125,8 +125,8 @@
 #formWidth .product__submit__item button[type='submit'] {
   font-family: 'Foundo_Medium' !important;
   font-weight: bolder;
-  border: 0.3px solid var(--Off-Black, #00031E);
-  background: var(--Off-Black, #00031E);
+  border: 0.3px solid var(--text);
+  background: var(--text);
 }
 #formWidth .product__submit__item button[type='submit'] span {
   color: #fff;
@@ -144,7 +144,7 @@
   font-size: 20px;
 }
 #formWidth .product__text p{
-  color: var(--Off-Black, #00031E);
+  color: var(--text);
   leading-trim: both;
   text-edge: cap;
   font-family: Foundo Headline !important;
@@ -155,7 +155,7 @@
   letter-spacing: 0.068px;
 }
 #formWidth .product__breadcrumbs a, #formWidth .product__priced span {
-  color: var(--Off-Black, #00031E);
+  color: var(--text);
   leading-trim: both;
   text-edge: cap;
   font-family: Foundo !important;
@@ -4171,7 +4171,7 @@ body.grid-compact .grid-outer {
 }
 
 #headerSections .navlink.navlink--child span{
-  color: var(--Off-Black, #00031E);
+  color: var(--text);
   leading-trim: both;
   text-edge: cap;
 
@@ -4206,7 +4206,7 @@ body.grid-compact .grid-outer {
   color: var(--Dark-Grey, #9B9B9B);
 }
 #headerSections .menu__item.is-visible span{
-  color: var(--Off-Black, #00031E);
+  color: var(--text);
 }
 .hero__wrapper.wrapper--full {
   aspect-ratio: 1950/1003;
@@ -12518,13 +12518,13 @@ main-search .input-holder {
 }
 
 .collection__filters .sidebar__item.sidebar__item--active {
-  border: 1px solid var(--Off-Black, #00031E)!important;
+  border: 1px solid var(--text)!important;
 }
 #filterGroup .sidebar__item--active.sidebar__item label {
   color: #00031E;
 }
 #MainContent .grid__heading {
-  color: var(--Off-Black, #00031E);
+  color: var(--text);
   leading-trim: both;
   text-edge: cap;
 
@@ -12547,7 +12547,7 @@ main-search .input-holder {
   border-radius: 2px;
 }
 .collection__filters .filter-group__heading span{
-  color: var(--Off-Black, #00031E);
+  color: var(--text);
   leading-trim: both;
   text-edge: cap;
 
@@ -16318,7 +16318,7 @@ body.has-line-design.grid-compact .reviews__grid {
   }
 
   .product__content .product__title {
-    color: var(--Off-Black, #00031E);
+    color: var(--text);
     leading-trim: both;
     text-edge: cap;
     font-family: Foundo Headline;
@@ -16353,7 +16353,7 @@ body.has-line-design.grid-compact .reviews__grid {
   }
 
   #product-item__title-combined p{
-    color: var(--Off-Black, #00031E);
+    color: var(--text);
     leading-trim: both;
     text-edge: cap;
 
@@ -16367,7 +16367,7 @@ body.has-line-design.grid-compact .reviews__grid {
   }
 
   #product__priced {
-    color: var(--Off-Black, #00031E);
+    color: var(--text);
     text-align: right;
     leading-trim: both;
     text-edge: cap;
@@ -16380,7 +16380,7 @@ body.has-line-design.grid-compact .reviews__grid {
   }
 
   #product__details .product__nav.breadcrumbs a{
-    color: var(--Off-Black, #00031E);
+    color: var(--text);
     leading-trim: both;
     text-edge: cap;
 
@@ -16474,7 +16474,7 @@ body.has-line-design.grid-compact .reviews__grid {
   }
 
   .product__details .product-item__title {
-    color: var(--Off-Black, #00031E);
+    color: var(--text);
     leading-trim: both;
     text-edge: cap;
 
@@ -16488,7 +16488,7 @@ body.has-line-design.grid-compact .reviews__grid {
   }
 
   .product__details .product-item__info p{
-    color: var(--Off-Black, #00031E);
+    color: var(--text);
     leading-trim: both;
     text-edge: cap;
     font-family: Foundo!important;
@@ -16573,7 +16573,7 @@ body.has-line-design.grid-compact .reviews__grid {
 }
 
 .product__wrapper .accordion__title {
-  color: var(--Off-Black, #00031E);
+  color: var(--text);
   leading-trim: both;
   text-edge: cap;
   display: block;
@@ -25535,7 +25535,7 @@ letter-spacing: 0.088px;
 }
 
 #MainContent .product-info__value {
-color: var(--Off-Black, #00031E);
+color: var(--text);
 leading-trim: both;
 text-edge: cap;
 margin: 2px 0 8px;
@@ -25606,7 +25606,7 @@ line-height: 120%; /* 13.2px */
 
 /*! ============ Add any custom styles below this line ================== */
 #headerSections .header__menu .menu__item .navlink.navlink--child .navtext {
-color: var(--Off-Black, #00031E);
+color: var(--text);
 }
 #headerSections .header__dropdown .header__dropdown__wrapper .navlink.navlink--grandchild .navtext {
 color: var(--Dark-Grey, #9B9B9B);
@@ -25648,7 +25648,7 @@ display: none;
 }
 .index-hero .hreo__image__heading__title {
 background-color: #F9F9F9;
-color: var(--Off-Black, #00031E);
+color: var(--text);
 leading-trim: both;
 text-edge: cap;
 font-size: 12px;
