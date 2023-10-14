@@ -1,0 +1,7 @@
+.product__block .breadcrumbs.breadcrumbs--no-padding.product__breadcrumbs {
+  margin: 0;
+}
+
+.product__block .product__title__wrapper h1 {
+  line-height: 94%;
+}
