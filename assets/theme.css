@@ -14698,6 +14698,9 @@ main-search .input-holder {
   fill: var(--COLOR-TEXT);
 }
 
+.product__breadcrumbs {
+  margin: 0 0 0.5em;
+}
 
 @media only screen and (min-width: 990px) {
   .form__width {
