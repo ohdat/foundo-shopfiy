@@ -475,7 +475,7 @@ Usage:
     <nav class="product__nav breadcrumbs breadcrumbs--no-padding product__breadcrumbs" style="margin: 12px 12px 0 12px">
       <a href="{{ collection_object.url }}">{{ collection_object.title }}</a>
       <div>
-        {%- if true -%}
+        {%- if preorder and sold_out == false -%}
           <span
             class="prduct__preorder-box"
             data-aos="fade"
@@ -485,7 +485,7 @@ Usage:
             [ {{ 'products.product.pre_order' | t }} ]
           </span>
         {%- endif -%}
-        {%- if badge != '' -%}
+        {%- if true -%}
           <span
             class="badge-box"
             data-aos="fade"
