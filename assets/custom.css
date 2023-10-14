@@ -5,3 +5,22 @@
 .product__block .product__title__wrapper h1 {
   line-height: 94%;
 }
+
+.index-hero .hreo__image__heading__title {
+  background-color: #F9F9F9;
+  color: var(--text);
+  leading-trim: both;
+  text-edge: cap;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 100;
+  text-transform: uppercase;
+  padding: 0 12px;
+  height: 30px;
+  line-height: 30px;
+}
+
+#MainContent .index-hero .hreo__image__heading__title span {
+  font-family: "Foundo Headline" !important;
+  color: var(--text);
+}
