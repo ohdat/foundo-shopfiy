@@ -39,7 +39,7 @@
   $(".menu__item").hover(function () {
     console.log($(".menu__item .navlink--toplevel .navtext"), 888);
 
-    $(".menu__item .navlink--toplevel .navtext").style?.color = "#9B9B9B";
+    // $(".menu__item .navlink--toplevel .navtext").style?.color = "#9B9B9B";
     if ($(this).find(".header__dropdown").length) {
       $(".header__desktop__upper").css("background-color", "white");
     }
