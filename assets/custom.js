@@ -37,7 +37,7 @@
 
   // The menu adds a white background to the header
   $(".menu__item").hover(function () {
-    console.log($(".menu__item .navlink--toplevel .navtext"), 888);
+    console.log($(".menu__item"), 888);
 
     // $(".menu__item .navlink--toplevel .navtext").style?.color = "#9B9B9B";
     if ($(this).find(".header__dropdown").length) {
