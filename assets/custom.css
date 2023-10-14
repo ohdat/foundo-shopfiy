@@ -5,3 +5,7 @@
 .product__block .product__title__wrapper h1 {
   line-height: 94%;
 }
+
+.product-item__title-categor, .product-item__title-name, .product-item__title-collection {
+  line-height: 100%;
+}
