@@ -44,7 +44,9 @@
       $(".header__desktop__upper").css("background-color", "white");
     }
   }, function () {
-    $(this).find(".navlink--toplevel .navtext").css("color", "#00031E");
+    $(this).find(".navlink--toplevel .navtext").css("color", "");
+    $(".menu__item:not(:hover) .navlink--toplevel .navtext").css("color", "");
+
     $(".header__desktop__upper").css("background-color", "");
   });
 })();
