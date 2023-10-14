@@ -13902,10 +13902,6 @@ main-search .input-holder {
   text-align: left;
 }
 
-.product-item--centered .product-item__title {
-  margin-bottom: 4px;
-}
-
 .product-item--centered .product-item__price__holder {
   justify-content: center;
 }
