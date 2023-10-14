@@ -492,7 +492,7 @@ Usage:
             data-aos-delay="{{ aos_image_delay }}"
             data-aos-duration="{{ aos_duration }}"
             data-aos-anchor="{{ aos_anchor }}">{{ badge }}</span>
-        {%- elsif true -%}
+        {%- elsif on_sale and sold_out == false -%}
           <span
             class="sale-box"
             data-aos="fade"
