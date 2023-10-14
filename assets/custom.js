@@ -42,7 +42,7 @@
       $(".header__desktop__upper").css("background-color", "white");
     }
   }, function () {
-    $(this).find(".navlink--toplevel .navtext").css("color", "");
+    $(this).find(".navlink--toplevel .navtext").css("color", "#00031E");
     $(".header__desktop__upper").css("background-color", "");
   });
 })();
