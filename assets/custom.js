@@ -37,7 +37,7 @@
 
   // The menu adds a white background to the header
   $(".menu__item").hover(function () {
-    $("#headerSections .menu__item span").style.color = "#9B9B9B";
+    $("#headerSections .menu__item span").style?.color = "#9B9B9B";
     console.log($("#headerSections .menu__item span"));
     if ($(this).find(".header__dropdown").length) {
       $(".header__desktop__upper").css("background-color", "white");
