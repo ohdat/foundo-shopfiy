@@ -14698,10 +14698,6 @@ main-search .input-holder {
   fill: var(--COLOR-TEXT);
 }
 
-.product__breadcrumbs {
-  margin: 0 0 0.5em;
-}
-
 @media only screen and (min-width: 990px) {
   .form__width {
     max-width: 265px;
@@ -16458,17 +16454,17 @@ body.has-line-design.grid-compact .reviews__grid {
   }
 
   .product__details .prduct__preorder-box {
-color: var(--Ancient-Gold, #D3BC93);
-text-align: right;
-leading-trim: both;
-text-edge: cap;
+    color: var(--Ancient-Gold, #D3BC93);
+    text-align: right;
+    leading-trim: both;
+    text-edge: cap;
 
-/* new/d/135-caption-grotesk */
-font-family: Foundo;
-font-size: 11px;
-font-style: normal;
-font-weight: 135;
-line-height: 120%; /* 13.2px */
+    /* new/d/135-caption-grotesk */
+    font-family: Foundo!important;
+    font-size: 11px;
+    font-style: normal;
+    font-weight: 135;
+    line-height: 120%; /* 13.2px */
   }
 
   .product__details .product-item__title {
