@@ -5247,6 +5247,9 @@ a {
   a:hover {
     color: var(--link-hover);
   }
+  .menu__item:hover .navlink.navlink--toplevel .navtext{
+    color: var(--link-hover);
+  }
 }
 
 blockquote {
