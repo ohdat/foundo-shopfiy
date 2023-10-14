@@ -16462,9 +16462,9 @@ body.has-line-design.grid-compact .reviews__grid {
     text-align: right;
     leading-trim: both;
     text-edge: cap;
-
+    
     /* new/d/135-caption-grotesk */
-    font-family: Foundo!important;
+    font-family: Foundo;
     font-size: 11px;
     font-style: normal;
     font-weight: 135;
