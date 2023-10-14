@@ -17,14 +17,6 @@ Usage:
   endif
 -%}
 
-  {% assign metafield_value = product.metafields.custom.category %}
-  {% assign collection_handle = metafield_value %}
-  {% assign collection_object = collections[collection_handle] %}
-
-  {% assign metafield_collection_value = product.metafields.custom.collection %}
-  {% assign metafield_collection_handle = metafield_collection_value %}
-  {% assign metafield_collection_object = collections[metafield_collection_handle] %}
-
   <div class="product__wrapper"> <div class="product__page">
     <div class="product__images">
       <div class="product__slides product-single__photos">
@@ -67,10 +59,7 @@ Usage:
                 {{ block.shopify_attributes }}
                 {{ block_style }}>
                 <div class="product__title__wrapper">
-                  {% comment %} <h1 class="product__title">{{ 'home_page.onboarding.product_title' | t }}</h1> {% endcomment %}
-                  <p class="product-item__title product-item__title-category">{{ metafield_collection_object.title }}</p>
-                  <p class="product-item__title product-item__title-name">{{ product.metafields.custom.product_name }}</p>
-                  <p class="product-item__title product-item__title-collection">{{ collection_object.title }}</p>
+                  <h1 class="product__title">{{ 'home_page.onboarding.product_title' | t }}</h1>
                 </div>
               </div>
 
