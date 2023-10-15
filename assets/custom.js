@@ -54,7 +54,7 @@
     $("#cart-drawer").removeClass("is-open");
   });
 
-  $(".header__desktop__bar__r .header__desktop__buttons .header__desktop__button .navlink--cart--icon").click(function () {
+  $(".header__desktop__bar__r .header__desktop__buttons .header__desktop__button:has(.navlink--cart)").click(function () {
     $("#cart-drawer").addClass("is-open");
   });
 })();
