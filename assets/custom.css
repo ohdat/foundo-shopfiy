@@ -30,3 +30,14 @@
 .drawer__inner .cart__widget.accordion {
  display: none;
 }
+
+.drawer__inner .drawer__head {
+  color: var(--text);
+  /* new/d/caption-headline */
+  font-family: Foundo Headline !important;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 100;
+  line-height: 100%; /* 11px */
+  text-transform: uppercase;
+}
