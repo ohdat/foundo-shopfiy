@@ -10,6 +10,6 @@
   max-width: 700px;
 }
 
-#form-container-ref::slotted(._formFieldset_g1wk8_68 ._horizontalLayout_171zd_12) {
+#form-container-ref::slotted(._horizontalLayout_171zd_12) {
   display: block;
 }
