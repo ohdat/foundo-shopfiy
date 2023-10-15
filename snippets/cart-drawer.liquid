@@ -541,8 +541,10 @@
                   <div class="paypal__btn"></div>
               </button>
             </div>
-            
-            <button id="continue-shopping" type="submit" name="close" data-cart-drawer-close aria-label="{{ 'general.accessibility.close' | t }} {{ 'cart.general.title' | t }}" class="btn btn--solid btn--full cart__continue">
+      {% comment %} <button type="button" class="drawer__close" data-cart-drawer-close aria-label="{{ 'general.accessibility.close' | t }} {{ 'cart.general.title' | t }}">
+        {%- render 'icon-cancel' -%}
+      </button> {% endcomment %}
+            <button id="continue-shopping" type="button" name="close" class="btn btn--solid btn--full cart__continue">
                 Continue shopping
             </button>
             {% comment %} <em class="cart__note"
