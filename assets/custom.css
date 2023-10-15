@@ -43,5 +43,5 @@
 }
 
 .drawer__inner .cart__button .paypal__btn {
-  background: url(./paypal.png), lightgray -6.683px -14.831px / 127.663% 346.685% no-repeat;
+  background: url(./paypal.png), no-repeat;
 }
