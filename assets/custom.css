@@ -42,6 +42,14 @@
   text-transform: uppercase;
 }
 
+.cart__button {
+  display: flex;
+}
+
+.cart__button .btn--full {
+  max-width: 50%;
+}
+
 .drawer__inner .cart__button .paypal__btn {
   height: 18px;
   width: 66px;
