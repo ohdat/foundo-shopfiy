@@ -133,9 +133,9 @@
       </div>
     {%- endif -%}
 
-    {% comment %} {%- if qualified_shipping_message != blank -%}
+    {%- if qualified_shipping_message != blank -%}
       <span class="free-shipping__success-message">{{ qualified_shipping_message }}</span>
-    {%- endif -%} {% endcomment %}
+    {%- endif -%}
 
     <span class="free-shipping__default-message">
       {{ free_shipping_message }}
