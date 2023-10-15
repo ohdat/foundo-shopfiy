@@ -31,7 +31,7 @@
  display: none;
 }
 
-.drawer__inner .drawer__head div{
+.drawer__inner .drawer__head #head__title{
   color: var(--text);
   font-family: 'Foundo Headline' !important;
   font-size: 12px;
