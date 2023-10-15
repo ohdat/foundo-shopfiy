@@ -455,7 +455,7 @@
 >
   <span class="cart__total__label">{{ 'cart.general.subtotal_items' | t }}</span>
 
-  <span class="cart__total__price" style="{{ margin: var(--inner) 0; }}">
+  <span class="cart__total__price cart__total__price--margin" style="{{ margin: var(--inner) 0; }}">
     {%- if original_subtotal == 0 -%}
       {{ 'general.money.free' | t }}
     {%- else -%}
