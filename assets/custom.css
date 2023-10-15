@@ -47,7 +47,7 @@
 }
 
 .cart__button .btn--full {
-  max-width: 50%;
+  min-width: calc(50% - 10px);
 }
 
 .drawer__inner .cart__button .paypal__btn {
