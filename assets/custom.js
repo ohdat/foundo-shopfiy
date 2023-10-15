@@ -51,6 +51,10 @@
   });
 
   $("#continue-shopping").click(function () {
-    $("#cart-drawer .drawer__inner").css("visibility", "hidden");
+    $("#cart-drawer").removeClass("is-open");
+  });
+
+  $(".navlink__cart__content").click(function () {
+    $("#cart-drawer").addClass("is-open");
   });
 })();
