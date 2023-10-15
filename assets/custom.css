@@ -60,7 +60,6 @@
 .drawer__inner #cart__total__order {
   color: var(--text);
   /* new/d/102-caption-grotesk */
-  font-family: Foundo !important;
   font-size: 12px;
   font-style: normal;
   font-weight: 102;
