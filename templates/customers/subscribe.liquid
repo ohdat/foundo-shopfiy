@@ -41,38 +41,37 @@
           <div class="account_text">TITLE</div>
           <div class="flex_all">
             <input
-              value="{{ form.subscribe }}"
-              id="subscribe"
+              value="{{ form.title_one }}"
+              id="title_one"
               type="checkbox"
-              name="customer[note][Subscribe]" />
-            <p class="input_text"></p>
+              name="customer[title_one]" />
+            <p class="input_text">Mr</p>
           </div>
 
-                    <div class="flex_all">
+          <div class="flex_all">
             <input
-              value="{{ form.subscribe }}"
-              id="subscribe"
+              value="{{ form[title_two] }}"
+              id="title_three"
               type="checkbox"
-              name="customer[note][Subscribe]" />
-            <p class="input_text">Subscribe to newsletter</p>
+              name="customer[title_two]" />
+            <p class="input_text">Miss,Mrs,Ms</p>
+          <div class="flex_all">
+
+            <input
+              value="{{ form.title_three }}"
+              id="title_three"
+              type="checkbox"
+              name="customer[title_three]" />
+            <p class="input_text">Mx</p>
           </div>
 
-                    <div class="flex_all">
+          <div class="flex_all">
             <input
-              value="{{ form.subscribe }}"
-              id="subscribe"
+              value="{{ form.title_four }}"
+              id="title_four"
               type="checkbox"
-              name="customer[note][Subscribe]" />
-            <p class="input_text">Subscribe to newsletter</p>
-          </div>
-
-                    <div class="flex_all">
-            <input
-              value="{{ form.subscribe }}"
-              id="subscribe"
-              type="checkbox"
-              name="customer[note][Subscribe]" />
-            <p class="input_text">Subscribe to newsletter</p>
+              name="customer[title_four]" />
+            <p class="input_text">I'd rather not to say</p>
           </div>
         </div>
         <div class="form-field">
