@@ -544,7 +544,7 @@
       {% comment %} <button type="button" class="drawer__close" data-cart-drawer-close aria-label="{{ 'general.accessibility.close' | t }} {{ 'cart.general.title' | t }}">
         {%- render 'icon-cancel' -%}
       </button> {% endcomment %}
-            <button id="continue-shopping" type="button" name="close" class="btn btn--solid btn--full cart__continue">
+            <button id="continue-shopping" type="button" name="close" data-cart-drawer-close class="btn btn--solid btn--full cart__continue">
                 Continue shopping
             </button>
             {% comment %} <em class="cart__note"
