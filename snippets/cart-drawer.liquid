@@ -26,7 +26,7 @@
 
 <div class="drawer drawer--cart" id="cart-drawer" data-cart-drawer tabindex="0">
   <div class="drawer__inner" data-scroll-lock-scrollable>
-    {%- if cart_custom_message_text != blank -%}
+    {% comment %} {%- if cart_custom_message_text != blank -%}
       <div
         class="drawer__message cart__message drawer__message--custom"
         data-animation="{{ animation_name }}"
@@ -36,7 +36,7 @@
       >
         {{ cart_custom_message_text }}
       </div>
-    {%- endif -%}
+    {%- endif -%} {% endcomment %}
 
     <header
       class="drawer__head"
