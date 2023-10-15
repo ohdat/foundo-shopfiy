@@ -31,6 +31,10 @@
  display: none;
 }
 
+.drawer__inner .drawer__head {
+  background: #F9F9F9;
+}
+
 .drawer__inner .drawer__head #head__title{
   color: var(--text);
   /* new/d/caption-headline */
