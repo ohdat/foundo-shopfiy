@@ -21,7 +21,7 @@
 .product__details {
   position: relative;
 }
-.product__details .product__sold {
+.product__details .product__sold-out {
   position: absolute;
   top: 0;
   right: 20px;
