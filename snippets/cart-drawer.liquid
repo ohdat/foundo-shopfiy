@@ -539,7 +539,10 @@
                 {%- if settings.show_lock_icon -%}
                   {%- render 'animated-icon', filename: 'icon-lock' -%}
                 {%- endif -%}
-                  {%- render 'image-hero' image: paypal_image -%}
+                  <img
+                    src="{{ paypal_image }}"
+                    loading="lazy"
+                    alt="paypal">
               </button>
             </div>
 
