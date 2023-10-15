@@ -31,7 +31,7 @@
  display: none;
 }
 
-.drawer__inner .drawer__head {
+.drawer__inner .drawer__head h3{
   color: var(--text);
   /* new/d/caption-headline */
   font-family: Foundo Headline !important;
