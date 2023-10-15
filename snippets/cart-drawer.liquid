@@ -507,7 +507,7 @@
   data-animation-delay="{{ animation_delay }}"
   {%- assign animation_delay = animation_delay | plus: animation_delay_increment -%}
 >
-  <span class="cart__total__label">Order Total</span>
+  <span class="cart__total__label cart__total__order">Order Total</span>
 
   <span class="cart__total__price cart__total__price--animated" data-cart-total="{{ subtotal }}">
     {%- if subtotal == 0 -%}
