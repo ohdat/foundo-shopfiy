@@ -43,6 +43,5 @@
 }
 
 .drawer__inner .cart__button .paypal__btn {
-  -webkit-mask-image: var(--ICON-PAYPAL);
-  mask-image: var(--ICON-PAYPAL);
+  background: url(./paypal.png);
 }
