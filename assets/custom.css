@@ -5,3 +5,7 @@
 .product__block .product__title__wrapper h1 {
   line-height: 94%;
 }
+
+#form-container-ref p {
+  color: red;
+}
