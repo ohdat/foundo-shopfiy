@@ -45,7 +45,7 @@
       data-animation-delay="{{ animation_delay }}"
       {%- assign animation_delay = animation_delay | plus: animation_delay_increment -%}
     >
-      <h3>{{ 'cart.general.title' | t }}</h3>
+      <div>{{ 'cart.general.title' | t }}</div>
 
       <button type="button" class="drawer__close" data-cart-drawer-close aria-label="{{ 'general.accessibility.close' | t }} {{ 'cart.general.title' | t }}">
         {%- render 'icon-cancel' -%}
