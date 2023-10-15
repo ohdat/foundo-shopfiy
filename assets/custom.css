@@ -33,7 +33,7 @@
 
 .drawer__inner .drawer__head div{
   color: var(--text);
-  font-family: Foundo Headline !important;
+  font-family: 'Foundo Headline' !important;
   font-size: 12px;
   text-transform: uppercase;
 }
