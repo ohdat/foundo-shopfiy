@@ -43,6 +43,10 @@
 }
 
 .drawer__inner .cart__button .paypal__btn {
-  height: 40px;
-  background: url(./paypal.png), no-repeat;
+  height: 18px;
+  width: 66px;
+  background: url(./paypal.png);
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-size: 100%;
 }
