@@ -12,7 +12,6 @@
   assign custom_message_color = settings.cart_cust_message_color
   assign show_wheel = false
   assign show_progress_bar = true
-  assign paypal_image = 'paypal.svg'
 -%}
 
 {%- unless custom_message_color == 'rgba(0,0,0,0)' or custom_message_color == blank -%}
@@ -539,10 +538,7 @@
                 {%- if settings.show_lock_icon -%}
                   {%- render 'animated-icon', filename: 'icon-lock' -%}
                 {%- endif -%}
-                  <img
-                    src="{{ paypal_image }}"
-                    loading="lazy"
-                    alt="paypal">
+                  <div class="paypal-btn"></div>
               </button>
             </div>
 
