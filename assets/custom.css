@@ -26,3 +26,7 @@
   top: 6px;
   right: 12px;
 }
+
+.drawer__inner .cart__widget.accordion {
+ display: none;
+}
