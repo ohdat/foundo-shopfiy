@@ -53,6 +53,10 @@
   max-width: unset;
 }
 
+.drawer__inner .cart__continue {
+  border: 0.3px solid var(--text);
+}
+
 .drawer__inner .cart__button .paypal__btn {
   height: 18px;
   width: 66px;
