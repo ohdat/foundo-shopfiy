@@ -41,3 +41,7 @@
   line-height: 100%;
   text-transform: uppercase;
 }
+
+.drawer__inner .cart__button .paypal__btn {
+  background: url(var(--ICON-PAYPAL));
+}
