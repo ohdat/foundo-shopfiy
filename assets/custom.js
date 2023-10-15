@@ -50,8 +50,11 @@
     $(".header__desktop__upper").css("background-color", "");
   });
 
+  $(".header__desktop__buttons .navlink--cart--icon").click(function () {
+    $("#cart-drawer").addClass("is-open");
+  });
 
   $("#continue-shopping").click(function () {
-    $("#cart-drawer").hide();
+    $("#cart-drawer").removeClass("is-open");
   });
 })();
