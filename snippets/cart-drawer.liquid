@@ -453,7 +453,7 @@
     {%- assign animation_delay = animation_delay | plus: animation_delay_increment -%}
   {% endunless %}
 >
-  <span class="cart__total__label 111">{{ 'cart.general.subtotal_items' | t }}</span>
+  <span class="cart__total__label">{{ 'cart.general.subtotal_items' | t }}</span>
 
   <span class="cart__total__price">
     {%- if original_subtotal == 0 -%}
@@ -507,7 +507,7 @@
   data-animation-delay="{{ animation_delay }}"
   {%- assign animation_delay = animation_delay | plus: animation_delay_increment -%}
 >
-  <span class="cart__total__label">{{- 'cart.general.subtotal' | t -}}</span>
+  <span class="cart__total__label 111">{{- 'cart.general.subtotal' | t -}}</span>
 
   <span class="cart__total__price cart__total__price--animated" data-cart-total="{{ subtotal }}">
     {%- if subtotal == 0 -%}
