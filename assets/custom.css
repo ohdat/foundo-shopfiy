@@ -57,6 +57,14 @@
   border: 0.3px solid var(--text);
 }
 
+.drawer__inner .cart__total--margin {
+  margin: 0;
+}
+
+.drawer__inner .cart__total--margin {
+  margin: 0 0 var(--inner) 0;
+}
+
 .drawer__inner #cart__total__order {
   color: var(--text);
   /* new/d/102-caption-grotesk */
