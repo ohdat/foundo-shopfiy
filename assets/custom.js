@@ -49,4 +49,10 @@
 
     $(".header__desktop__upper").css("background-color", "");
   });
+
+
+  $("#continue-shopping").click(function () {
+    $("#cart-drawer").removeClass("is-open");
+  });
+
 })();
