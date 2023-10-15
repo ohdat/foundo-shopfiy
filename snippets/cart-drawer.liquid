@@ -106,7 +106,7 @@
     endcapture
   -%}
 
-  <div class="{{ free_shipping_classes }}"
+  {% comment %} <div class="{{ free_shipping_classes }}"
     data-free-shipping="{% if qualified_shipping_message != blank %}true{% else %}false{% endif %}"
     data-free-shipping-limit="{{ limit }}"
     {% if template.name == 'cart' or is_cart_drawer %}
@@ -150,7 +150,7 @@
       <span class="confetti__dot confetti__dot--5"></span>
       <span class="confetti__dot confetti__dot--6"></span>
     </div>
-  </div>
+  </div> {% endcomment %}
 {%- endif -%}
 
       {%- assign animation_delay = animation_delay | plus: animation_delay_increment -%}
