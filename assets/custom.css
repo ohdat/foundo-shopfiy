@@ -44,10 +44,13 @@
 
 .cart__button {
   display: flex;
+  justify-content: space-between;
 }
 
 .cart__button .btn--full {
-  min-width: calc(50% - 10px);
+  min-width: calc(50% - 5px);
+  width: unset;
+  max-width: unset;
 }
 
 .drawer__inner .cart__button .paypal__btn {
