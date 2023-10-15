@@ -271,7 +271,7 @@
 
         <form action="{{ routes.cart_url }}" method="post" novalidate class="cart__form">
           {%- if settings.enable_order_notes -%}
-            {% comment %} <details
+            <details
               class="cart__widget accordion"
               data-collapsible
               data-animation="{{ animation_name }}"
@@ -293,7 +293,7 @@
                   </textarea>
                 </div>
               </div>
-            </details> {% endcomment %}
+            </details>
           {%- endif -%}
 
           {%- if settings.enable_gift_notes -%}
