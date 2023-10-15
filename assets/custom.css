@@ -17,3 +17,13 @@
 #form-container-ref /deep/ ._horizontalLayout_171zd_12 {
     display: block;
 }
+
+.product__details {
+  position: relative;
+}
+.product__details .product__sold {
+  position: absolute;
+  top: 0;
+  right: 20px;
+  
+}
