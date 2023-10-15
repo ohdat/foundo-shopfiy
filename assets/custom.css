@@ -26,3 +26,65 @@
   top: 6px;
   right: 12px;
 }
+
+.drawer__inner .cart__widget.accordion {
+  display: none;
+}
+
+.drawer__inner .drawer__head {
+  background: #F9F9F9;
+}
+
+.drawer__inner .drawer__head #head__title{
+  color: var(--text);
+  /* new/d/caption-headline */
+  font-family: 'Foundo Headline' !important;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 100;
+  line-height: 100%;
+  text-transform: uppercase;
+}
+
+.cart__button {
+  display: flex;
+  justify-content: space-between;
+}
+
+.cart__button .btn--full {
+  min-width: calc(50% - 5px);
+  width: unset;
+  max-width: unset;
+}
+
+.drawer__inner .cart__continue {
+  border: 0.3px solid var(--text);
+}
+
+.drawer__inner .cart__total--margin {
+  margin: 0;
+  color: #9B9B9B;
+}
+
+.drawer__inner .cart__total--margin-bottom {
+  margin: 0 0 var(--inner) 0;
+}
+
+.drawer__inner #cart__total__order {
+  color: var(--text);
+  /* new/d/102-caption-grotesk */
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 102;
+  line-height: 120%;
+  letter-spacing: normal;
+  }
+
+.drawer__inner .cart__button .paypal__btn {
+  height: 18px;
+  width: 66px;
+  background: url(./paypal.png);
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-size: 100%;
+}

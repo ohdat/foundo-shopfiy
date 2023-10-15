@@ -26,7 +26,7 @@
 
 <div class="drawer drawer--cart" id="cart-drawer" data-cart-drawer tabindex="0">
   <div class="drawer__inner" data-scroll-lock-scrollable>
-    {%- if cart_custom_message_text != blank -%}
+    {% comment %} {%- if cart_custom_message_text != blank -%}
       <div
         class="drawer__message cart__message drawer__message--custom"
         data-animation="{{ animation_name }}"
@@ -36,7 +36,7 @@
       >
         {{ cart_custom_message_text }}
       </div>
-    {%- endif -%}
+    {%- endif -%} {% endcomment %}
 
     <header
       class="drawer__head"
@@ -45,7 +45,7 @@
       data-animation-delay="{{ animation_delay }}"
       {%- assign animation_delay = animation_delay | plus: animation_delay_increment -%}
     >
-      <h3>{{ 'cart.general.title' | t }}</h3>
+      <div id="head__title">{{ 'cart.general.title' | t }}</div>
 
       <button type="button" class="drawer__close" data-cart-drawer-close aria-label="{{ 'general.accessibility.close' | t }} {{ 'cart.general.title' | t }}">
         {%- render 'icon-cancel' -%}
@@ -106,7 +106,7 @@
     endcapture
   -%}
 
-  <div class="{{ free_shipping_classes }}"
+  {% comment %} <div class="{{ free_shipping_classes }}"
     data-free-shipping="{% if qualified_shipping_message != blank %}true{% else %}false{% endif %}"
     data-free-shipping-limit="{{ limit }}"
     {% if template.name == 'cart' or is_cart_drawer %}
@@ -150,7 +150,7 @@
       <span class="confetti__dot confetti__dot--5"></span>
       <span class="confetti__dot confetti__dot--6"></span>
     </div>
-  </div>
+  </div> {% endcomment %}
 {%- endif -%}
 
       {%- assign animation_delay = animation_delay | plus: animation_delay_increment -%}
@@ -455,7 +455,7 @@
 >
   <span class="cart__total__label">{{ 'cart.general.subtotal_items' | t }}</span>
 
-  <span class="cart__total__price">
+  <span class="cart__total__price cart__total__price--margin" style="{{ margin: var(--inner) 0; }}">
     {%- if original_subtotal == 0 -%}
       {{ 'general.money.free' | t }}
     {%- else -%}
@@ -500,16 +500,23 @@
     {%- endfor -%}
   {%- endif -%}
 </div>
-
-<div class="cart__total"
+<div class="cart__total cart__total--margin">
+  <span>Shipping estimate</span>
+  <span>Duties and Taxes</span>
+</div>
+<div class="cart__total cart__total--margin">
+  <span>Calculated at checkout</span>
+  <span>Included</span>
+</div>
+<div class="cart__total cart__total--margin-bottom"
   data-animation="{{ animation_name }}"
   data-animation-duration="{{ animation_duration }}"
   data-animation-delay="{{ animation_delay }}"
   {%- assign animation_delay = animation_delay | plus: animation_delay_increment -%}
 >
-  <span class="cart__total__label">{{- 'cart.general.subtotal' | t -}}</span>
+  <span id="cart__total__order" class="cart__total__label">Order Total</span>
 
-  <span class="cart__total__price cart__total__price--animated" data-cart-total="{{ subtotal }}">
+  <span id="cart__total__order" class="cart__total__price cart__total__price--animated" data-cart-total="{{ subtotal }}">
     {%- if subtotal == 0 -%}
       {{ 'general.money.free' | t }}
     {%- else -%}
@@ -533,15 +540,25 @@
 
                 {{- 'cart.general.checkout' | t -}}
               </button>
+
+              <button type="submit" name="checkout" class="btn btn--primary btn--solid btn--full cart__checkout cart__paypal">
+                {%- if settings.show_lock_icon -%}
+                  {%- render 'animated-icon', filename: 'icon-lock' -%}
+                {%- endif -%}
+                  <div class="paypal__btn"></div>
+              </button>
             </div>
 
-            <em class="cart__note"
+            <button id="continue-shopping" type="button" name="close" class="btn btn--solid btn--full cart__continue">
+                Continue shopping
+            </button>
+            {% comment %} <em class="cart__note"
               data-animation="{{ animation_name }}"
               data-animation-duration="{{ animation_duration }}"
               data-animation-delay="{{ animation_delay }}"
               {%- assign animation_delay = animation_delay | plus: animation_delay_increment -%}>
               {{- 'cart.general.subtotal_note' | t -}}
-            </em>
+            </em> {% endcomment %}
           </div>
 
           {%- if settings.enable_additional_buttons and additional_checkout_buttons -%}
