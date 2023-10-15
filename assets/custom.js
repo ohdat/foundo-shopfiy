@@ -51,7 +51,7 @@
   });
 
 
-  // $("#continue-shopping").click(function () {
-  //   $("#cart-drawer").removeClass("is-open");
-  // });
+  $("#continue-shopping").click(function () {
+    $("#cart-drawer").removeClass("is-open");
+  });
 })();
