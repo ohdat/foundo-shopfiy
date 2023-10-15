@@ -52,6 +52,6 @@
 
 
   $("#continue-shopping").click(function () {
-    $("#cart-drawer").removeClass("is-open");
+    $("#cart-drawer").hide();
   });
 })();
