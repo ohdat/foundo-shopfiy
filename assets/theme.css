@@ -17918,7 +17918,6 @@ a.review {
   font-size: max(0.75rem * var(--FONT-ADJUST-BODY),
       12px * var(--FONT-ADJUST-BODY));
   line-height: 1.33;
-  margin: var(--inner) 0;
   font-weight: var(--FONT-WEIGHT-BODY-BOLD);
 }
 
