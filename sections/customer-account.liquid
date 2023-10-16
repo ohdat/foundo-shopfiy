@@ -104,40 +104,40 @@
           <h2 class="page__heading">{{ 'customer.orders.title' | t }}</h2>
           {% if customer.orders.size != 0 %}
             {% paginate customer.orders by 20 %}
-              {% for order in customer.orders %}
-                {% assign first_line_item = order.line_items.first %}
-                {% assign first_product = first_line_item.product %}
-                {% assign first_product_image = first_product.featured_image %}
-                <div class="customer-order__wrapper">
-                  <div class="order__image">
-                    {% if first_product_image %}
-                      <img src="{{ first_product_image.src | img_url }}" alt="{{ first_product.title }}">
-                    {% else %}
-                      <p>No image available</p>
-                    {% endif %}
+              <div class="customer-orders__wrapper">
+                {% for order in customer.orders %}
+                  {% assign first_line_item = order.line_items.first %}
+                  {% assign first_product = first_line_item.product %}
+                  {% assign first_product_image = first_product.featured_image %}
+                  <div class="customer-order__item">
+                    <div class="order__image">
+                      {% if first_product_image %}
+                        <img src="{{ first_product_image.src | img_url }}" alt="{{ first_product.title }}">
+                      {% else %}
+                        <p>No image available</p>
+                      {% endif %}
+                    </div>
+                    <div>
+                      <div class="order-date">
+                        <span>{{ order.created_at | date: format: 'full_date' }}</span>
+                      </div>
+                      <div class="order-id">
+                        <div>ORDER</div>
+                        <div class="order-name">{{ order.name }}</div>
+                      </div>
+                      <div class="total-money">
+                        <span class="total money">
+                          {%- if order.total_price == 0 -%}
+                            {{ 'general.money.free' | t }}
+                          {%- else -%}
+                            {{ order.total_price | money_with_currency }}
+                          {%- endif -%}
+                        </span>
+                      </div>
+                    </div>
                   </div>
-                  <div>
-                    <div class="order-date">
-                      <span>{{ order.created_at | date: format: 'full_date' }}</span>
-                    </div>
-                    <div class="order-id">
-                      <div>ORDER</div>
-                      <div class="order-name">{{ order.name }}</div>
-                    </div>
-                    <div class="total-money">
-                      <span class="total money">
-                        {%- if order.total_price == 0 -%}
-                          {{ 'general.money.free' | t }}
-                        {%- else -%}
-                          {{ order.total_price | money_with_currency }}
-                        {%- endif -%}
-                      </span>
-                    </div>
-                  </div>
-                </div>
-
-                
-              {% endfor %}
+                {% endfor %}
+              </div>
 
               {% if customer.orders.size != 0 %}
                 <table style="display: none;">
