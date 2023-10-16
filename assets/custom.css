@@ -107,6 +107,9 @@ html body .font-found-headline{
 .account-nav__wrapper li.is-current {
   background: var(--Light-Grey, #F9F9F9);
 }
+#account * {
+  font-family: 'Foundo Headline' !important;
+}
 
 #account .account-nav__wrapper li a{
   height: 100%;
