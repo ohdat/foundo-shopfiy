@@ -103,6 +103,7 @@
 
 .account-nav__wrapper li.is-current {
   background: var(--Light-Grey, #F9F9F9);
+  margin: 0;
 }
 
 .acount-order__heading {
