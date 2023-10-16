@@ -52,8 +52,8 @@
 @font-face {
   font-family: 'Foundo_Headline';
   src: url('https://images.guapitu.com/foundo-website/assets/Foundo-Headline.ttf');
-  font-weight: normal;
-  font-style: normal;
+  /* font-weight: normal; */
+  /* font-style: normal; */
 }
 
 @font-face {
