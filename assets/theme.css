@@ -12191,6 +12191,11 @@ main-search .input-holder {
     width: 100%;
   }
 
+  .collection .grid-outer .grid > :nth-child(3n) .product-item__image {
+    padding-top: 65.92%;
+    width: 100%;
+  }
+
   .index-look .product-item {
     width: 100%;
     display: flex;
