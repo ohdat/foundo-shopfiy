@@ -122,7 +122,7 @@
                       {% assign first_product_image = first_product.featured_image %}
 
                       {% if first_product_image %}
-                        <img src="{{ first_product_image.src | asset_url }}" alt="{{ first_product.title }}">
+                        <img src="{{ first_product_image.src | asset_url | cdn }}" alt="{{ first_product.title }}">
                       {% else %}
                         <p>No image available</p>
                       {% endif %}
