@@ -2,9 +2,9 @@
 
 <section class="account">
   <div class="wrapper">
-    <div class="grid--account">
+    <div class="grid--account account-nav">
       {%- capture links -%}
-        <ul>
+        <ul class="account-nav__wrapper">
           {%- assign needs_completion = true -%}
           {%- for block in section.blocks -%}
             {%- case block.type -%}
