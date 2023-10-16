@@ -104,6 +104,7 @@
   background: var(--Light-Grey, #F9F9F9);
 }
 .account-nav__wrapper li a{
+  height: 100%;
   display: flex;
   align-items: center;
 }
