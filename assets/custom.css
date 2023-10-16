@@ -101,6 +101,10 @@
   text-transform: uppercase;
 }
 
+.account-nav__wrapper li.is-current {
+  background: var(--Light-Grey, #F9F9F9);
+}
+
 .acount-order__heading {
   display: flex;
   height: 30px;
