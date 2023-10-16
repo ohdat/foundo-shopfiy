@@ -128,9 +128,10 @@ html body .font-found-headline{
   padding: 0px 10px;
 }
 
-.acount-order__heading {
+#account .acount-order__heading {
   display: flex;
   height: 30px;
+  font-family: 'Foundo Headline' !important;
   padding: 0px 10px;
   justify-content: space-between;
   align-items: center;
