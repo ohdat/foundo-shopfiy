@@ -96,7 +96,7 @@
           </collapsible-elements>
         </div>
       </aside>
-      <div class="account-main customer__orders">
+      <div class="grid account-main customer__orders">
         <div class="aside-image">
           <img 
             src="//www.foundo.world/cdn/shop/files/23-6-2.jpg?v=1694678064&amp;width=750"
@@ -107,7 +107,7 @@
           <h2 class="page__heading">{{ 'customer.orders.title' | t }}</h2>
           {% if customer.orders.size != 0 %}
             {% paginate customer.orders by 20 %}
-              <div class="customer-orders__wrapper">
+              <div class="grid customer-orders__wrapper">
                 {% for order in customer.orders %}
                   {% assign first_line_item = order.line_items.first %}
                   {% assign first_product = first_line_item.product %}
