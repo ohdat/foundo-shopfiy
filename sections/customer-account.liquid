@@ -116,8 +116,7 @@
               <tbody>
                 {% for order in customer.orders %}
                   <tr class="{% cycle 'odd', 'even' %} {% if order.cancelled %}cancelled_order{% endif %}">
-                    <td class="order-number">
-                      <span>{{ order.name | link_to: order.customer_url }}</span>
+                    <td class="first_product_image">
                       {% assign first_line_item = order.line_items.first %}
                       {% assign first_product = first_line_item.product %}
                       {% assign first_product_image = first_product.featured_image %}
@@ -127,6 +126,10 @@
                       {% else %}
                         <p>No image available</p>
                       {% endif %}
+                    </td>
+                    <td class="order-number">
+                      <span>{{ order.name | link_to: order.customer_url }}</span>
+                      
                     </td>
                     <td class="date">
                       <span class="note">
