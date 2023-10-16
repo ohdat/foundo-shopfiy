@@ -102,21 +102,21 @@
   grid-gap: 2px 0;
 }
 
-.account-nav__wrapper {
+.account .account-nav__wrapper {
   height: 30px;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(0, 1fr));
   text-transform: uppercase;
 }
 
-.account-nav__wrapper li.is-current {
+.account .account-nav__wrapper li.is-current {
   background: var(--Light-Grey, #F9F9F9);
 }
-#account * {
+.account * {
   font-family: 'Foundo_Headline' !important;
 }
 
-#account .account-nav__wrapper li a{
+.account .account-nav__wrapper li a{
   height: 100%;
   display: flex;
   align-items: center;
@@ -133,7 +133,7 @@
   padding: 0px 10px;
 }
 
-#account .acount-order__heading {
+.account .acount-order__heading {
   background: var(--Light-Grey, #F9F9F9);
   display: flex;
   align-items: center;
@@ -147,7 +147,7 @@
   margin: 0;
 }
 
-#account .order-id * {
+.account .order-id * {
   color: var(--Off-Black, #00031E);
   leading-trim: both;
   text-edge: cap;
@@ -179,15 +179,15 @@
   padding: 10px;
 }
 
-#account .aside-image img{
+.account .aside-image img{
   max-height: calc(100vh - 90px);
   object-fit: cover;
 }
-#account .aside-image {
+.account .aside-image {
   padding-top: var(--image-ratio-3-t-4);
   position: relative;
 }
-#account .aside-image img {
+.account .aside-image img {
   position: absolute;
   top: 0;
   left: 0;
