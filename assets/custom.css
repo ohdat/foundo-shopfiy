@@ -179,10 +179,13 @@
   padding: 10px;
 }
 
+#account .aside-image img{
+  max-height: calc(100vh - 90px);
+  object-fit: cover;
+}
 #account .aside-image {
   padding-top: var(--image-ratio-3-t-4);
   position: relative;
-  max-height: calc(100vh - 90px);
 }
 #account .aside-image img {
   position: absolute;
