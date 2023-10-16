@@ -102,8 +102,8 @@
           </button>
         </header>
         <form id="update-customer-form">
-          {% comment %} <label for="phone">手机号码：</label>
-          <input type="tel" id="phone" name="phone" value="{{ customer.phone }}" required> {% endcomment %}
+          <label for="phone">手机号码：</label>
+          <input type="tel" id="phone" name="phone" value="{{ customer.phone }}" required>
 
           <label for="first_name">姓：</label>
           <input type="text" id="first_name" name="first_name" value="{{ customer.first_name }}" required>
@@ -461,5 +461,5 @@
       console.error('Failed to update customer information:', error);
     });
   });
-
+  
 </script>
