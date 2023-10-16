@@ -1,5 +1,5 @@
 #MainContent .font-found-headling {
-  font-family: 'Foundo Headline' !important;
+  font-family: 'Foundo_Headline' !important;
 }
 
 #MainContent .font-found-medium {
@@ -47,7 +47,7 @@
 .drawer__inner .drawer__head #head__title{
   color: var(--text);
   /* new/d/caption-headline */
-  font-family: 'Foundo Headline' !important;
+  font-family: 'Foundo_Headline' !important;
   font-size: 12px;
   font-style: normal;
   font-weight: 100;
@@ -113,7 +113,7 @@
   background: var(--Light-Grey, #F9F9F9);
 }
 #account * {
-  font-family: 'Foundo Headline' !important;
+  font-family: 'Foundo_Headline' !important;
 }
 
 #account .account-nav__wrapper li a{
@@ -136,7 +136,7 @@
 #account .acount-order__heading {
   display: flex;
   height: 30px;
-  font-family: 'Foundo Headline' !important;
+  font-family: 'Foundo_Headline' !important;
   padding: 0px 10px;
   color: var(--Off-Black, #00031E);
   text-edge: cap;
