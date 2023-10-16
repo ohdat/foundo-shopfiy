@@ -103,6 +103,8 @@
 
 .account-nav__wrapper li.is-current {
   background: var(--Light-Grey, #F9F9F9);
+}
+.account-nav__wrapper li {
   margin: 0;
 }
 
