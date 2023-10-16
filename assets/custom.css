@@ -106,6 +106,7 @@
 .account-nav__wrapper li {
   margin: 0;
   padding: 0px 10px;
+  display: flex;
 }
 
 .acount-order__heading {
