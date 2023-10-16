@@ -100,7 +100,7 @@
             class="">
         </div>
         <div>
-          <h2 class="page__heading">{{ 'customer.orders.title' | t }}</h2>
+          <h2 class="page__heading" style="text-align: left;">{{ 'customer.orders.title' | t }}</h2>
           {% if customer.orders.size != 0 %}
             {% paginate customer.orders by 20 %}
               <div class="grid customer-orders__wrapper">
