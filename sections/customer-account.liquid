@@ -4,7 +4,7 @@
   <div class="wrapper">
     <div class="grid--account">
       {%- capture links -%}
-        <ul>
+        <ul class="account__nav">
           {%- assign needs_completion = true -%}
           {%- for block in section.blocks -%}
             {%- case block.type -%}
