@@ -107,6 +107,7 @@ html body .font-found-headline{
 .account-nav__wrapper li.is-current {
   background: var(--Light-Grey, #F9F9F9);
 }
+
 #account .account-nav__wrapper li a{
   height: 100%;
   display: flex;
@@ -118,6 +119,7 @@ html body .font-found-headline{
   font-size: 12px;
   font-style: normal;
 }
+
 .account-nav__wrapper li {
   margin: 0;
   padding: 0px 10px;
