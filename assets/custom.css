@@ -89,7 +89,7 @@
   background-size: 100%;
 }
 
-.customer-order__item {
+.customer-order__item, .customer__orders  {
   display: grid;
   grid-template-columns: 1fr 1fr;
 }
