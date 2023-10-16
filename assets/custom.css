@@ -144,7 +144,7 @@
   font-style: normal;
 }
 
-#account .account__orders {
+#account .order-id {
   color: var(--Off-Black, #00031E);
   leading-trim: both;
   text-edge: cap;
