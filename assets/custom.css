@@ -152,3 +152,9 @@
   line-height: 100%;
   text-transform: uppercase;
 }
+
+.customer-order__item-detail {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
