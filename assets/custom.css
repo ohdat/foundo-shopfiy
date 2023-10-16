@@ -160,7 +160,7 @@
 }
 .customer-order__item .order__image {
   position: relative;
-  padding-top: var(----image-ratio-3-t-4);
+  padding-top: var(--image-ratio-3-t-4);
 }
 .customer-order__item .img {
   position: absolute;
