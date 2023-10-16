@@ -94,6 +94,7 @@
 }
 
 .account-nav__wrapper {
+  height: 30px;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(0, 1fr));
 }
