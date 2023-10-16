@@ -142,6 +142,7 @@
   text-edge: cap;
   font-size: 12px;
   font-style: normal;
+  margin: 0;
 }
 
 .account .order-id * {
