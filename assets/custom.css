@@ -96,7 +96,6 @@
 .account-nav__wrapper {
   height: 30px;
   display: grid;
-  padding: 0px 10px;
   grid-template-columns: repeat(auto-fit, minmax(0, 1fr));
   text-transform: uppercase;
 }
@@ -106,6 +105,7 @@
 }
 .account-nav__wrapper li {
   margin: 0;
+  padding: 0px 10px;
 }
 
 .acount-order__heading {
