@@ -137,10 +137,4 @@ html body .font-found-headline{
   text-edge: cap;
   font-size: 12px;
   font-style: normal;
-  font-weight: 100;
-  line-height: 100%; /* 11px */
-  text-transform: uppercase;
-  justify-content: space-between;
-  align-items: center;
-  align-self: stretch;
 }
