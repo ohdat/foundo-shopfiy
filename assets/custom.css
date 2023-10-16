@@ -90,6 +90,5 @@
 }
 
 .customer-order__item, .customer__orders, .customer-orders__wrapper  {
-  display: grid;
   grid-template-columns: 1fr 1fr;
 }
