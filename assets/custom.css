@@ -103,10 +103,13 @@
 .account-nav__wrapper li.is-current {
   background: var(--Light-Grey, #F9F9F9);
 }
+.account-nav__wrapper li a{
+  display: flex;
+  align-items: center;
+}
 .account-nav__wrapper li {
   margin: 0;
   padding: 0px 10px;
-  display: flex;
 }
 
 .acount-order__heading {
