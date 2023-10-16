@@ -117,6 +117,15 @@
                   <tr class="{% cycle 'odd', 'even' %} {% if order.cancelled %}cancelled_order{% endif %}">
                     <td class="order-number">
                       <span>{{ order.name | link_to: order.customer_url }}</span>
+                      {% assign first_line_item = order.line_items.first %}
+                      {% assign first_product = first_line_item.product %}
+                      {% assign first_product_image = first_product.featured_image %}
+
+                      {% if first_product_image %}
+                        <img src="{{ first_product_image.src }}" alt="{{ first_product.title }}">
+                      {% else %}
+                        <p>No image available</p>
+                      {% endif %}
                     </td>
                     <td class="date">
                       <span class="note">
