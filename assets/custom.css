@@ -1,7 +1,12 @@
-html body .font-found-headline{
+#font-found-headling .font-found-headling {
   font-family: 'Foundo Headline' !important;
-
 }
+
+#font-found-medium .font-found-medium {
+  font-family: 'FOUNDO-MEDIUM' !important;
+}
+
+
 .product__block .breadcrumbs.breadcrumbs--no-padding.product__breadcrumbs {
   margin: 0;
 }
