@@ -118,7 +118,10 @@
               <div>
                 <div></div>
                 <div>ORDER</div>
-                <div>{{ order.name }}</div>
+                <div class="order-name">{{ order.name }}</div>
+                <div class="order-date">
+                  <span>{{ order.created_at | date: format: 'full_date' }}</span>
+                </div>
                 <div class="total money">
                   <span class="total money">
                     {%- if order.total_price == 0 -%}
