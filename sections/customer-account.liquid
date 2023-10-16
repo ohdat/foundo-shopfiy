@@ -121,8 +121,6 @@
                       {% assign first_product = first_line_item.product %}
                       {% assign first_product_image = first_product.featured_image %}
 
-                      {{ first_product_image | img_url: 'small' }}}
-
                       {% if first_product_image %}
                         <img src="{{ first_product_image.src | img_url }}" alt="{{ first_product.title }}">
                       {% else %}
