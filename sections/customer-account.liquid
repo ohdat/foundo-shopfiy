@@ -124,7 +124,7 @@
                       {{ first_product_image | img_url: 'small' }}}
 
                       {% if first_product_image %}
-                        <img src="{{ first_product_image.src | asset_url | cdn }}" alt="{{ first_product.title }}">
+                        <img src="{{ first_product_image.src | img_url | cdn }}" alt="{{ first_product.title }}">
                       {% else %}
                         <p>No image available</p>
                       {% endif %}
