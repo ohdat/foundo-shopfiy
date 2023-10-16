@@ -114,7 +114,7 @@ html body .font-found-headline{
   color: var(--Off-Black, #00031E);
 
   text-edge: cap;
-  font-family: Foundo Headline;
+  font-family: Foundo Headline!important;
   font-size: 12px;
   font-style: normal;
 }
