@@ -417,32 +417,43 @@
 {% endif %}
 
 <script>
-  var client = ShopifyBuy.buildClient({
-    domain: '68ba2c.myshopify.com',
-    storefrontAccessToken: 'd14e18d62afbe24460ef0bc9bc0cfacf'
-  });
+  var accessToken = "d14e18d62afbe24460ef0bc9bc0cfacf;
 
   document.getElementById('update-customer-form').addEventListener('submit', function(event) {
     event.preventDefault(); // 阻止表单提交
-    
+
     const phone = document.getElementById('phone').value;
     const email = document.getElementById('email').value;
     const password = document.getElementById('password').value;
     const first_name = document.getElementById('first_name').value;
     const last_name = document.getElementById('last_name').value;
-    
-    // 使用 Shopify AJAX API 更新客户信息
-    client.customer.update({
-      id: customerId, // 使用 Liquid 获取当前客户的 ID
-      phone: phone,
-      email: email,
-      first_name: first_name,
-      last_name: last_name,
-      password: password
-    }).then(updatedCustomer => {
+
+    var url = 'https://68ba2c.myshopify.com/admin/api/2021-07/customers/' + customerId + '.json';
+    var data = {
+      customer: {
+        id: customerId,
+        phone: phone,
+        email: email,
+        password: password,
+        first_name: first_name,
+        last_name: last_name
+      }
+    };
+
+    fetch(url, {
+      method: 'PUT',
+      headers: {
+        'Content-Type': 'application/json',
+        'X-Shopify-Access-Token': accessToken
+      },
+      body: JSON.stringify(data)
+    })
+    .then(response => response.json())
+    .then(updatedCustomer => {
       // 更新成功的处理逻辑
       console.log('Customer information updated successfully:', updatedCustomer);
-    }).catch(error => {
+    })
+    .catch(error => {
       // 更新失败的处理逻辑
       console.error('Failed to update customer information:', error);
     });
