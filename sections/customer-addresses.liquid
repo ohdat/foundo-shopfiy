@@ -104,6 +104,13 @@
         <form id="update-customer-form">
           <label for="phone">手机号码：</label>
           <input type="tel" id="phone" name="phone" value="{{ customer.phone }}" required>
+
+          <label for="first_name">姓：</label>
+          <input type="text" id="first_name" name="first_name" value="{{ customer.first_name }}" required>
+
+          <label for="last_name">名：</label>
+          <input type="text" id="last_name" name="last_name" value="{{ customer.last_name }}" required>
+
           
           <label for="email">邮箱地址：</label>
           <input type="email" id="email" name="email" value="{{ customer.email }}" required>
@@ -422,12 +429,16 @@ Copy
   const phone = document.getElementById('phone').value;
   const email = document.getElementById('email').value;
   const password = document.getElementById('password').value;
+  const first_name = document.getElementById('first_name').value;
+  const last_name = document.getElementById('last_name').value;
   
   // 使用 Shopify AJAX API 更新客户信息
   client.customer.update({
     id: customerId, // 使用 Liquid 获取当前客户的 ID
     phone: phone,
     email: email,
+    first_name: first_name,
+    last_name: last_name,
     password: password
   }).then(updatedCustomer => {
     // 更新成功的处理逻辑
