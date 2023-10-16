@@ -401,27 +401,40 @@
   }
 {% endschema %}
 
+Copy
+{% if customer %}
+  <script>
+    var customerId = "{{ customer.id }}";
+    console.log("Customer ID:", customerId);
+    // 在这里你可以使用 customerId 进行后续的 JavaScript 操作
+  </script>
+{% endif %}
+
 <script>
-  document.getElementById('update-customer-form').addEventListener('submit', function(event) {
-    event.preventDefault(); // 阻止表单提交
-    
-    var formData = new FormData(this);
-    
-    fetch('/cart/update.js', {
-      method: 'POST',
-      body: formData
-    })
-    .then(function(response) {
-      if (response.ok) {
-        // 更新成功的处理逻辑
-        console.log('Customer information updated successfully.');
-      } else {
-        // 更新失败的处理逻辑
-        console.error('Failed to update customer information.');
-      }
-    })
-    .catch(function(error) {
-      console.error('An error occurred while updating customer information:', error);
-    });
+  var client = ShopifyBuy.buildClient({
+    domain: '68ba2c.myshopify.com',
+    storefrontAccessToken: 'd14e18d62afbe24460ef0bc9bc0cfacf'
   });
+
+  document.getElementById('update-customer-form').addEventListener('submit', function(event) {
+  event.preventDefault(); // 阻止表单提交
+  
+  const phone = document.getElementById('phone').value;
+  const email = document.getElementById('email').value;
+  const password = document.getElementById('password').value;
+  
+  // 使用 Shopify AJAX API 更新客户信息
+  client.customer.update({
+    id: customerId, // 使用 Liquid 获取当前客户的 ID
+    phone: phone,
+    email: email,
+    password: password
+  }).then(updatedCustomer => {
+    // 更新成功的处理逻辑
+    console.log('Customer information updated successfully:', updatedCustomer);
+  }).catch(error => {
+    // 更新失败的处理逻辑
+    console.error('Failed to update customer information:', error);
+  });
+});
 </script>
