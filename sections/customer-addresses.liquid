@@ -78,6 +78,7 @@
 
         {%- paginate customer.addresses by 5 -%}
           <div id="AddressNewForm" class="hidden">
+            {% comment %} https://shopify.dev/docs/themes/architecture/templates/customers-addresses#add-a-new-address {% endcomment %}
             {%- form 'customer_address', customer.new_address -%}
               <h2>{{ 'customer.addresses.add_new' | t }}</h2>
 
