@@ -107,6 +107,13 @@
   height: 100%;
   display: flex;
   align-items: center;
+  color: var(--Off-Black, #00031E);
+  leading-trim: both;
+
+  text-edge: cap;
+  font-family: Foundo Headline;
+  font-size: 12px;
+  font-style: normal;
 }
 .account-nav__wrapper li {
   margin: 0;
