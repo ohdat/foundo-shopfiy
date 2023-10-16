@@ -12190,6 +12190,11 @@ main-search .input-holder {
     padding-top: 65.92%;
     width: 100%;
   }
+  .product-grid_fal .grid-outer .grid .grid-item:nth-of-type(3) .product-item__image {
+    padding-top: 65.92%;
+    width: 100%;
+  }
+
 
   .index-look .product-item {
     width: 100%;
