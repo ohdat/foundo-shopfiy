@@ -92,3 +92,12 @@
 .customer-order__item, .customer__orders, .customer-orders__wrapper  {
   grid-template-columns: 1fr 1fr;
 }
+
+.acount-order__heading {
+  display: flex;
+  height: 30px;
+  padding: 0px 10px;
+  justify-content: space-between;
+  align-items: center;
+  align-self: stretch;
+}
