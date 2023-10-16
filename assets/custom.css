@@ -1,3 +1,11 @@
+#MainContent .font-found__headling {
+  font-family: 'Foundo_Headline' !important;
+}
+
+#MainContent .font-found__medium {
+  font-family: 'Foundo_Medium' !important;
+}
+
 .product__block .breadcrumbs.breadcrumbs--no-padding.product__breadcrumbs {
   margin: 0;
 }
@@ -38,7 +46,7 @@
 .drawer__inner .drawer__head #head__title{
   color: var(--text);
   /* new/d/caption-headline */
-  font-family: 'Foundo Headline' !important;
+  font-family: 'Foundo_Headline' !important;
   font-size: 12px;
   font-style: normal;
   font-weight: 100;
@@ -87,4 +95,103 @@
   background-repeat: no-repeat;
   background-position: 50% 50%;
   background-size: 100%;
+}
+
+.customer-order__item, .customer__orders, .customer-orders__wrapper  {
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 2px 0;
+}
+
+.account-nav__wrapper {
+  height: 30px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(0, 1fr));
+  text-transform: uppercase;
+}
+
+.account-nav__wrapper li.is-current {
+  background: var(--Light-Grey, #F9F9F9);
+}
+#account * {
+  font-family: 'Foundo_Headline' !important;
+}
+
+#account .account-nav__wrapper li a{
+  height: 100%;
+  display: flex;
+  align-items: center;
+  color: var(--Off-Black, #00031E);
+
+  text-edge: cap;
+  font-family: 'Foundo_Headline' !important;
+  font-size: 12px;
+  font-style: normal;
+}
+
+.account-nav__wrapper li {
+  margin: 0;
+  padding: 0px 10px;
+}
+
+#account .acount-order__heading {
+  background: var(--Light-Grey, #F9F9F9);
+  display: flex;
+  align-items: center;
+  height: 30px;
+  font-family: 'Foundo_Headline' !important;
+  padding: 0px 10px;
+  color: var(--Off-Black, #00031E);
+  text-edge: cap;
+  font-size: 12px;
+  font-style: normal;
+  margin: 0;
+}
+
+#account .order-id * {
+  color: var(--Off-Black, #00031E);
+  leading-trim: both;
+  text-edge: cap;
+  font-style: normal;
+  font-weight: 100;
+  line-height: 100%;
+  text-transform: uppercase;
+}
+
+.customer-order__item-detail {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.customer-order__item .order__image {
+  position: relative;
+  padding-top: var(--image-ratio-3-t-4);
+}
+.customer-order__item img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  image-rendering: auto;
+  object-fit: cover;
+}
+.customer-order__item-detail {
+  padding: 10px;
+}
+
+#account .aside-image img{
+  max-height: calc(100vh - 90px);
+  object-fit: cover;
+}
+#account .aside-image {
+  padding-top: var(--image-ratio-3-t-4);
+  position: relative;
+}
+#account .aside-image img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  image-rendering: auto;
 }

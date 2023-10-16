@@ -52,8 +52,8 @@
 @font-face {
   font-family: 'Foundo_Headline';
   src: url('https://images.guapitu.com/foundo-website/assets/Foundo-Headline.ttf');
-  font-weight: normal;
-  font-style: normal;
+  /* font-weight: normal; */
+  /* font-style: normal; */
 }
 
 @font-face {
@@ -147,7 +147,7 @@
   color: var(--text);
   leading-trim: both;
   text-edge: cap;
-  font-family: Foundo Headline !important;
+  font-family: 'Foundo_Headline' !important;
   font-size: 10px;
   font-style: normal;
   font-weight: 900;
@@ -755,6 +755,8 @@ html {
   --error: var(--COLOR-ERROR);
   --error-bg: var(--COLOR-ERROR-BG);
   --header-overlay-color: transparent;
+  --image-ratio-3-t-4: 133.3333333333%;
+  --Light-Grey: #f9f9f9;
 }
 
 .palette--contrast {
@@ -4097,6 +4099,9 @@ dialog[closing]::backdrop {
   gap: var(--gap);
   grid-template-columns: repeat(var(--columns), minmax(0, 1fr));
 }
+.gap-0 {
+  gap: 0;
+}
 
 body.has-line-design.grid-compact .grid {
   padding-top: 1px;
@@ -4176,7 +4181,7 @@ body.grid-compact .grid-outer {
   text-edge: cap;
 
   /* new/d/caption-headline */
-  font-family: Foundo Headline !important;
+  font-family: 'Foundo_Headline' !important;
   font-size: 12px;
   font-style: normal;
   font-weight: 100;
@@ -12532,7 +12537,7 @@ main-search .input-holder {
   text-edge: cap;
 
   /* new/d/caption-headline */
-  font-family: Foundo Headline!important;
+  font-family: 'Foundo_Headline'!important;
   font-size: 12px;
   font-style: normal;
   font-weight: 100;
@@ -12555,7 +12560,7 @@ main-search .input-holder {
   text-edge: cap;
 
   /* new/d/caption-headline */
-  font-family: Foundo Headline;
+  font-family: 'Foundo_Headline';
   font-size: 12px;
   font-style: normal;
   font-weight: 100;
@@ -16325,7 +16330,7 @@ body.has-line-design.grid-compact .reviews__grid {
     color: var(--text);
     leading-trim: both;
     text-edge: cap;
-    font-family: Foundo Headline;
+    font-family: 'Foundo_Headline';
     font-size: 20px;
     font-style: normal;
     font-weight: 100;
@@ -16362,7 +16367,7 @@ body.has-line-design.grid-compact .reviews__grid {
     text-edge: cap;
 
     /* new/d/Headline-06 */
-    font-family: Foundo Headline;
+    font-family: 'Foundo_Headline';
     font-size: 16px;
     font-style: normal;
     font-weight: 100;
@@ -16483,7 +16488,7 @@ body.has-line-design.grid-compact .reviews__grid {
     text-edge: cap;
 
     /* new/d/Headline-06 */
-    font-family: Foundo Headline;
+    font-family: 'Foundo_Headline';
     font-size: 16px;
     font-style: normal;
     font-weight: 100;
@@ -16584,7 +16589,7 @@ body.has-line-design.grid-compact .reviews__grid {
   padding: 16px 0;
 
   /* new/d/caption-headline */
-  font-family: Foundo Headline;
+  font-family: 'Foundo_Headline';
   font-size: 14px;
   font-style: normal;
   font-weight: 100;
@@ -25545,7 +25550,7 @@ text-edge: cap;
 margin: 2px 0 12px;
 
 /* new/d/Headline-06 */
-font-family: Foundo Headline!important;
+font-family: 'Foundo_Headline'!important;
 font-size: 16px;
 font-style: normal;
 font-weight: 100;
@@ -25553,7 +25558,7 @@ line-height: 100%; /* 16px */
 text-transform: uppercase;
 }
 #MainContent .font__foundo-headline {
-font-family: Foundo Headline!important;
+  font-family: 'Foundo_Headline'!important;
 }
 .product__sold-out {
 leading-trim: both;
@@ -25664,7 +25669,7 @@ height: 30px;
 line-height: 30px;
 }
 #MainContent .index-hero .hreo__image__heading__title span {
-font-family: "Foundo Headline" !important;
+font-family: "'Foundo_Headline'" !important;
 }
 /*! ============ Footer a hover ================== */
 #footerBlocks .footer__quicklinks li a:hover {
