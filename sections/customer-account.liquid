@@ -124,7 +124,7 @@
                         <div>ORDER</div>
                         <div class="order-name">{{ order.name }}</div>
                       </div>
-                      <div class="total-money">
+                      <div class="total-money" style="font-size: 12px;">
                         <span class="total money">
                           {%- if order.total_price == 0 -%}
                             {{ 'general.money.free' | t }}
