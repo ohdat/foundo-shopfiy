@@ -755,7 +755,7 @@ html {
   --error: var(--COLOR-ERROR);
   --error-bg: var(--COLOR-ERROR-BG);
   --header-overlay-color: transparent;
-  --image-ratio-3-t-4: 75%;
+  --image-ratio-3-t-4: 133.3333333333%;
 }
 
 .palette--contrast {
