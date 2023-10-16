@@ -99,6 +99,7 @@
 
 .customer-order__item, .customer__orders, .customer-orders__wrapper  {
   grid-template-columns: 1fr 1fr;
+  grid-gap: 0 2px;
 }
 
 .account-nav__wrapper {
@@ -135,6 +136,7 @@
 #account .acount-order__heading {
   background: var(--Light-Grey, #F9F9F9);
   display: flex;
+  align-items: center;
   height: 30px;
   font-family: 'Foundo_Headline' !important;
   padding: 0px 10px;
