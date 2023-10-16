@@ -133,6 +133,7 @@
 }
 
 #account .acount-order__heading {
+  background: var(--Light-Grey, #F9F9F9);
   display: flex;
   height: 30px;
   font-family: 'Foundo_Headline' !important;
