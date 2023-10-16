@@ -424,28 +424,28 @@ Copy
   });
 
   document.getElementById('update-customer-form').addEventListener('submit', function(event) {
-  event.preventDefault(); // 阻止表单提交
-  
-  const phone = document.getElementById('phone').value;
-  const email = document.getElementById('email').value;
-  const password = document.getElementById('password').value;
-  const first_name = document.getElementById('first_name').value;
-  const last_name = document.getElementById('last_name').value;
-  
-  // 使用 Shopify AJAX API 更新客户信息
-  client.customer.update({
-    id: customerId, // 使用 Liquid 获取当前客户的 ID
-    phone: phone,
-    email: email,
-    first_name: first_name,
-    last_name: last_name,
-    password: password
-  }).then(updatedCustomer => {
-    // 更新成功的处理逻辑
-    console.log('Customer information updated successfully:', updatedCustomer);
-  }).catch(error => {
-    // 更新失败的处理逻辑
-    console.error('Failed to update customer information:', error);
+    event.preventDefault(); // 阻止表单提交
+    
+    const phone = document.getElementById('phone').value;
+    const email = document.getElementById('email').value;
+    const password = document.getElementById('password').value;
+    const first_name = document.getElementById('first_name').value;
+    const last_name = document.getElementById('last_name').value;
+    
+    // 使用 Shopify AJAX API 更新客户信息
+    client.customer.update({
+      id: customerId, // 使用 Liquid 获取当前客户的 ID
+      phone: phone,
+      email: email,
+      first_name: first_name,
+      last_name: last_name,
+      password: password
+    }).then(updatedCustomer => {
+      // 更新成功的处理逻辑
+      console.log('Customer information updated successfully:', updatedCustomer);
+    }).catch(error => {
+      // 更新失败的处理逻辑
+      console.error('Failed to update customer information:', error);
+    });
   });
-});
 </script>
