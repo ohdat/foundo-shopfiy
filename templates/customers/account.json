@@ -8,6 +8,13 @@
           "settings": {
           }
         },
+        "16f70bcd-9f1c-4da0-a66f-72ec6c04dff3": {
+          "type": "link",
+          "settings": {
+            "title": "NFT Vault",
+            "link": "\/"
+          }
+        },
         "0d37ba52-91c6-4dce-95c1-4b33ca73345b": {
           "type": "link",
           "settings": {
@@ -32,6 +39,7 @@
       },
       "block_order": [
         "account",
+        "16f70bcd-9f1c-4da0-a66f-72ec6c04dff3",
         "0d37ba52-91c6-4dce-95c1-4b33ca73345b",
         "7118e7e3-625e-4d24-a5ef-0633741695ed",
         "99cb8057-a334-4c14-a7fa-e307abf4f930"
