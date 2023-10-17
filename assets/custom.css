@@ -32,7 +32,7 @@
 .product__details .product__sold-out {
   position: absolute;
   top: 6px;
-  right: 12px;
+  right: 10px;
   color: var(--Ancient-Gold, #D3BC93);
   text-align: right;
   leading-trim: both;
