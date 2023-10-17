@@ -24703,8 +24703,6 @@ dialog.is-loading .loader {
 
 .accordion {
   display: block;
-  border-bottom: 1px solid var(--border);
-  border-top: 1px solid var(--border);
   color: var(--text);
   background-color: var(--bg);
 }
