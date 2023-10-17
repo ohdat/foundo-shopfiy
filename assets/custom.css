@@ -206,3 +206,22 @@
   height: 100%;
   image-rendering: auto;
 }
+
+.product-info__block {
+  color: var(--text);
+  leading-trim: both;
+  text-edge: cap;
+  font-size: 10px;
+  font-style: normal;
+  font-weight: 900;
+  line-height: 125%;
+  letter-spacing: 0.068px;
+}
+
+.product-info__block .product__item--margin {
+  margin: 0;
+}
+
+.btn.btn--scroll-top.btn--black.btn--solid {
+  display: none;
+}

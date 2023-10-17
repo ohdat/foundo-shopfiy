@@ -12351,7 +12351,7 @@ main-search .input-holder {
 .look__aside {
   flex: 1 1 50%;
   text-align: left;
-  padding: 0 0 35px 0;
+  padding: 0;
   overflow: hidden;
 }
 
@@ -16459,7 +16459,7 @@ body.has-line-design.grid-compact .reviews__grid {
   }
 
   .product__details {
-    min-height: 200px;
+    min-height: 160px;
   }
 
   .product__details .product__nav {
