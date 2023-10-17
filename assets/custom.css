@@ -217,3 +217,7 @@
   line-height: 125%;
   letter-spacing: 0.068px;
 }
+
+.product-info__block .product__item--margin {
+  margin: 0;
+}
