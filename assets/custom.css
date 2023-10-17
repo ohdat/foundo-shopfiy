@@ -225,3 +225,7 @@
 .btn.btn--scroll-top.btn--black.btn--solid {
   display: none;
 }
+
+#cart-bar {
+  display: none;
+}
