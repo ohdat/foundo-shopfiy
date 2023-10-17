@@ -19992,7 +19992,7 @@ body.has-line-design .article__text-wrapper {
 }
 
 .collection__nav--filter {
-  justify-content: flex-start;
+  justify-content: space-between;
 }
 
 .collection__nav--sort {

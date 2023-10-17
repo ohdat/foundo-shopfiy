@@ -130,7 +130,7 @@
                 {{ 'collections.general.filters' | t }}
               {%- else -%}
                 <span class="popout__toggleable-text">
-                  <span class="popout__expanded-show">
+                  <span class="popout__expanded-show font-found__headling" style="margin-right: 10px;">
                     {{- 'collections.general.show_filters' | t -}}
                     <span class="filter-count{% if filter_active_count < 1 %} hidden{% endif %}" data-active-filters>
                       {{- filter_active_count -}}
@@ -153,8 +153,9 @@
         {%- endif -%}
 
         <div style="display: flex;align-items: center;">
+          <div class="collection__nav-view font-found__headling">VIEW</div>
           <div onclick="changeImaged()" class="popout——left">
-            <img src="https://img.ohdat.io/foundo-website/assets/shopify/sifang.png" alt="">
+            <img src="../assets/grid.png" alt="" style="opacity: 0.6;">
           </div>
           <div onclick="changeImage()" class="popout——left">
             <img src="https://img.ohdat.io/foundo-website/assets/shopify/tiao.png" alt="">
