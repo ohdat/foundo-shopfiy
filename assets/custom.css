@@ -221,3 +221,7 @@
 .product-info__block .product__item--margin {
   margin: 0;
 }
+
+.btn.btn--scroll-top.btn--black.btn--solid {
+  display: none;
+}
