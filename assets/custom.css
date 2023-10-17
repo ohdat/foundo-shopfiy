@@ -206,3 +206,7 @@
   height: 100%;
   image-rendering: auto;
 }
+
+.product__subheading--font p{
+  font-family: 'Foundo_Medium' !important;
+}
