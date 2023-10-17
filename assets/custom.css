@@ -33,7 +33,17 @@
   position: absolute;
   top: 6px;
   right: 12px;
-  color: var(--COLOR-BADGE-TEXT);
+  color: var(--Ancient-Gold, #D3BC93);
+  text-align: right;
+  leading-trim: both;
+  text-edge: cap;
+
+  /* new/d/135-caption-grotesk */
+  font-family: Foundo!important;
+  font-size: 11px;
+  font-style: normal;
+  font-weight: 135;
+  line-height: 120%; /* 13.2px */
 }
 
 .drawer__inner .cart__widget.accordion {
