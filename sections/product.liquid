@@ -349,12 +349,12 @@
                       {{ block_style }}>
                       {%- if block.settings.title != blank -%}
                         <p class="product__heading strong">
-                          <span class="font-found__medium">{{- block.settings.title -}}</span>
+                          {{- block.settings.title -}}
                         </p>
                       {%- endif -%}
 
                       {%- if block.settings.text != blank -%}
-                        <div class="product__subheading">
+                        <div class="product__subheading strong">
                           {{- block.settings.text -}}
                         </div>
                       {%- endif -%}
