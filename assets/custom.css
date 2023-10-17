@@ -207,6 +207,16 @@
   image-rendering: auto;
 }
 
-.product__subheading--font p{
-  font-family: 'Foundo_Medium' !important;
+.product-info__block {
+  color: var(--text);
+  leading-trim: both;
+  text-edge: cap;
+  font-size: 10px;
+  font-style: normal;
+  font-weight: 900;
+  line-height: 125%;
+  letter-spacing: 0.068px;
 }
+/* .product__subheading--font p{
+  font-family: 'Foundo_Medium' !important;
+} */
