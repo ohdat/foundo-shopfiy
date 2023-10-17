@@ -33,6 +33,7 @@
   position: absolute;
   top: 6px;
   right: 12px;
+  color: var(--COLOR-BADGE-TEXT);
 }
 
 .drawer__inner .cart__widget.accordion {
