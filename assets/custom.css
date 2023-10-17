@@ -229,3 +229,15 @@
 #cart-bar {
   display: none;
 }
+
+.collection__nav-view {
+  color: var(--text);
+  leading-trim: both;
+  text-edge: cap;
+  font-family: Foundo Headline;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 100;
+  line-height: 106%; /* 11.66px */
+  text-transform: uppercase;
+}
