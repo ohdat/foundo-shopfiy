@@ -229,3 +229,7 @@
 #cart-bar {
   display: none;
 }
+
+.popout--sort {
+  display: none;
+}
