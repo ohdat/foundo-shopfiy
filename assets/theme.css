@@ -7521,6 +7521,7 @@ img.fit-cover {
 }
 
 .drawer__empty__message {
+  font-family: 'Foundo_Headline' !important;
   text-align: center;
   transition: all 0.3s;
   margin: 0 auto;
@@ -23445,7 +23446,8 @@ body.grid-compact.has-line-design .brick__block__collection .look__slide {
   display: inline-block;
   width: 80px;
   height: 80px;
-  margin: 2px;
+  border-radius: 50%;
+  margin: 10px;
   background-size: cover;
   background-color: var(--COLOR-BG);
   background-position: 50% 50%;
