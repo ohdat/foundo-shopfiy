@@ -146,7 +146,7 @@
       {%- when 'blog' -%}
         {%- if current_tags -%}
           <li class="breadcrumbs__item">
-            {{ blog.title | link_to: blog.url }}
+            <a id="breadcrumbs__link" class="breadcrumbs__link">{{ blog.title | link_to: blog.url }}</a>
           </li>
           <li class="breadcrumbs__item">
             {%- capture tag_url -%}{{blog.url}}/tagged/{{ current_tags | join: "+" }}{%- endcapture -%}
@@ -159,7 +159,7 @@
         {%- endif -%}
       {%- when 'article' -%}
         <li class="breadcrumbs__item">
-          {{ blog.title | link_to: blog.url }}
+          <a id="breadcrumbs__link" class="breadcrumbs__link">{{ blog.title | link_to: blog.url }}<a></a>
         </li>
         <li class="breadcrumbs__item">
           <a id="breadcrumbs__link" class="breadcrumbs__link" href="{{ article.url }}" aria-current="page">{{ article.title }}</a>
