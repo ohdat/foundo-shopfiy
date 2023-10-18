@@ -23445,8 +23445,7 @@ body.grid-compact.has-line-design .brick__block__collection .look__slide {
   display: inline-block;
   width: 80px;
   height: 80px;
-  border-radius: 50%;
-  margin: 10px;
+  margin: 2px;
   background-size: cover;
   background-color: var(--COLOR-BG);
   background-position: 50% 50%;
