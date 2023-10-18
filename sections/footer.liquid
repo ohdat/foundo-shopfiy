@@ -123,7 +123,7 @@
       {%- when 'product' -%}
         {%- if collection.url -%}
           <li class="breadcrumbs__item">
-            {{ collection.title | link_to: collection.url }}
+             <a id="breadcrumbs__link" class="breadcrumbs__link">{{ collection.title | link_to: collection.url }}</a>
           </li>
         {%- endif -%}
         <li class="breadcrumbs__item">
