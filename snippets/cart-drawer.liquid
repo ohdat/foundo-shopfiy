@@ -191,7 +191,7 @@
         style="--base-animation-delay: {{ animation_delay }}ms">
 
         <div class="drawer__empty__inner">
-          <p class="drawer__empty__message" data-animation="{{ animation_name }}" data-animation-duration="{{ animation_duration }}" data-animation-delay="{{ animation_delay_cart_empty }}">
+          <p class="drawer__empty__message font-found__headling" data-animation="{{ animation_name }}" data-animation-duration="{{ animation_duration }}" data-animation-delay="{{ animation_delay_cart_empty }}">
             {{- 'cart.general.empty' | t -}}
           </p>
           {%- assign animation_delay_cart_empty = animation_delay_cart_empty | plus: animation_delay_increment -%}
