@@ -241,3 +241,7 @@
   text-transform: uppercase;
   margin-right: 10px;
 }
+
+.drawer__empty__message--font {
+  font-family: 'Foundo_Headline' !important;
+}
