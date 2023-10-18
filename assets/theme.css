@@ -23443,10 +23443,9 @@ body.grid-compact.has-line-design .brick__block__collection .look__slide {
 .pswp-zoom-gallery .pswp__thumb {
   position: relative;
   display: inline-block;
-  width: 80px;
-  height: 80px;
-  border-radius: 50%;
-  margin: 10px;
+  width: 58px;
+  height: 76px;
+  margin: 2px;
   background-size: cover;
   background-color: var(--COLOR-BG);
   background-position: 50% 50%;
