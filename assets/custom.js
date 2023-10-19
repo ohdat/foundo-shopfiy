@@ -57,4 +57,22 @@
   $(".header__desktop__bar__r .header__desktop__buttons .header__desktop__button:has(.navlink--cart)").click(function () {
     $("#cart-drawer").addClass("is-open");
   });
+
+  $(document).ready(function() {
+    // 监听class为pasp__img的元素
+    $('.pasp__img').on('click', function() {
+      // 获取元素的中心点位置
+      var element = $(this);
+      var offset = element.offset();
+      var centerX = offset.left + element.outerWidth() / 2;
+      var centerY = offset.top + element.outerHeight() / 2;
+  
+      // 模拟点击事件
+      var event = new MouseEvent('click', {
+        clientX: centerX,
+        clientY: centerY
+      });
+      element[0].dispatchEvent(event);
+    });
+  });
 })();
