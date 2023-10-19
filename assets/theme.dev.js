@@ -9503,7 +9503,7 @@
             },
           };
 
-          new LoadPhotoswipe(items, options);
+          new LoadPhotoswipe(items, options, {index: i});
 
           if (this.thumbsContainer && thumbs !== '') {
             this.thumbsContainer.innerHTML = thumbs;
