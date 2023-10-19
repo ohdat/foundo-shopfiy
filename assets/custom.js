@@ -60,7 +60,7 @@
 
 
   setTimeout(function() {
-    if ($('.pswp')) {
+    if ($('.pswp--open')) {
       console.log(111);
       var imgElements = $('.pswp__img');
       var center = Math.floor(imgElements.length / 2);
