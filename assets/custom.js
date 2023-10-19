@@ -61,6 +61,7 @@
 
   setTimeout(function() {
     if ($('.pswp').css('display') === 'block') {
+      console.log(111);
       var imgElements = $('.pswp__img');
       var center = Math.floor(imgElements.length / 2);
       imgElements.eq(center).trigger('click');
