@@ -9229,6 +9229,7 @@
 
     loadPopup() {
       const PhotoSwipe = window.themePhotoswipe.PhotoSwipe.default;
+      console.log(12, PhotoSwipe);
       const PhotoSwipeUI = window.themePhotoswipe.PhotoSwipeUI.default;
 
       if (this.pswpElement.classList.contains(classes$j.customLoader)) {
