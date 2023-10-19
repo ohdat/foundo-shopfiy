@@ -60,6 +60,7 @@
 
   $(document).ready(function() {
     $('.pawp__img').on('click', function() {
+      console.log(112);
       if ($(this).css('display') === 'block') {
         var element = $(this);
         var offset = element.offset();
@@ -74,5 +75,4 @@
       }
     });
   });
-  
 })();
