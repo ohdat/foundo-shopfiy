@@ -9489,6 +9489,7 @@
             maxSpreadZoom: 2,
             loop: true,
             spacing: 0,
+            scaleMode: 'zoom', // 设置为 'zoom' 以在加载图像时自动放大
             allowPanToNext: true,
             pinchToClose: false,
             addCaptionHTMLFn: (item, captionEl, isFake) => {
