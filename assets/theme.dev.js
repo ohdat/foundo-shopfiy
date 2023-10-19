@@ -9431,6 +9431,7 @@
         this.zoomWrappers.forEach((element, i) => {
           this.createZoom(i);
           element.addEventListener('click', (e) => {
+            console.log(9898);
             e.preventDefault();
 
             this.createZoom(i);
