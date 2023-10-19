@@ -58,6 +58,6 @@
     $("#cart-drawer").addClass("is-open");
   });
 
-  const PhotoSwipe = window.themePhotoswipe.PhotoSwipe.default;
+  let PhotoSwipe = window.themePhotoswipe.PhotoSwipe.default;
       console.log(12, PhotoSwipe);
 })();
