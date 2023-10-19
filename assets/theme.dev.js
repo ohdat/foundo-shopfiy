@@ -9495,7 +9495,6 @@
               this.zoomCaption(item, captionEl, isFake);
             },
             getThumbBoundsFn: () => {
-              console.log(998)
               const imageLocation = this.zoomWrappers[indexImage];
               const pageYScroll = window.pageYOffset || document.documentElement.scrollTop;
               const rect = imageLocation.getBoundingClientRect();
