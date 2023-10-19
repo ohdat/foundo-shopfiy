@@ -58,24 +58,17 @@
     $("#cart-drawer").addClass("is-open");
   });
 
-  $(document).ready(function() {
-
-    // 监听获取行内样式为block的class为pasp__img的元素
-    $('.pasp__img[style*="display: block"]').on('click', function() {
-      console.log(111);
-      // 获取元素的中心点位置
-      var element = $(this);
-      var offset = element.offset();
-      var centerX = offset.left + element.outerWidth() / 2;
-      var centerY = offset.top + element.outerHeight() / 2;
-  
-      // 模拟点击事件
-      var event = new MouseEvent('click', {
-        clientX: centerX,
-        clientY: centerY
-      });
-      element[0].dispatchEvent(event);
-    });
+  var gallery = new PhotoSwipe('.my-gallery', PhotoSwipeUI_Default, {
+    // 设置默认放大选项
+    index: 0, // 默认显示第一张图片
+    getThumbBoundsFn: function(index) {
+      var thumbnail = document.querySelectorAll('.my-gallery img')[index];
+      var pageYScroll = window.pageYOffset || document.documentElement.scrollTop;
+      var rect = thumbnail.getBoundingClientRect();
+      return { x: rect.left, y: rect.top + pageYScroll, w: rect.width };
+    }
   });
   
+  // 打开图片浏览器
+  gallery.init();
 })();

@@ -9258,6 +9258,7 @@
 
       if (this.options && this.options.closeElClasses && this.options.closeElClasses.length) {
         this.options.closeElClasses.forEach((closeClass) => {
+          console.log(9898);
           const closeElement = this.pswpElement.querySelector(`.pswp__${closeClass}`);
           if (closeElement) {
             closeElement.addEventListener('keyup', this.keyupCloseEvent);
