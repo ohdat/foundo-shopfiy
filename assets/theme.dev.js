@@ -9429,6 +9429,7 @@
     init() {
       if (this.zoomWrappers.length) {
         this.zoomWrappers.forEach((element, i) => {
+          this.createZoom(i);
           element.addEventListener('click', (e) => {
             e.preventDefault();
 
@@ -9452,7 +9453,6 @@
     }
 
     createZoom(indexImage) {
-      console.log(1221)
       let items = [];
       let counter = 0;
       let thumbs = '';
