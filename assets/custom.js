@@ -61,6 +61,7 @@
   $(document).ready(function() {
     // 监听获取行内样式为block的class为pasp__img的元素
     $('.pasp__img[style*="display: block"]').on('click', function() {
+      console.log(111);
       // 获取元素的中心点位置
       var element = $(this);
       var offset = element.offset();
