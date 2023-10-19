@@ -9229,7 +9229,6 @@
 
     loadPopup() {
       const PhotoSwipe = window.themePhotoswipe.PhotoSwipe.default;
-      console.log(12, PhotoSwipe);
       const PhotoSwipeUI = window.themePhotoswipe.PhotoSwipeUI.default;
 
       if (this.pswpElement.classList.contains(classes$j.customLoader)) {
@@ -9428,9 +9427,7 @@
     }
 
     init() {
-      console.log(1 );
       if (this.zoomWrappers.length) {
-        console.log(2);
         this.zoomWrappers.forEach((element, i) => {
           this.createZoom(i);
           element.addEventListener('click', (e) => {
