@@ -59,13 +59,20 @@
   });
 
 
-  setTimeout(function() {
-    if ($('.pswp--open')) {
-      console.log(111);
-      var imgElements = $('.pswp__img');
-      var center = Math.floor(imgElements.length / 2);
-      imgElements.eq(center).trigger('click');
-    }
-  }, 300);
+  $('.pswp[aria-hidden="false"] .pswp__img').each(function() {
+    var element = $(this);
+    var offset = element.offset();
+    var width = element.width();
+    var height = element.height();
+    var centerX = offset.left + width / 2;
+    var centerY = offset.top + height / 2;
+  
+    var event = new MouseEvent('click', {
+      clientX: centerX,
+      clientY: centerY
+    });
+  
+    element[0].dispatchEvent(event);
+  });
   
 })();
