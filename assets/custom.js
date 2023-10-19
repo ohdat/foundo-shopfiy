@@ -59,20 +59,11 @@
   });
 
 
-  $('.pswp[aria-hidden="false"] .pswp__img').each(function() {
-    var element = $(this);
-    var offset = element.offset();
-    var width = element.width();
-    var height = element.height();
-    var centerX = offset.left + width / 2;
-    var centerY = offset.top + height / 2;
-  
-    var event = new MouseEvent('click', {
-      clientX: centerX,
-      clientY: centerY
-    });
-  
-    element[0].dispatchEvent(event);
-  });
+  setTimeout(function() {
+    if ($('.pswp').attr('aria-hidden') === 'false') {
+      $('.pswp__img').click();
+    }
+    
+  }, 300);
   
 })();
