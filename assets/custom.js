@@ -57,18 +57,4 @@
   $(".header__desktop__bar__r .header__desktop__buttons .header__desktop__button:has(.navlink--cart)").click(function () {
     $("#cart-drawer").addClass("is-open");
   });
-
-  var gallery = new PhotoSwipe('.my-gallery', PhotoSwipeUI_Default, {
-    // 设置默认放大选项
-    index: 0, // 默认显示第一张图片
-    getThumbBoundsFn: function(index) {
-      var thumbnail = document.querySelectorAll('.my-gallery img')[index];
-      var pageYScroll = window.pageYOffset || document.documentElement.scrollTop;
-      var rect = thumbnail.getBoundingClientRect();
-      return { x: rect.left, y: rect.top + pageYScroll, w: rect.width };
-    }
-  });
-  
-  // 打开图片浏览器
-  gallery.init();
 })();
