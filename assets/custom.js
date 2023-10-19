@@ -62,7 +62,7 @@
   $(document).ready(function() {
     if ($('.pswp--open').length > 0) {
       console.log(9999);
-      var item = $('.pswp__item');
+      var item = $('.pswp__img');
       var center = Math.floor(item.length / 2);
       item.eq(center).trigger('click');
     }
