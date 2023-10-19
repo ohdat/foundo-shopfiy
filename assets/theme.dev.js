@@ -9258,7 +9258,6 @@
 
       if (this.options && this.options.closeElClasses && this.options.closeElClasses.length) {
         this.options.closeElClasses.forEach((closeClass) => {
-          console.log(9898);
           const closeElement = this.pswpElement.querySelector(`.pswp__${closeClass}`);
           if (closeElement) {
             closeElement.addEventListener('keyup', this.keyupCloseEvent);
@@ -9496,6 +9495,7 @@
               this.zoomCaption(item, captionEl, isFake);
             },
             getThumbBoundsFn: () => {
+              console.log(998)
               const imageLocation = this.zoomWrappers[indexImage];
               const pageYScroll = window.pageYOffset || document.documentElement.scrollTop;
               const rect = imageLocation.getBoundingClientRect();
