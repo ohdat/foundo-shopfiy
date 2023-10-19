@@ -62,7 +62,7 @@
   setTimeout(function() {
     if ($('.pswp').css('display') === 'block') {
       console.log(111);
-      var imgElements = $('.pswp__img');
+      var imgElements = $('.pswp__zoom-wrap');
       var center = Math.floor(imgElements.length / 2);
       imgElements.eq(center).trigger('click');
     }
