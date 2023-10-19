@@ -9427,8 +9427,9 @@
     }
 
     init() {
+      console.log(1);
       if (this.zoomWrappers.length) {
-        console.log(1);
+        console.log(2);
         this.zoomWrappers.forEach((element, i) => {
           this.createZoom(i);
           element.addEventListener('click', (e) => {
