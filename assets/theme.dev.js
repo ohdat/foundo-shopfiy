@@ -9452,6 +9452,7 @@
     }
 
     createZoom(indexImage) {
+      console.log(1221)
       let items = [];
       let counter = 0;
       let thumbs = '';
