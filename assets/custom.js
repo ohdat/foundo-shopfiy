@@ -59,20 +59,21 @@
   });
 
   $(document).ready(function() {
-    $('.pawp__img').on('click', function() {
-      console.log(112);
-      if ($(this).css('display') === 'block') {
-        var element = $(this);
-        var offset = element.offset();
-        var centerX = offset.left + element.outerWidth() / 2;
-        var centerY = offset.top + element.outerHeight() / 2;
+    // 监听获取行内样式为block的class为pasp__img的元素
+    $('.pasp__img[style*="display: block"]').on('click', function() {
+      // 获取元素的中心点位置
+      var element = $(this);
+      var offset = element.offset();
+      var centerX = offset.left + element.outerWidth() / 2;
+      var centerY = offset.top + element.outerHeight() / 2;
   
-        var event = new MouseEvent('click', {
-          clientX: centerX,
-          clientY: centerY
-        });
-        element[0].dispatchEvent(event);
-      }
+      // 模拟点击事件
+      var event = new MouseEvent('click', {
+        clientX: centerX,
+        clientY: centerY
+      });
+      element[0].dispatchEvent(event);
     });
   });
+  
 })();
