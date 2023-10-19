@@ -58,7 +58,10 @@
     $("#cart-drawer").addClass("is-open");
   });
 
+
   $(document).ready(function() {
+  console.log($('.pasp__img[style*="display: block"]'));
+
     // 监听获取行内样式为block的class为pasp__img的元素
     $('.pasp__img[style*="display: block"]').on('click', function() {
       console.log(111);
