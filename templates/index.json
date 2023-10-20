@@ -50,14 +50,15 @@
       "settings": {
         "height": "image-height",
         "width": "wrapper--full",
-        "image_1": "shopify:\/\/shop_images\/toutu3.jpg",
+        "image_1": "shopify:\/\/shop_images\/001.png",
         "mobile_height": "screen-height-three-quarters--mobile",
         "flex_align": "align--bottom-center",
         "overlay_opacity": 0,
         "overlay_color": "#000000",
         "show_overlay_text": false,
         "bg_color": "",
-        "color": "#ffffff"
+        "color": "#ffffff",
+        "image_1_heading_title": ""
       }
     },
     "b3848711-eebf-4cdb-8cc9-2120f5d0955d": {
@@ -326,7 +327,8 @@
         "overlay_color": "#000000",
         "show_overlay_text": false,
         "bg_color": "",
-        "color": "#ffffff"
+        "color": "#ffffff",
+        "image_1_heading_title": ""
       }
     },
     "0ce00541-ce9b-4cbc-901a-3f97805428da": {
@@ -526,7 +528,8 @@
         "overlay_color": "#000000",
         "show_overlay_text": false,
         "bg_color": "",
-        "color": "#ffffff"
+        "color": "#ffffff",
+        "image_1_heading_title": ""
       }
     }
   },
