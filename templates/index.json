@@ -61,10 +61,17 @@
         "image_1_heading_title": ""
       }
     },
-    "b3848711-eebf-4cdb-8cc9-2120f5d0955d": {
+    "13277f4e-87f0-4440-84e1-dd664e47b81a": {
       "type": "section-rich-text",
       "blocks": {
-        "template--19259611742539__b3848711-eebf-4cdb-8cc9-2120f5d0955d-subheading-1": {
+        "575ec4ee-8e18-45df-956a-c49cbc57a003": {
+          "type": "heading",
+          "settings": {
+            "title": "FOUNDO® is a revolutionary collectible fine jewelry brand with a focus on global craftsmanship, custom services and the fusion of ancient divinity with contemporary aesthetics across East and West. By incorporating the latest blockchain technology, the brand advocates for unprecedented transparency and sustainability, paving the way for the future of jewelry (New Era Jewelry). Using the latest technology, superior materials and world-class craftsmanship, FOUNDO provides collectible grade customer-centric products and experiences for those who prefer quietly charming.",
+            "text_size": 1
+          }
+        },
+        "1cd617aa-7386-450f-ba4f-fe9a288175fc": {
           "type": "subheading",
           "disabled": true,
           "settings": {
@@ -72,14 +79,7 @@
             "text_size": 3
           }
         },
-        "template--19259611742539__b3848711-eebf-4cdb-8cc9-2120f5d0955d-heading-1": {
-          "type": "heading",
-          "settings": {
-            "title": "FOUNDO® is a revolutionary collectible fine jewelry brand with a focus on global craftsmanship, custom services and the fusion of ancient divinity with contemporary aesthetics across East and West. By incorporating the latest blockchain technology, the brand advocates for unprecedented transparency and sustainability, paving the way for the future of jewelry (New Era Jewelry). Using the latest technology, superior materials and world-class craftsmanship, FOUNDO provides collectible grade customer-centric products and experiences for those who prefer quietly charming.",
-            "text_size": 1
-          }
-        },
-        "template--19259611742539__b3848711-eebf-4cdb-8cc9-2120f5d0955d-text-1": {
+        "f926b0ee-842f-40e3-a3be-775c45e1ed75": {
           "type": "text",
           "disabled": true,
           "settings": {
@@ -88,7 +88,7 @@
             "text_style": "font-body"
           }
         },
-        "template--19259611742539__b3848711-eebf-4cdb-8cc9-2120f5d0955d-buttons-1": {
+        "2e6fb643-89ef-4201-b678-225efc2229b9": {
           "type": "buttons",
           "disabled": true,
           "settings": {
@@ -102,10 +102,10 @@
         }
       },
       "block_order": [
-        "template--19259611742539__b3848711-eebf-4cdb-8cc9-2120f5d0955d-subheading-1",
-        "template--19259611742539__b3848711-eebf-4cdb-8cc9-2120f5d0955d-heading-1",
-        "template--19259611742539__b3848711-eebf-4cdb-8cc9-2120f5d0955d-text-1",
-        "template--19259611742539__b3848711-eebf-4cdb-8cc9-2120f5d0955d-buttons-1"
+        "575ec4ee-8e18-45df-956a-c49cbc57a003",
+        "1cd617aa-7386-450f-ba4f-fe9a288175fc",
+        "f926b0ee-842f-40e3-a3be-775c45e1ed75",
+        "2e6fb643-89ef-4201-b678-225efc2229b9"
       ],
       "settings": {
         "width": "wrapper",
@@ -535,7 +535,7 @@
   },
   "order": [
     "861bff52-b502-4f62-8fe4-a398779e76b4",
-    "b3848711-eebf-4cdb-8cc9-2120f5d0955d",
+    "13277f4e-87f0-4440-84e1-dd664e47b81a",
     "d7a90510-3099-4a27-be96-381aa43e2b7a",
     "1ab6acb1-fcc5-4a57-989a-8b8691f8fb0c",
     "4b781a49-8568-4541-bfa2-eab4caa71da5",
