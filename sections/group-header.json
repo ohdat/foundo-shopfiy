@@ -9,7 +9,7 @@
           "type": "message",
           "settings": {
             "show_wheel": false,
-            "message": "YOU ARE $500 AWAY FROM FREE SHIPPING. YOU ARE $500 AWAY FROM FREE SHIPPING. YOU ARE $500 AWAY FROM FREE SHIPPING.YOU ARE $500 AWAY FROM FREE SHIPPING.",
+            "message": "YOU ARE $500 AWAY FROM FREE SHIPPING.",
             "target_url_enabled": false,
             "target_url": "",
             "target_referrer_enabled": false,
