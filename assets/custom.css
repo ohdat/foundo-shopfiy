@@ -264,3 +264,16 @@
   flex-shrink: 0;
   border: 0.3px solid var(--Dark-Grey, #9B9B9B);
 }
+
+.product__photo-number .product__photo-number-left{
+  color: var(--text);
+  leading-trim: both;
+  text-edge: cap;
+  font-family: Foundo Headline !important;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 100;
+  line-height: 100%; /* 12px */
+  letter-spacing: 0.12px;
+  text-transform: uppercase;
+}
