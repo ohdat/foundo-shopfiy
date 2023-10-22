@@ -249,3 +249,42 @@
 .product__page .product__content .form__wrapper {
   margin: 25% 0;
 }
+
+.product__photo-number {
+  position: absolute;
+  left: 10px;
+  bottom: 40px;
+  display: flex;
+  width: 168px;
+  height: 40px;
+  padding: 0px 10px;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  flex-shrink: 0;
+  border: 0.3px solid var(--Dark-Grey, #9B9B9B);
+}
+
+.product__photo-number .product__photo-number-left{
+  color: var(--text);
+  leading-trim: both;
+  text-edge: cap;
+  font-family: Foundo Headline !important;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 100;
+  line-height: 100%; /* 12px */
+  letter-spacing: 0.12px;
+}
+
+.product__photo-number .product__photo-number-right{
+  color: var(--text);
+  leading-trim: both;
+  text-edge: cap;
+  font-family: Foundo Headline !important;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 100;
+  line-height: 100%; /* 12px */
+  letter-spacing: 0.12px;
+}
