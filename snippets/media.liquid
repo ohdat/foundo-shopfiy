@@ -76,12 +76,12 @@ Usage:
       style="--aspect-ratio: {{ media_aspect_ratio }}">
       {{ image }}
 
-      {%- if first_3d_model -%}
+      {%- if loop_index == 0 -%}
+        <div class="product__photo-number">
+          <div class="product__photo-number-left">GALLERY</div>
+          <div class="product__photo-number-right">{{ media_length }} Photos</div>
+        </div>
       {%- endif -%}
-      <div class="product__photo-number">
-        <div class="product__photo-number-left">GALLERY</div>
-        <div class="product__photo-number-right">{{ media_length }} Photos</div>
-      </div>
     </div>
 
     {%- when 'model' -%}
