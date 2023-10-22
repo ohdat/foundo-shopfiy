@@ -76,10 +76,10 @@ Usage:
       style="--aspect-ratio: {{ media_aspect_ratio }}">
       {{ image }}
 
-      <div class="product__photo-number">
+      {% comment %} <div class="product__photo-number">
         <div class="product__photo-number-left">GALLERY</div>
         <div class="product__photo-number-right">{{ media_length }} Photos</div>
-      </div>
+      </div> {% endcomment %}
     </div>
 
     {%- when 'model' -%}
