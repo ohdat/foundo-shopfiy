@@ -288,3 +288,9 @@
   line-height: 100%; /* 12px */
   letter-spacing: 0.12px;
 }
+
+.product__photo-number-3D {
+  position: absolute;
+  left: 16px;
+  top: 80px;
+}
