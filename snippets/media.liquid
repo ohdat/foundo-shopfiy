@@ -75,7 +75,12 @@ Usage:
       data-image-alt="{{ media.alt | strip_html | escape }}"
       style="--aspect-ratio: {{ media_aspect_ratio }}">
       {{ image }}
+
       {%- if forloop.first == true -%}
+        <div>
+          <img src="../assets/3D-icon.svg" alt="" style="opacity: 0.6;">
+        </div>
+
         <div class="product__photo-number">
           <div class="product__photo-number-left font-found__headling">GALLERY</div>
           <div class="product__photo-number-right">{{ media_length }} Photos</div>
