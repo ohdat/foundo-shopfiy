@@ -94,7 +94,7 @@
         <div class="product__images{% if mobile_image_style == 'slider' %} product__images--no-thumbs{% else %} product__images--has-thumbs{% endif %}">
           {%- if product.media.size > 0 -%}
             <div
-              class="product__slides product-single__photos"
+              class="product__slides product-single__photos 999"
               style="--featured-media-aspect-ratio: {{ featured_media_aspect_ratio | round: 2 }};"
               data-product-slideshow
               data-product-single-media-group
