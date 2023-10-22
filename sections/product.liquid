@@ -100,8 +100,7 @@
               data-product-single-media-group
               data-options='{"prevNextButtons": false, "contain": true, "adaptiveHeight": true, "fade": true}'>
               {%- for media in product.media -%}
-              {{forloop.first}}：
-                {%- render 'media', media_length: product.media.size, loop_index: loop.index, media: media, featured_media: featured_media, enable_video_looping: enable_video_looping, sectionkey: unique, image_width: image_width, cover: true -%}
+                {%- render 'media', media_length: product.media.size, forloop: forloop, media: media, featured_media: featured_media, enable_video_looping: enable_video_looping, sectionkey: unique, image_width: image_width, cover: true -%}
               {%- endfor -%}
             </div>
 
