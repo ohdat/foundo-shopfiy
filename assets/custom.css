@@ -275,7 +275,6 @@
   font-weight: 100;
   line-height: 100%; /* 12px */
   letter-spacing: 0.12px;
-  text-transform: uppercase;
 }
 
 .product__photo-number .product__photo-number-right{
@@ -288,5 +287,4 @@
   font-weight: 100;
   line-height: 100%; /* 12px */
   letter-spacing: 0.12px;
-  text-transform: uppercase;
 }
