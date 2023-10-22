@@ -251,6 +251,9 @@
 }
 
 .product__photo-number {
+  position: absolute;
+  left: 10px;
+  bottom: 40px;
   display: flex;
   width: 168px;
   height: 40px;
