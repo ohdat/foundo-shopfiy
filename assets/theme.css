@@ -6919,6 +6919,7 @@ form .errors ul,
 
 .image-wrapper--cover img {
   object-fit: cover;
+  image-rendering: pixelated;
 }
 
 img.fit-cover {
