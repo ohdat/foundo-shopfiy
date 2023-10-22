@@ -9,7 +9,7 @@ Accepts:
 -  image_width: {Number} - Image width on desktop based on the setting
 
 Usage:
-{% render 'media', media_length: product.media.length, media: media, featured_media: featured_media, enable_video_looping: enable_video_looping, sectionkey: section.id  %}
+{% render 'media', media_length: product.media.length, loop_index: loop.index, media: media, featured_media: featured_media, enable_video_looping: enable_video_looping, sectionkey: section.id  %}
 {% endcomment %}
 {%- liquid
   assign image_size = '1024x1024'
@@ -76,6 +76,8 @@ Usage:
       style="--aspect-ratio: {{ media_aspect_ratio }}">
       {{ image }}
 
+      {%- if first_3d_model -%}
+      {%- endif -%}
       <div class="product__photo-number">
         <div class="product__photo-number-left">GALLERY</div>
         <div class="product__photo-number-right">{{ media_length }} Photos</div>
