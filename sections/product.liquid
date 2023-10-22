@@ -99,7 +99,6 @@
               data-product-slideshow
               data-product-single-media-group
               data-options='{"prevNextButtons": false, "contain": true, "adaptiveHeight": true, "fade": true}'>
-              {{product.media.size}} {{product.media.length}}
               {%- for media in product.media -%}
                 {%- render 'media', media_length: product.media.size, media: media, featured_media: featured_media, enable_video_looping: enable_video_looping, sectionkey: unique, image_width: image_width, cover: true -%}
               {%- endfor -%}
