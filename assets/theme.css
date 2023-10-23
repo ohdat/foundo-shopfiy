@@ -9179,9 +9179,6 @@ body:not(.has-line-design) .header__dropdown {
 }
 
 .announcement__text {
-  display: flex;
-  flex-flow: row nowrap;
-  align-items: center;
   white-space: nowrap;
 }
 
@@ -9192,7 +9189,7 @@ body:not(.has-line-design) .header__dropdown {
 
 .announcement__text>div {
   display: inline-block;
-  margin: 0 50px;
+  margin: 0;
   vertical-align: middle;
 }
 
@@ -9241,7 +9238,7 @@ body:not(.has-line-design) .header__dropdown {
 .announcement__message {
   overflow: hidden;
   width: 100%;
-  padding: 0 45px;
+  padding: 0 10px;
   font-size: 0;
 }
 
@@ -9252,7 +9249,6 @@ body:not(.has-line-design) .header__dropdown {
 }
 
 .announcement__scale {
-  display: inline-flex;
   transition: opacity 0.5s linear;
 }
 
