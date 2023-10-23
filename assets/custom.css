@@ -278,7 +278,7 @@
 }
 
 .product__photo-number .product__photo-number-right{
-  color: var(--Off-Black, #00031E);
+  color: var(--text);
   leading-trim: both;
   text-edge: cap;
   font-family: Foundo Headline !important;
@@ -290,13 +290,13 @@
 }
 
 .free-shipping__default-message {
-  color: var(--text);
+  color: var(--Off-Black, #00031E);
   leading-trim: both;
   text-edge: cap;
 
   /* new/d/small-cap-headine */
   font-family: Foundo Headline !important;
-  font-size: 10px;
+  font-size: 9px;
   font-style: normal;
   font-weight: 100;
   line-height: 120%; /* 10.8px */
