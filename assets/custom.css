@@ -278,7 +278,7 @@
 }
 
 .product__photo-number .product__photo-number-right{
-  color: var(--text);
+  color: var(--Off-Black, #00031E);
   leading-trim: both;
   text-edge: cap;
   font-family: Foundo Headline !important;
