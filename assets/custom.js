@@ -58,6 +58,9 @@
     $("#cart-drawer").addClass("is-open");
   });
 
+  /**
+   * -- head message
+   */
   var prevScrollpos = $(window).scrollTop();
 
   $(window).scroll(function() {
