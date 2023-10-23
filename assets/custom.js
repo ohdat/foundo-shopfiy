@@ -58,14 +58,17 @@
     $("#cart-drawer").addClass("is-open");
   });
 
+  var prevScrollpos = $(window).scrollTop();
+
   $(window).scroll(function() {
-    console.log($(window).scrollTop(),888);
-    if ($(window).scrollTop() > 30) {
+    var currentScrollPos = $(window).scrollTop();
+    if (currentScrollPos > 30 && currentScrollPos < prevScrollpos) {
       $(".announcement__bar-outer").hide();
       $(".theme__header").css("top", "0");
     } else {
       $(".announcement__bar-outer").show();
       $(".theme__header").css("top", "30px");
     }
+    prevScrollpos = currentScrollPos;
   });
 })();
