@@ -7794,11 +7794,12 @@ img.fit-cover {
 } */
 .theme__header {
   position: fixed;
-  top: 30px;
+  top: 0px;
   z-index: 2300;
   width: 100%;
   color: var(--text);
   transition: top 0.3s ease-in-out;
+  padding-top: 30px;
 }
 
 .theme__header.active {
