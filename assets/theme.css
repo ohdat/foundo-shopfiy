@@ -9192,7 +9192,7 @@ body:not(.has-line-design) .header__dropdown {
 
 .announcement__text>div {
   display: inline-block;
-  margin: 0 50px;
+  margin: 0;
   vertical-align: middle;
 }
 
