@@ -9106,11 +9106,11 @@ body:not(.has-line-design) .header__dropdown {
   align-items: center;
 }
 
-/* .announcement__slide {
+.announcement__slide {
   min-height: 45px;
-} */
+}
 
-/* .announcement__slide:not(.announcement__bar) {
+.announcement__slide:not(.announcement__bar) {
   white-space: nowrap;
 }
 
@@ -9125,7 +9125,7 @@ body:not(.has-line-design) .header__dropdown {
   min-height: 45px;
   width: 0;
   content: '';
-} */
+}
 
 .announcement__bar {
   display: flex;
