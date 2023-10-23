@@ -57,4 +57,12 @@
   $(".header__desktop__bar__r .header__desktop__buttons .header__desktop__button:has(.navlink--cart)").click(function () {
     $("#cart-drawer").addClass("is-open");
   });
+
+  $(window).scroll(function() {
+    if ($(window).scrollTop() > 30) {
+      $(".announcement__bar-outer").hide();
+    } else {
+      $(".announcement__bar-outer").show();
+    }
+  });
 })();
