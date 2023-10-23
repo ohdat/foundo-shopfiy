@@ -288,3 +288,17 @@
   line-height: 100%; /* 12px */
   letter-spacing: 0.12px;
 }
+
+.free-shipping__default-message {
+  color: var(--Off-Black, #00031E);
+  leading-trim: both;
+  text-edge: cap;
+
+  /* new/d/small-cap-headine */
+  font-family: Foundo Headline;
+  font-size: 9px;
+  font-style: normal;
+  font-weight: 100;
+  line-height: 120%; /* 10.8px */
+  text-transform: uppercase;
+}
