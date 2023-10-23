@@ -70,6 +70,9 @@
       $(".announcement__bar-outer").show();
       $(".theme__header").css("top", "30px");
     }
+    if (currentScrollPos > prevScrollpos) {
+      $(".theme__header").css("top", "-100px");
+    }
     prevScrollpos = currentScrollPos;
   });
 })();
