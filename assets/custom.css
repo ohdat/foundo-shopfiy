@@ -290,7 +290,7 @@
 }
 
 .free-shipping__default-message {
-  color: var(--Off-Black, #00031E);
+  color: var(--text);
   leading-trim: both;
   text-edge: cap;
 
