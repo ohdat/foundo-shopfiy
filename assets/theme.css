@@ -9241,7 +9241,7 @@ body:not(.has-line-design) .header__dropdown {
 .announcement__message {
   overflow: hidden;
   width: 100%;
-  padding: 0 45px;
+  padding: 0 10px;
   font-size: 0;
 }
 
