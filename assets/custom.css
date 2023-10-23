@@ -295,10 +295,9 @@
   text-edge: cap;
 
   /* new/d/small-cap-headine */
-  font-family: Foundo Headline !important;
-  font-size: 9px;
+  font-size: 8px;
   font-style: normal;
   font-weight: 100;
-  line-height: 120%; /* 10.8px */
+  line-height: 30px;
   text-transform: uppercase;
 }
