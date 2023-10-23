@@ -9252,10 +9252,6 @@ body:not(.has-line-design) .header__dropdown {
   transition: opacity 0.5s linear;
 }
 
-.announcement__scale.ticker--unloaded {
-  width: max-content;
-}
-
 .announcement__bar-holder--slider.flickity-enabled .announcement__scale.ticker--unloaded {
   position: static;
 }
