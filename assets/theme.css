@@ -9107,7 +9107,7 @@ body:not(.has-line-design) .header__dropdown {
 }
 
 .announcement__slide {
-  min-height: 45px;
+  width: 100vh;
 }
 
 .announcement__slide:not(.announcement__bar) {
