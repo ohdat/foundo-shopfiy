@@ -59,6 +59,7 @@
   });
 
   $(window).scroll(function() {
+    console.log($(window).scrollTop(),888);
     if ($(window).scrollTop() > 30) {
       $(".announcement__bar-outer").hide();
       $(".theme__header").css("paddingTop", "0");
