@@ -65,7 +65,7 @@
       $(".theme__header").css("paddingTop", "0");
     } else {
       $(".announcement__bar-outer").show();
-      $(".theme__header").css("paddingTop", "30");
+      $(".theme__header").css("paddingTop", "30px");
     }
   });
 })();
