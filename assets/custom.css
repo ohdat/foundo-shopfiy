@@ -301,7 +301,7 @@
   font-weight: 100;
   line-height: 30px;
   text-transform: uppercase;
-  transform: scale(0.8) translateY(2px);
+  transform: scale(0.8) translateY(0px);
 }
 
 .announcement__bar-outer{
