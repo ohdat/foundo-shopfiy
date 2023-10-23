@@ -301,3 +301,7 @@
   line-height: 30px;
   text-transform: uppercase;
 }
+
+.announcement__scale .announcement__text .free-shipping span {
+  font-family: 'Foundo_Headline' !important;
+}
