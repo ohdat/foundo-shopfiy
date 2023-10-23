@@ -65,7 +65,8 @@
     if (currentScrollPos > 30 && currentScrollPos < prevScrollpos) {
       $(".announcement__bar-outer").hide();
       $(".theme__header").css("top", "0");
-    } else {
+    } 
+    if (currentScrollPos <= 30 && currentScrollPos < prevScrollpos) {
       $(".announcement__bar-outer").show();
       $(".theme__header").css("top", "30px");
     }
