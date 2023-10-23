@@ -9,7 +9,7 @@
           "type": "message",
           "settings": {
             "show_wheel": false,
-            "message": "YOU ARE $500 AWAY FROM FREE SHIPPING.",
+            "message": "You are $500 away from free shipping.",
             "target_url_enabled": false,
             "target_url": "",
             "target_referrer_enabled": false,
@@ -22,7 +22,6 @@
       "block_order": [
         "68c0faef-0a4f-4977-803b-13486a360836"
       ],
-      "disabled": true,
       "settings": {
         "layout": "slider",
         "slider_speed": 7,
