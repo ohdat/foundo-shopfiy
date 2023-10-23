@@ -62,10 +62,10 @@
     console.log($(window).scrollTop(),888);
     if ($(window).scrollTop() > 30) {
       $(".announcement__bar-outer").hide();
-      $(".theme__header").css("paddingTop", "0");
+      $(".theme__header").css("top", "0");
     } else {
       $(".announcement__bar-outer").show();
-      $(".theme__header").css("paddingTop", "30px");
+      $(".theme__header").css("top", "30px");
     }
   });
 })();
