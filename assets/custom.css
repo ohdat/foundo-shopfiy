@@ -302,6 +302,6 @@
   text-transform: uppercase;
 }
 
-.announcement__scale .announcement__text .free-shipping span {
+.announcement__scale .announcement__text .free-shipping #free-shipping__default-message {
   font-family: 'Foundo_Headline' !important;
 }
