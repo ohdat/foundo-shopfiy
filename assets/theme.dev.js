@@ -9199,6 +9199,9 @@
         history: false,
         focus: false,
         mainClass: '',
+        initialZoomLevel: 'fill',
+        secondaryZoomLevel: 'fill',
+        maxZoomLevel: 3,
       };
       this.options = options !== '' ? options : defaultOptions;
 
