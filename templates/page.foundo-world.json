@@ -98,8 +98,8 @@
 
       ],
       "settings": {
-        "width": "wrapper--narrow",
-        "align_text": "text-center",
+        "width": "wrapper",
+        "align_text": "text-left",
         "bg_color": "",
         "color": "",
         "padding_top": 100,
