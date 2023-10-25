@@ -57,4 +57,25 @@
   $(".header__desktop__bar__r .header__desktop__buttons .header__desktop__button:has(.navlink--cart)").click(function () {
     $("#cart-drawer").addClass("is-open");
   });
+
+  /**
+   * -- head message
+   */
+  // var prevScrollpos = $(window).scrollTop();
+
+  // $(window).scroll(function() {
+  //   var currentScrollPos = $(window).scrollTop();
+  //   if (currentScrollPos > 30 && currentScrollPos < prevScrollpos) {
+  //     $(".announcement__bar-outer").hide();
+  //     $(".theme__header").css("top", "0");
+  //   } 
+  //   if (currentScrollPos <= 30 && currentScrollPos < prevScrollpos) {
+  //     $(".announcement__bar-outer").show();
+  //     $(".theme__header").css("top", "30px");
+  //   }
+  //   if (currentScrollPos > prevScrollpos) {
+  //     $(".theme__header").css("top", "-100px");
+  //   }
+  //   prevScrollpos = currentScrollPos;
+  // });
 })();
