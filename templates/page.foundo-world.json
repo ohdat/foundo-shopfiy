@@ -34,7 +34,7 @@
       ],
       "settings": {
         "show_featured_image": false,
-        "image_aspect_ratio": 1.1,
+        "image_aspect_ratio": 1,
         "show_quotation_marks": false,
         "text_align": "text-center",
         "text_size": 4,
@@ -65,44 +65,11 @@
     },
     "6fb32c46-474e-486c-8d27-07344b9f85a1": {
       "type": "section-hero",
-      "blocks": {
-        "template--19141043224907__6fb32c46-474e-486c-8d27-07344b9f85a1-1687342998465f7ff2-0": {
-          "type": "heading",
-          "settings": {
-            "title": "Lab Grown the Future of Diamond",
-            "heading_size": 6
-          }
-        },
-        "template--19141043224907__6fb32c46-474e-486c-8d27-07344b9f85a1-1687342998465f7ff2-1": {
-          "type": "text",
-          "settings": {
-            "description": "Only 2% of mined diamonds can compare to the color, quality, and purity of diamonds that FOUNDO selected from our partnered labs around the world.",
-            "text_size": 4,
-            "text_style": "font-body"
-          }
-        },
-        "template--19141043224907__6fb32c46-474e-486c-8d27-07344b9f85a1-1687342998465f7ff2-2": {
-          "type": "button",
-          "disabled": true,
-          "settings": {
-            "link_text": "Learn more",
-            "link": "",
-            "button_type": "btn--black",
-            "button_size": "",
-            "button_style": "btn--solid",
-            "show_arrow": false
-          }
-        }
-      },
-      "block_order": [
-        "template--19141043224907__6fb32c46-474e-486c-8d27-07344b9f85a1-1687342998465f7ff2-0",
-        "template--19141043224907__6fb32c46-474e-486c-8d27-07344b9f85a1-1687342998465f7ff2-1",
-        "template--19141043224907__6fb32c46-474e-486c-8d27-07344b9f85a1-1687342998465f7ff2-2"
-      ],
       "settings": {
-        "height": "screen-height-three-quarters",
+        "height": "screen-height-full",
         "width": "wrapper--full",
-        "image_1": "shopify:\/\/shop_images\/LabGD.png",
+        "image_1": "shopify:\/\/shop_images\/55.jpg",
+        "image_2": "shopify:\/\/shop_images\/42.jpg",
         "mobile_height": "screen-height-three-quarters--mobile",
         "flex_align": "align--bottom-center",
         "overlay_opacity": 0,
@@ -119,39 +86,20 @@
         "template--19141043224907__562ddd4f-054c-4a25-b8ce-374f3b82418b-16873431528b3db7d6-1": {
           "type": "heading",
           "settings": {
-            "title": "Lab Grown the Future of Diamond",
-            "text_size": 8
-          }
-        },
-        "template--19141043224907__562ddd4f-054c-4a25-b8ce-374f3b82418b-16873431528b3db7d6-2": {
-          "type": "text",
-          "settings": {
-            "text": "<p>Only 2% of mined diamonds can compare to the color, quality, and purity of diamonds that FOUNDO selected from our partnered labs around the world.<\/p>",
-            "text_size": 4,
-            "text_style": "font-body"
-          }
-        },
-        "template--19141043224907__562ddd4f-054c-4a25-b8ce-374f3b82418b-16873431528b3db7d6-3": {
-          "type": "buttons",
-          "settings": {
-            "button_text": "Learn more",
-            "button_url": "",
-            "button_type": "btn--primary",
-            "button_size": "",
-            "button_style": "btn--solid",
-            "show_arrow": false
+            "title": "Posuere morbi leo urna molestie at elementum eu facilisis. donec et odio pellentesque. Sed vulputate odio ut enim blandit volutpat maecenas volutpat.",
+            "text_size": 2
           }
         }
       },
       "block_order": [
-        "template--19141043224907__562ddd4f-054c-4a25-b8ce-374f3b82418b-16873431528b3db7d6-1",
-        "template--19141043224907__562ddd4f-054c-4a25-b8ce-374f3b82418b-16873431528b3db7d6-2",
-        "template--19141043224907__562ddd4f-054c-4a25-b8ce-374f3b82418b-16873431528b3db7d6-3"
+        "template--19141043224907__562ddd4f-054c-4a25-b8ce-374f3b82418b-16873431528b3db7d6-1"
       ],
-      "disabled": true,
+      "custom_css": [
+
+      ],
       "settings": {
-        "width": "wrapper",
-        "align_text": "text-left",
+        "width": "wrapper--narrow",
+        "align_text": "text-center",
         "bg_color": "",
         "color": "",
         "padding_top": 100,
@@ -207,6 +155,23 @@
         "padding_top": 0,
         "padding_bottom": 0
       }
+    },
+    "2b508141-b8ea-4520-87ce-60769baa9e97": {
+      "type": "section-hero",
+      "settings": {
+        "height": "screen-height-full",
+        "width": "wrapper--full",
+        "image_1": "shopify:\/\/shop_images\/27-4.jpg",
+        "image_2": "shopify:\/\/shop_images\/27-4-1.jpg",
+        "mobile_height": "screen-height-three-quarters--mobile",
+        "flex_align": "align--middle-center",
+        "overlay_opacity": 0,
+        "overlay_color": "#000",
+        "show_overlay_text": false,
+        "bg_color": "",
+        "color": "#FFFFFF",
+        "image_1_heading_title": ""
+      }
     }
   },
   "order": [
@@ -215,6 +180,7 @@
     "main",
     "6fb32c46-474e-486c-8d27-07344b9f85a1",
     "562ddd4f-054c-4a25-b8ce-374f3b82418b",
-    "1420977d-425f-400f-a617-503f416d18d1"
+    "1420977d-425f-400f-a617-503f416d18d1",
+    "2b508141-b8ea-4520-87ce-60769baa9e97"
   ]
 }
