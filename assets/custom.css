@@ -365,3 +365,7 @@
   padding: 0!important;
   letter-spacing: 0!important;
 }
+
+#foundo-world .hero__content__wrapper.text-left.wrapper {
+  padding: 30px 118px;
+}
