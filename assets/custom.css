@@ -362,5 +362,5 @@
   bottom: 138px!important;
 }
 .timesact-badge-common-preorder span {
-  padding: 0;
+  padding: 0!important;
 }
