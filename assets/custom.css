@@ -37,6 +37,7 @@
   position: absolute;
   top: 6px;
   right: 10px;
+  color: var(--Dark-Grey, #9B9B9B);
   text-align: right;
   leading-trim: both;
   text-edge: cap;
