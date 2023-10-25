@@ -106,6 +106,51 @@
         "padding_bottom": 100
       }
     },
+    "99a57b5e-36ae-4d09-bdd3-bac59ff9f362": {
+      "type": "section-double",
+      "blocks": {
+        "template--19259611578699__99a57b5e-36ae-4d09-bdd3-bac59ff9f362-heading-1": {
+          "type": "heading",
+          "settings": {
+            "title": "Craftsmanship",
+            "text_size": 4
+          }
+        },
+        "template--19259611578699__99a57b5e-36ae-4d09-bdd3-bac59ff9f362-text-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>We may collect personal information from you when you visit our website, create an account, place an order, or interact with our services. This may include your name, email address, shipping address, payment information, and other relevant details necessary to process your orders and provide a personalized shopping experience.<\/p>",
+            "text_size": 2,
+            "text_style": "font-body"
+          }
+        },
+        "352e7b2a-e020-4a0d-92d3-a51e2b5837d7": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Lectus urna duis convallis convallis tellus id interdum velit laoreet. Enim nunc faucibus a pellentesque sit. Leo urna molestie at elementum. Proin sagittis nisl rhoncus mattis rhoncus urna neque. Pellentesque id nibh tortor id aliquet lectus proin nibh nisl. Suspendisse faucibus interdum posuere lorem ipsum dolor sit amet. Malesuada pellentesque elit eget gravida. In eu mi bibendum neque egestas congue quisque egestas. Consequat ac felis donec et odio. Duis at consectetur lorem donec. Purus non enim praesent elementum facilisis leo. Tristique senectus et netus et malesuada fames ac. Purus semper eget duis at tellus at. Eget duis at tellus at urna condimentum mattis. Tellus integer feugiat scelerisque varius. Sit amet aliquam id diam. Id faucibus nisl tincidunt eget nullam non nisi. Lacinia at quis risus sed vulputate odio.<br\/>Sit amet facilisis magna etiam. Molestie ac feugiat sed lectus. Leo a diam sollicitudin tempor. Nulla facilisi cras fermentum odio eu feugiat. Eu feugiat pretium nibh ipsum consequat nisl. Tortor at auctor urna nunc id. Purus faucibus ornare suspendisse sed nisi. Senectus et netus et malesuada fames. Etiam dignissim diam quis enim lobortis. Id semper risus in hendrerit gravida rutrum quisque non tellus. Aliquam faucibus purus in massa tempor nec. Duis at consectetur lorem donec massa sapien faucibus et. Viverra mauris in aliquam sem fringilla. Eget dolor morbi non arcu.<\/p>",
+            "text_size": 2,
+            "text_style": "font-body"
+          }
+        }
+      },
+      "block_order": [
+        "template--19259611578699__99a57b5e-36ae-4d09-bdd3-bac59ff9f362-heading-1",
+        "template--19259611578699__99a57b5e-36ae-4d09-bdd3-bac59ff9f362-text-1",
+        "352e7b2a-e020-4a0d-92d3-a51e2b5837d7"
+      ],
+      "settings": {
+        "layout": "",
+        "height": "screen-height-three-quarters",
+        "mobile_height": "screen-height-one-half--mobile",
+        "width": "wrapper--full",
+        "image_width": "one-half",
+        "text_alignment": "text-left",
+        "bg_color": "",
+        "color": "",
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
     "1420977d-425f-400f-a617-503f416d18d1": {
       "type": "section-double",
       "blocks": {
@@ -167,10 +212,10 @@
         "mobile_height": "screen-height-three-quarters--mobile",
         "flex_align": "align--middle-center",
         "overlay_opacity": 0,
-        "overlay_color": "#000",
+        "overlay_color": "#000000",
         "show_overlay_text": false,
         "bg_color": "",
-        "color": "#FFFFFF",
+        "color": "#ffffff",
         "image_1_heading_title": ""
       }
     },
@@ -209,6 +254,7 @@
     "main",
     "6fb32c46-474e-486c-8d27-07344b9f85a1",
     "562ddd4f-054c-4a25-b8ce-374f3b82418b",
+    "99a57b5e-36ae-4d09-bdd3-bac59ff9f362",
     "1420977d-425f-400f-a617-503f416d18d1",
     "2b508141-b8ea-4520-87ce-60769baa9e97",
     "2f4c9221-a1bb-4d0f-88e3-3e202a700bbb"
