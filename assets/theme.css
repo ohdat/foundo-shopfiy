@@ -13929,6 +13929,7 @@ main-search .input-holder {
 
 .product-item__price__holder {
   color: var(--text-light);
+  font-size: var(--font-2);
   overflow: hidden;
   text-align: right;
 }
