@@ -334,6 +334,7 @@
   align-items: center;
   gap: 10px;
   color: var(--Dark-Grey, #9B9B9B);
+  margin-bottom: 8px;
 }
 .cart__quantity .cart__quantity-field{
   border: none;
