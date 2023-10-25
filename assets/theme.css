@@ -4889,6 +4889,7 @@ dd {
   --font-3: 14px;
   --font-2: 12px;
   --font-1: 10px;
+  --Off-Black: #00031E;
 }
 
 @media only screen and (min-width: 750px) and (max-width: 989px) {
