@@ -16461,6 +16461,10 @@ body.has-line-design.grid-compact .reviews__grid {
     display: none !important;
   }
 
+  .grid-item.product-item:hover .product-link .timesact-badge-common-preorder  {
+    display: none !important;
+  }
+
   .grid-item.product-item:hover .breadcrumbs {
     display: none;
   }
