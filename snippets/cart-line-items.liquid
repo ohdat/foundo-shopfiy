@@ -51,7 +51,7 @@ Capture line items
       <div class="cart__item__content">
         <div class="cart__item__content-inner">
           <h4 class="cart__item__title ">
-            <a href="{{ line_item.url }}" class="font-found__headling">
+            <a href="{{ line_item.url }}" class="font-found__headling" style="font-size: 16px;">
               {{- line_item.product.title | strip_html -}}
             </a>
           </h4>
@@ -120,7 +120,7 @@ Capture line items
             {%- endif -%}
           </div>
 
-          <a
+          {% comment %} <a
             class="cart__item__remove"
             href="{{ routes.cart_change_url }}?line={{ forloop.index }}&amp;quantity=0"
             data-item-remove
@@ -129,7 +129,7 @@ Capture line items
             {%- render 'icon-cancel' -%}
 
             {{- 'cart.general.remove' | t -}}
-          </a>
+          </a> {% endcomment %}
         </div>
 
         <p class="cart__price font-found__headling" style="font-weight: normal; font-size: 12px;">
@@ -234,9 +234,11 @@ Capture line items
           </div>
         </div>
 
+        <a class="color-1" style="font-size: 12px;"  href="{{ routes.cart_change_url }}?line={{ forloop.index }}&amp;quantity=0" data-item-remove data-id="{{ line_item.key }}" title="{{ 'cart.general.remove' | t }}">
+          {{- 'cart.general.remove' | t -}}
+        </a>
 
-        <a style="color: var(--off-Black); display: inline-block; font-size: 12px; text-decoration: underline; margin: 20px 0;" href="{{ line_item.url }}">View Details</a>
-
+        {% comment %} <a style="color: var(--off-Black); display: inline-block; font-size: 12px; text-decoration: underline; margin: 20px 0;" href="{{ line_item.url }}">View Details</a> {% endcomment %}
       </div>
 
       {%- if line_item.original_price > line_item.final_price -%}
