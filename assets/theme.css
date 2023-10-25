@@ -8113,6 +8113,7 @@ img.fit-cover {
 
 .header__desktop__buttons {
   display: flex;
+  padding-right: 10px;
 }
 
 .navlink--toplevel,
