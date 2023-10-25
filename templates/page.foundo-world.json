@@ -16,31 +16,25 @@
         "image_1_heading_title": ""
       }
     },
-    "8ee4205a-263c-47b0-8025-8618ba5d7d17": {
-      "type": "section-reviews",
+    "7dfa3fa3-88e2-420e-9aaa-c504e6783b04": {
+      "type": "section-rich-text",
       "blocks": {
-        "9843c29d-9c26-4d19-89df-c2204509072e": {
-          "type": "review",
+        "template--19259611578699__7dfa3fa3-88e2-420e-9aaa-c504e6783b04-subheading-1": {
+          "type": "subheading",
           "settings": {
-            "title": "",
-            "subheading": "",
-            "review_text": "Revolutionary collectible brand rooted in oriental culture, a bold ethos and fusion aesthetics merging ancient divinity with contemporary aesthetics across east and west using the latest in blockchain technology, superior materials and world-class craftsmanship",
-            "review_url": ""
+            "subheading": "Revolutionary collectible brand rooted in oriental culture, a bold ethos and fusion aesthetics merging ancient divinity with contemporary aesthetics across east and west using the latest in blockchain technology, superior materials and world-class craftsmanship",
+            "text_size": 2
           }
         }
       },
       "block_order": [
-        "9843c29d-9c26-4d19-89df-c2204509072e"
+        "template--19259611578699__7dfa3fa3-88e2-420e-9aaa-c504e6783b04-subheading-1"
       ],
       "settings": {
-        "show_featured_image": false,
-        "image_aspect_ratio": 1.1,
-        "show_quotation_marks": false,
-        "text_align": "text-center",
-        "text_size": 4,
+        "width": "wrapper",
+        "align_text": "text-left",
         "bg_color": "",
         "color": "",
-        "card_bg_color": "",
         "padding_top": 100,
         "padding_bottom": 100
       }
@@ -65,44 +59,11 @@
     },
     "6fb32c46-474e-486c-8d27-07344b9f85a1": {
       "type": "section-hero",
-      "blocks": {
-        "template--19141043224907__6fb32c46-474e-486c-8d27-07344b9f85a1-1687342998465f7ff2-0": {
-          "type": "heading",
-          "settings": {
-            "title": "Lab Grown the Future of Diamond",
-            "heading_size": 6
-          }
-        },
-        "template--19141043224907__6fb32c46-474e-486c-8d27-07344b9f85a1-1687342998465f7ff2-1": {
-          "type": "text",
-          "settings": {
-            "description": "Only 2% of mined diamonds can compare to the color, quality, and purity of diamonds that FOUNDO selected from our partnered labs around the world.",
-            "text_size": 4,
-            "text_style": "font-body"
-          }
-        },
-        "template--19141043224907__6fb32c46-474e-486c-8d27-07344b9f85a1-1687342998465f7ff2-2": {
-          "type": "button",
-          "disabled": true,
-          "settings": {
-            "link_text": "Learn more",
-            "link": "",
-            "button_type": "btn--black",
-            "button_size": "",
-            "button_style": "btn--solid",
-            "show_arrow": false
-          }
-        }
-      },
-      "block_order": [
-        "template--19141043224907__6fb32c46-474e-486c-8d27-07344b9f85a1-1687342998465f7ff2-0",
-        "template--19141043224907__6fb32c46-474e-486c-8d27-07344b9f85a1-1687342998465f7ff2-1",
-        "template--19141043224907__6fb32c46-474e-486c-8d27-07344b9f85a1-1687342998465f7ff2-2"
-      ],
       "settings": {
-        "height": "screen-height-three-quarters",
+        "height": "screen-height-full",
         "width": "wrapper--full",
-        "image_1": "shopify:\/\/shop_images\/LabGD.png",
+        "image_1": "shopify:\/\/shop_images\/55.jpg",
+        "image_2": "shopify:\/\/shop_images\/42.jpg",
         "mobile_height": "screen-height-three-quarters--mobile",
         "flex_align": "align--bottom-center",
         "overlay_opacity": 0,
@@ -119,36 +80,17 @@
         "template--19141043224907__562ddd4f-054c-4a25-b8ce-374f3b82418b-16873431528b3db7d6-1": {
           "type": "heading",
           "settings": {
-            "title": "Lab Grown the Future of Diamond",
-            "text_size": 8
-          }
-        },
-        "template--19141043224907__562ddd4f-054c-4a25-b8ce-374f3b82418b-16873431528b3db7d6-2": {
-          "type": "text",
-          "settings": {
-            "text": "<p>Only 2% of mined diamonds can compare to the color, quality, and purity of diamonds that FOUNDO selected from our partnered labs around the world.<\/p>",
-            "text_size": 4,
-            "text_style": "font-body"
-          }
-        },
-        "template--19141043224907__562ddd4f-054c-4a25-b8ce-374f3b82418b-16873431528b3db7d6-3": {
-          "type": "buttons",
-          "settings": {
-            "button_text": "Learn more",
-            "button_url": "",
-            "button_type": "btn--primary",
-            "button_size": "",
-            "button_style": "btn--solid",
-            "show_arrow": false
+            "title": "Posuere morbi leo urna molestie at elementum eu facilisis. donec et odio pellentesque. Sed vulputate odio ut enim blandit volutpat maecenas volutpat.",
+            "text_size": 1
           }
         }
       },
       "block_order": [
-        "template--19141043224907__562ddd4f-054c-4a25-b8ce-374f3b82418b-16873431528b3db7d6-1",
-        "template--19141043224907__562ddd4f-054c-4a25-b8ce-374f3b82418b-16873431528b3db7d6-2",
-        "template--19141043224907__562ddd4f-054c-4a25-b8ce-374f3b82418b-16873431528b3db7d6-3"
+        "template--19141043224907__562ddd4f-054c-4a25-b8ce-374f3b82418b-16873431528b3db7d6-1"
       ],
-      "disabled": true,
+      "custom_css": [
+
+      ],
       "settings": {
         "width": "wrapper",
         "align_text": "text-left",
@@ -158,18 +100,64 @@
         "padding_bottom": 100
       }
     },
+    "99a57b5e-36ae-4d09-bdd3-bac59ff9f362": {
+      "type": "section-double",
+      "blocks": {
+        "template--19259611578699__99a57b5e-36ae-4d09-bdd3-bac59ff9f362-heading-1": {
+          "type": "heading",
+          "settings": {
+            "title": "Craftsmanship",
+            "text_size": 2
+          }
+        },
+        "template--19259611578699__99a57b5e-36ae-4d09-bdd3-bac59ff9f362-text-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>We may collect personal information from you when you visit our website, create an account, place an order, or interact with our services. This may include your name, email address, shipping address, payment information, and other relevant details necessary to process your orders and provide a personalized shopping experience.<\/p>",
+            "text_size": 1,
+            "text_style": "font-body"
+          }
+        },
+        "352e7b2a-e020-4a0d-92d3-a51e2b5837d7": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Lectus urna duis convallis convallis tellus id interdum velit laoreet. Enim nunc faucibus a pellentesque sit. Leo urna molestie at elementum. Proin sagittis nisl rhoncus mattis rhoncus urna neque. Pellentesque id nibh tortor id aliquet lectus proin nibh nisl. Suspendisse faucibus interdum posuere lorem ipsum dolor sit amet. Malesuada pellentesque elit eget gravida. In eu mi bibendum neque egestas congue quisque egestas. Consequat ac felis donec et odio. Duis at consectetur lorem donec. Purus non enim praesent elementum facilisis leo. Tristique senectus et netus et malesuada fames ac. Purus semper eget duis at tellus at. Eget duis at tellus at urna condimentum mattis. Tellus integer feugiat scelerisque varius. Sit amet aliquam id diam. Id faucibus nisl tincidunt eget nullam non nisi. Lacinia at quis risus sed vulputate odio.<br\/>Sit amet facilisis magna etiam. Molestie ac feugiat sed lectus. Leo a diam sollicitudin tempor. Nulla facilisi cras fermentum odio eu feugiat. Eu feugiat pretium nibh ipsum consequat nisl. Tortor at auctor urna nunc id. Purus faucibus ornare suspendisse sed nisi. Senectus et netus et malesuada fames. Etiam dignissim diam quis enim lobortis. Id semper risus in hendrerit gravida rutrum quisque non tellus. Aliquam faucibus purus in massa tempor nec. Duis at consectetur lorem donec massa sapien faucibus et. Viverra mauris in aliquam sem fringilla. Eget dolor morbi non arcu.<\/p>",
+            "text_size": 1,
+            "text_style": "font-body"
+          }
+        }
+      },
+      "block_order": [
+        "template--19259611578699__99a57b5e-36ae-4d09-bdd3-bac59ff9f362-heading-1",
+        "template--19259611578699__99a57b5e-36ae-4d09-bdd3-bac59ff9f362-text-1",
+        "352e7b2a-e020-4a0d-92d3-a51e2b5837d7"
+      ],
+      "settings": {
+        "layout": "",
+        "height": "screen-height-three-quarters",
+        "mobile_height": "screen-height-one-half--mobile",
+        "width": "wrapper--full",
+        "image_width": "one-half",
+        "text_alignment": "text-left",
+        "bg_color": "",
+        "color": "",
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
     "1420977d-425f-400f-a617-503f416d18d1": {
       "type": "section-double",
       "blocks": {
         "template--19141043224907__1420977d-425f-400f-a617-503f416d18d1-16873425460e735e2e-0": {
           "type": "heading",
           "settings": {
-            "title": "FOUNDO Artists",
+            "title": "",
             "text_size": 6
           }
         },
         "template--19141043224907__1420977d-425f-400f-a617-503f416d18d1-16873425460e735e2e-1": {
           "type": "text",
+          "disabled": true,
           "settings": {
             "text": "<p>Artist has always played an essential role in FOUNDO world. We find, support and collaborate with artists to bring the goodness of art to the world.<\/p>",
             "text_size": 3,
@@ -200,7 +188,252 @@
         "mobile_height": "screen-height-one-half--mobile",
         "width": "wrapper--full",
         "image_1": "shopify:\/\/shop_images\/1dontknow.png",
-        "image_width": "three-quarters",
+        "image_width": "one-half",
+        "text_alignment": "text-left",
+        "bg_color": "",
+        "color": "",
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
+    "d5988d3c-9b65-4749-96c5-cc3006bf06e5": {
+      "type": "section-rich-text",
+      "blocks": {
+        "template--19259611578699__d5988d3c-9b65-4749-96c5-cc3006bf06e5-text-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Posuere morbi leo urna molestie at elementum eu facilisis. donec et odio pellentesque. Sed vulputate odio ut enim blandit volutpat maecenas volutpat.<\/p>",
+            "text_size": 1,
+            "text_style": "font-body"
+          }
+        }
+      },
+      "block_order": [
+        "template--19259611578699__d5988d3c-9b65-4749-96c5-cc3006bf06e5-text-1"
+      ],
+      "settings": {
+        "width": "wrapper",
+        "align_text": "text-left",
+        "bg_color": "",
+        "color": "",
+        "padding_top": 100,
+        "padding_bottom": 100
+      }
+    },
+    "42a17d3c-18b1-4694-a172-38d73da62a24": {
+      "type": "section-double",
+      "blocks": {
+        "template--19259611578699__42a17d3c-18b1-4694-a172-38d73da62a24-text-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>We may collect personal information from you when you visit our website, create an account, place an order, or interact with our services. This may include your name, email address, shipping address, payment information, and other relevant details necessary to process your orders and provide a personalized shopping experience.<\/p>",
+            "text_size": 1,
+            "text_style": "font-body"
+          }
+        },
+        "9ca36b4c-c67d-42e5-a5a4-9ce0c3a58363": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Lectus urna duis convallis convallis tellus id interdum velit laoreet. Enim nunc faucibus a pellentesque sit. Leo urna molestie at elementum. Proin sagittis nisl rhoncus mattis rhoncus urna neque. Pellentesque id nibh tortor id aliquet lectus proin nibh nisl. Suspendisse faucibus interdum posuere lorem ipsum dolor sit amet. Malesuada pellentesque elit eget gravida. In eu mi bibendum neque egestas congue quisque egestas. Consequat ac felis donec et odio. Duis at consectetur lorem donec. Purus non enim praesent elementum facilisis leo. Tristique senectus et netus et malesuada fames ac. Purus semper eget duis at tellus at. Eget duis at tellus at urna condimentum mattis. Tellus integer feugiat scelerisque varius. Sit amet aliquam id diam. Id faucibus nisl tincidunt eget nullam non nisi. Lacinia at quis risus sed vulputate odio.<br\/>Sit amet facilisis magna etiam. Molestie ac feugiat sed lectus. Leo a diam sollicitudin tempor. Nulla facilisi cras fermentum odio eu feugiat. Eu feugiat pretium nibh ipsum consequat nisl. Tortor at auctor urna nunc id. Purus faucibus ornare suspendisse sed nisi. Senectus et netus et malesuada fames. Etiam dignissim diam quis enim lobortis. Id semper risus in hendrerit gravida rutrum quisque non tellus. Aliquam faucibus purus in massa tempor nec. Duis at consectetur lorem donec massa sapien faucibus et. Viverra mauris in aliquam sem fringilla. Eget dolor morbi non arcu.<\/p>",
+            "text_size": 1,
+            "text_style": "font-body"
+          }
+        },
+        "05b2179d-a416-49d0-8d3f-d0670e3df7d6": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Lectus urna duis convallis convallis tellus id interdum velit laoreet. Enim nunc faucibus a pellentesque sit. Leo urna molestie at elementum. Proin sagittis nisl rhoncus mattis rhoncus urna neque. Pellentesque id nibh tortor id aliquet lectus proin nibh nisl. Suspendisse faucibus interdum posuere lorem ipsum dolor sit amet. Malesuada pellentesque elit eget gravida. In eu mi bibendum neque egestas congue quisque egestas. Consequat ac felis donec et odio. Duis at consectetur lorem donec. Purus non enim praesent elementum facilisis leo. Tristique senectus et netus et malesuada fames ac. Purus semper eget duis at tellus at. Eget duis at tellus at urna condimentum mattis. Tellus integer feugiat scelerisque varius. Sit amet aliquam id diam. Id faucibus nisl tincidunt eget nullam non nisi. Lacinia at quis risus sed vulputate odio.<\/p>",
+            "text_size": 1,
+            "text_style": "font-body"
+          }
+        }
+      },
+      "block_order": [
+        "template--19259611578699__42a17d3c-18b1-4694-a172-38d73da62a24-text-1",
+        "9ca36b4c-c67d-42e5-a5a4-9ce0c3a58363",
+        "05b2179d-a416-49d0-8d3f-d0670e3df7d6"
+      ],
+      "settings": {
+        "layout": "",
+        "height": "screen-height-three-quarters",
+        "mobile_height": "screen-height-one-half--mobile",
+        "width": "wrapper--full",
+        "image_width": "one-half",
+        "text_alignment": "text-left",
+        "bg_color": "",
+        "color": "",
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
+    "2b508141-b8ea-4520-87ce-60769baa9e97": {
+      "type": "section-hero",
+      "settings": {
+        "height": "screen-height-full",
+        "width": "wrapper--full",
+        "image_1": "shopify:\/\/shop_images\/27-4.jpg",
+        "image_2": "shopify:\/\/shop_images\/27-4-1.jpg",
+        "mobile_height": "screen-height-three-quarters--mobile",
+        "flex_align": "align--middle-center",
+        "overlay_opacity": 0,
+        "overlay_color": "#000000",
+        "show_overlay_text": false,
+        "bg_color": "",
+        "color": "#ffffff",
+        "image_1_heading_title": ""
+      }
+    },
+    "77376831-c6f1-40ba-869b-aa26a3c0b16f": {
+      "type": "section-rich-text",
+      "blocks": {
+        "template--19259611578699__77376831-c6f1-40ba-869b-aa26a3c0b16f-text-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Posuere morbi leo urna molestie at elementum eu facilisis. donec et odio pellentesque. Sed vulputate odio ut enim blandit volutpat maecenas volutpat.<\/p>",
+            "text_size": 1,
+            "text_style": "font-body"
+          }
+        }
+      },
+      "block_order": [
+        "template--19259611578699__77376831-c6f1-40ba-869b-aa26a3c0b16f-text-1"
+      ],
+      "settings": {
+        "width": "wrapper",
+        "align_text": "text-left",
+        "bg_color": "",
+        "color": "",
+        "padding_top": 100,
+        "padding_bottom": 100
+      }
+    },
+    "dafa26fa-4552-43d7-bcff-fea888bd7bf6": {
+      "type": "section-double",
+      "blocks": {
+        "template--19259611578699__dafa26fa-4552-43d7-bcff-fea888bd7bf6-heading-1": {
+          "type": "heading",
+          "settings": {
+            "title": "NFT Club",
+            "text_size": 2
+          }
+        },
+        "template--19259611578699__dafa26fa-4552-43d7-bcff-fea888bd7bf6-text-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>We may collect personal information from you when you visit our website, create an account, place an order, or interact with our services. This may include your name, email address, shipping address, payment information, and other relevant details necessary to process your orders and provide a personalized shopping experience.<\/p>",
+            "text_size": 1,
+            "text_style": "font-body"
+          }
+        },
+        "a90a62cf-0e1f-4350-9865-78bc8f700b61": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Lectus urna duis convallis convallis tellus id interdum velit laoreet. Enim nunc faucibus a pellentesque sit. Leo urna molestie at elementum. Proin sagittis nisl rhoncus mattis rhoncus urna neque. Pellentesque id nibh tortor id aliquet lectus proin nibh nisl. Suspendisse faucibus interdum posuere lorem ipsum dolor sit amet. Malesuada pellentesque elit eget gravida. In eu mi bibendum neque egestas congue quisque egestas. Consequat ac felis donec et odio. Duis at consectetur lorem donec. Purus non enim praesent elementum facilisis leo. Tristique senectus et netus et malesuada fames ac. Purus semper eget duis at tellus at. Eget duis at tellus at urna condimentum mattis. Tellus integer feugiat scelerisque varius. Sit amet aliquam id diam. Id faucibus nisl tincidunt eget nullam non nisi. Lacinia at quis risus sed vulputate odio.<br\/>Sit amet facilisis magna etiam. Molestie ac feugiat sed lectus. Leo a diam sollicitudin tempor. Nulla facilisi cras fermentum odio eu feugiat. Eu feugiat pretium nibh ipsum consequat nisl. Tortor at auctor urna nunc id. Purus faucibus ornare suspendisse sed nisi. Senectus et netus et malesuada fames. Etiam dignissim diam quis enim lobortis. Id semper risus in hendrerit gravida rutrum quisque non tellus. Aliquam faucibus purus in massa tempor nec. Duis at consectetur lorem donec massa sapien faucibus et. Viverra mauris in aliquam sem fringilla. Eget dolor morbi non arcu.<\/p>",
+            "text_size": 1,
+            "text_style": "font-body"
+          }
+        }
+      },
+      "block_order": [
+        "template--19259611578699__dafa26fa-4552-43d7-bcff-fea888bd7bf6-heading-1",
+        "template--19259611578699__dafa26fa-4552-43d7-bcff-fea888bd7bf6-text-1",
+        "a90a62cf-0e1f-4350-9865-78bc8f700b61"
+      ],
+      "settings": {
+        "layout": "is-reversed",
+        "height": "screen-height-three-quarters",
+        "mobile_height": "screen-height-one-half--mobile",
+        "width": "wrapper--full",
+        "image_width": "one-half",
+        "text_alignment": "text-left",
+        "bg_color": "",
+        "color": "",
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
+    "2f4c9221-a1bb-4d0f-88e3-3e202a700bbb": {
+      "type": "section-double",
+      "blocks": {
+        "template--19259611578699__2f4c9221-a1bb-4d0f-88e3-3e202a700bbb-heading-1": {
+          "type": "heading",
+          "settings": {
+            "title": "",
+            "text_size": 8
+          }
+        }
+      },
+      "block_order": [
+        "template--19259611578699__2f4c9221-a1bb-4d0f-88e3-3e202a700bbb-heading-1"
+      ],
+      "settings": {
+        "layout": "",
+        "height": "screen-height-full",
+        "mobile_height": "screen-height-one-half--mobile",
+        "width": "wrapper--full",
+        "image_1": "shopify:\/\/shop_images\/1_c59ac784-e64b-4073-8da2-deacd72c5935.jpg",
+        "image_width": "one-half",
+        "text_alignment": "text-left",
+        "bg_color": "",
+        "color": "",
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
+    "a35a2b0e-edf6-4c16-9a2f-d07cc3aab5ad": {
+      "type": "section-rich-text",
+      "blocks": {
+        "template--19259611578699__a35a2b0e-edf6-4c16-9a2f-d07cc3aab5ad-text-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Posuere morbi leo urna molestie at elementum eu facilisis. donec et odio pellentesque. Sed vulputate odio ut enim blandit volutpat maecenas volutpat.<\/p>",
+            "text_size": 1,
+            "text_style": "font-body"
+          }
+        }
+      },
+      "block_order": [
+        "template--19259611578699__a35a2b0e-edf6-4c16-9a2f-d07cc3aab5ad-text-1"
+      ],
+      "settings": {
+        "width": "wrapper",
+        "align_text": "text-left",
+        "bg_color": "",
+        "color": "",
+        "padding_top": 100,
+        "padding_bottom": 100
+      }
+    },
+    "0a3f6b75-8f7e-4e4f-be4b-bfe9df9f8b0a": {
+      "type": "section-double",
+      "blocks": {
+        "template--19259611578699__0a3f6b75-8f7e-4e4f-be4b-bfe9df9f8b0a-text-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>We may collect personal information from you when you visit our website, create an account, place an order, or interact with our services. This may include your name, email address, shipping address, payment information, and other relevant details necessary to process your orders and provide a personalized shopping experience.<\/p>",
+            "text_size": 1,
+            "text_style": "font-body"
+          }
+        },
+        "2de57202-3606-42c7-ba87-63d8a8a1cbf2": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Lectus urna duis convallis convallis tellus id interdum velit laoreet. Enim nunc faucibus a pellentesque sit. Leo urna molestie at elementum. Proin sagittis nisl rhoncus mattis rhoncus urna neque. Pellentesque id nibh tortor id aliquet lectus proin nibh nisl. Suspendisse faucibus interdum posuere lorem ipsum dolor sit amet. Malesuada pellentesque elit eget gravida. In eu mi bibendum neque egestas congue quisque egestas. Consequat ac felis donec et odio. Duis at consectetur lorem donec. Purus non enim praesent elementum facilisis leo. Tristique senectus et netus et malesuada fames ac. Purus semper eget duis at tellus at. Eget duis at tellus at urna condimentum mattis. Tellus integer feugiat scelerisque varius. Sit amet aliquam id diam. Id faucibus nisl tincidunt eget nullam non nisi. Lacinia at quis risus sed vulputate odio.<br\/>Sit amet facilisis magna etiam. Molestie ac feugiat sed lectus. Leo a diam sollicitudin tempor. Nulla facilisi cras fermentum odio eu feugiat. Eu feugiat pretium nibh ipsum consequat nisl. Tortor at auctor urna nunc id. Purus faucibus ornare suspendisse sed nisi. Senectus et netus et malesuada fames. Etiam dignissim diam quis enim lobortis. Id semper risus in hendrerit gravida rutrum quisque non tellus. Aliquam faucibus purus in massa tempor nec. Duis at consectetur lorem donec massa sapien faucibus et. Viverra mauris in aliquam sem fringilla. Eget dolor morbi non arcu.<\/p>",
+            "text_size": 1,
+            "text_style": "font-body"
+          }
+        }
+      },
+      "block_order": [
+        "template--19259611578699__0a3f6b75-8f7e-4e4f-be4b-bfe9df9f8b0a-text-1",
+        "2de57202-3606-42c7-ba87-63d8a8a1cbf2"
+      ],
+      "settings": {
+        "layout": "is-reversed",
+        "height": "screen-height-three-quarters",
+        "mobile_height": "screen-height-one-half--mobile",
+        "width": "wrapper--full",
+        "image_width": "one-half",
         "text_alignment": "text-left",
         "bg_color": "",
         "color": "",
@@ -211,10 +444,19 @@
   },
   "order": [
     "ab6343f4-adce-439f-9562-6eb11090604a",
-    "8ee4205a-263c-47b0-8025-8618ba5d7d17",
+    "7dfa3fa3-88e2-420e-9aaa-c504e6783b04",
     "main",
     "6fb32c46-474e-486c-8d27-07344b9f85a1",
     "562ddd4f-054c-4a25-b8ce-374f3b82418b",
-    "1420977d-425f-400f-a617-503f416d18d1"
+    "99a57b5e-36ae-4d09-bdd3-bac59ff9f362",
+    "1420977d-425f-400f-a617-503f416d18d1",
+    "d5988d3c-9b65-4749-96c5-cc3006bf06e5",
+    "42a17d3c-18b1-4694-a172-38d73da62a24",
+    "2b508141-b8ea-4520-87ce-60769baa9e97",
+    "77376831-c6f1-40ba-869b-aa26a3c0b16f",
+    "dafa26fa-4552-43d7-bcff-fea888bd7bf6",
+    "2f4c9221-a1bb-4d0f-88e3-3e202a700bbb",
+    "a35a2b0e-edf6-4c16-9a2f-d07cc3aab5ad",
+    "0a3f6b75-8f7e-4e4f-be4b-bfe9df9f8b0a"
   ]
 }
