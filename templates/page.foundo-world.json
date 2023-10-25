@@ -112,12 +112,13 @@
         "template--19141043224907__1420977d-425f-400f-a617-503f416d18d1-16873425460e735e2e-0": {
           "type": "heading",
           "settings": {
-            "title": "FOUNDO Artists",
+            "title": "",
             "text_size": 6
           }
         },
         "template--19141043224907__1420977d-425f-400f-a617-503f416d18d1-16873425460e735e2e-1": {
           "type": "text",
+          "disabled": true,
           "settings": {
             "text": "<p>Artist has always played an essential role in FOUNDO world. We find, support and collaborate with artists to bring the goodness of art to the world.<\/p>",
             "text_size": 3,
@@ -148,7 +149,7 @@
         "mobile_height": "screen-height-one-half--mobile",
         "width": "wrapper--full",
         "image_1": "shopify:\/\/shop_images\/1dontknow.png",
-        "image_width": "three-quarters",
+        "image_width": "one-half",
         "text_alignment": "text-left",
         "bg_color": "",
         "color": "",
@@ -172,6 +173,34 @@
         "color": "#FFFFFF",
         "image_1_heading_title": ""
       }
+    },
+    "2f4c9221-a1bb-4d0f-88e3-3e202a700bbb": {
+      "type": "section-double",
+      "blocks": {
+        "template--19259611578699__2f4c9221-a1bb-4d0f-88e3-3e202a700bbb-heading-1": {
+          "type": "heading",
+          "settings": {
+            "title": "",
+            "text_size": 8
+          }
+        }
+      },
+      "block_order": [
+        "template--19259611578699__2f4c9221-a1bb-4d0f-88e3-3e202a700bbb-heading-1"
+      ],
+      "settings": {
+        "layout": "",
+        "height": "screen-height-full",
+        "mobile_height": "screen-height-one-half--mobile",
+        "width": "wrapper--full",
+        "image_1": "shopify:\/\/shop_images\/1_c59ac784-e64b-4073-8da2-deacd72c5935.jpg",
+        "image_width": "one-half",
+        "text_alignment": "text-left",
+        "bg_color": "",
+        "color": "",
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
     }
   },
   "order": [
@@ -181,6 +210,7 @@
     "6fb32c46-474e-486c-8d27-07344b9f85a1",
     "562ddd4f-054c-4a25-b8ce-374f3b82418b",
     "1420977d-425f-400f-a617-503f416d18d1",
-    "2b508141-b8ea-4520-87ce-60769baa9e97"
+    "2b508141-b8ea-4520-87ce-60769baa9e97",
+    "2f4c9221-a1bb-4d0f-88e3-3e202a700bbb"
   ]
 }
