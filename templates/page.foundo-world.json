@@ -374,6 +374,30 @@
         "padding_top": 0,
         "padding_bottom": 0
       }
+    },
+    "77376831-c6f1-40ba-869b-aa26a3c0b16f": {
+      "type": "section-rich-text",
+      "blocks": {
+        "template--19259611578699__77376831-c6f1-40ba-869b-aa26a3c0b16f-text-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Posuere morbi leo urna molestie at elementum eu facilisis. donec et odio pellentesque. Sed vulputate odio ut enim blandit volutpat maecenas volutpat.<\/p>",
+            "text_size": 1,
+            "text_style": "font-body"
+          }
+        }
+      },
+      "block_order": [
+        "template--19259611578699__77376831-c6f1-40ba-869b-aa26a3c0b16f-text-1"
+      ],
+      "settings": {
+        "width": "wrapper",
+        "align_text": "text-left",
+        "bg_color": "",
+        "color": "",
+        "padding_top": 100,
+        "padding_bottom": 100
+      }
     }
   },
   "order": [
@@ -388,6 +412,7 @@
     "2b508141-b8ea-4520-87ce-60769baa9e97",
     "dafa26fa-4552-43d7-bcff-fea888bd7bf6",
     "2f4c9221-a1bb-4d0f-88e3-3e202a700bbb",
-    "0a3f6b75-8f7e-4e4f-be4b-bfe9df9f8b0a"
+    "0a3f6b75-8f7e-4e4f-be4b-bfe9df9f8b0a",
+    "77376831-c6f1-40ba-869b-aa26a3c0b16f"
   ]
 }
