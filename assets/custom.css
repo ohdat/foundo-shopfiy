@@ -328,6 +328,9 @@
 .cart__item__content * {
   font-size: var(--font-1);
 }
+.cart__item__meta {
+  color: var(--Dark-Grey, #9B9B9B);
+}
 
 .product-quantity__wrapper {
   display: flex;
