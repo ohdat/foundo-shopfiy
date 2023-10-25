@@ -56,6 +56,66 @@ Capture line items
             </a>
           </h4>
 
+          <p class="cart__price font-found__headling" style="font-weight: normal; font-size: 12px;">
+            {%- liquid
+              assign discounted = false
+              assign sale = false
+
+              if line_item.original_price > line_item.final_price
+                assign discounted = true
+              endif
+
+              if line_item.variant.compare_at_price > line_item.final_price
+                assign sale = true
+              endif
+            -%}
+
+            {%- if sale or discounted -%}
+              <ins>
+                {%- if line_item.final_price == 0 -%}
+                  {{ 'general.money.free' | t }}
+                {%- else -%}
+                  {{- line_item_final_price -}}
+                {%- endif -%}
+              </ins>
+            {%- else -%}
+              {%- if line_item.final_price == 0 -%}
+                {{ 'general.money.free' | t }}
+              {%- else -%}
+                {{- line_item_final_price -}}
+              {%- endif -%}
+            {%- endif -%}
+
+            {%- if sale and discounted == false -%}
+              <del>{{- line_item_variant_compare_at_price -}}</del>
+            {%- endif -%}
+
+            {%- if discounted -%}
+              <del>{{- line_item_original_price -}}</del>
+            {%- endif -%}
+
+            {%- if line_item.unit_price -%}
+              {%- capture unit_price_separator -%}
+                <span aria-hidden="true">/</span>
+                <span class="visually-hidden">{{ 'general.accessibility.unit_price_separator' | t }}&nbsp;</span>
+              {%- endcapture -%}
+
+              {%- capture unit_price_base_unit -%}
+                {%- if line_item.unit_price_measurement.reference_value != 1 -%}
+                  {{- line_item.unit_price_measurement.reference_value -}}
+                {%- endif -%}
+
+                {{- line_item.unit_price_measurement.reference_unit -}}
+              {%- endcapture -%}
+
+              <span class="line__price">
+                <small class="visually-hidden">{{ 'products.product.unit_price_label' | t }}</small>
+
+                <small>{{ line_item_unit_price }}{{ unit_price_separator }}{{ unit_price_base_unit }}</small>
+              </span>
+            {%- endif -%}
+          </p>
+          
           <div class="cart__item__meta">
             {%- assign properties_html = '' -%}
             {%- assign property_size = line_item.properties | size -%}
@@ -131,66 +191,6 @@ Capture line items
             {{- 'cart.general.remove' | t -}}
           </a> {% endcomment %}
         </div>
-
-        <p class="cart__price font-found__headling" style="font-weight: normal; font-size: 12px;">
-          {%- liquid
-            assign discounted = false
-            assign sale = false
-
-            if line_item.original_price > line_item.final_price
-              assign discounted = true
-            endif
-
-            if line_item.variant.compare_at_price > line_item.final_price
-              assign sale = true
-            endif
-          -%}
-
-          {%- if sale or discounted -%}
-            <ins>
-              {%- if line_item.final_price == 0 -%}
-                {{ 'general.money.free' | t }}
-              {%- else -%}
-                {{- line_item_final_price -}}
-              {%- endif -%}
-            </ins>
-          {%- else -%}
-            {%- if line_item.final_price == 0 -%}
-              {{ 'general.money.free' | t }}
-            {%- else -%}
-              {{- line_item_final_price -}}
-            {%- endif -%}
-          {%- endif -%}
-
-          {%- if sale and discounted == false -%}
-            <del>{{- line_item_variant_compare_at_price -}}</del>
-          {%- endif -%}
-
-          {%- if discounted -%}
-            <del>{{- line_item_original_price -}}</del>
-          {%- endif -%}
-
-          {%- if line_item.unit_price -%}
-            {%- capture unit_price_separator -%}
-              <span aria-hidden="true">/</span>
-              <span class="visually-hidden">{{ 'general.accessibility.unit_price_separator' | t }}&nbsp;</span>
-            {%- endcapture -%}
-
-            {%- capture unit_price_base_unit -%}
-              {%- if line_item.unit_price_measurement.reference_value != 1 -%}
-                {{- line_item.unit_price_measurement.reference_value -}}
-              {%- endif -%}
-
-              {{- line_item.unit_price_measurement.reference_unit -}}
-            {%- endcapture -%}
-
-            <span class="line__price">
-              <small class="visually-hidden">{{ 'products.product.unit_price_label' | t }}</small>
-
-              <small>{{ line_item_unit_price }}{{ unit_price_separator }}{{ unit_price_base_unit }}</small>
-            </span>
-          {%- endif -%}
-        </p>
         
         <div class="product-quantity__wrapper">
           <div class="label">Qty: </div>
