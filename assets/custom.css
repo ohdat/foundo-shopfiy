@@ -319,3 +319,6 @@
 .pswp__caption.pswp__caption--empty {
   display: none;
 }
+.cart__item__title a {
+  color: var(----Off-Black, #00031E);
+}
