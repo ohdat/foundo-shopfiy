@@ -16,31 +16,25 @@
         "image_1_heading_title": ""
       }
     },
-    "8ee4205a-263c-47b0-8025-8618ba5d7d17": {
-      "type": "section-reviews",
+    "7dfa3fa3-88e2-420e-9aaa-c504e6783b04": {
+      "type": "section-rich-text",
       "blocks": {
-        "9843c29d-9c26-4d19-89df-c2204509072e": {
-          "type": "review",
+        "template--19259611578699__7dfa3fa3-88e2-420e-9aaa-c504e6783b04-subheading-1": {
+          "type": "subheading",
           "settings": {
-            "title": "",
-            "subheading": "",
-            "review_text": "Revolutionary collectible brand rooted in oriental culture, a bold ethos and fusion aesthetics merging ancient divinity with contemporary aesthetics across east and west using the latest in blockchain technology, superior materials and world-class craftsmanship",
-            "review_url": ""
+            "subheading": "Revolutionary collectible brand rooted in oriental culture, a bold ethos and fusion aesthetics merging ancient divinity with contemporary aesthetics across east and west using the latest in blockchain technology, superior materials and world-class craftsmanship",
+            "text_size": 2
           }
         }
       },
       "block_order": [
-        "9843c29d-9c26-4d19-89df-c2204509072e"
+        "template--19259611578699__7dfa3fa3-88e2-420e-9aaa-c504e6783b04-subheading-1"
       ],
       "settings": {
-        "show_featured_image": false,
-        "image_aspect_ratio": 1,
-        "show_quotation_marks": false,
-        "text_align": "text-center",
-        "text_size": 4,
+        "width": "wrapper",
+        "align_text": "text-left",
         "bg_color": "",
         "color": "",
-        "card_bg_color": "",
         "padding_top": 100,
         "padding_bottom": 100
       }
@@ -450,7 +444,7 @@
   },
   "order": [
     "ab6343f4-adce-439f-9562-6eb11090604a",
-    "8ee4205a-263c-47b0-8025-8618ba5d7d17",
+    "7dfa3fa3-88e2-420e-9aaa-c504e6783b04",
     "main",
     "6fb32c46-474e-486c-8d27-07344b9f85a1",
     "562ddd4f-054c-4a25-b8ce-374f3b82418b",
