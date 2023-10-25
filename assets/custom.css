@@ -325,6 +325,9 @@
 .cart__item__content .cart__item__title a, .cart__item__content .cart__price{
   color: var(----Off-Black, #00031E);
 }
+.cart__item__content * {
+  font-size: var(--font-2);
+}
 
 .product-quantity__wrapper {
   display: flex;
