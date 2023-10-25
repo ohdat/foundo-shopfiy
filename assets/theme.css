@@ -7616,7 +7616,6 @@ img.fit-cover {
   display: block;
   width: 100%;
   height: 100%;
-  object-fit: contain;
 }
 
 .cart__item__image a {
@@ -7645,7 +7644,6 @@ img.fit-cover {
 
 .cart__item__content {
   width: calc(100% - 90px);
-  padding: 0 30px;
 }
 
 .cart__item__title {
