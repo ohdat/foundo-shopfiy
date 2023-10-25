@@ -233,7 +233,11 @@ Capture line items
             </button>
           </div>
         </div>
-
+        
+        <a class="cart__item__remove" href="{{ routes.cart_change_url }}?line={{ forloop.index }}&amp;quantity=0" data-item-remove data-id="{{ line_item.key }}" title="{{ 'cart.general.remove' | t }}">
+          {%- render 'icon-cancel' -%}
+          {{- 'cart.general.remove' | t -}}
+        </a>
 
         <a style="color: var(--off-Black); display: inline-block; font-size: 12px; text-decoration: underline; margin: 20px 0;" href="{{ line_item.url }}">View Details</a>
 
