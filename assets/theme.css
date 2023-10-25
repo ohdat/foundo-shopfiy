@@ -7802,7 +7802,7 @@ img.fit-cover {
 } */
 .theme__header {
   position: fixed;
-  top: 0px;
+  top: 30px;
   z-index: 2300;
   width: 100%;
   color: var(--text);
