@@ -365,3 +365,20 @@
   padding: 0!important;
   letter-spacing: 0!important;
 }
+
+#foundo-world .hero__content__wrapper.text-left.wrapper:first {
+  padding: 30px 118px;
+}
+
+#foundo-world .hero__content__wrapper.text-left.wrapper .hero__subheading {
+  color: var(--Off-Black, #00031E);
+  text-align: center;
+  leading-trim: both;
+  text-edge: cap;
+  font-family: Foundo;
+  font-size: 44px;
+  font-style: normal;
+  font-weight: 135;
+  line-height: 110%; /* 48.4px */
+  letter-spacing: -1.1px;
+}
