@@ -343,3 +343,6 @@
   border: none;
   padding: 0;
 }
+.announcement__bar-outer {
+  padding: 6px 0;
+}
