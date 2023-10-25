@@ -337,4 +337,5 @@
 }
 .cart__quantity .cart__quantity-field{
   border: none;
+  padding: 0;
 }
