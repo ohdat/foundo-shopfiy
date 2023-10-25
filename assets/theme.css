@@ -4890,11 +4890,14 @@ dd {
   --font-2: 12px;
   --font-1: 10px;
   --Off-Black: #00031E;
-  ----Dark-Grey: #9B9B9B;
+  --Dark-Grey: #9B9B9B;
 }
 
-.color-2 {
+.color-1 {
   color: var(--Off-Black);
+}
+.color-2 {
+  color: var(--Dark-Grey);
 }
 
 @media only screen and (min-width: 750px) and (max-width: 989px) {
