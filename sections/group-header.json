@@ -7,6 +7,7 @@
       "blocks": {
         "68c0faef-0a4f-4977-803b-13486a360836": {
           "type": "message",
+          "disabled": true,
           "settings": {
             "show_wheel": false,
             "message": "You are $500 away from free shipping.",
