@@ -87,7 +87,7 @@
           "type": "heading",
           "settings": {
             "title": "Posuere morbi leo urna molestie at elementum eu facilisis. donec et odio pellentesque. Sed vulputate odio ut enim blandit volutpat maecenas volutpat.",
-            "text_size": 2
+            "text_size": 1
           }
         }
       },
@@ -202,6 +202,30 @@
         "padding_bottom": 0
       }
     },
+    "d5988d3c-9b65-4749-96c5-cc3006bf06e5": {
+      "type": "section-rich-text",
+      "blocks": {
+        "template--19259611578699__d5988d3c-9b65-4749-96c5-cc3006bf06e5-text-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Posuere morbi leo urna molestie at elementum eu facilisis. donec et odio pellentesque. Sed vulputate odio ut enim blandit volutpat maecenas volutpat.<\/p>",
+            "text_size": 1,
+            "text_style": "font-body"
+          }
+        }
+      },
+      "block_order": [
+        "template--19259611578699__d5988d3c-9b65-4749-96c5-cc3006bf06e5-text-1"
+      ],
+      "settings": {
+        "width": "wrapper",
+        "align_text": "text-left",
+        "bg_color": "",
+        "color": "",
+        "padding_top": 100,
+        "padding_bottom": 100
+      }
+    },
     "42a17d3c-18b1-4694-a172-38d73da62a24": {
       "type": "section-double",
       "blocks": {
@@ -263,6 +287,30 @@
         "bg_color": "",
         "color": "#ffffff",
         "image_1_heading_title": ""
+      }
+    },
+    "77376831-c6f1-40ba-869b-aa26a3c0b16f": {
+      "type": "section-rich-text",
+      "blocks": {
+        "template--19259611578699__77376831-c6f1-40ba-869b-aa26a3c0b16f-text-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Posuere morbi leo urna molestie at elementum eu facilisis. donec et odio pellentesque. Sed vulputate odio ut enim blandit volutpat maecenas volutpat.<\/p>",
+            "text_size": 1,
+            "text_style": "font-body"
+          }
+        }
+      },
+      "block_order": [
+        "template--19259611578699__77376831-c6f1-40ba-869b-aa26a3c0b16f-text-1"
+      ],
+      "settings": {
+        "width": "wrapper",
+        "align_text": "text-left",
+        "bg_color": "",
+        "color": "",
+        "padding_top": 100,
+        "padding_bottom": 100
       }
     },
     "dafa26fa-4552-43d7-bcff-fea888bd7bf6": {
@@ -338,6 +386,30 @@
         "padding_bottom": 0
       }
     },
+    "a35a2b0e-edf6-4c16-9a2f-d07cc3aab5ad": {
+      "type": "section-rich-text",
+      "blocks": {
+        "template--19259611578699__a35a2b0e-edf6-4c16-9a2f-d07cc3aab5ad-text-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Posuere morbi leo urna molestie at elementum eu facilisis. donec et odio pellentesque. Sed vulputate odio ut enim blandit volutpat maecenas volutpat.<\/p>",
+            "text_size": 1,
+            "text_style": "font-body"
+          }
+        }
+      },
+      "block_order": [
+        "template--19259611578699__a35a2b0e-edf6-4c16-9a2f-d07cc3aab5ad-text-1"
+      ],
+      "settings": {
+        "width": "wrapper",
+        "align_text": "text-left",
+        "bg_color": "",
+        "color": "",
+        "padding_top": 100,
+        "padding_bottom": 100
+      }
+    },
     "0a3f6b75-8f7e-4e4f-be4b-bfe9df9f8b0a": {
       "type": "section-double",
       "blocks": {
@@ -374,30 +446,6 @@
         "padding_top": 0,
         "padding_bottom": 0
       }
-    },
-    "77376831-c6f1-40ba-869b-aa26a3c0b16f": {
-      "type": "section-rich-text",
-      "blocks": {
-        "template--19259611578699__77376831-c6f1-40ba-869b-aa26a3c0b16f-text-1": {
-          "type": "text",
-          "settings": {
-            "text": "<p>Posuere morbi leo urna molestie at elementum eu facilisis. donec et odio pellentesque. Sed vulputate odio ut enim blandit volutpat maecenas volutpat.<\/p>",
-            "text_size": 1,
-            "text_style": "font-body"
-          }
-        }
-      },
-      "block_order": [
-        "template--19259611578699__77376831-c6f1-40ba-869b-aa26a3c0b16f-text-1"
-      ],
-      "settings": {
-        "width": "wrapper",
-        "align_text": "text-left",
-        "bg_color": "",
-        "color": "",
-        "padding_top": 100,
-        "padding_bottom": 100
-      }
     }
   },
   "order": [
@@ -408,11 +456,13 @@
     "562ddd4f-054c-4a25-b8ce-374f3b82418b",
     "99a57b5e-36ae-4d09-bdd3-bac59ff9f362",
     "1420977d-425f-400f-a617-503f416d18d1",
+    "d5988d3c-9b65-4749-96c5-cc3006bf06e5",
     "42a17d3c-18b1-4694-a172-38d73da62a24",
     "2b508141-b8ea-4520-87ce-60769baa9e97",
+    "77376831-c6f1-40ba-869b-aa26a3c0b16f",
     "dafa26fa-4552-43d7-bcff-fea888bd7bf6",
     "2f4c9221-a1bb-4d0f-88e3-3e202a700bbb",
-    "0a3f6b75-8f7e-4e4f-be4b-bfe9df9f8b0a",
-    "77376831-c6f1-40ba-869b-aa26a3c0b16f"
+    "a35a2b0e-edf6-4c16-9a2f-d07cc3aab5ad",
+    "0a3f6b75-8f7e-4e4f-be4b-bfe9df9f8b0a"
   ]
 }
