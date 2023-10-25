@@ -13929,6 +13929,7 @@ main-search .input-holder {
 
 .product-item__price__holder {
   color: var(--text-light);
+  font-size: var(--font-2);
   overflow: hidden;
   text-align: right;
 }
@@ -16457,6 +16458,10 @@ body.has-line-design.grid-compact .reviews__grid {
   }
 
   .grid-item.product-item:hover .product-link .product-item__price__holder  {
+    display: none !important;
+  }
+
+  .grid-item.product-item:hover .product-link .timesact-badge-common-preorder  {
     display: none !important;
   }
 
