@@ -113,14 +113,14 @@
           "type": "heading",
           "settings": {
             "title": "Craftsmanship",
-            "text_size": 4
+            "text_size": 2
           }
         },
         "template--19259611578699__99a57b5e-36ae-4d09-bdd3-bac59ff9f362-text-1": {
           "type": "text",
           "settings": {
             "text": "<p>We may collect personal information from you when you visit our website, create an account, place an order, or interact with our services. This may include your name, email address, shipping address, payment information, and other relevant details necessary to process your orders and provide a personalized shopping experience.<\/p>",
-            "text_size": 2,
+            "text_size": 1,
             "text_style": "font-body"
           }
         },
@@ -128,7 +128,7 @@
           "type": "text",
           "settings": {
             "text": "<p>Lectus urna duis convallis convallis tellus id interdum velit laoreet. Enim nunc faucibus a pellentesque sit. Leo urna molestie at elementum. Proin sagittis nisl rhoncus mattis rhoncus urna neque. Pellentesque id nibh tortor id aliquet lectus proin nibh nisl. Suspendisse faucibus interdum posuere lorem ipsum dolor sit amet. Malesuada pellentesque elit eget gravida. In eu mi bibendum neque egestas congue quisque egestas. Consequat ac felis donec et odio. Duis at consectetur lorem donec. Purus non enim praesent elementum facilisis leo. Tristique senectus et netus et malesuada fames ac. Purus semper eget duis at tellus at. Eget duis at tellus at urna condimentum mattis. Tellus integer feugiat scelerisque varius. Sit amet aliquam id diam. Id faucibus nisl tincidunt eget nullam non nisi. Lacinia at quis risus sed vulputate odio.<br\/>Sit amet facilisis magna etiam. Molestie ac feugiat sed lectus. Leo a diam sollicitudin tempor. Nulla facilisi cras fermentum odio eu feugiat. Eu feugiat pretium nibh ipsum consequat nisl. Tortor at auctor urna nunc id. Purus faucibus ornare suspendisse sed nisi. Senectus et netus et malesuada fames. Etiam dignissim diam quis enim lobortis. Id semper risus in hendrerit gravida rutrum quisque non tellus. Aliquam faucibus purus in massa tempor nec. Duis at consectetur lorem donec massa sapien faucibus et. Viverra mauris in aliquam sem fringilla. Eget dolor morbi non arcu.<\/p>",
-            "text_size": 2,
+            "text_size": 1,
             "text_style": "font-body"
           }
         }
@@ -202,6 +202,52 @@
         "padding_bottom": 0
       }
     },
+    "42a17d3c-18b1-4694-a172-38d73da62a24": {
+      "type": "section-double",
+      "blocks": {
+        "template--19259611578699__42a17d3c-18b1-4694-a172-38d73da62a24-text-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>We may collect personal information from you when you visit our website, create an account, place an order, or interact with our services. This may include your name, email address, shipping address, payment information, and other relevant details necessary to process your orders and provide a personalized shopping experience.<\/p>",
+            "text_size": 1,
+            "text_style": "font-body"
+          }
+        },
+        "9ca36b4c-c67d-42e5-a5a4-9ce0c3a58363": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Lectus urna duis convallis convallis tellus id interdum velit laoreet. Enim nunc faucibus a pellentesque sit. Leo urna molestie at elementum. Proin sagittis nisl rhoncus mattis rhoncus urna neque. Pellentesque id nibh tortor id aliquet lectus proin nibh nisl. Suspendisse faucibus interdum posuere lorem ipsum dolor sit amet. Malesuada pellentesque elit eget gravida. In eu mi bibendum neque egestas congue quisque egestas. Consequat ac felis donec et odio. Duis at consectetur lorem donec. Purus non enim praesent elementum facilisis leo. Tristique senectus et netus et malesuada fames ac. Purus semper eget duis at tellus at. Eget duis at tellus at urna condimentum mattis. Tellus integer feugiat scelerisque varius. Sit amet aliquam id diam. Id faucibus nisl tincidunt eget nullam non nisi. Lacinia at quis risus sed vulputate odio.<br\/>Sit amet facilisis magna etiam. Molestie ac feugiat sed lectus. Leo a diam sollicitudin tempor. Nulla facilisi cras fermentum odio eu feugiat. Eu feugiat pretium nibh ipsum consequat nisl. Tortor at auctor urna nunc id. Purus faucibus ornare suspendisse sed nisi. Senectus et netus et malesuada fames. Etiam dignissim diam quis enim lobortis. Id semper risus in hendrerit gravida rutrum quisque non tellus. Aliquam faucibus purus in massa tempor nec. Duis at consectetur lorem donec massa sapien faucibus et. Viverra mauris in aliquam sem fringilla. Eget dolor morbi non arcu.<\/p>",
+            "text_size": 1,
+            "text_style": "font-body"
+          }
+        },
+        "05b2179d-a416-49d0-8d3f-d0670e3df7d6": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Lectus urna duis convallis convallis tellus id interdum velit laoreet. Enim nunc faucibus a pellentesque sit. Leo urna molestie at elementum. Proin sagittis nisl rhoncus mattis rhoncus urna neque. Pellentesque id nibh tortor id aliquet lectus proin nibh nisl. Suspendisse faucibus interdum posuere lorem ipsum dolor sit amet. Malesuada pellentesque elit eget gravida. In eu mi bibendum neque egestas congue quisque egestas. Consequat ac felis donec et odio. Duis at consectetur lorem donec. Purus non enim praesent elementum facilisis leo. Tristique senectus et netus et malesuada fames ac. Purus semper eget duis at tellus at. Eget duis at tellus at urna condimentum mattis. Tellus integer feugiat scelerisque varius. Sit amet aliquam id diam. Id faucibus nisl tincidunt eget nullam non nisi. Lacinia at quis risus sed vulputate odio.<\/p>",
+            "text_size": 1,
+            "text_style": "font-body"
+          }
+        }
+      },
+      "block_order": [
+        "template--19259611578699__42a17d3c-18b1-4694-a172-38d73da62a24-text-1",
+        "9ca36b4c-c67d-42e5-a5a4-9ce0c3a58363",
+        "05b2179d-a416-49d0-8d3f-d0670e3df7d6"
+      ],
+      "settings": {
+        "layout": "",
+        "height": "screen-height-three-quarters",
+        "mobile_height": "screen-height-one-half--mobile",
+        "width": "wrapper--full",
+        "image_width": "one-half",
+        "text_alignment": "text-left",
+        "bg_color": "",
+        "color": "",
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
     "2b508141-b8ea-4520-87ce-60769baa9e97": {
       "type": "section-hero",
       "settings": {
@@ -217,6 +263,51 @@
         "bg_color": "",
         "color": "#ffffff",
         "image_1_heading_title": ""
+      }
+    },
+    "dafa26fa-4552-43d7-bcff-fea888bd7bf6": {
+      "type": "section-double",
+      "blocks": {
+        "template--19259611578699__dafa26fa-4552-43d7-bcff-fea888bd7bf6-heading-1": {
+          "type": "heading",
+          "settings": {
+            "title": "NFT Club",
+            "text_size": 2
+          }
+        },
+        "template--19259611578699__dafa26fa-4552-43d7-bcff-fea888bd7bf6-text-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>We may collect personal information from you when you visit our website, create an account, place an order, or interact with our services. This may include your name, email address, shipping address, payment information, and other relevant details necessary to process your orders and provide a personalized shopping experience.<\/p>",
+            "text_size": 1,
+            "text_style": "font-body"
+          }
+        },
+        "a90a62cf-0e1f-4350-9865-78bc8f700b61": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Lectus urna duis convallis convallis tellus id interdum velit laoreet. Enim nunc faucibus a pellentesque sit. Leo urna molestie at elementum. Proin sagittis nisl rhoncus mattis rhoncus urna neque. Pellentesque id nibh tortor id aliquet lectus proin nibh nisl. Suspendisse faucibus interdum posuere lorem ipsum dolor sit amet. Malesuada pellentesque elit eget gravida. In eu mi bibendum neque egestas congue quisque egestas. Consequat ac felis donec et odio. Duis at consectetur lorem donec. Purus non enim praesent elementum facilisis leo. Tristique senectus et netus et malesuada fames ac. Purus semper eget duis at tellus at. Eget duis at tellus at urna condimentum mattis. Tellus integer feugiat scelerisque varius. Sit amet aliquam id diam. Id faucibus nisl tincidunt eget nullam non nisi. Lacinia at quis risus sed vulputate odio.<br\/>Sit amet facilisis magna etiam. Molestie ac feugiat sed lectus. Leo a diam sollicitudin tempor. Nulla facilisi cras fermentum odio eu feugiat. Eu feugiat pretium nibh ipsum consequat nisl. Tortor at auctor urna nunc id. Purus faucibus ornare suspendisse sed nisi. Senectus et netus et malesuada fames. Etiam dignissim diam quis enim lobortis. Id semper risus in hendrerit gravida rutrum quisque non tellus. Aliquam faucibus purus in massa tempor nec. Duis at consectetur lorem donec massa sapien faucibus et. Viverra mauris in aliquam sem fringilla. Eget dolor morbi non arcu.<\/p>",
+            "text_size": 1,
+            "text_style": "font-body"
+          }
+        }
+      },
+      "block_order": [
+        "template--19259611578699__dafa26fa-4552-43d7-bcff-fea888bd7bf6-heading-1",
+        "template--19259611578699__dafa26fa-4552-43d7-bcff-fea888bd7bf6-text-1",
+        "a90a62cf-0e1f-4350-9865-78bc8f700b61"
+      ],
+      "settings": {
+        "layout": "is-reversed",
+        "height": "screen-height-three-quarters",
+        "mobile_height": "screen-height-one-half--mobile",
+        "width": "wrapper--full",
+        "image_width": "one-half",
+        "text_alignment": "text-left",
+        "bg_color": "",
+        "color": "",
+        "padding_top": 0,
+        "padding_bottom": 0
       }
     },
     "2f4c9221-a1bb-4d0f-88e3-3e202a700bbb": {
@@ -246,6 +337,43 @@
         "padding_top": 0,
         "padding_bottom": 0
       }
+    },
+    "0a3f6b75-8f7e-4e4f-be4b-bfe9df9f8b0a": {
+      "type": "section-double",
+      "blocks": {
+        "template--19259611578699__0a3f6b75-8f7e-4e4f-be4b-bfe9df9f8b0a-text-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>We may collect personal information from you when you visit our website, create an account, place an order, or interact with our services. This may include your name, email address, shipping address, payment information, and other relevant details necessary to process your orders and provide a personalized shopping experience.<\/p>",
+            "text_size": 1,
+            "text_style": "font-body"
+          }
+        },
+        "2de57202-3606-42c7-ba87-63d8a8a1cbf2": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Lectus urna duis convallis convallis tellus id interdum velit laoreet. Enim nunc faucibus a pellentesque sit. Leo urna molestie at elementum. Proin sagittis nisl rhoncus mattis rhoncus urna neque. Pellentesque id nibh tortor id aliquet lectus proin nibh nisl. Suspendisse faucibus interdum posuere lorem ipsum dolor sit amet. Malesuada pellentesque elit eget gravida. In eu mi bibendum neque egestas congue quisque egestas. Consequat ac felis donec et odio. Duis at consectetur lorem donec. Purus non enim praesent elementum facilisis leo. Tristique senectus et netus et malesuada fames ac. Purus semper eget duis at tellus at. Eget duis at tellus at urna condimentum mattis. Tellus integer feugiat scelerisque varius. Sit amet aliquam id diam. Id faucibus nisl tincidunt eget nullam non nisi. Lacinia at quis risus sed vulputate odio.<br\/>Sit amet facilisis magna etiam. Molestie ac feugiat sed lectus. Leo a diam sollicitudin tempor. Nulla facilisi cras fermentum odio eu feugiat. Eu feugiat pretium nibh ipsum consequat nisl. Tortor at auctor urna nunc id. Purus faucibus ornare suspendisse sed nisi. Senectus et netus et malesuada fames. Etiam dignissim diam quis enim lobortis. Id semper risus in hendrerit gravida rutrum quisque non tellus. Aliquam faucibus purus in massa tempor nec. Duis at consectetur lorem donec massa sapien faucibus et. Viverra mauris in aliquam sem fringilla. Eget dolor morbi non arcu.<\/p>",
+            "text_size": 1,
+            "text_style": "font-body"
+          }
+        }
+      },
+      "block_order": [
+        "template--19259611578699__0a3f6b75-8f7e-4e4f-be4b-bfe9df9f8b0a-text-1",
+        "2de57202-3606-42c7-ba87-63d8a8a1cbf2"
+      ],
+      "settings": {
+        "layout": "is-reversed",
+        "height": "screen-height-three-quarters",
+        "mobile_height": "screen-height-one-half--mobile",
+        "width": "wrapper--full",
+        "image_width": "one-half",
+        "text_alignment": "text-left",
+        "bg_color": "",
+        "color": "",
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
     }
   },
   "order": [
@@ -256,7 +384,10 @@
     "562ddd4f-054c-4a25-b8ce-374f3b82418b",
     "99a57b5e-36ae-4d09-bdd3-bac59ff9f362",
     "1420977d-425f-400f-a617-503f416d18d1",
+    "42a17d3c-18b1-4694-a172-38d73da62a24",
     "2b508141-b8ea-4520-87ce-60769baa9e97",
-    "2f4c9221-a1bb-4d0f-88e3-3e202a700bbb"
+    "dafa26fa-4552-43d7-bcff-fea888bd7bf6",
+    "2f4c9221-a1bb-4d0f-88e3-3e202a700bbb",
+    "0a3f6b75-8f7e-4e4f-be4b-bfe9df9f8b0a"
   ]
 }
