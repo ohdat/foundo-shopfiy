@@ -330,4 +330,5 @@
   display: flex;
   align-items: center;
   gap: 10px;
+  color: var(--Dark-Grey, #9B9B9B);
 }
