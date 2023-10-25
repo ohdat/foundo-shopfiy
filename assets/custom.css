@@ -346,3 +346,9 @@
 .announcement__bar-outer {
   padding: 6px 0;
 }
+.text-12 {
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 100;
+  line-height: 120%;
+}
