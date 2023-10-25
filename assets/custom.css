@@ -332,3 +332,6 @@
   gap: 10px;
   color: var(--Dark-Grey, #9B9B9B);
 }
+.cart__quantity .cart__quantity-field{
+  border: none;
+}
