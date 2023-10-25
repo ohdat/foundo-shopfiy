@@ -358,3 +358,9 @@
   font-weight: 100;
   line-height: 120%;
 }
+.timesact-badge-common-preorder {
+  bottom: 138px!important;
+}
+.timesact-badge-common-preorder span {
+  padding: 0;
+}
