@@ -7339,6 +7339,7 @@ img.fit-cover {
   .drawer--cart .drawer__inner .drawer__items {
     display: flex;
     flex-wrap: wrap;
+    row-gap: 2px;
   }
 
   .drawer--cart .drawer__inner .drawer__items .cart__item {
