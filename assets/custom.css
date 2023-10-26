@@ -397,6 +397,6 @@
     padding: 0;
   }
   
-  #foundo-world .hero__content__wrapper .text-left .wrapper--narrow .hero__content {
+  #foundo-world .hero__content__wrapper.text-left.wrapper--narrow .hero__content {
     width: 50%;
   }
