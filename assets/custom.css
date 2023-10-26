@@ -412,3 +412,7 @@
     justify-content: left;
     padding: 0;
   }
+
+  #foundo-world .custom-code.section-padding.wrapper--full {
+    padding: 30px 118px;
+  }
