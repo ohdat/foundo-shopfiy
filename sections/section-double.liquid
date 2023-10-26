@@ -58,7 +58,7 @@
   style="{{ style }}">
   <div class="{{ section.settings.width }}">
     {%- if section.blocks.size > 0 -%}
-      <div class="section-double__body {{ section.settings.height }} {{ section.settings.mobile_height }}">
+      <div class="section-double__body 111 {{ section.settings.height }} {{ section.settings.mobile_height }}">
         <figure class="section-double__figure {{ figure_width_class }}"
           {% if image_1 != blank and image_2 != blank %}
             data-slider
@@ -177,7 +177,7 @@
         </div>
       </div>
     {%- else -%}
-      {% comment %} {%- render 'no-blocks' -%} {% endcomment %}
+      {%- render 'no-blocks' -%}
     {%- endif -%}
   </div>
 </section>
