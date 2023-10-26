@@ -367,3 +367,25 @@
   padding: 0!important;
   letter-spacing: 0!important;
 }
+
+#foundo-world .hero__content .hero__rte{
+  color: var(--Dark-Grey, #9B9B9B);
+  leading-trim: both;
+  text-edge: cap;
+
+  /* new/d/102-caption-grotesk */
+  font-family: Foundo;
+  font-size: 11px;
+  font-style: normal;
+  font-weight: 102;
+  line-height: 120%; /* 13.2px */
+  text-align: left;
+  }
+
+  #foundo-world .hero__content .hero__title {
+    text-align: left;
+  }
+
+  #foundo-world .double-image-empty .section-double__figure {
+    visibility: hidden;
+  }
