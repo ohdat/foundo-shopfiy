@@ -19,7 +19,7 @@
     "68969623-58fb-4efc-9179-c88381d2ae02": {
       "type": "section-custom-code",
       "settings": {
-        "code": "<span class=\"text-strong\">Revolutionary<\/span> collectible brand rooted in <span class=\"text-strong\">oriental culture<\/span>, a <span class=\"text-strong\">bold<\/span> ethos and <span class=\"text-strong\">fusion aesthetics<\/span> merging ancient <span class=\"text-strong\">divinity<\/span> with <span class=\"text-strong\">contemporary<\/span> aesthetics across <span class=\"text-strong\">east<\/span> and <span class=\"text-strong\">west<\/span> using the latest in <span class=\"text-strong\">blockchain <\/span>technology<span class=\"text-strong\">, superior materials<\/span> and <span class=\"text-strong\">world-class craftsmanship<\/span>",
+        "code": "<div style=\">\n<span class=\"text-strong\">Revolutionary<\/span> collectible brand rooted in <span class=\"text-strong\">oriental culture<\/span>, a <span class=\"text-strong\">bold<\/span> ethos and <span class=\"text-strong\">fusion aesthetics<\/span> merging ancient <span class=\"text-strong\">divinity<\/span> with <span class=\"text-strong\">contemporary<\/span> aesthetics across <span class=\"text-strong\">east<\/span> and <span class=\"text-strong\">west<\/span> using the latest in <span class=\"text-strong\">blockchain <\/span>technology<span class=\"text-strong\">, superior materials<\/span> and <span class=\"text-strong\">world-class craftsmanship<\/span>\n<\/div>",
         "width": "wrapper--full",
         "bg_color": "",
         "color": "",
