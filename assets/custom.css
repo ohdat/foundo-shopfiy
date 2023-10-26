@@ -416,6 +416,7 @@
   #foundo-world .custom-code.section-padding.wrapper--full {
     padding: 30px 118px;
     color: var(--text);
+    text-align: center;
     leading-trim: both;
     text-edge: cap;
     font-family: Foundo Headline !important;
