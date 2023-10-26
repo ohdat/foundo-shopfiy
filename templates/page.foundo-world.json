@@ -298,8 +298,11 @@
       "block_order": [
         "template--19259611578699__77376831-c6f1-40ba-869b-aa26a3c0b16f-text-1"
       ],
+      "custom_css": [
+        "div {width: 50vw; margin: 0;}"
+      ],
       "settings": {
-        "width": "wrapper",
+        "width": "wrapper--narrow",
         "align_text": "text-left",
         "bg_color": "",
         "color": "",
