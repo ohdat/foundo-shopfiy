@@ -212,7 +212,7 @@
         "template--19259611578699__d5988d3c-9b65-4749-96c5-cc3006bf06e5-text-1"
       ],
       "custom_css": [
-        "div {margin: }"
+        "div {margin: 0;}"
       ],
       "settings": {
         "width": "wrapper--narrow",
