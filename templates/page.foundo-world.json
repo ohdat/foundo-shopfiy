@@ -89,10 +89,10 @@
         "template--19141043224907__562ddd4f-054c-4a25-b8ce-374f3b82418b-16873431528b3db7d6-1"
       ],
       "custom_css": [
-
+        "div {margin: 0;}"
       ],
       "settings": {
-        "width": "wrapper",
+        "width": "wrapper--narrow",
         "align_text": "text-left",
         "bg_color": "",
         "color": "",
@@ -211,8 +211,11 @@
       "block_order": [
         "template--19259611578699__d5988d3c-9b65-4749-96c5-cc3006bf06e5-text-1"
       ],
+      "custom_css": [
+        "div {margin: }"
+      ],
       "settings": {
-        "width": "wrapper",
+        "width": "wrapper--narrow",
         "align_text": "text-left",
         "bg_color": "",
         "color": "",
@@ -298,8 +301,11 @@
       "block_order": [
         "template--19259611578699__77376831-c6f1-40ba-869b-aa26a3c0b16f-text-1"
       ],
+      "custom_css": [
+        "div {margin: 0;}"
+      ],
       "settings": {
-        "width": "wrapper",
+        "width": "wrapper--narrow",
         "align_text": "text-left",
         "bg_color": "",
         "color": "",
@@ -395,8 +401,11 @@
       "block_order": [
         "template--19259611578699__a35a2b0e-edf6-4c16-9a2f-d07cc3aab5ad-text-1"
       ],
+      "custom_css": [
+        "div {margin: 0;}"
+      ],
       "settings": {
-        "width": "wrapper",
+        "width": "wrapper--narrow",
         "align_text": "text-left",
         "bg_color": "",
         "color": "",
