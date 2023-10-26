@@ -58,7 +58,7 @@
   style="{{ style }}">
   <div class="{{ section.settings.width }}">
     {%- if section.blocks.size > 0 -%}
-      <div class="section-double__body 111 {{ section.settings.height }} {{ section.settings.mobile_height }}">
+      <div class="section-double__body {{ section.settings.height }} {{ section.settings.mobile_height }}">
         <figure class="section-double__figure {{ figure_width_class }}"
           {% if image_1 != blank and image_2 != blank %}
             data-slider
@@ -80,6 +80,13 @@
               {%- render 'image-hero' image: image_2, sizes: sizes, modifier: 'section-double__image', desktop_height: section.settings.height, mobile_height: section.settings.mobile_height -%}
             </div>
           {%- endif -%}
+ 
+          {%- if image_2 == blank and image_1 == blank -%}
+           <div class="section-double__split-image"
+              data-slide="2"
+              data-slide-index="2">
+            </div>
+          {% endif %}>
         </figure>
 
         <div class="section-double__aside">
