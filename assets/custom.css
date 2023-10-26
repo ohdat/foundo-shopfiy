@@ -368,16 +368,15 @@
   letter-spacing: 0!important;
 }
 
-#foundo-world
+/* #foundo-world
 .section-double__figure:nth-of-type(1) {
   visibility: hidden !important;
-}
+} */
 
-#foundo-world
-.section-double__figure:nth-of-type(3) {
+#foundo-world .section-double__body:nth-of-type(3) .section-double__figure {
   visibility: hidden !important;
 }
-
+/* 
 #foundo-world
 .section-double__figure:nth-of-type(4) {
   visibility: hidden !important;
@@ -386,4 +385,4 @@
 #foundo-world
 .section-double__figure:nth-of-type(6) {
   visibility: hidden !important;
-}
+} */
