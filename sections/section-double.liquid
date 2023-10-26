@@ -62,7 +62,7 @@
     {%- if section.blocks.size > 0 -%}
        {{ image_1 }} {{ image_2 }} {{333}}
 
-      <div class="section-double__body {{ section.settings.height }} {{ section.settings.mobile_height }} {% if image_1 == blank and image_2 == blank %}both-empty{% endif %}">
+      <div class="section-double__body {{ section.settings.height }} {{ section.settings.mobile_height }} {% if image_1 == blank and image_2 == blank %}double-image-empty{% endif %}">
         <figure class="section-double__figure {{ figure_width_class }}"
           {% if image_1 != blank and image_2 != blank %}
             data-slider
