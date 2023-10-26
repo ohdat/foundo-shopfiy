@@ -397,6 +397,14 @@
     padding: 0;
   }
   
-  #foundo-world .hero__content__wrapper.text-left.wrapper--narrow .hero__content {
+  #foundo-world .hero__content__wrapper.wrapper--narrow .hero__content {
     width: 50%;
   }
+
+  #foundo-world .hero__content__wrapper.text-center.wrapper--narrow {
+    min-width: 100%;
+    display: flex;
+    justify-content: left;
+    padding: 0;
+  }
+  
