@@ -370,5 +370,5 @@
 
 #foundo-world .section-double__figure:nth-of-type(2),
 .section-double__figure:nth-of-type(5) {
-  visibility: hidden;
+  visibility: hidden !important;
 }
