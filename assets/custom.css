@@ -389,3 +389,14 @@
   #foundo-world .double-image-empty .section-double__figure {
     visibility: hidden;
   }
+
+  #foundo-world .hero__content__wrapper .text-left .wrapper--narrow {
+    min-width: 100%;
+    display: flex;
+    justify-content: right;
+    padding: 0;
+  }
+  
+  #foundo-world .hero__content__wrapper .text-left .wrapper--narrow .hero__content {
+    width: 50%;
+  }
