@@ -385,3 +385,7 @@
   #foundo-world .hero__content .hero__title {
     text-align: left;
   }
+
+  #foundo-world .double-image-empty .section-double__figure {
+    visibility: hidden;
+  }
