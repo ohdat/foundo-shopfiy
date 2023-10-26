@@ -315,7 +315,9 @@
 .announcement__scale .announcement__text .free-shipping #free-shipping__default-message {
   font-family: 'Foundo_Headline' !important;
 }
-
+.pswp__caption.pswp__caption--empty {
+  background: transparent;
+}
 .pswp__caption.pswp__caption--empty .pswp__caption__center{
   display: none;
 }
