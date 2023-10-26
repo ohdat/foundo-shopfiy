@@ -399,6 +399,7 @@
   
   #foundo-world .hero__content__wrapper.wrapper--narrow .hero__content {
     width: 50%;
+    padding: 0 120px;
   }
 
   #foundo-world .hero__content__wrapper.text-center.wrapper--narrow {
@@ -407,4 +408,3 @@
     justify-content: left;
     padding: 0;
   }
-  
