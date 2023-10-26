@@ -368,7 +368,6 @@
   letter-spacing: 0!important;
 }
 
-.section-double__figure:nth-of-type(2),
-.section-double__figure:nth-of-type(5) {
+#foundo-world .section-double__figure:nth-of-type(2) {
   visibility: hidden !important;
 }
