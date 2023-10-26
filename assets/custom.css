@@ -366,5 +366,5 @@
   letter-spacing: 0!important;
 }
 #product__thumbsoldered {
-  position: absolute;
+  position: absolute!important;
 }
