@@ -321,6 +321,12 @@
 .pswp__caption.pswp__caption--empty .pswp__caption__center{
   display: none;
 }
+.pswp__button--close {
+  display: none;
+}
+.pswp__button--arrow--left, .pswp__button--arrow--right {
+  display: none;
+}
 .cart__item__title a {
   color: var(--Off-Black, #00031E);
 }
