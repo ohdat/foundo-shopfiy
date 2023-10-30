@@ -384,7 +384,7 @@ Usage:
         {% for image in metafield_product_images_with_landscape %}
           <div class="product-item__wrapper">
             <div class="product-item__bg" data-product-image-default>
-              {%- render 'image' image: image, aspect_ratio: aspect_ratio, sizes: sizes, widths: widths, attributes: image_animations, cover: true -%}
+              {%- render 'image' image: image, aspect_ratio: aspect_ratio,  attributes: image_animations, cover: true -%}
 
               {%- if settings.color_swatches and current_variant -%}
                 {%- assign image_inner_empty = true -%}
