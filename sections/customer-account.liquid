@@ -122,11 +122,11 @@
                         <span>{{ order.created_at | date: format: 'full_date' }}</span>
                       </div>
                       <div class="order-id font-found__headling" style="font-size: 16px;">
-                        <div>ORDER</div>
+                        <div class="font-found__headling">ORDER</div>
                         <div class="order-name font-found__headling">{{ order.name }}</div>
                       </div>
                       <div class="total-money" style="font-size: 12px;">
-                        <span class="total money">
+                        <span class="total money font-found__headling">
                           {%- if order.total_price == 0 -%}
                             {{ 'general.money.free' | t }}
                           {%- else -%}
