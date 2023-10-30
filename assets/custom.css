@@ -327,6 +327,9 @@
 .pswp__button--arrow--left, .pswp__button--arrow--right {
   display: none;
 }
+.pswp[data-pswp-option-classes*=pswp-zoom-gallery] .pswp__thumb:before, .pswp-zoom-gallery .pswp__thumb:before {
+  display: none;
+}
 .cart__item__title a {
   color: var(--Off-Black, #00031E);
 }
