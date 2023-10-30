@@ -114,7 +114,7 @@
                       {% if first_product_image %}
                         <img src="{{ first_product_image.src | img_url }}" alt="{{ first_product.title }}">
                       {% else %}
-                        <p>No image available</p>
+                        <p class="font-found__headling">No image available</p>
                       {% endif %}
                     </div>
                     <div class="customer-order__item-detail">
@@ -122,11 +122,11 @@
                         <span>{{ order.created_at | date: format: 'full_date' }}</span>
                       </div>
                       <div class="order-id" style="font-size: 16px;">
-                        <div>ORDER</div>
-                        <div class="order-name">{{ order.name }}</div>
+                        <div class="font-found__headling">ORDER</div>
+                        <div class="order-name font-found__headling">{{ order.name }}</div>
                       </div>
                       <div class="total-money" style="font-size: 12px;">
-                        <span class="total money">
+                        <span class="total money font-found__headling">
                           {%- if order.total_price == 0 -%}
                             {{ 'general.money.free' | t }}
                           {%- else -%}
@@ -162,7 +162,7 @@
                           {% if first_product_image %}
                             <img src="{{ first_product_image.src | img_url }}" alt="{{ first_product.title }}">
                           {% else %}
-                            <p>No image available</p>
+                            <p class="font-found__headling">No image available</p>
                           {% endif %}
                         </td>
                         <td class="order-number">
