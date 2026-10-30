@@ -455,7 +455,7 @@
 >
   <span class="cart__total__label">{{ 'cart.general.subtotal_items' | t }}</span>
 
-  <span class="cart__total__price cart__total__price--margin" style="{{ margin: var(--inner) 0; }}">
+  <span class="cart__total__price cart__total__price--margin" style="{{ margin }}">
     {%- if original_subtotal == 0 -%}
       {{ 'general.money.free' | t }}
     {%- else -%}
@@ -577,3 +577,13 @@
 
   <span class="drawer__underlay" data-drawer-underlay></span>
 </div>
+{% comment %}
+
+This file has been rewritten to preserve the original behavior.
+
+---
+Changes:
+- from: "{{ margin: var(--inner) 0; }}"
+  to: "{{ margin }}"
+  position: 20150..20162
+{% endcomment %}
