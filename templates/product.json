@@ -1,3 +1,12 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
 {
   "sections": {
     "main": {
@@ -72,9 +81,9 @@
             "show_read_more": true,
             "style": "inline",
             "title_1": "Product Details",
-            "raw_content_1": "<ul><li>White Gold 18k (750\/1000)<\/li><li>54 Diamonds, 1.98 ct<\/li><li>Length: 12.1mm<\/li><li>Width: 15.7mm<\/li><li>Sold by unit<\/li><\/ul><p>Each article from FOUNDO jewelry is unique. Caratage and metal weight information is given for information only and may vary slightly from one piece to another.<\/p>",
+            "raw_content_1": "<ul><li>White Gold 18k (750/1000)</li><li>54 Diamonds, 1.98 ct</li><li>Length: 12.1mm</li><li>Width: 15.7mm</li><li>Sold by unit</li></ul><p>Each article from FOUNDO jewelry is unique. Caratage and metal weight information is given for information only and may vary slightly from one piece to another.</p>",
             "title_2": "Care",
-            "raw_content_2": "<p>You can always send the product back for maintenance with 1 Year FOUNDO Care. The Diamond VIP enjoys the lifetime FOUNDO Care.<\/p>",
+            "raw_content_2": "<p>You can always send the product back for maintenance with 1 Year FOUNDO Care. The Diamond VIP enjoys the lifetime FOUNDO Care.</p>",
             "title_3": "",
             "raw_content_3": "",
             "title_4": "",
@@ -152,7 +161,6 @@
     },
     "3f3a0656-e285-40be-8229-0b9bd1b04ae9": {
       "type": "section-sidebar",
-      "disabled": true,
       "blocks": {
         "template--19109415584075__3f3a0656-e285-40be-8229-0b9bd1b04ae9-1687328847ed55135a-0": {
           "type": "header",
@@ -163,7 +171,7 @@
         "01cbaf78-eff9-4752-b9b7-35c378090623": {
           "type": "text",
           "settings": {
-            "text": "<p>Share details about your shipping policies, item returns, or customer service.<\/p>"
+            "text": "<p>Share details about your shipping policies, item returns, or customer service.</p>"
           }
         },
         "template--19109415584075__3f3a0656-e285-40be-8229-0b9bd1b04ae9-1687328847ed55135a-1": {
@@ -171,7 +179,7 @@
           "disabled": true,
           "settings": {
             "title": "How much is shipping?",
-            "content": "<p>We offer free shipping on all US orders, and a flat rate of $10 for all international orders.<\/p>"
+            "content": "<p>We offer free shipping on all US orders, and a flat rate of $10 for all international orders.</p>"
           }
         },
         "template--19109415584075__3f3a0656-e285-40be-8229-0b9bd1b04ae9-1687328847ed55135a-2": {
@@ -179,7 +187,7 @@
           "disabled": true,
           "settings": {
             "title": "What is your return policy?",
-            "content": "<p>We accept returns within 30 days of the purchase date.<\/p>"
+            "content": "<p>We accept returns within 30 days of the purchase date.</p>"
           }
         },
         "template--19109415584075__3f3a0656-e285-40be-8229-0b9bd1b04ae9-1687328847ed55135a-3": {
@@ -191,7 +199,7 @@
         "124aa8f0-2819-4f4f-9060-ed2cfe263de4": {
           "type": "text",
           "settings": {
-            "text": "<ul><li>White Gold 18k (750\/1000)<\/li><li>54 Diamonds, 1.98 ct<\/li><li>Length: 12.1mm<\/li><li>Width: 15.7mm<\/li><li>Sold by unit<\/li><\/ul>"
+            "text": "<ul><li>White Gold 18k (750/1000)</li><li>54 Diamonds, 1.98 ct</li><li>Length: 12.1mm</li><li>Width: 15.7mm</li><li>Sold by unit</li></ul>"
           }
         },
         "template--19109415584075__3f3a0656-e285-40be-8229-0b9bd1b04ae9-1687328847ed55135a-4": {
@@ -199,7 +207,7 @@
           "disabled": true,
           "settings": {
             "title": "Can I use more than one discount code?",
-            "content": "<p>Only one discount code can be used per order and cannot be combined with other promotions.<\/p>"
+            "content": "<p>Only one discount code can be used per order and cannot be combined with other promotions.</p>"
           }
         },
         "template--19109415584075__3f3a0656-e285-40be-8229-0b9bd1b04ae9-1687328847ed55135a-5": {
@@ -211,7 +219,7 @@
         "template--19109415584075__3f3a0656-e285-40be-8229-0b9bd1b04ae9-1687328847ed55135a-6": {
           "type": "text",
           "settings": {
-            "text": "<p>You can always send the product back for maintenance with 1 Year FOUNDO Care. The Diamond VIP enjoys the lifetime FOUNDO Care.<\/p>"
+            "text": "<p>You can always send the product back for maintenance with 1 Year FOUNDO Care. The Diamond VIP enjoys the lifetime FOUNDO Care.</p>"
           }
         }
       },
@@ -226,6 +234,7 @@
         "template--19109415584075__3f3a0656-e285-40be-8229-0b9bd1b04ae9-1687328847ed55135a-5",
         "template--19109415584075__3f3a0656-e285-40be-8229-0b9bd1b04ae9-1687328847ed55135a-6"
       ],
+      "disabled": true,
       "settings": {
         "width": "wrapper--full-padded",
         "bg_color": "",
@@ -236,7 +245,6 @@
     },
     "263a761e-c376-48ed-b3bf-6433597feae8": {
       "type": "section-text-row",
-      "disabled": true,
       "blocks": {
         "template--19109415584075__263a761e-c376-48ed-b3bf-6433597feae8-16873275323f300bc9-0": {
           "type": "icon",
@@ -246,7 +254,7 @@
             "icon_color": "#545454",
             "title": "Payment",
             "heading_size": 4,
-            "text": "<p>Credit, debit, crypto or paypal<\/p>",
+            "text": "<p>Credit, debit, crypto or paypal</p>",
             "text_size": 2
           }
         },
@@ -258,7 +266,7 @@
             "icon_color": "#545454",
             "title": "Shipping & Delivery",
             "heading_size": 4,
-            "text": "<p>Complimentary Green Delivery<\/p>",
+            "text": "<p>Complimentary Green Delivery</p>",
             "text_size": 2
           }
         },
@@ -270,7 +278,7 @@
             "icon_color": "#545454",
             "title": "Returns & Exchanges",
             "heading_size": 4,
-            "text": "<p>Complimentary<\/p>",
+            "text": "<p>Complimentary</p>",
             "text_size": 2
           }
         },
@@ -282,7 +290,7 @@
             "icon_color": "#545454",
             "title": "Gift Packaging",
             "heading_size": 4,
-            "text": "<p>Customized packaging and gift card <\/p>",
+            "text": "<p>Customized packaging and gift card </p>",
             "text_size": 2
           }
         }
@@ -293,6 +301,7 @@
         "template--19109415584075__263a761e-c376-48ed-b3bf-6433597feae8-16873275323f300bc9-2",
         "f906c816-f4c8-49b8-82d6-f3b16e2a1a84"
       ],
+      "disabled": true,
       "settings": {
         "title": "",
         "heading_size": 6,
@@ -309,7 +318,6 @@
     },
     "shipping": {
       "type": "section-accordion",
-      "disabled": true,
       "blocks": {
         "shipping-0": {
           "type": "icon",
@@ -318,7 +326,7 @@
             "icon_size": 20,
             "icon_color": "#545454",
             "title": "Fast shipping",
-            "text": "<p>Use this to answer some common questions you hear from your customers. You could discuss product details, size fit, shipping policies, or anything you think would help merchants make an informed decision about your products. This section will appear across all products.<\/p>"
+            "text": "<p>Use this to answer some common questions you hear from your customers. You could discuss product details, size fit, shipping policies, or anything you think would help merchants make an informed decision about your products. This section will appear across all products.</p>"
           }
         },
         "shipping-1": {
@@ -328,7 +336,7 @@
             "icon_size": 20,
             "icon_color": "#545454",
             "title": "Order tracking",
-            "text": "<p>Use this to answer some common questions you hear from your customers. You could discuss product details, size fit, shipping policies, or anything you think would help merchants make an informed decision about your products. This section will appear across all products.<\/p>"
+            "text": "<p>Use this to answer some common questions you hear from your customers. You could discuss product details, size fit, shipping policies, or anything you think would help merchants make an informed decision about your products. This section will appear across all products.</p>"
           }
         },
         "shipping-2": {
@@ -338,7 +346,7 @@
             "icon_size": 20,
             "icon_color": "#545454",
             "title": "Get in touch",
-            "text": "<p>Use this to answer some common questions you hear from your customers. You could discuss product details, size fit, shipping policies, or anything you think would help merchants make an informed decision about your products. This section will appear across all products.<\/p>"
+            "text": "<p>Use this to answer some common questions you hear from your customers. You could discuss product details, size fit, shipping policies, or anything you think would help merchants make an informed decision about your products. This section will appear across all products.</p>"
           }
         }
       },
@@ -347,6 +355,7 @@
         "shipping-1",
         "shipping-2"
       ],
+      "disabled": true,
       "settings": {
         "title": "FOUNDO Care",
         "bg_color": "",
@@ -359,7 +368,6 @@
     },
     "05278b61-11b8-4a55-93c1-182701a2adac": {
       "type": "section-accordion",
-      "disabled": true,
       "blocks": {
         "0201778f-b761-4aaa-ade6-924a00e2023c": {
           "type": "icon",
@@ -368,7 +376,7 @@
             "icon_size": 20,
             "icon_color": "#545454",
             "title": "Fast shipping",
-            "text": "<p>Use this to answer some common questions you hear from your customers. You could discuss product details, size fit, shipping policies, or anything you think would help merchants make an informed decision about your products. This section will appear across all products.<\/p>"
+            "text": "<p>Use this to answer some common questions you hear from your customers. You could discuss product details, size fit, shipping policies, or anything you think would help merchants make an informed decision about your products. This section will appear across all products.</p>"
           }
         },
         "11085cfb-2f79-4858-aad2-8f91f2730af4": {
@@ -378,7 +386,7 @@
             "icon_size": 20,
             "icon_color": "#545454",
             "title": "Order tracking",
-            "text": "<p>Use this to answer some common questions you hear from your customers. You could discuss product details, size fit, shipping policies, or anything you think would help merchants make an informed decision about your products. This section will appear across all products.<\/p>"
+            "text": "<p>Use this to answer some common questions you hear from your customers. You could discuss product details, size fit, shipping policies, or anything you think would help merchants make an informed decision about your products. This section will appear across all products.</p>"
           }
         },
         "ef19e5c6-6830-49e5-8623-0b7197aa1cc4": {
@@ -388,7 +396,7 @@
             "icon_size": 20,
             "icon_color": "#545454",
             "title": "Get in touch",
-            "text": "<p>Use this to answer some common questions you hear from your customers. You could discuss product details, size fit, shipping policies, or anything you think would help merchants make an informed decision about your products. This section will appear across all products.<\/p>"
+            "text": "<p>Use this to answer some common questions you hear from your customers. You could discuss product details, size fit, shipping policies, or anything you think would help merchants make an informed decision about your products. This section will appear across all products.</p>"
           }
         }
       },
@@ -397,6 +405,7 @@
         "11085cfb-2f79-4858-aad2-8f91f2730af4",
         "ef19e5c6-6830-49e5-8623-0b7197aa1cc4"
       ],
+      "disabled": true,
       "settings": {
         "title": "Shipping",
         "bg_color": "",
@@ -409,34 +418,33 @@
     },
     "faq": {
       "type": "section-accordion",
-      "disabled": true,
       "blocks": {
         "faq-1": {
           "type": "text",
           "settings": {
             "title": "Frequently asked question",
-            "text": "<p>Use this to answer some common questions you hear from your customers. You could discuss product details, size fit, shipping policies, or anything you think would help merchants make an informed decision about your products. This section will appear across all products.<\/p>"
+            "text": "<p>Use this to answer some common questions you hear from your customers. You could discuss product details, size fit, shipping policies, or anything you think would help merchants make an informed decision about your products. This section will appear across all products.</p>"
           }
         },
         "faq-2": {
           "type": "text",
           "settings": {
             "title": "Frequently asked question",
-            "text": "<p>Use this to answer some common questions you hear from your customers. You could discuss product details, size fit, shipping policies, or anything you think would help merchants make an informed decision about your products. This section will appear across all products.<\/p>"
+            "text": "<p>Use this to answer some common questions you hear from your customers. You could discuss product details, size fit, shipping policies, or anything you think would help merchants make an informed decision about your products. This section will appear across all products.</p>"
           }
         },
         "faq-3": {
           "type": "text",
           "settings": {
             "title": "Frequently asked question",
-            "text": "<p>Use this to answer some common questions you hear from your customers. You could discuss product details, size fit, shipping policies, or anything you think would help merchants make an informed decision about your products. This section will appear across all products.<\/p>"
+            "text": "<p>Use this to answer some common questions you hear from your customers. You could discuss product details, size fit, shipping policies, or anything you think would help merchants make an informed decision about your products. This section will appear across all products.</p>"
           }
         },
         "faq-4": {
           "type": "text",
           "settings": {
             "title": "Frequently asked question",
-            "text": "<p>Use this to answer some common questions you hear from your customers. You could discuss product details, size fit, shipping policies, or anything you think would help merchants make an informed decision about your products. This section will appear across all products.<\/p>"
+            "text": "<p>Use this to answer some common questions you hear from your customers. You could discuss product details, size fit, shipping policies, or anything you think would help merchants make an informed decision about your products. This section will appear across all products.</p>"
           }
         },
         "eb47f5cd-7ae8-4309-ba2b-0621cb546ffc": {
@@ -446,7 +454,7 @@
             "icon_size": 20,
             "icon_color": "#545454",
             "title": "Icon heading",
-            "text": "<p>Use this to answer some common questions you hear from your customers. You could discuss product details, size fit, shipping policies, or anything you think would help merchants make an informed decision about your products. This section will appear across all products.<\/p>"
+            "text": "<p>Use this to answer some common questions you hear from your customers. You could discuss product details, size fit, shipping policies, or anything you think would help merchants make an informed decision about your products. This section will appear across all products.</p>"
           }
         }
       },
@@ -457,6 +465,7 @@
         "faq-4",
         "eb47f5cd-7ae8-4309-ba2b-0621cb546ffc"
       ],
+      "disabled": true,
       "settings": {
         "title": "FAQ",
         "bg_color": "",
@@ -479,7 +488,6 @@
     },
     "related": {
       "type": "related",
-      "disabled": true,
       "blocks": {
         "related": {
           "type": "related",
@@ -500,6 +508,7 @@
         "related",
         "recent"
       ],
+      "disabled": true,
       "settings": {
         "enable_tabs": true,
         "bg_color": "",
@@ -511,7 +520,6 @@
     },
     "ca54cc1b-cc42-49f0-8900-2a68d0e46252": {
       "type": "section-double",
-      "disabled": true,
       "blocks": {
         "template--19109415584075__ca54cc1b-cc42-49f0-8900-2a68d0e46252-1687333535c3bbb1df-0": {
           "type": "heading",
@@ -523,7 +531,7 @@
         "template--19109415584075__ca54cc1b-cc42-49f0-8900-2a68d0e46252-1687333535c3bbb1df-1": {
           "type": "text",
           "settings": {
-            "text": "<p>Introducing the Make the Cut collection, inspired by the essence of ambition. Each article beautifully captures the subtle charm that accompanies significant moments in<br\/>life.<\/p>",
+            "text": "<p>Introducing the Make the Cut collection, inspired by the essence of ambition. Each article beautifully captures the subtle charm that accompanies significant moments in<br/>life.</p>",
             "text_size": 3,
             "text_style": "font-body"
           }
@@ -532,7 +540,7 @@
           "type": "buttons",
           "settings": {
             "button_text": "Shop All Make The Cut",
-            "button_url": "shopify:\/\/collections\/make-the-cut",
+            "button_url": "shopify://collections/make-the-cut",
             "button_type": "btn--white",
             "button_size": "",
             "button_style": "btn--solid",
@@ -545,12 +553,13 @@
         "template--19109415584075__ca54cc1b-cc42-49f0-8900-2a68d0e46252-1687333535c3bbb1df-1",
         "template--19109415584075__ca54cc1b-cc42-49f0-8900-2a68d0e46252-1687333535c3bbb1df-2"
       ],
+      "disabled": true,
       "settings": {
         "layout": "",
         "height": "screen-height-full",
         "mobile_height": "screen-height-one-half--mobile",
         "width": "wrapper--full",
-        "image_1": "shopify:\/\/shop_images\/pac_lock_earring_wgf-2.png",
+        "image_1": "shopify://shop_images/pac_lock_earring_wgf-2.png",
         "image_width": "one-half",
         "text_alignment": "text-left",
         "bg_color": "",
@@ -597,7 +606,7 @@
       "settings": {
         "height": "screen-height-three-quarters",
         "width": "wrapper--full",
-        "image_1": "shopify:\/\/shop_images\/make_the_cut_banner_1.jpg",
+        "image_1": "shopify://shop_images/make_the_cut_banner_1.jpg",
         "mobile_height": "screen-height-three-quarters--mobile",
         "flex_align": "align--middle-center",
         "overlay_opacity": 0,
@@ -619,7 +628,7 @@
         "button_size": "",
         "button_style": "btn--solid",
         "show_arrow": false,
-        "featured_collection": "the-cross",
+        "featured_collection": "citizen-cross",
         "style": "grid",
         "grid": 4,
         "rows": 3,
@@ -642,7 +651,7 @@
         "button_size": "",
         "button_style": "btn--solid",
         "show_arrow": false,
-        "featured_collection": "the-cross",
+        "featured_collection": "citizen-cross",
         "style": "grid",
         "grid": 4,
         "rows": 3,
